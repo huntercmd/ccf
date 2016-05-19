@@ -1,0 +1,885 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="../config/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link id="light" rel="stylesheet" type="text/css" href="../config/css/light.css" />  
+<link id="dark" rel="stylesheet" type="text/css" href="../config/css/dark.css" disabled/>
+
+<script src="../config/css/classie.js"></script>
+
+
+<!-- This is for Mathjax -->
+
+<script type="text/javascript"
+  src="../config/mathjax2.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#ACM SIGCOMM Conference 2011:Toronto, ON, Canada">ACM SIGCOMM Conference 2011:Toronto, ON, Canada</a><ul>
+<li><a href="#Paper Num: 80 || Session Num: 15">Paper Num: 80 || Session Num: 15</a></li>
+<li><a href="#Security    3">Security    3</a><ul>
+<li><a href="#1. They can hear your heartbeats: non-invasive security for implantable medical devices.">1. They can hear your heartbeats: non-invasive security for implantable medical devices.</a></li>
+<li><a href="#2. Let the market drive deployment: a strategy for transitioning to BGP security.">2. Let the market drive deployment: a strategy for transitioning to BGP security.</a></li>
+<li><a href="#3. Finding protocol manipulation attacks.">3. Finding protocol manipulation attacks.</a></li>
+</ul>
+</li>
+<li><a href="#Novel data center architectures    3">Novel data center architectures    3</a><ul>
+<li><a href="#4. Augmenting data center networks with multi-gigabit wireless links.">4. Augmenting data center networks with multi-gigabit wireless links.</a></li>
+<li><a href="#5. Better never than late: meeting deadlines in datacenter networks.">5. Better never than late: meeting deadlines in datacenter networks.</a></li>
+<li><a href="#6. NetLord: a scalable multi-tenant network architecture for virtualized datacenters.">6. NetLord: a scalable multi-tenant network architecture for virtualized datacenters.</a></li>
+</ul>
+</li>
+<li><a href="#Bulk data transfers    3">Bulk data transfers    3</a><ul>
+<li><a href="#7. Inter-datacenter bulk transfers with netstitcher.">7. Inter-datacenter bulk transfers with netstitcher.</a></li>
+<li><a href="#8. The power of prediction: cloud bandwidth and cost reduction.">8. The power of prediction: cloud bandwidth and cost reduction.</a></li>
+<li><a href="#9. Managing data transfers in computer clusters with orchestra.">9. Managing data transfers in computer clusters with orchestra.</a></li>
+</ul>
+</li>
+<li><a href="#Network measurement I -- wide-area measurement    3">Network measurement I -- wide-area measurement    3</a><ul>
+<li><a href="#10. On blind mice and the elephant: understanding the network impact of a large distributed system.">10. On blind mice and the elephant: understanding the network impact of a large distributed system.</a></li>
+<li><a href="#11. Predicting and tracking internet path changes.">11. Predicting and tracking internet path changes.</a></li>
+<li><a href="#12. Broadband internet performance: a view from the gateway.">12. Broadband internet performance: a view from the gateway.</a></li>
+</ul>
+</li>
+<li><a href="#Wireless    3">Wireless    3</a><ul>
+<li><a href="#13. Random access heterogeneous MIMO networks.">13. Random access heterogeneous MIMO networks.</a></li>
+<li><a href="#14. Strider: automatic rate adaptation and collision handling.">14. Strider: automatic rate adaptation and collision handling.</a></li>
+<li><a href="#15. Clearing the RF smog: making 802.11n robust to cross-technology interference.">15. Clearing the RF smog: making 802.11n robust to cross-technology interference.</a></li>
+</ul>
+</li>
+<li><a href="#Network modeling    3">Network modeling    3</a><ul>
+<li><a href="#16. Design space analysis for modeling incentives in distributed systems.">16. Design space analysis for modeling incentives in distributed systems.</a></li>
+<li><a href="#17. How many tiers?: pricing in the internet transit market.">17. How many tiers?: pricing in the internet transit market.</a></li>
+<li><a href="#18. The evolution of layered protocol stacks leads to an hourglass-shaped architecture.">18. The evolution of layered protocol stacks leads to an hourglass-shaped architecture.</a></li>
+</ul>
+</li>
+<li><a href="#Neat tricks    2">Neat tricks    2</a><ul>
+<li><a href="#19. What's the difference?: efficient set reconciliation without prior context.">19. What's the difference?: efficient set reconciliation without prior context.</a></li>
+<li><a href="#20. DOF: a local wireless information plane.">20. DOF: a local wireless information plane.</a></li>
+</ul>
+</li>
+<li><a href="#Data center network performance    3">Data center network performance    3</a><ul>
+<li><a href="#21. Towards predictable datacenter networks.">21. Towards predictable datacenter networks.</a></li>
+<li><a href="#22. DevoFlow: scaling flow management for high-performance networks.">22. DevoFlow: scaling flow management for high-performance networks.</a></li>
+<li><a href="#23. Improving datacenter performance and robustness with multipath TCP.">23. Improving datacenter performance and robustness with multipath TCP.</a></li>
+</ul>
+</li>
+<li><a href="#Network management -- reasoning and debugging    3">Network management -- reasoning and debugging    3</a><ul>
+<li><a href="#24. NetQuery: a knowledge plane for reasoning about network properties.">24. NetQuery: a knowledge plane for reasoning about network properties.</a></li>
+<li><a href="#25. Debugging the data plane with anteater.">25. Debugging the data plane with anteater.</a></li>
+<li><a href="#26. Demystifying configuration challenges and trade-offs in network-based ISP services.">26. Demystifying configuration challenges and trade-offs in network-based ISP services.</a></li>
+</ul>
+</li>
+<li><a href="#ISPs and wide-area networking    3">ISPs and wide-area networking    3</a><ul>
+<li><a href="#27. Seamless network-wide IGP migrations.">27. Seamless network-wide IGP migrations.</a></li>
+<li><a href="#28. A content propagation metric for efficient content distribution.">28. A content propagation metric for efficient content distribution.</a></li>
+<li><a href="#29. Insomnia in the access: or how to curb access network related energy consumption.">29. Insomnia in the access: or how to curb access network related energy consumption.</a></li>
+</ul>
+</li>
+<li><a href="#Network measurement II -- what's going on?    3">Network measurement II -- what's going on?    3</a><ul>
+<li><a href="#30. Understanding network failures in data centers: measurement, analysis, and implications.">30. Understanding network failures in data centers: measurement, analysis, and implications.</a></li>
+<li><a href="#31. Understanding the impact of video quality on user engagement.">31. Understanding the impact of video quality on user engagement.</a></li>
+<li><a href="#32. An untold story of middleboxes in cellular networks.">32. An untold story of middleboxes in cellular networks.</a></li>
+</ul>
+</li>
+<li><a href="#SIGCOMM 2011 posters session 1    12">SIGCOMM 2011 posters session 1    12</a><ul>
+<li><a href="#33. Automatic inference of movements from contact histories.">33. Automatic inference of movements from contact histories.</a></li>
+<li><a href="#34. Towards a fully distributed n-tuple store.">34. Towards a fully distributed n-tuple store.</a></li>
+<li><a href="#35. ASAP: a low-latency transport layer.">35. ASAP: a low-latency transport layer.</a></li>
+<li><a href="#36. What can free money tell us on the virtual black market?">36. What can free money tell us on the virtual black market?</a></li>
+<li><a href="#37. LoKI: location-based PKI for social networks.">37. LoKI: location-based PKI for social networks.</a></li>
+<li><a href="#38. "Roto-Rooting" your router: solution against new potential DoS attacks on modern routers.">38. "Roto-Rooting" your router: solution against new potential DoS attacks on modern routers.</a></li>
+<li><a href="#39. Limiting large-scale crawls of social networking sites.">39. Limiting large-scale crawls of social networking sites.</a></li>
+<li><a href="#40. Designing a testbed for large-scale distributed systems.">40. Designing a testbed for large-scale distributed systems.</a></li>
+<li><a href="#41. Spider: improving mobile networking with concurrent wi-fi connections.">41. Spider: improving mobile networking with concurrent wi-fi connections.</a></li>
+<li><a href="#42. Covert channels in multiple access protocols.">42. Covert channels in multiple access protocols.</a></li>
+<li><a href="#43. Pomelo: accurate and decentralized shortest-path distance estimation in social graphs.">43. Pomelo: accurate and decentralized shortest-path distance estimation in social graphs.</a></li>
+<li><a href="#44. Dummy rate analysis of buffer constrained chaum mix.">44. Dummy rate analysis of buffer constrained chaum mix.</a></li>
+</ul>
+</li>
+<li><a href="#SIGCOMM 2011 posters session 2    12">SIGCOMM 2011 posters session 2    12</a><ul>
+<li><a href="#45. Minimising cell transmit power: towards self-organized resource allocation in OFDMA femtocells.">45. Minimising cell transmit power: towards self-organized resource allocation in OFDMA femtocells.</a></li>
+<li><a href="#46. Building virtual networks across multiple domains.">46. Building virtual networks across multiple domains.</a></li>
+<li><a href="#47. Multi-relational social networks in a large-scale MMORPG.">47. Multi-relational social networks in a large-scale MMORPG.</a></li>
+<li><a href="#48. Taming power peaks in mapreduce clusters.">48. Taming power peaks in mapreduce clusters.</a></li>
+<li><a href="#49. Towards scalable and realistic node models for network simulators.">49. Towards scalable and realistic node models for network simulators.</a></li>
+<li><a href="#50. Revisiting next-hop selection in multipath networks.">50. Revisiting next-hop selection in multipath networks.</a></li>
+<li><a href="#51. netmap: memory mapped access to network devices.">51. netmap: memory mapped access to network devices.</a></li>
+<li><a href="#52. Detecting and assessing the hybrid IPv4/IPv6 as relationships.">52. Detecting and assessing the hybrid IPv4/IPv6 as relationships.</a></li>
+<li><a href="#53. CloudProphet: towards application performance prediction in cloud.">53. CloudProphet: towards application performance prediction in cloud.</a></li>
+<li><a href="#54. A novel approach for making energy efficient PON.">54. A novel approach for making energy efficient PON.</a></li>
+<li><a href="#55. On the efficacy of fine-grained traffic splitting protocolsin data center networks.">55. On the efficacy of fine-grained traffic splitting protocolsin data center networks.</a></li>
+<li><a href="#56. Wide-area routing dynamics of malicious networks.">56. Wide-area routing dynamics of malicious networks.</a></li>
+</ul>
+</li>
+<li><a href="#SIGCOMM 2011 demos session 1    12">SIGCOMM 2011 demos session 1    12</a><ul>
+<li><a href="#57. Online testing of federated and heterogeneous distributed systems.">57. Online testing of federated and heterogeneous distributed systems.</a></li>
+<li><a href="#58. Performance based traffic control with IDIPS.">58. Performance based traffic control with IDIPS.</a></li>
+<li><a href="#59. Eco-Sign: a load-based traffic light control system for environmental protection with vehicular communications.">59. Eco-Sign: a load-based traffic light control system for environmental protection with vehicular communications.</a></li>
+<li><a href="#60. FSR: formal analysis and implementation toolkit for safe inter-domain routing.">60. FSR: formal analysis and implementation toolkit for safe inter-domain routing.</a></li>
+<li><a href="#61. PANDAA: a physical arrangement detection technique for networked devices through ambient-sound awareness.">61. PANDAA: a physical arrangement detection technique for networked devices through ambient-sound awareness.</a></li>
+<li><a href="#62. Implementing ARP-path low latency bridges in NetFPGA.">62. Implementing ARP-path low latency bridges in NetFPGA.</a></li>
+<li><a href="#63. LifeNet: a flexible ad hoc networking solution for transient environments.">63. LifeNet: a flexible ad hoc networking solution for transient environments.</a></li>
+<li><a href="#64. A protocol for disaster data evacuation.">64. A protocol for disaster data evacuation.</a></li>
+<li><a href="#65. Towards energy-efficient streaming system for mobile hotspots.">65. Towards energy-efficient streaming system for mobile hotspots.</a></li>
+<li><a href="#66. MPLS-TE and MPLS VPNS with openflow.">66. MPLS-TE and MPLS VPNS with openflow.</a></li>
+<li><a href="#67. Dasu - ISP characterization from the edge: a BitTorrent implementation.">67. Dasu - ISP characterization from the edge: a BitTorrent implementation.</a></li>
+<li><a href="#68. WiFire: a firewall for wireless networks.">68. WiFire: a firewall for wireless networks.</a></li>
+</ul>
+</li>
+<li><a href="#SIGCOMM 2011 demos session 2    12">SIGCOMM 2011 demos session 2    12</a><ul>
+<li><a href="#69. Demonstrating generalized virtual topologies in an openflow network.">69. Demonstrating generalized virtual topologies in an openflow network.</a></li>
+<li><a href="#70. Visualizing anomalies in sensor networks.">70. Visualizing anomalies in sensor networks.</a></li>
+<li><a href="#71. WiRE: a new rural connectivity paradigm.">71. WiRE: a new rural connectivity paradigm.</a></li>
+<li><a href="#72. Supporting novel home network management interfaces with openflow and NOX.">72. Supporting novel home network management interfaces with openflow and NOX.</a></li>
+<li><a href="#73. Using NetMagic to observe fine-grained per-flow latency measurements.">73. Using NetMagic to observe fine-grained per-flow latency measurements.</a></li>
+<li><a href="#74. OSPF failure reconvergence through SRG inference and prediction of link state advertisements.">74. OSPF failure reconvergence through SRG inference and prediction of link state advertisements.</a></li>
+<li><a href="#75. Communicating with caps: managing usage caps in home networks.">75. Communicating with caps: managing usage caps in home networks.</a></li>
+<li><a href="#76. Cyber-physical handshake.">76. Cyber-physical handshake.</a></li>
+<li><a href="#77. An online gaming testbed for peer-to-peer architectures.">77. An online gaming testbed for peer-to-peer architectures.</a></li>
+<li><a href="#78. Service hosting gateways: a platform for distributed service deployment in end user homes.">78. Service hosting gateways: a platform for distributed service deployment in end user homes.</a></li>
+<li><a href="#79. Optimizing a virtualized data center.">79. Optimizing a virtualized data center.</a></li>
+<li><a href="#80. Efficient content dissemination in heterogeneous networks prone to episodic connectivity.">80. Efficient content dissemination in heterogeneous networks prone to episodic connectivity.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="ACM SIGCOMM Conference 2011:Toronto, ON, Canada">ACM SIGCOMM Conference 2011:Toronto, ON, Canada</h1>
+<p><a href="http://doi.acm.org/10.1145/2018436">Proceedings of the ACM SIGCOMM 2011 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communications, Toronto, ON, Canada, August 15-19, 2011.</a> ACM
+【<a href="http://dblp.uni-trier.de/db/conf/sigcomm/sigcomm2011.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 80 || Session Num: 15">Paper Num: 80 || Session Num: 15</h2>
+<h2 id="Security    3">Security    3</h2>
+<h3 id="1. They can hear your heartbeats: non-invasive security for implantable medical devices.">1. They can hear your heartbeats: non-invasive security for implantable medical devices.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018438">Paper Link</a>】    【Pages】:2-13</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gollakota:Shyamnath">Shyamnath Gollakota</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hassanieh:Haitham">Haitham Hassanieh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ransford:Benjamin">Benjamin Ransford</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Katabi:Dina">Dina Katabi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fu:Kevin">Kevin Fu</a></p>
+<p>【Abstract】:
+Wireless communication has become an intrinsic part of modern implantable medical devices (IMDs). Recent work, however, has demonstrated that wireless connectivity can be exploited to compromise the confidentiality of IMDs' transmitted data or to send unauthorized commands to IMDs---even commands that cause the device to deliver an electric shock to the patient. The key challenge in addressing these attacks stems from the difficulty of modifying or replacing already-implanted IMDs. Thus, in this paper, we explore the feasibility of protecting an implantable device from such attacks without modifying the device itself. We present a physical-layer solution that delegates the security of an IMD to a personal base station called the shield. The shield uses a novel radio design that can act as a jammer-cum-receiver. This design allows it to jam the IMD's messages, preventing others from decoding them while being able to decode them itself. It also allows the shield to jam unauthorized commands---even those that try to alter the shield's own transmissions. We implement our design in a software radio and evaluate it with commercial IMDs. We find that it effectively provides confidentiality for private data and protects the IMD from unauthorized commands.</p>
+<p>【Keywords】:
+full-duplex; implanted medical devices; wireless</p>
+<h3 id="2. Let the market drive deployment: a strategy for transitioning to BGP security.">2. Let the market drive deployment: a strategy for transitioning to BGP security.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018439">Paper Link</a>】    【Pages】:14-25</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gill:Phillipa">Phillipa Gill</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schapira:Michael">Michael Schapira</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Goldberg:Sharon">Sharon Goldberg</a></p>
+<p>【Abstract】:
+With a cryptographic root-of-trust for Internet routing(RPKI [17]) on the horizon, we can finally start planning the deployment of one of the secure interdomain routing protocols proposed over a decade ago (Secure BGP [22], secure origin BGP [37]). However, if experience with IPv6 is any indicator, this will be no easy task. Security concerns alone seem unlikely to provide sufficient local incentive to drive the deployment process forward. Worse yet, the security benefits provided by the S<em>BGP protocols do not even kick in until a large number of ASes have deployed them. Instead, we appeal to ISPs' interest in increasing revenue-generating traffic. We propose a strategy that governments and industry groups can use to harness ISPs' local business objectives and drive global S</em>BGP deployment. We evaluate our deployment strategy using theoretical analysis and large-scale simulations on empirical data. Our results give evidence that the market dynamics created by our proposal can transition the majority of the Internet to S*BGP.</p>
+<p>【Keywords】:
+bgp; routing; security</p>
+<h3 id="3. Finding protocol manipulation attacks.">3. Finding protocol manipulation attacks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018440">Paper Link</a>】    【Pages】:26-37</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kothari:Nupur">Nupur Kothari</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mahajan:Ratul">Ratul Mahajan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Millstein:Todd_D=">Todd D. Millstein</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Govindan:Ramesh">Ramesh Govindan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Musuvathi:Madanlal">Madanlal Musuvathi</a></p>
+<p>【Abstract】:
+We develop a method to help discover manipulation attacks in protocol implementations. In these attacks, adversaries induce honest nodes to exhibit undesirable behaviors by misrepresenting their intent or network conditions. Our method is based on a novel combination of static analysis with symbolic execution and dynamic analysis with concrete execution. The former finds code paths that are likely vulnerable, and the latter emulates adversarial actions that lead to effective attacks. Our method is precise (i.e., no false positives) and we show that it scales to complex protocol implementations. We apply it to four diverse protocols, including TCP, the 802.11 MAC, ECN, and SCTP, and show that it is able to find all manipulation attacks that have been previously reported for these protocols. We also find a previously unreported attack for SCTP. This attack is a variant of a TCP attack but must be mounted differently in SCTP because of subtle semantic differences between the two protocols.</p>
+<p>【Keywords】:
+manipulation attacks; symbolic execution</p>
+<h2 id="Novel data center architectures    3">Novel data center architectures    3</h2>
+<h3 id="4. Augmenting data center networks with multi-gigabit wireless links.">4. Augmenting data center networks with multi-gigabit wireless links.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018442">Paper Link</a>】    【Pages】:38-49</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Halperin:Daniel">Daniel Halperin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kandula:Srikanth">Srikanth Kandula</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Padhye:Jitendra">Jitendra Padhye</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bahl:Paramvir">Paramvir Bahl</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wetherall:David">David Wetherall</a></p>
+<p>【Abstract】:
+The 60 GHz wireless technology that is now emerging has the potential to provide dense and extremely fast connectivity at low cost. In this paper, we explore its use to relieve hotspots in oversubscribed data center (DC) networks. By experimenting with prototype equipment, we show that the DC environment is well suited to a deployment of 60GHz links contrary to concerns about interference and link reliability. Using directional antennas, many wireless links can run concurrently at multi-Gbps rates on top-of-rack (ToR) switches. The wired DC network can be used to sidestep several common wireless problems. By analyzing production traces of DC traffic for four real applications, we show that adding a small amount of network capacity in the form of wireless flyways to the wired DC network can improve performance. However, to be of significant value, we find that one hop indirect routing is needed. Informed by our 60GHz experiments and DC traffic analysis, we present a design that uses DC traffic levels to select and adds flyways to the wired DC network. Trace-driven evaluations show that network-limited DC applications with predictable traffic workloads running on a 1:2 oversubscribed network can be sped up by 45% in 95% of the cases, with just one wireless device per ToR switch. With two devices, in 40% of the cases, the performance is identical to that of a non-oversubscribed network.</p>
+<p>【Keywords】:
+60 ghz; 802.11ad; data center; datacenter; flyways; network</p>
+<h3 id="5. Better never than late: meeting deadlines in datacenter networks.">5. Better never than late: meeting deadlines in datacenter networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018443">Paper Link</a>】    【Pages】:50-61</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wilson:Christo">Christo Wilson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Ballani:Hitesh">Hitesh Ballani</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Karagiannis:Thomas">Thomas Karagiannis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rowstron:Antony_I=_T=">Antony I. T. Rowstron</a></p>
+<p>【Abstract】:
+The soft real-time nature of large scale web applications in today's datacenters, combined with their distributed workflow, leads to deadlines being associated with the datacenter application traffic. A network flow is useful, and contributes to application throughput and operator revenue if, and only if, it completes within its deadline. Today's transport pro- tocols (TCP included), given their Internet origins, are agnostic to such flow deadlines. Instead, they strive to share network resources fairly. We show that this can hurt application performance. Motivated by these observations, and other (previously known) deficiencies of TCP in the datacenter environment, this paper presents the design and implementation of D3, a deadline-aware control protocol that is customized for the datacenter environment. D3 uses explicit rate control to apportion bandwidth according to flow deadlines. Evaluation from a 19-node, two-tier datacenter testbed shows that D3, even without any deadline information, easily outper- forms TCP in terms of short flow latency and burst tolerance. Further, by utilizing deadline information, D3 effectively doubles the peak load that the datacenter network cansupport.</p>
+<p>【Keywords】:
+datacenter; deadline; online services; rate control; sla</p>
+<h3 id="6. NetLord: a scalable multi-tenant network architecture for virtualized datacenters.">6. NetLord: a scalable multi-tenant network architecture for virtualized datacenters.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018444">Paper Link</a>】    【Pages】:62-73</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mudigonda:Jayaram">Jayaram Mudigonda</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yalagandula:Praveen">Praveen Yalagandula</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mogul:Jeffrey_C=">Jeffrey C. Mogul</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stiekes:Bryan">Bryan Stiekes</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pouffary:Yanick">Yanick Pouffary</a></p>
+<p>【Abstract】:
+Providers of "Infrastructure-as-a-Service" need datacenter networks that support multi-tenancy, scale, and ease of operation, at low cost. Most existing network architectures cannot meet all of these needs simultaneously. In this paper we present NetLord, a novel multi-tenant network architecture. NetLord provides tenants with simple and flexible network abstractions, by fully and efficiently virtualizing the address space at both L2 and L3. NetLord can exploit inexpensive commodity equipment to scale the network to several thousands of tenants and millions of virtual machines. NetLord requires only a small amount of offline, one-time configuration. We implemented NetLord on a testbed, and demonstrated its scalability, while achieving order-of-magnitude goodput improvements over previous approaches.</p>
+<p>【Keywords】:
+datacenter network; multi-pathing; multi-tenant; network virtualization; scalable ethernet</p>
+<h2 id="Bulk data transfers    3">Bulk data transfers    3</h2>
+<h3 id="7. Inter-datacenter bulk transfers with netstitcher.">7. Inter-datacenter bulk transfers with netstitcher.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018446">Paper Link</a>】    【Pages】:74-85</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Laoutaris:Nikolaos">Nikolaos Laoutaris</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sirivianos:Michael">Michael Sirivianos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang_0001:Xiaoyuan">Xiaoyuan Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rodriguez:Pablo">Pablo Rodriguez</a></p>
+<p>【Abstract】:
+Large datacenter operators with sites at multiple locations dimension their key resources according to the peak demand of the geographic area that each site covers. The demand of specific areas follows strong diurnal patterns with high peak to valley ratios that result in poor average utilization across a day. In this paper, we show how to rescue unutilized bandwidth across multiple datacenters and backbone networks and use it for non-real-time applications, such as backups, propagation of bulky updates, and migration of data. Achieving the above is non-trivial since leftover bandwidth appears at different times, for different durations, and at different places in the world. For this purpose, we have designed, implemented, and validated NetStitcher, a system that employs a network of storage nodes to stitch together unutilized bandwidth, whenever and wherever it exists. It gathers information about leftover resources, uses a store-and-forward algorithm to schedule data transfers, and adapts to resource fluctuations. We have compared NetStitcher with other bulk transfer mechanisms using both a testbed and a live deployment on a real CDN. Our testbed evaluation shows that NetStitcher outperforms all other mechanisms and can rescue up to five times additional datacenter bandwidth thus making it a valuable tool for datacenter providers. Our live CDN deployment demonstrates that our solution can perform large data transfers at a much lower cost than naive end-to-end or store-and-forward schemes.</p>
+<p>【Keywords】:
+bulk transfers; inter-datacenter traffic; store-and-forward</p>
+<h3 id="8. The power of prediction: cloud bandwidth and cost reduction.">8. The power of prediction: cloud bandwidth and cost reduction.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018447">Paper Link</a>】    【Pages】:86-97</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zohar:Eyal">Eyal Zohar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cidon:Israel">Israel Cidon</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mokryn:Osnat">Osnat Mokryn</a></p>
+<p>【Abstract】:
+In this paper we present PACK (Predictive ACKs), a novel end-to-end Traffic Redundancy Elimination (TRE) system, designed for cloud computing customers. Cloud-based TRE needs to apply a judicious use of cloud resources so that the bandwidth cost reduction combined with the additional cost of TRE computation and storage would be optimized. PACK's main advantage is its capability of offloading the cloud-server TRE effort to end-clients, thus minimizing the processing costs induced by the TRE algorithm. Unlike previous solutions, PACK does not require the server to continuously maintain clients' status. This makes PACK very suitable for pervasive computation environments that combine client mobility and server migration to maintain cloud elasticity. PACK is based on a novel TRE technique, which allows the client to use newly received chunks to identify previously received chunk chains, which in turn can be used as reliable predictors to future transmitted chunks. We present a fully functional PACK implementation, transparent to all TCP-based applications and network devices. Finally, we analyze PACK benefits for cloud users, using traffic traces from various sources.</p>
+<p>【Keywords】:
+caching; cloud computing; network optimization; traffic redundancy elimination</p>
+<h3 id="9. Managing data transfers in computer clusters with orchestra.">9. Managing data transfers in computer clusters with orchestra.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018448">Paper Link</a>】    【Pages】:98-109</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chowdhury:Mosharaf">Mosharaf Chowdhury</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zaharia:Matei">Matei Zaharia</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Ma:Justin">Justin Ma</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jordan:Michael_I=">Michael I. Jordan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stoica:Ion">Ion Stoica</a></p>
+<p>【Abstract】:
+Cluster computing applications like MapReduce and Dryad transfer massive amounts of data between their computation stages. These transfers can have a significant impact on job performance, accounting for more than 50% of job completion times. Despite this impact, there has been relatively little work on optimizing the performance of these data transfers, with networking researchers traditionally focusing on per-flow traffic management. We address this limitation by proposing a global management architecture and a set of algorithms that (1) improve the transfer times of common communication patterns, such as broadcast and shuffle, and (2) allow scheduling policies at the transfer level, such as prioritizing a transfer over other transfers. Using a prototype implementation, we show that our solution improves broadcast completion times by up to 4.5X compared to the status quo in Hadoop. We also show that transfer-level scheduling can reduce the completion time of high-priority transfers by 1.7X.</p>
+<p>【Keywords】:
+data transfer; data-intensive applications; datacenter networks</p>
+<h2 id="Network measurement I -- wide-area measurement    3">Network measurement I -- wide-area measurement    3</h2>
+<h3 id="10. On blind mice and the elephant: understanding the network impact of a large distributed system.">10. On blind mice and the elephant: understanding the network impact of a large distributed system.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018450">Paper Link</a>】    【Pages】:110-121</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/o/Otto:John_S=">John S. Otto</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/S=aacute=nchez:Mario_A=">Mario A. Sánchez</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Choffnes:David_R=">David R. Choffnes</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bustamante:Fabi=aacute=n_E=">Fabián E. Bustamante</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Siganos:Georgos">Georgos Siganos</a></p>
+<p>【Abstract】:
+A thorough understanding of the network impact of emerging large-scale distributed systems -- where traffic flows and what it costs -- must encompass users' behavior, the traffic they generate and the topology over which that traffic flows. In the case of BitTorrent, however, previous studies have been limited by narrow perspectives that restrict such analysis. This paper presents a comprehensive view of BitTorrent, using data from a representative set of 500,000 users sampled over a two year period, located in 169 countries and 3,150 networks. This unique perspective captures unseen trends and reveals several unexpected features of the largest peer-to-peer system. For instance, over the past year total BitTorrent traffic has increased by 12%, driven by 25% increases in per-peer hourly download volume despite a 10% decrease in the average number of online peers. We also observe stronger diurnal usage patterns and, surprisingly given the bandwidth-intensive nature of the application, a close alignment between these patterns and overall traffic. Considering the aggregated traffic across access links, this has potential implications on BitTorrent-associated costs for Internet Service Providers (ISPs). Using data from a transit ISP, we find a disproportionately large impact on a commonly used burstable (95th-percentile) billing model. Last, when examining BitTorrent traffic's paths, we find that for over half its users, most network traffic never reaches large transit networks, but is instead carried by small transit ISPs. This raises questions on the effectiveness of most in-network monitoring systems to capture trends on peer-to-peer traffic and further motivates our approach.</p>
+<p>【Keywords】:
+evaluation; internet-scale systems; peer-to-peer</p>
+<h3 id="11. Predicting and tracking internet path changes.">11. Predicting and tracking internet path changes.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018451">Paper Link</a>】    【Pages】:122-133</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cunha:=Iacute=talo">Ítalo Cunha</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Teixeira:Renata">Renata Teixeira</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Veitch:Darryl">Darryl Veitch</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Diot:Christophe">Christophe Diot</a></p>
+<p>【Abstract】:
+This paper investigates to what extent it is possible to use traceroute-style probing for accurately tracking Internet path changes. When the number of paths is large, the usual traceroute based approach misses many path changes because it probes all paths equally. Based on empirical observations, we argue that monitors can optimize probing according to the likelihood of path changes. We design a simple predictor of path changes using a nearest neighbor model. Although predicting path changes is not very accurate, we show that it can be used to improve probe targeting. Our path tracking method, called DTrack, detects up to two times more path changes than traditional probing, with lower detection delay, as well as providing complete load-balancer information.</p>
+<p>【Keywords】:
+path changes; prediction; topology mapping; tracking</p>
+<h3 id="12. Broadband internet performance: a view from the gateway.">12. Broadband internet performance: a view from the gateway.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018452">Paper Link</a>】    【Pages】:134-145</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sundaresan:Srikanth">Srikanth Sundaresan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Donato:Walter_de">Walter de Donato</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Feamster:Nick">Nick Feamster</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Teixeira:Renata">Renata Teixeira</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Crawford:Sam">Sam Crawford</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pescap=egrave=:Antonio">Antonio Pescapè</a></p>
+<p>【Abstract】:
+We present the first study of network access link performance measured directly from home gateway devices. Policymakers, ISPs, and users are increasingly interested in studying the performance of Internet access links. Because of many confounding factors in a home network or on end hosts, however, thoroughly understanding access network performance requires deploying measurement infrastructure in users' homes as gateway devices. In conjunction with the Federal Communication Commission's study of broadband Internet access in the United States, we study the throughput and latency of network access links using longitudinal measurements from nearly 4,000 gateway devices across 8 ISPs from a deployment of over 4,200 devices. We study the performance users achieve and how various factors ranging from the user's choice of modem to the ISP's traffic shaping policies can affect performance. Our study yields many important findings about the characteristics of existing access networks. Our findings also provide insights into the ways that access network performance should be measured and presented to users, which can help inform ongoing broader efforts to benchmark the performance of access networks.</p>
+<p>【Keywords】:
+access networks; benchmarking; bismark; broadband networks</p>
+<h2 id="Wireless    3">Wireless    3</h2>
+<h3 id="13. Random access heterogeneous MIMO networks.">13. Random access heterogeneous MIMO networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018454">Paper Link</a>】    【Pages】:146-157</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lin:Kate_Ching=Ju">Kate Ching-Ju Lin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gollakota:Shyamnath">Shyamnath Gollakota</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Katabi:Dina">Dina Katabi</a></p>
+<p>【Abstract】:
+This paper presents the design and implementation of 802.11n+, a fully distributed random access protocol for MIMO networks. 802.11n+ allows nodes that differ in the number of antennas to contend not just for time, but also for the degrees of freedom provided by multiple antennas. We show that even when the medium is already occupied by some nodes, nodes with more antennas can transmit concurrently without harming the ongoing transmissions. Furthermore, such nodes can contend for the medium in a fully distributed way. Our testbed evaluation shows that even for a small network with three competing node pairs, the resulting system about doubles the average network throughput. It also maintains the random access nature of today's 802.11n networks.</p>
+<p>【Keywords】:
+interference alignment; interference nulling; mimo</p>
+<h3 id="14. Strider: automatic rate adaptation and collision handling.">14. Strider: automatic rate adaptation and collision handling.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018455">Paper Link</a>】    【Pages】:158-169</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gudipati:Aditya">Aditya Gudipati</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Katti:Sachin">Sachin Katti</a></p>
+<p>【Abstract】:
+This paper presents the design, implementation and evaluation of Strider, a system that automatically achieves almost the optimal rate adaptation without incurring any overhead. The key component in Strider is a novel code that has two important properties: it is rateless and collision-resilient. First, in time-varying wireless channels, Strider's rateless code allows a sender to effectively achieve almost the optimal bitrate, without knowing how the channel state varies. Second, Strider's collision-resilient code allows a receiver to decode both packets from collisions, and achieves the same throughput as the collision-free scheduler. We show via theoretical analysis that Strider achieves Shannon capacity for Gaussian channels, and our empirical evaluation shows that Strider outperforms SoftRate, a state of the art rate adaptation technique by 70% in mobile scenarios and by upto 2.8× in contention scenarios.</p>
+<p>【Keywords】:
+collision decoding; hidden terminals; rate adaptation; rateless coding</p>
+<h3 id="15. Clearing the RF smog: making 802.11n robust to cross-technology interference.">15. Clearing the RF smog: making 802.11n robust to cross-technology interference.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018456">Paper Link</a>】    【Pages】:170-181</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gollakota:Shyamnath">Shyamnath Gollakota</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Adib:Fadel">Fadel Adib</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Katabi:Dina">Dina Katabi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Seshan:Srinivasan">Srinivasan Seshan</a></p>
+<p>【Abstract】:
+Recent studies show that high-power cross-technology interference is becoming a major problem in today's 802.11 networks. Devices like baby monitors and cordless phones can cause a wireless LAN to lose connectivity. The existing approach for dealing with such high-power interferers makes the 802.11 network switch to a different channel; yet the ISM band is becoming increasingly crowded with diverse technologies, and hence many 802.11 access points may not find an interference-free channel. This paper presents TIMO, a MIMO design that enables 802.11n to communicate in the presence of high-power cross-technology interference. Unlike existing MIMO designs, however, which require all concurrent transmissions to belong to the same technology, TIMO can exploit MIMO capabilities to decode in the presence of a signal from a different technology, hence enabling diverse technologies to share the same frequency band. We implement a prototype of TIMO in GNURadio-USRP2 and show that it enables 802.11n to communicate in the presence of interference from baby monitors, cordless phones, and microwave ovens, transforming scenarios with a complete loss of connectivity to operational networks.</p>
+<p>【Keywords】:
+cognitive mimo; cross-technology interference</p>
+<h2 id="Network modeling    3">Network modeling    3</h2>
+<h3 id="16. Design space analysis for modeling incentives in distributed systems.">16. Design space analysis for modeling incentives in distributed systems.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018458">Paper Link</a>】    【Pages】:182-193</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Rahman:Rameez">Rameez Rahman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vink=oacute=:Tam=aacute=s">Tamás Vinkó</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hales:David">David Hales</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pouwelse:Johan_A=">Johan A. Pouwelse</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sips:Henk_J=">Henk J. Sips</a></p>
+<p>【Abstract】:
+Distributed systems without a central authority, such as peer-to-peer (P2P) systems, employ incentives to encourage nodes to follow the prescribed protocol. Game theoretic analysis is often used to evaluate incentives in such systems. However, most game-theoretic analyses of distributed systems do not adequately model the repeated interactions of nodes inherent in such systems. We present a game-theoretic analysis of a popular P2P protocol, Bit-Torrent, that models the repeated interactions in such protocols. We also note that an analytical approach for modeling incentives is often infeasible given the complicated nature of most deployed protocols. In order to comprehensively model incentives in complex protocols, we propose a simulation-based method, which we call Design Space Analysis (DSA). DSA provides a tractable analysis of competing protocol variants within a detailed design space. We apply DSA to P2P file swarming systems. With extensive simulations we analyze a wide-range of protocol variants and gain insights into their robustness and performance. To validate these results and to demonstrate the efficacy of DSA, we modify an instrumented BitTorrent client and evaluate protocols discovered using DSA. We show that they yield higher system performance and robustness relative to the reference implementation.</p>
+<p>【Keywords】:
+design space analysis; game theory; incentive systems; robustness</p>
+<h3 id="17. How many tiers?: pricing in the internet transit market.">17. How many tiers?: pricing in the internet transit market.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018459">Paper Link</a>】    【Pages】:194-205</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/v/Valancius:Vytautas">Vytautas Valancius</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lumezanu:Cristian">Cristian Lumezanu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Feamster:Nick">Nick Feamster</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Johari:Ramesh">Ramesh Johari</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vazirani:Vijay_V=">Vijay V. Vazirani</a></p>
+<p>【Abstract】:
+ISPs are increasingly selling "tiered" contracts, which offer Internet connectivity to wholesale customers in bundles, at rates based on the cost of the links that the traffic in the bundle is traversing. Although providers have already begun to implement and deploy tiered pricing contracts, little is known about how to structure them. While contracts that sell connectivity on finer granularities improve market efficiency, they are also more costly for ISPs to implement and more difficult for customers to understand. Our goal is to analyze whether current tiered pricing practices in the wholesale transit market yield optimal profits for ISPs and whether better bundling strategies might exist. In the process, we deliver two contributions: 1) we develop a novel way of mapping traffic and topology data to a demand and cost model, and 2) we fit this model on three large real-world networks: an European transit ISP, a content distribution network, and an academic research network, and run counterfactuals to evaluate the effects of different bundling strategies. Our results show that the common ISP practice of structuring tiered contracts according to the cost of carrying the traffic flows (e.g., offering a discount for traffic that is local) can be suboptimal and that dividing contracts based on both traffic demand and the cost of carrying it into only three or four tiers yields near-optimal profit for the ISP.</p>
+<p>【Keywords】:
+bandwidth pricing; network economics</p>
+<h3 id="18. The evolution of layered protocol stacks leads to an hourglass-shaped architecture.">18. The evolution of layered protocol stacks leads to an hourglass-shaped architecture.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018460">Paper Link</a>】    【Pages】:206-217</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Akhshabi:Saamer">Saamer Akhshabi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dovrolis:Constantine">Constantine Dovrolis</a></p>
+<p>【Abstract】:
+The Internet protocol stack has a layered architecture that resembles an hourglass. The lower and higher layers tend to see frequent innovations, while the protocols at the waist of the hourglass appear to be "ossified". We propose EvoArch, an abstract model for studying protocol stacks and their evolution. EvoArch is based on a few principles about layered network architectures and their evolution in a competitive environment where protocols acquire value based on their higher layer applications and compete with other protocols at the same layer. EvoArch produces an hourglass structure that is similar to the Internet architecture from general initial conditions and in a robust manner. It also suggests a plausible explanation why some protocols, such as TCP or IP, managed to survive much longer than most other protocols at the same layers. Furthermore, it suggests ways to design more competitive new protocols and more evolvable future Internet architectures.</p>
+<p>【Keywords】:
+evolution; evolutionary kernels; future internet; internet architecture; layering; network science</p>
+<h2 id="Neat tricks    2">Neat tricks    2</h2>
+<h3 id="19. What's the difference?: efficient set reconciliation without prior context.">19. What's the difference?: efficient set reconciliation without prior context.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018462">Paper Link</a>】    【Pages】:218-229</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/e/Eppstein:David">David Eppstein</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Goodrich:Michael_T=">Michael T. Goodrich</a> ; <a href="http://dblp.uni-trier.de/pers/hd/u/Uyeda:Frank">Frank Uyeda</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Varghese:George">George Varghese</a></p>
+<p>【Abstract】:
+We describe a synopsis structure, the Difference Digest, that allows two nodes to compute the elements belonging to the set difference in a single round with communication overhead proportional to the size of the difference times the logarithm of the keyspace. While set reconciliation can be done efficiently using logs, logs require overhead for every update and scale poorly when multiple users are to be reconciled. By contrast, our abstraction assumes no prior context and is useful in networking and distributed systems applications such as trading blocks in a peer-to-peer network, and synchronizing link-state databases after a partition. Our basic set-reconciliation method has a similarity with the peeling algorithm used in Tornado codes [6], which is not surprising, as there is an intimate connection between set difference and coding. Beyond set reconciliation, an essential component in our Difference Digest is a new estimator for the size of the set difference that outperforms min-wise sketches [3] for small set differences. Our experiments show that the Difference Digest is more efficient than prior approaches such as Approximate Reconciliation Trees [5] and Characteristic Polynomial Interpolation [17]. We use Difference Digests to implement a generic KeyDiff service in Linux that runs over TCP and returns the sets of keys that differ between machines.</p>
+<p>【Keywords】:
+difference digest; invertible bloom filter; set difference</p>
+<h3 id="20. DOF: a local wireless information plane.">20. DOF: a local wireless information plane.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018463">Paper Link</a>】    【Pages】:230-241</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hong:Steven_Siying">Steven Siying Hong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Katti:Sachin_Rajsekhar">Sachin Rajsekhar Katti</a></p>
+<p>【Abstract】:
+The ability to detect what unlicensed radios are operating in a neigh borhood, their spectrum occupancies and the spatial directions their signals are traversing is a fundamental primitive needed by many applications, ranging from smart radios to coexistence to network management to security. In this paper we present DOF, a detector that in a single framework accurately estimates all three parameters. DOF builds on the insight that in most wireless protocols, there are hidden repeating patterns in the signals that can be used to construct unique signatures, and accurately estimate signal types and their spectral and spatial parameters. We show via experimental evaluation in an indoor testbed that DOF is robust and accurate, it achieves greater than 85% accuracy even when the SNRs of the detected signals are as low as 0 dB, and even when there are multiple interfering signals present. To demonstrate the benefits of DOF, we design and implement a preliminary prototype of a smart radio that operates on top of DOF, and show experimentally that it provides a 80% increase in throughput over Jello, the best known prior implementation, while causing less than 10% performance drop for co-existing WiFi and Zigbee radios.</p>
+<p>【Keywords】:
+smart radios; wireless degrees of freedom</p>
+<h2 id="Data center network performance    3">Data center network performance    3</h2>
+<h3 id="21. Towards predictable datacenter networks.">21. Towards predictable datacenter networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018465">Paper Link</a>】    【Pages】:242-253</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Ballani:Hitesh">Hitesh Ballani</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Costa:Paolo">Paolo Costa</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Karagiannis:Thomas">Thomas Karagiannis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rowstron:Antony_I=_T=">Antony I. T. Rowstron</a></p>
+<p>【Abstract】:
+The shared nature of the network in today's multi-tenant datacenters implies that network performance for tenants can vary significantly. This applies to both production datacenters and cloud environments. Network performance variability hurts application performance which makes tenant costs unpredictable and causes provider revenue loss. Motivated by these factors, this paper makes the case for extending the tenant-provider interface to explicitly account for the network. We argue this can be achieved by providing tenants with a virtual network connecting their compute instances. To this effect, the key contribution of this paper is the design of virtual network abstractions that capture the trade-off between the performance guarantees offered to tenants, their costs and the provider revenue. To illustrate the feasibility of virtual networks, we develop Oktopus, a system that implements the proposed abstractions. Using realistic, large-scale simulations and an Oktopus deployment on a 25-node two-tier testbed, we demonstrate that the use of virtual networks yields significantly better and more predictable tenant performance. Further, using a simple pricing model, we find that the our abstractions can reduce tenant costs by up to 74% while maintaining provider revenue neutrality.</p>
+<p>【Keywords】:
+allocation; bandwidth; datacenter; virtual network</p>
+<h3 id="22. DevoFlow: scaling flow management for high-performance networks.">22. DevoFlow: scaling flow management for high-performance networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018466">Paper Link</a>】    【Pages】:254-265</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Curtis:Andrew_R=">Andrew R. Curtis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mogul:Jeffrey_C=">Jeffrey C. Mogul</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tourrilhes:Jean">Jean Tourrilhes</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yalagandula:Praveen">Praveen Yalagandula</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sharma:Puneet">Puneet Sharma</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Banerjee:Sujata">Sujata Banerjee</a></p>
+<p>【Abstract】:
+OpenFlow is a great concept, but its original design imposes excessive overheads. It can simplify network and traffic management in enterprise and data center environments, because it enables flow-level control over Ethernet switching and provides global visibility of the flows in the network. However, such fine-grained control and visibility comes with costs: the switch-implementation costs of involving the switch's control-plane too often and the distributed-system costs of involving the OpenFlow controller too frequently, both on flow setups and especially for statistics-gathering. In this paper, we analyze these overheads, and show that OpenFlow's current design cannot meet the needs of high-performance networks. We design and evaluate DevoFlow, a modification of the OpenFlow model which gently breaks the coupling between control and global visibility, in a way that maintains a useful amount of visibility without imposing unnecessary costs. We evaluate DevoFlow through simulations, and find that it can load-balance data center traffic as well as fine-grained solutions, without as much overhead: DevoFlow uses 10--53 times fewer flow table entries at an average switch, and uses 10--42 times fewer control messages.</p>
+<p>【Keywords】:
+data center; flow-based networking; switch design</p>
+<h3 id="23. Improving datacenter performance and robustness with multipath TCP.">23. Improving datacenter performance and robustness with multipath TCP.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018467">Paper Link</a>】    【Pages】:266-277</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Raiciu:Costin">Costin Raiciu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Barr=eacute=:S=eacute=bastien">Sébastien Barré</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pluntke:Christopher">Christopher Pluntke</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Greenhalgh:Adam">Adam Greenhalgh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wischik:Damon">Damon Wischik</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Handley:Mark">Mark Handley</a></p>
+<p>【Abstract】:
+The latest large-scale data centers offer higher aggregate bandwidth and robustness by creating multiple paths in the core of the net- work. To utilize this bandwidth requires different flows take different paths, which poses a challenge. In short, a single-path transport seems ill-suited to such networks. We propose using Multipath TCP as a replacement for TCP in such data centers, as it can effectively and seamlessly use available bandwidth, giving improved throughput and better fairness on many topologies. We investigate what causes these benefits, teasing apart the contribution of each of the mechanisms used by MPTCP. Using MPTCP lets us rethink data center networks, with a different mindset as to the relationship between transport protocols, rout- ing and topology. MPTCP enables topologies that single path TCP cannot utilize. As a proof-of-concept, we present a dual-homed variant of the FatTree topology. With MPTCP, this outperforms FatTree for a wide range of workloads, but costs the same. In existing data centers, MPTCP is readily deployable leveraging widely deployed technologies such as ECMP. We have run MPTCP on Amazon EC2 and found that it outperforms TCP by a factor of three when there is path diversity. But the biggest benefits will come when data centers are designed for multipath transports.</p>
+<p>【Keywords】:
+data center; mptcp</p>
+<h2 id="Network management -- reasoning and debugging    3">Network management -- reasoning and debugging    3</h2>
+<h3 id="24. NetQuery: a knowledge plane for reasoning about network properties.">24. NetQuery: a knowledge plane for reasoning about network properties.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018469">Paper Link</a>】    【Pages】:278-289</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Shieh:Alan">Alan Shieh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sirer:Emin_G=uuml=n">Emin Gün Sirer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schneider:Fred_B=">Fred B. Schneider</a></p>
+<p>【Abstract】:
+This paper presents the design and implementation of NetQuery, a knowledge plane for federated networks such as the Internet. In such networks, not all administrative domains will generate information that an application can trust and many administrative domains may have restrictive policies on disclosing network information. Thus, both the trustworthiness and accessibility of network information pose obstacles to effective reasoning. NetQuery employs trustworthy computing techniques to facilitate reasoning about the trustworthiness of information contained in the knowledge plane while preserving confidentiality guarantees for operator data. By characterizing information disclosure between operators, NetQuery enables remote verification of advertised claims and contractual stipulations; this enables new applications because network guarantees can span administrative boundaries. We have implemented NetQuery, built several NetQuery-enabled devices, and deployed applications for cloud datacenters, enterprise networks, and the Internet. Simulations, testbed experiments, and a deployment on a departmental network indicate NetQuery can support hundreds of thousands of operations per second and can thus scale to large ISPs.</p>
+<p>【Keywords】:
+knowledge plane; tpm; trustworthy computing</p>
+<h3 id="25. Debugging the data plane with anteater.">25. Debugging the data plane with anteater.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018470">Paper Link</a>】    【Pages】:290-301</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mai:Haohui">Haohui Mai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Khurshid:Ahmed">Ahmed Khurshid</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Agarwal_0001:Rachit">Rachit Agarwal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Caesar:Matthew">Matthew Caesar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Godfrey:Brighten">Brighten Godfrey</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/King:Samuel_Talmadge">Samuel Talmadge King</a></p>
+<p>【Abstract】:
+Diagnosing problems in networks is a time-consuming and error-prone process. Existing tools to assist operators primarily focus on analyzing control plane configuration. Configuration analysis is limited in that it cannot find bugs in router software, and is harder to generalize across protocols since it must model complex configuration languages and dynamic protocol behavior. This paper studies an alternate approach: diagnosing problems through static analysis of the data plane. This approach can catch bugs that are invisible at the level of configuration files, and simplifies unified analysis of a network across many protocols and implementations. We present Anteater, a tool for checking invariants in the data plane. Anteater translates high-level network invariants into boolean satisfiability problems (SAT), checks them against network state using a SAT solver, and reports counterexamples if violations have been found. Applied to a large university network, Anteater revealed 23 bugs, including forwarding loops and stale ACL rules, with only five false positives. Nine of these faults are being fixed by campus network operators.</p>
+<p>【Keywords】:
+boolean satisfiability; data plane analysis; network troubleshooting</p>
+<h3 id="26. Demystifying configuration challenges and trade-offs in network-based ISP services.">26. Demystifying configuration challenges and trade-offs in network-based ISP services.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018471">Paper Link</a>】    【Pages】:302-313</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Benson:Theophilus">Theophilus Benson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Akella:Aditya">Aditya Akella</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shaikh:Aman">Aman Shaikh</a></p>
+<p>【Abstract】:
+ISPs are increasingly offering a variety of network-based services such as VPN, VPLS, VoIP, Virtual-Wire and DDoS protection. Although both enterprise and residential networks are rapidly adopting these services, there is little systematic work on the design challenges and trade-offs ISPs face in providing them. The goal of our paper is to understand the complexity underlying the layer-3 design of services and to highlight potential factors that hinder their introduction, evolution and management. Using daily snapshots of configuration and device metadata collected from a tier-1 ISP, we examine the logical dependencies and special cases in device configurations for five different network-based services. We find: (1) the design of the core data-plane is usually service-agnostic and simple, but the control-planes for different services become more complex as services evolve; (2) more crucially, the configuration at the service edge inevitably becomes more complex over time, potentially hindering key management issues such as service upgrades and troubleshooting; and (3) there are key service-specific issues that also contribute significantly to the overall design complexity. Thus, the high prevalent complexity could impede the adoption and growth of network-based services. We show initial evidence that some of the complexity can be mitigated systematically.</p>
+<p>【Keywords】:
+configuration analysis; network modeling; network services</p>
+<h2 id="ISPs and wide-area networking    3">ISPs and wide-area networking    3</h2>
+<h3 id="27. Seamless network-wide IGP migrations.">27. Seamless network-wide IGP migrations.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018473">Paper Link</a>】    【Pages】:314-325</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/v/Vanbever:Laurent">Laurent Vanbever</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vissicchio:Stefano">Stefano Vissicchio</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pelsser:Cristel">Cristel Pelsser</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fran=ccedil=ois:Pierre">Pierre François</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bonaventure:Olivier">Olivier Bonaventure</a></p>
+<p>【Abstract】:
+Network-wide migrations of a running network, such as the replacement of a routing protocol or the modification of its configuration, can improve the performance, scalability, manageability, and security of the entire network. However, such migrations are an important source of concerns for network operators as the reconfiguration campaign can lead to long and service-affecting outages. In this paper, we propose a methodology which addresses the problem of seamlessly modifying the configuration of commonly used link-state Interior Gateway Protocols (IGP). We illustrate the benefits of our methodology by considering several migration scenarios, including the addition or the removal of routing hierarchy in an existing IGP and the replacement of one IGP with another. We prove that a strict operational ordering can guarantee that the migration will not create IP transit service outages. Although finding a safe ordering is NP complete, we describe techniques which efficiently find such an ordering and evaluate them using both real-world and inferred ISP topologies. Finally, we describe the implementation of a provisioning system which automatically performs the migration by pushing the configurations on the routers in the appropriate order, while monitoring the entire migration process.</p>
+<p>【Keywords】:
+configuration; design guidelines; interior gateway protocol (igp); migration; summarization</p>
+<h3 id="28. A content propagation metric for efficient content distribution.">28. A content propagation metric for efficient content distribution.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018474">Paper Link</a>】    【Pages】:326-337</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Peterson:Ryan_S=">Ryan S. Peterson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wong:Bernard">Bernard Wong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sirer:Emin_G=uuml=n">Emin Gün Sirer</a></p>
+<p>【Abstract】:
+Efficient content distribution in large networks comprising datacenters, end hosts, and distributed in-network caches is a difficult problem. Existing systems rely on mechanisms and metrics that fail to effectively utilize all available sources of bandwidth in the network. This paper presents a novel metric, called the Content Propagation Metric (CPM), for quantitatively evaluating the marginal benefit of available bandwidth to competing consumers, enabling efficient utilization of the bandwidth resource. The metric is simple to implement, imposes only a modest overhead, and can be retrofitted easily into existing content distribution systems. We have designed and implemented a high-performance content distribution system, called V-Formation, based on the CPM. The CPM guides V-Formation toward a global allocation of bandwidth that maximizes the aggregate download bandwidth of consumers. Results from a PlanetLab deployment and extensive simulations show that V-Formation achieves high aggregate bandwidth and that the CPM enables hosts to converge quickly on a stable allocation of resources in a wide range of deployment scenarios.</p>
+<p>【Keywords】:
+content distribution; hybrid; peer-to-peer</p>
+<h3 id="29. Insomnia in the access: or how to curb access network related energy consumption.">29. Insomnia in the access: or how to curb access network related energy consumption.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018475">Paper Link</a>】    【Pages】:338-349</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Llairo:Eduard_Goma">Eduard Goma Llairo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Canini:Marco">Marco Canini</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Toledo:Alberto_L=oacute=pez">Alberto López Toledo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Laoutaris:Nikolaos">Nikolaos Laoutaris</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kostic:Dejan">Dejan Kostic</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rodriguez:Pablo">Pablo Rodriguez</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stanojevic:Rade">Rade Stanojevic</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Valentin:Pablo_Yag=uuml=e">Pablo Yagüe Valentin</a></p>
+<p>【Abstract】:
+Access networks include modems, home gateways, and DSL Access Multiplexers (DSLAMs), and are responsible for 70-80% of total network-based energy consumption. In this paper, we take an in-depth look at the problem of greening access networks, identify root problems, and propose practical solutions for their user- and ISP-parts. On the user side, the combination of continuous light traffic and lack of alternative paths condemns gateways to being powered most of the time despite having Sleep-on-Idle (SoI) capabilities. To address this, we introduce Broadband Hitch-Hiking (BH2), that takes advantage of the overlap of wireless networks to aggregate user traffic in as few gateways as possible. In current urban settings BH2 can power off 65-90% of gateways. Powering off gateways permits the remaining ones to synchronize at higher speeds due to reduced crosstalk from having fewer active lines. Our tests reveal speedup up to 25%. On the ISP side, we propose introducing simple inexpensive switches at the distribution frame for batching active lines to a subset of cards letting the remaining ones sleep. Overall, our results show an 80% energy savings margin in access networks. The combination of B2 and switching gets close to this margin, saving 66% on average.</p>
+<p>【Keywords】:
+broadband access networks; energy</p>
+<h2 id="Network measurement II -- what's going on?    3">Network measurement II -- what's going on?    3</h2>
+<h3 id="30. Understanding network failures in data centers: measurement, analysis, and implications.">30. Understanding network failures in data centers: measurement, analysis, and implications.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018477">Paper Link</a>】    【Pages】:350-361</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gill:Phillipa">Phillipa Gill</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jain:Navendu">Navendu Jain</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nagappan:Nachiappan">Nachiappan Nagappan</a></p>
+<p>【Abstract】:
+We present the first large-scale analysis of failures in a data center network. Through our analysis, we seek to answer several fundamental questions: which devices/links are most unreliable, what causes failures, how do failures impact network traffic and how effective is network redundancy? We answer these questions using multiple data sources commonly collected by network operators. The key findings of our study are that (1) data center networks show high reliability, (2) commodity switches such as ToRs and AggS are highly reliable, (3) load balancers dominate in terms of failure occurrences with many short-lived software related faults,(4) failures have potential to cause loss of many small packets such as keep alive messages and ACKs, and (5) network redundancy is only 40% effective in reducing the median impact of failure.</p>
+<p>【Keywords】:
+data centers; network reliability</p>
+<h3 id="31. Understanding the impact of video quality on user engagement.">31. Understanding the impact of video quality on user engagement.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018478">Paper Link</a>】    【Pages】:362-373</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dobrian:Florin">Florin Dobrian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sekar:Vyas">Vyas Sekar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Awan:Asad">Asad Awan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stoica:Ion">Ion Stoica</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Joseph:Dilip_Antony">Dilip Antony Joseph</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Ganjam:Aditya">Aditya Ganjam</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhan:Jibin">Jibin Zhan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang_0001:Hui">Hui Zhang</a></p>
+<p>【Abstract】:
+As the distribution of the video over the Internet becomes main- stream and its consumption moves from the computer to the TV screen, user expectation for high quality is constantly increasing. In this context, it is crucial for content providers to understand if and how video quality affects user engagement and how to best invest their resources to optimize video quality. This paper is a first step towards addressing these questions. We use a unique dataset that spans different content types, including short video on demand (VoD), long VoD, and live content from popular video con- tent providers. Using client-side instrumentation, we measure quality metrics such as the join time, buffering ratio, average bitrate, rendering quality, and rate of buffering events. We quantify user engagement both at a per-video (or view) level and a per-user (or viewer) level. In particular, we find that the percentage of time spent in buffering (buffering ratio) has the largest impact on the user engagement across all types of content. However, the magnitude of this impact depends on the content type, with live content being the most impacted. For example, a 1% increase in buffering ratio can reduce user engagement by more than three minutes for a 90-minute live video event. We also see that the average bitrate plays a significantly more important role in the case of live content than VoD content.</p>
+<p>【Keywords】:
+engagement; measurement; video quality</p>
+<h3 id="32. An untold story of middleboxes in cellular networks.">32. An untold story of middleboxes in cellular networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018479">Paper Link</a>】    【Pages】:374-385</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Zhaoguang">Zhaoguang Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/q/Qian:Zhiyun">Zhiyun Qian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Qiang">Qiang Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mao:Zhuoqing_Morley">Zhuoqing Morley Mao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Ming">Ming Zhang</a></p>
+<p>【Abstract】:
+The use of cellular data networks is increasingly popular as network coverage becomes more ubiquitous and many diverse user-contributed mobile applications become available. The growing cellular traffic demand means that cellular network carriers are facing greater challenges to provide users with good network performance and energy efficiency, while protecting networks from potential attacks. To better utilize their limited network resources while securing the network and protecting client devices the carriers have already deployed various network policies that influence traffic behavior. Today, these policies are mostly opaque, though they directly impact application designs and may even introduce network vulnerabilities. We present NetPiculet, the first tool that unveils carriers' NAT and firewall policies by conducting intelligent measurement. By running NetPiculet on the major U.S. cellular providers as well as deploying it as a smartphone application in the wild covering more than 100 cellular ISPs, we identified the key NAT and firewall policies which have direct implications on performance, energy, and security. For example, NAT boxes and firewalls set timeouts for idle TCP connections, which sometimes cause significant energy waste on mobile devices. Although most carriers today deploy sophisticated firewalls, they are still vulnerable to various attacks such as battery draining and denial of service. These findings can inform developers in optimizing the interaction between mobile applications and cellular networks and also guide carriers in improving their network configurations.</p>
+<p>【Keywords】:
+cellular data network; firewall; middlebox; nat; tcp performance</p>
+<h2 id="SIGCOMM 2011 posters session 1    12">SIGCOMM 2011 posters session 1    12</h2>
+<h3 id="33. Automatic inference of movements from contact histories.">33. Automatic inference of movements from contact histories.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018481">Paper Link</a>】    【Pages】:386-387</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Pengcheng">Pengcheng Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gao:Zhaoyu">Zhaoyu Gao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Xinhui">Xinhui Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Yujiao">Yujiao Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Haojin">Haojin Zhu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Kenny_Qili">Kenny Qili Zhu</a></p>
+<p>【Abstract】:
+This paper introduces a new security problem in which individuals movement traces (in terms of accurate routes) can be inferred from just a series of mutual contact records and the map of the area in which they roam around. Such contact records may be obtained through the bluetooth communication on mobile phones. We present an approach that solve the trace inference problem in reasonable time, and analyze some properties of the inference algorithm.</p>
+<p>【Keywords】:
+contacts; inference; location privacy; traces</p>
+<h3 id="34. Towards a fully distributed n-tuple store.">34. Towards a fully distributed n-tuple store.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018482">Paper Link</a>】    【Pages】:388-389</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Shvartzshnaider:Yan">Yan Shvartzshnaider</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Ott:Maximilian">Maximilian Ott</a></p>
+<p>【Abstract】:
+We present our work towards building a novel distributed n-tuple store by extending the Kademlia DHT [1] algorithm to support n dimensional keys as well as an multi get operator, where some of the dimensions of the "query" key can be left unspecified.</p>
+<p>【Keywords】:
+distributed pattern matching; kademlia</p>
+<h3 id="35. ASAP: a low-latency transport layer.">35. ASAP: a low-latency transport layer.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018483">Paper Link</a>】    【Pages】:390-391</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Qingxi">Qingxi Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Wenxuan">Wenxuan Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Caesar:Matthew">Matthew Caesar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Godfrey:Brighten">Brighten Godfrey</a></p>
+<p>【Abstract】:
+For interactive networked applications like web browsing, every round-trip time (RTT) matters. We introduce ASAP, a new naming and transport protocol that reduces latency by shortcutting DNS requests and eliminating TCP's three-way handshake, while ensuring the key security property of verifiable provenance of client requests. ASAP eliminates between one and two RTTs, cutting the delay of small requests by up to two-thirds.</p>
+<p>【Keywords】:
+dns; latency; security; tcp</p>
+<h3 id="36. What can free money tell us on the virtual black market?">36. What can free money tell us on the virtual black market?</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018484">Paper Link</a>】    【Pages】:392-393</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Woo:Kyungmoon">Kyungmoon Woo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kwon:Hyukmin">Hyukmin Kwon</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Hyunchul">Hyunchul Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Chong=kwon">Chong-kwon Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Huy_Kang">Huy Kang Kim</a></p>
+<p>【Abstract】:
+"Real money trading" or "Gold farming" refers to a set of illicit practices for gathering and distributing virtual goods in online games for real money. Unlike previous work, we use network-wide economic interactions among in-game characters as a lens to monitor, detect and identify gold farming networks. Our work is based on a set of real in-game trade activity logs collected for one month in year 2010 from the world's second largest MMORPG called AION (with 3.4 million subscribers). This is the first work that empirically (i) shows that "free money network" is a promising measure/approximation for detecting and characterizing gold farming networks, and (ii) measures the size of the free money net and in-game virtual economy in a large-scale MMORPG in terms of the cash flow.</p>
+<p>【Keywords】:
+gold farming; onlinr game security; real money trading</p>
+<h3 id="37. LoKI: location-based PKI for social networks.">37. LoKI: location-based PKI for social networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018485">Paper Link</a>】    【Pages】:394-395</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Baden:Randy">Randy Baden</a></p>
+<p>【Abstract】:
+Decentralized online social networks (OSNs) typically rely on the existence of a public key infrastructure (PKI), but certificate authorities (CAs) cannot scalably identify all of the members of an OSN. Our system, LoKI, uses the ubiquity of mobile devices to exchange secrets during real-world meetings that can be used for the purposes of identification in-band, allowing each user to easily discover the keys of many one-hop relationships in the OSN. We measure the frequency of such real-world meetings among OSN users with data sets crawled from Facebook, Twitter, and Foursquare. We quantify the resources consumed on the mobile devices in terms of storage and battery based on traces that reveal the number of mobile devices expected to be seen under normal activity. Lastly, we describe a rendezvous service that enables background peer-to-peer (P2P) communication on non-rooted Android phones, which we believe to be a practical and necessary service for many mobile peer-to-peer systems.</p>
+<p>【Keywords】:
+location; mobility; online social networks; public key infrastructure</p>
+<h3 id="38. "Roto-Rooting" your router: solution against new potential DoS attacks on modern routers.">38. "Roto-Rooting" your router: solution against new potential DoS attacks on modern routers.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018486">Paper Link</a>】    【Pages】:396-397</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chasaki:Danai">Danai Chasaki</a></p>
+<p>【Abstract】:
+Our work presents the first practical example of an entirely new class of network attacks - attacks that target the network infrastructure. Modern routers use general purpose programmable processors, and the software used for packet processing on these systems is potentially vulnerable to remote exploits. We describe a specific attack that can launch a devastating denial-of-service attack by sending just a single packet. We also show that there are effective defense techniques, based on processor monitoring, that can help in detecting and avoiding such attacks.</p>
+<p>【Keywords】:
+embedded processors; next-generation internet</p>
+<h3 id="39. Limiting large-scale crawls of social networking sites.">39. Limiting large-scale crawls of social networking sites.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018487">Paper Link</a>】    【Pages】:398-399</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mondal:Mainack">Mainack Mondal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Viswanath:Bimal">Bimal Viswanath</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Clement:Allen">Allen Clement</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Druschel:Peter">Peter Druschel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gummadi:P=_Krishna">P. Krishna Gummadi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mislove:Alan">Alan Mislove</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Post:Ansley">Ansley Post</a></p>
+<p>【Abstract】:
+Online social networking sites (OSNs) like Facebook and Orkut contain personal data of millions of users. Many OSNs view this data as a valuable asset that is at the core of their business model. Both OSN users and OSNs have strong incentives to restrict large scale crawls of this data. OSN users want to protect their privacy and OSNs their business interest. Traditional defenses against crawlers involve rate- limiting browsing activity per user account. These defense schemes, however, are vulnerable to Sybil attacks, where a crawler creates a large number of fake user accounts. In this paper, we propose Genie, a system that can be deployed by OSN operators to defend against Sybil crawlers. Genie is based on a simple yet powerful insight: the social network itself can be leveraged to defend against Sybil crawlers. We first present Genie's design and then discuss how Genie can limit crawlers while allowing browsing of user profiles by normal users.</p>
+<p>【Keywords】:
+social network-based sybil defense; social networks; sybil attacks</p>
+<h3 id="40. Designing a testbed for large-scale distributed systems.">40. Designing a testbed for large-scale distributed systems.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018488">Paper Link</a>】    【Pages】:400-401</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Leng:Christof">Christof Leng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lehn:Max">Max Lehn</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rehner:Robert">Robert Rehner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Buchmann:Alejandro_P=">Alejandro P. Buchmann</a></p>
+<p>【Abstract】:
+Different evaluation methods for distributed systems like prototyping, simulation and emulation have different tradeoffs. We present a testbed for Internet applications that supports real-network prototypes and multiple simulators with unchanged application code. To ensure maximum portability between runtimes, a compact but flexible system interface is defined.</p>
+<p>【Keywords】:
+event-based simulator; network simulator; peer-to-peer</p>
+<h3 id="41. Spider: improving mobile networking with concurrent wi-fi connections.">41. Spider: improving mobile networking with concurrent wi-fi connections.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018489">Paper Link</a>】    【Pages】:402-403</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Soroush:Hamed">Hamed Soroush</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gilbert:Peter">Peter Gilbert</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Banerjee:Nilanjan">Nilanjan Banerjee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Corner:Mark_D=">Mark D. Corner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Levine:Brian_Neil">Brian Neil Levine</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cox:Landon_P=">Landon P. Cox</a></p>
+<p>【Abstract】:
+We investigate attempting concurrent connections to multiple Wi-Fi access points (APs) from highly mobile clients. Previous multi-AP solutions are limited to stationary wireless clients and do not take into account a myriad of mobile factors. We show that connection duration, AP response times, channel scheduling, available and offered bandwidth, node speed, and dhcp joins all affect performance. Building on these results, we present a system, Spider, that establishes and maintains concurrent connections to 802.11 APs in a mobile environment. While Spider can manage multiple channels, we demonstrate that it achieves maximum throughput when using multiple APs on a single channel.</p>
+<p>【Keywords】:
+concurrent wi-fi; mobile networks</p>
+<h3 id="42. Covert channels in multiple access protocols.">42. Covert channels in multiple access protocols.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018490">Paper Link</a>】    【Pages】:404-405</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Ahmadzadeh:Seyed_Ali">Seyed Ali Ahmadzadeh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Agnew:Gordon_B=">Gordon B. Agnew</a></p>
+<p>【Abstract】:
+In this paper, the use of structural behavior of communication protocols in designing new covert channels is investigated. In this way, a new covert transmitter is designed based on a modified CSMA protocol that enables the transmitter to embed a covert message in its overt traffic. The proposed scheme provides high covert rate without compromising the stealthiness of the channel.</p>
+<p>【Keywords】:
+covert channel; information hiding; wireless networks</p>
+<h3 id="43. Pomelo: accurate and decentralized shortest-path distance estimation in social graphs.">43. Pomelo: accurate and decentralized shortest-path distance estimation in social graphs.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018491">Paper Link</a>】    【Pages】:406-407</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Zhuo">Zhuo Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Yang">Yang Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Ding:Cong">Cong Ding</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Deng:Beixing">Beixing Deng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Xing">Xing Li</a></p>
+<p>【Abstract】:
+Computing the shortest-path distances between nodes is a key problem in analyzing social graphs. Traditional methods like breadth-first search (BFS) do not scale well with graph size. Recently, a Graph Coordinate System, called Orion, has been proposed to estimate shortest-path distances in a scalable way. Orion uses a landmark-based approach, which does not take account of the shortest-path distances between non-landmark nodes in coordinate calculation. Such biased input for the coordinate system cannot characterize the graph structure well. In this paper, we propose Pomelo, which calculates the graph coordinates in a decentralized manner. Every node in Pomelo computes its shortest-path distances to both nearby neighbors and some random distant neighbors. By introducing the novel partial BFS, the computational overhead of Pomelo is tunable. Our experimental results from different representative social graphs show that Pomelo greatly outperforms Orion in estimation accuracy while maintaining the same computational overhead.</p>
+<p>【Keywords】:
+graph coordinate system; online social network</p>
+<h3 id="44. Dummy rate analysis of buffer constrained chaum mix.">44. Dummy rate analysis of buffer constrained chaum mix.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018492">Paper Link</a>】    【Pages】:408-409</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mishra:Abhishek">Abhishek Mishra</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Venkitasubramaniam:Parv">Parv Venkitasubramaniam</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:
+buffer constraint; chaum mix; dummy rate</p>
+<h2 id="SIGCOMM 2011 posters session 2    12">SIGCOMM 2011 posters session 2    12</h2>
+<h3 id="45. Minimising cell transmit power: towards self-organized resource allocation in OFDMA femtocells.">45. Minimising cell transmit power: towards self-organized resource allocation in OFDMA femtocells.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018494">Paper Link</a>】    【Pages】:410-411</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/L=oacute=pez=P=eacute=rez:David">David López-Pérez</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chu:Xiaoli">Xiaoli Chu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vasilakos:Athanasios_V=">Athanasios V. Vasilakos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Claussen:Holger">Holger Claussen</a></p>
+<p>【Abstract】:
+With the introduction of femtocells, cellular networks are moving from the conventional centralised architecture to a distributed one, where each network cell should make its own radio resource management decisions, while providing inter-cell interference mitigation. However, realising this distributed cellular network architecture is not a trivial task. In this paper, we first introduce a simple self-organisation rule under which a distributed cellular network is able to converge into an efficient resource allocation pattern, then propose a novel resource allocation model taking realistic resource allocation constraints into account, and finally evaluate the performance of the proposed self-organisation rule and resource allocation model using system-level simulations.</p>
+<p>【Keywords】:
+femtocell; interference; resource allocation</p>
+<h3 id="46. Building virtual networks across multiple domains.">46. Building virtual networks across multiple domains.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018495">Paper Link</a>】    【Pages】:412-413</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Werle:Christoph">Christoph Werle</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Papadimitriou:Panagiotis">Panagiotis Papadimitriou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Houidi:Ines">Ines Houidi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Louati:Wajdi">Wajdi Louati</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zeghlache:Djamal">Djamal Zeghlache</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bless:Roland">Roland Bless</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mathy:Laurent">Laurent Mathy</a></p>
+<p>【Abstract】:
+This paper presents a platform for virtual network (VN) provisioning across multiple domains. The platform decomposes VN provisioning into multiple steps to address the implications of limited information disclosure on resource discovery and allocation. A new VN embedding algorithm with simultaneous node and link mapping allows to assign resources within each domain. For inter-domain virtual link setup, we design and realize a signaling protocol that also integrates resource reservations for providing virtual links with Quality-of-Service guarantees. Experimental results show that small VNs can be provisioned within a few seconds.</p>
+<p>【Keywords】:
+network virtualization; platform design; resource provisioning</p>
+<h3 id="47. Multi-relational social networks in a large-scale MMORPG.">47. Multi-relational social networks in a large-scale MMORPG.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018496">Paper Link</a>】    【Pages】:414-415</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Son:Seokshin">Seokshin Son</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kang:Ah_Reum">Ah Reum Kang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Hyunchul">Hyunchul Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kwon:Ted_Taekyoung">Ted Taekyoung Kwon</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Park:Juyong">Juyong Park</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Huy_Kang">Huy Kang Kim</a></p>
+<p>【Abstract】:
+We analyze multi-relational social interaction networks in a large-scale commercial Massively Multiplayer Online Role-Playing Game(MMORPG). Our work is based on data from AION, currently the world's second most-played MMORPG with 3.4 million subscribers as of mid 2010, created and serviced by NCSoft, Inc. We construct and characterize six distinct interactivity networks (Friend, Private Messaging, Party invitation, Trade, Mail, and Shop), each representing diverse player interaction types.</p>
+<p>【Keywords】:
+massively multiplayer online game; quantitative social science; social network analysis</p>
+<h3 id="48. Taming power peaks in mapreduce clusters.">48. Taming power peaks in mapreduce clusters.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018497">Paper Link</a>】    【Pages】:416-417</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Nan">Nan Zhu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rao:Lei">Lei Rao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Xue">Xue Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Jie">Jie Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Guan:Haibin">Haibin Guan</a></p>
+<p>【Abstract】:
+Along with the surging service demands on the cloud, the energy cost of Internet Data Centers (IDCs) is dramatically increasing. Energy management for IDCs is becoming ever more important. A large portion of applications running on data centers are data-intensive applications. MapReduce (and Hadoop) has been one of the mostly deployed frameworks for data-intensive applications. Both academia and industry have been greatly concerned with the problem of how to reduce the energy consumption of IDCs. However the critical power peak problem for MapReduce clusters has been overlooked, which is a new challenge brought by the usage of MapReduce. We elaborate the power peak problem and investigate the cause of the problem in details. Then we design an adaptive approach to regulate power peaks.</p>
+<p>【Keywords】:
+mapreduce; power peak; regulation</p>
+<h3 id="49. Towards scalable and realistic node models for network simulators.">49. Towards scalable and realistic node models for network simulators.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018498">Paper Link</a>】    【Pages】:418-419</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kristiansen:Stein">Stein Kristiansen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Plagemann:Thomas">Thomas Plagemann</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Goebel:Vera">Vera Goebel</a></p>
+<p>【Abstract】:
+Network simulators typically do not include node models. Our studies show that in networks such as mobile networks, the impact of nodes on performance can be significant. Existing techniques to simulate nodes' are not scalable for network simulations, and require a too large modelling effort to be feasible for network research. In this paper, we propose to capture flexible per-protocol performance profiles from real, running systems using instrumentation and traffic benchmarking techniques. By using the obtained profiles as input into an extended scheduler simulator, the behaviour of the node can be accurately reproduced. Since the processing overhead is represented statistically, we preserve scalability and a low modelling overhead.</p>
+<p>【Keywords】:
+linux; manet; multi-threading; network simulation; node model; ns-3; operating system; resource constraints</p>
+<h3 id="50. Revisiting next-hop selection in multipath networks.">50. Revisiting next-hop selection in multipath networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018499">Paper Link</a>】    【Pages】:420-421</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Linden:Simon_van_der">Simon van der Linden</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Detal:Gregory">Gregory Detal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bonaventure:Olivier">Olivier Bonaventure</a></p>
+<p>【Abstract】:
+Multipath routing strategies such as Equal-Cost MultiPath (ECMP) are widely used in IP and data-center networks. Most current methods to balance packets over the multiple next hops toward the destination base their decision on a hash computed over selected fields of the packet headers. Because of the non-invertible nature of hash functions, it is hard to determine the values of those fields so as to make the packet follow a specific path in the network. However, several applications might benefit from being able to choose such a path. Therefore, we propose a novel next-hop selection method based on an invertible function. By encoding the selection of successive routers into common fields of packet headers, the proposed method enables end hosts to force their packets to follow a specific path.</p>
+<p>【Keywords】:
+load balancing; multipath; path selection</p>
+<h3 id="51. netmap: memory mapped access to network devices.">51. netmap: memory mapped access to network devices.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018500">Paper Link</a>】    【Pages】:422-423</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Rizzo:Luigi">Luigi Rizzo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Landi:Matteo">Matteo Landi</a></p>
+<p>【Abstract】:
+Recent papers have shown that wire-speed packet processing is feasible in software even at 10~Gbit/s, but the result has been achieved taking direct control of the network controllers to cut down OS and device driver overheads. In this paper we show how to achieve similar performance in safer conditions on standard operating systems. As in some other proposals, our framework, called netmap, maps packet buffers into the process' memory space; but unlike other proposals, any operation that may affect the state of the hardware is filtered by the OS. This protects the system from crashes induced by misbehaving programs, and simplifies the use of the API. Our tests show that netmap takes as little as 90 clock cycles to move one packet between the wire and the application, almost one order of magnitude less than using the standard OS path. A single core at 1.33~GHz can send or receive packets at wire speed on 10~Gbit/s links (14.8~Mpps), with very good scalability in the number of cores and clock speed. At least three factors contribute to this performance: i) no overhead for encapsulation and metadata management; ii) no per-packet system calls and data copying (ioctl()s are still required, but involve no copying and their cost is amortized over a batch of packets); iii) much simpler device driver operation, because buffers have a plain and simple format that requires</p>
+<p>【Keywords】:
+device drivers; monitoring; packet forwarding</p>
+<h3 id="52. Detecting and assessing the hybrid IPv4/IPv6 as relationships.">52. Detecting and assessing the hybrid IPv4/IPv6 as relationships.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018501">Paper Link</a>】    【Pages】:424-425</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Giotsas:Vasileios">Vasileios Giotsas</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Shi">Shi Zhou</a></p>
+<p>【Abstract】:
+The business relationships between the Autonomous Systems (ASes) play a central role in the BGP routing. The existing relationship inference algorithms are profoundly based on the valley-free rule and generalize their inference heuristics for both the IPv4 and IPv6 planes, introducing unavoidable inference artifacts. To discover and analyze the Type-of-Relationship (ToR) properties of the IPv6 topology we mine the BGP Communities attribute which provides an unexploited wealth of reliable relationship information. We obtain the actual relationships for 72% of the IPv6 AS links that are visible in the RouteViews and RIPE RIS repositories. Our results show that as many as 13% of AS links that serve both IPv4 and IPv6 traffic have different relationships depending on the IP version. Such relationships are characterized as hybrid. We observe that links with hybrid relationships are present in a large number of IPv6 AS paths. Furthermore, an unusually large portion of IPv6 AS paths violate the valley-free rule, indicating that the global reachability in the IPv6 Internet requires the relaxation of the valley-free rule. Our work highlights the importance of correctly inferring the AS relationships and the need to appreciate the distinct characteristics of IPv6 routing policies.</p>
+<p>【Keywords】:
+as relationship; autonomous systems; bgp; inference algorithms; inter-domain routing; internet; ipv6; topology</p>
+<h3 id="53. CloudProphet: towards application performance prediction in cloud.">53. CloudProphet: towards application performance prediction in cloud.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018502">Paper Link</a>】    【Pages】:426-427</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Ang">Ang Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zong:Xuanran">Xuanran Zong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kandula:Srikanth">Srikanth Kandula</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Xiaowei">Xiaowei Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Ming">Ming Zhang</a></p>
+<p>【Abstract】:
+Choosing the best-performing cloud for one's application is a critical problem for potential cloud customers. We propose CloudProphet, a trace-and-replay tool to predict a legacy application's performance if migrated to a cloud infrastructure. CloudProphet traces the workload of the application when running locally, and replays the same workload in the cloud for prediction. We discuss two key technical challenges in designing CloudProphet, and some preliminary results using a prototype implementation.</p>
+<p>【Keywords】:
+cloud computing; performance; prediction</p>
+<h3 id="54. A novel approach for making energy efficient PON.">54. A novel approach for making energy efficient PON.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018503">Paper Link</a>】    【Pages】:428-429</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Newaz:S=_H=_Shah">S. H. Shah Newaz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cuevas:=Aacute=ngel">Ángel Cuevas</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Gyu_Myoung">Gyu Myoung Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Crespi:No=euml=l">Noël Crespi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Choi:Jun_Kyun">Jun Kyun Choi</a></p>
+<p>【Abstract】:
+Nowadays Passive Optical Network (PON) requires that Optical Network Units (ONUs) wake up periodically to check if the Optical Line Terminal (OLT) has any message directed to them. This implies that ONUs change from sleeping mode in which they just consume 1 W to active mode in which the consumption goes up to 10 W. In many cases, the OLT does not have any packets for the ONU and it goes to sleep again, what supposes a waste of energy. In this paper, we propose a novel Hybrid ONU that relies on a low-cost and low-energy technology, IEEE 802.15.4, to wake up those ONUs that are going to receive a packet. Our first estimations demonstrates that our solution would save around 25000$ per year and OLT.</p>
+<p>【Keywords】:
+converged.; energy saving; pon; sleep mode</p>
+<h3 id="55. On the efficacy of fine-grained traffic splitting protocolsin data center networks.">55. On the efficacy of fine-grained traffic splitting protocolsin data center networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018504">Paper Link</a>】    【Pages】:430-431</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dixit:Advait_Abhay">Advait Abhay Dixit</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Prakash:Pawan">Pawan Prakash</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kompella:Ramana_Rao">Ramana Rao Kompella</a></p>
+<p>【Abstract】:
+Multi-rooted tree topologies are commonly used to construct high-bandwidth data center network fabrics. In these networks, switches typically rely on equal-cost multipath (ECMP) routing techniques to split traffic across multiple paths, such that packets within a flow traverse the same end-to-end path. Unfortunately, since ECMP splits traffic based on flow-granularity, it can cause load imbalance across paths resulting in poor utilization of network resources. More fine-grained traffic splitting techniques are typically not preferred because they can cause packet reordering that can, according to conventional wisdom, lead to severe TCP throughput degradation. In this work, we revisit this fact in the context of regular data center topologies such as fat-tree architectures. We argue that packet-level traffic splitting, where packets of a flow are sprayed through all available paths, would lead to a better load-balanced network, which in turn leads to significantly more balanced queues and much higher throughput compared to ECMP.</p>
+<p>【Keywords】:
+data centers; traffic splitting</p>
+<h3 id="56. Wide-area routing dynamics of malicious networks.">56. Wide-area routing dynamics of malicious networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018505">Paper Link</a>】    【Pages】:432-433</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Konte:Maria">Maria Konte</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Feamster:Nick">Nick Feamster</a></p>
+<p>【Abstract】:
+This paper studies the routing dynamics of malicious networks. We characterize the routing behavior of malicious networks on both short and long timescales. We find that malicious networks more consistently advertise prefixes with short durations and long inter- arrival times; over longer timescales, we find that malicious ASes connect with more upstream providers than legitimate ASes, and they also change upstream providers more frequently.</p>
+<p>【Keywords】:
+bgp; security; spam</p>
+<h2 id="SIGCOMM 2011 demos session 1    12">SIGCOMM 2011 demos session 1    12</h2>
+<h3 id="57. Online testing of federated and heterogeneous distributed systems.">57. Online testing of federated and heterogeneous distributed systems.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018507">Paper Link</a>】    【Pages】:434-435</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Canini:Marco">Marco Canini</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jovanovic:Vojin">Vojin Jovanovic</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Venzano:Daniele">Daniele Venzano</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Novakovic:Dejan_M=">Dejan M. Novakovic</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kostic:Dejan">Dejan Kostic</a></p>
+<p>【Abstract】:
+DiCE is a system for online testing of federated and heterogeneous distributed systems. We have built a prototype of DiCE and integrated it with an open-source BGP router. DiCE quickly detects three important classes of faults, resulting from configuration mistakes, policy conflicts and programming errors. The goal of this demo is to showcase our DiCE prototype while it executes an experiment that involves exploring BGP system behavior in a topology with 27 BGP routers and Internet-like conditions (Figure 1).</p>
+<p>【Keywords】:
+fault detection; federated and heterogeneous distributed systems; online testing</p>
+<h3 id="58. Performance based traffic control with IDIPS.">58. Performance based traffic control with IDIPS.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018508">Paper Link</a>】    【Pages】:436-437</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Saucez:Damien">Damien Saucez</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bonaventure:Olivier">Olivier Bonaventure</a></p>
+<p>【Abstract】:
+Nowadays Internet is ubiquitous resulting in an increasing path diversity and content duplication. However, while content can be retrieved from many different places, the paths to those places are not equivalent. Indeed, some paths offer better bandwidth while others are less expensive or more stable. In addition, a new range of applications is sensitive to the performance of the paths that carry their traffic. To support this evolution of the Internet, we propose ISP-Driven Informed Path Selection (IDIPS). Any ISP can easily deploy IDIPS to help its customers to select the paths that best meet their requirements in order to reach their content. IDIPS helps in this selection through pro-active measurements and ISP-defined policies. IDIPS is scalable and can support thousands of clients. IDIPS is also flexible and can thus be used by the ISP to optimize its routing decisions to take the performance of its inter-domain links into account.</p>
+<p>【Keywords】:
+route control; traffic engineering; xorp</p>
+<h3 id="59. Eco-Sign: a load-based traffic light control system for environmental protection with vehicular communications.">59. Eco-Sign: a load-based traffic light control system for environmental protection with vehicular communications.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018509">Paper Link</a>】    【Pages】:438-439</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Lien=Wu">Lien-Wu Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sharma:Pranay">Pranay Sharma</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tseng:Yu=Chee">Yu-Chee Tseng</a></p>
+<p>【Abstract】:
+The Eco-Sign system is a traffic light control system for minimizing greenhouse gases emitted by idling vehicles at intersections. Eco-Sign provides the following features: (i) it can notify vehicles to turn on/off their engines based on expected waiting time for green lights at intersections, (ii) it can dynamically adjust traffic light timing to minimize the number of vehicles stopping at an intersection based on vehicle arrival and departure rates, and (iii) it is a fully distributed system in the sense that each intersection can learn its local traffic condition and optimize its traffic sign setting to prevent congestions and thus traffic jams. Eco-Sign thus demonstrates a new traffic light control system for environmental protection.</p>
+<p>【Keywords】:
+dynamic traffic light control; environmental protection; ignition control; vehicular communications</p>
+<h3 id="60. FSR: formal analysis and implementation toolkit for safe inter-domain routing.">60. FSR: formal analysis and implementation toolkit for safe inter-domain routing.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018510">Paper Link</a>】    【Pages】:440-441</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Ren:Yiqing">Yiqing Ren</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Wenchao">Wenchao Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Anduo">Anduo Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jia:Limin">Limin Jia</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gurney:Alexander_J=_T=">Alexander J. T. Gurney</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Loo:Boon_Thau">Boon Thau Loo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rexford:Jennifer">Jennifer Rexford</a></p>
+<p>【Abstract】:
+We present the demonstration of a comprehensive toolkit for analyzing and implementing routing policies, ranging from high-level guidelines to specific router configurations. Our Formally Safe Routing (FSR) toolkit performs all of these functions from the same algebraic representation of routing policy. We show that routing algebra has a very natural translation to both integer constraints (to perform safety analysis using SMT solvers) and declarative programs (to generate distributed implementations). Our demonstration with realistic topologies and policies shows how FSR can detect problems in an AS's iBGP configuration, prove sufficient conditions for BGP safety, and empirically evaluate convergence time.</p>
+<p>【Keywords】:
+formal verification; formally safe routing; safety analysis</p>
+<h3 id="61. PANDAA: a physical arrangement detection technique for networked devices through ambient-sound awareness.">61. PANDAA: a physical arrangement detection technique for networked devices through ambient-sound awareness.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018511">Paper Link</a>】    【Pages】:442-443</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sun:Zheng">Zheng Sun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Purohit:Aveek">Aveek Purohit</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wagter:Philippe_De">Philippe De Wagter</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Brinster:Irina">Irina Brinster</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hamm:Chorom">Chorom Hamm</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Pei">Pei Zhang</a></p>
+<p>【Abstract】:
+This demo presents PANDAA, a zero-configuration automatic spatial localization technique for networked devices based on ambient sound sensing. We will demonstrate that after initial placement of the devices, ambient sounds, such as human speech, music, footsteps, finger snaps, hand claps, or coughs and sneezes, can be used to autonomously resolve the spatial relative arrangement of devices, such as mobile phones, using trigonometric bounds and successive approximation.</p>
+<p>【Keywords】:
+arrangement detection; localization; networked devices</p>
+<h3 id="62. Implementing ARP-path low latency bridges in NetFPGA.">62. Implementing ARP-path low latency bridges in NetFPGA.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018512">Paper Link</a>】    【Pages】:444-445</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Rojas:Elisa">Elisa Rojas</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Naous:Jad">Jad Naous</a> ; <a href="http://dblp.uni-trier.de/pers/hd/i/Ib=aacute==ntilde=ez:Guillermo">Guillermo Ibáñez</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rivera:Diego">Diego Rivera</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Carral:Juan_A=">Juan A. Carral</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Arco:Jos=eacute=_M=">José M. Arco</a></p>
+<p>【Abstract】:
+The demo is focused on the implementation of ARP-Path (a.k.a. FastPath) bridges, a recently proposed concept for low latency bridges. ARP-Path Bridges rely on the race between broadcast ARP Request packets, to discover the minimum latency path to the destination host. Several implementations (in Omnet++, Linux, OpenFlow, NetFPGA) have shown that ARP-Path exhibits loop-freedom, does not block links, is fully transparent to hosts and neither needs a spanning tree protocol to prevent loops nor a link state protocol to obtain low latency paths. This demo compares our hardware implementation on NetFPGA to bridges running STP, showing that ARP-Path finds lower latency paths than STP.</p>
+<p>【Keywords】:
+ethernet; netfpga; routing bridges; shortest path bridges; spanning tree</p>
+<h3 id="63. LifeNet: a flexible ad hoc networking solution for transient environments.">63. LifeNet: a flexible ad hoc networking solution for transient environments.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018513">Paper Link</a>】    【Pages】:446-447</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mehendale:Hrushikesh">Hrushikesh Mehendale</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Paranjpe:Ashwin">Ashwin Paranjpe</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vempala:Santosh">Santosh Vempala</a></p>
+<p>【Abstract】:
+We demonstrate a new ad hoc routing method that can handle transience such as node-mobility, obstructions and node failures. It has controlled management overhead, and is platform-independent (our demo includes phones, routers, and laptops running different operating systems). It achieves reliability and flexibility at the expense of throughput. It is ideal for scenarios where the reliability of connectivity is critical and bandwidth requirements are low. For e.g., disaster relief operations and sensor networks. Along with applications, we exhibit measurements to illustrate the advantages of our approach in dealing with transience.</p>
+<p>【Keywords】:
+manets; minimum infrastructure; reliable routing</p>
+<h3 id="64. A protocol for disaster data evacuation.">64. A protocol for disaster data evacuation.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018514">Paper Link</a>】    【Pages】:448-449</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Rabl:Tilmann">Tilmann Rabl</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stegmaier:Florian">Florian Stegmaier</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/D=ouml=ller:Mario">Mario Döller</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vang:The_Thong">The Thong Vang</a></p>
+<p>【Abstract】:
+Data is the basis of the modern information society. However, recent natural catastrophes have shown that it is not possible to definitively secure a data storage location. Even if the storage location is not destroyed itself the access may quickly become impossible, due to the breakdown of connections or power supply. However, this rarely happens without any warning. While floods have hours or days of warning time, tsunamis usually leave only minutes for reaction and for earthquakes there are only seconds. In such situations, timely evacuation of important data is the key challenge. Consequently, the focus lies on minimizing the time to move away all data from the storage location whereas the actual time to arrival remains less (but still) important. This demonstration presents the dynamic fast send protocol (DFSP), a new bulk data transfer protocol. It employs striping to dynamic intermediate nodes in order to minimize sending time and to utilize the sender's resources to a high extent.</p>
+<p>【Keywords】:
+data evacuation; dfsp; dynamic fast send protocol; fsp</p>
+<h3 id="65. Towards energy-efficient streaming system for mobile hotspots.">65. Towards energy-efficient streaming system for mobile hotspots.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018515">Paper Link</a>】    【Pages】:450-451</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Ming=Hung">Ming-Hung Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Chun=Yu">Chun-Yu Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chang:Chun=Yuan">Chun-Yuan Chang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hsu:Ming=Yuan">Ming-Yuan Hsu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Ke=Han">Ke-Han Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chou:Cheng=Fu">Cheng-Fu Chou</a></p>
+<p>【Abstract】:
+Modern mobile devices have become an important part of our daily life but the performance of multimedia applications still suffers from the constrained energy supply and communication bandwidth of the mobile devices. In this work, we develop an energy-efficient streaming system for mobile hotspots to achieve better Quality-of-Experience. Our main idea is (a) to avoid redundant 3G transmissions as well as reduce the usage of 3G links for those low residual-energy users, and (b) to enable nearby mobile users cooperatively to share the downloaded data via short-range interfaces. The experiment results shows our scheme can improve the system lifetime by 27%, and provide better throughput as well as lower loss rate than conversional 3G systems do.</p>
+<p>【Keywords】:
+composite networks; cooperative networks; energy efficiency; mobile hotspots; streaming; wireless networks</p>
+<h3 id="66. MPLS-TE and MPLS VPNS with openflow.">66. MPLS-TE and MPLS VPNS with openflow.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018516">Paper Link</a>】    【Pages】:452-453</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sharafat:Ali_Reza">Ali Reza Sharafat</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Das:Saurav">Saurav Das</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Parulkar:Guru_M=">Guru M. Parulkar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McKeown:Nick">Nick McKeown</a></p>
+<p>【Abstract】:
+We demonstrate MPLS Traffic Engineering (MPLS-TE) and MPLS-based Virtual Private Networks (MPLS VPNs) using OpenFlow [1] and NOX [6]. The demonstration is the outcome of an engineering experiment to answer the following questions: How hard is it to implement a complex control plane on top of a network controller such as NOX? Does the global vantage point in NOX make the implementation easier than the traditional method of implementing it on every switch, embedded in the data plane? We implemented every major feature of MPLS-TE and MPLS-VPN in just 2,000 lines of code, compared to much larger lines of code in the more traditional approach, such as Quagga-MPLS. Because NOX maintains a consistent, up-to-date topology map, the MPLS control plane features are quite simple to implement. And its simplicity makes it easy to extend: We have easily added several new features; something a network operator could do to customize their network to meet their customers' needs. The demo consists of two parts: MPLS-TE services and then MPLS VPN driven by a GUI.</p>
+<p>【Keywords】:
+mpls; mpls-te; openflow; traffic engineering; vpn</p>
+<h3 id="67. Dasu - ISP characterization from the edge: a BitTorrent implementation.">67. Dasu - ISP characterization from the edge: a BitTorrent implementation.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018517">Paper Link</a>】    【Pages】:454-455</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/S=aacute=nchez:Mario_A=">Mario A. Sánchez</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Otto:John_S=">John S. Otto</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bischof:Zachary_S=">Zachary S. Bischof</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bustamante:Fabi=aacute=n_E=">Fabián E. Bustamante</a></p>
+<p>【Abstract】:
+Evaluating and characterizing access ISPs is critical to consumers shopping for alternative services and governments surveying the availability of broadband services to their citizens. We present Dasu, a service for crowdsourcing ISP characterization to the edge of the network. Dasu is implemented as an extension to a popular BitTorrent client and has been available since July 2010. While the prototype uses BitTorrent as its host application, its design is agnostic to the particular host application. The demo showcases our current implementation using both a prerecorded execution trace and a live run.</p>
+<p>【Keywords】:
+broadband access networks; characterization; isp</p>
+<h3 id="68. WiFire: a firewall for wireless networks.">68. WiFire: a firewall for wireless networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018518">Paper Link</a>】    【Pages】:456-457</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wilhelm:Matthias">Matthias Wilhelm</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Martinovic:Ivan">Ivan Martinovic</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schmitt:Jens_B=">Jens B. Schmitt</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lenders:Vincent">Vincent Lenders</a></p>
+<p>【Abstract】:
+Firewalls are extremely effective at enforcing security policies in wired networks. Perhaps surprisingly, firewalls are entirely nonexistent in the wireless domain. Yet, the need to selectively control and block radio communication is particularly high in a broadcast environment since any node may receive and send packets. In this demo, we present WiFire, a system that brings the firewall concept to wireless networks. First, WiFire detects and analyzes packets during their transmission, checking their content against a set of rules. It then relies on reactive jamming techniques to selectively block undesired communication. We show the feasibility and performance of WiFire, which is implemented on the USRP2 software-defined radio platform, in several scenarios with IEEE 802.15.4 radios. WiFire is able to classify and effectively block undesired communication without interfering with desired communication.</p>
+<p>【Keywords】:
+802.15.4; reactive jamming; software-defined jammer; wsn</p>
+<h2 id="SIGCOMM 2011 demos session 2    12">SIGCOMM 2011 demos session 2    12</h2>
+<h3 id="69. Demonstrating generalized virtual topologies in an openflow network.">69. Demonstrating generalized virtual topologies in an openflow network.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018520">Paper Link</a>】    【Pages】:458-459</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Salvadori:Elio">Elio Salvadori</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Corin:Roberto_Doriguzzi">Roberto Doriguzzi Corin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gerola:Matteo">Matteo Gerola</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Broglio:Attilio">Attilio Broglio</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pellegrini:Francesco_De">Francesco De Pellegrini</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:
+network virtualization; openflow</p>
+<h3 id="70. Visualizing anomalies in sensor networks.">70. Visualizing anomalies in sensor networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018521">Paper Link</a>】    【Pages】:460-461</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Liao:Qi">Qi Liao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shi:Lei">Lei Shi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/He:Yuan">Yuan He</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Rui">Rui Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Su:Zhong">Zhong Su</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Striegel:Aaron">Aaron Striegel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Yunhao">Yunhao Liu</a></p>
+<p>【Abstract】:
+Diagnosing a large-scale sensor network is a crucial but challenging task due to the spatiotemporally dynamic network behaviors of sensor nodes. In this demo, we present Sensor Anomaly Visualization Engine (SAVE), an integrated system that tackles the sensor network diagnosis problem using both visualization and anomaly detection analytics to guide the user quickly and accurately diagnose sensor network failures. Temporal expansion model, correlation graphs and dynamic projection views are proposed to effectively interpret the topological, correlational and dimensional sensor data dynamics and their anomalies. Through a real-world large-scale wireless sensor network deployment (GreenOrbs), we demonstrate that SAVE is able to help better locate the problem and further identify the root cause of major sensor network failures.</p>
+<p>【Keywords】:
+anomaly detection and analysis; diagnosing; visualization; wireless sensor networks</p>
+<h3 id="71. WiRE: a new rural connectivity paradigm.">71. WiRE: a new rural connectivity paradigm.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018522">Paper Link</a>】    【Pages】:462-463</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dhananjay:Aditya">Aditya Dhananjay</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tierney:Matt">Matt Tierney</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Jinyang">Jinyang Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Subramanian:Lakshminarayanan">Lakshminarayanan Subramanian</a></p>
+<p>【Abstract】:
+Many rural areas in developing regions remain largely disconnected from the rest of the world due to low purchasing power and the exorbitant cost of existing connectivity solutions. Wireless Rural Extensions (WiRE) is a low-power rural wireless network architecture that provides inexpensive, self-sustainable, and high-bandwidth connectivity. WiRE relies on a high-bandwidth directional wireless backbone with local distribution networks to provide focused IP coverage. WiRE also provides cellular connectivity using OpenBTS-based GSM microcells. It supports a naming and addressing framework that inter-operates with traditional telecom networks and enables a wide range of mobile services on a common IP framework. The entire name network can be built by integrating a range of off-the-shelf components and existing open source tools.</p>
+<p>【Keywords】:
+cellular</p>
+<h3 id="72. Supporting novel home network management interfaces with openflow and NOX.">72. Supporting novel home network management interfaces with openflow and NOX.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018523">Paper Link</a>】    【Pages】:464-465</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mortier:Richard">Richard Mortier</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bedwell:Ben">Ben Bedwell</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Glover:Kevin">Kevin Glover</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lodge:Tom">Tom Lodge</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rodden:Tom">Tom Rodden</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rotsos:Charalampos">Charalampos Rotsos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Moore_0002:Andrew_W=">Andrew W. Moore</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Koliousis:Alexandros">Alexandros Koliousis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sventek:Joseph_S=">Joseph S. Sventek</a></p>
+<p>【Abstract】:
+The Homework project has examined redesign of existing home network infrastructures to better support the needs and requirements of actual home users. Integrating results from several ethnographic studies, we have designed and built a home networking platform providing detailed per-flow measurement and management capabilities supporting several novel management interfaces. This demo specifically shows these new visualization and control interfaces (1), and describes the broader benefits of taking an integrated view of the networking infrastructure, realised through our router's augmented measurement and control APIs (2). Aspects of this work have been published: the Homework Database in Internet Management (IM) 2011 [3] and implications of the ethnographic results are to appear at the SIGCOMM W-MUST workshop 2011 [2]. Separate, more detailed expositions of the interface elements and system performance and implications are currently under submission at other venues. A partial code release is already available and we anticipate fuller public beta release by Q4 2011.</p>
+<p>【Keywords】:
+dhcp; home networks; network management; nox; openflow</p>
+<h3 id="73. Using NetMagic to observe fine-grained per-flow latency measurements.">73. Using NetMagic to observe fine-grained per-flow latency measurements.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018524">Paper Link</a>】    【Pages】:466-467</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Tao">Tao Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sun:Zhigang">Zhigang Sun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jia:Chunbo">Chunbo Jia</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Su:Qi">Qi Su</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Myungjin">Myungjin Lee</a></p>
+<p>【Abstract】:
+We introduce NetMagic to demonstrate the efficacy of RLI architecture RLI for the fine-grained per-flow latency measurements. In this demo, the main function of RLI is implemented in NetMagic, which is the key component of our experimental network comprising several computers and switches. We are going to show how NetMagic can provide rapid implementation and evaluation of RLI architecture that is difficult with commercial switch or router platforms. In the demo, the estimated fine-grained per-flow latency by RLI is monitored and dynamically presented. Further, the true latency with a resolution of 8ns is also provided by NetMagic for the evaluation. The efficacy of RLI architecture can be observed in a real-time fashion by the difference between estimated latencies and true ones.</p>
+<p>【Keywords】:
+measurement; netmagic platform; per-flow latency; rli architecture</p>
+<h3 id="74. OSPF failure reconvergence through SRG inference and prediction of link state advertisements.">74. OSPF failure reconvergence through SRG inference and prediction of link state advertisements.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018525">Paper Link</a>】    【Pages】:468-469</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Puype:Bart">Bart Puype</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Papadimitriou:Dimitri">Dimitri Papadimitriou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Das:Goutam">Goutam Das</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Colle:Didier">Didier Colle</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pickavet:Mario">Mario Pickavet</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Demeester:Piet">Piet Demeester</a></p>
+<p>【Abstract】:
+We demonstrate machine learning augmented Open Shortest Path First (OSPF) routing which infers Shared Risk Groups (SRG) from link failure history. For an initial link failure matching an SRG, it predicts subsequent link state advertisements corresponding with that SRG, improving convergence and recovery times during multiple network failures.</p>
+<p>【Keywords】:
+cognitive routing; machine learning; network recovery; ospf; shared risk group</p>
+<h3 id="75. Communicating with caps: managing usage caps in home networks.">75. Communicating with caps: managing usage caps in home networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018526">Paper Link</a>】    【Pages】:470-471</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Hyojoon">Hyojoon Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sundaresan:Srikanth">Srikanth Sundaresan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chetty:Marshini">Marshini Chetty</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Feamster:Nick">Nick Feamster</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Edwards:W=_Keith">W. Keith Edwards</a></p>
+<p>【Abstract】:
+As Internet service providers increasingly implement and impose "usage caps", consumers need better ways to help them understand and control how devices in the home use up the available network resources or available capacity. Towards this goal, we will demonstrate a system that allows users to monitor and manage their usage caps. The system uses the BISMark firmware running on network gateways to collect usage statistics and report them to a logically centralized controller, which displays usage information. The controller allows users to specify policies about how different people, devices, and applications should consume the usage cap; it implements and enforces these policies via a secure OpenFlow control channel to each gateway device. The demonstration will show various use cases, such as limiting the usage of a particular application, visualizing usage statistics, and allowing users within a single household to "trade" caps with one another.</p>
+<p>【Keywords】:
+home network; openflow; usage cap</p>
+<h3 id="76. Cyber-physical handshake.">76. Cyber-physical handshake.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018527">Paper Link</a>】    【Pages】:472-473</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Fang=Jing">Fang-Jing Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chu:Feng=I=">Feng-I. Chu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tseng:Yu=Chee">Yu-Chee Tseng</a></p>
+<p>【Abstract】:
+While sensor-enabled devices have greatly enriched human interactions in our daily life, discovering the essential knowledge behind sensing data is a critical issue to connect the cyber world and the physical world. This motivates us to design an innovative sensor-aided social network system, termed cyber-physical handshake. It allows two users to naturally exchange personal information with each other after detecting and authenticating the handshaking patterns between them. This work describes our design of detection and authentication mechanisms to achieve this purpose and our prototype system to facilitate handshake social behavior.</p>
+<p>【Keywords】:
+cyber-physical system; participatory sensing; pervasive computing; social network; wireless sensor network</p>
+<h3 id="77. An online gaming testbed for peer-to-peer architectures.">77. An online gaming testbed for peer-to-peer architectures.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018528">Paper Link</a>】    【Pages】:474-475</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lehn:Max">Max Lehn</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Leng:Christof">Christof Leng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rehner:Robert">Robert Rehner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Triebel:Tonio">Tonio Triebel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Buchmann:Alejandro_P=">Alejandro P. Buchmann</a></p>
+<p>【Abstract】:
+In this demo we present a testbed environment for Peer-to-Peer (P2P) game architectures. It is based on Planet PI4, an online multiplayer game whose gameplay provides a standard workload for a set of gaming-specific network interfaces. Its pluggable architecture allows for the evaluation and comparison of existing and new P2P networking approaches. Planet PI4 can run on a real network for prototypical evaluation as well as in a discrete-event simulator providing a reproducible environment.</p>
+<p>【Keywords】:
+benchmarking; online gaming; peer-to-peer</p>
+<h3 id="78. Service hosting gateways: a platform for distributed service deployment in end user homes.">78. Service hosting gateways: a platform for distributed service deployment in end user homes.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018529">Paper Link</a>】    【Pages】:476-477</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/May:Martin">Martin May</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Diot:Christophe">Christophe Diot</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Guyadec:Pascal_Le">Pascal Le Guyadec</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Picconi:Fabio">Fabio Picconi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Roussel:Joris">Joris Roussel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Soule:Augustin">Augustin Soule</a></p>
+<p>【Abstract】:
+The success of broadband residential Internet access is changing the way home users consume digital content and services. Currently, each home service requires the installation of a separate physical box (for instance, the NetFlix box or IPTV set-top-boxes). Instead, we argue for deploying a single box in the home that is powerful and flexible enough to host a variety of home services. In addition, this box is managed by the Internet Service provider and is able to provide service guarantees. We call such a box a service-hosting gateway (SHG), as it combines the functionalities of the home gateway managed by the network service provider with the capability of hosting services. Isolation between such services is ensured by virtualization. We demonstrate a prototype of our (SHG). It is based on the hardware platform that will be used for future home gateways. We illustrate the features of the SHG with multiple use cases ranging from simple service deployment scenarios to complex media distribution services and home automation features.</p>
+<p>【Keywords】:
+nano datacenters</p>
+<h3 id="79. Optimizing a virtualized data center.">79. Optimizing a virtualized data center.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018530">Paper Link</a>】    【Pages】:478-479</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/e/Erickson:David">David Erickson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Heller:Brandon">Brandon Heller</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Shuang">Shuang Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chu:Jonathan">Jonathan Chu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Ellithorpe:Jonathan_D=">Jonathan D. Ellithorpe</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Whyte:Scott">Scott Whyte</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stuart:Stephen">Stephen Stuart</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McKeown:Nick">Nick McKeown</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Parulkar:Guru_M=">Guru M. Parulkar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rosenblum:Mendel">Mendel Rosenblum</a></p>
+<p>【Abstract】:
+Many data centers extensively use virtual machines (VMs), which provide the flexibility to move workload among physical servers. VMs can be placed to maximize application performance, power efficiency, or even fault tolerance. However, VMs are typically repositioned without considering network topology, congestion, or traffic routes. In this demo, we show a system, Virtue, which enables the comparison of different algorithms for VM placement and network routing at the scale of an entire data center. Our goal is to understand how placement and routing affect overall application performance by varying the types and mix of workloads, network topologies, and compute resources; these parameters will be available for demo attendees to explore.</p>
+<p>【Keywords】:
+data center network; openflow; virtualization; virtue</p>
+<h3 id="80. Efficient content dissemination in heterogeneous networks prone to episodic connectivity.">80. Efficient content dissemination in heterogeneous networks prone to episodic connectivity.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2018436.2018531">Paper Link</a>】    【Pages】:480-481</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Krifa:Amir">Amir Krifa</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mendonca:Marc">Marc Mendonca</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rais:Rao_Naveed_Bin">Rao Naveed Bin Rais</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Barakat:Chadi">Chadi Barakat</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Turletti:Thierry">Thierry Turletti</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Obraczka:Katia">Katia Obraczka</a></p>
+<p>【Abstract】:
+Ubiquity of portable computing devices coupled with wide availability of wireless communication present new impor- tant opportunities for applications involving media-rich content dissemination. However, as access networks become increasingly more heterogeneous, seamless data delivery across internets consisting of a variety of network technology becomes a real challenge. In this demonstration, we showcase a system that enables content dissemination over heterogeneous internets consisting of wired, infrastructure-based and infrastructure-less wireless networks that may be prone to intermittent connectivity. Using an efficient, yet flexible buffer management scheme, we are able to address application-specific performance requirements such as average delay, delivery probability, energy efficiency, etc. Our system uses the Message Delivery in Heterogeneous, Disruption-prone Networks (MeDeHa) [2]) framework to deliver messages across a heterogeneous internet coupled with History-Based Scheduling and Drop (HBSD) buffer management [1] as a way to optimize resources provided by opportunistic networks. MeDeHa, which is described in detail in [2], provides seamless data delivery over interconnecting networks of different types, i.e., infrastructure-based and infrastructure-less networks. MeDeHa's comprehensive approach to bridging infrastructure-based and infrastructureless networks also copes with intermittent connectivity. For this demonstration, we showcase a "complete stack" solution featuring, from to top to bottom, the DTN2 "bundle" layer, HBSD as an "external router" to DTN2, and MeDeHa, which handles message delivery. We have implemented, on a Linux-based testbed, (i) the MeDeHa framework, (ii) the HBSD [3] external router for the DTN2 [4] architecture.</p>
+<p>【Keywords】:
+buffer management; disruption tolerance; episodic connectivity; heterogeneous networks</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+
+<div class="theme" >
+<i title='主题' onclick="setStyle()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<!-- 更换theme -->
+<script type="text/javascript">
+function setStyle(){ 
+    if(document.getElementById("dark").disabled){
+        document.getElementById("light").disabled = true; 
+        document.getElementById("dark").disabled = false; 
+        }
+    else{
+        document.getElementById("dark").disabled = true; 
+        document.getElementById("light").disabled = false; 
+        }
+    }
+</script>
+
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="http://huntercmd.github.io"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>

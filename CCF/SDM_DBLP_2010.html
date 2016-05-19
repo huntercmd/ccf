@@ -1,0 +1,847 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="../config/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link id="light" rel="stylesheet" type="text/css" href="../config/css/light.css" />  
+<link id="dark" rel="stylesheet" type="text/css" href="../config/css/dark.css" disabled/>
+
+<script src="../config/css/classie.js"></script>
+
+
+<!-- This is for Mathjax -->
+
+<script type="text/javascript"
+  src="../config/mathjax2.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#10. SDM 2010:Columbus, Ohio, USA">10. SDM 2010:Columbus, Ohio, USA</a><ul>
+<li><a href="#Paper Num: 82 || Session Num: 21">Paper Num: 82 || Session Num: 21</a></li>
+<li><a href="#Session S1: Text Mining    4">Session S1: Text Mining    4</a><ul>
+<li><a href="#1. Text Categorization Using Word Similarities Based on Higher Order Co-occurrences.">1. Text Categorization Using Word Similarities Based on Higher Order Co-occurrences.</a></li>
+<li><a href="#2. Exploiting Associations between Word Clusters and Document Classes for Cross-Domain Text Categorization.">2. Exploiting Associations between Word Clusters and Document Classes for Cross-Domain Text Categorization.</a></li>
+<li><a href="#3. Semi-supervised Bio-named Entity Recognition with Word-Codebook Learning.">3. Semi-supervised Bio-named Entity Recognition with Word-Codebook Learning.</a></li>
+<li><a href="#4. Improving Accessibility of Transaction-centric Web Objects.">4. Improving Accessibility of Transaction-centric Web Objects.</a></li>
+</ul>
+</li>
+<li><a href="#Session S2: Privacy and Trust    4">Session S2: Privacy and Trust    4</a><ul>
+<li><a href="#5. Reconstructing Randomized Social Networks.">5. Reconstructing Randomized Social Networks.</a></li>
+<li><a href="#6. Reconstruction from Randomized Graph via Low Rank Approximation.">6. Reconstruction from Randomized Graph via Low Rank Approximation.</a></li>
+<li><a href="#7. Do You Trust to Get Trust? A Study of Trust Reciprocity Behaviors and Reciprocal Trust Prediction.">7. Do You Trust to Get Trust? A Study of Trust Reciprocity Behaviors and Reciprocal Trust Prediction.</a></li>
+<li><a href="#8. Publishing Skewed Sensitive Microdata.">8. Publishing Skewed Sensitive Microdata.</a></li>
+</ul>
+</li>
+<li><a href="#Session S3: Clustering    4">Session S3: Clustering    4</a><ul>
+<li><a href="#9. A SAT-based Framework for Efficient Constrained Clustering.">9. A SAT-based Framework for Efficient Constrained Clustering.</a></li>
+<li><a href="#10. Spectral and Semidefinite Relaxation of the CLUHSIC Algorithm.">10. Spectral and Semidefinite Relaxation of the CLUHSIC Algorithm.</a></li>
+<li><a href="#11. Generation of Alternative Clusterings Using the CAMI Approach.">11. Generation of Alternative Clusterings Using the CAMI Approach.</a></li>
+<li><a href="#12. Making k-means Even Faster.">12. Making k-means Even Faster.</a></li>
+</ul>
+</li>
+<li><a href="#Session S4: Pattern Mining    4">Session S4: Pattern Mining    4</a><ul>
+<li><a href="#13. On Mining Statistically Significant Attribute Association Information.">13. On Mining Statistically Significant Attribute Association Information.</a></li>
+<li><a href="#14. An Information-Theoretic Approach to Finding Informative Noisy Tiles in Binary Databases.">14. An Information-Theoretic Approach to Finding Informative Noisy Tiles in Binary Databases.</a></li>
+<li><a href="#15. Mining Top-K Patterns from Binary Datasets in Presence of Noise.">15. Mining Top-K Patterns from Binary Datasets in Presence of Noise.</a></li>
+<li><a href="#16. Formal Concept Sampling for Counting and Threshold-Free Local Pattern Mining.">16. Formal Concept Sampling for Counting and Threshold-Free Local Pattern Mining.</a></li>
+</ul>
+</li>
+<li><a href="#Session S5: Recommendation    4">Session S5: Recommendation    4</a><ul>
+<li><a href="#17. Alleviating the Sparsity Problem in Collaborative Filtering by Using an Adapted Distance and a Graph-Based Method.">17. Alleviating the Sparsity Problem in Collaborative Filtering by Using an Adapted Distance and a Graph-Based Method.</a></li>
+<li><a href="#18. Collaborative Filtering: Weighted Nonnegative Matrix Factorization Incorporating User and Item Graphs.">18. Collaborative Filtering: Weighted Nonnegative Matrix Factorization Incorporating User and Item Graphs.</a></li>
+<li><a href="#19. Temporal Collaborative Filtering with Bayesian Probabilistic Tensor Factorization.">19. Temporal Collaborative Filtering with Bayesian Probabilistic Tensor Factorization.</a></li>
+<li><a href="#20. Residual Bayesian Co-clustering for Matrix Approximation.">20. Residual Bayesian Co-clustering for Matrix Approximation.</a></li>
+</ul>
+</li>
+<li><a href="#Session S6: Support Vector Machines    4">Session S6: Support Vector Machines    4</a><ul>
+<li><a href="#21. Two-View Transductive Support Vector Machines.">21. Two-View Transductive Support Vector Machines.</a></li>
+<li><a href="#22. Fast Stochastic Frank-Wolfe Algorithms for Nonlinear SVMs.">22. Fast Stochastic Frank-Wolfe Algorithms for Nonlinear SVMs.</a></li>
+<li><a href="#23. Single-Pass Distributed Learning of Multi-class SVMs Using Core-Sets.">23. Single-Pass Distributed Learning of Multi-class SVMs Using Core-Sets.</a></li>
+<li><a href="#24. Nonnegative Principal Component Analysis for Proteomic Tumor Profiles.">24. Nonnegative Principal Component Analysis for Proteomic Tumor Profiles.</a></li>
+</ul>
+</li>
+<li><a href="#Session S7: Supervised Learning    3">Session S7: Supervised Learning    3</a><ul>
+<li><a href="#25. Efficient Nonnegative Matrix Factorization with Random Projections.">25. Efficient Nonnegative Matrix Factorization with Random Projections.</a></li>
+<li><a href="#26. Bridging Domains with Words: Opinion Analysis with Matrix Tri-factorizations.">26. Bridging Domains with Words: Opinion Analysis with Matrix Tri-factorizations.</a></li>
+<li><a href="#27. Exact Passive-Aggressive Algorithm for Multiclass Classification Using Support Class.">27. Exact Passive-Aggressive Algorithm for Multiclass Classification Using Support Class.</a></li>
+</ul>
+</li>
+<li><a href="#Session S8: Spatial-Temporal Pattern Mining    4">Session S8: Spatial-Temporal Pattern Mining    4</a><ul>
+<li><a href="#28. Robust Mining of Time Intervals with Semi-interval Partial Order Patterns.">28. Robust Mining of Time Intervals with Semi-interval Partial Order Patterns.</a></li>
+<li><a href="#29. Cascading Spatio-temporal Pattern Discovery: A Summary of Results.">29. Cascading Spatio-temporal Pattern Discovery: A Summary of Results.</a></li>
+<li><a href="#30. Frequentness-Transition Queries for Distinctive Pattern Mining from Time-Segmented Databases.">30. Frequentness-Transition Queries for Distinctive Pattern Mining from Time-Segmented Databases.</a></li>
+<li><a href="#31. Consecutive Ones Property and Spectral Ordering.">31. Consecutive Ones Property and Spectral Ordering.</a></li>
+</ul>
+</li>
+<li><a href="#Session S9: Uncertainty in Data Mining    4">Session S9: Uncertainty in Data Mining    4</a><ul>
+<li><a href="#32. Naive Bayes Classifier for Positive Unlabeled Learning with Uncertainty.">32. Naive Bayes Classifier for Positive Unlabeled Learning with Uncertainty.</a></li>
+<li><a href="#33. On Multidimensional Sharpening of Uncertain Data.">33. On Multidimensional Sharpening of Uncertain Data.</a></li>
+<li><a href="#34. Subspace Clustering for Uncertain Data.">34. Subspace Clustering for Uncertain Data.</a></li>
+<li><a href="#35. On the Use of Combining Rules in Relational Probability Trees.">35. On the Use of Combining Rules in Relational Probability Trees.</a></li>
+</ul>
+</li>
+<li><a href="#Session S10: Clustering and Outlier Detection    4">Session S10: Clustering and Outlier Detection    4</a><ul>
+<li><a href="#36. The Application of Statistical Relational Learning to a Database of Criminal and Terrorist Activity.">36. The Application of Statistical Relational Learning to a Database of Criminal and Terrorist Activity.</a></li>
+<li><a href="#37. ContexTour: Contextual Contour Analysis on Dynamic Multi-relational Clustering.">37. ContexTour: Contextual Contour Analysis on Dynamic Multi-relational Clustering.</a></li>
+<li><a href="#38. Identifying Multi-instance Outliers.">38. Identifying Multi-instance Outliers.</a></li>
+<li><a href="#39. Mining Actionable Subspace Clusters in Sequential Data.">39. Mining Actionable Subspace Clusters in Sequential Data.</a></li>
+</ul>
+</li>
+<li><a href="#Session S11: Graph Mining    4">Session S11: Graph Mining    4</a><ul>
+<li><a href="#40. GraSS: Graph Structure Summarization.">40. GraSS: Graph Structure Summarization.</a></li>
+<li><a href="#41. Mining Frequent Graph Sequence Patterns Induced by Vertices.">41. Mining Frequent Graph Sequence Patterns Induced by Vertices.</a></li>
+<li><a href="#42. On Clustering Graph Streams.">42. On Clustering Graph Streams.</a></li>
+<li><a href="#43. Inferring Probability Distributions of Graph Size and Node Degree from Stochastic Graph Grammars.">43. Inferring Probability Distributions of Graph Size and Node Degree from Stochastic Graph Grammars.</a></li>
+</ul>
+</li>
+<li><a href="#Session S12: Feature Learning and Prediction    5">Session S12: Feature Learning and Prediction    5</a><ul>
+<li><a href="#44. p-ISOMAP: An Efficient Parametric Update for ISOMAP for Visual Analytics.">44. p-ISOMAP: An Efficient Parametric Update for ISOMAP for Visual Analytics.</a></li>
+<li><a href="#45. Confidence-Based Feature Acquisition to Minimize Training and Test Costs.">45. Confidence-Based Feature Acquisition to Minimize Training and Test Costs.</a></li>
+<li><a href="#46. Co-selection of Features and Instances for Unsupervised Rare Category Analysis.">46. Co-selection of Features and Instances for Unsupervised Rare Category Analysis.</a></li>
+<li><a href="#47. Active Ordering of Interactive Prediction Tasks.">47. Active Ordering of Interactive Prediction Tasks.</a></li>
+<li><a href="#48. Radius Plots for Mining Tera-byte Scale Graphs: Algorithms, Patterns, and Observations.">48. Radius Plots for Mining Tera-byte Scale Graphs: Algorithms, Patterns, and Observations.</a></li>
+</ul>
+</li>
+<li><a href="#Session S13: Mining Large Graphs    4">Session S13: Mining Large Graphs    4</a><ul>
+<li><a href="#49. Spectral Analysis of Signed Graphs for Clustering, Prediction and Visualization.">49. Spectral Analysis of Signed Graphs for Clustering, Prediction and Visualization.</a></li>
+<li><a href="#50. Fast Single-Pair SimRank Computation.">50. Fast Single-Pair SimRank Computation.</a></li>
+<li><a href="#51. A Heterogeneous Label Propagation Algorithm for Disease Gene Discovery.">51. A Heterogeneous Label Propagation Algorithm for Disease Gene Discovery.</a></li>
+<li><a href="#52. Direct Density Ratio Estimation with Dimensionality Reduction.">52. Direct Density Ratio Estimation with Dimensionality Reduction.</a></li>
+</ul>
+</li>
+<li><a href="#Session S14: Feature Selection    3">Session S14: Feature Selection    3</a><ul>
+<li><a href="#53. The Generalized Dimensionality Reduction Problem.">53. The Generalized Dimensionality Reduction Problem.</a></li>
+<li><a href="#54. Convex Principal Feature Selection.">54. Convex Principal Feature Selection.</a></li>
+<li><a href="#55. Generalized and Heuristic-Free Feature Construction for Improved Accuracy.">55. Generalized and Heuristic-Free Feature Construction for Improved Accuracy.</a></li>
+</ul>
+</li>
+<li><a href="#Session S15: Time Series    4">Session S15: Time Series    4</a><ul>
+<li><a href="#56. Unsupervised Discovery of Abnormal Activity Occurrences in Multi-dimensional Time Series, with Applications in Wearable Systems.">56. Unsupervised Discovery of Abnormal Activity Occurrences in Multi-dimensional Time Series, with Applications in Wearable Systems.</a></li>
+<li><a href="#57. An Integrated Framework for Simultaneous Classification and Regression of Time-Series Data.">57. An Integrated Framework for Simultaneous Classification and Regression of Time-Series Data.</a></li>
+<li><a href="#58. Multiresolution Motif Discovery in Time Series.">58. Multiresolution Motif Discovery in Time Series.</a></li>
+<li><a href="#59. Time-Series Classification in Many Intrinsic Dimensions.">59. Time-Series Classification in Many Intrinsic Dimensions.</a></li>
+</ul>
+</li>
+<li><a href="#Session S16: Tensors    3">Session S16: Tensors    3</a><ul>
+<li><a href="#60. MACH: Fast Randomized Tensor Decompositions.">60. MACH: Fast Randomized Tensor Decompositions.</a></li>
+<li><a href="#61. Scalable Tensor Factorizations with Missing Data.">61. Scalable Tensor Factorizations with Missing Data.</a></li>
+<li><a href="#62. On Low-Rank Updates to the Singular Value and Tucker Decompositions.">62. On Low-Rank Updates to the Singular Value and Tucker Decompositions.</a></li>
+</ul>
+</li>
+<li><a href="#Session S17: Social Network Mining    4">Session S17: Social Network Mining    4</a><ul>
+<li><a href="#63. Towards Finding Valuable Topics.">63. Towards Finding Valuable Topics.</a></li>
+<li><a href="#64. Predicting Customer Churn in Mobile Networks through Analysis of Social Groups.">64. Predicting Customer Churn in Mobile Networks through Analysis of Social Groups.</a></li>
+<li><a href="#65. Directed Network Community Detection: A Popularity and Productivity Link Model.">65. Directed Network Community Detection: A Popularity and Productivity Link Model.</a></li>
+<li><a href="#66. HCDF: A Hybrid Community Discovery Framework.">66. HCDF: A Hybrid Community Discovery Framework.</a></li>
+</ul>
+</li>
+<li><a href="#Session S18: Classification    4">Session S18: Classification    4</a><ul>
+<li><a href="#67. A Robust Decision Tree Algorithm for Imbalanced Data Sets.">67. A Robust Decision Tree Algorithm for Imbalanced Data Sets.</a></li>
+<li><a href="#68. Multi-label Classification without the Multi-label Cost.">68. Multi-label Classification without the Multi-label Cost.</a></li>
+<li><a href="#69. Fast and Accurate Gene Prediction by Decision Tree Classification.">69. Fast and Accurate Gene Prediction by Decision Tree Classification.</a></li>
+<li><a href="#70. On Classification of High-Cardinality Data Streams.">70. On Classification of High-Cardinality Data Streams.</a></li>
+</ul>
+</li>
+<li><a href="#Session S19: Classification and Applications    4">Session S19: Classification and Applications    4</a><ul>
+<li><a href="#71. Predictive Modeling with Heterogeneous Sources.">71. Predictive Modeling with Heterogeneous Sources.</a></li>
+<li><a href="#72. A Probabilistic Framework to Learn from Multiple Annotators with Time-Varying Accuracy.">72. A Probabilistic Framework to Learn from Multiple Annotators with Time-Varying Accuracy.</a></li>
+<li><a href="#73. An Integrative Approach to Indentifying Biologically Relevant Genes.">73. An Integrative Approach to Indentifying Biologically Relevant Genes.</a></li>
+<li><a href="#74. A Compression Based Distance Measure for Texture.">74. A Compression Based Distance Measure for Texture.</a></li>
+</ul>
+</li>
+<li><a href="#Session S20: Machine Learning    4">Session S20: Machine Learning    4</a><ul>
+<li><a href="#75. Fast Implementation of ℓ1Regularized Learning Algorithms Using Gradient Descent Methods.">75. Fast Implementation of ℓ1Regularized Learning Algorithms Using Gradient Descent Methods.</a></li>
+<li><a href="#76. Learning Compressible Models.">76. Learning Compressible Models.</a></li>
+<li><a href="#77. A Permutation Approach to Validation.">77. A Permutation Approach to Validation.</a></li>
+<li><a href="#78. Adaptive Informative Sampling for Active Learning.">78. Adaptive Informative Sampling for Active Learning.</a></li>
+</ul>
+</li>
+<li><a href="#Session S21: Potpourri    4">Session S21: Potpourri    4</a><ul>
+<li><a href="#79. Evaluating Query Result Significance in Databases via Randomizations.">79. Evaluating Query Result Significance in Databases via Randomizations.</a></li>
+<li><a href="#80. Cross-Selling Optimization for Customized Promotion.">80. Cross-Selling Optimization for Customized Promotion.</a></li>
+<li><a href="#81. A Generalized Tree Matching Algorithm Considering Nested Lists for Web Data Extraction.">81. A Generalized Tree Matching Algorithm Considering Nested Lists for Web Data Extraction.</a></li>
+<li><a href="#82. Mining Maximally Banded Matrices in Binary Data.">82. Mining Maximally Banded Matrices in Binary Data.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="10. SDM 2010:Columbus, Ohio, USA">10. SDM 2010:Columbus, Ohio, USA</h1>
+<p><a href="http://dx.doi.org/10.1137/1.9781611972801">Proceedings of the SIAM International Conference on Data Mining, SDM 2010, April 29 - May 1, 2010, Columbus, Ohio, USA.</a> SIAM
+【<a href="http://dblp.uni-trier.de/db/conf/sdm/sdm2010.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 82 || Session Num: 21">Paper Num: 82 || Session Num: 21</h2>
+<h2 id="Session S1: Text Mining    4">Session S1: Text Mining    4</h2>
+<h3 id="1. Text Categorization Using Word Similarities Based on Higher Order Co-occurrences.">1. Text Categorization Using Word Similarities Based on Higher Order Co-occurrences.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.1">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hussain:Syed_Fawad">Syed Fawad Hussain</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bisson:Gilles">Gilles Bisson</a></p>
+<p>【Abstract】:
+In this paper, we propose an extension of the χ-Sim co-clustering algorithm to deal with the text categorization task. The idea behind χ-Sim method [1] is to iteratively learn the similarity matrix between documents using similarity matrix between words and vice-versa. Thus, two documents are said to be similar if they share similar (but not necessary identical) words and two words are similar if they occur in similar documents. The algorithm has been shown to work well for unsupervised document clustering. By introducing some “a priori” knowledge about the class labels of documents in the initialization step of χ-Sim, we are able to extend the method to deal for the supervised task. The proposed approach is tested on different classical textual datasets and our experiments show that the proposed algorithm compares favorably or surpass both traditional and state-of-the-art algorithms like k-NN, supervised LSI and SVM.</p>
+<p>【Keywords】:</p>
+<h3 id="2. Exploiting Associations between Word Clusters and Document Classes for Cross-Domain Text Categorization.">2. Exploiting Associations between Word Clusters and Document Classes for Cross-Domain Text Categorization.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.2">Paper Link</a>】    【Pages】:13-24</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhuang:Fuzhen">Fuzhen Zhuang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Luo:Ping">Ping Luo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xiong:Hui">Hui Xiong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/He:Qing">Qing He</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xiong:Yuhong">Yuhong Xiong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shi:Zhongzhi">Zhongzhi Shi</a></p>
+<p>【Abstract】:
+Cross-domain text categorization targets on adapting the knowledge learnt from a labeled source-domain to an unlabeled target-domain, where the documents from the source and target domains are drawn from different distributions. However, in spite of the different distributions in raw word features, the associations between word clusters (conceptual features) and document classes may remain stable across different domains. In this paper, we exploit these unchanged associations as the bridge of knowledge transformation from the source domain to the target domain by the nonnegative matrix tri-factorization. Specifically, we formulate a joint optimization framework of the two matrix tri-factorizations for the source and target domain data respectively, in which the associations between word clusters and document classes are shared between them. Then, we give an iterative algorithm for this optimization and theoretically show its convergence. The comprehensive experiments show the effectiveness of this method. In particular, we show that the proposed method can deal with some difficult scenarios where baseline methods usually do not perform well.</p>
+<p>【Keywords】:</p>
+<h3 id="3. Semi-supervised Bio-named Entity Recognition with Word-Codebook Learning.">3. Semi-supervised Bio-named Entity Recognition with Word-Codebook Learning.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.3">Paper Link</a>】    【Pages】:25-36</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kuksa:Pavel_P=">Pavel P. Kuksa</a> ; <a href="http://dblp.uni-trier.de/pers/hd/q/Qi:Yanjun">Yanjun Qi</a></p>
+<p>【Abstract】:
+We describe a novel semi-supervised method called Word-Codebook Learning (WCL), and apply it to the task of bio-named entity recognition (bioNER). Typical bioNER systems can be seen as tasks of assigning labels to words in bio-literature text. To improve supervised tagging, WCL learns a class of word-level feature embeddings to capture word semantic meanings or word label patterns from a large unlabeled corpus. Words are then clustered according to their embedding vectors through a vector quantization step, where each word is assigned into one of the codewords in a codebook. Finally codewords are treated as new word attributes and are added for entity labeling. Two types of word-codebook learning are proposed: (1) General WCL, where an unsupervised method uses contextual semantic similarity of words to learn accurate word representations; (2) Task-oriented WCL, where for every word a semi-supervised method learns target-class label patterns from unlabeled data using supervised signals from trained bioNER model. Without the need for complex linguistic features, we demonstrate utility of WCL on the BioCreativeII gene name recognition competition data, where WCL yields state-of-the-art performance and shows great improvements over supervised baselines and semi-supervised counter peers.</p>
+<p>【Keywords】:</p>
+<h3 id="4. Improving Accessibility of Transaction-centric Web Objects.">4. Improving Accessibility of Transaction-centric Web Objects.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.4">Paper Link</a>】    【Pages】:37-48</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/i/Islam:Muhammad_Asiful">Muhammad Asiful Islam</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Ahmed_0001:Faisal">Faisal Ahmed</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Borodin:Yevgen">Yevgen Borodin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mahmud:Jalal">Jalal Mahmud</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ramakrishnan:I=_V=">I. V. Ramakrishnan</a></p>
+<p>【Abstract】:
+Advances in web technology have considerably widened the Web accessibility divide between sighted and blind users. This divide is especially acute when conducting online transactions, e.g., shopping, paying bills, making travel plans, etc. Such transactions span multiple web pages and require that users find clickable objects (e.g., “add-to-cart” button) which are essential for transaction progress. While this is fast and straightforward for sighted users, locating the clickable objects causes considerable strain for blind individuals using screen-reading technology. Screen readers force users to listen to irrelevant information sequentially and provide no interface for identifying relevant clickable objects. This paper addresses the problem of making clickable objects readily accessible, which can substantially reduce the information overload that is otherwise experienced by blind users. A static knowledge base of keywords constructed from the captions of clickable objects does not provide enough learning capability for identifying clickable objects which do not have any captions (e.g., image buttons without alternative text). In this paper, we present an Information Retrieval based technique that uses the context of transaction-centric objects (e.g., “add-to-cart” and “checkout” buttons) to identify and classify them even when their captions are missing. In addition, the technique utilizes a reinforcement mechanism based on user feedback to accommodate previously unseen captions of objects as well as new categories of objects. We provide user study and experimental evidence of the effectiveness of our algorithm.</p>
+<p>【Keywords】:</p>
+<h2 id="Session S2: Privacy and Trust    4">Session S2: Privacy and Trust    4</h2>
+<h3 id="5. Reconstructing Randomized Social Networks.">5. Reconstructing Randomized Social Networks.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.5">Paper Link</a>】    【Pages】:49-59</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/v/Vuokko:Niko">Niko Vuokko</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Terzi:Evimaria">Evimaria Terzi</a></p>
+<p>【Abstract】:
+In social networks, nodes correspond to entities and edges to links between them. In most of the cases, nodes are also associated with a set of features. Noise, missing values or efforts to preserve privacy in the network may transform the original network G and its feature vectors F. This transformation can be modeled as a randomization method. Here, we address the problem of reconstructing the original network and set of features given their randomized counterparts G′ and F′ and knowledge of the randomization model. We identify the cases in which the original network G and feature vectors F can be reconstructed in polynomial time. Finally, we illustrate the efficacy of our methods using both generated and real datasets.</p>
+<p>【Keywords】:</p>
+<h3 id="6. Reconstruction from Randomized Graph via Low Rank Approximation.">6. Reconstruction from Randomized Graph via Low Rank Approximation.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.6">Paper Link</a>】    【Pages】:60-71</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Leting">Leting Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Ying:Xiaowei">Xiaowei Ying</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Xintao">Xintao Wu</a></p>
+<p>【Abstract】:
+The privacy concerns associated with data analysis over social networks have spurred recent research on privacy-preserving social network analysis, particularly on privacy-preserving publishing of social network data. In this paper, we focus on whether we can reconstruct a graph from the edge randomized graph such that accurate feature values can be recovered. In particular, we present a low rank approximation based reconstruction algorithm. We exploit spectral properties of the graph data and show why noise could be separated from the perturbed graph using low rank approximation. We also show key differences from previous findings of point-wise reconstruction methods on numerical data through empirical evaluations and theoretical justifications.</p>
+<p>【Keywords】:</p>
+<h3 id="7. Do You Trust to Get Trust? A Study of Trust Reciprocity Behaviors and Reciprocal Trust Prediction.">7. Do You Trust to Get Trust? A Study of Trust Reciprocity Behaviors and Reciprocal Trust Prediction.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.7">Paper Link</a>】    【Pages】:72-83</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Nguyen:Viet=An">Viet-An Nguyen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lim:Ee=Peng">Ee-Peng Lim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tan:Hwee=Hoon">Hwee-Hoon Tan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jiang:Jing">Jing Jiang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sun:Aixin">Aixin Sun</a></p>
+<p>【Abstract】:
+Trust reciprocity, a special form of link reciprocity, exists in many networks of trust among users. In this paper, we seek to determine the extent to which reciprocity exists in a trust network and develop quantitative models for measuring reciprocity and reciprocity related behaviors. We identify several reciprocity behaviors and their respective measures. These behavior measures can be employed for predicting if a trustee will return trust to her trustor given that the latter initiates a trust link earlier. We develop for this reciprocal trust prediction task a number of ranking method and classification methods, and evaluated them on an Epinions trust network data. Our results show that reciprocity related behaviors provide good features for both ranking and classification based methods under different parameter settings.</p>
+<p>【Keywords】:</p>
+<h3 id="8. Publishing Skewed Sensitive Microdata.">8. Publishing Skewed Sensitive Microdata.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.8">Paper Link</a>】    【Pages】:84-93</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Yabo">Yabo Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Ke">Ke Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fu:Ada_Wai=Chee">Ada Wai-Chee Fu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wong:Raymond_Chi=Wing">Raymond Chi-Wing Wong</a></p>
+<p>【Abstract】:
+A highly skewed microdata contains some sensitive attribute values that occur far more frequently than others. Such data violates the “eligibility condition” assumed by existing works for limiting the probability of linking an individual to a specific sensitive attribute value. Specifically, if the frequency of some sensitive attribute value is too high, publishing the sensitive attribute alone would lead to linking attacks. In many practical scenarios, however, this eligibility condition is violated. In this paper, we consider how to publish microdata under this case. A natural solution is “minimally” suppressing “dominating” records to restore the eligibility condition. We show that the minimality of suppression may lead to linking attacks. To limit the inference probability, we propose a randomized suppression solution. We show that this approach has the least expected suppression in a large family of randomized solutions, for a given privacy requirement. Experiments show that this solution approaches the lower bound on the suppression required for this problem.</p>
+<p>【Keywords】:</p>
+<h2 id="Session S3: Clustering    4">Session S3: Clustering    4</h2>
+<h3 id="9. A SAT-based Framework for Efficient Constrained Clustering.">9. A SAT-based Framework for Efficient Constrained Clustering.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.9">Paper Link</a>】    【Pages】:94-105</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Davidson:Ian">Ian Davidson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ravi:S=_S=">S. S. Ravi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shamis:Leonid">Leonid Shamis</a></p>
+<p>【Abstract】:
+The area of clustering under constraints has recently received much attention in the data mining community. However, most work involves adding constraints to existing algorithms which, although being quite pragmatic, raises several difficulties. Examples of these difficulties include creating intractable constraint satisfaction sub-problems and constrained clustering algorithms that are easily over-constrained so they may not converge or converge to a poor clustering solution. In this paper we show how both instance and cluster-level constraints can be expressed as instances of the 2SAT problem and how multiple calls to a 2SAT solver can be used to construct algorithms that are guaranteed to satisfy all the constraints and converge to a global optimum for a number of intuitive objective functions. Our approach provides two additional advantages. Firstly, it leads to polynomial time algorithms for the k = 2 case for several objective functions. Secondly, one can specify large sets of constraints without fear of over-constraining the problem: if one or more solutions satisfying all constraints exist, our algorithm is guaranteed to find a best such solution. We present experimental results to show that our approach outperforms several popular algorithms particularly for large constraint sets, where these algorithms are over-constrained and fair poorly.</p>
+<p>【Keywords】:</p>
+<h3 id="10. Spectral and Semidefinite Relaxation of the CLUHSIC Algorithm.">10. Spectral and Semidefinite Relaxation of the CLUHSIC Algorithm.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.10">Paper Link</a>】    【Pages】:106-117</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Wen=Yun">Wen-Yun Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kwok:James_T=">James T. Kwok</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lu:Bao=Liang">Bao-Liang Lu</a></p>
+<p>【Abstract】:
+CLUHSIC is a recent clustering framework that unifies the geometric, spectral and statistical views of clustering. In this paper, we show that the recently proposed discriminative view of clustering, which includes the DIFFRAC and DisKmeans algorithms, can also be unified under the CLUHSIC framework. Moreover, CLUHSIC involves integer programming and one has to resort to heuristics such as iterative local optimization. In this paper, we propose two relaxations that are much more disciplined. The first one uses spectral techniques while the second one is based on semidefinite programming (SDP). Experimental results on a number of structured clustering tasks show that the proposed method significantly outperforms existing optimization methods for CLUHSIC. Moreover, it can also be used in semi-supervised classification. Experiments on real-world protein subcellular localization data sets clearly demonstrate the ability of CLUHSIC in incorporating structural and evolutionary information.</p>
+<p>【Keywords】:</p>
+<h3 id="11. Generation of Alternative Clusterings Using the CAMI Approach.">11. Generation of Alternative Clusterings Using the CAMI Approach.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.11">Paper Link</a>】    【Pages】:118-129</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dang:Xuan_Hong">Xuan Hong Dang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bailey:James">James Bailey</a></p>
+<p>【Abstract】:
+Exploratory data analysis aims to discover and generate multiple views of the structure within a dataset. Conventional clustering techniques, however, are designed to only provide a single grouping or clustering of a dataset. In this paper, we introduce a novel algorithm called CAMI, that can uncover alternative clusterings from a dataset. CAMI takes a mathematically appealing approach, combining the use of mutual information to distinguish between alternative clusterings, coupled with an expectation maximization framework to ensure clustering quality. We experimentally test CAMI on both synthetic and real-world datasets, comparing it against a variety of state-of-the-art algorithms. We demonstrate that CAMI's performance is high and that its formulation provides a number of advantages compared to existing techniques.</p>
+<p>【Keywords】:</p>
+<h3 id="12. Making k-means Even Faster.">12. Making k-means Even Faster.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.12">Paper Link</a>】    【Pages】:130-140</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hamerly:Greg">Greg Hamerly</a></p>
+<p>【Abstract】:
+The k-means algorithm is widely used for clustering, compressing, and summarizing vector data. In this paper, we propose a new acceleration for exact k-means that gives the same answer, but is much faster in practice. Like Elkan's accelerated algorithm [8], our algorithm avoids distance computations using distance bounds and the triangle inequality. Our algorithm uses one novel lower bound for point-center distances, which allows it to eliminate the innermost k-means loop 80% of the time or more in our experiments. On datasets of low and medium dimension (e.g. up to 50 dimensions), our algorithm is much faster than other methods, including methods based on low-dimensional indexes, such as k-d trees. Other advantages are that it is very simple to implement and it has a very small memory overhead, much smaller than other accelerated algorithms.</p>
+<p>【Keywords】:</p>
+<h2 id="Session S4: Pattern Mining    4">Session S4: Pattern Mining    4</h2>
+<h3 id="13. On Mining Statistically Significant Attribute Association Information.">13. On Mining Statistically Significant Attribute Association Information.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.13">Paper Link</a>】    【Pages】:141-152</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chanda:Pritam">Pritam Chanda</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Jianmei">Jianmei Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Aidong">Aidong Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ramanathan:Murali">Murali Ramanathan</a></p>
+<p>【Abstract】:
+Knowledge of the association information between the attributes in a data set provides insight into the underlying structure of the data and explains the relationships (independence, synergy, redundancy) between the attributes. Complex models learnt computationally from the data are more interpretable to a human analyst when such interdependencies are known. In this paper, we focus on mining two types of association information among the attributes – correlation information and interaction information which capture multivariate dependencies between the data attributes. Identifying the statistically significant attribute associations is a computationally challenging task – the number of possible associations increases exponentially and many associations contain redundant information when a number of correlated attributes are present. In this paper, we explore efficient data mining methods to discover non-redundant attribute sets that contain significant association information indicating the presence of informative patterns in the data.</p>
+<p>【Keywords】:</p>
+<h3 id="14. An Information-Theoretic Approach to Finding Informative Noisy Tiles in Binary Databases.">14. An Information-Theoretic Approach to Finding Informative Noisy Tiles in Binary Databases.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.14">Paper Link</a>】    【Pages】:153-164</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kontonasios:Kleanthis=Nikolaos">Kleanthis-Nikolaos Kontonasios</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bie:Tijl_De">Tijl De Bie</a></p>
+<p>【Abstract】:
+The task of finding informative recurring patterns in data has been central to data mining research since the introduction of the task of frequent itemset mining in [1, 2, 14]. In these seminal papers, the informativeness of a recurring itemset in a binary database was formalized by its support in the database. However, it is now widely recognized that an itemset's support is not the best measure of its informativeness. Furthermore, recent work has highlighted that the support of an itemset is highly susceptible to noise, such that it may be more appropriate to search for itemsets that recur only approximately. In this paper, we present a new measure of informativeness for noisy itemsets in binary databases within the formalism of tiles [6]. We demonstrate the benefits of our new measure by means of experiments on artificial and real-life data, allowing for objective and subjective evaluation.</p>
+<p>【Keywords】:</p>
+<h3 id="15. Mining Top-K Patterns from Binary Datasets in Presence of Noise.">15. Mining Top-K Patterns from Binary Datasets in Presence of Noise.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.15">Paper Link</a>】    【Pages】:165-176</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lucchese:Claudio">Claudio Lucchese</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Orlando:Salvatore">Salvatore Orlando</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Perego:Raffaele">Raffaele Perego</a></p>
+<p>【Abstract】:
+The discovery of patterns in binary dataset has many applications, e.g. in electronic commerce, TCP/IP networking, Web usage logging, etc. Still, this is a very challenging task in many respects: overlapping vs. non overlapping patterns, presence of noise, extraction of the most important patterns only. In this paper we formalize the problem of discovering the Top-K patterns from binary datasets in presence of noise, as the minimization of a novel cost function. According to the Minimum Description Length principle, the proposed cost function favors succinct pattern sets that may approximately describe the input data. We propose a greedy algorithm for the discovery of Patterns in Noisy Datasets, named PaNDa, and show that it outperforms related techniques on both synthetic and real-world data.</p>
+<p>【Keywords】:</p>
+<h3 id="16. Formal Concept Sampling for Counting and Threshold-Free Local Pattern Mining.">16. Formal Concept Sampling for Counting and Threshold-Free Local Pattern Mining.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.16">Paper Link</a>】    【Pages】:177-188</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Boley:Mario">Mario Boley</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/G=auml=rtner:Thomas">Thomas Gärtner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Grosskreutz:Henrik">Henrik Grosskreutz</a></p>
+<p>【Abstract】:
+We describe a Metropolis-Hastings algorithm for sampling formal concepts, i.e., closed (item-) sets, according to any desired strictly positive distribution. Important applications are (a) estimating the number of all formal concepts as well as (b) discovering any number of interesting, non-redundant, and representative local patterns. Setting (a) can be used for estimating the runtime of algorithms examining all formal concepts. An application of setting (b) is the construction of data mining systems that do not require any user-specified threshold like minimum frequency or confidence.</p>
+<p>【Keywords】:</p>
+<h2 id="Session S5: Recommendation    4">Session S5: Recommendation    4</h2>
+<h3 id="17. Alleviating the Sparsity Problem in Collaborative Filtering by Using an Adapted Distance and a Graph-Based Method.">17. Alleviating the Sparsity Problem in Collaborative Filtering by Using an Adapted Distance and a Graph-Based Method.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.17">Paper Link</a>】    【Pages】:189-198</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Piccart:Beau">Beau Piccart</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Struyf:Jan">Jan Struyf</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Blockeel:Hendrik">Hendrik Blockeel</a></p>
+<p>【Abstract】:
+Collaborative filtering (CF) is the process of predicting a user's interest in various items, such as books or movies, based on taste information, typically expressed in the form of item ratings, from many other users. One of the key issues in collaborative filtering is how to deal with data sparsity; most users rate only a small number of items. This paper's first contribution is a distance measure. This distance measure is probability-based and is adapted for use with sparse data; it can be used with for instance a nearest neighbor method, or in graph-based methods to label the edges of the graph. Our second contribution is a novel probabilistic graph-based collaborative filtering algorithm called PGBCF that employs that distance. By propagating probabilistic predictions through the user graph, PGBCF does not only use ratings of direct neighbors, but can also exploit the information available for indirect neighbors. Experiments show that both the adapted distance measure and the graph-based collaborative filtering algorithm lead to more accurate predictions.</p>
+<p>【Keywords】:</p>
+<h3 id="18. Collaborative Filtering: Weighted Nonnegative Matrix Factorization Incorporating User and Item Graphs.">18. Collaborative Filtering: Weighted Nonnegative Matrix Factorization Incorporating User and Item Graphs.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.18">Paper Link</a>】    【Pages】:199-210</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gu:Quanquan">Quanquan Gu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Jie">Jie Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Ding:Chris_H=_Q=">Chris H. Q. Ding</a></p>
+<p>【Abstract】:
+Collaborative filtering is an important topic in data mining and has been widely used in recommendation system. In this paper, we proposed a unified model for collaborative filtering based on graph regularized weighted nonnegative matrix factorization. In our model, two graphs are constructed on users and items, which exploit the internal information (e.g. neighborhood information in the user-item rating matrix) and external information (e.g. content information such as user's occupation and item's genre, or other kind of knowledge such as social trust network). The proposed method not only inherits the advantages of model-based method, but also owns the merits of memory-based method which considers the neighborhood information. Moreover, it has the ability to make use of content information and any additional information regarding user-user such as social trust network. Due to the use of these internal and external information, the proposed method is able to find more interpretable low-dimensional representations for users and items, which is helpful for improving the recommendation accuracy. Experimental results on benchmark collaborative filtering data sets demonstrate that the proposed methods outperform the state of the art collaborative filtering methods a lot.</p>
+<p>【Keywords】:</p>
+<h3 id="19. Temporal Collaborative Filtering with Bayesian Probabilistic Tensor Factorization.">19. Temporal Collaborative Filtering with Bayesian Probabilistic Tensor Factorization.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.19">Paper Link</a>】    【Pages】:211-222</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/x/Xiong:Liang">Liang Xiong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Xi">Xi Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Huang:Tzu=Kuo">Tzu-Kuo Huang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schneider:Jeff_G=">Jeff G. Schneider</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Carbonell:Jaime_G=">Jaime G. Carbonell</a></p>
+<p>【Abstract】:
+Real-world relational data are seldom stationary, yet traditional collaborative filtering algorithms generally rely on this assumption. Motivated by our sales prediction problem, we propose a factor-based algorithm that is able to take time into account. By introducing additional factors for time, we formalize this problem as a tensor factorization with a special constraint on the time dimension. Further, we provide a fully Bayesian treatment to avoid tuning parameters and achieve automatic model complexity control. To learn the model we develop an efficient sampling procedure that is capable of analyzing large-scale data sets. This new algorithm, called Bayesian Probabilistic Tensor Factorization (BPTF), is evaluated on several real-world problems including sales prediction and movie recommendation. Empirical results demonstrate the superiority of our temporal model.</p>
+<p>【Keywords】:</p>
+<h3 id="20. Residual Bayesian Co-clustering for Matrix Approximation.">20. Residual Bayesian Co-clustering for Matrix Approximation.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.20">Paper Link</a>】    【Pages】:223-234</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Shan:Hanhuai">Hanhuai Shan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Banerjee:Arindam">Arindam Banerjee</a></p>
+<p>【Abstract】:
+In recent years, matrix approximation for missing value prediction has emerged as an important problem in a variety of domains such as recommendation systems, e-commerce and online advertisement. While matrix factorization based algorithms typically have good approximation accuracy, such algorithms can be slow especially for large matrices. Further, such algorithms cannot naturally make prediction on new rows or columns. In this paper, we propose residual Bayesian co-clustering (RBC), which learns a generative model corresponding to the matrix from the non-missing entries, and uses the model to predict the missing entries. RBC is an extension of Bayesian co-clustering by taking row and column bias into consideration. The model allows mixed memberships of rows and columns to multiple clusters, and can naturally handle the prediction on new rows and columns which are not used in the training process, given only a few non-missing entries in them. We propose two variational inference based algorithms for learning the model and predicting missing entries. One of the proposed algorithms leads to a parallel RBC which can achieve significant speed-ups. The efficacy of RBC is demonstrated by extensive experimental comparisons with state-of-the-art algorithms on real world datasets.</p>
+<p>【Keywords】:</p>
+<h2 id="Session S6: Support Vector Machines    4">Session S6: Support Vector Machines    4</h2>
+<h3 id="21. Two-View Transductive Support Vector Machines.">21. Two-View Transductive Support Vector Machines.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.21">Paper Link</a>】    【Pages】:235-244</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Guangxia">Guangxia Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hoi:Steven_C=_H=">Steven C. H. Hoi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chang:Kuiyu">Kuiyu Chang</a></p>
+<p>【Abstract】:
+Obtaining high-quality and up-to-date labeled data can be difficult in many real-world machine learning applications, especially for Internet classification tasks like review spam detection, which changes at a very brisk pace. For some problems, there may exist multiple perspectives, so called views, of each data sample. For example, in text classification, the typical view contains a large number of raw content features such as term frequency, while a second view may contain a small but highly-informative number of domain specific features. We thus propose a novel two-view transductive SVM that takes advantage of both the abundant amount of unlabeled data and their multiple representations to improve the performance of classifiers. The idea is fairly simple: train a classifier on each of the two views of both labeled and unlabeled data, and impose a global constraint that each classifier assigns the same class label to each labeled and unlabeled data. We applied our two-view transductive SVM to the WebKB course dataset, and a real-life review spam classification dataset. Experimental results show that our proposed approach performs up to 5% better than a single view learning algorithm, especially when the amount of labeled data is small. The other advantage of our two-view approach is its significantly improved stability, which is especially useful for noisy real world data.</p>
+<p>【Keywords】:</p>
+<h3 id="22. Fast Stochastic Frank-Wolfe Algorithms for Nonlinear SVMs.">22. Fast Stochastic Frank-Wolfe Algorithms for Nonlinear SVMs.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.22">Paper Link</a>】    【Pages】:245-256</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/o/Ouyang:Hua">Hua Ouyang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gray:Alexander_G=">Alexander G. Gray</a></p>
+<p>【Abstract】:
+The high computational cost of nonlinear support vector machines has limited their usability for large-scale problems. We propose two novel stochastic algorithms to tackle this problem. These algorithms are based on a simple and classic optimization method: the Frank-Wolfe method, which is known to be fast for problems with a large number of linear constraints. Formulating the nonlinear SVM problem to take advantage of this method, we achieve a provable time complexity of O(dQ2/∈2). The proposed algorithms achieve comparable or even better accuracies than the state-of-the-art methods, and are significantly faster.</p>
+<p>【Keywords】:</p>
+<h3 id="23. Single-Pass Distributed Learning of Multi-class SVMs Using Core-Sets.">23. Single-Pass Distributed Learning of Multi-class SVMs Using Core-Sets.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.23">Paper Link</a>】    【Pages】:257-268</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lodi:Stefano">Stefano Lodi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/=/=Ntilde=anculef:Ricardo">Ricardo Ñanculef</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sartori:Claudio">Claudio Sartori</a></p>
+<p>【Abstract】:
+We explore a technique to learn Support Vector Models (SVMs) when training data is partitioned among several data sources. The basic idea is to consider SVMs which can be reduced to Minimal Enclosing Ball (MEB) problems in an feature space. Computation of such SVMs can be efficiently achieved by finding a core-set for the image of the data in the feature space. Our main result is that the union of local core-sets provides a close approximation to a global core-set from which the SVM can be recovered. The method requires hence a single pass through each source of data in order to compute local core-sets and then to recover the SVM from its union. Extensive simulations in small and large datasets are presented in order to evaluate its classification accuracy, transmission efficiency and global complexity, comparing its results with a widely used single-pass heuristic to learn standard SVMs.</p>
+<p>【Keywords】:</p>
+<h3 id="24. Nonnegative Principal Component Analysis for Proteomic Tumor Profiles.">24. Nonnegative Principal Component Analysis for Proteomic Tumor Profiles.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.24">Paper Link</a>】    【Pages】:269-280</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Han:Xiaoxu">Xiaoxu Han</a></p>
+<p>【Abstract】:
+Identifying cancer molecular patterns with high accuracy from high-dimensional proteomic profiles presents a challenge for statistical learning and oncology research. In this study, we develop a nonnegative principal component analysis and propose a nonnegative principal component analysis based support vector machine with a sparse coding to conduct effective feature selection and high-performance proteomic pattern classification. We demonstrate the superiority of our algorithm by comparing it with six peer algorithms on four benchmark proteomic tumor profiles under 100 trials of 50% holdout cross validations. We also rigorously show that the over-fitting problem associated with support vector machines can be overcome by nonnegative principal component analysis with exceptional sensitivities and specificities. Moreover, we illustrate that nonnegative principal component analysis can be employed to capture meaningful biomarkers.</p>
+<p>【Keywords】:</p>
+<h2 id="Session S7: Supervised Learning    3">Session S7: Supervised Learning    3</h2>
+<h3 id="25. Efficient Nonnegative Matrix Factorization with Random Projections.">25. Efficient Nonnegative Matrix Factorization with Random Projections.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.25">Paper Link</a>】    【Pages】:281-292</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang_0001:Fei">Fei Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li_0001:Ping">Ping Li</a></p>
+<p>【Abstract】:
+The recent years have witnessed a surge of interests in Nonnegative Matrix Factorization (NMF) in data mining and machine learning fields. Despite its elegant theory and empirical success, one of the limitations of NMF based algorithms is that it needs to store the whole data matrix in the entire process, which requires expensive storage and computation costs when the data set is large and high-dimensional. In this paper, we propose to apply the random projection techniques to accelerate the NMF process. Both theoretical analysis and experimental validations will be presented to demonstrate the effectiveness of the proposed strategy.</p>
+<p>【Keywords】:</p>
+<h3 id="26. Bridging Domains with Words: Opinion Analysis with Matrix Tri-factorizations.">26. Bridging Domains with Words: Opinion Analysis with Matrix Tri-factorizations.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.26">Paper Link</a>】    【Pages】:293-302</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Tao">Tao Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sindhwani:Vikas">Vikas Sindhwani</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Ding:Chris_H=_Q=">Chris H. Q. Ding</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang_0005:Yi">Yi Zhang</a></p>
+<p>【Abstract】:
+With the explosion of user-generated web2.0 content in the form of blogs, wikis and discussion forums, the Internet has rapidly become a massive dynamic repository of public opinion on an unbounded range of topics. A key enabler of opinion extraction and summarization is sentiment classification: the task of automatically identifying whether a given piece of text expresses positive or negative opinion towards a topic of interest. Building high-quality sentiment classifiers using standard text categorization methods is challenging due to the lack of labeled data in a target domain. In this paper, we consider the problem of cross-domain sentiment analysis: can one, for instance, download rated movie reviews from rottentomatoes.com or IMBD discussion forums, learn linguistic expressions and sentiment-laden terms that generally characterize opinionated commentary and then successfully transfer this knowledge to the target domain, thereby building high-quality sentiment models without manual effort? We outline a novel sentiment transfer mechanism based on constrained non-negative matrix tri-factorizations of term-document matrices in the source and target domains. The constrained matrix factorization framework naturally incorporates document labels via a least squares penalty incurred by a certain linear model and enables direct and explicit knowledge transfer across different domains. We obtain promising empirical results with this approach.</p>
+<p>【Keywords】:</p>
+<h3 id="27. Exact Passive-Aggressive Algorithm for Multiclass Classification Using Support Class.">27. Exact Passive-Aggressive Algorithm for Multiclass Classification Using Support Class.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.27">Paper Link</a>】    【Pages】:303-314</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Matsushima:Shin">Shin Matsushima</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shimizu:Nobuyuki">Nobuyuki Shimizu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yoshida:Kazuhiro">Kazuhiro Yoshida</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Ninomiya:Takashi">Takashi Ninomiya</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nakagawa:Hiroshi">Hiroshi Nakagawa</a></p>
+<p>【Abstract】:
+The Passive Aggressive framework [1] is a principled approach to online linear classification that advocates minimal weight updates i.e., the least required so that the current training instance is correctly classified. While the PA framework allows integration with different loss functions, it is yet to be combined with a multiclass loss function that penalizes every class with a score higher than the true class. We call the method of training the classifier with this loss function the Support Class Passive Aggressive Algorithm. In order to obtain a weight update formula, we solve a quadratic optimization problem by using multiple constraints and arrive at a closed-form solution. This lets us obtain a simple but effective algorithm that updates the classifier against multiple classes for which an instance is likely to be mistaken. We call them the support classes. Experiments demonstrated that our method improves the traditional PA algorithms.</p>
+<p>【Keywords】:</p>
+<h2 id="Session S8: Spatial-Temporal Pattern Mining    4">Session S8: Spatial-Temporal Pattern Mining    4</h2>
+<h3 id="28. Robust Mining of Time Intervals with Semi-interval Partial Order Patterns.">28. Robust Mining of Time Intervals with Semi-interval Partial Order Patterns.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.28">Paper Link</a>】    【Pages】:315-326</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/M=ouml=rchen:Fabian">Fabian Mörchen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fradkin:Dmitriy">Dmitriy Fradkin</a></p>
+<p>【Abstract】:
+We present a new approach to mining patterns from symbolic interval data that extends previous approaches by allowing semi-intervals and partially ordered patterns. The mining algorithm combines and adapts efficient algorithms from sequential pattern and itemset mining for discovery of the new semi-interval patterns. The semi-interval patterns and semi-interval partial order patterns are more flexible than patterns over full intervals, and are empirically demonstrated to be more useful as features in classification settings. We performed an extensive empirical evaluation on seven real life interval databases totalling over 146k intervals from more than 400 classes demonstrating the flexibility and usefulness of the patterns.</p>
+<p>【Keywords】:</p>
+<h3 id="29. Cascading Spatio-temporal Pattern Discovery: A Summary of Results.">29. Cascading Spatio-temporal Pattern Discovery: A Summary of Results.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.29">Paper Link</a>】    【Pages】:327-338</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mohan:Pradeep">Pradeep Mohan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shekhar:Shashi">Shashi Shekhar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shine:James_A=">James A. Shine</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rogers:James_P=">James P. Rogers</a></p>
+<p>【Abstract】:
+Given a collection of Boolean spatio-temporal(ST) event types, the cascading spatio-temporal pattern (CSTP) discovery process finds partially ordered subsets of event-types whose instances are located together and occur in stages. For example, analysis of crime datasets may reveal frequent occurrence of misdemeanors and drunk driving after bar closings on weekends and after large gatherings such as football games. Discovering CSTPs from ST datasets is important for application domains such as public safety (e.g. crime attractors and generators) and natural disaster planning(e.g. hurricanes). However, CSTP discovery is challenging for several reasons, including both the lack of computationally efficient, statistically meaningful metrics to quantify interestingness, and the large cardinality of candidate pattern sets that are exponential in the number of event types. Existing literature for ST data mining focuses on mining totally ordered sequences or unordered subsets. In contrast, this paper models CSTPs as partially ordered subsets of Boolean ST event types. We propose a new CSTP interest measure (the Cascade Participation Index) that is computationally cheap(O(n2)vs. exponential, where n is the dataset size) as well as statistically meaningful. We propose a novel algorithm exploiting the ST nature of datasets and evaluate filtering strategies to quickly prune uninteresting candidates. We present a case study to find CSTPs from real crime reports and provide a statistical explanation. Experimental results indicate that the proposed multiresolution spatio-temporal(MST) filtering strategy leads to significant savings in computational costs.</p>
+<p>【Keywords】:</p>
+<h3 id="30. Frequentness-Transition Queries for Distinctive Pattern Mining from Time-Segmented Databases.">30. Frequentness-Transition Queries for Distinctive Pattern Mining from Time-Segmented Databases.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.30">Paper Link</a>】    【Pages】:339-349</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Minato:Shin=ichi">Shin-ichi Minato</a> ; <a href="http://dblp.uni-trier.de/pers/hd/u/Uno:Takeaki">Takeaki Uno</a></p>
+<p>【Abstract】:
+We propose a new data mining method called frequentness-transitional pattern mining for finding patterns with interesting sequential behavior specified by a user's query. For a series of databases, we introduce the frequentness-sequence of a pattern that is a sequence of the two symbols ‘H’ and ‘L,’ which represent the frequency or infrequency in each segment of a database, respectively. The problem is finding patterns whose frequentness-sequences satisfy the query. The goal of this research is to develop an efficient algorithm and its implementation that accepts various models and that can be widely used in practice with large-scale data. Thus, we chose an itemset as a pattern, and regular expression for the query language to accept various models. To cope with the unavoidably large number of candidate patterns, we use Zero-suppressed Binary Decision Diagrams (ZDDs or ZBDDs) to store and operate a large number of candidate itemsets in a short time. Our algorithm performed quite well in our computational experiments, such that it is competitive with the standard itemset mining algorithms that can be used only to find frequent itemsets. To the best of our knowledge, this is the first study on detecting distinctive itemsets of user-specific models of sequential behaviors.</p>
+<p>【Keywords】:</p>
+<h3 id="31. Consecutive Ones Property and Spectral Ordering.">31. Consecutive Ones Property and Spectral Ordering.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.31">Paper Link</a>】    【Pages】:350-360</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/v/Vuokko:Niko">Niko Vuokko</a></p>
+<p>【Abstract】:
+A 0–1 matrix where in each column the 1s occur consecutively is said to have the consecutive ones property. This property and its approximations are important in a variety of applications, e.g., in DNA analysis and paleontology. Checking whether the matrix rows can be permuted so that this property holds can be done in polynomial time. However, an exact solution rarely exists in applications. Thus, methods that produce good approximations with a minimal number of 0s between 1s in the columns are needed. The spectral ordering method gives a solution to the consecutive ones problem and has empirically been shown to work well in other cases too. This paper constructs a theoretical basis for the connection between the consecutive ones property and spectral ordering. We represent the approximation problem as a problem of minimizing a certain matrix norm. We show how the spectral ordering method affects this norm and show that the method is optimal within a class of algorithms. We analyze also popular normalization schemes for spectral ordering and give our recommendation on their use for the C1P problem. We use these theoretical results to explain the experimental performance of different approximate methods and their differences.</p>
+<p>【Keywords】:</p>
+<h2 id="Session S9: Uncertainty in Data Mining    4">Session S9: Uncertainty in Data Mining    4</h2>
+<h3 id="32. Naive Bayes Classifier for Positive Unlabeled Learning with Uncertainty.">32. Naive Bayes Classifier for Positive Unlabeled Learning with Uncertainty.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.32">Paper Link</a>】    【Pages】:361-372</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/He:Jiazhen">Jiazhen He</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Yang">Yang Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Xue">Xue Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Yong">Yong Wang</a></p>
+<p>【Abstract】:
+Existing algorithms for positive unlabeled learning (PU learning) only work with certain data. However, data uncertainty is prevalent in many real-world applications such as sensor network, market analysis and medical diagnosis. In this paper, based on positive naive Bayes (PNB), which is a PU learning algorithm for certain data, we propose an algorithm to handle uncertain data. However, it requires the prior probability of positive class and in real-life applications it is generally difficult for the users to provide this parameter, which is a drawback inherited from traditional PNB algorithm. We improve it by selecting the value of the prior probability of positive class automatically that can make the obtained classifier achieved optimal performance on the validation set. The conducted experiments show that the proposed algorithm yields good performance without user-specified the prior probability of positive class and has satisfactory performance even on highly uncertain data.</p>
+<p>【Keywords】:</p>
+<h3 id="33. On Multidimensional Sharpening of Uncertain Data.">33. On Multidimensional Sharpening of Uncertain Data.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.33">Paper Link</a>】    【Pages】:373-384</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Aggarwal:Charu_C=">Charu C. Aggarwal</a></p>
+<p>【Abstract】:
+In this paper, we will propose a technique for multidimensional enhancement of uncertain data. In many applications, the uncertainty in the different dimensions is caused by independent factors, especially if the different dimensions have been collected from independent sources. In such cases, it is possible to enhance the quality of the data and reduce the underlying uncertainty by using multidimensional uncertainty analysis. In this paper, we will discuss techniques for uncertainty reduction of multidimensional uncertain data. We will examine the effectiveness of the approach over a variety of real and synthetic data sets.</p>
+<p>【Keywords】:</p>
+<h3 id="34. Subspace Clustering for Uncertain Data.">34. Subspace Clustering for Uncertain Data.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.34">Paper Link</a>】    【Pages】:385-396</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/G=uuml=nnemann:Stephan">Stephan Günnemann</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kremer:Hardy">Hardy Kremer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Seidl_0001:Thomas">Thomas Seidl</a></p>
+<p>【Abstract】:
+Analyzing uncertain databases is a challenge in data mining research. Usually, data mining methods rely on precise values. In scenarios where uncertain values occur, e.g. due to noisy sensor readings, these algorithms cannot deliver high-quality patterns. Beside uncertainty, data mining methods face another problem: high dimensional data. For finding object groupings with locally relevant dimensions in this data, subspace clustering was introduced. For high dimensional uncertain data, however, deciding whether dimensions are relevant for a subspace cluster is even more challenging; thus, approaches for effective subspace clustering on uncertain databases are needed. In this paper, we develop a method for subspace clustering for uncertain data that delivers high-quality patterns; the information provided by the individual distributions of objects is used in an effective manner. Because in uncertain scenarios a strict assignment of objects to single clusters is not appropriate, we enrich our model with the concept of membership degree. Subspace clustering for uncertain data is computationally expensive; thus, we propose an efficient algorithm. In thorough experiments we show the effectiveness and efficiency of our new subspace clustering method.</p>
+<p>【Keywords】:</p>
+<h3 id="35. On the Use of Combining Rules in Relational Probability Trees.">35. On the Use of Combining Rules in Relational Probability Trees.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.35">Paper Link</a>】    【Pages】:397-408</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Fierens:Daan">Daan Fierens</a></p>
+<p>【Abstract】:
+A relational probability tree (RPT) is a type of decision tree that can be used for probabilistic classification of instances with a relational structure. Each leaf of an RPT contains a probability model that determines for each class the probability that an instance belongs to that class. The only kind of probability models that have been used in RPTs so far are multinomial probability distributions. In this paper we show how to integrate a more complex kind of probability models based on the concept of combining rules (such as noisy-or) into RPTs. We introduce two learning algorithms for such RPTs and experimentally compare these algorithms to the learning algorithm for standard RPTs. The experiments indicate that the use of probability models based on combining rules does not significantly influence the quality of the probability estimates of the RPTs. We perform additional experiments to investigate the reason for this result. The main conclusion is that probability models based on combining rules are useful but do not have an added value when aggregates are used in the internal nodes (as in standard RPTs).</p>
+<p>【Keywords】:</p>
+<h2 id="Session S10: Clustering and Outlier Detection    4">Session S10: Clustering and Outlier Detection    4</h2>
+<h3 id="36. The Application of Statistical Relational Learning to a Database of Criminal and Terrorist Activity.">36. The Application of Statistical Relational Learning to a Database of Criminal and Terrorist Activity.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.36">Paper Link</a>】    【Pages】:409-417</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Delaney:Brian">Brian Delaney</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fast:Andrew_S=">Andrew S. Fast</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Campbell:William_M=">William M. Campbell</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Weinstein:Clifford_J=">Clifford J. Weinstein</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jensen:David_D=">David D. Jensen</a></p>
+<p>【Abstract】:
+We apply statistical relational learning to a database of criminal and terrorist activity to predict attributes and event outcomes. The database stems from a collection of news articles and court records which are carefully annotated with a variety of variables, including categorical and continuous fields. Manual analysis of this data can help inform decision makers seeking to curb violent activity within a region. We use this data to build relational models from historical data to predict attributes of groups, individuals, or events. Our first example involves predicting social network roles within a group under a variety of different data conditions. Collective classification can be used to boost the accuracy under data poor conditions. Additionally, we were able to predict the outcome of hostage negotiations using models trained on previous kidnapping events. The overall framework and techniques described here are flexible enough to be used to predict a variety of variables. Such predictions could be used as input to a more complex system to recognize intent of terrorist groups or as input to inform human decision makers.</p>
+<p>【Keywords】:</p>
+<h3 id="37. ContexTour: Contextual Contour Analysis on Dynamic Multi-relational Clustering.">37. ContexTour: Contextual Contour Analysis on Dynamic Multi-relational Clustering.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.37">Paper Link</a>】    【Pages】:418-429</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lin:Yu=Ru">Yu-Ru Lin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sun:Jimeng">Jimeng Sun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cao:Nan">Nan Cao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Shixia">Shixia Liu</a></p>
+<p>【Abstract】:
+Huge amounts of rich context social network data are generated everyday from various applications such as FaceBook and Twitter. These data involve multiple social relations which are community-driven and dynamic in nature. The complex interplay of these characteristics poses tremendous challenges on the users who try to understand the underlying patterns in the social media. We introduce an exploratory analytical framework, ContexTour, which generates visual representations for exploring multiple dimensions of community activities, including relevant topics, representative users and the community-generated content, as well as their evolutions. ContexTour consists of two novel and complementary components: (1) Dynamic Relational Clustering (DRC) that efficiently tracks the community evolution and smoothly adapts to the community changes, and (2) Dynamic Network Contour-map (DNC) that visualizes the community activities and evolutions in various dimensions. In our experiments, we demonstrate ContexTour through case studies on the DBLP dataset. The visual results capture interesting and reasonable evolution in Computer Science research communities. Quantitatively, we show 85-165X performance gain of our DRC algorithm over the baseline method.</p>
+<p>【Keywords】:</p>
+<h3 id="38. Identifying Multi-instance Outliers.">38. Identifying Multi-instance Outliers.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.38">Paper Link</a>】    【Pages】:430-441</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Ou">Ou Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gao:Jun">Jun Gao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Weiming">Weiming Hu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Bing">Bing Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Mingliang">Mingliang Zhu</a></p>
+<p>【Abstract】:
+This paper studies a new data mining problem called multi-instance outlier identification. This problem arises in tasks where each sample consists of many alternative feature vectors (instances) that describe it. This paper defines the multi-instance outliers and analyzes the basic types of multi-instance outliers. Two general identification approaches are proposed based on the state-of-the-art (single-instance) outlier detector LOF (local outlier factor). One approach utilizes the underlying mechanism of the kernel method and plunges the set distance into LOF to detect the multi-instance outliers. The other approach takes each instance's neighborhood into account. Based on the two approaches, four concrete multi-instance outlier detectors are then introduced. We conduct experiments over four synthetic data collections and three real-world data collections (two Musk data sets [22, 23] and a hard-drive inspection data set [24]). The experimental results show that the proposed multi-instance outlier detectors are effective while the algorithms that ignore the multi-instance settings perform poorly. Especially, the results on the two Musk sets are consistent with the multi-instance learning results; the results on the hard-drive inspection data set demonstrate that multi-instance outlier identification is promising for real applications.</p>
+<p>【Keywords】:</p>
+<h3 id="39. Mining Actionable Subspace Clusters in Sequential Data.">39. Mining Actionable Subspace Clusters in Sequential Data.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.39">Paper Link</a>】    【Pages】:442-453</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sim:Kelvin">Kelvin Sim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Poernomo:Ardian_Kristanto">Ardian Kristanto Poernomo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gopalkrishnan:Vivekanand">Vivekanand Gopalkrishnan</a></p>
+<p>【Abstract】:
+Extraction of knowledge from data and using it for decision making is vital in various real-world problems, particularly in the financial domain. We identify several financial problems, which require the mining of actionable subspaces defined by objects and attributes over a sequence of time. These subspaces are actionable in the sense that they have the ability to suggest profitable action for the decision-makers. We propose to mine actionable subspace clusters from sequential data, which are subspaces with high and correlated utilities. To efficiently mine them, we propose a framework MASC (Mining Actionable Subspace Clusters), which is a hybrid of numerical optimization, principal component analysis and frequent itemset mining. We conduct a wide range of experiments to demonstrate the actionability of the clusters and the robustness of our framework MASC. We show that our clustering results are not sensitive to the framework parameters and full recovery of embedded clusters in synthetic data is possible. In our case-study, we show that clusters with higher utilities correspond to higher actionability, and we are able to use our clusters to perform better than one of the most famous value investment strategies.</p>
+<p>【Keywords】:</p>
+<h2 id="Session S11: Graph Mining    4">Session S11: Graph Mining    4</h2>
+<h3 id="40. GraSS: Graph Structure Summarization.">40. GraSS: Graph Structure Summarization.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.40">Paper Link</a>】    【Pages】:454-465</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/LeFevre:Kristen">Kristen LeFevre</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Terzi:Evimaria">Evimaria Terzi</a></p>
+<p>【Abstract】:
+Large graph databases are commonly collected and analyzed in numerous domains. For reasons related to either space efficiency or for privacy protection (e.g., in the case of social network graphs), it sometimes makes sense to replace the original graph with a summary, which removes certain details about the original graph topology. However, this summarization process leaves the database owner with the challenge of processing queries that are expressed in terms of the original graph, but are answered using the summary. In this paper, we propose a formal semantics for answering queries on summaries of graph structures. At its core, our formulation is based on a random worlds model. We show that important graph-structure queries (e.g., adjacency, degree, and eigenvector centrality) can be answered efficiently and in closed form using these semantics. Further, based on this approach to query answering, we formulate three novel graph partitioning/compression problems. We develop algorithms for finding a graph summary that least affects the accuracy of query results, and we evaluate our proposed algorithms using both real and synthetic data.</p>
+<p>【Keywords】:</p>
+<h3 id="41. Mining Frequent Graph Sequence Patterns Induced by Vertices.">41. Mining Frequent Graph Sequence Patterns Induced by Vertices.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.41">Paper Link</a>】    【Pages】:466-477</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/i/Inokuchi:Akihiro">Akihiro Inokuchi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Washio:Takashi">Takashi Washio</a></p>
+<p>【Abstract】:
+The mining of a complete set of frequent subgraphs from labeled graph data has been studied extensively. Furthermore, much attention has recently been paid to frequent pattern mining from graph sequences (dynamic graphs or evolving graphs). In this paper, we define a novel class of subgraph subsequence called an “induced subgraph subsequence” to enable efficient mining of a complete set of frequent patterns from graph sequences containing large graphs and long sequences. We also propose an efficient method to mine frequent patterns, called “FRISSs (Frequent Relevant, and Induced Subgraph Subsequences)”, from graph sequences. The fundamental performance of the method has been evaluated using artificial datasets, and its practicality has been confirmed through experiments using a real-world dataset.</p>
+<p>【Keywords】:</p>
+<h3 id="42. On Clustering Graph Streams.">42. On Clustering Graph Streams.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.42">Paper Link</a>】    【Pages】:478-489</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Aggarwal:Charu_C=">Charu C. Aggarwal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhao:Yuchen">Yuchen Zhao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yu:Philip_S=">Philip S. Yu</a></p>
+<p>【Abstract】:
+In this paper, we will examine the problem of clustering massive graph streams. Graph clustering poses significant challenges because of the complex structures which may be present in the underlying data. The massive size of the underlying graph makes explicit structural enumeration very difficult. Consequently, most techniques for clustering multi-dimensional data are difficult to generalize to the case of massive graphs. Recently, methods have been proposed for clustering graph data, though these methods are designed for static data, and are not applicable to the case of graph streams. Furthermore, these techniques are especially not effective for the case of massive graphs, since a huge number of distinct edges may need to be tracked simultaneously. This results in storage and computational challenges during the clustering process. In order to deal with the natural problems arising from the use of massive disk-resident graphs, we will propose a technique for creating hash-compressed micro-clusters from graph streams. The compressed micro-clusters are designed by using a hash-based compression of the edges onto a smaller domain space. We will provide theoretical results which show that the hash-based compression continues to maintain bounded accuracy in terms of distance computations. We will provide experimental results which illustrate the accuracy and efficiency of the underlying method.</p>
+<p>【Keywords】:</p>
+<h3 id="43. Inferring Probability Distributions of Graph Size and Node Degree from Stochastic Graph Grammars.">43. Inferring Probability Distributions of Graph Size and Node Degree from Stochastic Graph Grammars.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.43">Paper Link</a>】    【Pages】:490-501</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mukherjee:Sourav">Sourav Mukherjee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Oates:Tim">Tim Oates</a></p>
+<p>【Abstract】:
+Many important domains are naturally described relationally, often using graphs in which nodes correspond to entities and edges to relations. Stochastic graph grammars compactly represent probability distributions over graphs and can be learned from data, such as a set of graphs corresponding to proteins that have the same function. In this paper we show that a stochastic graph grammar can be used to efficiently compute the probability mass functions of the number of nodes, the number of edges, and the degree of a node selected uniformly at random from a graph sampled from the distribution defined by the graph grammar. Both the expectation and variance of these quantities can be computed from the mass functions. Empirical results with standard synthetic grammars and a grammar from the domain of AIDS research demonstrate the accuracy of our methods.</p>
+<p>【Keywords】:</p>
+<h2 id="Session S12: Feature Learning and Prediction    5">Session S12: Feature Learning and Prediction    5</h2>
+<h3 id="44. p-ISOMAP: An Efficient Parametric Update for ISOMAP for Visual Analytics.">44. p-ISOMAP: An Efficient Parametric Update for ISOMAP for Visual Analytics.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.44">Paper Link</a>】    【Pages】:502-513</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Choo:Jaegul">Jaegul Choo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Reddy:Chandan_K=">Chandan K. Reddy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Hanseung">Hanseung Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Park:Haesun">Haesun Park</a></p>
+<p>【Abstract】:
+One of the most widely-used nonlinear data embedding methods is ISOMAP. Based on a manifold learning framework, ISOMAP has a parameter k or ∈ that controls how many edges a neighborhood graph has. However, a suitable parameter value is often difficult to determine because of a time-consuming optimization process based on certain criteria, which may not be clearly justified. When ISOMAP is used to visualize data, users might want to test different parameter values in order to gain various insights about data, but such interaction between humans and such visualizations requires reasonably efficient updating, even for large-scale data. To tackle these problems, we propose an efficient updating algorithm for ISOMAP with parameter changes, called p-ISOMAP. We present not only a complexity analysis but also an empirical running time comparison, which show the advantage of p-ISOMAP. We also show interesting visualization applications of p-ISOMAP and demonstrate how to discover various characteristics of data through visualizations using different parameter values.</p>
+<p>【Keywords】:</p>
+<h3 id="45. Confidence-Based Feature Acquisition to Minimize Training and Test Costs.">45. Confidence-Based Feature Acquisition to Minimize Training and Test Costs.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.45">Paper Link</a>】    【Pages】:514-524</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/desJardins:Marie">Marie desJardins</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/MacGlashan:James">James MacGlashan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wagstaff:Kiri_L=">Kiri L. Wagstaff</a></p>
+<p>【Abstract】:
+We present Confidence-based Feature Acquisition (CFA), a novel supervised learning method for acquiring missing feature values when there is missing data at both training and test time. Previous work has considered the cases of missing data at training time (e.g., Active Feature Acquisition, AFA [8]), or at test time (e.g., Cost-Sensitive Naive Bayes, CSNB [2]), but not both. At training time, CFA constructs a cascaded ensemble of classifiers, starting with the zero-cost features and adding a single feature for each successive model. For each model, CFA selects a subset of training instances for which the added feature should be acquired. At test time, the set of models is applied sequentially (as a cascade), stopping when a user-supplied confidence threshold is met. We compare CFA to AFA, CSNB, and several other baselines, and find that CFA's accuracy is at least as high as the other methods, while incurring significantly lower feature acquisition costs.</p>
+<p>【Keywords】:</p>
+<h3 id="46. Co-selection of Features and Instances for Unsupervised Rare Category Analysis.">46. Co-selection of Features and Instances for Unsupervised Rare Category Analysis.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.46">Paper Link</a>】    【Pages】:525-536</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/He:Jingrui">Jingrui He</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Carbonell:Jaime_G=">Jaime G. Carbonell</a></p>
+<p>【Abstract】:
+Rare category analysis is of key importance both in theory and in practice. Previous research work focuses on supervised rare category analysis, such as rare category detection and rare category classification. In this paper, for the first time, we address the challenge of unsupervised rare category analysis, including feature selection and rare category selection. We propose to jointly deal with the two correlated tasks so that they can benefit from each other. To this end, we design an optimization framework which is able to co-select the relevant features and the examples from the rare category (a.k.a. the minority class). It is well justified theoretically. Furthermore, we develop the Partial Augmented Lagrangian Method (PALM) to solve the optimization problem. Experimental results on both synthetic and real data sets show the effectiveness of the proposed method.</p>
+<p>【Keywords】:</p>
+<h3 id="47. Active Ordering of Interactive Prediction Tasks.">47. Active Ordering of Interactive Prediction Tasks.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.47">Paper Link</a>】    【Pages】:537-547</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lad:Abhimanyu">Abhimanyu Lad</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Yiming">Yiming Yang</a></p>
+<p>【Abstract】:
+Many applications involve a set of prediction tasks that must be accomplished sequentially through user interaction. If the tasks are interdependent, the order in which they are posed may have a significant impact on the effective utilization of user feedback by the prediction systems, affecting their overall performance. This paper presents a novel approach for dynamically ordering a series of prediction tasks by taking into account the effect of user feedback on the performance of multiple prediction systems. The proposed approach represents a general strategy for learning incrementally during test phase when the system interacts with the end-user, who expects good performance instead of merely providing correct labels to the system. Therefore, the system must balance system benefit against user benefit when selecting items for user's attention. We apply the proposed approach to two practical applications that involve interactive trouble report generation and document annotation, respectively. Our experiments show significant improvements in prediction performance (in terms of Mean Average Precision) using the proposed active ordering approach, as compared to baseline approaches that either determine a task order offline and hold it fixed during test phase, or do not optimize the order at all.</p>
+<p>【Keywords】:</p>
+<h3 id="48. Radius Plots for Mining Tera-byte Scale Graphs: Algorithms, Patterns, and Observations.">48. Radius Plots for Mining Tera-byte Scale Graphs: Algorithms, Patterns, and Observations.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.48">Paper Link</a>】    【Pages】:548-558</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kang:U=">U. Kang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tsourakakis:Charalampos_E=">Charalampos E. Tsourakakis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Appel:Ana_Paula">Ana Paula Appel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Faloutsos:Christos">Christos Faloutsos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Leskovec:Jure">Jure Leskovec</a></p>
+<p>【Abstract】:
+Given large, multi-million node graphs (e.g., FaceBook, web-crawls, etc.), how do they evolve over time? How are they connected? What are the central nodes and the outliers of the graphs? We show that the Radius Plot (pdf of node radii) can answer these questions. However, computing the Radius Plot is prohibitively expensive for graphs reaching the planetary scale. There are two major contributions in this paper: (a) We propose HADI (HAdoop DIameter and radii estimator), a carefully designed and fine-tuned algorithm to compute the diameter of massive graphs, that runs on the top of the Hadoop/MapReduce system, with excellent scale-up on the number of available machines (b) We run HADI on several real world datasets including YahooWeb (6B edges, 1/8 of a Terabyte), one of the largest public graphs ever analyzed. Thanks to HADI, we report fascinating patterns on large networks, like the surprisingly small effective diameter, the multi-modal/bi-modal shape of the Radius Plot, and its palindrome motion over time.</p>
+<p>【Keywords】:</p>
+<h2 id="Session S13: Mining Large Graphs    4">Session S13: Mining Large Graphs    4</h2>
+<h3 id="49. Spectral Analysis of Signed Graphs for Clustering, Prediction and Visualization.">49. Spectral Analysis of Signed Graphs for Clustering, Prediction and Visualization.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.49">Paper Link</a>】    【Pages】:559-570</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kunegis:J=eacute=r=ocirc=me">Jérôme Kunegis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schmidt:Stephan">Stephan Schmidt</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lommatzsch:Andreas">Andreas Lommatzsch</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lerner:J=uuml=rgen">Jürgen Lerner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Luca:Ernesto_William_De">Ernesto William De Luca</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Albayrak:Sahin">Sahin Albayrak</a></p>
+<p>【Abstract】:
+We study the application of spectral clustering, prediction and visualization methods to graphs with negatively weighted edges. We show that several characteristic matrices of graphs can be extended to graphs with positively and negatively weighted edges, giving signed spectral clustering methods, signed graph kernels and network visualization methods that apply to signed graphs. In particular, we review a signed variant of the graph Laplacian. We derive our results by considering random walks, graph clustering, graph drawing and electrical networks, showing that they all result in the same formalism for handling negatively weighted edges. We illustrate our methods using examples from social networks with negative edges and bipartite rating graphs.</p>
+<p>【Keywords】:</p>
+<h3 id="50. Fast Single-Pair SimRank Computation.">50. Fast Single-Pair SimRank Computation.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.50">Paper Link</a>】    【Pages】:571-582</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Pei">Pei Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Hongyan">Hongyan Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yu:Jeffrey_Xu">Jeffrey Xu Yu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/He:Jun">Jun He</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Du:Xiaoyong">Xiaoyong Du</a></p>
+<p>【Abstract】:
+SimRank is an intuitive and effective measure for link-based similarity that scores similarity between two nodes as the first-meeting probability of two random surfers, based on the random surfer model. However, when a user queries the similarity of a given node-pair based on SimRank, the existing approaches need to compute the similarities of other node-pairs beforehand, which we call an all-pair style. In this paper, we propose a Single-Pair SimRank approach. Without accuracy loss, this approach performs an iterative computation to obtain the similarity of a single node-pair. The time cost of our Single-Pair SimRank is always less than All-Pair SimRank and obviously efficient when we only need to assess similarity of one or a few node-pairs. We confirm the accuracy and efficiency of our approach in extensive experimental studies over synthetic and real datasets.</p>
+<p>【Keywords】:</p>
+<h3 id="51. A Heterogeneous Label Propagation Algorithm for Disease Gene Discovery.">51. A Heterogeneous Label Propagation Algorithm for Disease Gene Discovery.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.51">Paper Link</a>】    【Pages】:583-594</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hwang:TaeHyun">TaeHyun Hwang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kuang:Rui">Rui Kuang</a></p>
+<p>【Abstract】:
+Label propagation is an effective and efficient technique to utilize local and global features in a network for semi-supervised learning. In the literature, one challenge is how to propagate information in heterogeneous networks comprising several subnetworks, each of which has its own cluster structures that need to be explored independently. In this paper, we introduce an intutitive algorithm MINProp (Mutual Interaction-based Network Propagation) and a simple regularization framework for propagating information between subnetworks in a heterogeneous network. MINProp sequentially performs label propagation on each individual subnetwork with the current label information derived from the other subnetworks and repeats this step until convergence to the global optimal solution to the convex objective function of the regularization framework. The independent label propagation on each subnetwork explores the cluster structure in the subnetwork. The label information from the other subnetworks is used to capture mutual interactions (bicluster structures) between the vertices in each pair of the subnetworks. MINProp algorithm is applied to disease gene discovery from a heterogeneus network of disease phenotypes and genes. In the experiments, MINProp significantly output-performed the original label propagation algorithm on a single network and the state-of-the-art methods for discovering disease genes. The results also suggest that MINProp is more effective in utilizing the modular structures in a heterogenous network. Finally, MINProp discovered new disease-gene associations that are only reported recently.</p>
+<p>【Keywords】:</p>
+<h3 id="52. Direct Density Ratio Estimation with Dimensionality Reduction.">52. Direct Density Ratio Estimation with Dimensionality Reduction.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.52">Paper Link</a>】    【Pages】:595-606</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sugiyama:Masashi">Masashi Sugiyama</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hara:Satoshi">Satoshi Hara</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/B=uuml=nau:Paul_von">Paul von Bünau</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Suzuki:Taiji">Taiji Suzuki</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kanamori:Takafumi">Takafumi Kanamori</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kawanabe:Motoaki">Motoaki Kawanabe</a></p>
+<p>【Abstract】:
+Methods for directly estimating the ratio of two probability density functions without going through density estimation have been actively explored recently since they can be used for various data processing tasks such as non-stationarity adaptation, outlier detection, conditional density estimation, feature selection, and independent component analysis. However, even the state-of-the-art density ratio estimation methods still perform rather poorly in high-dimensional problems. In this paper, we propose a new density ratio estimation method which incorporates dimensionality reduction into a density ratio estimation procedure. Our key idea is to identify a low-dimensional subspace in which the two densities corresponding to the denominator and the numerator in the density ratio are significantly different. Then the density ratio is estimated only within this low-dimensional subspace. Through numerical examples, we illustrate the effectiveness of the proposed method.</p>
+<p>【Keywords】:</p>
+<h2 id="Session S14: Feature Selection    3">Session S14: Feature Selection    3</h2>
+<h3 id="53. The Generalized Dimensionality Reduction Problem.">53. The Generalized Dimensionality Reduction Problem.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.53">Paper Link</a>】    【Pages】:607-618</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Aggarwal:Charu_C=">Charu C. Aggarwal</a></p>
+<p>【Abstract】:
+The dimensionality reduction problem has been widely studied in the database literature because of its application for concise data representation in a variety of database applications. The main focus in dimensionality reduction is to represent the data in a smaller number of dimensions that the least amount of information is lost. In this paper, we study the dimensionality reduction problem from an entirely different perspective. We discuss methods to find a representation of the data so that a user-defined objective function is optimized. For example, we may desire to find a reduction of the data in which a particular kind of classifier works effectively. Another example (relevant to the similarity search domain) would be a reduction in which the cluster of k closest points provides the best distance based separation from the remaining data set. We discuss a general abstraction for the problem and provide the broad framework of an evolutionary algorithm which solves this abstraction. We test our framework on two separate instantiations of this framework and provide results illustrating the effectiveness and efficiency of our method.</p>
+<p>【Keywords】:</p>
+<h3 id="54. Convex Principal Feature Selection.">54. Convex Principal Feature Selection.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.54">Paper Link</a>】    【Pages】:619-628</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Masaeli:Mahdokht">Mahdokht Masaeli</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yan:Yan">Yan Yan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cui:Ying">Ying Cui</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fung:Glenn">Glenn Fung</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dy:Jennifer_G=">Jennifer G. Dy</a></p>
+<p>【Abstract】:
+A popular approach for dimensionality reduction and data analysis is principal component analysis (PCA). A limiting factor with PCA is that it does not inform us on which of the original features are important. There is a recent interest in sparse PCA (SPCA). By applying an L1 regularizer to PCA, a sparse transformation is achieved. However, true feature selection may not be achieved as non-sparse coefficients may be distributed over several features. Feature selection is an NP-hard combinatorial optimization problem. This paper relaxes and re-formulates the feature selection problem as a convex continuous optimization problem that minimizes a mean-squared-reconstruction error (a criterion optimized by PCA) and considers feature redundancy into account (an important property in PCA and feature selection). We call this new method Convex Principal Feature Selection (CPFS). Experiments show that CPFS performed better than SPCA in selecting features that maximize variance or minimize the mean-squared-reconstruction error.</p>
+<p>【Keywords】:</p>
+<h3 id="55. Generalized and Heuristic-Free Feature Construction for Improved Accuracy.">55. Generalized and Heuristic-Free Feature Construction for Improved Accuracy.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.55">Paper Link</a>】    【Pages】:629-640</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Fan:Wei">Wei Fan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhong:ErHeng">ErHeng Zhong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Peng:Jing">Jing Peng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Verscheure:Olivier">Olivier Verscheure</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Kun">Kun Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ren:Jiangtao">Jiangtao Ren</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yan:Rong">Rong Yan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang_0001:Qiang">Qiang Yang</a></p>
+<p>【Abstract】:
+State-of-the-art learning algorithms accept data in feature vector format as input. Examples belonging to different classes may not always be easy to separate in the original feature space. One may ask: can transformation of existing features into new space reveal significant discriminative information not obvious in the original space? Since there can be infinite number of ways to extend features, it is impractical to first enumerate and then perform feature selection. Second, evaluation of discriminative power on the complete dataset is not always optimal. This is because features highly discriminative on subset of examples may not necessarily be significant when evaluated on the entire dataset. Third, feature construction ought to be automated and general, such that, it doesn't require domain knowledge and its improved accuracy maintains over a large number of classification algorithms. In this paper, we propose a framework to address these problems through the following steps: (1) divide-conquer to avoid exhaustive enumeration; (2) local feature construction and evaluation within subspaces of examples where local error is still high and constructed features thus far still do not predict well; (3) weighting rules based search that is domain knowledge free and has provable performance guarantee. Empirical studies indicate that significant improvement (as much as 9% in accuracy and 28% in AUC) is achieved using the newly constructed features over a variety of inductive learners evaluated against a number of balanced, skewed and high-dimensional datasets. Software and datasets are available from the authors.</p>
+<p>【Keywords】:</p>
+<h2 id="Session S15: Time Series    4">Session S15: Time Series    4</h2>
+<h3 id="56. Unsupervised Discovery of Abnormal Activity Occurrences in Multi-dimensional Time Series, with Applications in Wearable Systems.">56. Unsupervised Discovery of Abnormal Activity Occurrences in Multi-dimensional Time Series, with Applications in Wearable Systems.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.56">Paper Link</a>】    【Pages】:641-652</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/v/Vahdatpour:Alireza">Alireza Vahdatpour</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sarrafzadeh:Majid">Majid Sarrafzadeh</a></p>
+<p>【Abstract】:
+We present a method for unsupervised discovery of abnormal occurrences of activities in multi-dimensional time series data. Unsupervised activity discovery approaches differ from traditional supervised methods in that there is no requirement for manually labeled training datasets. In addition, they minimize the need for field experts' knowledge during the setup phases, which makes the deployment phase faster and simpler. We focus our attention on wearable computing systems and their applications in human activity monitoring for health care and medicine. The developed method constructs activity models in multi-dimensional time series based on the frequency and coincidence of activity perceptual primitives in single-dimensional time series data. We study the frequent variations exposed in human activity time series data and leverage physical attributes of the data to classify the activity primitives. A graph clustering approach is used to construct the frequent activity structures. Such structures are used to locate normal and abnormal occurrences of activities in time series. A method is presented to distinguish the abnormal activity occurrences from the normal occurrences. Two state-of-the-art wearable embedded systems (Smartcane and Smartshoe) are used to perform empirical evaluation of the developed methods.</p>
+<p>【Keywords】:</p>
+<h3 id="57. An Integrated Framework for Simultaneous Classification and Regression of Time-Series Data.">57. An Integrated Framework for Simultaneous Classification and Regression of Time-Series Data.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.57">Paper Link</a>】    【Pages】:653-664</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Abraham:Zubin">Zubin Abraham</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tan:Pang=Ning">Pang-Ning Tan</a></p>
+<p>【Abstract】:
+Zero-inflated time series data are commonly encountered in many applications, including climate and ecological modeling, disease monitoring, manufacturing defect detection, and traffic monitoring. Such data often leads to poor model fitting using standard regression methods because they tend to underestimate the frequency of zeros and the magnitude of non-zero values. This paper presents an integrated framework that simultaneously performs classification and regression to accurately predict future values of a zero-inflated time series. A regression model is initially applied to predict the value of the time series. The regression output is then fed into a classification model to determine whether the predicted value should be adjusted to zero. Our regression and classification models are trained to optimize a joint objective function that considers both classification errors on the time series and regression errors on data points that have non-zero values. We demonstrate the effectiveness of our framework in the context of its application to a precipitation downscaling problem for climate impact assessment studies.</p>
+<p>【Keywords】:</p>
+<h3 id="58. Multiresolution Motif Discovery in Time Series.">58. Multiresolution Motif Discovery in Time Series.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.73">Paper Link</a>】    【Pages】:665-676</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Castro:Nuno">Nuno Castro</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Azevedo:Paulo_J=">Paulo J. Azevedo</a></p>
+<p>【Abstract】:
+Time series motif discovery is an important problem with applications in a variety of areas that range from telecommunications to medicine. Several algorithms have been proposed to solve the problem. However, these algorithms heavily use expensive random disk accesses or assume the data can fit into main memory. They only consider motifs at a single resolution and are not suited to interactivity. In this work, we tackle the motif discovery problem as an approximate Top-K frequent subsequence discovery problem. We fully exploit state of the art iSAX representation multiresolution capability to obtain motifs at different resolutions. This property yields interactivity, allowing the user to navigate along the Top-K motifs structure. This permits a deeper understanding of the time series database. Further, we apply the Top-K space saving algorithm to our frequent subsequences approach. A scalable algorithm is obtained that is suitable for data stream like applications where small memory devices such as sensors are used. Our approach is scalable and disk-efficient since it only needs one single pass over the time series database. We provide empirical evidence of the validity of the algorithm in datasets from different areas that aim to represent practical applications.</p>
+<p>【Keywords】:</p>
+<h3 id="59. Time-Series Classification in Many Intrinsic Dimensions.">59. Time-Series Classification in Many Intrinsic Dimensions.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.59">Paper Link</a>】    【Pages】:677-688</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Radovanovic:Milos">Milos Radovanovic</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nanopoulos:Alexandros">Alexandros Nanopoulos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/i/Ivanovic:Mirjana">Mirjana Ivanovic</a></p>
+<p>【Abstract】:
+In the context of many data mining tasks, high dimensionality was shown to be able to pose significant problems, commonly referred to as different aspects of the curse of dimensionality. In this paper, we investigate in the time-series domain one aspect of the dimensionality curse called hubness, which refers to the tendency of some instances in a data set to become hubs by being included in unexpectedly many k-nearest neighbor lists of other instances. Through empirical measurements on a large collection of time-series data sets we demonstrate that the hubness phenomenon is caused by high intrinsic dimensionality of time-series data, and shed light on the mechanism through which hubs emerge, focusing on the popular and successful dynamic time warping (DTW) distance. Also, the interaction between hubness and the information provided by class labels is investigated, by considering label matches and mismatches between neighboring time series. Following our findings we formulate a framework for categorizing time-series data sets based on measurements that reflect hubness and the diversity of class labels among nearest neighbors. The framework allows one to assess whether hubness can be successfully used to improve the performance of k-NN classification. Finally, the merits of the framework are demonstrated through experimental evaluation of 1-NN and k-NN classifiers, including a proposed weighting scheme that is designed to make use of hubness information. Our experimental results show that the examined framework, in the majority of cases, is able to correctly reflect the circumstances in which hubness information can effectively be employed in k-NN time-series classification.</p>
+<p>【Keywords】:</p>
+<h2 id="Session S16: Tensors    3">Session S16: Tensors    3</h2>
+<h3 id="60. MACH: Fast Randomized Tensor Decompositions.">60. MACH: Fast Randomized Tensor Decompositions.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.60">Paper Link</a>】    【Pages】:689-700</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Tsourakakis:Charalampos_E=">Charalampos E. Tsourakakis</a></p>
+<p>【Abstract】:
+Tensors naturally model many real world processes which generate multi-aspect data. Such processes appear in many different research disciplines, e.g, chemometrics, computer vision, psychometrics and neuroimaging analysis. Tensor decompositions such as the Tucker decomposition are used to analyze multi-aspect data and extract latent factors, which capture the multilinear data structure. Such decompositions are powerful mining tools for extracting patterns from large data volumes. However, most frequently used algorithms for such decompositions involve the computationally expensive Singular Value Decomposition. In this paper we propose MACH, a new sampling algorithm to compute such decompositions. Our method is of significant practical value for tensor streams, such as environmental monitoring systems, IP traffic matrices over time, where large amounts of data are accumulated and the analysis is computationally intensive but also in “post-mortem” data analysis cases where the tensor does not fit in the available memory. We provide the theoretical analysis of our proposed method and verify its efficacy on synthetic data and two real world monitoring system applications.</p>
+<p>【Keywords】:</p>
+<h3 id="61. Scalable Tensor Factorizations with Missing Data.">61. Scalable Tensor Factorizations with Missing Data.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.61">Paper Link</a>】    【Pages】:701-712</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Acar:Evrim">Evrim Acar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dunlavy:Daniel_M=">Daniel M. Dunlavy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kolda:Tamara_G=">Tamara G. Kolda</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/M=oslash=rup:Morten">Morten Mørup</a></p>
+<p>【Abstract】:
+The problem of missing data is ubiquitous in domains such as biomedical signal processing, network traffic analysis, bibliometrics, social network analysis, chemometrics, computer vision, and communication networks—all domains in which data collection is subject to occasional errors. Moreover, these data sets can be quite large and have more than two axes of variation, e.g., sender, receiver, time. Many applications in those domains aim to capture the underlying latent structure of the data; in other words, they need to factorize data sets with missing entries. If we cannot address the problem of missing data, many important data sets will be discarded or improperly analyzed. Therefore, we need a robust and scalable approach for factorizing multi-way arrays (i.e., tensors) in the presence of missing data. We focus on one of the most well-known tensor factorizations, CANDECOMP/PARAFAC (CP), and formulate the CP model as a weighted least squares problem that models only the known entries. We develop an algorithm called CP-WOPT (CP Weighted OPTimization) using a first-order optimization approach to solve the weighted least squares problem. Based on extensive numerical experiments, our algorithm is shown to successfully factor tensors with noise and up to 70% missing data. Moreover, our approach is significantly faster than the leading alternative and scales to larger problems. To show the real-world usefulness of CP-WOPT, we illustrate its applicability on a novel EEG (electroencephalogram) application where missing data is frequently encountered due to disconnections of electrodes.</p>
+<p>【Keywords】:</p>
+<h3 id="62. On Low-Rank Updates to the Singular Value and Tucker Decompositions.">62. On Low-Rank Updates to the Singular Value and Tucker Decompositions.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.62">Paper Link</a>】    【Pages】:713-719</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/o/O=Hara:Michael_J=">Michael J. O'Hara</a></p>
+<p>【Abstract】:
+The singular value decomposition is widely used in signal processing and data mining. Since the data often arrives in a stream, the problem of updating matrix decompositions under low-rank modification has been widely studied. Brand developed a technique in 2006 that has many advantages. However, the technique does not directly approximate the updated matrix, but rather its previous low-rank approximation added to the new update, which needs justification. Further, the technique is still too slow for large information processing problems. We show that the technique minimizes the change in error per update, so if the error is small initially it remains small. We show that an updating algorithm for large sparse matrices should be sub-linear in the matrix dimension in order to be practical for large problems, and demonstrate a simple modification to the original technique that meets the requirements. We extend Brand's method to tensors, the multi-way generalization of matrices. The few published comparable techniques either focus on small-magnitude changes, are iterative, or have no published error properties. We show that the technique of Brand for updating the truncated singular value decomposition can be redesigned as a low-rank update scheme for the Tucker decomposition, with analogous run-time and error properties.</p>
+<p>【Keywords】:</p>
+<h2 id="Session S17: Social Network Mining    4">Session S17: Social Network Mining    4</h2>
+<h3 id="63. Towards Finding Valuable Topics.">63. Towards Finding Valuable Topics.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.63">Paper Link</a>】    【Pages】:720-731</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wen:Zhen">Zhen Wen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lin:Ching=Yung">Ching-Yung Lin</a></p>
+<p>【Abstract】:
+Enterprises depend on their information workers finding valuable information to be productive. However, existing enterprise search and recommendation systems can exploit few studies on the correlation between information content and information workers' productivity. In this paper, we combine content, social network and revenue analysis to identify computational metrics for finding valuable information content in people's electronic communications within a large-scale enterprise. Specifically, we focus on two questions: (1) how are the topics extracted from such content correlate with information workers' performance? and (2) how to find valuable topics with potentially high impact on employee performance? For the first question, we associate the topics with the corresponding workers' productivity measured by the revenue they generate. This allows us to evaluate the topics' influence on productivity. We further verify that the derived topic values are consistent with human assessor subjective evaluation. For the second question, we identify and evaluate a set of significant factors including both content and social network factors. In particular, the social network factors are better in filtering out low-value topics, while content factors are more effective in selecting a few top high-value topics. In addition, we demonstrate that a Support Vector regression model that combines the factors can already effectively find valuable topics. We believe that our results provide significant insights towards scientific advances to find valuable information.</p>
+<p>【Keywords】:</p>
+<h3 id="64. Predicting Customer Churn in Mobile Networks through Analysis of Social Groups.">64. Predicting Customer Churn in Mobile Networks through Analysis of Social Groups.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.64">Paper Link</a>】    【Pages】:732-741</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Richter:Yossi">Yossi Richter</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yom=Tov:Elad">Elad Yom-Tov</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Slonim:Noam">Noam Slonim</a></p>
+<p>【Abstract】:
+Churn prediction aims to identify subscribers who are about to transfer their business to a competitor. Since the cost associated with customer acquisition is much greater than the cost of customer retention, churn prediction has emerged as a crucial Business Intelligence (BI) application for modern telecommunication operators. The dominant approach to churn prediction is to model individual customers and derive their likelihood of churn using a predictive model. Recent work has shown that analyzing customers' interactions by assessing the social vicinity of recent churners can improve the accuracy of churn prediction. We propose a novel framework, termed Group-First Churn Prediction, which eliminates the a priori requirement of knowing who recently churned. Specifically, our approach exploits the structure of customer interactions to predict which groups of subscribers are most prone to churn, before even a single member in the group has churned. Our method works by identifying closely-knit groups of subscribers using second order social metrics derived from information theoretic principles. The interactions within each group are then analyzed to identify social leaders. Based on Key Performance Indicators that are derived from these groups, a novel statistical model is used to predict the churn of the groups and their members. Our experimental results, which are based on data from a telecommunication operator with approximately 16 million subscribers, demonstrate the unique advantages of the proposed method. We further provide empirical evidence that our method captures social phenomena in a highly significant manner.</p>
+<p>【Keywords】:</p>
+<h3 id="65. Directed Network Community Detection: A Popularity and Productivity Link Model.">65. Directed Network Community Detection: A Popularity and Productivity Link Model.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.65">Paper Link</a>】    【Pages】:742-753</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Tianbao">Tianbao Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chi:Yun">Yun Chi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Shenghuo">Shenghuo Zhu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gong:Yihong">Yihong Gong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jin:Rong">Rong Jin</a></p>
+<p>【Abstract】:
+In this paper, we consider the problem of community detection in directed networks by using probabilistic models. Most existing probabilistic models for community detection are either symmetric in which incoming links and outgoing links are treated equally or conditional in which only one type (i.e., either incoming or outgoing) of links is modeled. We present a probabilistic model for directed network community detection that aims to model both incoming links and outgoing links simultaneously and differentially. In particular, we introduce latent variables node productivity and node popularity to explicitly capture outgoing links and incoming links, respectively. We demonstrate the generality of the proposed framework by showing that both symmetric models and conditional models for community detection can be derived from the proposed framework as special cases, leading to better understanding of the existing models. We derive efficient EM algorithms for computing the maximum likelihood solutions to the proposed models. Extensive empirical studies verify the effectiveness of the new models as well as the insights obtained from the unified framework.</p>
+<p>【Keywords】:</p>
+<h3 id="66. HCDF: A Hybrid Community Discovery Framework.">66. HCDF: A Hybrid Community Discovery Framework.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.66">Paper Link</a>】    【Pages】:754-765</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Henderson:Keith">Keith Henderson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Eliassi=Rad:Tina">Tina Eliassi-Rad</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Papadimitriou:Spiros">Spiros Papadimitriou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Faloutsos:Christos">Christos Faloutsos</a></p>
+<p>【Abstract】:
+We introduce a novel Bayesian framework for hybrid community discovery in graphs. Our framework, HCDF (short for Hybrid Community Discovery Framework), can effectively incorporate hints from a number of other community detection algorithms and produce results that outperform the constituent parts. We describe two HCDF-based approaches which are: (1) effective, in terms of link prediction performance and robustness to small perturbations in network structure; (2) consistent, in terms of effectiveness across various application domains; (3) scalable to very large graphs; and (4) nonparametric. Our extensive evaluation on a collection of diverse and large real-world graphs, with millions of links, show that our HCDF-based approaches (a) achieve up to 0.22 improvement in link prediction performance as measured by area under ROC curve (AUC), (b) never have an AUC that drops below 0.91 in the worst case, and (c) find communities that are robust to small perturbations of the network structure as defined by Variation of Information (an entropy-based distance metric).</p>
+<p>【Keywords】:</p>
+<h2 id="Session S18: Classification    4">Session S18: Classification    4</h2>
+<h3 id="67. A Robust Decision Tree Algorithm for Imbalanced Data Sets.">67. A Robust Decision Tree Algorithm for Imbalanced Data Sets.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.67">Paper Link</a>】    【Pages】:766-777</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Wei">Wei Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chawla:Sanjay">Sanjay Chawla</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cieslak:David_A=">David A. Cieslak</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chawla:Nitesh_V=">Nitesh V. Chawla</a></p>
+<p>【Abstract】:
+We propose a new decision tree algorithm, Class Confidence Proportion Decision Tree (CCPDT), which is robust and insensitive to size of classes and generates rules which are statistically significant. In order to make decision trees robust, we begin by expressing Information Gain, the metric used in C4.5, in terms of confidence of a rule. This allows us to immediately explain why Information Gain, like confidence, results in rules which are biased towards the majority class. To overcome this bias, we introduce a new measure, Class Confidence Proportion (CCP), which forms the basis of CCPDT. To generate rules which are statistically significant we design a novel and efficient top-down and bottom-up approach which uses Fisher's exact test to prune branches of the tree which are not statistically significant. Together these two changes yield a classifier that performs statistically better than not only traditional decision trees but also trees learned from data that has been balanced by well known sampling techniques. Our claims are confirmed through extensive experiments and comparisons against C4.5, CART, HDDT and SPARCCC.</p>
+<p>【Keywords】:</p>
+<h3 id="68. Multi-label Classification without the Multi-label Cost.">68. Multi-label Classification without the Multi-label Cost.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.68">Paper Link</a>】    【Pages】:778-789</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Xiatian">Xiatian Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yuan:Quan">Quan Yuan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhao:Shiwan">Shiwan Zhao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fan:Wei">Wei Fan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zheng:Wentao">Wentao Zheng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Zhong">Zhong Wang</a></p>
+<p>【Abstract】:
+Multi-label classification, or the same example can belong to more than one class label, happens in many applications. To name a few, image and video annotation, functional genomics, social network annotation and text categorization are some typical applications. Existing methods have limited performance in both efficiency and accuracy. In this paper, we propose an extension over decision tree ensembles that can handle both challenges. We formally analyze the learning risk of Random Decision Tree (RDT) and derive that the upper bound of risk is stable and lower bound decreases as the number of trees increases. Importantly, we demonstrate that the training complexity is independent from the number of class labels, a significant overhead for many state-of-the-art multi-label methods. This is particularly important for problems with large number of multi-class labels. Based on these characteristics, we adopt and improve RDT for multi-label classification. Experiment results have demonstrated that the computation time of the proposed approaches is 1–3 orders of magnitude less than other methods when handling datasets with large number of instances and labels, as well as improvement up to more than 10% in accuracy as compared to a number of state-of-the-art methods in some datasets for multi-label learning. Considering efficiency and effectiveness together, Multi-label RDT is the top rank algorithm in this domain. Even compared with the HOMER algorithm proposed to solve the problem of large number of labels, Multi-label RDT runs 2–3 orders of magnitude faster in training process and achieves some improvement on accuracy. Software and datasets are available from the authors.</p>
+<p>【Keywords】:</p>
+<h3 id="69. Fast and Accurate Gene Prediction by Decision Tree Classification.">69. Fast and Accurate Gene Prediction by Decision Tree Classification.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.69">Paper Link</a>】    【Pages】:790-801</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/She:Rong">Rong She</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chu:Jeffrey_Shih=Chieh">Jeffrey Shih-Chieh Chu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Ke">Ke Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Nansheng">Nansheng Chen</a></p>
+<p>【Abstract】:
+Gene prediction is one of the most challenging tasks in genome analysis, for which many tools have been developed and are still evolving. In this paper, we present a novel gene prediction method that is both fast and accurate, by making use of protein homology and decision tree classification. Specifically, we apply the principled entropy and decision tree concepts to assist in such gene prediction process. Our goal is to resolve the exact gene structures in terms of finding “coding” regions (exons) and “non-coding” regions (introns). Unlike traditional classification tasks, however, we do not have explicit class labels for such structures in the genes. We use protein sequence (the product of gene) as a query to help in finding genes that are homologous to the query protein and deduce class labels based on homology. Our experiments on the genomes of two nematodes C. elegans and C. briggsae show that in addition to achieving prediction accuracy comparable with that of the state of the art methods, it is several orders of magnitude faster, especially for genes that encode longer proteins.</p>
+<p>【Keywords】:</p>
+<h3 id="70. On Classification of High-Cardinality Data Streams.">70. On Classification of High-Cardinality Data Streams.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.70">Paper Link</a>】    【Pages】:802-813</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Aggarwal:Charu_C=">Charu C. Aggarwal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yu:Philip_S=">Philip S. Yu</a></p>
+<p>【Abstract】:
+The problem of massive-domain stream classification is one in which each attribute can take on one of a large number of possible values. Such streams often arise in applications such as IP monitoring, super-store transactions and financial data. In such cases, traditional models for stream classification cannot be used because the size of the storage required for intermediate storage of model statistics can increase rapidly with domain size. Furthermore, the one-pass constraint for data stream computation makes the problem even more challenging. For such cases, there are no known methods for data stream classification. In this paper, we propose the use of massive-domain counting methods for effective modeling and classification. We show that such an approach can yield accurate solutions while retaining space-and time-efficiency. We show the effectiveness and efficiency of the sketch-based approach.</p>
+<p>【Keywords】:</p>
+<h2 id="Session S19: Classification and Applications    4">Session S19: Classification and Applications    4</h2>
+<h3 id="71. Predictive Modeling with Heterogeneous Sources.">71. Predictive Modeling with Heterogeneous Sources.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.71">Paper Link</a>】    【Pages】:814-825</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Shi:Xiaoxiao">Xiaoxiao Shi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Qi">Qi Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fan:Wei">Wei Fan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang_0001:Qiang">Qiang Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yu:Philip_S=">Philip S. Yu</a></p>
+<p>【Abstract】:
+Lack of labeled training examples is a common problem for many applications. At the same time, there is often an abundance of labeled data from related tasks, although they have different distributions and outputs (e.g., different class labels, and different scales of regression values). In the medical domain, for example, we may have a limited number of vaccine efficacy examples against a new swine flu H1N1 epidemic, whereas there exists a large amount of labeled vaccine data from previous years' flu. However, it is difficult to directly apply the older flu vaccine data as training examples because of the difference in data distribution and efficacy output criteria between different viruses. To increase the sources of labeled data, we propose a method to utilize these examples whose marginal distribution and output criteria can be different. The idea is to first select a subset of source examples similar in distribution to the target data; all the selected instances are then “re-scaled” and assigned new output values from the labeled space of the target task. A new predictive model is built on the enlarged training set. We derive a generalization bound that specifically considers distribution difference and further evaluate the model on a number of applications. For an siRNA efficacy prediction problem, we extract examples from 4 heterogeneous regression tasks and 2 classification tasks to learn the target model, and achieve an average improvement of 30% in accuracy.</p>
+<p>【Keywords】:</p>
+<h3 id="72. A Probabilistic Framework to Learn from Multiple Annotators with Time-Varying Accuracy.">72. A Probabilistic Framework to Learn from Multiple Annotators with Time-Varying Accuracy.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.72">Paper Link</a>】    【Pages】:826-837</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Donmez:Pinar">Pinar Donmez</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Carbonell:Jaime_G=">Jaime G. Carbonell</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schneider:Jeff_G=">Jeff G. Schneider</a></p>
+<p>【Abstract】:
+This paper addresses the challenging problem of learning from multiple annotators whose labeling accuracy (reliability) differs and varies over time. We propose a framework based on Sequential Bayesian Estimation to learn the expected accuracy at each time step while simultaneously deciding which annotators to query for a label in an incremental learning framework. We develop a variant of the particle filtering method that estimates the expected accuracy at every time step by sets of weighted samples and performs sequential Bayes updates. The estimated expected accuracies are then used to decide which annotators to be queried at the next time step. The empirical analysis shows that the proposed method is very effective at predicting the true label using only moderate labeling efforts, resulting in cleaner labels to train classifiers. The proposed method significantly outperforms a repeated labeling baseline which queries all labelers per example and takes the majority vote to predict the true label. Moreover, our method is able to track the true accuracy of an annotator quite well in the absence of gold standard labels. These results demonstrate the strength of the proposed method in terms of estimating the time-varying reliability of multiple annotators and producing cleaner, better quality labels without extensive label queries.</p>
+<p>【Keywords】:</p>
+<h3 id="73. An Integrative Approach to Indentifying Biologically Relevant Genes.">73. An Integrative Approach to Indentifying Biologically Relevant Genes.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.58">Paper Link</a>】    【Pages】:838-849</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhao:Zheng">Zheng Zhao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Jiangxin">Jiangxin Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sharma:Shashvata">Shashvata Sharma</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Agarwal:Nitin">Nitin Agarwal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Huan">Huan Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chang:Yung">Yung Chang</a></p>
+<p>【Abstract】:
+Gene selection aims at detecting biologically relevant genes to assist biologists' research. The cDNA Microarray data used in gene selection is usually “wide”. With more than several thousand genes, but only less than a hundred of samples, many biologically irrelevant genes can gain their statistical relevance by sheer randomness. Addressing this problem goes beyond what the cDNA Microarray can offer and necessitates the use of additional information. Recent developments in bioinformatics have made various knowledge sources available, such as the KEGG pathway repository and Gene Ontology database. Integrating different types of knowledge could provide more information about genes and samples. In this work, we propose a novel approach to integrate different types of knowledge for identifying biologically relevant genes. The approach converts different types of external knowledge to its internal knowledge, which can be used to rank genes. Upon obtaining the ranking lists, it aggregates them via a probabilistic model and generates a final list. Experimental results from our study on acute lymphoblastic leukemia demonstrate the efficacy of the proposed approach and show that using different types of knowledge together can help detect biologically relevant genes.</p>
+<p>【Keywords】:</p>
+<h3 id="74. A Compression Based Distance Measure for Texture.">74. A Compression Based Distance Measure for Texture.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.74">Paper Link</a>】    【Pages】:850-861</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Campana:Bilson_J=_L=">Bilson J. L. Campana</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Keogh:Eamonn_J=">Eamonn J. Keogh</a></p>
+<p>【Abstract】:
+The analysis of texture is an important subroutine in application areas as diverse as biology, medicine, robotics, and forensic science. While the last three decades have seen extensive research in algorithms to measure texture similarity, almost all existing methods require the careful setting of many parameters. There are many problems associated with a surfeit of parameters, the most obvious of which is that with many parameters to fit, it is exceptionally difficult to avoid over fitting. In this work we propose to extend recent advances in Kolmogorov complexity-based similarity measures to texture matching problems. These Kolmogorov based methods have been shown to be very useful in intrinsically discrete domains such as DNA, protein sequences, MIDI music and natural languages; however, they are not well defined for real-valued data. Towards this, we introduce the Campana-Keogh (CK) video compression based method for texture measures. These measures utilize state-of-the-art video compressors to approximate the Kolmogorov complexity. Using the CK method, we create an efficient and robust parameter-free texture similarity measure, the CK-1 distance measure. We demonstrate the utility of our measure with an extensive empirical evaluation on real-world case studies drawn from nematology, arachnology, entomology, medicine, forensics, ecology, and several well known texture analysis benchmarks.</p>
+<p>【Keywords】:</p>
+<h2 id="Session S20: Machine Learning    4">Session S20: Machine Learning    4</h2>
+<h3 id="75. Fast Implementation of ℓ1Regularized Learning Algorithms Using Gradient Descent Methods.">75. Fast Implementation of ℓ1Regularized Learning Algorithms Using Gradient Descent Methods.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.75">Paper Link</a>】    【Pages】:862-871</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cai:Yunpeng">Yunpeng Cai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sun:Yijun">Yijun Sun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cheng:Yubo">Yubo Cheng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Jian">Jian Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Goodison:Steve">Steve Goodison</a></p>
+<p>【Abstract】:
+With the advent of high-throughput technologies, ℓ1 regularized learning algorithms have attracted much attention recently. Dozens of algorithms have been proposed for fast implementation, using various advanced optimization techniques. In this paper, we demonstrate that ℓ1 regularized learning problems can be easily solved by using gradient-descent techniques. The basic idea is to transform a convex optimization problem with a non-differentiable objective function into an unconstrained non-convex problem, upon which, via gradient descent, reaching a globally optimum solution is guaranteed. We present detailed implementation of the algorithm using ℓ1 regularized logistic regression as a particular application. We conduct large-scale experiments to compare the new approach with other state-of-the-art algorithms on eight medium and large-scale problems. We demonstrate that our algorithm, though simple, performs similarly or even better than other advanced algorithms in terms of computational efficiency and memory usage.</p>
+<p>【Keywords】:</p>
+<h3 id="76. Learning Compressible Models.">76. Learning Compressible Models.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.76">Paper Link</a>】    【Pages】:872-881</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang_0010:Yi">Yi Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schneider:Jeff_G=">Jeff G. Schneider</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dubrawski:Artur">Artur Dubrawski</a></p>
+<p>【Abstract】:
+In this paper, we study the combination of compression and ℓ1-norm regularization in a machine learning context: learning compressible models. By including a compression operation into the ℓ1 regularization, the assumption on model sparsity is relaxed to compressibility: model coefficients are compressed before being penalized, and sparsity is achieved in a compressed domain rather than the original space. We focus on the design of different compression operations, by which we can encode various compressibility assumptions and inductive biases, e.g., piecewise local smoothness, compacted energy in the frequency domain, and semantic correlation. We show that use of a compression operation provides an opportunity to leverage auxiliary information from various sources, e.g., domain knowledge, coding theories, unlabeled data. We conduct extensive experiments on brain-computer interfacing, handwritten character recognition and text classification. Empirical results show clear improvements in prediction performance by including compression in ℓ1 regularization. We also analyze the learned model coefficients under appropriate compressibility assumptions, which further demonstrate the advantages of learning compressible models instead of sparse models.</p>
+<p>【Keywords】:</p>
+<h3 id="77. A Permutation Approach to Validation.">77. A Permutation Approach to Validation.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.77">Paper Link</a>】    【Pages】:882-893</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Magdon=Ismail:Malik">Malik Magdon-Ismail</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mertsalov:Konstantin">Konstantin Mertsalov</a></p>
+<p>【Abstract】:
+We give a permutation approach to validation (estimation of out-sample error). One typical use of validation is model selection. We establish the legitimacy of the proposed permutation complexity by proving a uniform bound on the out-sample error, similar to a VC-style bound. We extensively demonstrate this approach experimentally on synthetic data, standard data sets from the UCI-repository, and a novel diffusion data set. The out-of-sample error estimates are comparable to cross validation (CV); yet, the method is more efficient and robust, being less susceptible to overfitting during model selection.</p>
+<p>【Keywords】:</p>
+<h3 id="78. Adaptive Informative Sampling for Active Learning.">78. Adaptive Informative Sampling for Active Learning.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.78">Paper Link</a>】    【Pages】:894-905</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lu:Zhenyu">Zhenyu Lu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Xindong">Xindong Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bongard:Josh">Josh Bongard</a></p>
+<p>【Abstract】:
+Many approaches to active learning involve periodically training one classifier and choosing data points with the lowest confidence. An alternative approach is to periodically choose data instances that maximize disagreement among the label predictions across an ensemble of classifiers. Many classifiers with different underlying structures could fit this framework, but some ensembles are more suitable for some data sets than others. The question then arises as to how to find the most suitable ensemble for a given data set. In this work we introduce a method that begins with a heterogeneous ensemble composed of multiple instances of different classifier types, which we call adaptive informative sampling (AIS). The algorithm periodically adds data points to the training set, adapts the ratio of classifier types in the heterogeneous ensemble in favor of the better classifier type, and optimizes the classifiers in the ensemble using stochastic methods. Experimental results show that the proposed method performs consistently better than homogeneous ensembles. Comparison with random sampling and uncertainty sampling shows that the algorithm effectively draws informative data points for training.</p>
+<p>【Keywords】:</p>
+<h2 id="Session S21: Potpourri    4">Session S21: Potpourri    4</h2>
+<h3 id="79. Evaluating Query Result Significance in Databases via Randomizations.">79. Evaluating Query Result Significance in Databases via Randomizations.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.79">Paper Link</a>】    【Pages】:906-917</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/o/Ojala:Markus">Markus Ojala</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Garriga:Gemma_C=">Gemma C. Garriga</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gionis:Aristides">Aristides Gionis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mannila:Heikki">Heikki Mannila</a></p>
+<p>【Abstract】:
+Many sorts of structured data are commonly stored in a multi-relational format of interrelated tables. Under this relational model, exploratory data analysis can be done by using relational queries. As an example, in the Internet Movie Database (IMDb) a query can be used to check whether the average rank of action movies is higher than the average rank of drama movies. We consider the problem of assessing whether the results returned by such a query are statistically significant or just a random artifact of the structure in the data. Our approach is based on randomizing the tables occurring in the queries and repeating the original query on the randomized tables. It turns out that there is no unique way of randomizing in multi-relational data. We propose several randomization techniques, study their properties, and show how to find out which queries or hypotheses about our data result in statistically significant information and which tables in the database convey most of the structure in the query. We give results on real and generated data and show how the significance of some queries vary between different randomizations.</p>
+<p>【Keywords】:</p>
+<h3 id="80. Cross-Selling Optimization for Customized Promotion.">80. Cross-Selling Optimization for Customized Promotion.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.80">Paper Link</a>】    【Pages】:918-929</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Nan">Nan Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Yinghui">Yinghui Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yan:Xifeng">Xifeng Yan</a></p>
+<p>【Abstract】:
+The profit of a retail product not only comes from its own sales, but also comes from its influence on the sales of other products. How to promote the right products to the right customers becomes one of the key issues in marketing. In this paper, we propose a new formulation of promotion value by considering cross-selling effects within selected products and customers, which were largely ignored by existing work. We investigate the problem of customized promotion, which identifies promotional products and customers so that the promotion effect can be maximized. This problem can be decomposed into two subproblems: product selection and customer selection. The baseline methods entail an exhaustive traversal of all possible product and customer combinations, which is computationally intractable. As an alternative, we propose greedy and randomized algorithms to produce approximation solutions in an efficient manner. Experiments on both synthetic and real-world supermarket transaction data demonstrate the effectiveness and efficiency of the proposed algorithms.</p>
+<p>【Keywords】:</p>
+<h3 id="81. A Generalized Tree Matching Algorithm Considering Nested Lists for Web Data Extraction.">81. A Generalized Tree Matching Algorithm Considering Nested Lists for Web Data Extraction.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.81">Paper Link</a>】    【Pages】:930-941</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jindal:Nitin">Nitin Jindal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu_0001:Bing">Bing Liu</a></p>
+<p>【Abstract】:
+This paper studies structured data extraction from Web pages. One of the effective methods is tree matching, which can detect template patterns from web pages used for extraction. However, one major limitation of existing tree matching algorithms is their inability to deal with embedded lists with repeated patterns. In the Web context, lists are everywhere, e.g., lists of products, jobs and publications. Due to the fact that lists in trees may have different lengths, the match score of the trees can be very low although they follow exactly the same template pattern. To make the matter worse, a list can have nested lists in it at any level. To solve this problem, existing research uses various heuristics to detect candidate lists first and then applies tree matching to generate data extraction patterns. This paper proposes a generalized tree matching algorithm by extending an existing tree matching algorithm with the ability to handle nested lists through a novel grammar generation algorithm. To the best of our knowledge, this is the first tree matching algorithm that is able to consider lists. In addition, it is well-known that there are two problem formulations for Web data extraction: (1) pattern generation based on multiple pages following the same template, and (2) pattern generation based on a single page containing lists of data instances following the same templates (each list may use a different template). These two problems are currently solved using different algorithms. The proposed (single) algorithm is able to solve both problems effectively. Extensive experiments show that the new algorithm outperforms the state-of-the-art existing systems for both problems considerably.</p>
+<p>【Keywords】:</p>
+<h3 id="82. Mining Maximally Banded Matrices in Binary Data.">82. Mining Maximally Banded Matrices in Binary Data.</h3>
+<p>【<a href="http://dx.doi.org/10.1137/1.9781611972801.82">Paper Link</a>】    【Pages】:942-953</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Alqadah:Faris">Faris Alqadah</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bhatnagar:Raj">Raj Bhatnagar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jegga:Anil_G=">Anil G. Jegga</a></p>
+<p>【Abstract】:
+Binary data occurs often in several real world applications ranging from social networks to bioinformatics. Extracting patterns from such data has been a focus of fundamental data mining tasks including association rule analysis, sequence mining and bi-clustering. Recently, the utility of banded structures in binary matrices has been pointed out with applications in paleontology, bioinformatics and social networking. A binary matrix has a banded structure if both the rows and columns can be permuted so that the 1's exhibit a staircase pattern down the rows, along the leading diagonal. In this paper we show the correspondence between bi-clustering and banded structures in matrices; and the mmbs (Mine Maximally Banded Sub-matrices) algorithm is presented as a direct result of this correspondence. The current state of the art algorithm, mbs, only allows for the discovery of a single band and assumes a fixed column permutation. On the other hand mmbs facilitates the discovery of multiple bands that may possibly be overlapping or segmented. Our experimental results, presented here, clearly indicate the advantage of mmbs over mbs with both, synthetic and real data sets.</p>
+<p>【Keywords】:</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+
+<div class="theme" >
+<i title='主题' onclick="setStyle()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<!-- 更换theme -->
+<script type="text/javascript">
+function setStyle(){ 
+    if(document.getElementById("dark").disabled){
+        document.getElementById("light").disabled = true; 
+        document.getElementById("dark").disabled = false; 
+        }
+    else{
+        document.getElementById("dark").disabled = true; 
+        document.getElementById("light").disabled = false; 
+        }
+    }
+</script>
+
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="http://huntercmd.github.io"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>

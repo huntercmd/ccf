@@ -1,0 +1,887 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="../config/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link id="light" rel="stylesheet" type="text/css" href="../config/css/light.css" />  
+<link id="dark" rel="stylesheet" type="text/css" href="../config/css/dark.css" disabled/>
+
+<script src="../config/css/classie.js"></script>
+
+
+<!-- This is for Mathjax -->
+
+<script type="text/javascript"
+  src="../config/mathjax2.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#7. WSDM 2014:New York, NY, USA">7. WSDM 2014:New York, NY, USA</a><ul>
+<li><a href="#Paper Num: 80 || Session Num: 15">Paper Num: 80 || Session Num: 15</a></li>
+<li><a href="#Keynote address    1">Keynote address    1</a><ul>
+<li><a href="#1. Data that matter: opportunities in crisis informatics research.">1. Data that matter: opportunities in crisis informatics research.</a></li>
+</ul>
+</li>
+<li><a href="#Web search    7">Web search    7</a><ul>
+<li><a href="#2. Improving the efficiency of multi-site web search engines.">2. Improving the efficiency of multi-site web search engines.</a></li>
+<li><a href="#3. A self-adapting latency/power tradeoff model for replicated search engines.">3. A self-adapting latency/power tradeoff model for replicated search engines.</a></li>
+<li><a href="#4. Heterogeneous graph-based intent learning with queries, web pages and Wikipedia concepts.">4. Heterogeneous graph-based intent learning with queries, web pages and Wikipedia concepts.</a></li>
+<li><a href="#5. Exploiting user disagreement for web search evaluation: an experimental approach.">5. Exploiting user disagreement for web search evaluation: an experimental approach.</a></li>
+<li><a href="#6. Improving search relevance for short queries in community question answering.">6. Improving search relevance for short queries in community question answering.</a></li>
+<li><a href="#7. Struggling or exploring?: disambiguating long search sessions.">7. Struggling or exploring?: disambiguating long search sessions.</a></li>
+<li><a href="#8. Democracy is good for ranking: towards multi-view rank learning and adaptation in web search.">8. Democracy is good for ranking: towards multi-view rank learning and adaptation in web search.</a></li>
+</ul>
+</li>
+<li><a href="#Web Search and advertising    7">Web Search and advertising    7</a><ul>
+<li><a href="#9. Relative confidence sampling for efficient on-line ranker evaluation.">9. Relative confidence sampling for efficient on-line ranker evaluation.</a></li>
+<li><a href="#10. Adapting deep RankNet for personalized search.">10. Adapting deep RankNet for personalized search.</a></li>
+<li><a href="#11. Search engine click spam detection based on bipartite graph propagation.">11. Search engine click spam detection based on bipartite graph propagation.</a></li>
+<li><a href="#12. Sampling dilemma: towards effective data sampling for click prediction in sponsored search.">12. Sampling dilemma: towards effective data sampling for click prediction in sponsored search.</a></li>
+<li><a href="#13. Exploiting contextual factors for click modeling in sponsored search.">13. Exploiting contextual factors for click modeling in sponsored search.</a></li>
+<li><a href="#14. Predicting response in mobile advertising with hierarchical importance-aware factorization machine.">14. Predicting response in mobile advertising with hierarchical importance-aware factorization machine.</a></li>
+<li><a href="#15. Partner tiering in display advertising.">15. Partner tiering in display advertising.</a></li>
+</ul>
+</li>
+<li><a href="#Advertising    4">Advertising    4</a><ul>
+<li><a href="#16. Estimating ad group performance in sponsored search.">16. Estimating ad group performance in sponsored search.</a></li>
+<li><a href="#17. Scalable hierarchical multitask learning algorithms for conversion optimization in display advertising.">17. Scalable hierarchical multitask learning algorithms for conversion optimization in display advertising.</a></li>
+<li><a href="#18. An efficient framework for online advertising effectiveness measurement and comparison.">18. An efficient framework for online advertising effectiveness measurement and comparison.</a></li>
+<li><a href="#19. LASER: a scalable response prediction platform for online advertising.">19. LASER: a scalable response prediction platform for online advertising.</a></li>
+</ul>
+</li>
+<li><a href="#Log analysis    6">Log analysis    6</a><ul>
+<li><a href="#20. Discovering common motifs in cursor movement data for improving web search.">20. Discovering common motifs in cursor movement data for improving web search.</a></li>
+<li><a href="#21. Modeling dwell time to predict click-level satisfaction.">21. Modeling dwell time to predict click-level satisfaction.</a></li>
+<li><a href="#22. User modeling in search logs via a nonparametric bayesian approach.">22. User modeling in search logs via a nonparametric bayesian approach.</a></li>
+<li><a href="#23. The last click: why users give up information network navigation.">23. The last click: why users give up information network navigation.</a></li>
+<li><a href="#24. Lessons from the journey: a query log analysis of within-session learning.">24. Lessons from the journey: a query log analysis of within-session learning.</a></li>
+<li><a href="#25. Scalable K-Means by ranked retrieval.">25. Scalable K-Means by ranked retrieval.</a></li>
+</ul>
+</li>
+<li><a href="#Recommender systems    3">Recommender systems    3</a><ul>
+<li><a href="#26. Taxonomy discovery for personalized recommendation.">26. Taxonomy discovery for personalized recommendation.</a></li>
+<li><a href="#27. Who likes it more?: mining worth-recommending items from long tails by modeling relative preference.">27. Who likes it more?: mining worth-recommending items from long tails by modeling relative preference.</a></li>
+<li><a href="#28. On building entity recommender systems using user click log and freebase knowledge.">28. On building entity recommender systems using user click log and freebase knowledge.</a></li>
+</ul>
+</li>
+<li><a href="#Recommender systems and networks    5">Recommender systems and networks    5</a><ul>
+<li><a href="#29. Improving pairwise learning for item recommendation from implicit feedback.">29. Improving pairwise learning for item recommendation from implicit feedback.</a></li>
+<li><a href="#30. Personalized entity recommendation: a heterogeneous information network approach.">30. Personalized entity recommendation: a heterogeneous information network approach.</a></li>
+<li><a href="#31. Social collaborative retrieval.">31. Social collaborative retrieval.</a></li>
+<li><a href="#32. Transferring heterogeneous links across location-based social networks.">32. Transferring heterogeneous links across location-based social networks.</a></li>
+<li><a href="#33. Customized tour recommendations in urban areas.">33. Customized tour recommendations in urban areas.</a></li>
+</ul>
+</li>
+<li><a href="#Networks: communities and labeling    5">Networks: communities and labeling    5</a><ul>
+<li><a href="#34. Detecting cohesive and 2-mode communities indirected and undirected networks.">34. Detecting cohesive and 2-mode communities indirected and undirected networks.</a></li>
+<li><a href="#35. FENNEL: streaming graph partitioning for massive scale graphs.">35. FENNEL: streaming graph partitioning for massive scale graphs.</a></li>
+<li><a href="#36. A few good predictions: selective node labeling in a social network.">36. A few good predictions: selective node labeling in a social network.</a></li>
+<li><a href="#37. Active learning for networked data based on non-progressive diffusion model.">37. Active learning for networked data based on non-progressive diffusion model.</a></li>
+<li><a href="#38. Learning latent representations of nodes for classifying in heterogeneous social networks.">38. Learning latent representations of nodes for classifying in heterogeneous social networks.</a></li>
+</ul>
+</li>
+<li><a href="#Networks: centrality and influence    5">Networks: centrality and influence    5</a><ul>
+<li><a href="#39. Prediction in a microblog hybrid network using bonacich potential.">39. Prediction in a microblog hybrid network using bonacich potential.</a></li>
+<li><a href="#40. Learning social network embeddings for predicting information diffusion.">40. Learning social network embeddings for predicting information diffusion.</a></li>
+<li><a href="#41. Modeling opinion dynamics in social networks.">41. Modeling opinion dynamics in social networks.</a></li>
+<li><a href="#42. Fast approximation of betweenness centrality through sampling.">42. Fast approximation of betweenness centrality through sampling.</a></li>
+<li><a href="#43. Effective co-betweenness centrality computation.">43. Effective co-betweenness centrality computation.</a></li>
+</ul>
+</li>
+<li><a href="#Natural language processing; topic models    7">Natural language processing; topic models    7</a><ul>
+<li><a href="#44. Chinese-English mixed text normalization.">44. Chinese-English mixed text normalization.</a></li>
+<li><a href="#45. Sentiment analysis on evolving social streams: how self-report imbalances can help.">45. Sentiment analysis on evolving social streams: how self-report imbalances can help.</a></li>
+<li><a href="#46. Entity linking at the tail: sparse signals, unknown entities, and phrase models.">46. Entity linking at the tail: sparse signals, unknown entities, and phrase models.</a></li>
+<li><a href="#47. Latent dirichlet allocation based diversified retrieval for e-commerce search.">47. Latent dirichlet allocation based diversified retrieval for e-commerce search.</a></li>
+<li><a href="#48. Supervised N-gram topic model.">48. Supervised N-gram topic model.</a></li>
+<li><a href="#49. Going beyond Corr-LDA for detecting specific comments on news & blogs.">49. Going beyond Corr-LDA for detecting specific comments on news &amp; blogs.</a></li>
+<li><a href="#50. Nonparametric bayesian upstream supervised multi-modal topic models.">50. Nonparametric bayesian upstream supervised multi-modal topic models.</a></li>
+</ul>
+</li>
+<li><a href="#Topic models; linked data    7">Topic models; linked data    7</a><ul>
+<li><a href="#51. Spatial compactness meets topical consistency: jointly modeling links and content for community detection.">51. Spatial compactness meets topical consistency: jointly modeling links and content for community detection.</a></li>
+<li><a href="#52. Scalable topic-specific influence analysis on microblogs.">52. Scalable topic-specific influence analysis on microblogs.</a></li>
+<li><a href="#53. WebChild: harvesting and organizing commonsense knowledge from the web.">53. WebChild: harvesting and organizing commonsense knowledge from the web.</a></li>
+<li><a href="#54. Using linked data to mine RDF from wikipedia's tables.">54. Using linked data to mine RDF from wikipedia's tables.</a></li>
+<li><a href="#55. Knowledge-based graph document modeling.">55. Knowledge-based graph document modeling.</a></li>
+<li><a href="#56. Trust, but verify: predicting contribution quality for knowledge base construction and curation.">56. Trust, but verify: predicting contribution quality for knowledge base construction and curation.</a></li>
+<li><a href="#57. Modelling growth of urban crowd-sourced information.">57. Modelling growth of urban crowd-sourced information.</a></li>
+</ul>
+</li>
+<li><a href="#Peer production: data analysis    7">Peer production: data analysis    7</a><ul>
+<li><a href="#58. Inferring the impacts of social media on crowdfunding.">58. Inferring the impacts of social media on crowdfunding.</a></li>
+<li><a href="#59. Understanding and promoting micro-finance activities in Kiva.org.">59. Understanding and promoting micro-finance activities in Kiva.org.</a></li>
+<li><a href="#60. Who watches (and shares">60. Who watches (and shares) what on youtube? and when?: using twitter to understand youtube viewership.</a> what on youtube? and when?: using twitter to understand youtube viewership.)</li>
+<li><a href="#61. Detecting non-gaussian geographical topics in tagged photo collections.">61. Detecting non-gaussian geographical topics in tagged photo collections.</a></li>
+<li><a href="#62. Ranking in heterogeneous social media.">62. Ranking in heterogeneous social media.</a></li>
+<li><a href="#63. Visualizing brand associations from web community photos.">63. Visualizing brand associations from web community photos.</a></li>
+<li><a href="#64. Is a picture really worth a thousand words?: - on the role of images in e-commerce.">64. Is a picture really worth a thousand words?: - on the role of images in e-commerce.</a></li>
+</ul>
+</li>
+<li><a href="#Doctoral consortium    5">Doctoral consortium    5</a><ul>
+<li><a href="#65. Integration of large scale knowledge bases using probabilistic graphical models.">65. Integration of large scale knowledge bases using probabilistic graphical models.</a></li>
+<li><a href="#66. Strategy in action: analyzing online search behavior bymining search strategies.">66. Strategy in action: analyzing online search behavior bymining search strategies.</a></li>
+<li><a href="#67. On discovering non-obvious recommendations: using unexpectedness and neighborhood selection methods in collaborative filtering systems.">67. On discovering non-obvious recommendations: using unexpectedness and neighborhood selection methods in collaborative filtering systems.</a></li>
+<li><a href="#68. Exploratory search with semantic transformations using collaborative knowledge bases.">68. Exploratory search with semantic transformations using collaborative knowledge bases.</a></li>
+<li><a href="#69. Search by multiple examples.">69. Search by multiple examples.</a></li>
+</ul>
+</li>
+<li><a href="#Tutorials    6">Tutorials    6</a><ul>
+<li><a href="#70. Behavioral data mining and network analysis in massive online games.">70. Behavioral data mining and network analysis in massive online games.</a></li>
+<li><a href="#71. Exploration and mining of web repositories.">71. Exploration and mining of web repositories.</a></li>
+<li><a href="#72. Big graph mining for the web and social media: algorithms, anomaly detection, and applications.">72. Big graph mining for the web and social media: algorithms, anomaly detection, and applications.</a></li>
+<li><a href="#73. Diversity and novelty in web search, recommender systems and data streams.">73. Diversity and novelty in web search, recommender systems and data streams.</a></li>
+<li><a href="#74. Multilingual probabilistic topic modeling and its applications in web mining and search.">74. Multilingual probabilistic topic modeling and its applications in web mining and search.</a></li>
+<li><a href="#75. Entity linking and retrieval for semantic search.">75. Entity linking and retrieval for semantic search.</a></li>
+</ul>
+</li>
+<li><a href="#Workshop summaries    5">Workshop summaries    5</a><ul>
+<li><a href="#76. Log-based personalization: the 4th web search click data (WSCD">76. Log-based personalization: the 4th web search click data (WSCD) workshop.</a> workshop.)</li>
+<li><a href="#77. Web-scale classification: web classification in the big data era.">77. Web-scale classification: web classification in the big data era.</a></li>
+<li><a href="#78. 1st workshop on diffusion networks and cascade analytics.">78. 1st workshop on diffusion networks and cascade analytics.</a></li>
+<li><a href="#79. Workshop on large-scale and distributed systems for information retrieval (LSDS-IR 2014">79. Workshop on large-scale and distributed systems for information retrieval (LSDS-IR 2014).</a>.)</li>
+<li><a href="#80. Data design for personalization: current challenges and emerging opportunities.">80. Data design for personalization: current challenges and emerging opportunities.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="7. WSDM 2014:New York, NY, USA">7. WSDM 2014:New York, NY, USA</h1>
+<p><a href="http://dl.acm.org/citation.cfm?id=2556195">Seventh ACM International Conference on Web Search and Data Mining, WSDM 2014, New York, NY, USA, February 24-28, 2014.</a> ACM
+【<a href="http://dblp.uni-trier.de/db/conf/wsdm/wsdm2014.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 80 || Session Num: 15">Paper Num: 80 || Session Num: 15</h2>
+<h2 id="Keynote address    1">Keynote address    1</h2>
+<h3 id="1. Data that matter: opportunities in crisis informatics research.">1. Data that matter: opportunities in crisis informatics research.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2559898">Paper Link</a>】    【Pages】:1-2</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Palen:Leysia">Leysia Palen</a></p>
+<p>【Abstract】:
+In an increasingly global society and on a planet experiencing effects of climate change, large-scale emergencies both instigated by humans and arising from nature can devastate human life and our tightly- woven social fabric. With a promise of improved warning and coordination, a prevailing hope is that information and communication technology (ICT) can help reduce the impacts of large-scale disruptions, including political crises, natural disasters, pandemics, and terrorist threats. Much of the focus of development has been on the formal emergency response effort. However, social computing is changing the way we understand information distribution. By viewing the citizenry as a powerful, self-organizing, and collectively intelligent force, ICT is now playing a remarkable and transformational role in the way society responds to mass emergencies and disasters. Furthermore, this view of a civil society that can be augmented by ICT is based on social and behavioral knowledge about how people truly respond in disaster, rather than on simplified and mythical portrayals of people unable to help themselves [2]. Indeed, long before the advent of widely available social computing platforms, research has shown that disaster victims themselves are the true first responders, frequently acting on the basis of knowledge not available to officials [1, 3, 6]. We argue that this transformative view is critical to our global future: When large-scale emergencies happen, there is often no way to survive it in practical terms unless we rely on each other for help. The urgency and scale of many disaster events are such that no one, not even the most experienced and best technology- equipped responders' can rescue all victims or direct all people over the span of the event as to what the best course of action might be. Climate change and population migration to geographically vulnerable areas mean that naturally occurring hazards will exert increasingly extensive damage. Man-made and terrorist threats can also have greater potential to cause lasting damage to the social and built environment. It is instead necessary, through innovative ICT, to leverage the power of the collective intelligence of the citizenry to support natural instincts, which are to search for reliable information using any means possible to optimize for local conditions [5].</p>
+<p>【Keywords】:
+crisis informatics; disaster; emergency; human-computer interaction; social computing; social media</p>
+<h2 id="Web search    7">Web search    7</h2>
+<h3 id="2. Improving the efficiency of multi-site web search engines.">2. Improving the efficiency of multi-site web search engines.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556249">Paper Link</a>】    【Pages】:3-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Franc=egrave=s:Guillem">Guillem Francès</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bai_0002:Xiao">Xiao Bai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cambazoglu:Berkant_Barla">Berkant Barla Cambazoglu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Baeza=Yates:Ricardo_A=">Ricardo A. Baeza-Yates</a></p>
+<p>【Abstract】:
+A multi-site web search engine is composed of a number of search sites geographically distributed around the world. Each search site is typically responsible for crawling and indexing the web pages that are in its geographical neighborhood. A query is selectively processed on a subset of search sites that are predicted to return the best-matching results. The scalability and efficiency of multi-site web search engines have attracted a lot of research attention in recent years. In particular, research has focused on replicating important web pages across sites, forwarding queries to relevant sites, and caching results of previous queries. Yet, these problems have only been studied in isolation, but no prior work has properly investigated the interplay between them. In this paper, we take this challenge up and conduct what we believe is the first comprehensive analysis of a full stack of techniques for efficient multi-site web search. Specifically, we propose a document replication technique that improves the query locality of the state-of-the-art approaches with various replication budget distribution strategies. We devise a machine learning approach to decide the query forwarding patterns, achieving a significantly lower false positive ratio than a state-of-the-art thresholding approach with little negative impact on search result quality. We propose three result caching strategies that reduce the number of forwarded queries and analyze the trade-off they introduce in terms of storage and network overheads. Finally, we show that the combination of the best-of-the-class techniques yields very promising search efficiency, rendering multi-site, geographically distributed web search engines an attractive alternative to centralized web search engines.</p>
+<p>【Keywords】:
+distributed web search; document replication; efficiency; query forwarding; query processing; result caching</p>
+<h3 id="3. A self-adapting latency/power tradeoff model for replicated search engines.">3. A self-adapting latency/power tradeoff model for replicated search engines.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556246">Paper Link</a>】    【Pages】:13-22</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Freire:Ana">Ana Freire</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Macdonald:Craig">Craig Macdonald</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tonellotto:Nicola">Nicola Tonellotto</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Ounis:Iadh">Iadh Ounis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cacheda:Fidel">Fidel Cacheda</a></p>
+<p>【Abstract】:
+For many search settings, distributed/replicated search engines deploy a large number of machines to ensure efficient retrieval. This paper investigates how the power consumption of a replicated search engine can be automatically reduced when the system has low contention, without compromising its efficiency. We propose a novel self-adapting model to analyse the trade-off between latency and power consumption for distributed search engines. When query volumes are high and there is contention for the resources, the model automatically increases the necessary number of active machines in the system to maintain acceptable query response times. On the other hand, when the load of the system is low and the queries can be served easily, the model is able to reduce the number of active machines, leading to power savings. The model bases its decisions on examining the current and historical query loads of the search engine. Our proposal is formulated as a general dynamic decision problem, which can be quickly solved by dynamic programming in response to changing query loads. Thorough experiments are conducted to validate the usefulness of the proposed adaptive model using historical Web search traffic submitted to a commercial search engine. Our results show that our proposed self-adapting model can achieve an energy saving of 33% while only degrading mean query completion time by 10 ms compared to a baseline that provisions replicas based on a previous day's traffic.</p>
+<p>【Keywords】:
+power consumption; search engines</p>
+<h3 id="4. Heterogeneous graph-based intent learning with queries, web pages and Wikipedia concepts.">4. Heterogeneous graph-based intent learning with queries, web pages and Wikipedia concepts.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556222">Paper Link</a>】    【Pages】:23-32</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Ren:Xiang">Xiang Ren</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Yujing">Yujing Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yu:Xiao">Xiao Yu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yan:Jun">Jun Yan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Zheng">Zheng Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Han:Jiawei">Jiawei Han</a></p>
+<p>【Abstract】:
+The problem of learning user search intents has attracted intensive attention from both industry and academia. However, state-of-the-art intent learning algorithms suffer from different drawbacks when only using a single type of data source. For example, query text has difficulty in distinguishing ambiguous queries; search log is bias to the order of search results and users' noisy click behaviors. In this work, we for the first time leverage three types of objects, namely queries, web pages and Wikipedia concepts collaboratively for learning generic search intents and construct a heterogeneous graph to represent multiple types of relationships between them. A novel unsupervised method called heterogeneous graph-based soft-clustering is developed to derive an intent indicator for each object based on the constructed heterogeneous graph. With the proposed co-clustering method, one can enhance the quality of intent understanding by taking advantage of different types of data, which complement each other, and make the implicit intents easier to interpret with explicit knowledge from Wikipedia concepts. Experiments on two real-world datasets demonstrate the power of the proposed method where it achieves a 9.25% improvement in terms of NDCG on search ranking task and a 4.67% enhancement in terms of Rand index on object co-clustering task compared to the best state-of-the-art method.</p>
+<p>【Keywords】:
+heterogeneous graph clustering; search intent; wikipedia</p>
+<h3 id="5. Exploiting user disagreement for web search evaluation: an experimental approach.">5. Exploiting user disagreement for web search evaluation: an experimental approach.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556268">Paper Link</a>】    【Pages】:33-42</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Demeester:Thomas">Thomas Demeester</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Aly:Robin">Robin Aly</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hiemstra:Djoerd">Djoerd Hiemstra</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nguyen:Dong">Dong Nguyen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Trieschnigg:Dolf">Dolf Trieschnigg</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Develder:Chris">Chris Develder</a></p>
+<p>【Abstract】:
+To express a more nuanced notion of relevance as compared to binary judgments, graded relevance levels can be used for the evaluation of search results. Especially in Web search, users strongly prefer top results over less relevant results, and yet they often disagree on which are the top results for a given information need. Whereas previous works have generally considered disagreement as a negative effect, this paper proposes a method to exploit this user disagreement by integrating it into the evaluation procedure. First, we present experiments that investigate the user disagreement. We argue that, with a high disagreement, lower relevance levels might need to be promoted more than in the case where there is global consensus on the top results. This is formalized by introducing the User Disagreement Model, resulting in a weighting of the relevance levels with a probabilistic interpretation. A validity analysis is given, and we explain how to integrate the model with well-established evaluation metrics. Finally, we discuss a specific application of the model, in the estimation of suitable weights for the combined relevance of Web search snippets and pages.</p>
+<p>【Keywords】:
+evaluation; graded relevance; user disagreement</p>
+<h3 id="6. Improving search relevance for short queries in community question answering.">6. Improving search relevance for short queries in community question answering.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556239">Paper Link</a>】    【Pages】:43-52</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Haocheng">Haocheng Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Wei">Wei Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Ming">Ming Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Enhong">Enhong Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Duan:Lei">Lei Duan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shum:Heung=Yeung">Heung-Yeung Shum</a></p>
+<p>【Abstract】:
+Relevant question retrieval and ranking is a typical task in community question answering (CQA). Existing methods mainly focus on long and syntactically structured queries. However, when an input query is short, the task becomes challenging, due to a lack information regarding user intent. In this paper, we mine different types of user intent from various sources for short queries. With these intent signals, we propose a new intent-based language model. The model takes advantage of both state-of-the-art relevance models and the extra intent information mined from multiple sources. We further employ a state-of-the-art learning-to-rank approach to estimate parameters in the model from training data. Experiments show that by leveraging user intent prediction, our model significantly outperforms the state-of-the-art relevance models in question search.</p>
+<p>【Keywords】:
+community question answering; question search; short query; user intent</p>
+<h3 id="7. Struggling or exploring?: disambiguating long search sessions.">7. Struggling or exploring?: disambiguating long search sessions.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556221">Paper Link</a>】    【Pages】:53-62</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Awadallah:Ahmed_Hassan">Ahmed Hassan Awadallah</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/White:Ryen_W=">Ryen W. White</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dumais:Susan_T=">Susan T. Dumais</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Yi=Min">Yi-Min Wang</a></p>
+<p>【Abstract】:
+Web searchers often exhibit directed search behaviors such as navigating to a particular Website. However, in many circumstances they exhibit different behaviors that involve issuing many queries and visiting many results. In such cases, it is not clear whether the user's rationale is to intentionally explore the results or whether they are struggling to find the information they seek. Being able to disambiguate between these types of long search sessions is important for search engines both in performing retrospective analysis to understand search success, and in developing real-time support to assist searchers. The difficulty of this challenge is amplified since many of the characteristics of exploration (e.g., multiple queries, long duration) are also observed in sessions where people are struggling. In this paper, we analyze struggling and exploring behavior in Web search using log data from a commercial search engine. We first compare and contrast search behaviors along a number dimensions, including query dynamics during the session. We then build classifiers that can accurately distinguish between exploring and struggling sessions using behavioral and topical features. Finally, we show that by considering the struggling/exploring prediction we can more accurately predict search satisfaction.</p>
+<p>【Keywords】:
+exploratory search; exploring vs. struggling</p>
+<h3 id="8. Democracy is good for ranking: towards multi-view rank learning and adaptation in web search.">8. Democracy is good for ranking: towards multi-view rank learning and adaptation in web search.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556267">Paper Link</a>】    【Pages】:63-72</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gao:Wei">Wei Gao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Pei">Pei Yang</a></p>
+<p>【Abstract】:
+Web search ranking models are learned from features originated from different views or perspectives of document relevancy, such as query dependent or independent features. This seems intuitively conformant to the principle of multi-view approach that leverages distinct complementary views to improve model learning. In this paper, we aim to obtain optimal separation of ranking features into non-overlapping subsets (i.e., views), and use such different views for rank learning and adaptation. We present a novel semi-supervised multi-view ranking model, which is then extended into an adaptive ranker for search domains where no training data exists. The core idea is to proactively strengthen view consistency (i.e., the consistency between different rankings each predicted by a distinct view-based ranker) especially when training and test data follow divergent distributions. For this purpose, we propose a unified framework based on listwise ranking scheme to mutually reinforce the view consistency of target queries and the appropriate weighting of source queries that act as prior knowledge. Based on LETOR and Yahoo Learning to Rank datasets, our method significantly outperforms some strong baselines including single-view ranking models commonly used and multi-view ranking models that do not impose view consistency on target data.</p>
+<p>【Keywords】:
+multi-view rank learning; rank adaptation; view consistency</p>
+<h2 id="Web Search and advertising    7">Web Search and advertising    7</h2>
+<h3 id="9. Relative confidence sampling for efficient on-line ranker evaluation.">9. Relative confidence sampling for efficient on-line ranker evaluation.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556256">Paper Link</a>】    【Pages】:73-82</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zoghi:Masrour">Masrour Zoghi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Whiteson:Shimon">Shimon Whiteson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rijke:Maarten_de">Maarten de Rijke</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Munos:R=eacute=mi">Rémi Munos</a></p>
+<p>【Abstract】:
+A key challenge in information retrieval is that of on-line ranker evaluation: determining which one of a finite set of rankers performs the best in expectation on the basis of user clicks on presented document lists. When the presented lists are constructed using interleaved comparison methods, which interleave lists proposed by two different candidate rankers, then the problem of minimizing the total regret accumulated while evaluating the rankers can be formalized as a K-armed dueling bandits problem. In this paper, we propose a new method called relative confidence sampling (RCS) that aims to reduce cumulative regret by being less conservative than existing methods in eliminating rankers from contention. In addition, we present an empirical comparison between RCS and two state-of-the-art methods, relative upper confidence bound and SAVAGE. The results demonstrate that RCS can substantially outperform these alternatives on several large learning to rank datasets.</p>
+<p>【Keywords】:
+evaluation; implicit feedback; on-line learning</p>
+<h3 id="10. Adapting deep RankNet for personalized search.">10. Adapting deep RankNet for personalized search.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556234">Paper Link</a>】    【Pages】:83-92</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Song:Yang">Yang Song</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Hongning">Hongning Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/He:Xiaodong">Xiaodong He</a></p>
+<p>【Abstract】:
+RankNet is one of the widely adopted ranking models for web search tasks. However, adapting a generic RankNet for personalized search is little studied. In this paper, we first continue-trained a variety of RankNets with different number of hidden layers and network structures over a previously trained global RankNet model, and observed that a deep neural network with five hidden layers gives the best performance. To further improve the performance of adaptation, we propose a set of novel methods categorized into two groups. In the first group, three methods are proposed to properly assess the usefulness of each adaptation instance and only leverage the most informative instances to adapt a user-specific RankNet model. These assessments are based on KL-divergence, click entropy or a heuristic to ignore top clicks in adaptation queries. In the second group, two methods are proposed to regularize the training of the neural network in RankNet: one of these methods regularize the error back-propagation via a truncated gradient approach, while the other method limits the depth of the back propagation when adapting the neural network. We empirically evaluate our approaches using a large-scale real-world data set. Experimental results exhibit that our methods all give significant improvements over a strong baseline ranking system, and the truncated gradient approach gives the best performance, significantly better than all others.</p>
+<p>【Keywords】:
+deep learning; personalized search; ranking adaptation</p>
+<h3 id="11. Search engine click spam detection based on bipartite graph propagation.">11. Search engine click spam detection based on bipartite graph propagation.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556214">Paper Link</a>】    【Pages】:93-102</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Xin">Xin Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang_0006:Min">Min Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Yiqun">Yiqun Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Ma:Shaoping">Shaoping Ma</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jin:Yijiang">Yijiang Jin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ru:Liyun">Liyun Ru</a></p>
+<p>【Abstract】:
+Using search engines to retrieve information has become an important part of people's daily lives. For most search engines, click information is an important factor in document ranking. As a result, some websites cheat to obtain a higher rank by fraudulently increasing clicks to their pages, which is referred to as "Click Spam". Based on an analysis of the features of fraudulent clicks, a novel automatic click spam detection approach is proposed in this paper, which consists of 1. modeling user sessions with a triple sequence, which, to the best of our knowledge, takes into account not only the user action but also the action objective and the time interval between actions for the first time; 2. using the user-session bipartite graph propagation algorithm to take advantage of cheating users to find more cheating sessions; and 3. using the pattern-session bipartite graph propagation algorithm to obtain cheating session patterns to achieve higher precision and recall of click spam detection. Experimental results based on a Chinese commercial search engine using real-world log data containing approximately 80 million user clicks per day show that 2.6% of all clicks were detected as spam with a precision of up to 97%.</p>
+<p>【Keywords】:
+click spam; frequent sequential patterns; label propagation; user session model</p>
+<h3 id="12. Sampling dilemma: towards effective data sampling for click prediction in sponsored search.">12. Sampling dilemma: towards effective data sampling for click prediction in sponsored search.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556242">Paper Link</a>】    【Pages】:103-112</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Feng:Jun">Jun Feng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bian:Jiang">Jiang Bian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Taifeng">Taifeng Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Wei">Wei Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Xiaoyan">Xiaoyan Zhu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Tie=Yan">Tie-Yan Liu</a></p>
+<p>【Abstract】:
+Precise prediction of the probability that users click on ads plays a key role in sponsored search. State-of-the-art sponsored search systems typically employ a machine learning approach to conduct click prediction. While paying much attention to extracting useful features and building effective models, previous studies have overshadowed seemingly less obvious but essentially important challenges in terms of data sampling. To fulfill the learning objective of click prediction, it is not only necessary to ensure that the sampled training data implies the similar input distribution compared with the real world one, but also to guarantee that the sampled training data yield the consistent conditional output distribution, i.e. click-through rate (CTR), with the real world data. However, due to the sparseness of clicks in sponsored search, it is a bit contradictory to address these two challenges simultaneously. In this paper, we first take a theoretical analysis to reveal this sampling dilemma, followed by a thorough data analysis which demonstrates that the straightforward random sampling method may not be effective to balance these two kinds of consistency in sampling dilemma simultaneously. To address this problem, we propose a new sampling algorithm which can succeed in retaining the consistency between the sampled data and real world in terms of both input distribution and conditional output distribution. Large scale evaluations on the click-through logs from a commercial search engine demonstrate that this new sampling algorithm can effectively address the sampling dilemma. Further experiments illustrate that, by using the training data obtained by our new sampling algorithm, we can learn the model with much higher accuracy in click prediction.</p>
+<p>【Keywords】:
+click prediction; data sampling; online advertising; sponsored search</p>
+<h3 id="13. Exploiting contextual factors for click modeling in sponsored search.">13. Exploiting contextual factors for click modeling in sponsored search.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556237">Paper Link</a>】    【Pages】:113-122</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yin:Dawei">Dawei Yin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mei:Shike">Shike Mei</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cao:Bin">Bin Cao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sun:Jian=Tao">Jian-Tao Sun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Davison_0001:Brian_D=">Brian D. Davison</a></p>
+<p>【Abstract】:
+Sponsored search is the primary business for today's commercial search engines. Accurate prediction of the Click-Through Rate (CTR) for ads is key to displaying relevant ads to users. In this paper, we systematically study the two kinds of contextual factors influencing the CTR: 1) In micro factors, we focus on the factors for mainline ads, including ad depth, query diversity, ad interaction. 2) In macro factors, we try to understand the correlations of clicks between organic search and sponsored search. Based on this data analysis, we propose novel click models which harvest these new explored factors. To the best of our knowledge, this is the first paper to examine and model the effects of the above contextual factors in sponsored search. Extensive experiments on large-scale real-world datasets show that by incorporating these contextual factors, our novel click models can outperform state-of-the-art methods.</p>
+<p>【Keywords】:
+ad ctr prediction; click model; click through rate; ctr prediction; sponsored search</p>
+<h3 id="14. Predicting response in mobile advertising with hierarchical importance-aware factorization machine.">14. Predicting response in mobile advertising with hierarchical importance-aware factorization machine.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556240">Paper Link</a>】    【Pages】:123-132</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/o/Oentaryo:Richard_Jayadi">Richard Jayadi Oentaryo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lim:Ee=Peng">Ee-Peng Lim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Low:Jia=Wei">Jia-Wei Low</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lo:David">David Lo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Finegold:Michael">Michael Finegold</a></p>
+<p>【Abstract】:
+Mobile advertising has recently seen dramatic growth, fueled by the global proliferation of mobile phones and devices. The task of predicting ad response is thus crucial for maximizing business revenue. However, ad response data change dynamically over time, and are subject to cold-start situations in which limited history hinders reliable prediction. There is also a need for a robust regression estimation for high prediction accuracy, and good ranking to distinguish the impacts of different ads. To this end, we develop a Hierarchical Importance-aware Factorization Machine (HIFM), which provides an effective generic latent factor framework that incorporates importance weights and hierarchical learning. Comprehensive empirical studies on a real-world mobile advertising dataset show that HIFM outperforms the contemporary temporal latent factor models. The results also demonstrate the efficacy of the HIFM's importance-aware and hierarchical learning in improving the overall prediction and prediction in cold-start scenarios, respectively.</p>
+<p>【Keywords】:
+factorization machine; hierarchy; importance weight; mobile advertising; response prediction</p>
+<h3 id="15. Partner tiering in display advertising.">15. Partner tiering in display advertising.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556258">Paper Link</a>】    【Pages】:133-142</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bhalgat:Anand">Anand Bhalgat</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Korula:Nitish">Nitish Korula</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Leontyev:Hennadiy">Hennadiy Leontyev</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lin:Max">Max Lin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mirrokni:Vahab_S=">Vahab S. Mirrokni</a></p>
+<p>【Abstract】:
+Display ads on the Internet are often sold by publishers to advertisers in bundles of thousands or millions of impressions over a particular time period. The ad delivery systems assign ads to pages on behalf of publishers to satisfy these contracts, and at the same time, try to maximize the overall quality of assignment. This is usually modeled in the literature as an online allocation problem, where contracts are represented by overall delivery constraints. However an important aspect of these contracts is missed by the classical formulation: a majority of these contracts are not between advertisers and publishers; a set of publishers is typically represented by a middle-man and advertisers buy inventory from the middle man. As publishers vary in quality and importance, advertisers prefer these publishers differently. Similarly, as the inventory of ads is limited, ad-delivery engine needs to prefer a high-quality publisher over a low quality publisher for supplying ads. We formulate this problem as a hierarchical online matching problem where each incoming impression has a level indicating its importance, and study its theoretical properties. We also design practical solutions to this problem and study their performance on real data sets.</p>
+<p>【Keywords】:
+display ads allocation; online matching; partner-tiering</p>
+<h2 id="Advertising    4">Advertising    4</h2>
+<h3 id="16. Estimating ad group performance in sponsored search.">16. Estimating ad group performance in sponsored search.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556257">Paper Link</a>】    【Pages】:143-152</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yin:Dawei">Dawei Yin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cao:Bin">Bin Cao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sun:Jian=Tao">Jian-Tao Sun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Davison_0001:Brian_D=">Brian D. Davison</a></p>
+<p>【Abstract】:
+In modern commercial search engines, the pay-per-click (PPC) advertising model is widely used in sponsored search. The search engines try to deliver ads which can produce greater click yields (the total number of clicks for the list of ads per impression). Therefore, predicting user clicks plays a critical role in sponsored search. The current ad-delivery strategy is a two-step approach which first predicts individual ad CTR for the given query and then selects the ads with higher predicted CTR. However, this strategy is naturally suboptimal and correlation between ads is often ignored under this strategy. The learning problem is focused on predicting individual performance rather than group performance which is the more important measurement. In this paper, we study click yield measurement in sponsored search and focus on the problem---predicting group performance (click yields) in sponsored search. To tackle all challenges in this problem---depth effects, interactive influence, cold start and sparseness of ad textual information---we first investigate several effects and propose a novel framework that could directly predict group performance for lists of ads. Our extensive experiments on a large-scale real-world dataset from a commercial search engine show that we achieve significant improvement by solving the sponsored search problem from the new perspective. Our methods noticeably outperform existing state-of-the-art approaches.</p>
+<p>【Keywords】:
+ad clicks; click yield; ctr; sponsored search</p>
+<h3 id="17. Scalable hierarchical multitask learning algorithms for conversion optimization in display advertising.">17. Scalable hierarchical multitask learning algorithms for conversion optimization in display advertising.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556264">Paper Link</a>】    【Pages】:153-162</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Ahmed:Amr">Amr Ahmed</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Das:Abhimanyu">Abhimanyu Das</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Smola:Alexander_J=">Alexander J. Smola</a></p>
+<p>【Abstract】:
+Many estimation tasks come in groups and hierarchies of related problems. In this paper we propose a hierarchical model and a scalable algorithm to perform inference for multitask learning. It infers task correlation and subtask structure in a joint sparse setting. Implementation is achieved by a distributed subgradient oracle and the successive application of prox-operators pertaining to groups and subgroups of variables. We apply this algorithm to conversion optimization in display advertising. Experimental results on over 1TB data for up to 1 billion observations and 1 million attributes show that the algorithm provides significantly better prediction accuracy while simultaneously beingefficiently scalable by distributed parameter synchronization.</p>
+<p>【Keywords】:
+display advertising; distributed optimization; large-scale machine learning; multi-task learning; sparsity</p>
+<h3 id="18. An efficient framework for online advertising effectiveness measurement and comparison.">18. An efficient framework for online advertising effectiveness measurement and comparison.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556235">Paper Link</a>】    【Pages】:163-172</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Pengyuan">Pengyuan Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Yechao">Yechao Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Meytlis:Marsha">Marsha Meytlis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tsao:Han=Yun">Han-Yun Tsao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Jian">Jian Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Huang:Pei">Pei Huang</a></p>
+<p>【Abstract】:
+In online advertising market it is crucial to provide advertisers with a reliable measurement of advertising effectiveness to make better marketing campaign planning. The basic idea for ad effectiveness measurement is to compare the performance (e.g., success rate) among users who were and who were not exposed to a certain treatment of ads. When a randomized experiment is not available, a naive comparison can be biased because exposed and unexposed populations typically have different features. One solid methodology for a fair comparison is to apply inverse propensity weighting with doubly robust estimation to the observational data. However the existing methods were not designed for the online advertising campaign, which usually suffers from huge volume of users, high dimensionality, high sparsity and imbalance. We propose an efficient framework to address these challenges in a real campaign circumstance. We utilize gradient boosting stumps for feature selection and gradient boosting trees for model fitting, and propose a subsampling-and-backscaling procedure that enables analysis on extremely sparse conversion data. The choice of features, models and feature selection scheme are validated with irrelevant conversion test. We further propose a parallel computing strategy, combined with the subsampling-and-backscaling procedure to reach computational efficiency. Our framework is applied to an online campaign involving millions of unique users, which shows substantially better model fitting and efficiency. Our framework can be further generalized to comparison of multiple treatments and more general treatment regimes, as sketched in the paper. Our framework is not limited to online advertising, but also applicable to other circumstances (e.g., social science) where a 'fair' comparison is needed with observational data.</p>
+<p>【Keywords】:
+advertising; causal inference; feature selection; gradient boosting trees; parallel computing; propensity score; subsampling</p>
+<h3 id="19. LASER: a scalable response prediction platform for online advertising.">19. LASER: a scalable response prediction platform for online advertising.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556252">Paper Link</a>】    【Pages】:173-182</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Agarwal:Deepak">Deepak Agarwal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Long:Bo">Bo Long</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Traupman:Jonathan">Jonathan Traupman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xin:Doris">Doris Xin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Liang">Liang Zhang</a></p>
+<p>【Abstract】:
+We describe LASER, a scalable response prediction platform currently used as part of a social network advertising system. LASER enables the familiar logistic regression model to be applied to very large scale response prediction problems, including ones beyond advertising. Though the underlying model is well understood, we apply a whole-system approach to address model accuracy, scalability, explore-exploit, and real-time inference. To facilitate training with both large numbers of training examples and high dimensional features on commodity clustered hardware, we employ the Alternating Direction Method of Multipliers (ADMM). Because online advertising applications are much less static than classical presentations of response prediction, LASER employs a number of techniques that allows it to adapt in real time. LASER models can be divided into components with different re-training frequencies, allowing us to learn from changes in ad campaign performance frequently without incurring the cost of retraining larger, more stable sections of the model. Thompson sampling during online inference further helps by efficiently balancing exploration of new ads with exploitation of long running ones. To enable predictions made with the most recent feature data, we employ a range of techniques, including extensive caching and lazy evaluation, to permit real time, low latency scoring. LASER models are defined using a configuration language that ties together the training, validation, and inference pieces and permits even non-programming analysts to experiment with different model structures without modifications to code or interruptions to running servers. Finally, we show via extensive offline experiments and online A/B tests that this system provides significant benefits to prediction accuracy, gains in revenue and CTR, and reductions in system latency.</p>
+<p>【Keywords】:
+computational advertising; logistic regression; machine learning; response prediction; scalability</p>
+<h2 id="Log analysis    6">Log analysis    6</h2>
+<h3 id="20. Discovering common motifs in cursor movement data for improving web search.">20. Discovering common motifs in cursor movement data for improving web search.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556265">Paper Link</a>】    【Pages】:183-192</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lagun:Dmitry">Dmitry Lagun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Ageev:Mikhail">Mikhail Ageev</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Guo:Qi">Qi Guo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Agichtein:Eugene">Eugene Agichtein</a></p>
+<p>【Abstract】:
+Web search behavior and interaction data, such as mouse cursor movements, can provide valuable information on how searchers examine and engage with the web search results. This interaction data is far richer than traditional search click data, and can be used to improve search ranking, evaluation, and presentation. Unfortunately, the diversity and complexity inherent in this interaction data make it more difficult to capture salient behavior characteristics through traditional feature engineering. To address this problem, we introduce a novel approach of automatically discovering frequent subsequences, or motifs, in mouse cursor movement data. In order to scale our approach to realistic datasets, we introduce novel optimizations for motif discovery, specifically designed for mining cursor movement data. As a practical application, we show that by encoding the motifs discovered from thousands of real web search sessions as features, enables significant improvements on result relevance estimation and re-ranking tasks, compared to a state-of-the-art baseline that relies on extensive feature engineering. These results, complemented with visualization and qualitative analysis, demonstrate that our approach is able to automatically capture key characteristics of mouse cursor movement behavior, providing a valuable new tool for search behavior analysis.</p>
+<p>【Keywords】:
+motif mining; mouse cursor tracking; relevance prediction</p>
+<h3 id="21. Modeling dwell time to predict click-level satisfaction.">21. Modeling dwell time to predict click-level satisfaction.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556220">Paper Link</a>】    【Pages】:193-202</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Youngho">Youngho Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Awadallah:Ahmed_Hassan">Ahmed Hassan Awadallah</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/White:Ryen_W=">Ryen W. White</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zitouni:Imed">Imed Zitouni</a></p>
+<p>【Abstract】:
+Clicks on search results are the most widely used behavioral signals for predicting search satisfaction. Even though clicks are correlated with satisfaction, they can also be noisy. Previous work has shown that clicks are affected by position bias, caption bias, and other factors. A popular heuristic for reducing this noise is to only consider clicks with long dwell time, usually equaling or exceeding 30 seconds. The rationale is that the more time a searcher spends on a page, the more likely they are to be satisfied with its contents. However, having a single threshold value assumes that users need a fixed amount of time to be satisfied with any result click, irrespective of the page chosen. In reality, clicked pages can differ significantly. Pages have different topics, readability levels, content lengths, etc. All of these factors may affect the amount of time spent by the user on the page. In this paper, we study the effect of different page characteristics on the time needed to achieve search satisfaction. We show that the topic of the page, its length and its readability level are critical in determining the amount of dwell time needed to predict whether any click is associated with satisfaction. We propose a method to model and provide a better understanding of click dwell time. We estimate click dwell time distributions for SAT (satisfied) or DSAT (dissatisfied) clicks for different click segments and use them to derive features to train a click-level satisfaction model. We compare the proposed model to baseline methods that use dwell time and other search performance predictors as features, and demonstrate that the proposed model achieves significant improvements.</p>
+<p>【Keywords】:
+click satisfaction.; dwell time analysis; user behavior</p>
+<h3 id="22. User modeling in search logs via a nonparametric bayesian approach.">22. User modeling in search logs via a nonparametric bayesian approach.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556262">Paper Link</a>】    【Pages】:203-212</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Hongning">Hongning Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhai:ChengXiang">ChengXiang Zhai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liang:Feng">Feng Liang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dong:Anlei">Anlei Dong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chang:Yi">Yi Chang</a></p>
+<p>【Abstract】:
+Searchers' information needs are diverse and cover a broad range of topics; hence, it is important for search engines to accurately understand each individual user's search intents in order to provide optimal search results. Search log data, which records users' search behaviors when interacting with search engines, provides a valuable source of information about users' search intents. Therefore, properly characterizing the heterogeneity among the users' observed search behaviors is the key to accurately understanding their search intents and to further predicting their behaviors. In this work, we study the problem of user modeling in the search log data and propose a generative model, dpRank, within a non-parametric Bayesian framework. By postulating generative assumptions about a user's search behaviors, dpRank identifies each individual user's latent search interests and his/her distinct result preferences in a joint manner. Experimental results on a large-scale news search log data set validate the effectiveness of the proposed approach, which not only provides in-depth understanding of a user's search intents but also benefits a variety of personalized applications.</p>
+<p>【Keywords】:
+non-parametric bayesian; search log mining; user modeling</p>
+<h3 id="23. The last click: why users give up information network navigation.">23. The last click: why users give up information network navigation.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556232">Paper Link</a>】    【Pages】:213-222</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Scaria:Aju_Thalappillil">Aju Thalappillil Scaria</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Philip:Rose_Marie">Rose Marie Philip</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/West_0001:Robert">Robert West</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Leskovec:Jure">Jure Leskovec</a></p>
+<p>【Abstract】:
+An important part of finding information online involves clicking from page to page until an information need is fully satisfied. This is a complex task that can easily be frustrating and force users to give up prematurely. An empirical analysis of what makes users abandon click-based navigation tasks is hard, since most passively collected browsing logs do not specify the exact target page that a user was trying to reach. We propose to overcome this problem by using data collected via Wikispeedia, a Wikipedia-based human-computation game, in which users are asked to navigate from a start page to an explicitly given target page (both Wikipedia articles) by only tracing hyperlinks between Wikipedia articles. Our contributions are two-fold. First, by analyzing the differences between successful and abandoned navigation paths, we aim to understand what types of behavior are indicative of users giving up their navigation task. We also investigate how users make use of back clicks during their navigation. We find that users prefer backtracking to high-degree nodes that serve as landmarks and hubs for exploring the network of pages. Second, based on our analysis, we build statistical models for predicting whether a user will finish or abandon a navigation task, and if the next action will be a back click. Being able to predict these events is important as it can potentially help us design more human-friendly browsing interfaces and retain users who would otherwise have given up navigating a website.</p>
+<p>【Keywords】:
+abandonment; browsing; information networks; navigation; wikipedia; wikispeedia</p>
+<h3 id="24. Lessons from the journey: a query log analysis of within-session learning.">24. Lessons from the journey: a query log analysis of within-session learning.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556217">Paper Link</a>】    【Pages】:223-232</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/e/Eickhoff:Carsten">Carsten Eickhoff</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Teevan:Jaime">Jaime Teevan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/White:Ryen">Ryen White</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dumais:Susan_T=">Susan T. Dumais</a></p>
+<p>【Abstract】:
+The Internet is the largest source of information in the world. Search engines help people navigate the huge space of available data in order to acquire new skills and knowledge. In this paper, we present an in-depth analysis of sessions in which people explicitly search for new knowledge on the Web based on the log files of a popular search engine. We investigate within-session and cross-session developments of expertise, focusing on how the language and search behavior of a user on a topic evolves over time. In this way, we identify those sessions and page visits that appear to significantly boost the learning process. Our experiments demonstrate a strong connection between clicks and several metrics related to expertise. Based on models of the user and their specific context, we present a method capable of automatically predicting, with good accuracy, which clicks will lead to enhanced learning. Our findings provide insight into how search engines might better help users learn as they search.</p>
+<p>【Keywords】:
+domain expertise; information search; search intent; user modelling</p>
+<h3 id="25. Scalable K-Means by ranked retrieval.">25. Scalable K-Means by ranked retrieval.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556260">Paper Link</a>】    【Pages】:233-242</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Broder:Andrei_Z=">Andrei Z. Broder</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pueyo:Lluis_Garcia">Lluis Garcia Pueyo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Josifovski:Vanja">Vanja Josifovski</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vassilvitskii:Sergei">Sergei Vassilvitskii</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Venkatesan:Srihari">Srihari Venkatesan</a></p>
+<p>【Abstract】:
+The k-means clustering algorithm has a long history and a proven practical performance, however it does not scale to clustering millions of data points into thousands of clusters in high dimensional spaces. The main computational bottleneck is the need to recompute the nearest centroid for every data point at every iteration, aprohibitive cost when the number of clusters is large. In this paper we show how to reduce the cost of the k-means algorithm by large factors by adapting ranked retrieval techniques. Using a combination of heuristics, on two real life data sets the wall clock time per iteration is reduced from 445 minutes to less than 4, and from 705 minutes to 1.4, while the clustering quality remains within 0.5% of the k-means quality. The key insight is to invert the process of point-to-centroid assignment by creating an inverted index over all the points and then using the current centroids as queries to this index to decide on cluster membership. In other words, rather than each iteration consisting of "points picking centroids", each iteration now consists of "centroids picking points". This is much more efficient, but comes at the cost of leaving some points unassigned to any centroid. We show experimentally that the number of such points is low and thus they can be separately assigned once the final centroids are decided. To speed up the computation we sparsify the centroids by pruning low weight features. Finally, to further reduce the running time and the number of unassigned points, we propose a variant of the WAND algorithm that uses the results of the intermediate results of nearest neighbor computations to improve performance.</p>
+<p>【Keywords】:
+k-means; wand</p>
+<h2 id="Recommender systems    3">Recommender systems    3</h2>
+<h3 id="26. Taxonomy discovery for personalized recommendation.">26. Taxonomy discovery for personalized recommendation.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556236">Paper Link</a>】    【Pages】:243-252</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Yuchen">Yuchen Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Ahmed:Amr">Amr Ahmed</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Josifovski:Vanja">Vanja Josifovski</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Smola:Alexander_J=">Alexander J. Smola</a></p>
+<p>【Abstract】:
+Personalized recommender systems based on latent factor models are widely used to increase sales in e-commerce. Such systems use the past behavior of users to recommend new items that are likely to be of interest to them. However, latent factor model suffer from sparse user-item interaction in online shopping data: for a large portion of items that do not have sufficient purchase records, their latent factors cannot be estimated accurately. In this paper, we propose a novel approach that automatically discovers the taxonomies from online shopping data and jointly learns a taxonomy-based recommendation system. Out model is non-parametric and can learn the taxonomy structure automatically from the data. Since the taxonomy allows purchase data to be shared between items, it effectively improves the accuracy of recommending tail items by sharing strength with the more frequent items. Experiments on a large-scale online shopping dataset confirm that our proposed model improves significantly over state-of-the-art latent factor models. Moreover, our model generates high-quality and human readable taxonomies. Finally, using the algorithm-generated taxonomy, our model even outperforms latent factor models based on the human-induced taxonomy, thus alleviating the need for costly manual taxonomy generation.</p>
+<p>【Keywords】:
+latent factor model; recommender system; taxonomy</p>
+<h3 id="27. Who likes it more?: mining worth-recommending items from long tails by modeling relative preference.">27. Who likes it more?: mining worth-recommending items from long tails by modeling relative preference.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2566589">Paper Link</a>】    【Pages】:253-262</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Ho:Yu=Chieh">Yu-Chieh Ho</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chiang:Yi=Ting">Yi-Ting Chiang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hsu:Jane_Yung=jen">Jane Yung-jen Hsu</a></p>
+<p>【Abstract】:
+Recommender systems are useful tools that help people to filter and explore massive information. While the accuracy of recommender systems is important, many recent research indicated that focusing merely on accuracy not only is insufficient to meet user needs, but also may be harmful. Other characteristics such as novelty, unexpectedness and diversity should also be taken into consideration. Previous work has shown that more the sales of long-tail items could be more beneficial to both customers and some business models. However, the majority of collaborative filtering approaches tends to recommend popular selling items. In this work, we focus on long-tail item promotion and aggregate diversity enhancement, and propose a novel approach which diversifies the results of recommender systems by considering ``recommendations" as resources to be allocated to the items. Our approach increases the quantity and quality of long-tail item recommendations by adding more variation into the recommendation and maintains a certain level of accuracy simultaneously. The experimental results show that this approach can discover more worth-recommending items from Long Tails and improves user experience.</p>
+<p>【Keywords】:
+aggregate diversity; collaborative filtering; long tail; recommendation diversity; recommender system</p>
+<h3 id="28. On building entity recommender systems using user click log and freebase knowledge.">28. On building entity recommender systems using user click log and freebase knowledge.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556233">Paper Link</a>】    【Pages】:263-272</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yu:Xiao">Xiao Yu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Ma:Hao">Hao Ma</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hsu:Bo=June_Paul">Bo-June Paul Hsu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Han:Jiawei">Jiawei Han</a></p>
+<p>【Abstract】:
+Due to their commercial value, search engines and recommender systems have become two popular research topics in both industry and academia over the past decade. Although these two fields have been actively and extensively studied separately, researchers are beginning to realize the importance of the scenarios at their intersection: providing an integrated search and information discovery user experience. In this paper, we study a novel application, i.e., personalized entity recommendation for search engine users, by utilizing user click log and the knowledge extracted from Freebase. To better bridge the gap between search engines and recommender systems, we first discuss important heuristics and features of the datasets. We then propose a generic, robust, and time-aware personalized recommendation framework to utilize these heuristics and features at different granularity levels. Using movie recommendation as a case study, with user click log dataset collected from a widely used commercial search engine, we demonstrate the effectiveness of our proposed framework over other popular and state-of-the-art recommendation techniques.</p>
+<p>【Keywords】:
+entity graph; entity recommendation; personalization; search click log; user behavior analysis</p>
+<h2 id="Recommender systems and networks    5">Recommender systems and networks    5</h2>
+<h3 id="29. Improving pairwise learning for item recommendation from implicit feedback.">29. Improving pairwise learning for item recommendation from implicit feedback.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556248">Paper Link</a>】    【Pages】:273-282</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Rendle:Steffen">Steffen Rendle</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Freudenthaler:Christoph">Christoph Freudenthaler</a></p>
+<p>【Abstract】:
+Pairwise algorithms are popular for learning recommender systems from implicit feedback. For each user, or more generally context, they try to discriminate between a small set of selected items and the large set of remaining (irrelevant) items. Learning is typically based on stochastic gradient descent (SGD) with uniformly drawn pairs. In this work, we show that convergence of such SGD learning algorithms slows down considerably if the item popularity has a tailed distribution. We propose a non-uniform item sampler to overcome this problem. The proposed sampler is context-dependent and oversamples informative pairs to speed up convergence. An efficient implementation with constant amortized runtime costs is developed. Furthermore, it is shown how the proposed learning algorithm can be applied to a large class of recommender models. The properties of the new learning algorithm are studied empirically on two real-world recommender system problems. The experiments indicate that the proposed adaptive sampler improves the state-of-the art learning algorithm largely in convergence without negative effects on prediction quality or iteration runtime.</p>
+<p>【Keywords】:
+factorization model; item recommendation; matrix factorization; recommender systems</p>
+<h3 id="30. Personalized entity recommendation: a heterogeneous information network approach.">30. Personalized entity recommendation: a heterogeneous information network approach.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556259">Paper Link</a>】    【Pages】:283-292</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yu:Xiao">Xiao Yu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ren:Xiang">Xiang Ren</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sun:Yizhou">Yizhou Sun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gu:Quanquan">Quanquan Gu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sturt:Bradley">Bradley Sturt</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Khandelwal:Urvashi">Urvashi Khandelwal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Norick:Brandon">Brandon Norick</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Han:Jiawei">Jiawei Han</a></p>
+<p>【Abstract】:
+Among different hybrid recommendation techniques, network-based entity recommendation methods, which utilize user or item relationship information, are beginning to attract increasing attention recently. Most of the previous studies in this category only consider a single relationship type, such as friendships in a social network. In many scenarios, the entity recommendation problem exists in a heterogeneous information network environment. Different types of relationships can be potentially used to improve the recommendation quality. In this paper, we study the entity recommendation problem in heterogeneous information networks. Specifically, we propose to combine heterogeneous relationship information for each user differently and aim to provide high-quality personalized recommendation results using user implicit feedback data and personalized recommendation models. In order to take full advantage of the relationship heterogeneity in information networks, we first introduce meta-path-based latent features to represent the connectivity between users and items along different types of paths. We then define recommendation models at both global and personalized levels and use Bayesian ranking optimization techniques to estimate the proposed models. Empirical studies show that our approaches outperform several widely employed or the state-of-the-art entity recommendation techniques.</p>
+<p>【Keywords】:
+hybrid recommender system; information network</p>
+<h3 id="31. Social collaborative retrieval.">31. Social collaborative retrieval.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556255">Paper Link</a>】    【Pages】:293-302</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hsiao:Ko=Jen">Ko-Jen Hsiao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kulesza:Alex">Alex Kulesza</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hero_III:Alfred_O=">Alfred O. Hero III</a></p>
+<p>【Abstract】:
+Socially-based recommendation systems have recently attracted significant interest, and a number of studies have shown that social information can dramatically improve a system's predictions of user interests. Meanwhile, there are now many potential applications that involve aspects of both recommendation and information retrieval, and the task of collaborative retrieval---a combination of these two traditional problems---has recently been introduced. Successful collaborative retrieval requires overcoming severe data sparsity, making additional sources of information, such as social graphs, particularly valuable. In this paper we propose a new model for collaborative retrieval, and show that our algorithm outperforms current state-of-the-art approaches by incorporating information from social networks. We also provide empirical analyses of the ways in which cultural interests propagate along a social graph using a real-world music dataset.</p>
+<p>【Keywords】:
+collaborative filtering; information retrieval; social networks</p>
+<h3 id="32. Transferring heterogeneous links across location-based social networks.">32. Transferring heterogeneous links across location-based social networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2559894">Paper Link</a>】    【Pages】:303-312</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Jiawei">Jiawei Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kong:Xiangnan">Xiangnan Kong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yu:Philip_S=">Philip S. Yu</a></p>
+<p>【Abstract】:
+ocation-based social networks (LBSNs) are one kind of online social networks offering geographic services and have been attracting much attention in recent years. LBSNs usually have complex structures, involving heterogeneous nodes and links. Many recommendation services in LBSNs (e.g., friend and location recommendation) can be cast as link prediction problems (e.g., social link and location link prediction). Traditional link prediction researches on LBSNs mostly focus on predicting either social links or location links, assuming the prediction tasks of different types of links to be independent. However, in many real-world LBSNs, the prediction tasks for social links and location links are strongly correlated and mutually influential. Another key challenge in link prediction on LBSNs is the data sparsity problem (i.e., "new network" problem), which can be encountered when LBSNs branch into new geographic areas or social groups. Actually, nowadays, many users are involved in multiple networks simultaneously and users who just join one LBSN may have been using other LBSNs for a long time. In this paper, we study the problem of predicting multiple types of links simultaneously for a new LBSN across partially aligned LBSNs and propose a novel method TRAIL (TRAnsfer heterogeneous lInks across LBSNs). TRAIL can accumulate information for locations from online posts and extract heterogeneous features for both social links and location links. TRAIL can predict multiple types of links simultaneously. In addition, TRAIL can transfer information from other aligned networks to the new network to solve the problem of lacking information. Extensive experiments conducted on two real-world aligned LBSNs show that TRAIL can achieve very good performance and substantially outperform the baseline methods.</p>
+<p>【Keywords】:
+data mining; link prediction; location-based social networks; transfer learning</p>
+<h3 id="33. Customized tour recommendations in urban areas.">33. Customized tour recommendations in urban areas.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2559893">Paper Link</a>】    【Pages】:313-322</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gionis:Aristides">Aristides Gionis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lappas:Theodoros">Theodoros Lappas</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pelechrinis:Konstantinos">Konstantinos Pelechrinis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Terzi:Evimaria">Evimaria Terzi</a></p>
+<p>【Abstract】:
+The ever-increasing urbanization coupled with the unprecedented capacity to collect and process large amounts of data have helped to create the vision of intelligent urban environments. One key aspect of such environments is that they allow people to effectively navigate through their city. While GPS technology and route-planning services have undoubtedly helped towards this direction, there is room for improvement in intelligent urban navigation. This vision can be fostered by the proliferation of location-based social networks, such as Foursquare or Path, which record the physical presence of users in different venues through check-ins. This information can then be used to enhance intelligent urban navigation, by generating customized path recommendations for users. In this paper, we focus on the problem of recommending customized tours in urban settings. These tours are generated so that they consider (a) the different types of venues that the user wants to visit, as well as the order in which the user wants to visit them, (b) limitations on the time to be spent or distance to be covered, and (c) the merit of visiting the included venues. We capture these requirements in a generic definition that we refer to as the TourRec problem. We then introduce two instances of the TourRec problem, study their complexity, and propose efficient algorithmic solutions. Our experiments on real data collected from Foursquare demonstrate the efficacy of our algorithms and the practical utility of the reported recommendations.</p>
+<p>【Keywords】:
+tour recommendations; urban computing</p>
+<h2 id="Networks: communities and labeling    5">Networks: communities and labeling    5</h2>
+<h3 id="34. Detecting cohesive and 2-mode communities indirected and undirected networks.">34. Detecting cohesive and 2-mode communities indirected and undirected networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556243">Paper Link</a>】    【Pages】:323-332</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Jaewon">Jaewon Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McAuley:Julian_J=">Julian J. McAuley</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Leskovec:Jure">Jure Leskovec</a></p>
+<p>【Abstract】:
+Networks are a general language for representing relational information among objects. An effective way to model, reason about, and summarize networks, is to discover sets of nodes with common connectivity patterns. Such sets are commonly referred to as network communities. Research on network community detection has predominantly focused on identifying communities of densely connected nodes in undirected networks. In this paper we develop a novel overlapping community detection method that scales to networks of millions of nodes and edges and advances research along two dimensions: the connectivity structure of communities, and the use of edge directedness for community detection. First, we extend traditional definitions of network communities by building on the observation that nodes can be densely interlinked in two different ways: In cohesive communities nodes link to each other, while in 2-mode communities nodes link in a bipartite fashion, where links predominate between the two partitions rather than inside them. Our method successfully detects both 2-mode as well as cohesive communities, that may also overlap or be hierarchically nested. Second, while most existing community detection methods treat directed edges as though they were undirected, our method accounts for edge directions and is able to identify novel and meaningful community structures in both directed and undirected networks, using data from social, biological, and ecological domains.</p>
+<p>【Keywords】:
+2-mode communities; network communities; overlapping community detection</p>
+<h3 id="35. FENNEL: streaming graph partitioning for massive scale graphs.">35. FENNEL: streaming graph partitioning for massive scale graphs.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556213">Paper Link</a>】    【Pages】:333-342</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Tsourakakis:Charalampos_E=">Charalampos E. Tsourakakis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gkantsidis:Christos">Christos Gkantsidis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Radunovic:Bozidar">Bozidar Radunovic</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vojnovic:Milan">Milan Vojnovic</a></p>
+<p>【Abstract】:
+Balanced graph partitioning in the streaming setting is a key problem to enable scalable and efficient computations on massive graph data such as web graphs, knowledge graphs, and graphs arising in the context of online social networks. Two families of heuristics for graph partitioning in the streaming setting are in wide use: place the newly arrived vertex in the cluster with the largest number of neighbors or in the cluster with the least number of non-neighbors. In this work, we introduce a framework which unifies the two seemingly orthogonal heuristics and allows us to quantify the interpolation between them. More generally, the framework enables a well principled design of scalable, streaming graph partitioning algorithms that are amenable to distributed implementations. We derive a novel one-pass, streaming graph partitioning algorithm and show that it yields significant performance improvements over previous approaches using an extensive set of real-world and synthetic graphs. Surprisingly, despite the fact that our algorithm is a one-pass streaming algorithm, we found its performance to be in many cases comparable to the de-facto standard offline software METIS and in some cases even superiror. For instance, for the Twitter graph with more than 1.4 billion of edges, our method partitions the graph in about 40 minutes achieving a balanced partition that cuts as few as 6.8% of edges, whereas it took more than 81/2 hours by METIS to produce a balanced partition that cuts 11.98% of edges. We also demonstrate the performance gains by using our graph partitioner while solving standard PageRank computation in a graph processing platform with respect to the communication cost and runtime.</p>
+<p>【Keywords】:
+balanced graph partitioning; distributed computing; streaming</p>
+<h3 id="36. A few good predictions: selective node labeling in a social network.">36. A few good predictions: selective node labeling in a social network.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556241">Paper Link</a>】    【Pages】:353-362</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chaudhari:Gaurish">Gaurish Chaudhari</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Avadhanula:Vashist">Vashist Avadhanula</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sarawagi:Sunita">Sunita Sarawagi</a></p>
+<p>【Abstract】:
+Many social network applications face the following problem: given a network G=(V,E) with labels on a small subset O \subset V of nodes and an optional set of features on nodes and edges, predict the labels of the remaining nodes. Much research has gone into designing learning models and inference algorithms for accurate predictions in this setting. However, a core hurdle to any prediction effort is that for many nodes there is insufficient evidence for inferring a label. We propose that instead of focusing on the impossible task of providing high accuracy over all nodes, we should focus on selectively making the few node predictions which will be correct with high probability. Any selective prediction strategy will require that the scores attached to node predictions be well-calibrated. Our evaluations show that existing prediction algorithms are poorly calibrated. We propose a new method of training a graphical model using a conditional likelihood objective that provides better calibration than the existing joint likelihood objective. We augment it with a decoupled confidence model created using a novel unbiased training process. Empirical evaluation on two large social networks show that we are able to select a large number of predictions with accuracy as high as 95%, even when the best overall accuracy is only 40%.</p>
+<p>【Keywords】:
+graphical models; high confidence predictions; well calibrated probabilities</p>
+<h3 id="37. Active learning for networked data based on non-progressive diffusion model.">37. Active learning for networked data based on non-progressive diffusion model.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556223">Paper Link</a>】    【Pages】:363-372</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Zhilin">Zhilin Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tang:Jie">Jie Tang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Bin">Bin Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xing:Chunxiao">Chunxiao Xing</a></p>
+<p>【Abstract】:
+We study the problem of active learning for networked data, where samples are connected with links and their labels are correlated with each other. We particularly focus on the setting of using the probabilistic graphical model to model the networked data, due to its effectiveness in capturing the dependency between labels of linked samples. We propose a novel idea of connecting the graphical model to the information diffusion process, and precisely define the active learning problem based on the non-progressive diffusion model. We show the NP-hardness of the problem and propose a method called MaxCo to solve it. We derive the lower bound for the optimal solution for the active learning setting, and develop an iterative greedy algorithm with provable approximation guarantees. We also theoretically prove the convergence and correctness of MaxCo. We evaluate MaxCo on four different genres of datasets: Coauthor, Slashdot, Mobile, and Enron. Our experiments show a consistent improvement over other competing approaches.</p>
+<p>【Keywords】:
+active learning; factor graph model; non-progressive model</p>
+<h3 id="38. Learning latent representations of nodes for classifying in heterogeneous social networks.">38. Learning latent representations of nodes for classifying in heterogeneous social networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556225">Paper Link</a>】    【Pages】:373-382</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jacob:Yann">Yann Jacob</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Denoyer:Ludovic">Ludovic Denoyer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gallinari:Patrick">Patrick Gallinari</a></p>
+<p>【Abstract】:
+Social networks are heterogeneous systems composed of different types of nodes (e.g. users, content, groups, etc.) and relations (e.g. social or similarity relations). While learning and performing inference on homogeneous networks have motivated a large amount of research, few work exists on heterogeneous networks and there are open and challenging issues for existing methods that were previously developed for homogeneous networks. We address here the specific problem of nodes classification and tagging in heterogeneous social networks, where different types of nodes are considered, each type with its own label or tag set. We propose a new method for learning node representations onto a latent space, common to all the different node types. Inference is then performed in this latent space. In this framework, two nodes connected in the network will tend to share similar representations regardless of their types. This allows bypassing limitations of the methods based on direct extensions of homogenous frameworks and exploiting the dependencies and correlations between the different node types. The proposed method is tested on two representative datasets and compared to state-of-the-art methods and to baselines.</p>
+<p>【Keywords】:
+classification; machine learning; social networks</p>
+<h2 id="Networks: centrality and influence    5">Networks: centrality and influence    5</h2>
+<h3 id="39. Prediction in a microblog hybrid network using bonacich potential.">39. Prediction in a microblog hybrid network using bonacich potential.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556247">Paper Link</a>】    【Pages】:383-392</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Shanchan">Shanchan Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Raschid:Louiqa">Louiqa Raschid</a></p>
+<p>【Abstract】:
+Microblogs such as Twitter support a rich variety of user interactions using hashtags, urls, retweets and mentions. Microblogs are an exemplar of a hybrid network; there is an explicit network of followers, as well as an implicit network of users who retweet other users, and users who mention other users. These networks are important proxies for influence. In this paper, we develop a comprehensive behavioral model of an individual user and her interactions in the hybrid network. We choose a focal user and predict those users who will be influenced by her, and will retweet and/or mention the focal user, in the near future. We define a potential function, based on a hybrid network, which reflects the likelihood of a candidate user being influenced by, and having a specific type of link to, a focal user, in the future. We show that the potential function based prediction model converges to the Bonacich centrality metric. We develop a fast unsupervised solution which approximates the future hybrid network and the future Bonacich potential. We perform an extensive evaluation over a microblog network and a stream of tweets from Twitter. Our solution outperforms several baseline methods including ones based on singular value decomposition (SVD) and a supervised Ranking SVM.</p>
+<p>【Keywords】:
+link prediction; social media; social networks</p>
+<h3 id="40. Learning social network embeddings for predicting information diffusion.">40. Learning social network embeddings for predicting information diffusion.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556216">Paper Link</a>】    【Pages】:393-402</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bourigault:Simon">Simon Bourigault</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lagnier:C=eacute=dric">Cédric Lagnier</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lamprier:Sylvain">Sylvain Lamprier</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Denoyer:Ludovic">Ludovic Denoyer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gallinari:Patrick">Patrick Gallinari</a></p>
+<p>【Abstract】:
+Analyzing and modeling the temporal diffusion of information on social media has mainly been treated as a diffusion process on known graphs or proximity structures. The underlying phenomenon results however from the interactions of several actors and media and is more complex than what these models can account for and cannot be explained using such limiting assumptions. We introduce here a new approach to this problem whose goal is to learn a mapping of the observed temporal dynamic onto a continuous space. Nodes participating to diffusion cascades are projected in a latent representation space in such a way that information diffusion can be modeled efficiently using a heat diffusion process. This amounts to learning a diffusion kernel for which the proximity of nodes in the projection space reflects the proximity of their infection time in cascades. The proposed approach possesses several unique characteristics compared to existing ones. Since its parameters are directly learned from cascade samples without requiring any additional information, it does not rely on any pre-existing diffusion structure. Because the solution to the diffusion equation can be expressed in a closed form in the projection space, the inference time for predicting the diffusion of a new piece of information is greatly reduced compared to discrete models. Experiments and comparisons with baselines and alternative models have been performed on both synthetic networks and real datasets. They show the effectiveness of the proposed method both in terms of prediction quality and of inference speed.</p>
+<p>【Keywords】:
+information diffusion; machine learning; social networks</p>
+<h3 id="41. Modeling opinion dynamics in social networks.">41. Modeling opinion dynamics in social networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2559896">Paper Link</a>】    【Pages】:403-412</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Das:Abhimanyu">Abhimanyu Das</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gollapudi:Sreenivas">Sreenivas Gollapudi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Munagala:Kamesh">Kamesh Munagala</a></p>
+<p>【Abstract】:
+Our opinions and judgments are increasingly shaped by what we read on social media -- whether they be tweets and posts in social networks, blog posts, or review boards. These opinions could be about topics such as consumer products, politics, life style, or celebrities. Understanding how users in a network update opinions based on their neighbor's opinions, as well as what global opinion structure is implied when users iteratively update opinions, is important in the context of viral marketing and information dissemination, as well as targeting messages to users in the network. In this paper, we consider the problem of modeling how users update opinions based on their neighbors' opinions. We perform a set of online user studies based on the celebrated conformity experiments of Asch [1]. Our experiments are carefully crafted to derive quantitative insights into developing a model for opinion updates (as opposed to deriving psychological insights). We show that existing and widely studied theoretical models do not explain the entire gamut of experimental observations we make. This leads us to posit a new, nuanced model that we term the BVM. We present preliminary theoretical and simulation results on the convergence and structure of opinions in the entire network when users iteratively update their respective opinions according to the BVM. We show that consensus and polarization of opinions arise naturally in this model under easy to interpret initial conditions on the network.</p>
+<p>【Keywords】:
+biased assimilation; opinion formation; social networks</p>
+<h3 id="42. Fast approximation of betweenness centrality through sampling.">42. Fast approximation of betweenness centrality through sampling.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556224">Paper Link</a>】    【Pages】:413-422</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Riondato:Matteo">Matteo Riondato</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kornaropoulos:Evgenios_M=">Evgenios M. Kornaropoulos</a></p>
+<p>【Abstract】:
+Betweenness centrality is a fundamental measure in social network analysis, expressing the importance or influence of individual vertices in a network in terms of the fraction of shortest paths that pass through them. Exact computation in large networks is prohibitively expensive and fast approximation algorithms are required in these cases. We present two efficient randomized algorithms for betweenness estimation. The algorithms are based on random sampling of shortest paths and offer probabilistic guarantees on the quality of the approximation. The first algorithm estimates the betweenness of all vertices: all approximated values are within an additive factor ɛ from the real values, with probability at least 1-δ. The second algorithm focuses on the top-K vertices with highest betweenness and approximate their betweenness within a multiplicative factor ɛ, with probability at least $1-δ. This is the first algorithm that can compute such approximation for the top-K vertices. We use results from the VC-dimension theory to develop bounds to the sample size needed to achieve the desired approximations. By proving upper and lower bounds to the VC-dimension of a range set associated with the problem at hand, we obtain a sample size that is independent from the number of vertices in the network and only depends on a characteristic quantity that we call the vertex-diameter, that is the maximum number of vertices in a shortest path. In some cases, the sample size is completely independent from any property of the graph. The extensive experimental evaluation that we performed using real and artificial networks shows that our algorithms are significantly faster and much more scalable as the number of vertices in the network grows than previously presented algorithms with similar approximation guarantees.</p>
+<p>【Keywords】:
+betweenness centrality; graph mining; range set; sampling; social network analysis; vc-dimension; vertex diameter</p>
+<h3 id="43. Effective co-betweenness centrality computation.">43. Effective co-betweenness centrality computation.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556263">Paper Link</a>】    【Pages】:423-432</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chehreghani:Mostafa_Haghir">Mostafa Haghir Chehreghani</a></p>
+<p>【Abstract】:
+Betweenness centrality of vertices is essential in the analysis of social and information networks, and co-betweenness centrality is one of two natural ways to extend it to sets of vertices. Existing algorithms for co-betweenness centrality computation suffer from at least one of the following problems: i) their applicability is limited to special cases like sequences, sets of size two, and ii) they are not efficient in terms of time complexity. In this paper, we present efficient algorithms for co-betweenness centrality computation of any set or sequence of vertices in weighted and unweighted networks. We also develop effective methods for co-betweenness centrality computation of sets and sequences of edges. These results provide a clear and extensive view about the complexity of co-betweenness centrality computation for vertices and edges in weighted and un-weighted networks. Finally, we perform extensive experiments on real-world networks from different domains including social, information and communication networks, to show the empirical efficiency of the proposed methods.</p>
+<p>【Keywords】:
+algorithm; betweenness centrality; centrality; co-betweenness centrality; complexity; network analysis; social networks</p>
+<h2 id="Natural language processing; topic models    7">Natural language processing; topic models    7</h2>
+<h3 id="44. Chinese-English mixed text normalization.">44. Chinese-English mixed text normalization.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556228">Paper Link</a>】    【Pages】:433-442</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Qi">Qi Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Huan">Huan Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Huang:Xuanjing">Xuanjing Huang</a></p>
+<p>【Abstract】:
+Along with the expansion of globalization, multilingualism has become a popular social phenomenon. More than one language may occur in the context of a single conversation. This phenomenon is also prevalent in China. A huge variety of informal Chinese texts contain English words, especially in emails, social media, and other user generated informal contents. Since most of the existing natural language processing algorithms were designed for processing monolingual information, mixed multilingual texts cannot be well analyzed by them. Hence, it is of critical importance to preprocess the mixed texts before applying other tasks. In this paper, we firstly analyze the phenomena of mixed usage of Chinese and English in Chinese microblogs. Then, we detail the proposed two-stage method for normalizing mixed texts. We propose to use a noisy channel approach to translate in-vocabulary words into Chinese. For better incorporating the historical information of users, we introduce a novel user aware neural network language model. For the out-of-vocabulary words (such as pronunciations, informal expressions and et al.), we propose to use a graph-based unsupervised method to categorize them. Experimental results on a manually annotated microblog dataset demonstrate the effectiveness of the proposed method. We also evaluate three natural language parsers with and without using the proposed method as the preprocessing step. From the results, we can see that the proposed method can significantly benefit other NLP tasks in processing mixed text.</p>
+<p>【Keywords】:
+chinese-english mixed text; user aware neural network language model; words normalization</p>
+<h3 id="45. Sentiment analysis on evolving social streams: how self-report imbalances can help.">45. Sentiment analysis on evolving social streams: how self-report imbalances can help.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556261">Paper Link</a>】    【Pages】:443-452</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Guerra:Pedro_Henrique_Calais">Pedro Henrique Calais Guerra</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Meira_Jr=:Wagner">Wagner Meira Jr.</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cardie:Claire">Claire Cardie</a></p>
+<p>【Abstract】:
+Real-time sentiment analysis is a challenging machine learning task, due to scarcity of labeled data and sudden changes in sentiment caused by real-world events that need to be instantly interpreted. In this paper we propose solutions to acquire labels and cope with concept drift in this setting, by using findings from social psychology on how humans prefer to disclose some types of emotions. In particular, we use findings that humans are more motivated to report positive feelings rather than negative feelings and also prefer to report extreme feelings rather than average feelings. We map each of these self-report imbalances on two machine learning sub-tasks. The preference on the disclosure of positive feelings can be explored to generate labeled data on polarizing topics, where a positive event for one group usually induces negative feelings from the opposing group, generating an imbalance on user activity that unveils the current dominant sentiment. Based on the knowledge that extreme experiences are more reported than average experiences, we propose a feature representation strategy that focus on terms which appear at spikes in the social stream. When comparing to a static text representation (TF-IDF), we found that our feature representation is more capable of detecting new informative features that capture the sudden changes on sentiment stream caused by real-world events. We show that our social psychology-inspired framework produces accuracies up to 84% while analyzing live reactions in the debate of two popular sports on Twitter - soccer and football - despite requiring no human effort in generating supervisory labels.</p>
+<p>【Keywords】:
+sentiment analysis; social media analytics; stream data mining</p>
+<h3 id="46. Entity linking at the tail: sparse signals, unknown entities, and phrase models.">46. Entity linking at the tail: sparse signals, unknown entities, and phrase models.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556230">Paper Link</a>】    【Pages】:453-462</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jin:Yuzhe">Yuzhe Jin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kiciman:Emre">Emre Kiciman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Kuansan">Kuansan Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Loynd:Ricky">Ricky Loynd</a></p>
+<p>【Abstract】:
+Web search is seeing a paradigm shift from keyword based search to an entity-centric organization of web data. To support web search with this deeper level of understanding, a web-scale entity linking system must have 3 key properties: First, its feature extraction must be robust to the diversity of web documents and their varied writing styles and content structures. Second, it must maintain high-precision linking for "tail" (unpopular) entities that is robust to the existence of confounding entities outside of the knowledge base and entity profiles with minimal information. Finally, the system must represent large-scale knowledge bases with a scalable and powerful feature representation. We have built and deployed a web-scale unsupervised entity linking system for a commercial search engine that addresses these requirements by combining new developments in sparse signal recovery to identify the most discriminative features from noisy, free-text web documents; explicit modeling of out-of-knowledge-base entities to improve precision at the tail; and the development of a new phrase-unigram language model to efficiently capture high-order dependencies in lexical features. Using a knowledge base of 100M unique people from a popular social networking site, we present experimental results in the challenging domain of people-linking at the tail, where most entities have limited web presence. Our experimental results show that this system substantially improves on the precision-recall tradeoff over baseline methods, achieving precision over 95% with recall over 60%.</p>
+<p>【Keywords】:
+phrase language model; sparsity; tail entity linking; unknown entity; web-scale system</p>
+<h3 id="47. Latent dirichlet allocation based diversified retrieval for e-commerce search.">47. Latent dirichlet allocation based diversified retrieval for e-commerce search.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556215">Paper Link</a>】    【Pages】:463-472</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yu:Jun">Jun Yu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mohan:Sunil">Sunil Mohan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Putthividhya:Duangmanee">Duangmanee Putthividhya</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wong:Weng=Keen">Weng-Keen Wong</a></p>
+<p>【Abstract】:
+Diversified retrieval is a very important problem on many e-commerce sites, e.g. eBay and Amazon. Using IR approaches without optimizing for diversity results in a clutter of redundant items that belong to the same products. Most existing product taxonomies are often too noisy, with overlapping structures and non-uniform granularity, to be used directly in diversified retrieval. To address this problem, we propose a Latent Dirichlet Allocation (LDA) based diversified retrieval approach that selects diverse items based on the hidden user intents. Our approach first discovers the hidden user intents of a query using the LDA model, and then ranks the user intents by making trade-offs between their relevance and information novelty. Finally, it chooses the most representative item for each user intent to display. To evaluate the diversity in the search results on e-commerce sites, we propose a new metric, average satisfaction, measuring user satisfaction with the search results. Through our empirical study on eBay, we show that the LDA model discovers meaningful user intents and the LDA-based approach provides significantly higher user satisfaction than the eBay production ranker and three other diversified retrieval approaches.</p>
+<p>【Keywords】:
+diversified retrieval; e-commerce search; latent dirichlet allocation</p>
+<h3 id="48. Supervised N-gram topic model.">48. Supervised N-gram topic model.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2559895">Paper Link</a>】    【Pages】:473-482</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kawamae:Noriaki">Noriaki Kawamae</a></p>
+<p>【Abstract】:
+We propose a Bayesian nonparametric topic model that rep- resents relationships between given labels and the corre- sponding words/phrases, from supervised articles. Unlike existing supervised topic models, our proposal, supervised N-gram topic model (SNT), focuses on both a number of topics and power-law distribution in the word frequencies to extract topic specific N-grams. To achieve this goal, SNT takes a Bayesian nonparametric approach to topic sampling, which generates word distribution jointly with the given variable in textual order, and then form each N-gram word as a hierarchy of Pitman-Yor process priors. Experiments on labeled text data show that SNT is useful as a generative model for discovering more phrases that complement human experts and domain specific knowledge than the existing al- ternatives. The results show that SNT can be applied to various tasks such as automatic annotation.</p>
+<p>【Keywords】:
+graphical models; latent variable models; n-gram topic model; nonparametric bayes models; nonparametric dirichlet process; sentiment analysis; topic models</p>
+<h3 id="49. Going beyond Corr-LDA for detecting specific comments on news & blogs.">49. Going beyond Corr-LDA for detecting specific comments on news &amp; blogs.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556231">Paper Link</a>】    【Pages】:483-492</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Das:Mrinal_Kanti">Mrinal Kanti Das</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bansal:Trapit">Trapit Bansal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bhattacharyya:Chiranjib">Chiranjib Bhattacharyya</a></p>
+<p>【Abstract】:
+Understanding user generated comments in response to news and blog posts is an important area of research. After ignoring irrelevant comments, one finds that a large fraction, approximately 50%, of the comments are very specific and can be further related to certain parts of the article instead of the entire story. For example, in a recent product review of Google Nexus 7 in ArsTechnica (a popular blog), the reviewer talks about the prospect of "Retina equipped iPad mini" in a few sentences. It is interesting that although the article is on Nexus 7, but a significant number of comments are focused on this specific point regarding "iPad". We pose the problem of detecting such comments as specific comments location (SCL) problem. SCL is an important open problem with no prior work. SCL can be posed as a correspondence problem between comments and the parts of the relevant article, and one could potentially use Corr-LDA type models. Unfortunately, such models do not give satisfactory performance as they are restricted to using a single topic vector per article-comments pair. In this paper we propose to go beyond the single topic vector assumption and propose a novel correspondence topic model, namely SCTM, which admits multiple topic vectors (MTV) per article-comments pair. The resulting inference problem is quite complicated because of MTV and has no off-the-shelf solution. One of the major contributions of this paper is to show that using stick-breaking process as a prior over MTV, one can derive a collapsed Gibbs sampling procedure, which empirically works well for SCL. SCTM is rigorously evaluated on three datasets, crawled from Yahoo! News (138,000 comments) and two blogs, ArsTechnica (AT) Science (90,000 comments) and AT-Gadget (160,000 comments). We observe that SCTM performs better than Corr-LDA, not only in terms of metrics like perplexity and topic coherence but also discovers more unique topics. We see that this immediately leads to an order of magnitude improvement in F1 score over Corr-LDA for SCL.</p>
+<p>【Keywords】:
+blogs; comments; correspondence; news; specific</p>
+<h3 id="50. Nonparametric bayesian upstream supervised multi-modal topic models.">50. Nonparametric bayesian upstream supervised multi-modal topic models.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556238">Paper Link</a>】    【Pages】:493-502</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Liao:Renjie">Renjie Liao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Jun">Jun Zhu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/q/Qin:Zengchang">Zengchang Qin</a></p>
+<p>【Abstract】:
+Learning with multi-modal data is at the core of many multimedia applications, such as cross-modal retrieval and image annotation. In this paper, we present a nonparametric Bayesian approach to learning upstream supervised topic models for analyzing multi-modal data. Our model develops a compound nonparametric Bayesian multi-modal prior to describe the correlation structure of data both within each individual modality and between different modalities. It extends the hierarchical Dirichlet process (HDP) through incorporating upstream supervised response variables and values of latent functions under Gaussian process (GP). Upstream responses shared by data from multiple modalities are beneficial for discriminatively training and GP allows flexible structure learning of correlations. Hence, our model inherits the automatic determination of the number of topics from HDP, structure learning from GP and enhanced predictive capacity from upstream supervision. We also provide efficient variational inference and prediction algorithms. Empirical studies demonstrate superior performances on several benchmark datasets compared with previous competitors.</p>
+<p>【Keywords】:
+cross-modal retrieval; multi-modal learning; nonparametric bayesian; topic model</p>
+<h2 id="Topic models; linked data    7">Topic models; linked data    7</h2>
+<h3 id="51. Spatial compactness meets topical consistency: jointly modeling links and content for community detection.">51. Spatial compactness meets topical consistency: jointly modeling links and content for community detection.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556219">Paper Link</a>】    【Pages】:503-512</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sachan:Mrinmaya">Mrinmaya Sachan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dubey:Avinava">Avinava Dubey</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Srivastava:Shashank">Shashank Srivastava</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xing:Eric_P=">Eric P. Xing</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hovy:Eduard_H=">Eduard H. Hovy</a></p>
+<p>【Abstract】:
+In this paper, we address the problem of discovering topically meaningful, yet compact (densely connected) communities in a social network. Assuming the social network to be an integer-weighted graph (where the weights can be intuitively defined as the number of common friends, followers, documents exchanged, etc.), we transform the social network to a more efficient representation. In this new representation, each user is a bag of her one-hop neighbors. We propose a mixed-membership model to identify compact communities using this transformation. Next, we augment the representation and the model to incorporate user-content information imposing topical consistency in the communities. In our model a user can belong to multiple communities and a community can participate in multiple topics. This allows us to discover community memberships as well as community and user interests. Our method outperforms other well known baselines on two real-world social networks. Finally, we also provide a fast, parallel approximation of the same.</p>
+<p>【Keywords】:
+community detection; graphical models; social networks</p>
+<h3 id="52. Scalable topic-specific influence analysis on microblogs.">52. Scalable topic-specific influence analysis on microblogs.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556229">Paper Link</a>】    【Pages】:513-522</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bi:Bin">Bin Bi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tian:Yuanyuan">Yuanyuan Tian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sismanis:Yannis">Yannis Sismanis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Balmin:Andrey">Andrey Balmin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cho:Junghoo">Junghoo Cho</a></p>
+<p>【Abstract】:
+Social influence analysis on microblog networks, such as Twitter, has been playing a crucial role in online advertising and brand management. While most previous influence analysis schemes rely only on the links between users to find key influencers, they omit the important text content created by the users. As a result, there is no way to differentiate the social influence in different aspects of life (topics). Although a few prior works do support topic-specific influence analysis, they either separate the analysis of content from the analysis of network structure, or assume that content is the only cause of links, which is clearly an inappropriate assumption for microblog networks. To address the limitations of the previous approaches, we propose a novel Followship-LDA (FLDA) model, which integrates both content topic discovery and social influence analysis in the same generative process. This model properly captures the content-related and content-independent reasons why a user follows another in a microblog network. We demonstrate that FLDA produces results with significantly better precision than existing approaches. Furthermore, we propose a distributed Gibbs sampling algorithm for FLDA, and demonstrate that it provides excellent scalability on large clusters. Finally, we incorporate the FLDA model in a general search framework for topic-specific influencers. A user freely expresses his/her interest by typing a few keywords, the search framework will return a ranked list of key influencers that satisfy the user's interest.</p>
+<p>【Keywords】:
+social influence analysis</p>
+<h3 id="53. WebChild: harvesting and organizing commonsense knowledge from the web.">53. WebChild: harvesting and organizing commonsense knowledge from the web.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556245">Paper Link</a>】    【Pages】:523-532</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Tandon:Niket">Niket Tandon</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Melo:Gerard_de">Gerard de Melo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Suchanek:Fabian_M=">Fabian M. Suchanek</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Weikum:Gerhard">Gerhard Weikum</a></p>
+<p>【Abstract】:
+This paper presents a method for automatically constructing a large commonsense knowledge base, called WebChild, from Web contents. WebChild contains triples that connect nouns with adjectives via fine-grained relations like hasShape, hasTaste, evokesEmotion, etc. The arguments of these assertions, nouns and adjectives, are disambiguated by mapping them onto their proper WordNet senses. Our method is based on semi-supervised Label Propagation over graphs of noisy candidate assertions. We automatically derive seeds from WordNet and by pattern matching from Web text collections. The Label Propagation algorithm provides us with domain sets and range sets for 19 different relations, and with confidence-ranked assertions between WordNet senses. Large-scale experiments demonstrate the high accuracy (more than 80 percent) and coverage (more than four million fine grained disambiguated assertions) of WebChild.</p>
+<p>【Keywords】:
+commonsense knowledge; knowledge bases; label propagation; web mining; word sense disambiguation</p>
+<h3 id="54. Using linked data to mine RDF from wikipedia's tables.">54. Using linked data to mine RDF from wikipedia's tables.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556266">Paper Link</a>】    【Pages】:533-542</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mu=ntilde=oz:Emir">Emir Muñoz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hogan:Aidan">Aidan Hogan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mileo:Alessandra">Alessandra Mileo</a></p>
+<p>【Abstract】:
+The tables embedded in Wikipedia articles contain rich, semi-structured encyclopaedic content. However, the cumulative content of these tables cannot be queried against. We thus propose methods to recover the semantics of Wikipedia tables and, in particular, to extract facts from them in the form of RDF triples. Our core method uses an existing Linked Data knowledge-base to find pre-existing relations between entities in Wikipedia tables, suggesting the same relations as holding for other entities in analogous columns on different rows. We find that such an approach extracts RDF triples from Wikipedia's tables at a raw precision of 40%. To improve the raw precision, we define a set of features for extracted triples that are tracked during the extraction phase. Using a manually labelled gold standard, we then test a variety of machine learning methods for classifying correct/incorrect triples. One such method extracts 7.9 million unique and novel RDF triples from over one million Wikipedia tables at an estimated precision of 81.5%.</p>
+<p>【Keywords】:
+data mining; linked data; web tables; wikipedia</p>
+<h3 id="55. Knowledge-based graph document modeling.">55. Knowledge-based graph document modeling.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556250">Paper Link</a>】    【Pages】:543-552</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Schuhmacher:Michael">Michael Schuhmacher</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Ponzetto:Simone_Paolo">Simone Paolo Ponzetto</a></p>
+<p>【Abstract】:
+We propose a graph-based semantic model for representing document content. Our method relies on the use of a semantic network, namely the DBpedia knowledge base, for acquiring fine-grained information about entities and their semantic relations, thus resulting in a knowledge-rich document model. We demonstrate the benefits of these semantic representations in two tasks: entity ranking and computing document semantic similarity. To this end, we couple DBpedia's structure with an information-theoretic measure of concept association, based on its explicit semantic relations, and compute semantic similarity using a Graph Edit Distance based measure, which finds the optimal matching between the documents' entities using the Hungarian method. Experimental results show that our general model outperforms baselines built on top of traditional methods, and achieves a performance close to that of highly specialized methods that have been tuned to these specific tasks.</p>
+<p>【Keywords】:
+dbpedia; document modeling; document semantic similarity; entity relatedness; semantic network mining</p>
+<h3 id="56. Trust, but verify: predicting contribution quality for knowledge base construction and curation.">56. Trust, but verify: predicting contribution quality for knowledge base construction and curation.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556227">Paper Link</a>】    【Pages】:553-562</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Tan:Chun_How">Chun How Tan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Agichtein:Eugene">Eugene Agichtein</a> ; <a href="http://dblp.uni-trier.de/pers/hd/i/Ipeirotis:Panos">Panos Ipeirotis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gabrilovich:Evgeniy">Evgeniy Gabrilovich</a></p>
+<p>【Abstract】:
+The largest publicly available knowledge repositories, such as Wikipedia and Freebase, owe their existence and growth to volunteer contributors around the globe. While the majority of contributions are correct, errors can still creep in, due to editors' carelessness, misunderstanding of the schema, malice, or even lack of accepted ground truth. If left undetected, inaccuracies often degrade the experience of users and the performance of applications that rely on these knowledge repositories. We present a new method, CQUAL, for automatically predicting the quality of contributions submitted to a knowledge base. Significantly expanding upon previous work, our method holistically exploits a variety of signals, including the user's domains of expertise as reflected in her prior contribution history, and the historical accuracy rates of different types of facts. In a large-scale human evaluation, our method exhibits precision of 91% at 80% recall. Our model verifies whether a contribution is correct immediately after it is submitted, significantly alleviating the need for post-submission human reviewing.</p>
+<p>【Keywords】:
+crowdsourcing; knowledge base construction; predicting contribution quality</p>
+<h3 id="57. Modelling growth of urban crowd-sourced information.">57. Modelling growth of urban crowd-sourced information.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556244">Paper Link</a>】    【Pages】:563-572</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/q/Quattrone:Giovanni">Giovanni Quattrone</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mashhadi:Afra_J=">Afra J. Mashhadi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/q/Quercia:Daniele">Daniele Quercia</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Smith=Clarke:Chris">Chris Smith-Clarke</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Capra:Licia">Licia Capra</a></p>
+<p>【Abstract】:
+Urban crowd-sourcing has become a popular paradigm to harvest spatial information about our evolving cities directly from citizens. OpenStreetMap is a successful example of such paradigm, with an accuracy of its user-generated content comparable to that of curated databases (e.g., Ordnance Survey). Coverage is however low and most importantly non-uniformly distributed across the city. Being able to model the spontaneous growth of digital information in these domains is required, so to be able to plan interventions aimed at gathering content about areas that would otherwise be neglected. Inspired by models of physical urban growth developed by urban planners, we build a model of digital growth of crowd-sourced spatial information that is both easy to interpret and dynamic, so to be able to determine what factors impact growth and how these change over time. We build and test the model against five years of OpenStreetMap data for the city of London, UK. We then run the model against two other cities, chosen for their different physical and digital growth's characteristics, so to stress-test the model. We conclude with a discussion of the implications of this work on both developers and users of urban crowd-sourcing applications.</p>
+<p>【Keywords】:
+cellular automata; crowd-sourcing; modelling</p>
+<h2 id="Peer production: data analysis    7">Peer production: data analysis    7</h2>
+<h3 id="58. Inferring the impacts of social media on crowdfunding.">58. Inferring the impacts of social media on crowdfunding.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556251">Paper Link</a>】    【Pages】:573-582</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lu:Chun=Ta">Chun-Ta Lu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xie:Sihong">Sihong Xie</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kong:Xiangnan">Xiangnan Kong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yu:Philip_S=">Philip S. Yu</a></p>
+<p>【Abstract】:
+Crowdfunding -- in which people can raise funds through collaborative contributions of general public (i.e., crowd) -- has emerged as a billion dollars business for supporting more than one million ventures. However, very few research works have examined the process of crowdfunding. In particular, none has studied how social networks help crowdfunding projects to succeed. To gain insights into the effects of social networks in crowdfunding, we analyze the hidden connections between the fundraising results of projects on crowdfunding websites and the corresponding promotion campaigns in social media. Our analysis considers the dynamics of crowdfunding from two aspects: how fundraising activities and promotional activities on social media simultaneously evolve over time, and how the promotion campaigns influence the final outcomes. From our investigation, we identify a number of important principles that provide a useful guide for devising effective campaigns. For example, we observe temporal distribution of customer interest, strong correlations between a crowdfunding project's early promotional activities and the final outcomes, and the importance of concurrent promotion from multiple sources. We then show that these discoveries can help predict several important quantities, including overall popularity and the success rate of the project. Finally, we show how to use these discoveries to help design crowdfunding sites.</p>
+<p>【Keywords】:
+crowdfunding; early prediction; social media</p>
+<h3 id="59. Understanding and promoting micro-finance activities in Kiva.org.">59. Understanding and promoting micro-finance activities in Kiva.org.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556253">Paper Link</a>】    【Pages】:583-592</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Choo:Jaegul">Jaegul Choo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Changhyun">Changhyun Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Daniel">Daniel Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zha:Hongyuan">Hongyuan Zha</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Park:Haesun">Haesun Park</a></p>
+<p>【Abstract】:
+Non-profit Micro-finance organizations provide loaning opportunities to eradicate poverty by financially equipping impoverished, yet skilled entrepreneurs who are in desperate need of an institution that lends to those who have little. Kiva.org, a widely-used crowd-funded micro-financial service, provides researchers with an extensive amount of publicly available data containing a rich set of heterogeneous information regarding micro-financial transactions. Our objective in this paper is to identify the key factors that encourage people to make micro-financing donations, and ultimately, to keep them actively involved. In our contribution to further promote a healthy micro-finance ecosystem, we detail our personalized loan recommendation system which we formulate as a supervised learning problem where we try to predict how likely a given lender will fund a new loan. We construct the features for each data item by utilizing the available connectivity relationships in order to integrate all the available Kiva data sources. For those lenders with no such relationships, e.g., first-time lenders, we propose a novel method of feature construction by computing joint nonnegative matrix factorizations. Utilizing gradient boosting tree methods, a state-of-the-art prediction model, we are able to achieve up to 0.92 AUC (area under the curve) value, which shows the potential of our methods for practical deployment. Finally, we point out several interesting phenomena on lenders' social behaviors in micro-finance activities.</p>
+<p>【Keywords】:
+cold-start problem; crowdfunding; gradient boosting tree; heterogeneous data; joint matrix factorization; microfinance; recommender systems</p>
+<h3 id="60. Who watches (and shares) what on youtube? and when?: using twitter to understand youtube viewership.">60. Who watches (and shares) what on youtube? and when?: using twitter to understand youtube viewership.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2566588">Paper Link</a>】    【Pages】:593-602</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Abisheva:Adiya">Adiya Abisheva</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Garimella:Venkata_Rama_Kiran">Venkata Rama Kiran Garimella</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Garcia:David">David Garcia</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Weber:Ingmar">Ingmar Weber</a></p>
+<p>【Abstract】:
+By combining multiple social media datasets, it is possible to gain insight into each dataset that goes beyond what could be obtained with either individually. In this paper we combine user-centric data from Twitter with video-centric data from YouTube to build a rich picture of who watches and shares what on YouTube. We study 87K Twitter users, 5.6 million YouTube videos and 15 million video sharing events from user-, video- and sharing-event-centric perspectives. We show that features of Twitter users correlate with YouTube features and sharing-related features. For example, urban users are quicker to share than rural users. We find a superlinear relationship between initial Twitter shares and the final amounts of views. We discover that Twitter activity metrics play more role in video popularity than mere amount of followers. We also reveal the existence of correlated behavior concerning the time between video creation and sharing within certain timescales, showing the time onset for a coherent response, and the time limit after which collective responses are extremely unlikely. Response times depend on the category of the video, suggesting Twitter video sharing is highly dependent on the video content. To the best of our knowledge, this is the first large-scale study combining YouTube and Twitter data, and it reveals novel, detailed insights into who watches (and shares) what on YouTube, and when.</p>
+<p>【Keywords】:
+audience analysis; twitter; video recommendation; youtube</p>
+<h3 id="61. Detecting non-gaussian geographical topics in tagged photo collections.">61. Detecting non-gaussian geographical topics in tagged photo collections.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556218">Paper Link</a>】    【Pages】:603-612</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kling:Christoph_Carl">Christoph Carl Kling</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kunegis:J=eacute=r=ocirc=me">Jérôme Kunegis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sizov:Sergej">Sergej Sizov</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Staab:Steffen">Steffen Staab</a></p>
+<p>【Abstract】:
+Nowadays, large collections of photos are tagged with GPS coordinates. The modelling of such large geo-tagged corpora is an important problem in data mining and information retrieval, and involves the use of geographical information to detect topics with a spatial component. In this paper, we propose a novel geographical topic model which captures dependencies between geographical regions to support the detection of topics with complex, non-Gaussian distributed spatial structures. The model is based on a multi-Dirichlet process (MDP), a novel generalisation of the hierarchical Dirichlet process extended to support multiple base distributions. Our method thus is called the MDP-based geographical topic model (MGTM). We show how to use a MDP to dynamically smooth topic distributions between groups of spatially adjacent documents. In systematic quantitative and qualitative evaluations using independent datasets from prior related work, we show that such a model can exploit the adjacency of regions and leads to a significant improvement in the quality of topics compared to the state of the art in geographical topic modelling.</p>
+<p>【Keywords】:
+dirichlet process; geographical topic models; graphical models; topic models</p>
+<h3 id="62. Ranking in heterogeneous social media.">62. Ranking in heterogeneous social media.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556254">Paper Link</a>】    【Pages】:613-622</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Tsai:Min=Hsuan">Min-Hsuan Tsai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Aggarwal:Charu_C=">Charu C. Aggarwal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Huang:Thomas_S=">Thomas S. Huang</a></p>
+<p>【Abstract】:
+The problem of image search has been studied extensively in recent years because of the large and increasing repositories of images on the web, social media, and other linked networks. Most of the available techniques for keyword-based image search on the web use the text in the surrounding or linked text in order to retrieve related images. Many image repositories on the web are built upon social media platforms such as Flickr. Such platforms provide a rich level of information in terms of the user linkage information to images, tags or other comments which are contributed by the users. It is reasonable to assume that the content of the images, users and other social cues such as tags and comments are often related to one another. Therefore, such cues can be useful for improving the effectiveness of search and ranking algorithms. In this paper, we propose SocialRank, which is a technique for using social hints in order to improve the image search and ranking process. Furthermore, we propose a holistic framework to combine social tags, social network text, linkage between actors and images, as well as the actual image features in order to create a ranking technique for image search. We design a PageRank-like method which can combine these different methods in order to provide an effective method for image search and ranking in social networks.</p>
+<p>【Keywords】:
+heterogeneous network; image retrieval; random walk</p>
+<h3 id="63. Visualizing brand associations from web community photos.">63. Visualizing brand associations from web community photos.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556212">Paper Link</a>】    【Pages】:623-632</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Gunhee">Gunhee Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xing:Eric_P=">Eric P. Xing</a></p>
+<p>【Abstract】:
+Brand Associations, one of central concepts in marketing, describe customers' top-of-mind attitudes or feelings toward a brand. Thus, this consumer-driven brand equity often attains the grounds for purchasing products or services of the brand. Traditionally, brand associations are measured by analyzing the text data from consumers' responses to the survey or their online conversation logs. In this paper, we propose to go beyond text data and leverage large-scale online photo collections contributed by the general public, which have not been explored so far. As a first technical step toward the study of photo-based brand associations, we aim to jointly achieve the following two visualization tasks in a mutually-rewarding way: (i) detecting and visualizing core visual concepts associated with brands, and (ii) localizing the regions of brand in the images. With experiments on about five millions of images of 48 brands crawled from five popular online photo sharing sites, we demonstrate that our approach can discover complementary views on the brand associations that are hardly mined from the text data. We also quantitatively show that our approach outperforms other candidate methods on the both visualization tasks.</p>
+<p>【Keywords】:
+brand associations; image segmentation; summarization and visualization of multimedia data</p>
+<h3 id="64. Is a picture really worth a thousand words?: - on the role of images in e-commerce.">64. Is a picture really worth a thousand words?: - on the role of images in e-commerce.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556226">Paper Link</a>】    【Pages】:633-642</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Di:Wei">Wei Di</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sundaresan:Neel">Neel Sundaresan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Piramuthu:Robinson">Robinson Piramuthu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bhardwaj:Anurag">Anurag Bhardwaj</a></p>
+<p>【Abstract】:
+In online peer-to-peer commerce places where physical examination of the goods is infeasible, textual descriptions, images of the products, reputation of the participants, play key roles. Visual image is a powerful channel to convey crucial information towards e-shoppers and influence their choice. In this paper, we investigate a well-known online marketplace where over millions of products change hands and most are described with the help of one or more images. We present a systematic data mining and knowledge discovery approach that aims to quantitatively dissect the role of images in e-commerce in great detail. Our goal is two-fold. First, we aim to get a thorough understanding of impact of images across various dimensions: product categories, user segments, conversion rate. We present quantitative evaluation of the influence of images and show how to leverage different image aspects, such as quantity and quality, to effectively raise sale. Second, we study interaction of image data with other selling dimensions by jointly modeling them with user behavior data. Results suggest that "watch" behavior encodes complex signals combining both attention and hesitation from buyer, in which image still holds an important role when compared to other selling variables, especially for products for which appearance is important. We conclude on how these findings can benefit sellers in a high competitive online e-commerce market.</p>
+<p>【Keywords】:
+buyer behavior; e-commerce; image; image quality; multimodal data mining; online shopping; user engagement</p>
+<h2 id="Doctoral consortium    5">Doctoral consortium    5</h2>
+<h3 id="65. Integration of large scale knowledge bases using probabilistic graphical models.">65. Integration of large scale knowledge bases using probabilistic graphical models.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556202">Paper Link</a>】    【Pages】:643-648</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dutta:Arnab_Kumar">Arnab Kumar Dutta</a></p>
+<p>【Abstract】:
+Over the recent past, information extraction (IE) systems such as Nell and ReVerb have attained much success in creating large knowledge resources with minimal supervision. But, these resources in general, lack schema information and contain facts with high degree of ambiguity which are often difficult to interpret. Whereas, Wikipedia-based IE projects like DBpedia and Yago are structured, have disambiguated facts with unique identifiers and maintain a well-defined schema. In this work, we propose a probabilistic method to integrate these two types of IE projects where the structured knowledge bases benefit from the wide coverage of the semi-supervised IE projects and the latter benefits from the schema information of the former.</p>
+<p>【Keywords】:
+data integration; knowledge bases; probabilistic inference</p>
+<h3 id="66. Strategy in action: analyzing online search behavior bymining search strategies.">66. Strategy in action: analyzing online search behavior bymining search strategies.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556203">Paper Link</a>】    【Pages】:649-654</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hendahewa:Chathra">Chathra Hendahewa</a></p>
+<p>【Abstract】:
+Analyzing people's Web search behavior has been a significant topic of interest in the Information Retrieval domain and search engine industry over the past decade. Research in this area has focused on improving search and retrieval capabilities leading to high demands and expectations of Web search users. Understanding and analyzing the Web search process when users are performing Web search tasks is a challenging problem due to many reasons such as subjectivity, dynamic nature, difficulty in measurement of success and difficulty in evaluation. I propose to analyze the users' Web search behavior in order to identify the strategies and tactics they use in fulfilling their task. In order to achieve this, I intend to use data mining and machine learning methods with an emphasis on time series analysis given that the user search process can be considered as a sequence of time related events.</p>
+<p>【Keywords】:
+data mining; information retrieval; time series analysis; user behavior; web search</p>
+<h3 id="67. On discovering non-obvious recommendations: using unexpectedness and neighborhood selection methods in collaborative filtering systems.">67. On discovering non-obvious recommendations: using unexpectedness and neighborhood selection methods in collaborative filtering systems.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556204">Paper Link</a>】    【Pages】:655-660</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Adamopoulos:Panagiotis">Panagiotis Adamopoulos</a></p>
+<p>【Abstract】:
+This paper proposes a number of studies in order to move the field of recommender systems beyond the traditional paradigm and the classical perspective of rating prediction accuracy. We contribute to existing helpful but less explored recommendation strategies and propose new approaches targeting to more useful recommendations for both users and businesses. Working toward this direction, we discuss the studies we have conducted so far and present our future research plans. The overall goal of this research program is to expand our focus from even more accurate rating predictions toward a more holistic experience for the users, by providing them with non-obvious but high quality recommendations and avoiding the over-specialization and concentration bias problems. In particular, we propose a new probabilistic neighborhood-based method as an improvement of the standard $k$-nearest neighbors approach, alleviating some of the most common problems of collaborative filtering recommender systems, based on classical metrics of dispersion and diversity as well as some newly proposed metrics. Furthermore, we propose a concept of unexpectedness in recommender systems and operationalize it by suggesting various mechanisms for specifying the expectations of the users and proposing a recommendation method for providing the users with unexpected but high quality personalized recommendations that fairly match their interests. Besides, in order to generate utility-based recommendations for Massive Open Online Courses (MOOCs) that better serve the educational needs of students, we study the satisfaction of users with online courses vis-a-vis student retention. Finally, we summarize the conclusions of the conducted studies, discuss the limitations of our work and also outline the managerial implications of the proposed stream of research.</p>
+<p>【Keywords】:
+algorithm design; recommender systems; unexpectedness</p>
+<h3 id="68. Exploratory search with semantic transformations using collaborative knowledge bases.">68. Exploratory search with semantic transformations using collaborative knowledge bases.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556205">Paper Link</a>】    【Pages】:661-666</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Genc:Yegin">Yegin Genc</a></p>
+<p>【Abstract】:
+Sometimes we search for simple facts. Other times we search for relationships between concepts. While existing information retrieval systems work well for simple searches, they are less satisfying for complex inquiries because of the ill-structured nature of many searches and the cognitive load involved in the search process. Search can be improved by leveraging the network of concepts that are maintained by collaborative knowledge bases such as Wikipedia. By treating exploratory search inquires as networks of concepts -- and then mapping documents to these concepts, exploratory search performance can be improved. This method is applied to an exploratory search task: given a journal abstract, abstracts are ranked based their relevancy to the seed abstract. The results show comparable relevancy scores to state of the art techniques while at the same time providing better diversity.</p>
+<p>【Keywords】:
+collaborative knowledge bases; concept networks; exploratory search; wikipedia</p>
+<h3 id="69. Search by multiple examples.">69. Search by multiple examples.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556206">Paper Link</a>】    【Pages】:667-672</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Mingzhu">Mingzhu Zhu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Yi=fang_Brook">Yi-fang Brook Wu</a></p>
+<p>【Abstract】:
+It is often difficult for users to adopt keywords to express their information needs. Search-By-Multiple-Examples (SBME), a promising method for overcoming this problem, allows users to specify their information needs as a set of relevant documents rather than as a set of keywords. Most of the studies on SBME adopt the Positive Unlabeled learning (PU learning) techniques by treating the users' provided examples (denote as query examples) as positive set and the entire data collection as unlabeled set. However, it is inefficient to treat the entire data collection as unlabeled set, as its size can be huge. In addition, the query examples are treated as being relevant to a single topic, but it is often the case that they can be relevant to multiple topics. As the query examples are much fewer than the unlabeled data, the system performance may downgrade dramatically because of the class imbalance problem. What's more, the experiments conducted in these studies have not taken into account the settings in online search, which are very different from the controlled experiments scenario. This proposed research seeks to explore how to improve SBME by exploring: (1) how to predict user' information needs by modeling the content of the documents using probabilistic topic models; (2) how to deal with the class imbalance problem by reducing the size of the unlabeled data and adopting machine learning techniques. We will also conduct extensive experiments to better evaluate SBME using different sizes of query examples to simulate users' information needs.</p>
+<p>【Keywords】:
+information retrieval; positive unlabeled learning; search by multiple examples; transductive inference</p>
+<h2 id="Tutorials    6">Tutorials    6</h2>
+<h3 id="70. Behavioral data mining and network analysis in massive online games.">70. Behavioral data mining and network analysis in massive online games.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556196">Paper Link</a>】    【Pages】:673-674</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Ahmad:Muhammad_Aurangzeb">Muhammad Aurangzeb Ahmad</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Srivastava:Jaideep">Jaideep Srivastava</a></p>
+<p>【Abstract】:
+The last decade has been characterized by an explosion of social media in a variety of forms. Since the data is captured in digital form it has become possible for the first time study human behavior at a massive scale. Not only is it possible to address traditional questions in the social sciences regarding collective dynamics of human behaviors but it is also possible to study new types of human behaviors which have arisen as a result of usage of new mediums like twitter, YouTube, Facebook, one games etc. Each of these mediums has its respective limitations and affordances. Out of all these mediums the most complex and data rich medium is that of Massive Online Games (MOGs). MOGs refer to massive online persistent environments (World of Warcraft, EVE Online, EverQuest etc) shared by millions of people . In general these environments are characterized by a rich array of activities and social interactions with a wide array of behaviors e.g., cooperation, trade, quest, deceit, mentoring etc. Such environments allow one to study human behavior at a level of granularity where it was not possible to do so previously. Given the challenges associated with analyzing this type of data traditional techniques in data mining and social network analysis have to be extended with insights from the social sciences. The tutorial will cover predictive and generative models in the study of MOGs. Additionally we will cover some SNA techniques which are more appropriate for MOGs given the multi-dimensionality of the data (P*/ERGM Models, IR Based Network Analysis, Hypergrah based Techniques, Coextensive Social Networks etc). We also describe the various ways in which MOGs exhibit similarities to the real world e.g., economic behaviors, clandestine behaviors, mentoring etc).</p>
+<p>【Keywords】:
+behavioral mining; game analytics; social network analysis</p>
+<h3 id="71. Exploration and mining of web repositories.">71. Exploration and mining of web repositories.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556197">Paper Link</a>】    【Pages】:675-676</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang_0004:Nan">Nan Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Das:Gautam">Gautam Das</a></p>
+<p>【Abstract】:
+With the proliferation of very large data repositories hidden behind web interfaces, e.g., keyword search, form-like search and hierarchical/graph-based browsing interfaces for Amazon.com, eBay.com, etc., efficient ways of searching, exploring and/or mining such web data are of increasing importance. There are two key challenges facing these tasks: how to properly understand web interfaces, and how to bypass the interface restrictions. In this tutorial, we start with a general overview of web search and data mining, including various exciting applications enabled by the effective search, exploration, and mining of web repositories. Then, we focus on the fundamental developments in the field, including web interface understanding, crawling, sampling, and data analytics over web repositories with various types of interfaces. We also discuss the potential changes required for query processing, data mining and machine learning algorithms to be applied to web data. Our goal is two-fold: one is to promote the awareness of existing web data search/explora-tion/mining techniques among all web researchers who are interested in leveraging web data, and the other is to encourage researchers, especially those who have not previously worked in web search and mining before, to initiate their own research in these exciting areas.</p>
+<p>【Keywords】:
+data analytics; deep web; web databases; web repositories</p>
+<h3 id="72. Big graph mining for the web and social media: algorithms, anomaly detection, and applications.">72. Big graph mining for the web and social media: algorithms, anomaly detection, and applications.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556198">Paper Link</a>】    【Pages】:677-678</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kang:U=">U. Kang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Akoglu:Leman">Leman Akoglu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chau:Duen_Horng">Duen Horng Chau</a></p>
+<p>【Abstract】:
+Graphs are everywhere: social networks, computer net- works, mobile call networks, the World Wide Web, protein interaction networks, and many more. The lower cost of disk storage, the success of social networking websites and Web 2.0 applications, and the high availability of data sources lead to graphs being generated at unprecedented size. They are now measured in terabytes or even petabytes, with more than billions of nodes and edges. Finding patterns on large graphs have a lot of applica- tions including cyber security on the Web, social media min- ing (Facebook, Twitter), and fraud detection, among others. This tutorial will cover topics related to finding patterns and anomalies and sensemaking in large-scale graphs with appli- cations to real-world problems in social media and the Web. Specifically, we aim to answer the following questions: How can we scale up graph mining algorithms for massive graphs with billions of edges? How can we find anomalies in such large-scale graphs? How can we make sense of disk-resident large graphs, what and how can we do visual analytics? How can we use the algorithms and anomaly detection techniques to solve challenging real-world problems that play key role in social media and the Web? Our tutorial consists of three main parts. We start with scalable graph mining algorithms for billion-scale graphs, in- cluding structure analysis, eigensolvers, storage and index- ing, and graph layout and graph compression. Next we de- scribe anomaly detection techniques for large scale graphs with applications on social media. Finally, we discuss vi- sual analytics techniques which leverage these algorithms and anomaly detection techniques in the previous parts.</p>
+<p>【Keywords】:
+anomaly detection; graph mining; hadoop; mapreduce; visual analytics</p>
+<h3 id="73. Diversity and novelty in web search, recommender systems and data streams.">73. Diversity and novelty in web search, recommender systems and data streams.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556199">Paper Link</a>】    【Pages】:679-680</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Santos:Rodrygo_L=_T=">Rodrygo L. T. Santos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Castells:Pablo">Pablo Castells</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Alting=ouml=vde:Ismail_Seng=ouml=r">Ismail Sengör Altingövde</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Can:Fazli">Fazli Can</a></p>
+<p>【Abstract】:
+This tutorial aims to provide a unifying account of current research on diversity and novelty in the domains of web search, recommender systems, and data stream processing.</p>
+<p>【Keywords】:
+ambiguity; diversity; novelty; redundancy; relevance</p>
+<h3 id="74. Multilingual probabilistic topic modeling and its applications in web mining and search.">74. Multilingual probabilistic topic modeling and its applications in web mining and search.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556200">Paper Link</a>】    【Pages】:681-682</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Moens:Marie=Francine">Marie-Francine Moens</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vulic:Ivan">Ivan Vulic</a></p>
+<p>【Abstract】:
+Multilingual topic models are a fairly novel group of unsupervised, language-independent and generative machine learning models. This tutorial covers all key aspects of their probabilistic framework and demonstrates how to easily integrate these models into frameworks for cross-lingual and multilingual Web mining and search.</p>
+<p>【Keywords】:
+comparable data; cross-lingual text processing; multilingual data mining; multilingual topic models; probabilistic topic modeling</p>
+<h3 id="75. Entity linking and retrieval for semantic search.">75. Entity linking and retrieval for semantic search.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556201">Paper Link</a>】    【Pages】:683-684</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Meij:Edgar">Edgar Meij</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Balog:Krisztian">Krisztian Balog</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Odijk:Daan">Daan Odijk</a></p>
+<p>【Abstract】:
+More and more search engine users are expecting direct answers to their information needs, rather than links to documents. Semantic search and its recent applications enabled search engines to organize their wealth of information around entities. Entity linking and retrieval provide the building stones for organizing the web of entities. This tutorial aims to cover all facets of semantic search from a unified point of view and connect real-world applications with results from scientific publications. We provide a comprehensive overview of entity linking and retrieval in the context of semantic search and thoroughly explore techniques for query understanding, entity-based retrieval and ranking on unstructured text, structured knowledge repositories, and a mixture of these. We point out the connections between published approaches and applications, and provide hands-on examples on real-world use cases and datasets.</p>
+<p>【Keywords】:
+entity linking; entity retrieval; semantic search</p>
+<h2 id="Workshop summaries    5">Workshop summaries    5</h2>
+<h3 id="76. Log-based personalization: the 4th web search click data (WSCD) workshop.">76. Log-based personalization: the 4th web search click data (WSCD) workshop.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556207">Paper Link</a>】    【Pages】:685-686</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Serdyukov:Pavel">Pavel Serdyukov</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dupret:Georges">Georges Dupret</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Craswell:Nick">Nick Craswell</a></p>
+<p>【Abstract】:
+WSCD 2014 is the fourth workshop on Web Search Click Data, following WSCD 2009, WSCD 2011 and WSCD 2012. It is a forum for new research relating to Web search usage logs and for discussing desirable properties of publicly released search log datasets. Research relating to search logs has been hampered by the limited availability of click datasets. This series of workshops comes with new datasets based on logged user search behaviour and accompanying data mining challenges. This year the challenge and the workshop are focused on the tasks of personalization using logs.</p>
+<p>【Keywords】:
+web search; web search; click data</p>
+<h3 id="77. Web-scale classification: web classification in the big data era.">77. Web-scale classification: web classification in the big data era.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556208">Paper Link</a>】    【Pages】:687-688</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Partalas:Ioannis">Ioannis Partalas</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Amini:Massih=Reza">Massih-Reza Amini</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Androutsopoulos:Ion">Ion Androutsopoulos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Arti=egrave=res:Thierry">Thierry Artières</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gallinari:Patrick">Patrick Gallinari</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gaussier:=Eacute=ric">Éric Gaussier</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Paliouras:Georgios">Georgios Paliouras</a></p>
+<p>【Abstract】:
+This paper provides an overview of the workshop Web-Scale Classification: Web Classification in the Big Data Era which was held in New York City, on February 28th as a workshop of the seventh International Conference on Web Search and Data Mining. The goal of the workshop was to discuss and assess recent research focusing on classification and mining in Web-scale category systems. The workshop brought together members of several communities such web mining, machine learning, text classification and social media mining.</p>
+<p>【Keywords】:
+large-scale text classification; social media prediction; web-scale classification</p>
+<h3 id="78. 1st workshop on diffusion networks and cascade analytics.">78. 1st workshop on diffusion networks and cascade analytics.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556209">Paper Link</a>】    【Pages】:689-690</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cui:Peng">Peng Cui</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang_0001:Fei">Fei Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tong:Hanghang">Hanghang Tong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gomez=Rodriguez:Manuel">Manuel Gomez-Rodriguez</a></p>
+<p>【Abstract】:
+Diffusion and cascades have been studied for many years in sociology, and different theoretical models have been developed. However, experimental validation has been always carried out in relatively small datasets. In recent years, with the availability of large-scale network and cascade data, research on cascading and diffusion phenomena has aroused considerable interests from various fields in computer science. One of the main goals is to discover different propagation patterns from historical cascade data. In this context, understanding the mechanisms underlying diffusion in both micro- and macro-scale levels and further develop predictive model of diffusion are fundamental problems of crucial importance.</p>
+<p>【Keywords】:
+cascade modeling; diffusion networks</p>
+<h3 id="79. Workshop on large-scale and distributed systems for information retrieval (LSDS-IR 2014).">79. Workshop on large-scale and distributed systems for information retrieval (LSDS-IR 2014).</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556210">Paper Link</a>】    【Pages】:691-692</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Alting=ouml=vde:Ismail_Seng=ouml=r">Ismail Sengör Altingövde</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cambazoglu:Berkant_Barla">Berkant Barla Cambazoglu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Macdonald:Craig">Craig Macdonald</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tonellotto:Nicola">Nicola Tonellotto</a></p>
+<p>【Abstract】:
+The LSDS-IR'14 workshop aims to bring together information retrieval practitioners from industry and academic researchers concerned with efficient and distributed IR systems. The workshop also welcomes contributions that propose different ways of leveraging diversity and multiplicity of resources available in distributed systems. The main goal of the workshop is to attract people from industry and academia to present and discuss ideas, problems, and results related to the efficiency of large scale and distributed information retrieval systems.</p>
+<p>【Keywords】:
+distributed search; efficiency; large-scale systems; scalability</p>
+<h3 id="80. Data design for personalization: current challenges and emerging opportunities.">80. Data design for personalization: current challenges and emerging opportunities.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2556195.2556211">Paper Link</a>】    【Pages】:693-694</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Churchill:Elizabeth_F=">Elizabeth F. Churchill</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sarma:Atish_Das">Atish Das Sarma</a></p>
+<p>【Abstract】:
+There are several definitions of personalization but one that relates specifically to internet technologies is the following: Personalization technology enables the dynamic insertion, customization or suggestion of content in any format that is relevant to the individual user, based on the user's implicit behavior and preferences, and explicitly given details. Personalization is central to most Internet experiences. Personalization is a data-driven process, whether the data are explicitly gathered (e.g., by asking people to fill out forms) or implicitly (e.g. through analysis of behavioral data). It is clear that designing for effective personalization poses interesting engineering and computer science challenges. However, personalization is also a user experience issue. We believe that encouraging dialogue and collaboration between data mining experts, content providers, and user-focused researchers will offer gains in the area of personalization for search and for other domains. This is increasingly the case as devices enable more forms of data to be gathered, are always on/connected and are always with users. This workshop brings researchers interested in the area of personalization to share their research, explore possibilities for collaboration, and work on defining an agenda for Data Design for Personalization.</p>
+<p>【Keywords】:
+data design; personalization; search</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+
+<div class="theme" >
+<i title='主题' onclick="setStyle()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<!-- 更换theme -->
+<script type="text/javascript">
+function setStyle(){ 
+    if(document.getElementById("dark").disabled){
+        document.getElementById("light").disabled = true; 
+        document.getElementById("dark").disabled = false; 
+        }
+    else{
+        document.getElementById("dark").disabled = true; 
+        document.getElementById("light").disabled = false; 
+        }
+    }
+</script>
+
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="http://huntercmd.github.io"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>

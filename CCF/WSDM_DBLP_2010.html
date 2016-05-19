@@ -1,0 +1,552 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="../config/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link id="light" rel="stylesheet" type="text/css" href="../config/css/light.css" />  
+<link id="dark" rel="stylesheet" type="text/css" href="../config/css/dark.css" disabled/>
+
+<script src="../config/css/classie.js"></script>
+
+
+<!-- This is for Mathjax -->
+
+<script type="text/javascript"
+  src="../config/mathjax2.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#3. WSDM 2010:New York, NY, USA">3. WSDM 2010:New York, NY, USA</a><ul>
+<li><a href="#Paper Num: 45 || Session Num: 10">Paper Num: 45 || Session Num: 10</a></li>
+<li><a href="#Web search    5">Web search    5</a><ul>
+<li><a href="#1. Leveraging temporal dynamics of document content in relevance ranking.">1. Leveraging temporal dynamics of document content in relevance ranking.</a></li>
+<li><a href="#2. Towards recency ranking in web search.">2. Towards recency ranking in web search.</a></li>
+<li><a href="#3. Ranking mechanisms in twitter-like forums.">3. Ranking mechanisms in twitter-like forums.</a></li>
+<li><a href="#4. Learning concept importance using a weighted dependence model.">4. Learning concept importance using a weighted dependence model.</a></li>
+<li><a href="#5. Query reformulation using anchor text.">5. Query reformulation using anchor text.</a></li>
+</ul>
+</li>
+<li><a href="#Tagging and recommendation    5">Tagging and recommendation    5</a><ul>
+<li><a href="#6. Tagging human knowledge.">6. Tagging human knowledge.</a></li>
+<li><a href="#7. Precomputing search features for fast and accurate query classification.">7. Precomputing search features for fast and accurate query classification.</a></li>
+<li><a href="#8. I tag, you tag: translating tags for advanced user models.">8. I tag, you tag: translating tags for advanced user models.</a></li>
+<li><a href="#9. Pairwise interaction tensor factorization for personalized tag recommendation.">9. Pairwise interaction tensor factorization for personalized tag recommendation.</a></li>
+<li><a href="#10. fLDA: matrix factorization through latent dirichlet allocation.">10. fLDA: matrix factorization through latent dirichlet allocation.</a></li>
+</ul>
+</li>
+<li><a href="#Information extraction    4">Information extraction    4</a><ul>
+<li><a href="#11. Coupled semi-supervised learning for information extraction.">11. Coupled semi-supervised learning for information extraction.</a></li>
+<li><a href="#12. Adapting information bottleneck method for automatic construction of domain-oriented sentiment lexicon.">12. Adapting information bottleneck method for automatic construction of domain-oriented sentiment lexicon.</a></li>
+<li><a href="#13. Data-oriented content query system: searching for data into text on the web.">13. Data-oriented content query system: searching for data into text on the web.</a></li>
+<li><a href="#14. Corroborating information from disagreeing views.">14. Corroborating information from disagreeing views.</a></li>
+</ul>
+</li>
+<li><a href="#Learning and optimization    5">Learning and optimization    5</a><ul>
+<li><a href="#15. Ranking with query-dependent loss for web search.">15. Ranking with query-dependent loss for web search.</a></li>
+<li><a href="#16. IntervalRank: isotonic regression with listwise and pairwise constraints.">16. IntervalRank: isotonic regression with listwise and pairwise constraints.</a></li>
+<li><a href="#17. An optimization framework for query recommendation.">17. An optimization framework for query recommendation.</a></li>
+<li><a href="#18. Improving quality of training data for learning to rank using click-through data.">18. Improving quality of training data for learning to rank using click-through data.</a></li>
+<li><a href="#19. A model to estimate intrinsic document relevance from the clickthrough logs of a web search engine.">19. A model to estimate intrinsic document relevance from the clickthrough logs of a web search engine.</a></li>
+</ul>
+</li>
+<li><a href="#Users and measurement    5">Users and measurement    5</a><ul>
+<li><a href="#20. Large scale query log analysis of re-finding.">20. Large scale query log analysis of re-finding.</a></li>
+<li><a href="#21. Anatomy of the long tail: ordinary people with extraordinary tastes.">21. Anatomy of the long tail: ordinary people with extraordinary tastes.</a></li>
+<li><a href="#22. Inferring search behaviors using partially observable Markov (POM">22. Inferring search behaviors using partially observable Markov (POM) model.</a> model.)</li>
+<li><a href="#23. Beyond DCG: user behavior as a predictor of a successful search.">23. Beyond DCG: user behavior as a predictor of a successful search.</a></li>
+<li><a href="#24. Measuring the reusability of test collections.">24. Measuring the reusability of test collections.</a></li>
+</ul>
+</li>
+<li><a href="#Social    5">Social    5</a><ul>
+<li><a href="#25. Learning influence probabilities in social networks.">25. Learning influence probabilities in social networks.</a></li>
+<li><a href="#26. You are who you know: inferring user profiles in online social networks.">26. You are who you know: inferring user profiles in online social networks.</a></li>
+<li><a href="#27. TwitterRank: finding topic-sensitive influential twitterers.">27. TwitterRank: finding topic-sensitive influential twitterers.</a></li>
+<li><a href="#28. Folks in Folksonomies: social link prediction from shared metadata.">28. Folks in Folksonomies: social link prediction from shared metadata.</a></li>
+<li><a href="#29. GeoFolk: latent spatial semantics in web 2.0 social media.">29. GeoFolk: latent spatial semantics in web 2.0 social media.</a></li>
+</ul>
+</li>
+<li><a href="#Temporal interaction    3">Temporal interaction    3</a><ul>
+<li><a href="#30. Learning similarity metrics for event identification in social media.">30. Learning similarity metrics for event identification in social media.</a></li>
+<li><a href="#31. Early online identification of attention gathering items in social media.">31. Early online identification of attention gathering items in social media.</a></li>
+<li><a href="#32. Evolution of two-sided markets.">32. Evolution of two-sided markets.</a></li>
+</ul>
+</li>
+<li><a href="#Ads    5">Ads    5</a><ul>
+<li><a href="#33. A novel click model and its applications to online advertising.">33. A novel click model and its applications to online advertising.</a></li>
+<li><a href="#34. Adaptive weighing designs for keyword value computation.">34. Adaptive weighing designs for keyword value computation.</a></li>
+<li><a href="#35. Automatic generation of bid phrases for online advertising.">35. Automatic generation of bid phrases for online advertising.</a></li>
+<li><a href="#36. Personalized click prediction in sponsored search.">36. Personalized click prediction in sponsored search.</a></li>
+<li><a href="#37. Improving ad relevance in sponsored search.">37. Improving ad relevance in sponsored search.</a></li>
+</ul>
+</li>
+<li><a href="#Systems and efficiency    5">Systems and efficiency    5</a><ul>
+<li><a href="#38. Revisiting globally sorted indexes for efficient document retrieval.">38. Revisiting globally sorted indexes for efficient document retrieval.</a></li>
+<li><a href="#39. Learning URL patterns for webpage de-duplication.">39. Learning URL patterns for webpage de-duplication.</a></li>
+<li><a href="#40. On compressing the textual web.">40. On compressing the textual web.</a></li>
+<li><a href="#41. A sketch-based distance oracle for web-scale graphs.">41. A sketch-based distance oracle for web-scale graphs.</a></li>
+<li><a href="#42. Early exit optimizations for additive machine learned ranking systems.">42. Early exit optimizations for additive machine learned ranking systems.</a></li>
+</ul>
+</li>
+<li><a href="#Web mining    3">Web mining    3</a><ul>
+<li><a href="#43. SBotMiner: large scale search bot detection.">43. SBotMiner: large scale search bot detection.</a></li>
+<li><a href="#44. Gathering and ranking photos of named entities with high precision, high recall, and diversity.">44. Gathering and ranking photos of named entities with high precision, high recall, and diversity.</a></li>
+<li><a href="#45. Boilerplate detection using shallow text features.">45. Boilerplate detection using shallow text features.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="3. WSDM 2010:New York, NY, USA">3. WSDM 2010:New York, NY, USA</h1>
+<p><a href="">Proceedings of the Third International Conference on Web Search and Web Data Mining, WSDM 2010, New York, NY, USA, February 4-6, 2010.</a> ACM
+【<a href="http://dblp.uni-trier.de/db/conf/wsdm/wsdm2010.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 45 || Session Num: 10">Paper Num: 45 || Session Num: 10</h2>
+<h2 id="Web search    5">Web search    5</h2>
+<h3 id="1. Leveraging temporal dynamics of document content in relevance ranking.">1. Leveraging temporal dynamics of document content in relevance ranking.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718489">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/e/Elsas:Jonathan_L=">Jonathan L. Elsas</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dumais:Susan_T=">Susan T. Dumais</a></p>
+<p>【Abstract】:
+Many web documents are dynamic, with content changing in varying amounts at varying frequencies. However, current document search algorithms have a static view of the document content, with only a single version of the document in the index at any point in time. In this paper, we present the first published analysis of using the temporal dynamics of document content to improve relevance ranking. We show that there is a strong relationship between the amount and frequency of content change and relevance. We develop a novel probabilistic document ranking algorithm that allows differential weighting of terms based on their temporal characteristics. By leveraging such content dynamics we show significant performance improvements for navigational queries.</p>
+<p>【Keywords】:
+temporal change; versioned documents; web search</p>
+<h3 id="2. Towards recency ranking in web search.">2. Towards recency ranking in web search.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718490">Paper Link</a>】    【Pages】:11-20</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dong:Anlei">Anlei Dong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chang:Yi">Yi Chang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zheng:Zhaohui">Zhaohui Zheng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mishne:Gilad">Gilad Mishne</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bai:Jing">Jing Bai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Ruiqiang">Ruiqiang Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Buchner:Karolina">Karolina Buchner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liao:Ciya">Ciya Liao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Diaz:Fernando">Fernando Diaz</a></p>
+<p>【Abstract】:
+In web search, recency ranking refers to ranking documents by relevance which takes freshness into account. In this paper, we propose a retrieval system which automatically detects and responds to recency sensitive queries. The system detects recency sensitive queries using a high precision classifier. The system responds to recency sensitive queries by using a machine learned ranking model trained for such queries. We use multiple recency features to provide temporal evidence which effectively represents document recency. Furthermore, we propose several training methodologies important for training recency sensitive rankers. Finally, we develop new evaluation metrics for recency sensitive queries. Our experiments demonstrate the efficacy of the proposed approaches.</p>
+<p>【Keywords】:
+recency ranking; recency sensitive query classification; temporal</p>
+<h3 id="3. Ranking mechanisms in twitter-like forums.">3. Ranking mechanisms in twitter-like forums.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718491">Paper Link</a>】    【Pages】:21-30</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sarma:Anish_Das">Anish Das Sarma</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sarma:Atish_Das">Atish Das Sarma</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gollapudi:Sreenivas">Sreenivas Gollapudi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Panigrahy:Rina">Rina Panigrahy</a></p>
+<p>【Abstract】:
+We study the problem of designing a mechanism to rank items in forums by making use of the user reviews such as thumb and star ratings. We compare mechanisms where forum users rate individual posts and also mechanisms where the user is asked to perform a pairwise comparison and state which one is better. The main metric used to evaluate a mechanism is the ranking accuracy vs the cost of reviews, where the cost is measured as the average number of reviews used per post. We show that for many reasonable probability models, there is no thumb (or star) based ranking mechanism that can produce approximately accurate rankings with bounded number of reviews per item. On the other hand we provide a review mechanism based on pairwise comparisons which achieves approximate rankings with bounded cost. We have implemented a system, shoutvelocity, which is a twitter-like forum but items (i.e., tweets in Twitter) are rated by using comparisons. For each new item the user who posts the item is required to compare two previous entries. This ensures that over a sequence of n posts, we get at least n comparisons requiring one review per item on average. Our mechanism uses this sequence of comparisons to obtain a ranking estimate. It ensures that every item is reviewed at least once and winning entries are reviewed more often to obtain better estimates of top items.</p>
+<p>【Keywords】:
+comparisons; ranking mechanisms; thumb-based ranking</p>
+<h3 id="4. Learning concept importance using a weighted dependence model.">4. Learning concept importance using a weighted dependence model.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718492">Paper Link</a>】    【Pages】:31-40</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bendersky:Michael">Michael Bendersky</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Metzler:Donald">Donald Metzler</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Croft:W=_Bruce">W. Bruce Croft</a></p>
+<p>【Abstract】:
+Modeling query concepts through term dependencies has been shown to have a significant positive effect on retrieval performance, especially for tasks such as web search, where relevance at high ranks is particularly critical. Most previous work, however, treats all concepts as equally important, an assumption that often does not hold, especially for longer, more complex queries. In this paper, we show that one of the most effective existing term dependence models can be naturally extended by assigning weights to concepts. We demonstrate that the weighted dependence model can be trained using existing learning-to-rank techniques, even with a relatively small number of training queries. Our study compares the effectiveness of both endogenous (collection-based) and exogenous (based on external sources) features for determining concept importance. To test the weighted dependence model, we perform experiments on both publicly available TREC corpora and a proprietary web corpus. Our experimental results indicate that our model consistently and significantly outperforms both the standard bag-of-words model and the unweighted term dependence model, and that combining endogenous and exogenous features generally results in the best retrieval effectiveness.</p>
+<p>【Keywords】:
+query concept weighting; weighted dependence model</p>
+<h3 id="5. Query reformulation using anchor text.">5. Query reformulation using anchor text.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718493">Paper Link</a>】    【Pages】:41-50</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dang:Van">Van Dang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Croft:W=_Bruce">W. Bruce Croft</a></p>
+<p>【Abstract】:
+Query reformulation techniques based on query logs have been studied as a method of capturing user intent and improving retrieval effectiveness. The evaluation of these techniques has primarily, however, focused on proprietary query logs and selected samples of queries. In this paper, we suggest that anchor text, which is readily available, can be an effective substitute for a query log and study the effectiveness of a range of query reformulation techniques (including log-based stemming, substitution, and expansion) using standard TREC collections. Our results show that log-based query reformulation techniques are indeed effective with standard collections, but expansion is a much safer form of query modification than word substitution. We also show that using anchor text as a simulated query log is as least as effective as a real log for these techniques.</p>
+<p>【Keywords】:
+anchor log; anchor text; query expansion; query log; query reformulation; query substitution</p>
+<h2 id="Tagging and recommendation    5">Tagging and recommendation    5</h2>
+<h3 id="6. Tagging human knowledge.">6. Tagging human knowledge.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718495">Paper Link</a>】    【Pages】:51-60</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Heymann:Paul">Paul Heymann</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Paepcke:Andreas">Andreas Paepcke</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Garcia=Molina:Hector">Hector Garcia-Molina</a></p>
+<p>【Abstract】:
+A fundamental premise of tagging systems is that regular users can organize large collections for browsing and other tasks using uncontrolled vocabularies. Until now, that premise has remained relatively unexamined. Using library data, we test the tagging approach to organizing a collection. We find that tagging systems have three major large scale organizational features: consistency, quality, and completeness. In addition to testing these features, we present results suggesting that users produce tags similar to the topics designed by experts, that paid tagging can effectively supplement tags in a tagging system, and that information integration may be possible across tagging systems.</p>
+<p>【Keywords】:
+library science; tagging systems</p>
+<h3 id="7. Precomputing search features for fast and accurate query classification.">7. Precomputing search features for fast and accurate query classification.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718496">Paper Link</a>】    【Pages】:61-70</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Ganti:Venkatesh">Venkatesh Ganti</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/K=ouml=nig:Arnd_Christian">Arnd Christian König</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Xiao">Xiao Li</a></p>
+<p>【Abstract】:
+Query intent classification is crucial for web search and advertising. It is known to be challenging because web queries contain less than three words on average, and so provide little signal to base classification decisions on. At the same time, the vocabulary used in search queries is vast: thus, classifiers based on word-occurrence have to deal with a very sparse feature space, and often require large amounts of training data. Prior efforts to address the issue of feature sparseness augmented the feature space using features computed from the results obtained by issuing the query to be classified against a web search engine. However, these approaches induce high latency, making them unacceptable in practice. In this paper, we propose a new class of features that realizes the benefit of search-based features without high latency. These leverage co-occurrence between the query keywords and tags applied to documents in search results, resulting in a significant boost to web query classification accuracy. By pre-computing the tag incidence for a suitably chosen set of keyword-combinations, we are able to generate the features online with low latency and memory requirements. We evaluate the accuracy of our approach using a large corpus of real web queries in the context of commercial search.</p>
+<p>【Keywords】:
+query classification; vertical search; web search</p>
+<h3 id="8. I tag, you tag: translating tags for advanced user models.">8. I tag, you tag: translating tags for advanced user models.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718497">Paper Link</a>】    【Pages】:71-80</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wetzker:Robert">Robert Wetzker</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zimmermann:Carsten">Carsten Zimmermann</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bauckhage:Christian">Christian Bauckhage</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Albayrak:Sahin">Sahin Albayrak</a></p>
+<p>【Abstract】:
+Collaborative tagging services (folksonomies) have been among the stars of the Web 2.0 era. They allow their users to label diverse resources with freely chosen keywords (tags). Our studies of two real-world folksonomies unveil that individual users develop highly personalized vocabularies of tags. While these meet individual needs and preferences, the considerable differences between personal tag vocabularies (personomies) impede services such as social search or customized tag recommendation. In this paper, we introduce a novel user-centric tag model that allows us to derive mappings between personal tag vocabularies and the corresponding folksonomies. Using these mappings, we can infer the meaning of user-assigned tags and can predict choices of tags a user may want to assign to new items. Furthermore, our translational approach helps in reducing common problems related to tag ambiguity, synonymous tags, or multilingualism. We evaluate the applicability of our method in tag recommendation and tag-based social search. Extensive experiments show that our translational model improves the prediction accuracy in both scenarios.</p>
+<p>【Keywords】:
+folksonomies; social search; tag recommendation; tagging; user modeling</p>
+<h3 id="9. Pairwise interaction tensor factorization for personalized tag recommendation.">9. Pairwise interaction tensor factorization for personalized tag recommendation.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718498">Paper Link</a>】    【Pages】:81-90</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Rendle:Steffen">Steffen Rendle</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schmidt=Thieme:Lars">Lars Schmidt-Thieme</a></p>
+<p>【Abstract】:
+Tagging plays an important role in many recent websites. Recommender systems can help to suggest a user the tags he might want to use for tagging a specific item. Factorization models based on the Tucker Decomposition (TD) model have been shown to provide high quality tag recommendations outperforming other approaches like PageRank, FolkRank, collaborative filtering, etc. The problem with TD models is the cubic core tensor resulting in a cubic runtime in the factorization dimension for prediction and learning. In this paper, we present the factorization model PITF (Pairwise Interaction Tensor Factorization) which is a special case of the TD model with linear runtime both for learning and prediction. PITF explicitly models the pairwise interactions between users, items and tags. The model is learned with an adaption of the Bayesian personalized ranking (BPR) criterion which originally has been introduced for item recommendation. Empirically, we show on real world datasets that this model outperforms TD largely in runtime and even can achieve better prediction quality. Besides our lab experiments, PITF has also won the ECML/PKDD Discovery Challenge 2009 for graph-based tag recommendation.</p>
+<p>【Keywords】:
+personalization; recommender systems; tag recommendation; tensor factorization</p>
+<h3 id="10. fLDA: matrix factorization through latent dirichlet allocation.">10. fLDA: matrix factorization through latent dirichlet allocation.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718499">Paper Link</a>】    【Pages】:91-100</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Agarwal:Deepak">Deepak Agarwal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Bee=Chung">Bee-Chung Chen</a></p>
+<p>【Abstract】:
+We propose fLDA, a novel matrix factorization method to predict ratings in recommender system applications where a "bag-of-words" representation for item meta-data is natural. Such scenarios are commonplace in web applications like content recommendation, ad targeting and web search where items are articles, ads and web pages respectively. Because of data sparseness, regularization is key to good predictive accuracy. Our method works by regularizing both user and item factors simultaneously through user features and the bag of words associated with each item. Specifically, each word in an item is associated with a discrete latent factor often referred to as the topic of the word; item topics are obtained by averaging topics across all words in an item. Then, user rating on an item is modeled as user's affinity to the item's topics where user affinity to topics (user factors) and topic assignments to words in items (item factors) are learned jointly in a supervised fashion. To avoid overfitting, user and item factors are regularized through Gaussian linear regression and Latent Dirichlet Allocation (LDA) priors respectively. We show our model is accurate, interpretable and handles both cold-start and warm-start scenarios seamlessly through a single model. The efficacy of our method is illustrated on benchmark datasets and a new dataset from Yahoo! Buzz where fLDA provides superior predictive accuracy in cold-start scenarios and is comparable to state-of-the-art methods in warm-start scenarios. As a by-product, fLDA also identifies interesting topics that explains user-item interactions. Our method also generalizes a recently proposed technique called supervised LDA (sLDA) to collaborative filtering applications. While sLDA estimates item topic vectors in a supervised fashion for a single regression, fLDA incorporates multiple regressions (one for each user) in estimating the item factors.</p>
+<p>【Keywords】:
+bayesian hierarchical model; collaborative filtering; graphical model; latent factor model; recommender systems; supervised topic model</p>
+<h2 id="Information extraction    4">Information extraction    4</h2>
+<h3 id="11. Coupled semi-supervised learning for information extraction.">11. Coupled semi-supervised learning for information extraction.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718501">Paper Link</a>】    【Pages】:101-110</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Carlson:Andrew">Andrew Carlson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Betteridge:Justin">Justin Betteridge</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Richard_C=">Richard C. Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hruschka_Jr=:Estevam_R=">Estevam R. Hruschka Jr.</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mitchell:Tom_M=">Tom M. Mitchell</a></p>
+<p>【Abstract】:
+We consider the problem of semi-supervised learning to extract categories (e.g., academic fields, athletes) and relations (e.g., PlaysSport(athlete, sport)) from web pages, starting with a handful of labeled training examples of each category or relation, plus hundreds of millions of unlabeled web documents. Semi-supervised training using only a few labeled examples is typically unreliable because the learning task is underconstrained. This paper pursues the thesis that much greater accuracy can be achieved by further constraining the learning task, by coupling the semi-supervised training of many extractors for different categories and relations. We characterize several ways in which the training of category and relation extractors can be coupled, and present experimental results demonstrating significantly improved accuracy as a result.</p>
+<p>【Keywords】:
+bootstrap learning; information extraction; semi-supervised learning; web mining</p>
+<h3 id="12. Adapting information bottleneck method for automatic construction of domain-oriented sentiment lexicon.">12. Adapting information bottleneck method for automatic construction of domain-oriented sentiment lexicon.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718502">Paper Link</a>】    【Pages】:111-120</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Du:Weifu">Weifu Du</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tan:Songbo">Songbo Tan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cheng:Xueqi">Xueqi Cheng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yun:Xiao=chun">Xiao-chun Yun</a></p>
+<p>【Abstract】:
+Domain-oriented sentiment lexicons are widely used for fine-grained sentiment analysis on reviews; therefore, the automatic construction of domain-oriented sentiment lexicon is a fundamental and important task for sentiment analysis research. Most of existing construction approaches take only the kind of relationships between words into account, which makes them have a lot of room for improvement. This paper proposes an adapted information bottleneck method for the construction of domain-oriented sentiment lexicon. This approach can naturally make full use of the mutual reinforcement between documents and words by fusing three kinds of relationships either from words to documents or from words to words; either homogeneous or heterogeneous; either within-domain or cross-domain. The experimental results demonstrate that proposed method could dramatically improve the accuracy of the baseline approach on the construction of out-of-domain sentiment lexicon.</p>
+<p>【Keywords】:
+information retrieval; opinion mining; sentiment analysis</p>
+<h3 id="13. Data-oriented content query system: searching for data into text on the web.">13. Data-oriented content query system: searching for data into text on the web.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718503">Paper Link</a>】    【Pages】:121-130</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Mianwei">Mianwei Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cheng:Tao">Tao Cheng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chang:Kevin_Chen=Chuan">Kevin Chen-Chuan Chang</a></p>
+<p>【Abstract】:
+As the Web provides rich data embedded in the immense contents inside pages, we witness many ad-hoc efforts for exploiting fine granularity information across Web text, such as Web information extraction, typed-entity search, and question answering. To unify and generalize these efforts, this paper proposes a general search system--Data-oriented Content Query System(DoCQS)--to search directly into document contents for finding relevant values of desired data types. Motivated by the current limitations, we start by distilling the essential capabilities needed by such content querying. The capabilities call for a conceptually relational model, upon which we design a powerful Content Query Language (CQL). For efficient processing, we design novel index structures and query processing algorithms. We evaluate our proposal over two concrete domains of realistic Web corpora, demonstrating that our query language is rather flexible and expressive, and our query processing is efficient with reasonable index overhead.</p>
+<p>【Keywords】:
+content query; content query language; contextual index; data oriented; inverted index; joint index</p>
+<h3 id="14. Corroborating information from disagreeing views.">14. Corroborating information from disagreeing views.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718504">Paper Link</a>】    【Pages】:131-140</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Galland:Alban">Alban Galland</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Abiteboul:Serge">Serge Abiteboul</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Marian:Am=eacute=lie">Amélie Marian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Senellart:Pierre">Pierre Senellart</a></p>
+<p>【Abstract】:
+We consider a set of views stating possibly conflicting facts. Negative facts in the views may come, e.g., from functional dependencies in the underlying database schema. We want to predict the truth values of the facts. Beyond simple methods such as voting (typically rather accurate), we explore techniques based on "corroboration", i.e., taking into account trust in the views. We introduce three fixpoint algorithms corresponding to different levels of complexity of an underlying probabilistic model. They all estimate both truth values of facts and trust in the views. We present experimental studies on synthetic and real-world data. This analysis illustrates how and in which context these methods improve corroboration results over baseline methods. We believe that corroboration can serve in a wide range of applications such as source selection in the semantic Web, data quality assessment or semantic annotation cleaning in social networks. This work sets the bases for a wide range of techniques for solving these more complex problems.</p>
+<p>【Keywords】:
+confidence; contradiction; corroboration; fix-point; probabilistic model; view</p>
+<h2 id="Learning and optimization    5">Learning and optimization    5</h2>
+<h3 id="15. Ranking with query-dependent loss for web search.">15. Ranking with query-dependent loss for web search.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718506">Paper Link</a>】    【Pages】:141-150</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bian:Jiang">Jiang Bian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Tie=Yan">Tie-Yan Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/q/Qin:Tao">Tao Qin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zha:Hongyuan">Hongyuan Zha</a></p>
+<p>【Abstract】:
+Queries describe the users' search intent and therefore they play an essential role in the context of ranking for information retrieval and Web search. However, most of existing approaches for ranking do not explicitly take into consideration the fact that queries vary significantly along several dimensions and entail different treatments regarding the ranking models. In this paper, we propose to incorporate query difference into ranking by introducing query-dependent loss functions. In the context of Web search, query difference is usually represented as different query categories; and, queries are usually classified according to search intent such as navigational, informational and transactional queries. Based on the observation that such kind of query categorization has high correlation with the user's different expectation on the result accuracy on different rank positions, we develop position-sensitive query-dependent loss functions exploring such kind of query categorization. Beyond the simple learning method that builds ranking functions with pre-defined query categorization, we further propose a new method that learns both ranking functions and query categorization simultaneously. We apply the query-dependent loss functions to two particular ranking algorithms, RankNet and ListMLE. Experimental results demonstrate that query-dependent loss functions can be exploited to significantly improve the accuracy of learned ranking functions. We also show that the ranking function jointly learned with query categorization can achieve better performance than that learned with pre-defined query categorization. Finally, we provide analysis and conduct additional experiments to gain deeper understanding on the advantages of ranking with query-dependent loss functions over other query-dependent ranking approaches and query-independent approaches.</p>
+<p>【Keywords】:
+query difference; query-dependent loss function; ranking for web search</p>
+<h3 id="16. IntervalRank: isotonic regression with listwise and pairwise constraints.">16. IntervalRank: isotonic regression with listwise and pairwise constraints.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718507">Paper Link</a>】    【Pages】:151-160</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Moon:Taesup">Taesup Moon</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Smola:Alexander_J=">Alexander J. Smola</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chang:Yi">Yi Chang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zheng:Zhaohui">Zhaohui Zheng</a></p>
+<p>【Abstract】:
+Ranking a set of retrieved documents according to their relevance to a given query has become a popular problem at the intersection of web search, machine learning, and information retrieval. Recent work on ranking focused on a number of different paradigms, namely, pointwise, pairwise, and list-wise approaches. Each of those paradigms focuses on a different aspect of the dataset while largely ignoring others. The current paper shows how a combination of them can lead to improved ranking performance and, moreover, how it can be implemented in log-linear time. The basic idea of the algorithm is to use isotonic regression with adaptive bandwidth selection per relevance grade. This results in an implicitly-defined loss function which can be minimized efficiently by a subgradient descent procedure. Experimental results show that the resulting algorithm is competitive on both commercial search engine data and publicly available LETOR data sets.</p>
+<p>【Keywords】:
+isotonic regression; learning to rank; listwise constraints; pairwise constraints</p>
+<h3 id="17. An optimization framework for query recommendation.">17. An optimization framework for query recommendation.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718508">Paper Link</a>】    【Pages】:161-170</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Anagnostopoulos:Aris">Aris Anagnostopoulos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Becchetti:Luca">Luca Becchetti</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Castillo:Carlos">Carlos Castillo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gionis:Aristides">Aristides Gionis</a></p>
+<p>【Abstract】:
+Query recommendation is an integral part of modern search engines. The goal of query recommendation is to facilitate users while searching for information. Query recommendation also allows users to explore concepts related to their information needs. In this paper, we present a formal treatment of the problem of query recommendation. In our framework we model the querying behavior of users by a probabilistic reformula- tion graph, or query-flow graph [Boldi et al. CIKM 2008]. A sequence of queries submitted by a user can be seen as a path on this graph. Assigning score values to queries allows us to define suitable utility functions and to consider the expected utility achieved by a reformulation path on the query-flow graph. Providing recommendations can be seen as adding shortcuts in the query-flow graph that "nudge" the reformulation paths of users, in such a way that users are more likely to follow paths with larger expected utility. We discuss in detail the most important questions that arise in the proposed framework. In particular, we provide examples of meaningful utility functions to optimize, we discuss how to estimate the effect of recommendations on the reformulation probabilities, we address the complexity of the optimization problems that we consider, we suggest efficient algorithmic solutions, and we validate our models and algorithms with extensive experimentation. Our techniques can be applied to other scenarios where user behavior can be modeled as a Markov process.</p>
+<p>【Keywords】:
+query reformulations; query suggestions</p>
+<h3 id="18. Improving quality of training data for learning to rank using click-through data.">18. Improving quality of training data for learning to rank using click-through data.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718509">Paper Link</a>】    【Pages】:171-180</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Jingfang">Jingfang Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Chuanliang">Chuanliang Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Gu">Gu Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Hang">Hang Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Abib:Elbio_Renato_Torres">Elbio Renato Torres Abib</a></p>
+<p>【Abstract】:
+In information retrieval, relevance of documents with respect to queries is usually judged by humans, and used in evaluation and/or learning of ranking functions. Previous work has shown that certain level of noise in relevance judgments has little effect on evaluation, especially for comparison purposes. Recently learning to rank has become one of the major means to create ranking models in which the models are automatically learned from the data derived from a large number of relevance judgments. As far as we know, there was no previous work about quality of training data for learning to rank, and this paper tries to study the issue. Specifically, we address three problems. Firstly, we show that the quality of training data labeled by humans has critical impact on the performance of learning to rank algorithms. Secondly, we propose detecting relevance judgment errors using click-through data accumulated at a search engine. Two discriminative models, referred to as sequential dependency model and full dependency model, are proposed to make the detection. Both models consider the conditional dependency of relevance labels and thus are more powerful than the conditionally independent model previously proposed for other tasks. Finally, we verify that using training data in which the errors are detected and corrected by our method, we can improve the performance of learning to rank algorithms.</p>
+<p>【Keywords】:
+judgment error correction; relevance label prediction; training data quality</p>
+<h3 id="19. A model to estimate intrinsic document relevance from the clickthrough logs of a web search engine.">19. A model to estimate intrinsic document relevance from the clickthrough logs of a web search engine.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718510">Paper Link</a>】    【Pages】:181-190</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dupret:Georges">Georges Dupret</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liao:Ciya">Ciya Liao</a></p>
+<p>【Abstract】:
+We propose a new model to interpret the clickthrough logs of a web search engine. This model is based on explicit assumptions on the user behavior. In particular, we draw conclusions on a document relevance by observing the user behavior after he examined the document and not based on whether a user clicks or not a document url. This results in a model based on intrinsic relevance, as opposed to perceived relevance. We use the model to predict document relevance and then use this as feature for a "Learning to Rank" machine learning algorithm. Comparing the ranking functions obtained by training the algorithm with and without the new feature we observe surprisingly good results. This is particularly notable given that the baseline we use is the heavily optimized ranking function of a leading commercial search engine. A deeper analysis shows that the new feature is particularly helpful for non navigational queries and queries with a large abandonment rate or a large average number of queries per session. This is important because these types of query is considered to be the most difficult to solve.</p>
+<p>【Keywords】:
+clickthrough data; search engines; user behavior model</p>
+<h2 id="Users and measurement    5">Users and measurement    5</h2>
+<h3 id="20. Large scale query log analysis of re-finding.">20. Large scale query log analysis of re-finding.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718512">Paper Link</a>】    【Pages】:191-200</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Tyler:Sarah_K=">Sarah K. Tyler</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Teevan:Jaime">Jaime Teevan</a></p>
+<p>【Abstract】:
+Although Web search engines are targeted towards helping people find new information, people regularly use them to re-find Web pages they have seen before. Researchers have noted the existence of this phenomenon, but relatively little is understood about how re-finding behavior differs from the finding of new information. This paper dives deeply into the differences via analysis of three large-scale data sources: 1) query logs (queries, clicks, result impressions), 2) Web browsing logs (URL visits), and 3) a daily Web crawl (page content). It appears that people learn valuable information about the pages they find that helps them re-find what they are looking for later; compared to the initial finding query, re-finding queries are typically shorter, and rank the re-found URL higher. While many instances of re-finding probably serve as a type of bookmark for a known URL, others seem to represent the resumption of a previous task; results clicked at the end of a session are more likely than those at the beginning to be re-found during a later session, while re-finding is more likely to happen at the beginning of a session than at the end. Additionally, we observe differences in cross-session and intra-session re-finding that may indicate different types of re-finding tasks. Our findings suggest there is a rich opportunity for search engines to take advantage of re-finding behavior as a means to improve the search experience.</p>
+<p>【Keywords】:
+query log analysis; re-finding; web search</p>
+<h3 id="21. Anatomy of the long tail: ordinary people with extraordinary tastes.">21. Anatomy of the long tail: ordinary people with extraordinary tastes.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718513">Paper Link</a>】    【Pages】:201-210</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Goel:Sharad">Sharad Goel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Broder:Andrei_Z=">Andrei Z. Broder</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gabrilovich:Evgeniy">Evgeniy Gabrilovich</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pang:Bo">Bo Pang</a></p>
+<p>【Abstract】:
+The success of "infinite-inventory" retailers such as Amazon.com and Netflix has been ascribed to a "long tail" phenomenon. To wit, while the majority of their inventory is not in high demand, in aggregate these "worst sellers," unavailable at limited-inventory competitors, generate a significant fraction of total revenue. The long tail phenomenon, however, is in principle consistent with two fundamentally different theories. The first, and more popular hypothesis, is that a majority of consumers consistently follow the crowds and only a minority have any interest in niche content; the second hypothesis is that everyone is a bit eccentric, consuming both popular and specialty products. Based on examining extensive data on user preferences for movies, music, Web search, and Web browsing, we find overwhelming support for the latter theory. However, the observed eccentricity is much less than what is predicted by a fully random model whereby every consumer makes his product choices independently and proportional to product popularity; so consumers do indeed exhibit at least some a priori propensity toward either the popular or the exotic. Our findings thus suggest an additional factor in the success of infinite-inventory retailers, namely, that tail availability may boost head sales by offering consumers the convenience of "one-stop shopping" for both their mainstream and niche interests. This hypothesis is further supported by our theoretical analysis that presents a simple model in which shared inventory stores, such as Amazon Marketplace, gain a clear advantage by satisfying tail demand, helping to explain the emergence and increasing popularity of such retail arrangements. Hence, we believe that the return-on-investment (ROI) of niche products goes beyond direct revenue, extending to second-order gains associated with increased consumer satisfaction and repeat patronage. More generally, our findings call into question the conventional wisdom that specialty products only appeal to a minority of consumers.</p>
+<p>【Keywords】:
+infinite inventory; long tail</p>
+<h3 id="22. Inferring search behaviors using partially observable Markov (POM) model.">22. Inferring search behaviors using partially observable Markov (POM) model.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718514">Paper Link</a>】    【Pages】:211-220</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Kuansan">Kuansan Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gloy:Nikolas">Nikolas Gloy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Xiaolong">Xiaolong Li</a></p>
+<p>【Abstract】:
+This article describes an application of the partially observable Markov (POM) model to the analysis of a large scale commercial web search log. Mathematically, POM is a variant of the hidden Markov model in which all the hidden state transitions do not necessarily emit observable events. This property of POM is used to model, as the hidden process, a common search behavior that users would read and skip search results, leaving no observable user actions to record in the search logs. The Markov nature of the model further lends support to cope with the facts that a single observed sequence can be probabilistically associated with many hidden sequences that have variable lengths, and the search results can be read in various temporal orders that are not necessarily reflected in the observed sequence of user actions. To tackle the implementation challenges accompanying the flexibility and analytic powers of POM, we introduce segmental Viterbi algorithm based on segmental decoding and Viterbi training to train the POM model parameters and apply them to uncover hidden processes from the search logs. To validate the model, the latent variables modeling the browsing patterns on the search result page are compared with the experimental data of the eye tracking stu-dies. The close agreements suggest that the search logs do contain rich information of user behaviors in browsing the search result page even though they are not directly observable, and that using POM to understand these sophisticated search behaviors is a promising approach.</p>
+<p>【Keywords】:
+eye tracking; partially observable markov model; search log mining; segmental viterbi algorithm; web search behaviors</p>
+<h3 id="23. Beyond DCG: user behavior as a predictor of a successful search.">23. Beyond DCG: user behavior as a predictor of a successful search.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718515">Paper Link</a>】    【Pages】:221-230</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Awadallah:Ahmed_Hassan">Ahmed Hassan Awadallah</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jones:Rosie">Rosie Jones</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Klinkner:Kristina_Lisa">Kristina Lisa Klinkner</a></p>
+<p>【Abstract】:
+Web search engines are traditionally evaluated in terms of the relevance of web pages to individual queries. However, relevance of web pages does not tell the complete picture, since an individual query may represent only a piece of the user's information need and users may have different information needs underlying the same queries. In this work, we address the problem of predicting user search goal success by modeling user behavior. We show empirically that user behavior alone can give an accurate picture of the success of the user's web search goals, without considering the relevance of the documents displayed. In fact, our experiments show that models using user behavior are more predictive of goal success than those using document relevance. We build novel sequence models incorporating time distributions for this task and our experiments show that the sequence and time distribution models are more accurate than static models based on user behavior, or predictions based on document relevance.</p>
+<p>【Keywords】:
+query log analysis; search engine evaluation; search sessions; user behavior models; user satisfaction</p>
+<h3 id="24. Measuring the reusability of test collections.">24. Measuring the reusability of test collections.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718516">Paper Link</a>】    【Pages】:231-240</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Carterette:Ben">Ben Carterette</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gabrilovich:Evgeniy">Evgeniy Gabrilovich</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Josifovski:Vanja">Vanja Josifovski</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Metzler:Donald">Donald Metzler</a></p>
+<p>【Abstract】:
+While test collection construction is a time-consuming and expensive process, the true cost is amortized by reusing the collection over hundreds or thousands of experiments. Some of these experiments may involve systems that retrieve documents not judged during the initial construction phase, and some of these systems may be "hard" to evaluate: depending on which judgments are missing and which judged documents were retrieved, the experimenter's confidence in an evaluation could potentially be very low. We propose two methods for quantifying the reusability of a test collection for evaluating new systems. The proposed methods provide simple yet highly effective tests for determining whether an existing set of judgments is useful for evaluating a new system. Empirical evaluations using TREC datasets confirm the usefulness of our proposed reusability measures. In particular, we show that our methods can reliably estimate confidence intervals that are indicative of collection reusability.</p>
+<p>【Keywords】:
+evaluation; reusability; test collections</p>
+<h2 id="Social    5">Social    5</h2>
+<h3 id="25. Learning influence probabilities in social networks.">25. Learning influence probabilities in social networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718518">Paper Link</a>】    【Pages】:241-250</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Goyal_0002:Amit">Amit Goyal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bonchi:Francesco">Francesco Bonchi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lakshmanan:Laks_V=_S=">Laks V. S. Lakshmanan</a></p>
+<p>【Abstract】:
+Recently, there has been tremendous interest in the phenomenon of influence propagation in social networks. The studies in this area assume they have as input to their problems a social graph with edges labeled with probabilities of influence between users. However, the question of where these probabilities come from or how they can be computed from real social network data has been largely ignored until now. Thus it is interesting to ask whether from a social graph and a log of actions by its users, one can build models of influence. This is the main problem attacked in this paper. In addition to proposing models and algorithms for learning the model parameters and for testing the learned models to make predictions, we also develop techniques for predicting the time by which a user may be expected to perform an action. We validate our ideas and techniques using the Flickr data set consisting of a social graph with 1.3M nodes, 40M edges, and an action log consisting of 35M tuples referring to 300K distinct actions. Beyond showing that there is genuine influence happening in a real social network, we show that our techniques have excellent prediction performance.</p>
+<p>【Keywords】:
+influence; social networks; viral marketing</p>
+<h3 id="26. You are who you know: inferring user profiles in online social networks.">26. You are who you know: inferring user profiles in online social networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718519">Paper Link</a>】    【Pages】:251-260</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mislove:Alan">Alan Mislove</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Viswanath:Bimal">Bimal Viswanath</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gummadi:P=_Krishna">P. Krishna Gummadi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Druschel:Peter">Peter Druschel</a></p>
+<p>【Abstract】:
+Online social networks are now a popular way for users to connect, express themselves, and share content. Users in today's online social networks often post a profile, consisting of attributes like geographic location, interests, and schools attended. Such profile information is used on the sites as a basis for grouping users, for sharing content, and for suggesting users who may benefit from interaction. However, in practice, not all users provide these attributes. In this paper, we ask the question: given attributes for some fraction of the users in an online social network, can we infer the attributes of the remaining users? In other words, can the attributes of users, in combination with the social network graph, be used to predict the attributes of another user in the network? To answer this question, we gather fine-grained data from two social networks and try to infer user profile attributes. We find that users with common attributes are more likely to be friends and often form dense communities, and we propose a method of inferring user attributes that is inspired by previous approaches to detecting communities in social networks. Our results show that certain user attributes can be inferred with high accuracy when given information on as little as 20% of the users.</p>
+<p>【Keywords】:
+communities; inferring attributes; social networks</p>
+<h3 id="27. TwitterRank: finding topic-sensitive influential twitterers.">27. TwitterRank: finding topic-sensitive influential twitterers.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718520">Paper Link</a>】    【Pages】:261-270</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Weng:Jianshu">Jianshu Weng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lim:Ee=Peng">Ee-Peng Lim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jiang:Jing">Jing Jiang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/He:Qi">Qi He</a></p>
+<p>【Abstract】:
+This paper focuses on the problem of identifying influential users of micro-blogging services. Twitter, one of the most notable micro-blogging services, employs a social-networking model called "following", in which each user can choose who she wants to "follow" to receive tweets from without requiring the latter to give permission first. In a dataset prepared for this study, it is observed that (1) 72.4% of the users in Twitter follow more than 80% of their followers, and (2) 80.5% of the users have 80% of users they are following follow them back. Our study reveals that the presence of "reciprocity" can be explained by phenomenon of homophily. Based on this finding, TwitterRank, an extension of PageRank algorithm, is proposed to measure the influence of users in Twitter. TwitterRank measures the influence taking both the topical similarity between users and the link structure into account. Experimental results show that TwitterRank outperforms the one Twitter currently uses and other related algorithms, including the original PageRank and Topic-sensitive PageRank.</p>
+<p>【Keywords】:
+influential; pagerank; twitter</p>
+<h3 id="28. Folks in Folksonomies: social link prediction from shared metadata.">28. Folks in Folksonomies: social link prediction from shared metadata.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718521">Paper Link</a>】    【Pages】:271-280</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Schifanella:Rossano">Rossano Schifanella</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Barrat:Alain">Alain Barrat</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cattuto:Ciro">Ciro Cattuto</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Markines:Benjamin">Benjamin Markines</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Menczer:Filippo">Filippo Menczer</a></p>
+<p>【Abstract】:
+Web 2.0 applications have attracted a considerable amount of attention because their open-ended nature allows users to create lightweight semantic scaffolding to organize and share content. To date, the interplay of the social and semantic components of social media has been only partially explored. Here we focus on Flickr and Last.fm, two social media systems in which we can relate the tagging activity of the users with an explicit representation of their social network. We show that a substantial level of local lexical and topical alignment is observable among users who lie close to each other in the social network. We introduce a null model that preserves user activity while removing local correlations, allowing us to disentangle the actual local alignment between users from statistical effects due to the assortative mixing of user activity and centrality in the social network. This analysis suggests that users with similar topical interests are more likely to be friends, and therefore semantic similarity measures among users based solely on their annotation metadata should be predictive of social links. We test this hypothesis on the Last.fm data set, confirming that the social network constructed from semantic similarity captures actual friendship more accurately than Last.fm's suggestions based on listening patterns.</p>
+<p>【Keywords】:
+collaborative tagging; folksonomies; lexical and topical alignment; link prediction; maximum information path; social media; social network; social semantic similarity; web 2.0</p>
+<h3 id="29. GeoFolk: latent spatial semantics in web 2.0 social media.">29. GeoFolk: latent spatial semantics in web 2.0 social media.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718522">Paper Link</a>】    【Pages】:281-290</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sizov:Sergej">Sergej Sizov</a></p>
+<p>【Abstract】:
+We describe an approach for multi-modal characterization of social media by combining text features (e.g. tags as a prominent example of short, unstructured text labels) with spatial knowledge (e.g. geotags and coordinates of images and videos). Our model-based framework GeoFolk combines these two aspects in order to construct better algorithms for content management, retrieval, and sharing. The approach is based on multi-modal Bayesian models which allow us to integrate spatial semantics of social media in a well-formed, probabilistic manner. We systematically evaluate the solution on a subset of Flickr data, in characteristic scenarios of tag recommendation, content classification, and clustering. Experimental results show that our method outperforms baseline techniques that are based on one of the aspects alone. The approach described in this contribution can also be used in other domains such as Geoweb retrieval.</p>
+<p>【Keywords】:
+bayesian learning; geodata; mcmc; tagging; web2.0</p>
+<h2 id="Temporal interaction    3">Temporal interaction    3</h2>
+<h3 id="30. Learning similarity metrics for event identification in social media.">30. Learning similarity metrics for event identification in social media.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718524">Paper Link</a>】    【Pages】:291-300</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Becker:Hila">Hila Becker</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Naaman:Mor">Mor Naaman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gravano:Luis">Luis Gravano</a></p>
+<p>【Abstract】:
+Social media sites (e.g., Flickr, YouTube, and Facebook) are a popular distribution outlet for users looking to share their experiences and interests on the Web. These sites host substantial amounts of user-contributed materials (e.g., photographs, videos, and textual content) for a wide variety of real-world events of different type and scale. By automatically identifying these events and their associated user-contributed social media documents, which is the focus of this paper, we can enable event browsing and search in state-of-the-art search engines. To address this problem, we exploit the rich "context" associated with social media content, including user-provided annotations (e.g., title, tags) and automatically generated information (e.g., content creation time). Using this rich context, which includes both textual and non-textual features, we can define appropriate document similarity metrics to enable online clustering of media to events. As a key contribution of this paper, we explore a variety of techniques for learning multi-feature similarity metrics for social media documents in a principled manner. We evaluate our techniques on large-scale, real-world datasets of event images from Flickr. Our evaluation results suggest that our approach identifies events, and their associated social media documents, more effectively than the state-of-the-art strategies on which we build.</p>
+<p>【Keywords】:
+event identification; similarity metric learning; social media</p>
+<h3 id="31. Early online identification of attention gathering items in social media.">31. Early online identification of attention gathering items in social media.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718525">Paper Link</a>】    【Pages】:301-310</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mathioudakis:Michael">Michael Mathioudakis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Koudas:Nick">Nick Koudas</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Marbach:Peter">Peter Marbach</a></p>
+<p>【Abstract】:
+Activity in social media such as blogs, micro-blogs, social networks, etc is manifested via interaction that involves text, images, links and other information items. Naturally, some items attract more attention than others, expressed with large volumes of linking, commenting or tagging activity, to name a few examples. Moreover, high attention can be indicative of emerging events, breaking news or generally indicate information items of interest to a vast set of people. The numbers associated with digital social activity are astonishing: in excess of millions of blog posts, tweets and forums updates per day, millions of tags in photos, news articles or blogs. Being able to identify information items that gather much attention in such a real time information collective is a challenging task. In this paper, we consider the problem of early online identification of items that gather a lot of attention in social media. We model social media activity using ISIS, a stochastic model for Interacting Streaming Information Sources, that intuitively captures the concept of attention gathering information items. Given the challenge of the information overload characterizing digital social activity, we present sequential statistical tests that enable early identification of attention gathering items. This effectively reduces the set of items one has to monitor in real time in order to identify pieces of information attracting a lot of attention. Experiments on real data demonstrate the utility of our model, as well as the efficiency and effectiveness of the proposed sequential statistical tests.</p>
+<p>【Keywords】:
+social media analysis; user activity modeling and exploitation</p>
+<h3 id="32. Evolution of two-sided markets.">32. Evolution of two-sided markets.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718526">Paper Link</a>】    【Pages】:311-320</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kumar:Ravi">Ravi Kumar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lifshits:Yury">Yury Lifshits</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tomkins:Andrew">Andrew Tomkins</a></p>
+<p>【Abstract】:
+Two-sided markets arise when two different types of users may realize gains by interacting with one another through one or more platforms or mediators. We initiate a study of the evolution of such markets. We present an empirical analysis of the value accruing to members of each side of the market, based on the presence of the other side. We codify the range of value curves into a general theoretical model, characterize the equilibrium states of two-sided markets in our model, and prove that each platform will converge to one of these equilibria. We give some early experimental results of the stability of two-sided markets, and close with a theoretical treatment of the formation of different kinds of coalitions in such markets.</p>
+<p>【Keywords】:
+coalitions; equilibrium; preferential attachment; two-sided markets</p>
+<h2 id="Ads    5">Ads    5</h2>
+<h3 id="33. A novel click model and its applications to online advertising.">33. A novel click model and its applications to online advertising.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718528">Paper Link</a>】    【Pages】:321-330</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Zeyuan_Allen">Zeyuan Allen Zhu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Weizhu">Weizhu Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Minka:Tom">Tom Minka</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Chenguang">Chenguang Zhu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Zheng">Zheng Chen</a></p>
+<p>【Abstract】:
+Recent advances in click model have positioned it as an attractive method for representing user preferences in web search and online advertising. Yet, most of the existing works focus on training the click model for individual queries, and cannot accurately model the tail queries due to the lack of training data. Simultaneously, most of the existing works consider the query, url and position, neglecting some other important attributes in click log data, such as the local time. Obviously, the click through rate is different between daytime and midnight. In this paper, we propose a novel click model based on Bayesian network, which is capable of modeling the tail queries because it builds the click model on attribute values, with those values being shared across queries. We called our work General Click Model (GCM) as we found that most of the existing works can be special cases of GCM by assigning different parameters. Experimental results on a large-scale commercial advertisement dataset show that GCM can significantly and consistently lead to better results as compared to the state-of-the-art works.</p>
+<p>【Keywords】:
+advertisement; attribute; bayesian; gaussian; search engine</p>
+<h3 id="34. Adaptive weighing designs for keyword value computation.">34. Adaptive weighing designs for keyword value computation.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718529">Paper Link</a>】    【Pages】:331-340</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Byers:John_W=">John W. Byers</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mitzenmacher:Michael">Michael Mitzenmacher</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zervas:Georgios">Georgios Zervas</a></p>
+<p>【Abstract】:
+Attributing a dollar value to a keyword is an essential part of running any profitable search engine advertising campaign. When an advertiser has complete control over the interaction with and monetization of each user arriving on a given keyword, the value of that term can be accurately tracked. However, in many instances, the advertiser may monetize arrivals indirectly through one or more third parties. In such cases, it is typical for the third party to provide only coarse-grained reporting: rather than report each monetization event, users are aggregated into larger channels and the third party reports aggregate information such as total daily revenue for each channel. Examples of third parties that use channels include Amazon and Google AdSense. In such scenarios, the number of channels is generally much smaller than the number of keywords whose value per click (VPC) we wish to learn. However, the advertiser has flexibility as to how to assign keywords to channels over time. We introduce the channelization problem: how do we adaptively assign keywords to channels over the course of multiple days to quickly obtain accurate VPC estimates of all keywords? We relate this problem to classical results in weighing design, devise new adaptive algorithms for this problem, and quantify the performance of these algorithms experimentally. Our results demonstrate that adaptive weighing designs that exploit statistics of term frequency, variability in VPCs across keywords, and flexible channel assignments over time provide the best estimators of keyword VPCs.</p>
+<p>【Keywords】:
+design of experiments; least squares; regression; weighing designs</p>
+<h3 id="35. Automatic generation of bid phrases for online advertising.">35. Automatic generation of bid phrases for online advertising.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718530">Paper Link</a>】    【Pages】:341-350</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Ravi:Sujith">Sujith Ravi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Broder:Andrei_Z=">Andrei Z. Broder</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gabrilovich:Evgeniy">Evgeniy Gabrilovich</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Josifovski:Vanja">Vanja Josifovski</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pandey:Sandeep">Sandeep Pandey</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pang:Bo">Bo Pang</a></p>
+<p>【Abstract】:
+One of the most prevalent online advertising methods is textual advertising. To produce a textual ad, an advertiser must craft a short creative (the text of the ad) linking to a landing page, which describes the product or service being promoted. Furthermore, the advertiser must associate the creative to a set of manually chosen bid phrases representing those Web search queries that should trigger the ad. For efficiency, given a landing page, the bid phrases are often chosen first, and then for each bid phrase the creative is produced using a template. Nevertheless, an ad campaign (e.g., for a large retailer) might involve thousands of landing pages and tens or hundreds of thousands of bid phrases, hence the entire process is very laborious. Our study aims towards the automatic construction of online ad campaigns: given a landing page, we propose several algorithmic methods to generate bid phrases suitable for the given input. Such phrases must be both relevant (that is, reflect the content of the page) and well-formed (that is, likely to be used as queries to a Web search engine). To this end, we use a two phase approach. First, candidate bid phrases are generated by a number of methods, including a (mono-lingual) translation model capable of generating phrases contained within the text of the input as well as previously "unseen" phrases. Second, the candidates are ranked in a probabilistic framework using both the translation model, which favors relevant phrases, as well as a bid phrase language model, which favors well-formed phrases. Empirical evaluation based on a real-life corpus of advertiser-created landing pages and associated bid phrases confirms the value of our approach, which successfully re-generates many of the human-crafted bid phrases and performs significantly better than a pure text extraction method.</p>
+<p>【Keywords】:
+content match; sponsored search</p>
+<h3 id="36. Personalized click prediction in sponsored search.">36. Personalized click prediction in sponsored search.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718531">Paper Link</a>】    【Pages】:351-360</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cheng:Haibin">Haibin Cheng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cant=uacute==Paz:Erick">Erick Cantú-Paz</a></p>
+<p>【Abstract】:
+Sponsored search is a multi-billion dollar business that generates most of the revenue for search engines. Predicting the probability that users click on ads is crucial to sponsored search because the prediction is used to influence ranking, filtering, placement, and pricing of ads. Ad ranking, filtering and placement have a direct impact on the user experience, as users expect the most useful ads to rank high and be placed in a prominent position on the page. Pricing impacts the advertisers' return on their investment and revenue for the search engine. The objective of this paper is to present a framework for the personalization of click models in sponsored search. We develop user-specific and demographic-based features that reflect the click behavior of individuals and groups. The features are based on observations of search and click behaviors of a large number of users of a commercial search engine. We add these features to a baseline non-personalized click model and perform experiments on offline test sets derived from user logs as well as on live traffic. Our results demonstrate that the personalized models significantly improve the accuracy of click prediction.</p>
+<p>【Keywords】:
+click feedback; click prediction; demographic; maximum entropy modeling; personalization; sponsored search; user profile</p>
+<h3 id="37. Improving ad relevance in sponsored search.">37. Improving ad relevance in sponsored search.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718532">Paper Link</a>】    【Pages】:361-370</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hillard:Dustin">Dustin Hillard</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schroedl:Stefan">Stefan Schroedl</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Manavoglu:Eren">Eren Manavoglu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Raghavan:Hema">Hema Raghavan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Leggetter:Chris">Chris Leggetter</a></p>
+<p>【Abstract】:
+We describe a machine learning approach for predicting sponsored search ad relevance. Our baseline model incorporates basic features of text overlap and we then extend the model to learn from past user clicks on advertisements. We present a novel approach using translation models to learn user click propensity from sparse click logs. Our relevance predictions are then applied to multiple sponsored search applications in both offline editorial evaluations and live online user tests. The predicted relevance score is used to improve the quality of the search page in three areas: filtering low quality ads, more accurate ranking for ads, and optimized page placement of ads to reduce prominent placement of low relevance ads. We show significant gains across all three tasks.</p>
+<p>【Keywords】:
+advertising; clicks; relevance modeling; translation</p>
+<h2 id="Systems and efficiency    5">Systems and efficiency    5</h2>
+<h3 id="38. Revisiting globally sorted indexes for efficient document retrieval.">38. Revisiting globally sorted indexes for efficient document retrieval.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718534">Paper Link</a>】    【Pages】:371-380</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Fan">Fan Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shi:Shuming">Shuming Shi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yan:Hao">Hao Yan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wen:Ji=Rong">Ji-Rong Wen</a></p>
+<p>【Abstract】:
+There has been a large amount of research on efficient document retrieval in both IR and web search areas. One important technique to improve retrieval efficiency is early termination, which speeds up query processing by avoiding scanning the entire inverted lists. Most early termination techniques first build new inverted indexes by sorting the inverted lists in the order of either the term-dependent information, e.g., term frequencies or term IR scores, or the term-independent information, e.g., static rank of the document; and then apply appropriate retrieval strategies on the resulting indexes. Although the methods based only on the static rank have been shown to be ineffective for the early termination, there are still many advantages of using the methods based on term-independent information. In this paper, we propose new techniques to organize inverted indexes based on the term-independent information beyond static rank and study the new retrieval strategies on the resulting indexes. We perform a detailed experimental evaluation on our new techniques and compare them with the existing approaches. Our results on the TREC GOV and GOV2 data sets show that our techniques can improve query efficiency significantly.</p>
+<p>【Keywords】:
+dynamic index pruning; globally-sorted index; top-k</p>
+<h3 id="39. Learning URL patterns for webpage de-duplication.">39. Learning URL patterns for webpage de-duplication.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718535">Paper Link</a>】    【Pages】:381-390</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Koppula:Hema_Swetha">Hema Swetha Koppula</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Leela:Krishna_P=">Krishna P. Leela</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Agarwal:Amit">Amit Agarwal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chitrapura:Krishna_Prasad">Krishna Prasad Chitrapura</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Garg:Sachin">Sachin Garg</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sasturkar:Amit">Amit Sasturkar</a></p>
+<p>【Abstract】:
+Presence of duplicate documents in the World Wide Web adversely affects crawling, indexing and relevance, which are the core building blocks of web search. In this paper, we present a set of techniques to mine rules from URLs and utilize these rules for de-duplication using just URL strings without fetching the content explicitly. Our technique is composed of mining the crawl logs and utilizing clusters of similar pages to extract transformation rules, which are used to normalize URLs belonging to each cluster. Preserving each mined rule for de-duplication is not efficient due to the large number of such rules. We present a machine learning technique to generalize the set of rules, which reduces the resource footprint to be usable at web-scale. The rule extraction techniques are robust against web-site specific URL conventions. We compare the precision and scalability of our approach with recent efforts in using URLs for de-duplication. Experimental results demonstrate that our approach achieves 2 times more reduction in duplicates with only half the rules compared to the most recent previous approach. Scalability of the framework is demonstrated by performing a large scale evaluation on a set of 3 Billion URLs, implemented using the MapReduce framework.</p>
+<p>【Keywords】:
+decision trees; generalization; mapreduce; page importance; search engines; site-specific delimiters; webpage de-duplication</p>
+<h3 id="40. On compressing the textual web.">40. On compressing the textual web.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718536">Paper Link</a>】    【Pages】:391-400</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Ferragina:Paolo">Paolo Ferragina</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Manzini:Giovanni">Giovanni Manzini</a></p>
+<p>【Abstract】:
+Nowadays we know how to effectively compress most basic components of any modern search engine, such as, the graphs arising from the Web structure and/or its usage, the posting lists, and the dictionary of terms. But we are not aware of any study which has deeply addressed the issue of compressing the raw Web pages. Many Web applications use simple compression algorithms--- e.g. gzip, or word-based Move-to-Front or Huffman coders-and conclude that, even compressed, raw data take more space than Inverted Lists. In this paper we investigate two typical scenarios of use of data compression for large Web collections. In the first scenario, the compressed pages are stored on disk and we only need to support the fast scanning of large parts of the compressed collection (such as for map-reduce paradigms). In the second scenario, we consider the fast access to individual pages of the compressed collection that is distributed among the RAMs of many PCs (such as for search engines and miners). For the first scenario, we provide a thorough experimental comparison among state-of-the-art compressors thus indicating pros and cons of the available solutions. For the second scenario, we compare known compressed-storage solutions with the new algorithmic technology of compressed self-indexes [NM07]. Our results show that Web pages are more compressible than expected and, consequently, that some common beliefs in this area should be reconsidered. Our results are novel for the large spectrum of tested approaches and the size of datasets, and provide a threefold contribution: a non-trivial baseline for designing new compressed-storage solutions, a guide for software developers faced with Web-page storage, and a natural complement to the recent figures on InvertedList-compression achieved by [Yan et al, sigir 09 and www 09].</p>
+<p>【Keywords】:
+burrows-wheeler transform; compressed (self-)indexes; lossless data compression; text compression</p>
+<h3 id="41. A sketch-based distance oracle for web-scale graphs.">41. A sketch-based distance oracle for web-scale graphs.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718537">Paper Link</a>】    【Pages】:401-410</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sarma:Atish_Das">Atish Das Sarma</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gollapudi:Sreenivas">Sreenivas Gollapudi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Najork:Marc">Marc Najork</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Panigrahy:Rina">Rina Panigrahy</a></p>
+<p>【Abstract】:
+We study the fundamental problem of computing distances between nodes in large graphs such as the web graph and social networks. Our objective is to be able to answer distance queries between pairs of nodes in real time. Since the standard shortest path algorithms are expensive, our approach moves the time-consuming shortest-path computation offline, and at query time only looks up precomputed values and performs simple and fast computations on these precomputed values. More specifically, during the offline phase we compute and store a small "sketch" for each node in the graph, and at query-time we look up the sketches of the source and destination nodes and perform a simple computation using these two sketches to estimate the distance.</p>
+<p>【Keywords】:
+algorithms; distance computation; embedding; shortest path; sketching</p>
+<h3 id="42. Early exit optimizations for additive machine learned ranking systems.">42. Early exit optimizations for additive machine learned ranking systems.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718538">Paper Link</a>】    【Pages】:411-420</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cambazoglu:Berkant_Barla">Berkant Barla Cambazoglu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zaragoza:Hugo">Hugo Zaragoza</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chapelle:Olivier">Olivier Chapelle</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Jiang">Jiang Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liao:Ciya">Ciya Liao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zheng:Zhaohui">Zhaohui Zheng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Degenhardt:Jon">Jon Degenhardt</a></p>
+<p>【Abstract】:
+Some commercial web search engines rely on sophisticated machine learning systems for ranking web documents. Due to very large collection sizes and tight constraints on query response times, online efficiency of these learning systems forms a bottleneck. An important problem in such systems is to speedup the ranking process without sacrificing much from the quality of results. In this paper, we propose optimization strategies that allow short-circuiting score computations in additive learning systems. The strategies are evaluated over a state-of-the-art machine learning system and a large, real-life query log, obtained from Yahoo!. By the proposed strategies, we are able to speedup the score computations by more than four times with almost no loss in result quality.</p>
+<p>【Keywords】:
+early exit; machine learning; optimization; web search</p>
+<h2 id="Web mining    3">Web mining    3</h2>
+<h3 id="43. SBotMiner: large scale search bot detection.">43. SBotMiner: large scale search bot detection.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718540">Paper Link</a>】    【Pages】:421-430</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yu:Fang">Fang Yu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xie:Yinglian">Yinglian Xie</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Ke:Qifa">Qifa Ke</a></p>
+<p>【Abstract】:
+In this paper, we study search bot traffic from search engine query logs at a large scale. Although bots that generate search traffic aggressively can be easily detected, a large number of distributed, low rate search bots are difficult to identify and are often associated with malicious attacks. We present SBotMiner, a system for automatically identifying stealthy, low-rate search bot traffic from query logs. Instead of detecting individual bots, our approach captures groups of distributed, coordinated search bots. Using sampled data from two different months, SBotMiner identifies over 123 million bot-related pageviews, accounting for 3.8% of total traffic. Our in-depth analysis shows that a large fraction of the identified bot traffic may be associated with various malicious activities such as phishing attacks or vulnerability exploits. This finding suggests that detecting search bot traffic holds great promise to detect and stop attacks early on.</p>
+<p>【Keywords】:
+botnet detection; click fraud; search bot; search log analysis; web search</p>
+<h3 id="44. Gathering and ranking photos of named entities with high precision, high recall, and diversity.">44. Gathering and ranking photos of named entities with high precision, high recall, and diversity.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718541">Paper Link</a>】    【Pages】:431-440</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Taneva:Bilyana">Bilyana Taneva</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kacimi:Mouna">Mouna Kacimi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Weikum:Gerhard">Gerhard Weikum</a></p>
+<p>【Abstract】:
+Knowledge-sharing communities like Wikipedia and automated extraction methods like those of DBpedia enable the construction of large machine-processible knowledge bases with relational facts about entities. These endeavors lack multimodal data like photos and videos of people and places. While photos of famous entities are abundant on the Internet, they are much harder to retrieve for less popular entities such as notable computer scientists or regionally interesting churches. Querying the entity names in image search engines yields large candidate lists, but they often have low precision and unsatisfactory recall. Our goal is to populate a knowledge base with photos of named entities, with high precision, high recall, and diversity of photos for a given entity. We harness relational facts about entities for generating expanded queries to retrieve different candidate lists from image search engines. We use a weighted voting method to determine better rankings of an entity's photos. Appropriate weights are dependent on the type of entity (e.g., scientist vs. politician) and automatically computed from a small set of training entities. We also exploit visual similarity measures based on SIFT features, for higher diversity in the final rankings. Our experiments with photos of persons and landmarks show significant improvements of ranking measures like MAP and NDCG, and also for diversity-aware ranking.</p>
+<p>【Keywords】:
+image gathering; knowledge base; query expansion; ranking</p>
+<h3 id="45. Boilerplate detection using shallow text features.">45. Boilerplate detection using shallow text features.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1718487.1718542">Paper Link</a>】    【Pages】:441-450</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kohlsch=uuml=tter:Christian">Christian Kohlschütter</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fankhauser:Peter">Peter Fankhauser</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nejdl:Wolfgang">Wolfgang Nejdl</a></p>
+<p>【Abstract】:
+In addition to the actual content Web pages consist of navigational elements, templates, and advertisements. This boilerplate text typically is not related to the main content, may deteriorate search precision and thus needs to be detected properly. In this paper, we analyze a small set of shallow text features for classifying the individual text elements in a Web page. We compare the approach to complex, state-of-the-art techniques and show that competitive accuracy can be achieved, at almost no cost. Moreover, we derive a simple and plausible stochastic model for describing the boilerplate creation process. With the help of our model, we also quantify the impact of boilerplate removal to retrieval performance and show significant improvements over the baseline. Finally, we extend the principled approach by straight-forward heuristics, achieving a remarkable detection accuracy.</p>
+<p>【Keywords】:
+boilerplate removal; full-text extraction; template detection; text cleaning; web document modeling</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+
+<div class="theme" >
+<i title='主题' onclick="setStyle()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<!-- 更换theme -->
+<script type="text/javascript">
+function setStyle(){ 
+    if(document.getElementById("dark").disabled){
+        document.getElementById("light").disabled = true; 
+        document.getElementById("dark").disabled = false; 
+        }
+    else{
+        document.getElementById("dark").disabled = true; 
+        document.getElementById("light").disabled = false; 
+        }
+    }
+</script>
+
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="http://huntercmd.github.io"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>
