@@ -2,19 +2,13 @@
 <head>
 <meta name="HunterCmd" charset="utf-8">
 
-<link href="../config/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="light" rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/huntercmd/blog/master/config/css/light.css">
+<link id="dark" rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/huntercmd/blog/master/config/css/dark.css" disabled/>
 
-<link id="light" rel="stylesheet" type="text/css" href="../config/css/light.css" />  
-<link id="dark" rel="stylesheet" type="text/css" href="../config/css/dark.css" disabled/>
-
-<script src="../config/css/classie.js"></script>
-
+<script src="https://raw.githubusercontent.com/huntercmd/blog/master/config/css/classie.js"></script>
 
 <!-- This is for Mathjax -->
-
-<script type="text/javascript"
-  src="../config/mathjax2.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
 
 <script type="text/x-mathjax-config">
 	MathJax.Hub.Config({
@@ -28,6 +22,11 @@
 		SVG: {linebreaks: {automatic: true}}
 	});
 </script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
 
 <title>HunterCmd</title>
 </head>
@@ -619,25 +618,9 @@ Mobile applications are part of the everyday lives of billions of people, who of
 <i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
 </div>
 
-
 <div class="theme" >
-<i title='主题' onclick="setStyle()"><i class="fa fa-adjust fa-lg"></i></i>
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
 </div>
-
-<!-- 更换theme -->
-<script type="text/javascript">
-function setStyle(){ 
-    if(document.getElementById("dark").disabled){
-        document.getElementById("light").disabled = true; 
-        document.getElementById("dark").disabled = false; 
-        }
-    else{
-        document.getElementById("dark").disabled = true; 
-        document.getElementById("light").disabled = false; 
-        }
-    }
-</script>
-
 
 <div id="footer">
 
