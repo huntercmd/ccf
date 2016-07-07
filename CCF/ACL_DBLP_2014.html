@@ -1,0 +1,1126 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/skin.js"></script>
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/classie.js"></script>
+
+<!-- This is for Mathjax -->
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#52. ACL 2014:Baltimore, MD, USA">52. ACL 2014:Baltimore, MD, USA</a><ul>
+<li><a href="#Paper Num: 148 || Session Num: 0">Paper Num: 148 || Session Num: 0</a><ul>
+<li><a href="#1. Front Matter.">1. Front Matter.</a></li>
+<li><a href="#2. Learning Ensembles of Structured Prediction Rules.">2. Learning Ensembles of Structured Prediction Rules.</a></li>
+<li><a href="#3. Representation Learning for Text-level Discourse Parsing.">3. Representation Learning for Text-level Discourse Parsing.</a></li>
+<li><a href="#4. Text-level Discourse Dependency Parsing.">4. Text-level Discourse Dependency Parsing.</a></li>
+<li><a href="#5. Discovering Latent Structure in Task-Oriented Dialogues.">5. Discovering Latent Structure in Task-Oriented Dialogues.</a></li>
+<li><a href="#6. Learning Structured Perceptrons for Coreference Resolution with Latent Antecedents and Non-local Features.">6. Learning Structured Perceptrons for Coreference Resolution with Latent Antecedents and Non-local Features.</a></li>
+<li><a href="#7. Multilingual Models for Compositional Distributed Semantics.">7. Multilingual Models for Compositional Distributed Semantics.</a></li>
+<li><a href="#8. Simple Negation Scope Resolution through Deep Parsing: A Semantic Solution to a Semantic Problem.">8. Simple Negation Scope Resolution through Deep Parsing: A Semantic Solution to a Semantic Problem.</a></li>
+<li><a href="#9. Logical Inference on Dependency-based Compositional Semantics.">9. Logical Inference on Dependency-based Compositional Semantics.</a></li>
+<li><a href="#10. A practical and linguistically-motivated approach to compositional distributional semantics.">10. A practical and linguistically-motivated approach to compositional distributional semantics.</a></li>
+<li><a href="#11. Lattice Desegmentation for Statistical Machine Translation.">11. Lattice Desegmentation for Statistical Machine Translation.</a></li>
+<li><a href="#12. Bilingually-constrained Phrase Embeddings for Machine Translation.">12. Bilingually-constrained Phrase Embeddings for Machine Translation.</a></li>
+<li><a href="#13. Learning New Semi-Supervised Deep Auto-encoder Features for Statistical Machine Translation.">13. Learning New Semi-Supervised Deep Auto-encoder Features for Statistical Machine Translation.</a></li>
+<li><a href="#14. Learning Topic Representation for SMT with Neural Networks.">14. Learning Topic Representation for SMT with Neural Networks.</a></li>
+<li><a href="#15. Tagging The Web: Building A Robust Web Tagger with Neural Network.">15. Tagging The Web: Building A Robust Web Tagger with Neural Network.</a></li>
+<li><a href="#16. Unsupervised Solution Post Identification from Discussion Forums.">16. Unsupervised Solution Post Identification from Discussion Forums.</a></li>
+<li><a href="#17. Weakly Supervised User Profile Extraction from Twitter.">17. Weakly Supervised User Profile Extraction from Twitter.</a></li>
+<li><a href="#18. The effect of wording on message propagation: Topic- and author-controlled natural experiments on Twitter.">18. The effect of wording on message propagation: Topic- and author-controlled natural experiments on Twitter.</a></li>
+<li><a href="#19. Inferring User Political Preferences from Streaming Communications.">19. Inferring User Political Preferences from Streaming Communications.</a></li>
+<li><a href="#20. Steps to Excellence: Simple Inference with Refined Scoring of Dependency Trees.">20. Steps to Excellence: Simple Inference with Refined Scoring of Dependency Trees.</a></li>
+<li><a href="#21. Sparser, Better, Faster GPU Parsing.">21. Sparser, Better, Faster GPU Parsing.</a></li>
+<li><a href="#22. Shift-Reduce CCG Parsing with a Dependency Model.">22. Shift-Reduce CCG Parsing with a Dependency Model.</a></li>
+<li><a href="#23. Less Grammar, More Features.">23. Less Grammar, More Features.</a></li>
+<li><a href="#24. Don't count, predict! A systematic comparison of context-counting vs. context-predicting semantic vectors.">24. Don't count, predict! A systematic comparison of context-counting vs. context-predicting semantic vectors.</a></li>
+<li><a href="#25. Metaphor Detection with Cross-Lingual Model Transfer.">25. Metaphor Detection with Cross-Lingual Model Transfer.</a></li>
+<li><a href="#26. Learning Word Sense Distributions, Detecting Unattested Senses and Identifying Novel Senses Using Topic Models.">26. Learning Word Sense Distributions, Detecting Unattested Senses and Identifying Novel Senses Using Topic Models.</a></li>
+<li><a href="#27. Learning to Automatically Solve Algebra Word Problems.">27. Learning to Automatically Solve Algebra Word Problems.</a></li>
+<li><a href="#28. Modelling function words improves unsupervised word segmentation.">28. Modelling function words improves unsupervised word segmentation.</a></li>
+<li><a href="#29. Max-Margin Tensor Neural Network for Chinese Word Segmentation.">29. Max-Margin Tensor Neural Network for Chinese Word Segmentation.</a></li>
+<li><a href="#30. An Empirical Study on the Effect of Negation Words on Sentiment.">30. An Empirical Study on the Effect of Negation Words on Sentiment.</a></li>
+<li><a href="#31. Extracting Opinion Targets and Opinion Words from Online Reviews with Graph Co-ranking.">31. Extracting Opinion Targets and Opinion Words from Online Reviews with Graph Co-ranking.</a></li>
+<li><a href="#32. Context-aware Learning for Sentence-level Sentiment Analysis with Posterior Regularization.">32. Context-aware Learning for Sentence-level Sentiment Analysis with Posterior Regularization.</a></li>
+<li><a href="#33. Product Feature Mining: Semantic Clues versus Syntactic Constituents.">33. Product Feature Mining: Semantic Clues versus Syntactic Constituents.</a></li>
+<li><a href="#34. Aspect Extraction with Automated Prior Knowledge Learning.">34. Aspect Extraction with Automated Prior Knowledge Learning.</a></li>
+<li><a href="#35. Anchors Regularized: Adding Robustness and Extensibility to Scalable Topic-Modeling Algorithms.">35. Anchors Regularized: Adding Robustness and Extensibility to Scalable Topic-Modeling Algorithms.</a></li>
+<li><a href="#36. A Bayesian Mixed Effects Model of Literary Character.">36. A Bayesian Mixed Effects Model of Literary Character.</a></li>
+<li><a href="#37. Collective Tweet Wikification based on Semi-supervised Graph Regularization.">37. Collective Tweet Wikification based on Semi-supervised Graph Regularization.</a></li>
+<li><a href="#38. Zero-shot Entity Extraction from Web Pages.">38. Zero-shot Entity Extraction from Web Pages.</a></li>
+<li><a href="#39. Incremental Joint Extraction of Entity Mentions and Relations.">39. Incremental Joint Extraction of Entity Mentions and Relations.</a></li>
+<li><a href="#40. That's Not What I Meant! Using Parsers to Avoid Structural Ambiguities in Generated Text.">40. That's Not What I Meant! Using Parsers to Avoid Structural Ambiguities in Generated Text.</a></li>
+<li><a href="#41. Surface Realisation from Knowledge-Bases.">41. Surface Realisation from Knowledge-Bases.</a></li>
+<li><a href="#42. Hybrid Simplification using Deep Semantics and Machine Translation.">42. Hybrid Simplification using Deep Semantics and Machine Translation.</a></li>
+<li><a href="#43. Grammatical Relations in Chinese: GB-Ground Extraction and Data-Driven Parsing.">43. Grammatical Relations in Chinese: GB-Ground Extraction and Data-Driven Parsing.</a></li>
+<li><a href="#44. Ambiguity-aware Ensemble Training for Semi-supervised Dependency Parsing.">44. Ambiguity-aware Ensemble Training for Semi-supervised Dependency Parsing.</a></li>
+<li><a href="#45. A Robust Approach to Aligning Heterogeneous Lexical Resources.">45. A Robust Approach to Aligning Heterogeneous Lexical Resources.</a></li>
+<li><a href="#46. Predicting the relevance of distributional semantic similarity with contextual information.">46. Predicting the relevance of distributional semantic similarity with contextual information.</a></li>
+<li><a href="#47. Interpretable Semantic Vectors from a Joint Model of Brain- and Text- Based Meaning.">47. Interpretable Semantic Vectors from a Joint Model of Brain- and Text- Based Meaning.</a></li>
+<li><a href="#48. Single-Agent vs. Multi-Agent Techniques for Concurrent Reinforcement Learning of Negotiation Dialogue Policies.">48. Single-Agent vs. Multi-Agent Techniques for Concurrent Reinforcement Learning of Negotiation Dialogue Policies.</a></li>
+<li><a href="#49. A Linear-Time Bottom-Up Discourse Parser with Constraints and Post-Editing.">49. A Linear-Time Bottom-Up Discourse Parser with Constraints and Post-Editing.</a></li>
+<li><a href="#50. Negation Focus Identification with Contextual Discourse Information.">50. Negation Focus Identification with Contextual Discourse Information.</a></li>
+<li><a href="#51. New Word Detection for Sentiment Analysis.">51. New Word Detection for Sentiment Analysis.</a></li>
+<li><a href="#52. ReNew: A Semi-Supervised Framework for Generating Domain-Specific Lexicons and Sentiment Analysis.">52. ReNew: A Semi-Supervised Framework for Generating Domain-Specific Lexicons and Sentiment Analysis.</a></li>
+<li><a href="#53. A Decision-Theoretic Approach to Natural Language Generation.">53. A Decision-Theoretic Approach to Natural Language Generation.</a></li>
+<li><a href="#54. Generating Code-switched Text for Lexical Learning.">54. Generating Code-switched Text for Lexical Learning.</a></li>
+<li><a href="#55. Omni-word Feature and Soft Constraint for Chinese Relation Extraction.">55. Omni-word Feature and Soft Constraint for Chinese Relation Extraction.</a></li>
+<li><a href="#56. Bilingual Active Learning for Relation Classification via Pseudo Parallel Corpora.">56. Bilingual Active Learning for Relation Classification via Pseudo Parallel Corpora.</a></li>
+<li><a href="#57. Learning Soft Linear Constraints with Application to Citation Field Extraction.">57. Learning Soft Linear Constraints with Application to Citation Field Extraction.</a></li>
+<li><a href="#58. A Study of Concept-based Weighting Regularization for Medical Records Search.">58. A Study of Concept-based Weighting Regularization for Medical Records Search.</a></li>
+<li><a href="#59. Learning to Predict Distributions of Words Across Domains.">59. Learning to Predict Distributions of Words Across Domains.</a></li>
+<li><a href="#60. How to make words with vectors: Phrase generation in distributional semantics.">60. How to make words with vectors: Phrase generation in distributional semantics.</a></li>
+<li><a href="#61. Vector space semantics with frequency-driven motifs.">61. Vector space semantics with frequency-driven motifs.</a></li>
+<li><a href="#62. Lexical Inference over Multi-Word Predicates: A Distributional Approach.">62. Lexical Inference over Multi-Word Predicates: A Distributional Approach.</a></li>
+<li><a href="#63. A Convolutional Neural Network for Modelling Sentences.">63. A Convolutional Neural Network for Modelling Sentences.</a></li>
+<li><a href="#64. Online Learning in Tensor Space.">64. Online Learning in Tensor Space.</a></li>
+<li><a href="#65. Graph-based Semi-Supervised Learning of Translation Models from Monolingual Data.">65. Graph-based Semi-Supervised Learning of Translation Models from Monolingual Data.</a></li>
+<li><a href="#66. Using Discourse Structure Improves Machine Translation Evaluation.">66. Using Discourse Structure Improves Machine Translation Evaluation.</a></li>
+<li><a href="#67. Learning Continuous Phrase Representations for Translation Modeling.">67. Learning Continuous Phrase Representations for Translation Modeling.</a></li>
+<li><a href="#68. Adaptive Quality Estimation for Machine Translation.">68. Adaptive Quality Estimation for Machine Translation.</a></li>
+<li><a href="#69. Learning Grounded Meaning Representations with Autoencoders.">69. Learning Grounded Meaning Representations with Autoencoders.</a></li>
+<li><a href="#70. Joint POS Tagging and Transition-based Constituent Parsing in Chinese with Non-local Features.">70. Joint POS Tagging and Transition-based Constituent Parsing in Chinese with Non-local Features.</a></li>
+<li><a href="#71. Strategies for Contiguous Multiword Expression Analysis and Dependency Parsing.">71. Strategies for Contiguous Multiword Expression Analysis and Dependency Parsing.</a></li>
+<li><a href="#72. Correcting Preposition Errors in Learner English Using Error Case Frames and Feedback Messages.">72. Correcting Preposition Errors in Learner English Using Error Case Frames and Feedback Messages.</a></li>
+<li><a href="#73. Kneser-Ney Smoothing on Expected Counts.">73. Kneser-Ney Smoothing on Expected Counts.</a></li>
+<li><a href="#74. Robust Entity Clustering via Phylogenetic Inference.">74. Robust Entity Clustering via Phylogenetic Inference.</a></li>
+<li><a href="#75. Linguistic Structured Sparsity in Text Categorization.">75. Linguistic Structured Sparsity in Text Categorization.</a></li>
+<li><a href="#76. Perplexity on Reduced Corpora.">76. Perplexity on Reduced Corpora.</a></li>
+<li><a href="#77. Robust Domain Adaptation for Relation Extraction via Clustering Consistency.">77. Robust Domain Adaptation for Relation Extraction via Clustering Consistency.</a></li>
+<li><a href="#78. Encoding Relation Requirements for Relation Extraction via Joint Inference.">78. Encoding Relation Requirements for Relation Extraction via Joint Inference.</a></li>
+<li><a href="#79. Medical Relation Extraction with Manifold Models.">79. Medical Relation Extraction with Manifold Models.</a></li>
+<li><a href="#80. Distant Supervision for Relation Extraction with Matrix Completion.">80. Distant Supervision for Relation Extraction with Matrix Completion.</a></li>
+<li><a href="#81. Enhancing Grammatical Cohesion: Generating Transitional Expressions for SMT.">81. Enhancing Grammatical Cohesion: Generating Transitional Expressions for SMT.</a></li>
+<li><a href="#82. Adaptive HTER Estimation for Document-Specific MT Post-Editing.">82. Adaptive HTER Estimation for Document-Specific MT Post-Editing.</a></li>
+<li><a href="#83. Translation Assistance by Translation of L1 Fragments in an L2 Context.">83. Translation Assistance by Translation of L1 Fragments in an L2 Context.</a></li>
+<li><a href="#84. Response-based Learning for Grounded Machine Translation.">84. Response-based Learning for Grounded Machine Translation.</a></li>
+<li><a href="#85. Modelling Events through Memory-based, Open-IE Patterns for Abstractive Summarization.">85. Modelling Events through Memory-based, Open-IE Patterns for Abstractive Summarization.</a></li>
+<li><a href="#86. Hierarchical Summarization: Scaling Up Multi-Document Summarization.">86. Hierarchical Summarization: Scaling Up Multi-Document Summarization.</a></li>
+<li><a href="#87. Query-Chain Focused Summarization.">87. Query-Chain Focused Summarization.</a></li>
+<li><a href="#88. Exploiting Timelines to Enhance Multi-document Summarization.">88. Exploiting Timelines to Enhance Multi-document Summarization.</a></li>
+<li><a href="#89. A chance-corrected measure of inter-annotator agreement for syntax.">89. A chance-corrected measure of inter-annotator agreement for syntax.</a></li>
+<li><a href="#90. Two Is Bigger (and Better">90. Two Is Bigger (and Better) Than One: the Wikipedia Bitaxonomy Project.</a> Than One: the Wikipedia Bitaxonomy Project.)</li>
+<li><a href="#91. Information Extraction over Structured Data: Question Answering with Freebase.">91. Information Extraction over Structured Data: Question Answering with Freebase.</a></li>
+<li><a href="#92. Knowledge-Based Question Answering as Machine Translation.">92. Knowledge-Based Question Answering as Machine Translation.</a></li>
+<li><a href="#93. Discourse Complements Lexical Semantics for Non-factoid Answer Reranking.">93. Discourse Complements Lexical Semantics for Non-factoid Answer Reranking.</a></li>
+<li><a href="#94. Toward Future Scenario Generation: Extracting Event Causality Exploiting Semantic Relation, Context, and Association Features.">94. Toward Future Scenario Generation: Extracting Event Causality Exploiting Semantic Relation, Context, and Association Features.</a></li>
+<li><a href="#95. Cross-narrative Temporal Ordering of Medical Events.">95. Cross-narrative Temporal Ordering of Medical Events.</a></li>
+<li><a href="#96. Language-Aware Truth Assessment of Fact Candidates.">96. Language-Aware Truth Assessment of Fact Candidates.</a></li>
+<li><a href="#97. That's sick dude!: Automatic identification of word sense change across different timescales.">97. That's sick dude!: Automatic identification of word sense change across different timescales.</a></li>
+<li><a href="#98. A Step-wise Usage-based Method for Inducing Polysemy-aware Verb Classes.">98. A Step-wise Usage-based Method for Inducing Polysemy-aware Verb Classes.</a></li>
+<li><a href="#99. Structured Learning for Taxonomy Induction with Belief Propagation.">99. Structured Learning for Taxonomy Induction with Belief Propagation.</a></li>
+<li><a href="#100. A Provably Correct Learning Algorithm for Latent-Variable PCFGs.">100. A Provably Correct Learning Algorithm for Latent-Variable PCFGs.</a></li>
+<li><a href="#101. Spectral Unsupervised Parsing with Additive Tree Metrics.">101. Spectral Unsupervised Parsing with Additive Tree Metrics.</a></li>
+<li><a href="#102. Weak semantic context helps phonetic learning in a model of infant language acquisition.">102. Weak semantic context helps phonetic learning in a model of infant language acquisition.</a></li>
+<li><a href="#103. Bootstrapping into Filler-Gap: An Acquisition Story.">103. Bootstrapping into Filler-Gap: An Acquisition Story.</a></li>
+<li><a href="#104. Nonparametric Learning of Phonological Constraints in Optimality Theory.">104. Nonparametric Learning of Phonological Constraints in Optimality Theory.</a></li>
+<li><a href="#105. Active Learning with Efficient Feature Weighting Methods for Improving Data Quality and Classification Accuracy.">105. Active Learning with Efficient Feature Weighting Methods for Improving Data Quality and Classification Accuracy.</a></li>
+<li><a href="#106. Political Ideology Detection Using Recursive Neural Networks.">106. Political Ideology Detection Using Recursive Neural Networks.</a></li>
+<li><a href="#107. A Unified Model for Soft Linguistic Reordering Constraints in Statistical Machine Translation.">107. A Unified Model for Soft Linguistic Reordering Constraints in Statistical Machine Translation.</a></li>
+<li><a href="#108. Are Two Heads Better than One? Crowdsourced Translation via a Two-Step Collaboration of Non-Professional Translators and Editors.">108. Are Two Heads Better than One? Crowdsourced Translation via a Two-Step Collaboration of Non-Professional Translators and Editors.</a></li>
+<li><a href="#109. A Generalized Language Model as the Combination of Skipped n-grams and Modified Kneser Ney Smoothing.">109. A Generalized Language Model as the Combination of Skipped n-grams and Modified Kneser Ney Smoothing.</a></li>
+<li><a href="#110. A Semiparametric Gaussian Copula Regression Model for Predicting Financial Risks from Earnings Calls.">110. A Semiparametric Gaussian Copula Regression Model for Predicting Financial Risks from Earnings Calls.</a></li>
+<li><a href="#111. Polylingual Tree-Based Topic Models for Translation Domain Adaptation.">111. Polylingual Tree-Based Topic Models for Translation Domain Adaptation.</a></li>
+<li><a href="#112. Low-Resource Semantic Role Labeling.">112. Low-Resource Semantic Role Labeling.</a></li>
+<li><a href="#113. Joint Syntactic and Semantic Parsing with Combinatory Categorial Grammar.">113. Joint Syntactic and Semantic Parsing with Combinatory Categorial Grammar.</a></li>
+<li><a href="#114. Learning Semantic Hierarchies via Word Embeddings.">114. Learning Semantic Hierarchies via Word Embeddings.</a></li>
+<li><a href="#115. Probabilistic Soft Logic for Semantic Textual Similarity.">115. Probabilistic Soft Logic for Semantic Textual Similarity.</a></li>
+<li><a href="#116. Abstractive Summarization of Spoken and Written Conversations Based on Phrasal Queries.">116. Abstractive Summarization of Spoken and Written Conversations Based on Phrasal Queries.</a></li>
+<li><a href="#117. Comparing Multi-label Classification with Reinforcement Learning for Summarisation of Time-series Data.">117. Comparing Multi-label Classification with Reinforcement Learning for Summarisation of Time-series Data.</a></li>
+<li><a href="#118. Approximation Strategies for Multi-Structure Sentence Compression.">118. Approximation Strategies for Multi-Structure Sentence Compression.</a></li>
+<li><a href="#119. Opinion Mining on YouTube.">119. Opinion Mining on YouTube.</a></li>
+<li><a href="#120. Automatic Keyphrase Extraction: A Survey of the State of the Art.">120. Automatic Keyphrase Extraction: A Survey of the State of the Art.</a></li>
+<li><a href="#121. Pattern Dictionary of English Prepositions.">121. Pattern Dictionary of English Prepositions.</a></li>
+<li><a href="#122. Looking at Unbalanced Specialized Comparable Corpora for Bilingual Lexicon Extraction.">122. Looking at Unbalanced Specialized Comparable Corpora for Bilingual Lexicon Extraction.</a></li>
+<li><a href="#123. Validating and Extending Semantic Knowledge Bases using Video Games with a Purpose.">123. Validating and Extending Semantic Knowledge Bases using Video Games with a Purpose.</a></li>
+<li><a href="#124. Shallow Analysis Based Assessment of Syntactic Complexity for Automated Speech Scoring.">124. Shallow Analysis Based Assessment of Syntactic Complexity for Automated Speech Scoring.</a></li>
+<li><a href="#125. Can You Repeat That? Using Word Repetition to Improve Spoken Term Detection.">125. Can You Repeat That? Using Word Repetition to Improve Spoken Term Detection.</a></li>
+<li><a href="#126. Character-Level Chinese Dependency Parsing.">126. Character-Level Chinese Dependency Parsing.</a></li>
+<li><a href="#127. Unsupervised Dependency Parsing with Transferring Distribution via Parallel Guidance and Entropy Regularization.">127. Unsupervised Dependency Parsing with Transferring Distribution via Parallel Guidance and Entropy Regularization.</a></li>
+<li><a href="#128. Unsupervised Morphology-Based Vocabulary Expansion.">128. Unsupervised Morphology-Based Vocabulary Expansion.</a></li>
+<li><a href="#129. Toward Better Chinese Word Segmentation for SMT via Bilingual Constraints.">129. Toward Better Chinese Word Segmentation for SMT via Bilingual Constraints.</a></li>
+<li><a href="#130. Fast and Robust Neural Network Joint Models for Statistical Machine Translation.">130. Fast and Robust Neural Network Joint Models for Statistical Machine Translation.</a></li>
+<li><a href="#131. Low-Rank Tensors for Scoring Dependency Structures.">131. Low-Rank Tensors for Scoring Dependency Structures.</a></li>
+<li><a href="#132. CoSimRank: A Flexible & Efficient Graph-Theoretic Similarity Measure.">132. CoSimRank: A Flexible &amp; Efficient Graph-Theoretic Similarity Measure.</a></li>
+<li><a href="#133. Is this a wampimuk? Cross-modal mapping between distributional semantics and the visual world.">133. Is this a wampimuk? Cross-modal mapping between distributional semantics and the visual world.</a></li>
+<li><a href="#134. Semantic Parsing via Paraphrasing.">134. Semantic Parsing via Paraphrasing.</a></li>
+<li><a href="#135. A Discriminative Graph-Based Parser for the Abstract Meaning Representation.">135. A Discriminative Graph-Based Parser for the Abstract Meaning Representation.</a></li>
+<li><a href="#136. Context-dependent Semantic Parsing for Time Expressions.">136. Context-dependent Semantic Parsing for Time Expressions.</a></li>
+<li><a href="#137. Semantic Frame Identification with Distributed Word Representations.">137. Semantic Frame Identification with Distributed Word Representations.</a></li>
+<li><a href="#138. A Sense-Based Translation Model for Statistical Machine Translation.">138. A Sense-Based Translation Model for Statistical Machine Translation.</a></li>
+<li><a href="#139. Recurrent Neural Networks for Word Alignment Model.">139. Recurrent Neural Networks for Word Alignment Model.</a></li>
+<li><a href="#140. A Constrained Viterbi Relaxation for Bidirectional Word Alignment.">140. A Constrained Viterbi Relaxation for Bidirectional Word Alignment.</a></li>
+<li><a href="#141. A Recursive Recurrent Neural Network for Statistical Machine Translation.">141. A Recursive Recurrent Neural Network for Statistical Machine Translation.</a></li>
+<li><a href="#142. Predicting Instructor's Intervention in MOOC forums.">142. Predicting Instructor's Intervention in MOOC forums.</a></li>
+<li><a href="#143. A Joint Graph Model for Pinyin-to-Chinese Conversion with Typo Correction.">143. A Joint Graph Model for Pinyin-to-Chinese Conversion with Typo Correction.</a></li>
+<li><a href="#144. Smart Selection.">144. Smart Selection.</a></li>
+<li><a href="#145. Modeling Prompt Adherence in Student Essays.">145. Modeling Prompt Adherence in Student Essays.</a></li>
+<li><a href="#146. ConnotationWordNet: Learning Connotation over the Word+Sense Network.">146. ConnotationWordNet: Learning Connotation over the Word+Sense Network.</a></li>
+<li><a href="#147. Learning Sentiment-Specific Word Embedding for Twitter Sentiment Classification.">147. Learning Sentiment-Specific Word Embedding for Twitter Sentiment Classification.</a></li>
+<li><a href="#148. Towards a General Rule for Identifying Deceptive Opinion Spam.">148. Towards a General Rule for Identifying Deceptive Opinion Spam.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="52. ACL 2014:Baltimore, MD, USA">52. ACL 2014:Baltimore, MD, USA</h1>
+<p><a href="http://aclweb.org/anthology/P/P14/">Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics, ACL 2014, June 22-27, 2014, Baltimore, MD, USA, Volume 1: Long Papers.</a> The Association for Computer Linguistics
+【<a href="http://dblp.uni-trier.de/db/conf/acl/acl2014-1.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 148 || Session Num: 0">Paper Num: 148 || Session Num: 0</h2>
+<h3 id="1. Front Matter.">1. Front Matter.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1000.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="2. Learning Ensembles of Structured Prediction Rules.">2. Learning Ensembles of Structured Prediction Rules.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1001.pdf">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cortes:Corinna">Corinna Cortes</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kuznetsov:Vitaly">Vitaly Kuznetsov</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mohri:Mehryar">Mehryar Mohri</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="3. Representation Learning for Text-level Discourse Parsing.">3. Representation Learning for Text-level Discourse Parsing.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1002.pdf">Paper Link</a>】    【Pages】:13-24</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Ji:Yangfeng">Yangfeng Ji</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Eisenstein:Jacob">Jacob Eisenstein</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="4. Text-level Discourse Dependency Parsing.">4. Text-level Discourse Dependency Parsing.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1003.pdf">Paper Link</a>】    【Pages】:25-35</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Sujian">Sujian Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Liang">Liang Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cao:Ziqiang">Ziqiang Cao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Wenjie">Wenjie Li</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="5. Discovering Latent Structure in Task-Oriented Dialogues.">5. Discovering Latent Structure in Task-Oriented Dialogues.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1004.pdf">Paper Link</a>】    【Pages】:36-46</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhai:Ke">Ke Zhai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Williams:Jason_D=">Jason D. Williams</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="6. Learning Structured Perceptrons for Coreference Resolution with Latent Antecedents and Non-local Features.">6. Learning Structured Perceptrons for Coreference Resolution with Latent Antecedents and Non-local Features.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1005.pdf">Paper Link</a>】    【Pages】:47-57</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bj=ouml=rkelund:Anders">Anders Björkelund</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kuhn:Jonas">Jonas Kuhn</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="7. Multilingual Models for Compositional Distributed Semantics.">7. Multilingual Models for Compositional Distributed Semantics.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1006.pdf">Paper Link</a>】    【Pages】:58-68</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hermann:Karl_Moritz">Karl Moritz Hermann</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Blunsom:Phil">Phil Blunsom</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="8. Simple Negation Scope Resolution through Deep Parsing: A Semantic Solution to a Semantic Problem.">8. Simple Negation Scope Resolution through Deep Parsing: A Semantic Solution to a Semantic Problem.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1007.pdf">Paper Link</a>】    【Pages】:69-78</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Packard:Woodley">Woodley Packard</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bender:Emily_M=">Emily M. Bender</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Read:Jonathon">Jonathon Read</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Oepen:Stephan">Stephan Oepen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dridan:Rebecca">Rebecca Dridan</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="9. Logical Inference on Dependency-based Compositional Semantics.">9. Logical Inference on Dependency-based Compositional Semantics.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1008.pdf">Paper Link</a>】    【Pages】:79-89</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Tian:Ran">Ran Tian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Miyao:Yusuke">Yusuke Miyao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Matsuzaki:Takuya">Takuya Matsuzaki</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="10. A practical and linguistically-motivated approach to compositional distributional semantics.">10. A practical and linguistically-motivated approach to compositional distributional semantics.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1009.pdf">Paper Link</a>】    【Pages】:90-99</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Paperno:Denis">Denis Paperno</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pham:Nghia_The">Nghia The Pham</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Baroni:Marco">Marco Baroni</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="11. Lattice Desegmentation for Statistical Machine Translation.">11. Lattice Desegmentation for Statistical Machine Translation.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1010.pdf">Paper Link</a>】    【Pages】:100-110</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Salameh:Mohammad">Mohammad Salameh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cherry:Colin">Colin Cherry</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kondrak:Grzegorz">Grzegorz Kondrak</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="12. Bilingually-constrained Phrase Embeddings for Machine Translation.">12. Bilingually-constrained Phrase Embeddings for Machine Translation.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1011.pdf">Paper Link</a>】    【Pages】:111-121</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Jiajun">Jiajun Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Shujie">Shujie Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Mu">Mu Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Ming">Ming Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zong:Chengqing">Chengqing Zong</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="13. Learning New Semi-Supervised Deep Auto-encoder Features for Statistical Machine Translation.">13. Learning New Semi-Supervised Deep Auto-encoder Features for Statistical Machine Translation.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1012.pdf">Paper Link</a>】    【Pages】:122-132</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lu:Shixiang">Shixiang Lu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Zhenbiao">Zhenbiao Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Bo">Bo Xu</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="14. Learning Topic Representation for SMT with Neural Networks.">14. Learning Topic Representation for SMT with Neural Networks.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1013.pdf">Paper Link</a>】    【Pages】:133-143</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cui:Lei">Lei Cui</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Dongdong">Dongdong Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Shujie">Shujie Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Qiming">Qiming Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Mu">Mu Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Ming">Ming Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Muyun">Muyun Yang</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="15. Tagging The Web: Building A Robust Web Tagger with Neural Network.">15. Tagging The Web: Building A Robust Web Tagger with Neural Network.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1014.pdf">Paper Link</a>】    【Pages】:144-154</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Ma:Ji">Ji Ma</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Yue">Yue Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Jingbo">Jingbo Zhu</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="16. Unsupervised Solution Post Identification from Discussion Forums.">16. Unsupervised Solution Post Identification from Discussion Forums.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1015.pdf">Paper Link</a>】    【Pages】:155-164</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/P:Deepak">Deepak P</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Visweswariah:Karthik">Karthik Visweswariah</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="17. Weakly Supervised User Profile Extraction from Twitter.">17. Weakly Supervised User Profile Extraction from Twitter.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1016.pdf">Paper Link</a>】    【Pages】:165-174</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Jiwei">Jiwei Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ritter:Alan">Alan Ritter</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hovy:Eduard_H=">Eduard H. Hovy</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="18. The effect of wording on message propagation: Topic- and author-controlled natural experiments on Twitter.">18. The effect of wording on message propagation: Topic- and author-controlled natural experiments on Twitter.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1017.pdf">Paper Link</a>】    【Pages】:175-185</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Tan:Chenhao">Chenhao Tan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Lillian">Lillian Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pang:Bo">Bo Pang</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="19. Inferring User Political Preferences from Streaming Communications.">19. Inferring User Political Preferences from Streaming Communications.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1018.pdf">Paper Link</a>】    【Pages】:186-196</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/v/Volkova:Svitlana">Svitlana Volkova</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Coppersmith:Glen">Glen Coppersmith</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Durme:Benjamin_Van">Benjamin Van Durme</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="20. Steps to Excellence: Simple Inference with Refined Scoring of Dependency Trees.">20. Steps to Excellence: Simple Inference with Refined Scoring of Dependency Trees.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1019.pdf">Paper Link</a>】    【Pages】:197-207</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Yuan">Yuan Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lei:Tao">Tao Lei</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Barzilay:Regina">Regina Barzilay</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jaakkola:Tommi_S=">Tommi S. Jaakkola</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Globerson:Amir">Amir Globerson</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="21. Sparser, Better, Faster GPU Parsing.">21. Sparser, Better, Faster GPU Parsing.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1020.pdf">Paper Link</a>】    【Pages】:208-217</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hall:David_Leo_Wright">David Leo Wright Hall</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Berg=Kirkpatrick:Taylor">Taylor Berg-Kirkpatrick</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Klein:Dan">Dan Klein</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="22. Shift-Reduce CCG Parsing with a Dependency Model.">22. Shift-Reduce CCG Parsing with a Dependency Model.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1021.pdf">Paper Link</a>】    【Pages】:218-227</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Wenduan">Wenduan Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Clark:Stephen">Stephen Clark</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang_0004:Yue">Yue Zhang</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="23. Less Grammar, More Features.">23. Less Grammar, More Features.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1022.pdf">Paper Link</a>】    【Pages】:228-237</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hall:David_Leo_Wright">David Leo Wright Hall</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Durrett:Greg">Greg Durrett</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Klein:Dan">Dan Klein</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="24. Don't count, predict! A systematic comparison of context-counting vs. context-predicting semantic vectors.">24. Don't count, predict! A systematic comparison of context-counting vs. context-predicting semantic vectors.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1023.pdf">Paper Link</a>】    【Pages】:238-247</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Baroni:Marco">Marco Baroni</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dinu:Georgiana">Georgiana Dinu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kruszewski:Germ=aacute=n">Germán Kruszewski</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="25. Metaphor Detection with Cross-Lingual Model Transfer.">25. Metaphor Detection with Cross-Lingual Model Transfer.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1024.pdf">Paper Link</a>】    【Pages】:248-258</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Tsvetkov:Yulia">Yulia Tsvetkov</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Boytsov:Leonid">Leonid Boytsov</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gershman:Anatole">Anatole Gershman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nyberg:Eric">Eric Nyberg</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dyer:Chris">Chris Dyer</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="26. Learning Word Sense Distributions, Detecting Unattested Senses and Identifying Novel Senses Using Topic Models.">26. Learning Word Sense Distributions, Detecting Unattested Senses and Identifying Novel Senses Using Topic Models.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1025.pdf">Paper Link</a>】    【Pages】:259-270</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lau:Jey_Han">Jey Han Lau</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cook:Paul">Paul Cook</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McCarthy:Diana">Diana McCarthy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gella:Spandana">Spandana Gella</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Baldwin:Timothy">Timothy Baldwin</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="27. Learning to Automatically Solve Algebra Word Problems.">27. Learning to Automatically Solve Algebra Word Problems.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1026.pdf">Paper Link</a>】    【Pages】:271-281</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kushman:Nate">Nate Kushman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zettlemoyer:Luke">Luke Zettlemoyer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Barzilay:Regina">Regina Barzilay</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Artzi:Yoav">Yoav Artzi</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="28. Modelling function words improves unsupervised word segmentation.">28. Modelling function words improves unsupervised word segmentation.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1027.pdf">Paper Link</a>】    【Pages】:282-292</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Johnson:Mark">Mark Johnson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Christophe:Anne">Anne Christophe</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dupoux:Emmanuel">Emmanuel Dupoux</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Demuth:Katherine">Katherine Demuth</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="29. Max-Margin Tensor Neural Network for Chinese Word Segmentation.">29. Max-Margin Tensor Neural Network for Chinese Word Segmentation.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1028.pdf">Paper Link</a>】    【Pages】:293-303</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Pei:Wenzhe">Wenzhe Pei</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Ge:Tao">Tao Ge</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chang:Baobao">Baobao Chang</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="30. An Empirical Study on the Effect of Negation Words on Sentiment.">30. An Empirical Study on the Effect of Negation Words on Sentiment.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1029.pdf">Paper Link</a>】    【Pages】:304-313</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Xiaodan">Xiaodan Zhu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Guo:Hongyu">Hongyu Guo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mohammad:Saif">Saif Mohammad</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kiritchenko:Svetlana">Svetlana Kiritchenko</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="31. Extracting Opinion Targets and Opinion Words from Online Reviews with Graph Co-ranking.">31. Extracting Opinion Targets and Opinion Words from Online Reviews with Graph Co-ranking.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1030.pdf">Paper Link</a>】    【Pages】:314-324</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Kang">Kang Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Liheng">Liheng Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhao_0001:Jun">Jun Zhao</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="32. Context-aware Learning for Sentence-level Sentiment Analysis with Posterior Regularization.">32. Context-aware Learning for Sentence-level Sentiment Analysis with Posterior Regularization.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1031.pdf">Paper Link</a>】    【Pages】:325-335</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Bishan">Bishan Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cardie:Claire">Claire Cardie</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="33. Product Feature Mining: Semantic Clues versus Syntactic Constituents.">33. Product Feature Mining: Semantic Clues versus Syntactic Constituents.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1032.pdf">Paper Link</a>】    【Pages】:336-346</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Liheng">Liheng Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Kang">Kang Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lai:Siwei">Siwei Lai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhao_0001:Jun">Jun Zhao</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="34. Aspect Extraction with Automated Prior Knowledge Learning.">34. Aspect Extraction with Automated Prior Knowledge Learning.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1033.pdf">Paper Link</a>】    【Pages】:347-358</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Zhiyuan">Zhiyuan Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mukherjee:Arjun">Arjun Mukherjee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu_0001:Bing">Bing Liu</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="35. Anchors Regularized: Adding Robustness and Extensibility to Scalable Topic-Modeling Algorithms.">35. Anchors Regularized: Adding Robustness and Extensibility to Scalable Topic-Modeling Algorithms.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1034.pdf">Paper Link</a>】    【Pages】:359-369</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Nguyen:Thang">Thang Nguyen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Yuening">Yuening Hu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Boyd=Graber:Jordan_L=">Jordan L. Boyd-Graber</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="36. A Bayesian Mixed Effects Model of Literary Character.">36. A Bayesian Mixed Effects Model of Literary Character.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1035.pdf">Paper Link</a>】    【Pages】:370-379</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bamman:David">David Bamman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/u/Underwood:Ted">Ted Underwood</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Smith:Noah_A=">Noah A. Smith</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="37. Collective Tweet Wikification based on Semi-supervised Graph Regularization.">37. Collective Tweet Wikification based on Semi-supervised Graph Regularization.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1036.pdf">Paper Link</a>】    【Pages】:380-390</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Huang:Hongzhao">Hongzhao Huang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cao:Yunbo">Yunbo Cao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Huang:Xiaojiang">Xiaojiang Huang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Ji:Heng">Heng Ji</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lin:Chin=Yew">Chin-Yew Lin</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="38. Zero-shot Entity Extraction from Web Pages.">38. Zero-shot Entity Extraction from Web Pages.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1037.pdf">Paper Link</a>】    【Pages】:391-401</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Pasupat:Panupong">Panupong Pasupat</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liang:Percy">Percy Liang</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="39. Incremental Joint Extraction of Entity Mentions and Relations.">39. Incremental Joint Extraction of Entity Mentions and Relations.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1038.pdf">Paper Link</a>】    【Pages】:402-412</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Qi">Qi Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Ji:Heng">Heng Ji</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="40. That's Not What I Meant! Using Parsers to Avoid Structural Ambiguities in Generated Text.">40. That's Not What I Meant! Using Parsers to Avoid Structural Ambiguities in Generated Text.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1039.pdf">Paper Link</a>】    【Pages】:413-423</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Duan:Manjuan">Manjuan Duan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/White:Michael">Michael White</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="41. Surface Realisation from Knowledge-Bases.">41. Surface Realisation from Knowledge-Bases.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1040.pdf">Paper Link</a>】    【Pages】:424-434</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gyawali:Bikash">Bikash Gyawali</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gardent:Claire">Claire Gardent</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="42. Hybrid Simplification using Deep Semantics and Machine Translation.">42. Hybrid Simplification using Deep Semantics and Machine Translation.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1041.pdf">Paper Link</a>】    【Pages】:435-445</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Narayan:Shashi">Shashi Narayan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gardent:Claire">Claire Gardent</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="43. Grammatical Relations in Chinese: GB-Ground Extraction and Data-Driven Parsing.">43. Grammatical Relations in Chinese: GB-Ground Extraction and Data-Driven Parsing.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1042.pdf">Paper Link</a>】    【Pages】:436-456</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sun:Weiwei">Weiwei Sun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Du:Yantao">Yantao Du</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kou:Xin">Xin Kou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Ding:Shuoyang">Shuoyang Ding</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wan:Xiaojun">Xiaojun Wan</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="44. Ambiguity-aware Ensemble Training for Semi-supervised Dependency Parsing.">44. Ambiguity-aware Ensemble Training for Semi-supervised Dependency Parsing.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1043.pdf">Paper Link</a>】    【Pages】:457-467</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Zhenghua">Zhenghua Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang_0005:Min">Min Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Wenliang">Wenliang Chen</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="45. A Robust Approach to Aligning Heterogeneous Lexical Resources.">45. A Robust Approach to Aligning Heterogeneous Lexical Resources.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1044.pdf">Paper Link</a>】    【Pages】:468-478</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Pilehvar:Mohammad_Taher">Mohammad Taher Pilehvar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Navigli:Roberto">Roberto Navigli</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="46. Predicting the relevance of distributional semantic similarity with contextual information.">46. Predicting the relevance of distributional semantic similarity with contextual information.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1045.pdf">Paper Link</a>】    【Pages】:479-488</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Muller:Philippe">Philippe Muller</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fabre:C=eacute=cile">Cécile Fabre</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Adam:Cl=eacute=mentine">Clémentine Adam</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="47. Interpretable Semantic Vectors from a Joint Model of Brain- and Text- Based Meaning.">47. Interpretable Semantic Vectors from a Joint Model of Brain- and Text- Based Meaning.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1046.pdf">Paper Link</a>】    【Pages】:489-499</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Fyshe:Alona">Alona Fyshe</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Talukdar:Partha_Pratim">Partha Pratim Talukdar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Murphy:Brian">Brian Murphy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mitchell:Tom_M=">Tom M. Mitchell</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="48. Single-Agent vs. Multi-Agent Techniques for Concurrent Reinforcement Learning of Negotiation Dialogue Policies.">48. Single-Agent vs. Multi-Agent Techniques for Concurrent Reinforcement Learning of Negotiation Dialogue Policies.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1047.pdf">Paper Link</a>】    【Pages】:500-510</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Georgila:Kallirroi">Kallirroi Georgila</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nelson:Claire">Claire Nelson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Traum:David_R=">David R. Traum</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="49. A Linear-Time Bottom-Up Discourse Parser with Constraints and Post-Editing.">49. A Linear-Time Bottom-Up Discourse Parser with Constraints and Post-Editing.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1048.pdf">Paper Link</a>】    【Pages】:511-521</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Feng:Vanessa_Wei">Vanessa Wei Feng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hirst:Graeme">Graeme Hirst</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="50. Negation Focus Identification with Contextual Discourse Information.">50. Negation Focus Identification with Contextual Discourse Information.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1049.pdf">Paper Link</a>】    【Pages】:522-530</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zou:Bowei">Bowei Zou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Guodong">Guodong Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Qiaoming">Qiaoming Zhu</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="51. New Word Detection for Sentiment Analysis.">51. New Word Detection for Sentiment Analysis.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1050.pdf">Paper Link</a>】    【Pages】:531-541</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Huang:Minlie">Minlie Huang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Ye:Borui">Borui Ye</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Yichen">Yichen Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Haiqiang">Haiqiang Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cheng:Junjun">Junjun Cheng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Xiaoyan">Xiaoyan Zhu</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="52. ReNew: A Semi-Supervised Framework for Generating Domain-Specific Lexicons and Sentiment Analysis.">52. ReNew: A Semi-Supervised Framework for Generating Domain-Specific Lexicons and Sentiment Analysis.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1051.pdf">Paper Link</a>】    【Pages】:542-551</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Zhe">Zhe Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Singh:Munindar_P=">Munindar P. Singh</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="53. A Decision-Theoretic Approach to Natural Language Generation.">53. A Decision-Theoretic Approach to Natural Language Generation.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1052.pdf">Paper Link</a>】    【Pages】:552-561</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/McKinley:Nathan">Nathan McKinley</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ray:Soumya">Soumya Ray</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="54. Generating Code-switched Text for Lexical Learning.">54. Generating Code-switched Text for Lexical Learning.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1053.pdf">Paper Link</a>】    【Pages】:562-571</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Labutov:Igor">Igor Labutov</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lipson:Hod">Hod Lipson</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="55. Omni-word Feature and Soft Constraint for Chinese Relation Extraction.">55. Omni-word Feature and Soft Constraint for Chinese Relation Extraction.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1054.pdf">Paper Link</a>】    【Pages】:572-581</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Yanping">Yanping Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zheng:Qinghua">Qinghua Zheng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Wei">Wei Zhang</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="56. Bilingual Active Learning for Relation Classification via Pseudo Parallel Corpora.">56. Bilingual Active Learning for Relation Classification via Pseudo Parallel Corpora.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1055.pdf">Paper Link</a>】    【Pages】:582-592</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/q/Qian:Longhua">Longhua Qian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hui:Haotian">Haotian Hui</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Yanan">Yanan Hu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Guodong">Guodong Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Qiaoming">Qiaoming Zhu</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="57. Learning Soft Linear Constraints with Application to Citation Field Extraction.">57. Learning Soft Linear Constraints with Application to Citation Field Extraction.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1056.pdf">Paper Link</a>】    【Pages】:593-602</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Anzaroot:Sam">Sam Anzaroot</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Passos:Alexandre">Alexandre Passos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Belanger:David">David Belanger</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McCallum:Andrew">Andrew McCallum</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="58. A Study of Concept-based Weighting Regularization for Medical Records Search.">58. A Study of Concept-based Weighting Regularization for Medical Records Search.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1057.pdf">Paper Link</a>】    【Pages】:603-612</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Yue">Yue Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Xitong">Xitong Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fang:Hui">Hui Fang</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="59. Learning to Predict Distributions of Words Across Domains.">59. Learning to Predict Distributions of Words Across Domains.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1058.pdf">Paper Link</a>】    【Pages】:613-623</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bollegala:Danushka">Danushka Bollegala</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Weir:David_J=">David J. Weir</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Carroll:John_A=">John A. Carroll</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="60. How to make words with vectors: Phrase generation in distributional semantics.">60. How to make words with vectors: Phrase generation in distributional semantics.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1059.pdf">Paper Link</a>】    【Pages】:624-633</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dinu:Georgiana">Georgiana Dinu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Baroni:Marco">Marco Baroni</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="61. Vector space semantics with frequency-driven motifs.">61. Vector space semantics with frequency-driven motifs.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1060.pdf">Paper Link</a>】    【Pages】:634-643</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Srivastava:Shashank">Shashank Srivastava</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hovy:Eduard_H=">Eduard H. Hovy</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="62. Lexical Inference over Multi-Word Predicates: A Distributional Approach.">62. Lexical Inference over Multi-Word Predicates: A Distributional Approach.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1061.pdf">Paper Link</a>】    【Pages】:644-654</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Abend:Omri">Omri Abend</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cohen:Shay_B=">Shay B. Cohen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Steedman:Mark">Mark Steedman</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="63. A Convolutional Neural Network for Modelling Sentences.">63. A Convolutional Neural Network for Modelling Sentences.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1062.pdf">Paper Link</a>】    【Pages】:655-665</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kalchbrenner:Nal">Nal Kalchbrenner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Grefenstette:Edward">Edward Grefenstette</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Blunsom:Phil">Phil Blunsom</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="64. Online Learning in Tensor Space.">64. Online Learning in Tensor Space.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1063.pdf">Paper Link</a>】    【Pages】:666-675</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cao:Yuan">Yuan Cao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Khudanpur:Sanjeev">Sanjeev Khudanpur</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="65. Graph-based Semi-Supervised Learning of Translation Models from Monolingual Data.">65. Graph-based Semi-Supervised Learning of Translation Models from Monolingual Data.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1064.pdf">Paper Link</a>】    【Pages】:676-686</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Saluja:Avneesh">Avneesh Saluja</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hassan:Hany">Hany Hassan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Toutanova:Kristina">Kristina Toutanova</a> ; <a href="http://dblp.uni-trier.de/pers/hd/q/Quirk:Chris">Chris Quirk</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="66. Using Discourse Structure Improves Machine Translation Evaluation.">66. Using Discourse Structure Improves Machine Translation Evaluation.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1065.pdf">Paper Link</a>】    【Pages】:687-698</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Guzm=aacute=n:Francisco">Francisco Guzmán</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Joty:Shafiq_R=">Shafiq R. Joty</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/M=agrave=rquez:Llu=iacute=s">Lluís Màrquez</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nakov:Preslav">Preslav Nakov</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="67. Learning Continuous Phrase Representations for Translation Modeling.">67. Learning Continuous Phrase Representations for Translation Modeling.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1066.pdf">Paper Link</a>】    【Pages】:699-709</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gao:Jianfeng">Jianfeng Gao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/He:Xiaodong">Xiaodong He</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yih:Wen=tau">Wen-tau Yih</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Deng:Li">Li Deng</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="68. Adaptive Quality Estimation for Machine Translation.">68. Adaptive Quality Estimation for Machine Translation.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1067.pdf">Paper Link</a>】    【Pages】:710-720</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Turchi:Marco">Marco Turchi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Anastasopoulos:Antonios">Antonios Anastasopoulos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Souza:Jos=eacute=_G=_C=_de">José G. C. de Souza</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Negri:Matteo">Matteo Negri</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="69. Learning Grounded Meaning Representations with Autoencoders.">69. Learning Grounded Meaning Representations with Autoencoders.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1068.pdf">Paper Link</a>】    【Pages】:721-732</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Silberer:Carina">Carina Silberer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lapata:Mirella">Mirella Lapata</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="70. Joint POS Tagging and Transition-based Constituent Parsing in Chinese with Non-local Features.">70. Joint POS Tagging and Transition-based Constituent Parsing in Chinese with Non-local Features.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1069.pdf">Paper Link</a>】    【Pages】:733-742</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Zhiguo">Zhiguo Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xue:Nianwen">Nianwen Xue</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="71. Strategies for Contiguous Multiword Expression Analysis and Dependency Parsing.">71. Strategies for Contiguous Multiword Expression Analysis and Dependency Parsing.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1070.pdf">Paper Link</a>】    【Pages】:743-753</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Candito:Marie">Marie Candito</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Constant:Matthieu">Matthieu Constant</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="72. Correcting Preposition Errors in Learner English Using Error Case Frames and Feedback Messages.">72. Correcting Preposition Errors in Learner English Using Error Case Frames and Feedback Messages.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1071.pdf">Paper Link</a>】    【Pages】:754-764</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Nagata:Ryo">Ryo Nagata</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vilenius:Mikko">Mikko Vilenius</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Whittaker:Edward_W=_D=">Edward W. D. Whittaker</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="73. Kneser-Ney Smoothing on Expected Counts.">73. Kneser-Ney Smoothing on Expected Counts.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1072.pdf">Paper Link</a>】    【Pages】:765-774</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Hui">Hui Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chiang:David">David Chiang</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="74. Robust Entity Clustering via Phylogenetic Inference.">74. Robust Entity Clustering via Phylogenetic Inference.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1073.pdf">Paper Link</a>】    【Pages】:775-785</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Andrews:Nicholas">Nicholas Andrews</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Eisner:Jason">Jason Eisner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dredze:Mark">Mark Dredze</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="75. Linguistic Structured Sparsity in Text Categorization.">75. Linguistic Structured Sparsity in Text Categorization.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1074.pdf">Paper Link</a>】    【Pages】:786-796</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yogatama:Dani">Dani Yogatama</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Smith:Noah_A=">Noah A. Smith</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="76. Perplexity on Reduced Corpora.">76. Perplexity on Reduced Corpora.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1075.pdf">Paper Link</a>】    【Pages】:797-806</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kobayashi:Hayato">Hayato Kobayashi</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="77. Robust Domain Adaptation for Relation Extraction via Clustering Consistency.">77. Robust Domain Adaptation for Relation Extraction via Clustering Consistency.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1076.pdf">Paper Link</a>】    【Pages】:807-817</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Nguyen:Minh_Luan">Minh Luan Nguyen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tsang:Ivor_W=">Ivor W. Tsang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chai:Kian_Ming_Adam">Kian Ming Adam Chai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chieu:Hai_Leong">Hai Leong Chieu</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="78. Encoding Relation Requirements for Relation Extraction via Joint Inference.">78. Encoding Relation Requirements for Relation Extraction via Joint Inference.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1077.pdf">Paper Link</a>】    【Pages】:818-827</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Liwei">Liwei Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Feng:Yansong">Yansong Feng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Huang:Songfang">Songfang Huang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/q/Qin:Yong">Yong Qin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhao:Dongyan">Dongyan Zhao</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="79. Medical Relation Extraction with Manifold Models.">79. Medical Relation Extraction with Manifold Models.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1078.pdf">Paper Link</a>】    【Pages】:828-838</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang_0001:Chang">Chang Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fan:James">James Fan</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="80. Distant Supervision for Relation Extraction with Matrix Completion.">80. Distant Supervision for Relation Extraction with Matrix Completion.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1079.pdf">Paper Link</a>】    【Pages】:839-849</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Fan:Miao">Miao Fan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhao:Deli">Deli Zhao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Qiang">Qiang Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Zhiyuan">Zhiyuan Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zheng:Thomas_Fang">Thomas Fang Zheng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chang:Edward_Y=">Edward Y. Chang</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="81. Enhancing Grammatical Cohesion: Generating Transitional Expressions for SMT.">81. Enhancing Grammatical Cohesion: Generating Transitional Expressions for SMT.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1080.pdf">Paper Link</a>】    【Pages】:850-860</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Tu:Mei">Mei Tu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Yu">Yu Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zong:Chengqing">Chengqing Zong</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="82. Adaptive HTER Estimation for Document-Specific MT Post-Editing.">82. Adaptive HTER Estimation for Document-Specific MT Post-Editing.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1081.pdf">Paper Link</a>】    【Pages】:861-870</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Huang:Fei">Fei Huang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Jian=Ming">Jian-Ming Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/i/Ittycheriah:Abraham">Abraham Ittycheriah</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Roukos:Salim">Salim Roukos</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="83. Translation Assistance by Translation of L1 Fragments in an L2 Context.">83. Translation Assistance by Translation of L1 Fragments in an L2 Context.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1082.pdf">Paper Link</a>】    【Pages】:871-880</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gompel:Maarten_van">Maarten van Gompel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bosch:Antal_van_den">Antal van den Bosch</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="84. Response-based Learning for Grounded Machine Translation.">84. Response-based Learning for Grounded Machine Translation.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1083.pdf">Paper Link</a>】    【Pages】:881-891</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Riezler:Stefan">Stefan Riezler</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Simianer:Patrick">Patrick Simianer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Haas:Carolin">Carolin Haas</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="85. Modelling Events through Memory-based, Open-IE Patterns for Abstractive Summarization.">85. Modelling Events through Memory-based, Open-IE Patterns for Abstractive Summarization.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1084.pdf">Paper Link</a>】    【Pages】:892-901</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Pighin:Daniele">Daniele Pighin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cornolti:Marco">Marco Cornolti</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Alfonseca:Enrique">Enrique Alfonseca</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Filippova:Katja">Katja Filippova</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="86. Hierarchical Summarization: Scaling Up Multi-Document Summarization.">86. Hierarchical Summarization: Scaling Up Multi-Document Summarization.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1085.pdf">Paper Link</a>】    【Pages】:902-912</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Christensen:Janara">Janara Christensen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Soderland:Stephen">Stephen Soderland</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bansal:Gagan">Gagan Bansal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mausam:">Mausam</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="87. Query-Chain Focused Summarization.">87. Query-Chain Focused Summarization.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1086.pdf">Paper Link</a>】    【Pages】:913-922</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Baumel:Tal">Tal Baumel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cohen:Raphael">Raphael Cohen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Elhadad:Michael">Michael Elhadad</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="88. Exploiting Timelines to Enhance Multi-document Summarization.">88. Exploiting Timelines to Enhance Multi-document Summarization.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1087.pdf">Paper Link</a>】    【Pages】:923-933</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Ng:Jun=Ping">Jun-Ping Ng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Yan">Yan Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kan:Min=Yen">Min-Yen Kan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Zhoujun">Zhoujun Li</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="89. A chance-corrected measure of inter-annotator agreement for syntax.">89. A chance-corrected measure of inter-annotator agreement for syntax.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1088.pdf">Paper Link</a>】    【Pages】:934-944</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Skj=aelig=rholt:Arne">Arne Skjærholt</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="90. Two Is Bigger (and Better) Than One: the Wikipedia Bitaxonomy Project.">90. Two Is Bigger (and Better) Than One: the Wikipedia Bitaxonomy Project.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1089.pdf">Paper Link</a>】    【Pages】:945-955</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Flati:Tiziano">Tiziano Flati</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vannella:Daniele">Daniele Vannella</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pasini:Tommaso">Tommaso Pasini</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Navigli:Roberto">Roberto Navigli</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="91. Information Extraction over Structured Data: Question Answering with Freebase.">91. Information Extraction over Structured Data: Question Answering with Freebase.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1090.pdf">Paper Link</a>】    【Pages】:956-966</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yao:Xuchen">Xuchen Yao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Durme:Benjamin_Van">Benjamin Van Durme</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="92. Knowledge-Based Question Answering as Machine Translation.">92. Knowledge-Based Question Answering as Machine Translation.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1091.pdf">Paper Link</a>】    【Pages】:967-976</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bao:Jun=Wei">Jun-Wei Bao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Duan:Nan">Nan Duan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Ming">Ming Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhao:Tiejun">Tiejun Zhao</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="93. Discourse Complements Lexical Semantics for Non-factoid Answer Reranking.">93. Discourse Complements Lexical Semantics for Non-factoid Answer Reranking.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1092.pdf">Paper Link</a>】    【Pages】:977-986</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jansen:Peter">Peter Jansen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Surdeanu:Mihai">Mihai Surdeanu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Clark:Peter">Peter Clark</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="94. Toward Future Scenario Generation: Extracting Event Causality Exploiting Semantic Relation, Context, and Association Features.">94. Toward Future Scenario Generation: Extracting Event Causality Exploiting Semantic Relation, Context, and Association Features.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1093.pdf">Paper Link</a>】    【Pages】:987-997</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hashimoto:Chikara">Chikara Hashimoto</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Torisawa:Kentaro">Kentaro Torisawa</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kloetzer:Julien">Julien Kloetzer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sano:Motoki">Motoki Sano</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Varga:Istv=aacute=n">István Varga</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Oh:Jong=Hoon">Jong-Hoon Oh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kidawara:Yutaka">Yutaka Kidawara</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="95. Cross-narrative Temporal Ordering of Medical Events.">95. Cross-narrative Temporal Ordering of Medical Events.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1094.pdf">Paper Link</a>】    【Pages】:998-1008</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Raghavan:Preethi">Preethi Raghavan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fosler=Lussier:Eric">Eric Fosler-Lussier</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Elhadad:Noemie">Noemie Elhadad</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lai:Albert_M=">Albert M. Lai</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="96. Language-Aware Truth Assessment of Fact Candidates.">96. Language-Aware Truth Assessment of Fact Candidates.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1095.pdf">Paper Link</a>】    【Pages】:1009-1019</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Nakashole:Ndapandula">Ndapandula Nakashole</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mitchell:Tom_M=">Tom M. Mitchell</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="97. That's sick dude!: Automatic identification of word sense change across different timescales.">97. That's sick dude!: Automatic identification of word sense change across different timescales.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1096.pdf">Paper Link</a>】    【Pages】:1020-1029</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mitra:Sunny">Sunny Mitra</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mitra:Ritwik">Ritwik Mitra</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Riedl_0002:Martin">Martin Riedl</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Biemann:Chris">Chris Biemann</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mukherjee:Animesh">Animesh Mukherjee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Goyal:Pawan">Pawan Goyal</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="98. A Step-wise Usage-based Method for Inducing Polysemy-aware Verb Classes.">98. A Step-wise Usage-based Method for Inducing Polysemy-aware Verb Classes.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1097.pdf">Paper Link</a>】    【Pages】:1030-1040</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kawahara:Daisuke">Daisuke Kawahara</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Peterson:Daniel">Daniel Peterson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Palmer:Martha">Martha Palmer</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="99. Structured Learning for Taxonomy Induction with Belief Propagation.">99. Structured Learning for Taxonomy Induction with Belief Propagation.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1098.pdf">Paper Link</a>】    【Pages】:1041-1051</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bansal:Mohit">Mohit Bansal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Burkett:David">David Burkett</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Melo:Gerard_de">Gerard de Melo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Klein:Dan">Dan Klein</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="100. A Provably Correct Learning Algorithm for Latent-Variable PCFGs.">100. A Provably Correct Learning Algorithm for Latent-Variable PCFGs.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1099.pdf">Paper Link</a>】    【Pages】:1052-1061</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cohen:Shay_B=">Shay B. Cohen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Collins:Michael">Michael Collins</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="101. Spectral Unsupervised Parsing with Additive Tree Metrics.">101. Spectral Unsupervised Parsing with Additive Tree Metrics.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1100.pdf">Paper Link</a>】    【Pages】:1062-1072</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Parikh:Ankur_P=">Ankur P. Parikh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cohen:Shay_B=">Shay B. Cohen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xing:Eric_P=">Eric P. Xing</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="102. Weak semantic context helps phonetic learning in a model of infant language acquisition.">102. Weak semantic context helps phonetic learning in a model of infant language acquisition.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1101.pdf">Paper Link</a>】    【Pages】:1073-1083</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Frank:Stella">Stella Frank</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Feldman:Naomi">Naomi Feldman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Goldwater:Sharon">Sharon Goldwater</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="103. Bootstrapping into Filler-Gap: An Acquisition Story.">103. Bootstrapping into Filler-Gap: An Acquisition Story.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1102.pdf">Paper Link</a>】    【Pages】:1084-1093</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Schijndel:Marten_Van">Marten Van Schijndel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Elsner:Micha">Micha Elsner</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="104. Nonparametric Learning of Phonological Constraints in Optimality Theory.">104. Nonparametric Learning of Phonological Constraints in Optimality Theory.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1103.pdf">Paper Link</a>】    【Pages】:1094-1103</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Doyle:Gabriel">Gabriel Doyle</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bicknell:Klinton">Klinton Bicknell</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Levy:Roger">Roger Levy</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="105. Active Learning with Efficient Feature Weighting Methods for Improving Data Quality and Classification Accuracy.">105. Active Learning with Efficient Feature Weighting Methods for Improving Data Quality and Classification Accuracy.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1104.pdf">Paper Link</a>】    【Pages】:1104-1112</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Martineau:Justin">Justin Martineau</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Lu">Lu Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cheng:Doreen">Doreen Cheng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sheth:Amit_P=">Amit P. Sheth</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="106. Political Ideology Detection Using Recursive Neural Networks.">106. Political Ideology Detection Using Recursive Neural Networks.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1105.pdf">Paper Link</a>】    【Pages】:1113-1122</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/i/Iyyer:Mohit">Mohit Iyyer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Enns:Peter">Peter Enns</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Boyd=Graber:Jordan_L=">Jordan L. Boyd-Graber</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Resnik:Philip">Philip Resnik</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="107. A Unified Model for Soft Linguistic Reordering Constraints in Statistical Machine Translation.">107. A Unified Model for Soft Linguistic Reordering Constraints in Statistical Machine Translation.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1106.pdf">Paper Link</a>】    【Pages】:1123-1133</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Junhui">Junhui Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Marton:Yuval">Yuval Marton</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Resnik:Philip">Philip Resnik</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Daum=eacute=_III:Hal">Hal Daumé III</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="108. Are Two Heads Better than One? Crowdsourced Translation via a Two-Step Collaboration of Non-Professional Translators and Editors.">108. Are Two Heads Better than One? Crowdsourced Translation via a Two-Step Collaboration of Non-Professional Translators and Editors.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1107.pdf">Paper Link</a>】    【Pages】:1134-1144</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yan:Rui">Rui Yan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gao:Mingkun">Mingkun Gao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pavlick:Ellie">Ellie Pavlick</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Callison=Burch:Chris">Chris Callison-Burch</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="109. A Generalized Language Model as the Combination of Skipped n-grams and Modified Kneser Ney Smoothing.">109. A Generalized Language Model as the Combination of Skipped n-grams and Modified Kneser Ney Smoothing.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1108.pdf">Paper Link</a>】    【Pages】:1145-1154</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Pickhardt:Rene">Rene Pickhardt</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gottron:Thomas">Thomas Gottron</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/K=ouml=rner:Martin">Martin Körner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wagner:Paul_Georg">Paul Georg Wagner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Speicher:Till">Till Speicher</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Staab:Steffen">Steffen Staab</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="110. A Semiparametric Gaussian Copula Regression Model for Predicting Financial Risks from Earnings Calls.">110. A Semiparametric Gaussian Copula Regression Model for Predicting Financial Risks from Earnings Calls.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1109.pdf">Paper Link</a>】    【Pages】:1155-1165</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:William_Yang">William Yang Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hua:Zhenhao">Zhenhao Hua</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="111. Polylingual Tree-Based Topic Models for Translation Domain Adaptation.">111. Polylingual Tree-Based Topic Models for Translation Domain Adaptation.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1110.pdf">Paper Link</a>】    【Pages】:1166-1176</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Yuening">Yuening Hu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhai:Ke">Ke Zhai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Eidelman:Vladimir">Vladimir Eidelman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Boyd=Graber:Jordan_L=">Jordan L. Boyd-Graber</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="112. Low-Resource Semantic Role Labeling.">112. Low-Resource Semantic Role Labeling.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1111.pdf">Paper Link</a>】    【Pages】:1177-1187</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gormley:Matthew_R=">Matthew R. Gormley</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mitchell:Margaret">Margaret Mitchell</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Durme:Benjamin_Van">Benjamin Van Durme</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dredze:Mark">Mark Dredze</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="113. Joint Syntactic and Semantic Parsing with Combinatory Categorial Grammar.">113. Joint Syntactic and Semantic Parsing with Combinatory Categorial Grammar.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1112.pdf">Paper Link</a>】    【Pages】:1188-1198</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Krishnamurthy:Jayant">Jayant Krishnamurthy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mitchell:Tom_M=">Tom M. Mitchell</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="114. Learning Semantic Hierarchies via Word Embeddings.">114. Learning Semantic Hierarchies via Word Embeddings.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1113.pdf">Paper Link</a>】    【Pages】:1199-1209</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Fu:Ruiji">Ruiji Fu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Guo:Jiang">Jiang Guo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/q/Qin:Bing">Bing Qin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Che:Wanxiang">Wanxiang Che</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Haifeng">Haifeng Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Ting">Ting Liu</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="115. Probabilistic Soft Logic for Semantic Textual Similarity.">115. Probabilistic Soft Logic for Semantic Textual Similarity.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1114.pdf">Paper Link</a>】    【Pages】:1210-1219</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Beltagy:Islam">Islam Beltagy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Erk:Katrin">Katrin Erk</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mooney:Raymond_J=">Raymond J. Mooney</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="116. Abstractive Summarization of Spoken and Written Conversations Based on Phrasal Queries.">116. Abstractive Summarization of Spoken and Written Conversations Based on Phrasal Queries.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1115.pdf">Paper Link</a>】    【Pages】:1220-1230</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mehdad:Yashar">Yashar Mehdad</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Carenini:Giuseppe">Giuseppe Carenini</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Ng:Raymond_T=">Raymond T. Ng</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="117. Comparing Multi-label Classification with Reinforcement Learning for Summarisation of Time-series Data.">117. Comparing Multi-label Classification with Reinforcement Learning for Summarisation of Time-series Data.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1116.pdf">Paper Link</a>】    【Pages】:1231-1240</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gkatzia:Dimitra">Dimitra Gkatzia</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hastie:Helen_F=">Helen F. Hastie</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lemon:Oliver">Oliver Lemon</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="118. Approximation Strategies for Multi-Structure Sentence Compression.">118. Approximation Strategies for Multi-Structure Sentence Compression.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1117.pdf">Paper Link</a>】    【Pages】:1241-1251</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Thadani:Kapil">Kapil Thadani</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="119. Opinion Mining on YouTube.">119. Opinion Mining on YouTube.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1118.pdf">Paper Link</a>】    【Pages】:1252-1261</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Severyn:Aliaksei">Aliaksei Severyn</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Moschitti:Alessandro">Alessandro Moschitti</a> ; <a href="http://dblp.uni-trier.de/pers/hd/u/Uryupina:Olga">Olga Uryupina</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Plank:Barbara">Barbara Plank</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Filippova:Katja">Katja Filippova</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="120. Automatic Keyphrase Extraction: A Survey of the State of the Art.">120. Automatic Keyphrase Extraction: A Survey of the State of the Art.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1119.pdf">Paper Link</a>】    【Pages】:1262-1273</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hasan:Kazi_Saidul">Kazi Saidul Hasan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Ng:Vincent">Vincent Ng</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="121. Pattern Dictionary of English Prepositions.">121. Pattern Dictionary of English Prepositions.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1120.pdf">Paper Link</a>】    【Pages】:1274-1283</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Litkowski:Ken">Ken Litkowski</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="122. Looking at Unbalanced Specialized Comparable Corpora for Bilingual Lexicon Extraction.">122. Looking at Unbalanced Specialized Comparable Corpora for Bilingual Lexicon Extraction.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1121.pdf">Paper Link</a>】    【Pages】:1284-1293</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Morin:Emmanuel">Emmanuel Morin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hazem:Amir">Amir Hazem</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="123. Validating and Extending Semantic Knowledge Bases using Video Games with a Purpose.">123. Validating and Extending Semantic Knowledge Bases using Video Games with a Purpose.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1122.pdf">Paper Link</a>】    【Pages】:1294-1304</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/v/Vannella:Daniele">Daniele Vannella</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jurgens:David">David Jurgens</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Scarfini:Daniele">Daniele Scarfini</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Toscani:Domenico">Domenico Toscani</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Navigli:Roberto">Roberto Navigli</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="124. Shallow Analysis Based Assessment of Syntactic Complexity for Automated Speech Scoring.">124. Shallow Analysis Based Assessment of Syntactic Complexity for Automated Speech Scoring.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1123.pdf">Paper Link</a>】    【Pages】:1305-1315</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bhat:Suma">Suma Bhat</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xue:Huichao">Huichao Xue</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yoon:Su=Youn">Su-Youn Yoon</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="125. Can You Repeat That? Using Word Repetition to Improve Spoken Term Detection.">125. Can You Repeat That? Using Word Repetition to Improve Spoken Term Detection.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1124.pdf">Paper Link</a>】    【Pages】:1316-1325</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wintrode:Jonathan">Jonathan Wintrode</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Khudanpur:Sanjeev">Sanjeev Khudanpur</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="126. Character-Level Chinese Dependency Parsing.">126. Character-Level Chinese Dependency Parsing.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1125.pdf">Paper Link</a>】    【Pages】:1326-1336</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Meishan">Meishan Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Yue">Yue Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Che:Wanxiang">Wanxiang Che</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Ting">Ting Liu</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="127. Unsupervised Dependency Parsing with Transferring Distribution via Parallel Guidance and Entropy Regularization.">127. Unsupervised Dependency Parsing with Transferring Distribution via Parallel Guidance and Entropy Regularization.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1126.pdf">Paper Link</a>】    【Pages】:1337-1348</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Ma:Xuezhe">Xuezhe Ma</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xia:Fei">Fei Xia</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="128. Unsupervised Morphology-Based Vocabulary Expansion.">128. Unsupervised Morphology-Based Vocabulary Expansion.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1127.pdf">Paper Link</a>】    【Pages】:1349-1359</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Rasooli:Mohammad_Sadegh">Mohammad Sadegh Rasooli</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lippincott:Thomas">Thomas Lippincott</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Habash:Nizar">Nizar Habash</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rambow:Owen">Owen Rambow</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="129. Toward Better Chinese Word Segmentation for SMT via Bilingual Constraints.">129. Toward Better Chinese Word Segmentation for SMT via Bilingual Constraints.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1128.pdf">Paper Link</a>】    【Pages】:1360-1369</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zeng:Xiaodong">Xiaodong Zeng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chao:Lidia_S=">Lidia S. Chao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wong:Derek_F=">Derek F. Wong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Trancoso:Isabel">Isabel Trancoso</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tian:Liang">Liang Tian</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="130. Fast and Robust Neural Network Joint Models for Statistical Machine Translation.">130. Fast and Robust Neural Network Joint Models for Statistical Machine Translation.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1129.pdf">Paper Link</a>】    【Pages】:1370-1380</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Devlin:Jacob">Jacob Devlin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zbib:Rabih">Rabih Zbib</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Huang:Zhongqiang">Zhongqiang Huang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lamar:Thomas">Thomas Lamar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schwartz:Richard_M=">Richard M. Schwartz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Makhoul:John">John Makhoul</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="131. Low-Rank Tensors for Scoring Dependency Structures.">131. Low-Rank Tensors for Scoring Dependency Structures.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1130.pdf">Paper Link</a>】    【Pages】:1381-1391</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lei:Tao">Tao Lei</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xin:Yu">Yu Xin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Yuan">Yuan Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Barzilay:Regina">Regina Barzilay</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jaakkola:Tommi_S=">Tommi S. Jaakkola</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="132. CoSimRank: A Flexible & Efficient Graph-Theoretic Similarity Measure.">132. CoSimRank: A Flexible &amp; Efficient Graph-Theoretic Similarity Measure.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1131.pdf">Paper Link</a>】    【Pages】:1392-1402</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Rothe:Sascha">Sascha Rothe</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sch=uuml=tze:Hinrich">Hinrich Schütze</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="133. Is this a wampimuk? Cross-modal mapping between distributional semantics and the visual world.">133. Is this a wampimuk? Cross-modal mapping between distributional semantics and the visual world.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1132.pdf">Paper Link</a>】    【Pages】:1403-1414</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lazaridou:Angeliki">Angeliki Lazaridou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bruni:Elia">Elia Bruni</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Baroni:Marco">Marco Baroni</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="134. Semantic Parsing via Paraphrasing.">134. Semantic Parsing via Paraphrasing.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1133.pdf">Paper Link</a>】    【Pages】:1415-1425</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Berant:Jonathan">Jonathan Berant</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liang:Percy">Percy Liang</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="135. A Discriminative Graph-Based Parser for the Abstract Meaning Representation.">135. A Discriminative Graph-Based Parser for the Abstract Meaning Representation.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1134.pdf">Paper Link</a>】    【Pages】:1426-1436</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Flanigan:Jeffrey">Jeffrey Flanigan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Thomson:Sam">Sam Thomson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Carbonell:Jaime_G=">Jaime G. Carbonell</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dyer:Chris">Chris Dyer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Smith:Noah_A=">Noah A. Smith</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="136. Context-dependent Semantic Parsing for Time Expressions.">136. Context-dependent Semantic Parsing for Time Expressions.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1135.pdf">Paper Link</a>】    【Pages】:1437-1447</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Kenton">Kenton Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Artzi:Yoav">Yoav Artzi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dodge:Jesse">Jesse Dodge</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zettlemoyer:Luke">Luke Zettlemoyer</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="137. Semantic Frame Identification with Distributed Word Representations.">137. Semantic Frame Identification with Distributed Word Representations.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1136.pdf">Paper Link</a>】    【Pages】:1448-1458</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hermann:Karl_Moritz">Karl Moritz Hermann</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Das_0001:Dipanjan">Dipanjan Das</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Weston:Jason">Jason Weston</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Ganchev:Kuzman">Kuzman Ganchev</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="138. A Sense-Based Translation Model for Statistical Machine Translation.">138. A Sense-Based Translation Model for Statistical Machine Translation.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1137.pdf">Paper Link</a>】    【Pages】:1459-1469</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/x/Xiong:Deyi">Deyi Xiong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang_0005:Min">Min Zhang</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="139. Recurrent Neural Networks for Word Alignment Model.">139. Recurrent Neural Networks for Word Alignment Model.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1138.pdf">Paper Link</a>】    【Pages】:1470-1480</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Tamura:Akihiro">Akihiro Tamura</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Watanabe:Taro">Taro Watanabe</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sumita:Eiichiro">Eiichiro Sumita</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="140. A Constrained Viterbi Relaxation for Bidirectional Word Alignment.">140. A Constrained Viterbi Relaxation for Bidirectional Word Alignment.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1139.pdf">Paper Link</a>】    【Pages】:1481-1490</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chang:Yin=Wen">Yin-Wen Chang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rush:Alexander_M=">Alexander M. Rush</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/DeNero:John">John DeNero</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Collins:Michael">Michael Collins</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="141. A Recursive Recurrent Neural Network for Statistical Machine Translation.">141. A Recursive Recurrent Neural Network for Statistical Machine Translation.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1140.pdf">Paper Link</a>】    【Pages】:1491-1500</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Shujie">Shujie Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Nan">Nan Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Mu">Mu Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Ming">Ming Zhou</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="142. Predicting Instructor's Intervention in MOOC forums.">142. Predicting Instructor's Intervention in MOOC forums.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1141.pdf">Paper Link</a>】    【Pages】:1501-1511</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chaturvedi:Snigdha">Snigdha Chaturvedi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Goldwasser:Dan">Dan Goldwasser</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Daum=eacute=_III:Hal">Hal Daumé III</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="143. A Joint Graph Model for Pinyin-to-Chinese Conversion with Typo Correction.">143. A Joint Graph Model for Pinyin-to-Chinese Conversion with Typo Correction.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1142.pdf">Paper Link</a>】    【Pages】:1512-1523</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jia:Zhongye">Zhongye Jia</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhao:Hai">Hai Zhao</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="144. Smart Selection.">144. Smart Selection.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1143.pdf">Paper Link</a>】    【Pages】:1524-1533</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Pantel:Patrick">Patrick Pantel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gamon:Michael">Michael Gamon</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fuxman:Ariel">Ariel Fuxman</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="145. Modeling Prompt Adherence in Student Essays.">145. Modeling Prompt Adherence in Student Essays.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1144.pdf">Paper Link</a>】    【Pages】:1534-1543</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Persing:Isaac">Isaac Persing</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Ng:Vincent">Vincent Ng</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="146. ConnotationWordNet: Learning Connotation over the Word+Sense Network.">146. ConnotationWordNet: Learning Connotation over the Word+Sense Network.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1145.pdf">Paper Link</a>】    【Pages】:1544-1554</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kang:Jun_Seok">Jun Seok Kang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Feng:Song">Song Feng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Akoglu:Leman">Leman Akoglu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Choi:Yejin">Yejin Choi</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="147. Learning Sentiment-Specific Word Embedding for Twitter Sentiment Classification.">147. Learning Sentiment-Specific Word Embedding for Twitter Sentiment Classification.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1146.pdf">Paper Link</a>】    【Pages】:1555-1565</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Tang:Duyu">Duyu Tang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wei:Furu">Furu Wei</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Nan">Nan Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Ming">Ming Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Ting">Ting Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/q/Qin:Bing">Bing Qin</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="148. Towards a General Rule for Identifying Deceptive Opinion Spam.">148. Towards a General Rule for Identifying Deceptive Opinion Spam.</h3>
+<p>【<a href="http://aclweb.org/anthology/P/P14/P14-1147.pdf">Paper Link</a>】    【Pages】:1566-1576</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Jiwei">Jiwei Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Ott:Myle">Myle Ott</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cardie:Claire">Claire Cardie</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hovy:Eduard_H=">Eduard H. Hovy</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="http://huntercmd.github.io"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>
