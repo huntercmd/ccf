@@ -1,0 +1,1155 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/skin.js"></script>
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/classie.js"></script>
+
+<!-- This is for Mathjax -->
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#28. ICML 2011:Bellevue, Washington, USA">28. ICML 2011:Bellevue, Washington, USA</a><ul>
+<li><a href="#Paper Num: 152 || Session Num: 0">Paper Num: 152 || Session Num: 0</a><ul>
+<li><a href="#1. Hashing with Graphs.">1. Hashing with Graphs.</a></li>
+<li><a href="#2. Efficient Sparse Modeling with Automatic Feature Grouping.">2. Efficient Sparse Modeling with Automatic Feature Grouping.</a></li>
+<li><a href="#3. MultiLabel Classification on Tree- and DAG-Structured Hierarchies.">3. MultiLabel Classification on Tree- and DAG-Structured Hierarchies.</a></li>
+<li><a href="#4. A Graphbased Framework for Multi-Task Multi-View Learning.">4. A Graphbased Framework for Multi-Task Multi-View Learning.</a></li>
+<li><a href="#5. GoDec: Randomized Lowrank & Sparse Matrix Decomposition in Noisy Case.">5. GoDec: Randomized Lowrank &amp; Sparse Matrix Decomposition in Noisy Case.</a></li>
+<li><a href="#6. Unimodal Bandits.">6. Unimodal Bandits.</a></li>
+<li><a href="#7. Learning Output Kernels with Block Coordinate Descent.">7. Learning Output Kernels with Block Coordinate Descent.</a></li>
+<li><a href="#8. Vector-valued Manifold Regularization.">8. Vector-valued Manifold Regularization.</a></li>
+<li><a href="#9. On Information-Maximization Clustering: Tuning Parameter Selection and Analytic Solution.">9. On Information-Maximization Clustering: Tuning Parameter Selection and Analytic Solution.</a></li>
+<li><a href="#10. On tracking portfolios with certainty equivalents on a generalization of Markowitz model: the Fool, the Wise and the Adaptive.">10. On tracking portfolios with certainty equivalents on a generalization of Markowitz model: the Fool, the Wise and the Adaptive.</a></li>
+<li><a href="#11. Multiple Instance Learning with Manifold Bags.">11. Multiple Instance Learning with Manifold Bags.</a></li>
+<li><a href="#12. Eigenvalue Sensitive Feature Selection.">12. Eigenvalue Sensitive Feature Selection.</a></li>
+<li><a href="#13. Large Scale Text Classification using Semisupervised Multinomial Naive Bayes.">13. Large Scale Text Classification using Semisupervised Multinomial Naive Bayes.</a></li>
+<li><a href="#14. Enhanced Gradient and Adaptive Learning Rate for Training Restricted Boltzmann Machines.">14. Enhanced Gradient and Adaptive Learning Rate for Training Restricted Boltzmann Machines.</a></li>
+<li><a href="#15. Dynamic Tree Block Coordinate Ascent.">15. Dynamic Tree Block Coordinate Ascent.</a></li>
+<li><a href="#16. Implementing regularization implicitly via approximate eigenvector computation.">16. Implementing regularization implicitly via approximate eigenvector computation.</a></li>
+<li><a href="#17. Parsing Natural Scenes and Natural Language with Recursive Neural Networks.">17. Parsing Natural Scenes and Natural Language with Recursive Neural Networks.</a></li>
+<li><a href="#18. Conjugate Markov Decision Processes.">18. Conjugate Markov Decision Processes.</a></li>
+<li><a href="#19. Learning Mallows Models with Pairwise Preferences.">19. Learning Mallows Models with Pairwise Preferences.</a></li>
+<li><a href="#20. Surrogate losses and regret bounds for cost-sensitive classification with example-dependent costs.">20. Surrogate losses and regret bounds for cost-sensitive classification with example-dependent costs.</a></li>
+<li><a href="#21. Efficient Rule Ensemble Learning using Hierarchical Kernels.">21. Efficient Rule Ensemble Learning using Hierarchical Kernels.</a></li>
+<li><a href="#22. An Augmented Lagrangian Approach to Constrained MAP Inference.">22. An Augmented Lagrangian Approach to Constrained MAP Inference.</a></li>
+<li><a href="#23. Mean-Variance Optimization in Markov Decision Processes.">23. Mean-Variance Optimization in Markov Decision Processes.</a></li>
+<li><a href="#24. Time Series Clustering: Complex is Simpler!">24. Time Series Clustering: Complex is Simpler!</a></li>
+<li><a href="#25. Max-margin Learning for Lower Linear Envelope Potentials in Binary Markov Random Fields.">25. Max-margin Learning for Lower Linear Envelope Potentials in Binary Markov Random Fields.</a></li>
+<li><a href="#26. Inference of Inversion Transduction Grammars.">26. Inference of Inversion Transduction Grammars.</a></li>
+<li><a href="#27. BCDNPKL: Scalable Non-Parametric Kernel Learning Using Block Coordinate Descent.">27. BCDNPKL: Scalable Non-Parametric Kernel Learning Using Block Coordinate Descent.</a></li>
+<li><a href="#28. Learning Discriminative Fisher Kernels.">28. Learning Discriminative Fisher Kernels.</a></li>
+<li><a href="#29. Pruning nearest neighbor cluster trees.">29. Pruning nearest neighbor cluster trees.</a></li>
+<li><a href="#30. Online AUC Maximization.">30. Online AUC Maximization.</a></li>
+<li><a href="#31. Beat the Mean Bandit.">31. Beat the Mean Bandit.</a></li>
+<li><a href="#32. Ultra-Fast Optimization Algorithm for Sparse Multi Kernel Learning.">32. Ultra-Fast Optimization Algorithm for Sparse Multi Kernel Learning.</a></li>
+<li><a href="#33. Estimating the Bayes Point Using Linear Knapsack Problems.">33. Estimating the Bayes Point Using Linear Knapsack Problems.</a></li>
+<li><a href="#34. On optimization methods for deep learning.">34. On optimization methods for deep learning.</a></li>
+<li><a href="#35. Multiclass Classification with Bandit Feedback using Adaptive Regularization.">35. Multiclass Classification with Bandit Feedback using Adaptive Regularization.</a></li>
+<li><a href="#36. On the Necessity of Irrelevant Variables.">36. On the Necessity of Irrelevant Variables.</a></li>
+<li><a href="#37. ABC-EP: Expectation Propagation for Likelihoodfree Bayesian Computation.">37. ABC-EP: Expectation Propagation for Likelihoodfree Bayesian Computation.</a></li>
+<li><a href="#38. A PAC-Bayes Sample-compression Approach to Kernel Methods.">38. A PAC-Bayes Sample-compression Approach to Kernel Methods.</a></li>
+<li><a href="#39. Integrating Partial Model Knowledge in Model Free RL Algorithms.">39. Integrating Partial Model Knowledge in Model Free RL Algorithms.</a></li>
+<li><a href="#40. Fast Newton-type Methods for Total Variation Regularization.">40. Fast Newton-type Methods for Total Variation Regularization.</a></li>
+<li><a href="#41. Parallel Coordinate Descent for L1-Regularized Loss Minimization.">41. Parallel Coordinate Descent for L1-Regularized Loss Minimization.</a></li>
+<li><a href="#42. Large-Scale Convex Minimization with a Low-Rank Constraint.">42. Large-Scale Convex Minimization with a Low-Rank Constraint.</a></li>
+<li><a href="#43. Approximate Dynamic Programming for Storage Problems.">43. Approximate Dynamic Programming for Storage Problems.</a></li>
+<li><a href="#44. Online Submodular Minimization for Combinatorial Structures.">44. Online Submodular Minimization for Combinatorial Structures.</a></li>
+<li><a href="#45. Minimal Loss Hashing for Compact Binary Codes.">45. Minimal Loss Hashing for Compact Binary Codes.</a></li>
+<li><a href="#46. The Hierarchical Beta Process for Convolutional Factor Analysis and Deep Learning.">46. The Hierarchical Beta Process for Convolutional Factor Analysis and Deep Learning.</a></li>
+<li><a href="#47. Simultaneous Learning and Covering with Adversarial Noise.">47. Simultaneous Learning and Covering with Adversarial Noise.</a></li>
+<li><a href="#48. Topic Modeling with Nonparametric Markov Tree.">48. Topic Modeling with Nonparametric Markov Tree.</a></li>
+<li><a href="#49. Relational Active Learning for Joint Collective Classification Models.">49. Relational Active Learning for Joint Collective Classification Models.</a></li>
+<li><a href="#50. A Co-training Approach for Multi-view Spectral Clustering.">50. A Co-training Approach for Multi-view Spectral Clustering.</a></li>
+<li><a href="#51. Learning from Multiple Outlooks.">51. Learning from Multiple Outlooks.</a></li>
+<li><a href="#52. Adaptive Kernel Approximation for Large-Scale Non-Linear SVM Prediction.">52. Adaptive Kernel Approximation for Large-Scale Non-Linear SVM Prediction.</a></li>
+<li><a href="#53. Risk-Based Generalizations of f-divergences.">53. Risk-Based Generalizations of f-divergences.</a></li>
+<li><a href="#54. Learning Multi-View Neighborhood Preserving Projections.">54. Learning Multi-View Neighborhood Preserving Projections.</a></li>
+<li><a href="#55. Better Algorithms for Selective Sampling.">55. Better Algorithms for Selective Sampling.</a></li>
+<li><a href="#56. Minimax Learning Rates for Bipartite Ranking and Plug-in Rules.">56. Minimax Learning Rates for Bipartite Ranking and Plug-in Rules.</a></li>
+<li><a href="#57. Task Space Retrieval Using Inverse Feedback Control.">57. Task Space Retrieval Using Inverse Feedback Control.</a></li>
+<li><a href="#58. Bayesian CCA via Group Sparsity.">58. Bayesian CCA via Group Sparsity.</a></li>
+<li><a href="#59. PILCO: A Model-Based and Data-Efficient Approach to Policy Search.">59. PILCO: A Model-Based and Data-Efficient Approach to Policy Search.</a></li>
+<li><a href="#60. Suboptimal Solution Path Algorithm for Support Vector Machine.">60. Suboptimal Solution Path Algorithm for Support Vector Machine.</a></li>
+<li><a href="#61. Incremental Basis Construction from Temporal Difference Error.">61. Incremental Basis Construction from Temporal Difference Error.</a></li>
+<li><a href="#62. Predicting Legislative Roll Calls from Text.">62. Predicting Legislative Roll Calls from Text.</a></li>
+<li><a href="#63. On Bayesian PCA: Automatic Dimensionality Selection and Analytic Solution.">63. On Bayesian PCA: Automatic Dimensionality Selection and Analytic Solution.</a></li>
+<li><a href="#64. Learning Linear Functions with Quadratic and Linear Multiplicative Updates.">64. Learning Linear Functions with Quadratic and Linear Multiplicative Updates.</a></li>
+<li><a href="#65. Domain Adaptation for Large-Scale Sentiment Classification: A Deep Learning Approach.">65. Domain Adaptation for Large-Scale Sentiment Classification: A Deep Learning Approach.</a></li>
+<li><a href="#66. Learning with Whom to Share in Multi-task Feature Learning.">66. Learning with Whom to Share in Multi-task Feature Learning.</a></li>
+<li><a href="#67. Boosting on a Budget: Sampling for Feature-Efficient Prediction.">67. Boosting on a Budget: Sampling for Feature-Efficient Prediction.</a></li>
+<li><a href="#68. Speeding-Up Hoeffding-Based Regression Trees With Options.">68. Speeding-Up Hoeffding-Based Regression Trees With Options.</a></li>
+<li><a href="#69. Linear Regression under Fixed-Rank Constraints: A Riemannian Approach.">69. Linear Regression under Fixed-Rank Constraints: A Riemannian Approach.</a></li>
+<li><a href="#70. Cauchy Graph Embedding.">70. Cauchy Graph Embedding.</a></li>
+<li><a href="#71. Uncovering the Temporal Dynamics of Diffusion Networks.">71. Uncovering the Temporal Dynamics of Diffusion Networks.</a></li>
+<li><a href="#72. Multiclass Boosting with Hinge Loss based on Output Coding.">72. Multiclass Boosting with Hinge Loss based on Output Coding.</a></li>
+<li><a href="#73. Approximation Bounds for Inference using Cooperative Cuts.">73. Approximation Bounds for Inference using Cooperative Cuts.</a></li>
+<li><a href="#74. Brier Curves: a New Cost-Based Visualisation of Classifier Performance.">74. Brier Curves: a New Cost-Based Visualisation of Classifier Performance.</a></li>
+<li><a href="#75. Semi-supervised Penalized Output Kernel Regression for Link Prediction.">75. Semi-supervised Penalized Output Kernel Regression for Link Prediction.</a></li>
+<li><a href="#76. A New Bayesian Rating System for Team Competitions.">76. A New Bayesian Rating System for Team Competitions.</a></li>
+<li><a href="#77. OptiML: An Implicitly Parallel Domain-Specific Language for Machine Learning.">77. OptiML: An Implicitly Parallel Domain-Specific Language for Machine Learning.</a></li>
+<li><a href="#78. Infinite SVM: a Dirichlet Process Mixture of Large-margin Kernel Machines.">78. Infinite SVM: a Dirichlet Process Mixture of Large-margin Kernel Machines.</a></li>
+<li><a href="#79. On the Integration of Topic Modeling and Dictionary Learning.">79. On the Integration of Topic Modeling and Dictionary Learning.</a></li>
+<li><a href="#80. Piecewise Bounds for Estimating Bernoulli-Logistic Latent Gaussian Models.">80. Piecewise Bounds for Estimating Bernoulli-Logistic Latent Gaussian Models.</a></li>
+<li><a href="#81. Access to Unlabeled Data can Speed up Prediction Time.">81. Access to Unlabeled Data can Speed up Prediction Time.</a></li>
+<li><a href="#82. From PAC-Bayes Bounds to Quadratic Programs for Majority Votes.">82. From PAC-Bayes Bounds to Quadratic Programs for Majority Votes.</a></li>
+<li><a href="#83. A Coherent Interpretation of AUC as a Measure of Aggregated Classification Performance.">83. A Coherent Interpretation of AUC as a Measure of Aggregated Classification Performance.</a></li>
+<li><a href="#84. Support Vector Machines as Probabilistic Models.">84. Support Vector Machines as Probabilistic Models.</a></li>
+<li><a href="#85. Adaptively Learning the Crowd Kernel.">85. Adaptively Learning the Crowd Kernel.</a></li>
+<li><a href="#86. Bayesian Learning via Stochastic Gradient Langevin Dynamics.">86. Bayesian Learning via Stochastic Gradient Langevin Dynamics.</a></li>
+<li><a href="#87. Multimodal Deep Learning.">87. Multimodal Deep Learning.</a></li>
+<li><a href="#88. On the Robustness of Kernel Density M-Estimators.">88. On the Robustness of Kernel Density M-Estimators.</a></li>
+<li><a href="#89. Beam Search based MAP Estimates for the Indian Buffet Process.">89. Beam Search based MAP Estimates for the Indian Buffet Process.</a></li>
+<li><a href="#90. Optimal Distributed Online Prediction.">90. Optimal Distributed Online Prediction.</a></li>
+<li><a href="#91. Message Passing Algorithms for the Dirichlet Diffusion Tree.">91. Message Passing Algorithms for the Dirichlet Diffusion Tree.</a></li>
+<li><a href="#92. Convex Max-Product over Compact Sets for Protein Folding.">92. Convex Max-Product over Compact Sets for Protein Folding.</a></li>
+<li><a href="#93. Structure Learning in Ergodic Factored MDPs without Knowledge of the Transition Function's In-Degree.">93. Structure Learning in Ergodic Factored MDPs without Knowledge of the Transition Function's In-Degree.</a></li>
+<li><a href="#94. Clusterpath: an Algorithm for Clustering using Convex Fusion Penalties.">94. Clusterpath: an Algorithm for Clustering using Convex Fusion Penalties.</a></li>
+<li><a href="#95. Tree preserving embedding.">95. Tree preserving embedding.</a></li>
+<li><a href="#96. Clustering by Left-Stochastic Matrix Factorization.">96. Clustering by Left-Stochastic Matrix Factorization.</a></li>
+<li><a href="#97. The Infinite Regionalized Policy Representation.">97. The Infinite Regionalized Policy Representation.</a></li>
+<li><a href="#98. SampleRank: Training Factor Graphs with Atomic Gradients.">98. SampleRank: Training Factor Graphs with Atomic Gradients.</a></li>
+<li><a href="#99. Tree-Structured Infinite Sparse Factor Model.">99. Tree-Structured Infinite Sparse Factor Model.</a></li>
+<li><a href="#100. Preserving Personalized Pagerank in Subgraphs.">100. Preserving Personalized Pagerank in Subgraphs.</a></li>
+<li><a href="#101. Hierarchical Classification via Orthogonal Transfer.">101. Hierarchical Classification via Orthogonal Transfer.</a></li>
+<li><a href="#102. A Three-Way Model for Collective Learning on Multi-Relational Data.">102. A Three-Way Model for Collective Learning on Multi-Relational Data.</a></li>
+<li><a href="#103. Variational Inference for Policy Search in changing situations.">103. Variational Inference for Policy Search in changing situations.</a></li>
+<li><a href="#104. Learning Scoring Functions with Order-Preserving Losses and Standardized Supervision.">104. Learning Scoring Functions with Order-Preserving Losses and Standardized Supervision.</a></li>
+<li><a href="#105. Contractive Auto-Encoders: Explicit Invariance During Feature Extraction.">105. Contractive Auto-Encoders: Explicit Invariance During Feature Extraction.</a></li>
+<li><a href="#106. Variational Heteroscedastic Gaussian Process Regression.">106. Variational Heteroscedastic Gaussian Process Regression.</a></li>
+<li><a href="#107. Bounding the Partition Function using Holder's Inequality.">107. Bounding the Partition Function using Holder's Inequality.</a></li>
+<li><a href="#108. Dynamic Egocentric Models for Citation Networks.">108. Dynamic Egocentric Models for Citation Networks.</a></li>
+<li><a href="#109. The Constrained Weight Space SVM: Learning with Ranked Features.">109. The Constrained Weight Space SVM: Learning with Ranked Features.</a></li>
+<li><a href="#110. Robust Matrix Completion and Corrupted Columns.">110. Robust Matrix Completion and Corrupted Columns.</a></li>
+<li><a href="#111. Online Discovery of Feature Dependencies.">111. Online Discovery of Feature Dependencies.</a></li>
+<li><a href="#112. Variational Inference for Stick-Breaking Beta Process Priors.">112. Variational Inference for Stick-Breaking Beta Process Priors.</a></li>
+<li><a href="#113. Apprenticeship Learning About Multiple Intentions.">113. Apprenticeship Learning About Multiple Intentions.</a></li>
+<li><a href="#114. Minimum Probability Flow Learning.">114. Minimum Probability Flow Learning.</a></li>
+<li><a href="#115. Infinite Dynamic Bayesian Networks.">115. Infinite Dynamic Bayesian Networks.</a></li>
+<li><a href="#116. The Importance of Encoding Versus Training with Sparse Coding and Vector Quantization.">116. The Importance of Encoding Versus Training with Sparse Coding and Vector Quantization.</a></li>
+<li><a href="#117. Fast Global Alignment Kernels.">117. Fast Global Alignment Kernels.</a></li>
+<li><a href="#118. Learning attentional policies for tracking and recognition in video with deep networks.">118. Learning attentional policies for tracking and recognition in video with deep networks.</a></li>
+<li><a href="#119. Large-Scale Learning of Embeddings with Reconstruction Sampling.">119. Large-Scale Learning of Embeddings with Reconstruction Sampling.</a></li>
+<li><a href="#120. Automatic Feature Decomposition for Single View Co-training.">120. Automatic Feature Decomposition for Single View Co-training.</a></li>
+<li><a href="#121. Mapping kernels for trees.">121. Mapping kernels for trees.</a></li>
+<li><a href="#122. Stochastic Low-Rank Kernel Learning for Regression.">122. Stochastic Low-Rank Kernel Learning for Regression.</a></li>
+<li><a href="#123. Size-constrained Submodular Minimization through Minimum Norm Base.">123. Size-constrained Submodular Minimization through Minimum Norm Base.</a></li>
+<li><a href="#124. Locally Linear Support Vector Machines.">124. Locally Linear Support Vector Machines.</a></li>
+<li><a href="#125. Functional Regularized Least Squares Classication with Operator-valued Kernels.">125. Functional Regularized Least Squares Classication with Operator-valued Kernels.</a></li>
+<li><a href="#126. Clustering Partially Observed Graphs via Convex Optimization.">126. Clustering Partially Observed Graphs via Convex Optimization.</a></li>
+<li><a href="#127. On the Use of Variational Inference for Learning Discrete Graphical Model.">127. On the Use of Variational Inference for Learning Discrete Graphical Model.</a></li>
+<li><a href="#128. Generating Text with Recurrent Neural Networks.">128. Generating Text with Recurrent Neural Networks.</a></li>
+<li><a href="#129. Probabilistic Matrix Addition.">129. Probabilistic Matrix Addition.</a></li>
+<li><a href="#130. Learning Recurrent Neural Networks with Hessian-Free Optimization.">130. Learning Recurrent Neural Networks with Hessian-Free Optimization.</a></li>
+<li><a href="#131. Sparse Additive Generative Models of Text.">131. Sparse Additive Generative Models of Text.</a></li>
+<li><a href="#132. Classification-based Policy Iteration with a Critic.">132. Classification-based Policy Iteration with a Critic.</a></li>
+<li><a href="#133. Submodular meets Spectral: Greedy Algorithms for Subset Selection, Sparse Approximation and Dictionary Selection.">133. Submodular meets Spectral: Greedy Algorithms for Subset Selection, Sparse Approximation and Dictionary Selection.</a></li>
+<li><a href="#134. A Spectral Algorithm for Latent Tree Graphical Models.">134. A Spectral Algorithm for Latent Tree Graphical Models.</a></li>
+<li><a href="#135. A Unified Probabilistic Model for Global and Local Unsupervised Feature Selection.">135. A Unified Probabilistic Model for Global and Local Unsupervised Feature Selection.</a></li>
+<li><a href="#136. Towards Making Unlabeled Data Never Hurt.">136. Towards Making Unlabeled Data Never Hurt.</a></li>
+<li><a href="#137. On Random Weights and Unsupervised Feature Learning.">137. On Random Weights and Unsupervised Feature Learning.</a></li>
+<li><a href="#138. Doubly Robust Policy Evaluation and Learning.">138. Doubly Robust Policy Evaluation and Learning.</a></li>
+<li><a href="#139. Learning Deep Energy Models.">139. Learning Deep Energy Models.</a></li>
+<li><a href="#140. Bipartite Ranking through Minimization of Univariate Loss.">140. Bipartite Ranking through Minimization of Univariate Loss.</a></li>
+<li><a href="#141. Manifold Identification of Dual Averaging Methods for Regularized Stochastic Online Learning.">141. Manifold Identification of Dual Averaging Methods for Regularized Stochastic Online Learning.</a></li>
+<li><a href="#142. Noisy matrix decomposition via convex relaxation: Optimal rates in high dimensions.">142. Noisy matrix decomposition via convex relaxation: Optimal rates in high dimensions.</a></li>
+<li><a href="#143. Bundle Selling by Online Estimation of Valuation Functions.">143. Bundle Selling by Online Estimation of Valuation Functions.</a></li>
+<li><a href="#144. Unsupervised Models of Images by Spikeand-Slab RBMs.">144. Unsupervised Models of Images by Spikeand-Slab RBMs.</a></li>
+<li><a href="#145. Approximating Correlated Equilibria using Relaxations on the Marginal Polytope.">145. Approximating Correlated Equilibria using Relaxations on the Marginal Polytope.</a></li>
+<li><a href="#146. Active Learning from Crowds.">146. Active Learning from Crowds.</a></li>
+<li><a href="#147. Computational Rationalization: The Inverse Equilibrium Problem.">147. Computational Rationalization: The Inverse Equilibrium Problem.</a></li>
+<li><a href="#148. Finite-Sample Analysis of Lasso-TD.">148. Finite-Sample Analysis of Lasso-TD.</a></li>
+<li><a href="#149. Generalized Value Functions for Large Action Sets.">149. Generalized Value Functions for Large Action Sets.</a></li>
+<li><a href="#150. k-DPPs: Fixed-Size Determinantal Point Processes.">150. k-DPPs: Fixed-Size Determinantal Point Processes.</a></li>
+<li><a href="#151. On Autoencoders and Score Matching for Energy Based Models.">151. On Autoencoders and Score Matching for Energy Based Models.</a></li>
+<li><a href="#152. Generalized Boosting Algorithms for Convex Optimization.">152. Generalized Boosting Algorithms for Convex Optimization.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="28. ICML 2011:Bellevue, Washington, USA">28. ICML 2011:Bellevue, Washington, USA</h1>
+<p><a href="">Proceedings of the 28th International Conference on Machine Learning, ICML 2011, Bellevue, Washington, USA, June 28 - July 2, 2011.</a> Omnipress
+【<a href="http://dblp.uni-trier.de/db/conf/icml/icml2011.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 152 || Session Num: 0">Paper Num: 152 || Session Num: 0</h2>
+<h3 id="1. Hashing with Graphs.">1. Hashing with Graphs.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1-8</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Liu_0005:Wei">Wei Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang_0006:Jun">Jun Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kumar:Sanjiv">Sanjiv Kumar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chang:Shih=Fu">Shih-Fu Chang</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="2. Efficient Sparse Modeling with Automatic Feature Grouping.">2. Efficient Sparse Modeling with Automatic Feature Grouping.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:9-16</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhong:Wenliang">Wenliang Zhong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kwok:James_T=">James T. Kwok</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="3. MultiLabel Classification on Tree- and DAG-Structured Hierarchies.">3. MultiLabel Classification on Tree- and DAG-Structured Hierarchies.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:17-24</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bi:Wei">Wei Bi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kwok:James_T=">James T. Kwok</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="4. A Graphbased Framework for Multi-Task Multi-View Learning.">4. A Graphbased Framework for Multi-Task Multi-View Learning.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:25-32</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/He:Jingrui">Jingrui He</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lawrence:Rick">Rick Lawrence</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="5. GoDec: Randomized Lowrank & Sparse Matrix Decomposition in Noisy Case.">5. GoDec: Randomized Lowrank &amp; Sparse Matrix Decomposition in Noisy Case.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:33-40</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Tianyi">Tianyi Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tao:Dacheng">Dacheng Tao</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="6. Unimodal Bandits.">6. Unimodal Bandits.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:41-48</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yu:Jia_Yuan">Jia Yuan Yu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mannor:Shie">Shie Mannor</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="7. Learning Output Kernels with Block Coordinate Descent.">7. Learning Output Kernels with Block Coordinate Descent.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:49-56</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dinuzzo:Francesco">Francesco Dinuzzo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Ong:Cheng_Soon">Cheng Soon Ong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gehler:Peter_V=">Peter V. Gehler</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pillonetto:Gianluigi">Gianluigi Pillonetto</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="8. Vector-valued Manifold Regularization.">8. Vector-valued Manifold Regularization.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:57-64</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Minh:Ha_Quang">Ha Quang Minh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sindhwani:Vikas">Vikas Sindhwani</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="9. On Information-Maximization Clustering: Tuning Parameter Selection and Analytic Solution.">9. On Information-Maximization Clustering: Tuning Parameter Selection and Analytic Solution.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:65-72</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sugiyama:Masashi">Masashi Sugiyama</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yamada:Makoto">Makoto Yamada</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kimura:Manabu">Manabu Kimura</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hachiya:Hirotaka">Hirotaka Hachiya</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="10. On tracking portfolios with certainty equivalents on a generalization of Markowitz model: the Fool, the Wise and the Adaptive.">10. On tracking portfolios with certainty equivalents on a generalization of Markowitz model: the Fool, the Wise and the Adaptive.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:73-80</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Nock:Richard">Richard Nock</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Magdalou:Brice">Brice Magdalou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Briys:Eric">Eric Briys</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nielsen:Frank">Frank Nielsen</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="11. Multiple Instance Learning with Manifold Bags.">11. Multiple Instance Learning with Manifold Bags.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:81-88</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Babenko:Boris">Boris Babenko</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Verma:Nakul">Nakul Verma</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Doll=aacute=r:Piotr">Piotr Dollár</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Belongie:Serge_J=">Serge J. Belongie</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="12. Eigenvalue Sensitive Feature Selection.">12. Eigenvalue Sensitive Feature Selection.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:89-96</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jiang:Yi">Yi Jiang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ren:Jiangtao">Jiangtao Ren</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="13. Large Scale Text Classification using Semisupervised Multinomial Naive Bayes.">13. Large Scale Text Classification using Semisupervised Multinomial Naive Bayes.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:97-104</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Su:Jiang">Jiang Su</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shirab:Jelber_Sayyad">Jelber Sayyad Shirab</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Matwin:Stan">Stan Matwin</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="14. Enhanced Gradient and Adaptive Learning Rate for Training Restricted Boltzmann Machines.">14. Enhanced Gradient and Adaptive Learning Rate for Training Restricted Boltzmann Machines.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:105-112</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cho:KyungHyun">KyungHyun Cho</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Raiko:Tapani">Tapani Raiko</a> ; <a href="http://dblp.uni-trier.de/pers/hd/i/Ilin:Alexander">Alexander Ilin</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="15. Dynamic Tree Block Coordinate Ascent.">15. Dynamic Tree Block Coordinate Ascent.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:113-120</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Tarlow:Daniel">Daniel Tarlow</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Batra:Dhruv">Dhruv Batra</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kohli:Pushmeet">Pushmeet Kohli</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kolmogorov:Vladimir">Vladimir Kolmogorov</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="16. Implementing regularization implicitly via approximate eigenvector computation.">16. Implementing regularization implicitly via approximate eigenvector computation.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:121-128</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mahoney:Michael_W=">Michael W. Mahoney</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Orecchia:Lorenzo">Lorenzo Orecchia</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="17. Parsing Natural Scenes and Natural Language with Recursive Neural Networks.">17. Parsing Natural Scenes and Natural Language with Recursive Neural Networks.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:129-136</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Socher:Richard">Richard Socher</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lin:Cliff_Chiung=Yu">Cliff Chiung-Yu Lin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Ng:Andrew_Y=">Andrew Y. Ng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Manning:Christopher_D=">Christopher D. Manning</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="18. Conjugate Markov Decision Processes.">18. Conjugate Markov Decision Processes.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:137-144</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Thomas:Philip_S=">Philip S. Thomas</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Barto:Andrew_G=">Andrew G. Barto</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="19. Learning Mallows Models with Pairwise Preferences.">19. Learning Mallows Models with Pairwise Preferences.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:145-152</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lu:Tyler">Tyler Lu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Boutilier:Craig">Craig Boutilier</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="20. Surrogate losses and regret bounds for cost-sensitive classification with example-dependent costs.">20. Surrogate losses and regret bounds for cost-sensitive classification with example-dependent costs.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:153-160</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Scott:Clayton">Clayton Scott</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="21. Efficient Rule Ensemble Learning using Hierarchical Kernels.">21. Efficient Rule Ensemble Learning using Hierarchical Kernels.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:161-168</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jawanpuria:Pratik">Pratik Jawanpuria</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nath:Jagarlapudi_Saketha">Jagarlapudi Saketha Nath</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ramakrishnan:Ganesh">Ganesh Ramakrishnan</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="22. An Augmented Lagrangian Approach to Constrained MAP Inference.">22. An Augmented Lagrangian Approach to Constrained MAP Inference.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:169-176</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Martins:Andr=eacute=_F=_T=">André F. T. Martins</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Figueiredo:M=aacute=rio_A=_T=">Mário A. T. Figueiredo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Aguiar:Pedro_M=_Q=">Pedro M. Q. Aguiar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Smith:Noah_A=">Noah A. Smith</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xing:Eric_P=">Eric P. Xing</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="23. Mean-Variance Optimization in Markov Decision Processes.">23. Mean-Variance Optimization in Markov Decision Processes.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:177-184</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mannor:Shie">Shie Mannor</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tsitsiklis:John_N=">John N. Tsitsiklis</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="24. Time Series Clustering: Complex is Simpler!">24. Time Series Clustering: Complex is Simpler!</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:185-192</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Lei">Lei Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Prakash:B=_Aditya">B. Aditya Prakash</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="25. Max-margin Learning for Lower Linear Envelope Potentials in Binary Markov Random Fields.">25. Max-margin Learning for Lower Linear Envelope Potentials in Binary Markov Random Fields.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:193-200</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gould:Stephen">Stephen Gould</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="26. Inference of Inversion Transduction Grammars.">26. Inference of Inversion Transduction Grammars.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:201-208</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Clark:Alexander">Alexander Clark</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="27. BCDNPKL: Scalable Non-Parametric Kernel Learning Using Block Coordinate Descent.">27. BCDNPKL: Scalable Non-Parametric Kernel Learning Using Block Coordinate Descent.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:209-216</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Enliang">Enliang Hu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Bo">Bo Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Songcan">Songcan Chen</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="28. Learning Discriminative Fisher Kernels.">28. Learning Discriminative Fisher Kernels.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:217-224</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Maaten:Laurens_van_der">Laurens van der Maaten</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="29. Pruning nearest neighbor cluster trees.">29. Pruning nearest neighbor cluster trees.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:225-232</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kpotufe:Samory">Samory Kpotufe</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Luxburg:Ulrike_von">Ulrike von Luxburg</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="30. Online AUC Maximization.">30. Online AUC Maximization.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:233-240</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhao:Peilin">Peilin Zhao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hoi:Steven_C=_H=">Steven C. H. Hoi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jin:Rong">Rong Jin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Tianbao">Tianbao Yang</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="31. Beat the Mean Bandit.">31. Beat the Mean Bandit.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:241-248</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yue:Yisong">Yisong Yue</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Joachims:Thorsten">Thorsten Joachims</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="32. Ultra-Fast Optimization Algorithm for Sparse Multi Kernel Learning.">32. Ultra-Fast Optimization Algorithm for Sparse Multi Kernel Learning.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:249-256</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/o/Orabona:Francesco">Francesco Orabona</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Luo:Jie">Jie Luo</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="33. Estimating the Bayes Point Using Linear Knapsack Problems.">33. Estimating the Bayes Point Using Linear Knapsack Problems.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:257-264</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Potetz:Brian">Brian Potetz</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="34. On optimization methods for deep learning.">34. On optimization methods for deep learning.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:265-272</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Le:Quoc_V=">Quoc V. Le</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Ngiam:Jiquan">Jiquan Ngiam</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Coates:Adam">Adam Coates</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lahiri:Ahbik">Ahbik Lahiri</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Prochnow:Bobby">Bobby Prochnow</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Ng:Andrew_Y=">Andrew Y. Ng</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="35. Multiclass Classification with Bandit Feedback using Adaptive Regularization.">35. Multiclass Classification with Bandit Feedback using Adaptive Regularization.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:273-280</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Crammer:Koby">Koby Crammer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gentile:Claudio">Claudio Gentile</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="36. On the Necessity of Irrelevant Variables.">36. On the Necessity of Irrelevant Variables.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:281-288</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Helmbold:David_P=">David P. Helmbold</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Long:Philip_M=">Philip M. Long</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="37. ABC-EP: Expectation Propagation for Likelihoodfree Bayesian Computation.">37. ABC-EP: Expectation Propagation for Likelihoodfree Bayesian Computation.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:289-296</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Barthelm=eacute=:Simon">Simon Barthelmé</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chopin:Nicolas">Nicolas Chopin</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="38. A PAC-Bayes Sample-compression Approach to Kernel Methods.">38. A PAC-Bayes Sample-compression Approach to Kernel Methods.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:297-304</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Germain:Pascal">Pascal Germain</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lacoste:Alexandre">Alexandre Lacoste</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Laviolette:Fran=ccedil=ois">François Laviolette</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Marchand:Mario">Mario Marchand</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shanian:Sara">Sara Shanian</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="39. Integrating Partial Model Knowledge in Model Free RL Algorithms.">39. Integrating Partial Model Knowledge in Model Free RL Algorithms.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:305-312</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Tamar:Aviv">Aviv Tamar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Castro:Dotan_Di">Dotan Di Castro</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Meir:Ron">Ron Meir</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="40. Fast Newton-type Methods for Total Variation Regularization.">40. Fast Newton-type Methods for Total Variation Regularization.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:313-320</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jim=eacute=nez:=Aacute=lvaro_Barbero">Álvaro Barbero Jiménez</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sra:Suvrit">Suvrit Sra</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="41. Parallel Coordinate Descent for L1-Regularized Loss Minimization.">41. Parallel Coordinate Descent for L1-Regularized Loss Minimization.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:321-328</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bradley:Joseph_K=">Joseph K. Bradley</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kyrola:Aapo">Aapo Kyrola</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bickson:Danny">Danny Bickson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Guestrin:Carlos">Carlos Guestrin</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="42. Large-Scale Convex Minimization with a Low-Rank Constraint.">42. Large-Scale Convex Minimization with a Low-Rank Constraint.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:329-336</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Shalev=Shwartz:Shai">Shai Shalev-Shwartz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gonen:Alon">Alon Gonen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shamir:Ohad">Ohad Shamir</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="43. Approximate Dynamic Programming for Storage Problems.">43. Approximate Dynamic Programming for Storage Problems.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:337-344</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hannah:Lauren">Lauren Hannah</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dunson:David_B=">David B. Dunson</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="44. Online Submodular Minimization for Combinatorial Structures.">44. Online Submodular Minimization for Combinatorial Structures.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:345-352</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jegelka:Stefanie">Stefanie Jegelka</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bilmes:Jeff_A=">Jeff A. Bilmes</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="45. Minimal Loss Hashing for Compact Binary Codes.">45. Minimal Loss Hashing for Compact Binary Codes.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:353-360</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Norouzi_0002:Mohammad">Mohammad Norouzi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fleet:David_J=">David J. Fleet</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="46. The Hierarchical Beta Process for Convolutional Factor Analysis and Deep Learning.">46. The Hierarchical Beta Process for Convolutional Factor Analysis and Deep Learning.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:361-368</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Bo">Bo Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Polatkan:Gungor">Gungor Polatkan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sapiro:Guillermo">Guillermo Sapiro</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dunson:David_B=">David B. Dunson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Carin:Lawrence">Lawrence Carin</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="47. Simultaneous Learning and Covering with Adversarial Noise.">47. Simultaneous Learning and Covering with Adversarial Noise.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:369-376</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Guillory:Andrew">Andrew Guillory</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bilmes:Jeff_A=">Jeff A. Bilmes</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="48. Topic Modeling with Nonparametric Markov Tree.">48. Topic Modeling with Nonparametric Markov Tree.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:377-384</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Haojun">Haojun Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dunson:David_B=">David B. Dunson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Carin:Lawrence">Lawrence Carin</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="49. Relational Active Learning for Joint Collective Classification Models.">49. Relational Active Learning for Joint Collective Classification Models.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:385-392</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kuwadekar:Ankit">Ankit Kuwadekar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Neville:Jennifer">Jennifer Neville</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="50. A Co-training Approach for Multi-view Spectral Clustering.">50. A Co-training Approach for Multi-view Spectral Clustering.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:393-400</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kumar_0001:Abhishek">Abhishek Kumar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Daum=eacute=_III:Hal">Hal Daumé III</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="51. Learning from Multiple Outlooks.">51. Learning from Multiple Outlooks.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:401-408</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Harel:Maayan">Maayan Harel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mannor:Shie">Shie Mannor</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="52. Adaptive Kernel Approximation for Large-Scale Non-Linear SVM Prediction.">52. Adaptive Kernel Approximation for Large-Scale Non-Linear SVM Prediction.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:409-416</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cossalter:Michele">Michele Cossalter</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yan:Rong">Rong Yan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zheng:Lu">Lu Zheng</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="53. Risk-Based Generalizations of f-divergences.">53. Risk-Based Generalizations of f-divergences.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:417-424</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Garc=iacute=a=Garc=iacute=a:Dario">Dario García-García</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Luxburg:Ulrike_von">Ulrike von Luxburg</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Santos=Rodr=iacute=guez:Ra=uacute=l">Raúl Santos-Rodríguez</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="54. Learning Multi-View Neighborhood Preserving Projections.">54. Learning Multi-View Neighborhood Preserving Projections.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:425-432</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/q/Quadrianto:Novi">Novi Quadrianto</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lampert:Christoph_H=">Christoph H. Lampert</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="55. Better Algorithms for Selective Sampling.">55. Better Algorithms for Selective Sampling.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:433-440</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/o/Orabona:Francesco">Francesco Orabona</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cesa=Bianchi:Nicol=ograve=">Nicolò Cesa-Bianchi</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="56. Minimax Learning Rates for Bipartite Ranking and Plug-in Rules.">56. Minimax Learning Rates for Bipartite Ranking and Plug-in Rules.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:441-448</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Robbiano:Sylvain">Sylvain Robbiano</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cl=eacute=men=ccedil=on:St=eacute=phan">Stéphan Clémençon</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="57. Task Space Retrieval Using Inverse Feedback Control.">57. Task Space Retrieval Using Inverse Feedback Control.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:449-456</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jetchev:Nikolay">Nikolay Jetchev</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Toussaint:Marc">Marc Toussaint</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="58. Bayesian CCA via Group Sparsity.">58. Bayesian CCA via Group Sparsity.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:457-464</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/v/Virtanen:Seppo">Seppo Virtanen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Klami:Arto">Arto Klami</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kaski:Samuel">Samuel Kaski</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="59. PILCO: A Model-Based and Data-Efficient Approach to Policy Search.">59. PILCO: A Model-Based and Data-Efficient Approach to Policy Search.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:465-472</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Deisenroth:Marc_Peter">Marc Peter Deisenroth</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rasmussen:Carl_Edward">Carl Edward Rasmussen</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="60. Suboptimal Solution Path Algorithm for Support Vector Machine.">60. Suboptimal Solution Path Algorithm for Support Vector Machine.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:473-480</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Karasuyama:Masayuki">Masayuki Karasuyama</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Takeuchi:Ichiro">Ichiro Takeuchi</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="61. Incremental Basis Construction from Temporal Difference Error.">61. Incremental Basis Construction from Temporal Difference Error.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:481-488</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sun:Yi">Yi Sun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gomez:Faustino_J=">Faustino J. Gomez</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ring:Mark_B=">Mark B. Ring</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schmidhuber:J=uuml=rgen">Jürgen Schmidhuber</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="62. Predicting Legislative Roll Calls from Text.">62. Predicting Legislative Roll Calls from Text.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:489-496</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gerrish:Sean">Sean Gerrish</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Blei:David_M=">David M. Blei</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="63. On Bayesian PCA: Automatic Dimensionality Selection and Analytic Solution.">63. On Bayesian PCA: Automatic Dimensionality Selection and Analytic Solution.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:497-504</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Nakajima:Shinichi">Shinichi Nakajima</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sugiyama:Masashi">Masashi Sugiyama</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Babacan:S=_Derin">S. Derin Babacan</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="64. Learning Linear Functions with Quadratic and Linear Multiplicative Updates.">64. Learning Linear Functions with Quadratic and Linear Multiplicative Updates.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:505-512</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bylander:Tom">Tom Bylander</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="65. Domain Adaptation for Large-Scale Sentiment Classification: A Deep Learning Approach.">65. Domain Adaptation for Large-Scale Sentiment Classification: A Deep Learning Approach.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:513-520</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Glorot:Xavier">Xavier Glorot</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bordes:Antoine">Antoine Bordes</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bengio:Yoshua">Yoshua Bengio</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="66. Learning with Whom to Share in Multi-task Feature Learning.">66. Learning with Whom to Share in Multi-task Feature Learning.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:521-528</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kang:Zhuoliang">Zhuoliang Kang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Grauman:Kristen">Kristen Grauman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sha:Fei">Fei Sha</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="67. Boosting on a Budget: Sampling for Feature-Efficient Prediction.">67. Boosting on a Budget: Sampling for Feature-Efficient Prediction.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:529-536</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Reyzin:Lev">Lev Reyzin</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="68. Speeding-Up Hoeffding-Based Regression Trees With Options.">68. Speeding-Up Hoeffding-Based Regression Trees With Options.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:537-544</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/i/Ikonomovska:Elena">Elena Ikonomovska</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gama:Jo=atilde=o">João Gama</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zenko:Bernard">Bernard Zenko</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dzeroski:Saso">Saso Dzeroski</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="69. Linear Regression under Fixed-Rank Constraints: A Riemannian Approach.">69. Linear Regression under Fixed-Rank Constraints: A Riemannian Approach.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:545-552</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Meyer:Gilles">Gilles Meyer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bonnabel:Silvere">Silvere Bonnabel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sepulchre:Rodolphe">Rodolphe Sepulchre</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="70. Cauchy Graph Embedding.">70. Cauchy Graph Embedding.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:553-560</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Luo:Dijun">Dijun Luo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Ding:Chris_H=_Q=">Chris H. Q. Ding</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nie:Feiping">Feiping Nie</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Huang:Heng">Heng Huang</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="71. Uncovering the Temporal Dynamics of Diffusion Networks.">71. Uncovering the Temporal Dynamics of Diffusion Networks.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:561-568</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gomez=Rodriguez:Manuel">Manuel Gomez-Rodriguez</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Balduzzi:David">David Balduzzi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sch=ouml=lkopf:Bernhard">Bernhard Schölkopf</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="72. Multiclass Boosting with Hinge Loss based on Output Coding.">72. Multiclass Boosting with Hinge Loss based on Output Coding.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:569-576</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gao:Tianshi">Tianshi Gao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Koller:Daphne">Daphne Koller</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="73. Approximation Bounds for Inference using Cooperative Cuts.">73. Approximation Bounds for Inference using Cooperative Cuts.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:577-584</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jegelka:Stefanie">Stefanie Jegelka</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bilmes:Jeff_A=">Jeff A. Bilmes</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="74. Brier Curves: a New Cost-Based Visualisation of Classifier Performance.">74. Brier Curves: a New Cost-Based Visualisation of Classifier Performance.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:585-592</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hern=aacute=ndez=Orallo:Jos=eacute=">José Hernández-Orallo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Flach:Peter_A=">Peter A. Flach</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ramirez:C=egrave=sar_Ferri">Cèsar Ferri Ramirez</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="75. Semi-supervised Penalized Output Kernel Regression for Link Prediction.">75. Semi-supervised Penalized Output Kernel Regression for Link Prediction.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:593-600</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Brouard:C=eacute=line">Céline Brouard</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/d=Alch=eacute==Buc:Florence">Florence d'Alché-Buc</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Szafranski:Marie">Marie Szafranski</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="76. A New Bayesian Rating System for Team Competitions.">76. A New Bayesian Rating System for Team Competitions.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:601-608</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Nikolenko:Sergey_I=">Sergey I. Nikolenko</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sirotkin:Alexander">Alexander Sirotkin</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="77. OptiML: An Implicitly Parallel Domain-Specific Language for Machine Learning.">77. OptiML: An Implicitly Parallel Domain-Specific Language for Machine Learning.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:609-616</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sujeeth:Arvind_K=">Arvind K. Sujeeth</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:HyoukJoong">HyoukJoong Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Brown:Kevin_J=">Kevin J. Brown</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rompf:Tiark">Tiark Rompf</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chafi:Hassan">Hassan Chafi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Michael">Michael Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Atreya:Anand_R=">Anand R. Atreya</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Odersky:Martin">Martin Odersky</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Olukotun:Kunle">Kunle Olukotun</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="78. Infinite SVM: a Dirichlet Process Mixture of Large-margin Kernel Machines.">78. Infinite SVM: a Dirichlet Process Mixture of Large-margin Kernel Machines.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:617-624</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Jun">Jun Zhu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Ning">Ning Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xing:Eric_P=">Eric P. Xing</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="79. On the Integration of Topic Modeling and Dictionary Learning.">79. On the Integration of Topic Modeling and Dictionary Learning.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:625-632</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Lingbo">Lingbo Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Mingyuan">Mingyuan Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sapiro:Guillermo">Guillermo Sapiro</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Carin:Lawrence">Lawrence Carin</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="80. Piecewise Bounds for Estimating Bernoulli-Logistic Latent Gaussian Models.">80. Piecewise Bounds for Estimating Bernoulli-Logistic Latent Gaussian Models.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:633-640</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Marlin:Benjamin_M=">Benjamin M. Marlin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Khan:Mohammad_Emtiyaz">Mohammad Emtiyaz Khan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Murphy:Kevin_P=">Kevin P. Murphy</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="81. Access to Unlabeled Data can Speed up Prediction Time.">81. Access to Unlabeled Data can Speed up Prediction Time.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:641-648</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/u/Urner:Ruth">Ruth Urner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shalev=Shwartz:Shai">Shai Shalev-Shwartz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Ben=David:Shai">Shai Ben-David</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="82. From PAC-Bayes Bounds to Quadratic Programs for Majority Votes.">82. From PAC-Bayes Bounds to Quadratic Programs for Majority Votes.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:649-656</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Roy:Jean=Francis">Jean-Francis Roy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Laviolette:Fran=ccedil=ois">François Laviolette</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Marchand:Mario">Mario Marchand</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="83. A Coherent Interpretation of AUC as a Measure of Aggregated Classification Performance.">83. A Coherent Interpretation of AUC as a Measure of Aggregated Classification Performance.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:657-664</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Flach:Peter_A=">Peter A. Flach</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hern=aacute=ndez=Orallo:Jos=eacute=">José Hernández-Orallo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ramirez:C=egrave=sar_Ferri">Cèsar Ferri Ramirez</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="84. Support Vector Machines as Probabilistic Models.">84. Support Vector Machines as Probabilistic Models.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:665-672</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Franc:Vojtech">Vojtech Franc</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zien:Alexander">Alexander Zien</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sch=ouml=lkopf:Bernhard">Bernhard Schölkopf</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="85. Adaptively Learning the Crowd Kernel.">85. Adaptively Learning the Crowd Kernel.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:673-680</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Tamuz:Omer">Omer Tamuz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Ce">Ce Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Belongie:Serge_J=">Serge J. Belongie</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shamir:Ohad">Ohad Shamir</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kalai:Adam">Adam Kalai</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="86. Bayesian Learning via Stochastic Gradient Langevin Dynamics.">86. Bayesian Learning via Stochastic Gradient Langevin Dynamics.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:681-688</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Welling:Max">Max Welling</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Teh:Yee_Whye">Yee Whye Teh</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="87. Multimodal Deep Learning.">87. Multimodal Deep Learning.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:689-696</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Ngiam:Jiquan">Jiquan Ngiam</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Khosla:Aditya">Aditya Khosla</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Mingyu">Mingyu Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nam:Juhan">Juhan Nam</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Honglak">Honglak Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Ng:Andrew_Y=">Andrew Y. Ng</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="88. On the Robustness of Kernel Density M-Estimators.">88. On the Robustness of Kernel Density M-Estimators.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:697-704</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kim:JooSeuk">JooSeuk Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Scott:Clayton_D=">Clayton D. Scott</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="89. Beam Search based MAP Estimates for the Indian Buffet Process.">89. Beam Search based MAP Estimates for the Indian Buffet Process.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:705-712</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Rai:Piyush">Piyush Rai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Daum=eacute=_III:Hal">Hal Daumé III</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="90. Optimal Distributed Online Prediction.">90. Optimal Distributed Online Prediction.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:713-720</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dekel:Ofer">Ofer Dekel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gilad=Bachrach:Ran">Ran Gilad-Bachrach</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shamir:Ohad">Ohad Shamir</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xiao:Lin">Lin Xiao</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="91. Message Passing Algorithms for the Dirichlet Diffusion Tree.">91. Message Passing Algorithms for the Dirichlet Diffusion Tree.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:721-728</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Knowles:David_A=">David A. Knowles</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gael:Jurgen_Van">Jurgen Van Gael</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Ghahramani:Zoubin">Zoubin Ghahramani</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="92. Convex Max-Product over Compact Sets for Protein Folding.">92. Convex Max-Product over Compact Sets for Protein Folding.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:729-736</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Peng_0001:Jian">Jian Peng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hazan:Tamir">Tamir Hazan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McAllester:David_A=">David A. McAllester</a> ; <a href="http://dblp.uni-trier.de/pers/hd/u/Urtasun:Raquel">Raquel Urtasun</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="93. Structure Learning in Ergodic Factored MDPs without Knowledge of the Transition Function's In-Degree.">93. Structure Learning in Ergodic Factored MDPs without Knowledge of the Transition Function's In-Degree.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:737-744</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chakraborty:Doran">Doran Chakraborty</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stone:Peter">Peter Stone</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="94. Clusterpath: an Algorithm for Clustering using Convex Fusion Penalties.">94. Clusterpath: an Algorithm for Clustering using Convex Fusion Penalties.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:745-752</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hocking:Toby">Toby Hocking</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vert:Jean=Philippe">Jean-Philippe Vert</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bach:Francis_R=">Francis R. Bach</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Joulin:Armand">Armand Joulin</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="95. Tree preserving embedding.">95. Tree preserving embedding.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:753-760</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Shieh:Albert">Albert Shieh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hashimoto:Tatsunori_B=">Tatsunori B. Hashimoto</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Airoldi:Edoardo_M=">Edoardo M. Airoldi</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="96. Clustering by Left-Stochastic Matrix Factorization.">96. Clustering by Left-Stochastic Matrix Factorization.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:761-768</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Arora:Raman">Raman Arora</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gupta:Maya_R=">Maya R. Gupta</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kapila:Amol">Amol Kapila</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fazel:Maryam">Maryam Fazel</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="97. The Infinite Regionalized Policy Representation.">97. The Infinite Regionalized Policy Representation.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:769-776</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Miao">Miao Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liao:Xuejun">Xuejun Liao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Carin:Lawrence">Lawrence Carin</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="98. SampleRank: Training Factor Graphs with Atomic Gradients.">98. SampleRank: Training Factor Graphs with Atomic Gradients.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:777-784</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wick:Michael_L=">Michael L. Wick</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rohanimanesh:Khashayar">Khashayar Rohanimanesh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bellare:Kedar">Kedar Bellare</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Culotta:Aron">Aron Culotta</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McCallum:Andrew">Andrew McCallum</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="99. Tree-Structured Infinite Sparse Factor Model.">99. Tree-Structured Infinite Sparse Factor Model.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:785-792</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:XianXing">XianXing Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dunson:David_B=">David B. Dunson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Carin:Lawrence">Lawrence Carin</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="100. Preserving Personalized Pagerank in Subgraphs.">100. Preserving Personalized Pagerank in Subgraphs.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:793-800</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/v/Vattani:Andrea">Andrea Vattani</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chakrabarti:Deepayan">Deepayan Chakrabarti</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gurevich:Maxim">Maxim Gurevich</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="101. Hierarchical Classification via Orthogonal Transfer.">101. Hierarchical Classification via Orthogonal Transfer.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:801-808</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/x/Xiao:Lin">Lin Xiao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Dengyong">Dengyong Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Mingrui">Mingrui Wu</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="102. A Three-Way Model for Collective Learning on Multi-Relational Data.">102. A Three-Way Model for Collective Learning on Multi-Relational Data.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:809-816</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Nickel:Maximilian">Maximilian Nickel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tresp:Volker">Volker Tresp</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kriegel:Hans=Peter">Hans-Peter Kriegel</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="103. Variational Inference for Policy Search in changing situations.">103. Variational Inference for Policy Search in changing situations.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:817-824</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Neumann:Gerhard">Gerhard Neumann</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="104. Learning Scoring Functions with Order-Preserving Losses and Standardized Supervision.">104. Learning Scoring Functions with Order-Preserving Losses and Standardized Supervision.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:825-832</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Buffoni:David">David Buffoni</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Calauz=egrave=nes:Cl=eacute=ment">Clément Calauzènes</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gallinari:Patrick">Patrick Gallinari</a> ; <a href="http://dblp.uni-trier.de/pers/hd/u/Usunier:Nicolas">Nicolas Usunier</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="105. Contractive Auto-Encoders: Explicit Invariance During Feature Extraction.">105. Contractive Auto-Encoders: Explicit Invariance During Feature Extraction.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:833-840</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Rifai:Salah">Salah Rifai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vincent:Pascal">Pascal Vincent</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Muller:Xavier">Xavier Muller</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Glorot:Xavier">Xavier Glorot</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bengio:Yoshua">Yoshua Bengio</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="106. Variational Heteroscedastic Gaussian Process Regression.">106. Variational Heteroscedastic Gaussian Process Regression.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:841-848</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/L=aacute=zaro=Gredilla:Miguel">Miguel Lázaro-Gredilla</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Titsias:Michalis_K=">Michalis K. Titsias</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="107. Bounding the Partition Function using Holder's Inequality.">107. Bounding the Partition Function using Holder's Inequality.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:849-856</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Qiang">Qiang Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/i/Ihler:Alexander_T=">Alexander T. Ihler</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="108. Dynamic Egocentric Models for Citation Networks.">108. Dynamic Egocentric Models for Citation Networks.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:857-864</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/v/Vu:Duy_Quang">Duy Quang Vu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Asuncion:Arthur_U=">Arthur U. Asuncion</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hunter:David_R=">David R. Hunter</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Smyth:Padhraic">Padhraic Smyth</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="109. The Constrained Weight Space SVM: Learning with Ranked Features.">109. The Constrained Weight Space SVM: Learning with Ranked Features.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:865-872</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Small:Kevin">Kevin Small</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wallace:Byron_C=">Byron C. Wallace</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Brodley:Carla_E=">Carla E. Brodley</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Trikalinos:Thomas_A=">Thomas A. Trikalinos</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="110. Robust Matrix Completion and Corrupted Columns.">110. Robust Matrix Completion and Corrupted Columns.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:873-880</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Yudong">Yudong Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Huan">Huan Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Caramanis:Constantine">Constantine Caramanis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sanghavi:Sujay">Sujay Sanghavi</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="111. Online Discovery of Feature Dependencies.">111. Online Discovery of Feature Dependencies.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:881-888</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Geramifard:Alborz">Alborz Geramifard</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Doshi:Finale">Finale Doshi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Redding:Josh">Josh Redding</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Roy:Nicholas">Nicholas Roy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/How:Jonathan_P=">Jonathan P. How</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="112. Variational Inference for Stick-Breaking Beta Process Priors.">112. Variational Inference for Stick-Breaking Beta Process Priors.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:889-896</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Paisley:John_William">John William Paisley</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Carin:Lawrence">Lawrence Carin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Blei:David_M=">David M. Blei</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="113. Apprenticeship Learning About Multiple Intentions.">113. Apprenticeship Learning About Multiple Intentions.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:897-904</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Babes:Monica">Monica Babes</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Marivate:Vukosi_N=">Vukosi N. Marivate</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Subramanian:Kaushik">Kaushik Subramanian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Littman:Michael_L=">Michael L. Littman</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="114. Minimum Probability Flow Learning.">114. Minimum Probability Flow Learning.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:905-912</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sohl=Dickstein:Jascha">Jascha Sohl-Dickstein</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Battaglino:Peter">Peter Battaglino</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/DeWeese:Michael_R=">Michael R. DeWeese</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="115. Infinite Dynamic Bayesian Networks.">115. Infinite Dynamic Bayesian Networks.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:913-920</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Doshi:Finale">Finale Doshi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wingate:David">David Wingate</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tenenbaum:Joshua_B=">Joshua B. Tenenbaum</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Roy:Nicholas">Nicholas Roy</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="116. The Importance of Encoding Versus Training with Sparse Coding and Vector Quantization.">116. The Importance of Encoding Versus Training with Sparse Coding and Vector Quantization.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:921-928</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Coates:Adam">Adam Coates</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Ng:Andrew_Y=">Andrew Y. Ng</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="117. Fast Global Alignment Kernels.">117. Fast Global Alignment Kernels.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:929-936</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cuturi:Marco">Marco Cuturi</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="118. Learning attentional policies for tracking and recognition in video with deep networks.">118. Learning attentional policies for tracking and recognition in video with deep networks.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:937-944</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bazzani:Loris">Loris Bazzani</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Freitas:Nando_de">Nando de Freitas</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Larochelle:Hugo">Hugo Larochelle</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Murino:Vittorio">Vittorio Murino</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Ting:Jo=Anne">Jo-Anne Ting</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="119. Large-Scale Learning of Embeddings with Reconstruction Sampling.">119. Large-Scale Learning of Embeddings with Reconstruction Sampling.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:945-952</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dauphin:Yann">Yann Dauphin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Glorot:Xavier">Xavier Glorot</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bengio:Yoshua">Yoshua Bengio</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="120. Automatic Feature Decomposition for Single View Co-training.">120. Automatic Feature Decomposition for Single View Co-training.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:953-960</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Minmin">Minmin Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Weinberger:Kilian_Q=">Kilian Q. Weinberger</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Yixin">Yixin Chen</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="121. Mapping kernels for trees.">121. Mapping kernels for trees.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:961-968</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Shin:Kilho">Kilho Shin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cuturi:Marco">Marco Cuturi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kuboyama:Tetsuji">Tetsuji Kuboyama</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="122. Stochastic Low-Rank Kernel Learning for Regression.">122. Stochastic Low-Rank Kernel Learning for Regression.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:969-976</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Machart:Pierre">Pierre Machart</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Peel:Thomas">Thomas Peel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Anthoine:Sandrine">Sandrine Anthoine</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ralaivola:Liva">Liva Ralaivola</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Glotin:Herv=eacute=">Hervé Glotin</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="123. Size-constrained Submodular Minimization through Minimum Norm Base.">123. Size-constrained Submodular Minimization through Minimum Norm Base.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:977-984</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Nagano:Kiyohito">Kiyohito Nagano</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kawahara:Yoshinobu">Yoshinobu Kawahara</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Aihara:Kazuyuki">Kazuyuki Aihara</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="124. Locally Linear Support Vector Machines.">124. Locally Linear Support Vector Machines.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:985-992</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Ladicky:Lubor">Lubor Ladicky</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Torr:Philip_H=_S=">Philip H. S. Torr</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="125. Functional Regularized Least Squares Classication with Operator-valued Kernels.">125. Functional Regularized Least Squares Classication with Operator-valued Kernels.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:993-1000</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kadri:Hachem">Hachem Kadri</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rabaoui:Asma">Asma Rabaoui</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Preux:Philippe">Philippe Preux</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Duflos:Emmanuel">Emmanuel Duflos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rakotomamonjy:Alain">Alain Rakotomamonjy</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="126. Clustering Partially Observed Graphs via Convex Optimization.">126. Clustering Partially Observed Graphs via Convex Optimization.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1001-1008</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jalali:Ali">Ali Jalali</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Yudong">Yudong Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sanghavi:Sujay">Sujay Sanghavi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Huan">Huan Xu</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="127. On the Use of Variational Inference for Learning Discrete Graphical Model.">127. On the Use of Variational Inference for Learning Discrete Graphical Model.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1009-1016</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Eunho">Eunho Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ravikumar:Pradeep">Pradeep Ravikumar</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="128. Generating Text with Recurrent Neural Networks.">128. Generating Text with Recurrent Neural Networks.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1017-1024</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sutskever:Ilya">Ilya Sutskever</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Martens:James">James Martens</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hinton:Geoffrey_E=">Geoffrey E. Hinton</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="129. Probabilistic Matrix Addition.">129. Probabilistic Matrix Addition.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1025-1032</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Agovic:Amrudin">Amrudin Agovic</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Banerjee:Arindam">Arindam Banerjee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chatterjee:Snigdhansu">Snigdhansu Chatterjee</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="130. Learning Recurrent Neural Networks with Hessian-Free Optimization.">130. Learning Recurrent Neural Networks with Hessian-Free Optimization.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1033-1040</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Martens:James">James Martens</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sutskever:Ilya">Ilya Sutskever</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="131. Sparse Additive Generative Models of Text.">131. Sparse Additive Generative Models of Text.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1041-1048</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/e/Eisenstein:Jacob">Jacob Eisenstein</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Ahmed:Amr">Amr Ahmed</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xing:Eric_P=">Eric P. Xing</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="132. Classification-based Policy Iteration with a Critic.">132. Classification-based Policy Iteration with a Critic.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1049-1056</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gabillon:Victor">Victor Gabillon</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lazaric:Alessandro">Alessandro Lazaric</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Ghavamzadeh:Mohammad">Mohammad Ghavamzadeh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Scherrer:Bruno">Bruno Scherrer</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="133. Submodular meets Spectral: Greedy Algorithms for Subset Selection, Sparse Approximation and Dictionary Selection.">133. Submodular meets Spectral: Greedy Algorithms for Subset Selection, Sparse Approximation and Dictionary Selection.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1057-1064</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Das:Abhimanyu">Abhimanyu Das</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kempe:David">David Kempe</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="134. A Spectral Algorithm for Latent Tree Graphical Models.">134. A Spectral Algorithm for Latent Tree Graphical Models.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1065-1072</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Parikh:Ankur_P=">Ankur P. Parikh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Song:Le">Le Song</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xing:Eric_P=">Eric P. Xing</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="135. A Unified Probabilistic Model for Global and Local Unsupervised Feature Selection.">135. A Unified Probabilistic Model for Global and Local Unsupervised Feature Selection.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1073-1080</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Guan:Yue">Yue Guan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dy:Jennifer_G=">Jennifer G. Dy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jordan:Michael_I=">Michael I. Jordan</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="136. Towards Making Unlabeled Data Never Hurt.">136. Towards Making Unlabeled Data Never Hurt.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1081-1088</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Yu=Feng">Yu-Feng Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Zhi=Hua">Zhi-Hua Zhou</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="137. On Random Weights and Unsupervised Feature Learning.">137. On Random Weights and Unsupervised Feature Learning.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1089-1096</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Saxe:Andrew_M=">Andrew M. Saxe</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Koh:Pang_Wei">Pang Wei Koh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Zhenghao">Zhenghao Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bhand:Maneesh">Maneesh Bhand</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Suresh:Bipin">Bipin Suresh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Ng:Andrew_Y=">Andrew Y. Ng</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="138. Doubly Robust Policy Evaluation and Learning.">138. Doubly Robust Policy Evaluation and Learning.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1097-1104</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dud=iacute=k:Miroslav">Miroslav Dudík</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Langford:John">John Langford</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Lihong">Lihong Li</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="139. Learning Deep Energy Models.">139. Learning Deep Energy Models.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1105-1112</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Ngiam:Jiquan">Jiquan Ngiam</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Zhenghao">Zhenghao Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Koh:Pang_Wei">Pang Wei Koh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Ng:Andrew_Y=">Andrew Y. Ng</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="140. Bipartite Ranking through Minimization of Univariate Loss.">140. Bipartite Ranking through Minimization of Univariate Loss.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1113-1120</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kotlowski:Wojciech">Wojciech Kotlowski</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dembczynski:Krzysztof">Krzysztof Dembczynski</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/H=uuml=llermeier:Eyke">Eyke Hüllermeier</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="141. Manifold Identification of Dual Averaging Methods for Regularized Stochastic Online Learning.">141. Manifold Identification of Dual Averaging Methods for Regularized Stochastic Online Learning.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1121-1128</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lee_0002:Sangkyun">Sangkyun Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wright:Stephen_J=">Stephen J. Wright</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="142. Noisy matrix decomposition via convex relaxation: Optimal rates in high dimensions.">142. Noisy matrix decomposition via convex relaxation: Optimal rates in high dimensions.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1129-1136</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Agarwal:Alekh">Alekh Agarwal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Negahban:Sahand">Sahand Negahban</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wainwright:Martin_J=">Martin J. Wainwright</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="143. Bundle Selling by Online Estimation of Valuation Functions.">143. Bundle Selling by Online Estimation of Valuation Functions.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1137-1144</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/v/Vainsencher:Daniel">Daniel Vainsencher</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dekel:Ofer">Ofer Dekel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mannor:Shie">Shie Mannor</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="144. Unsupervised Models of Images by Spikeand-Slab RBMs.">144. Unsupervised Models of Images by Spikeand-Slab RBMs.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1145-1152</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Courville:Aaron_C=">Aaron C. Courville</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bergstra:James">James Bergstra</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bengio:Yoshua">Yoshua Bengio</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="145. Approximating Correlated Equilibria using Relaxations on the Marginal Polytope.">145. Approximating Correlated Equilibria using Relaxations on the Marginal Polytope.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1153-1160</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kamisetty:Hetunandan">Hetunandan Kamisetty</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xing:Eric_P=">Eric P. Xing</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Langmead:Christopher_James">Christopher James Langmead</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="146. Active Learning from Crowds.">146. Active Learning from Crowds.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1161-1168</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yan:Yan">Yan Yan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rosales:R=oacute=mer">Rómer Rosales</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fung:Glenn">Glenn Fung</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dy:Jennifer_G=">Jennifer G. Dy</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="147. Computational Rationalization: The Inverse Equilibrium Problem.">147. Computational Rationalization: The Inverse Equilibrium Problem.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1169-1176</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Waugh:Kevin">Kevin Waugh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Ziebart:Brian_D=">Brian D. Ziebart</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bagnell:Drew">Drew Bagnell</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="148. Finite-Sample Analysis of Lasso-TD.">148. Finite-Sample Analysis of Lasso-TD.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1177-1184</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Ghavamzadeh:Mohammad">Mohammad Ghavamzadeh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lazaric:Alessandro">Alessandro Lazaric</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Munos:R=eacute=mi">Rémi Munos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hoffman:Matthew_W=">Matthew W. Hoffman</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="149. Generalized Value Functions for Large Action Sets.">149. Generalized Value Functions for Large Action Sets.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1185-1192</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Pazis:Jason">Jason Pazis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Parr:Ronald">Ronald Parr</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="150. k-DPPs: Fixed-Size Determinantal Point Processes.">150. k-DPPs: Fixed-Size Determinantal Point Processes.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1193-1200</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kulesza:Alex">Alex Kulesza</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Taskar:Ben">Ben Taskar</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="151. On Autoencoders and Score Matching for Energy Based Models.">151. On Autoencoders and Score Matching for Energy Based Models.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1201-1208</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Swersky:Kevin">Kevin Swersky</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ranzato:Marc=Aurelio">Marc'Aurelio Ranzato</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Buchman:David">David Buchman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Marlin:Benjamin_M=">Benjamin M. Marlin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Freitas:Nando_de">Nando de Freitas</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="152. Generalized Boosting Algorithms for Convex Optimization.">152. Generalized Boosting Algorithms for Convex Optimization.</h3>
+<p>【<a href="">Paper Link</a>】    【Pages】:1209-1216</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Grubb:Alexander">Alexander Grubb</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bagnell:Drew">Drew Bagnell</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="http://huntercmd.github.io"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>
