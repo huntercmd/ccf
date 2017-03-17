@@ -1,0 +1,857 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/skin.js"></script>
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/classie.js"></script>
+
+<!-- This is for Mathjax -->
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#ACM SIGCOMM Conference 2016:Florianopolis, Brazil">ACM SIGCOMM Conference 2016:Florianopolis, Brazil</a><ul>
+<li><a href="#Paper Num: 78 || Session Num: 13">Paper Num: 78 || Session Num: 13</a></li>
+<li><a href="#Session 1: SDN & NFV    4">Session 1: SDN &amp; NFV    4</a><ul>
+<li><a href="#1. ClickNP: Highly flexible and High-performance Network Processing with Reconfigurable Hardware.">1. ClickNP: Highly flexible and High-performance Network Processing with Reconfigurable Hardware.</a></li>
+<li><a href="#2. Packet Transactions: High-Level Programming for Line-Rate Switches.">2. Packet Transactions: High-Level Programming for Line-Rate Switches.</a></li>
+<li><a href="#3. SNAP: Stateful Network-Wide Abstractions for Packet Processing.">3. SNAP: Stateful Network-Wide Abstractions for Packet Processing.</a></li>
+<li><a href="#4. Programmable Packet Scheduling at Line Rate.">4. Programmable Packet Scheduling at Line Rate.</a></li>
+</ul>
+</li>
+<li><a href="#Session 2: Wide Area Networks    3">Session 2: Wide Area Networks    3</a><ul>
+<li><a href="#5. Evolve or Die: High-Availability Design Principles Drawn from Googles Network Infrastructure.">5. Evolve or Die: High-Availability Design Principles Drawn from Googles Network Infrastructure.</a></li>
+<li><a href="#6. Dynamic Pricing and Traffic Engineering for Timely Inter-Datacenter Transfers.">6. Dynamic Pricing and Traffic Engineering for Timely Inter-Datacenter Transfers.</a></li>
+<li><a href="#7. Optimizing Bulk Transfers with Software-Defined Optical WAN.">7. Optimizing Bulk Transfers with Software-Defined Optical WAN.</a></li>
+</ul>
+</li>
+<li><a href="#Session 3: Monitoring and Diagnostics    3">Session 3: Monitoring and Diagnostics    3</a><ul>
+<li><a href="#8. One Sketch to Rule Them All: Rethinking Network Flow Monitoring with UnivMon.">8. One Sketch to Rule Them All: Rethinking Network Flow Monitoring with UnivMon.</a></li>
+<li><a href="#9. The Good, the Bad, and the Differences: Better Network Diagnostics with Differential Provenance.">9. The Good, the Bad, and the Differences: Better Network Diagnostics with Differential Provenance.</a></li>
+<li><a href="#10. Trumpet: Timely and Precise Triggers in Data Centers.">10. Trumpet: Timely and Precise Triggers in Data Centers.</a></li>
+</ul>
+</li>
+<li><a href="#Session 4: Scheduling    4">Session 4: Scheduling    4</a><ul>
+<li><a href="#11. 2DFQ: Two-Dimensional Fair Queuing for Multi-Tenant Cloud Services.">11. 2DFQ: Two-Dimensional Fair Queuing for Multi-Tenant Cloud Services.</a></li>
+<li><a href="#12. CODA: Toward Automatically Identifying and Scheduling Coflows in the Dark.">12. CODA: Toward Automatically Identifying and Scheduling Coflows in the Dark.</a></li>
+<li><a href="#13. Scheduling Mix-flows in Commodity Datacenters with Karuna.">13. Scheduling Mix-flows in Commodity Datacenters with Karuna.</a></li>
+<li><a href="#14. NUMFabric: Fast and Flexible Bandwidth Allocation in Datacenters.">14. NUMFabric: Fast and Flexible Bandwidth Allocation in Datacenters.</a></li>
+</ul>
+</li>
+<li><a href="#Session 5: Datacenters    4">Session 5: Datacenters    4</a><ul>
+<li><a href="#15. RDMA over Commodity Ethernet at Scale.">15. RDMA over Commodity Ethernet at Scale.</a></li>
+<li><a href="#16. ProjecToR: Agile Reconfigurable Data Center Interconnect.">16. ProjecToR: Agile Reconfigurable Data Center Interconnect.</a></li>
+<li><a href="#17. Virtualized Congestion Control.">17. Virtualized Congestion Control.</a></li>
+<li><a href="#18. AC/DC TCP: Virtual Congestion Control Enforcement for Datacenter Networks.">18. AC/DC TCP: Virtual Congestion Control Enforcement for Datacenter Networks.</a></li>
+</ul>
+</li>
+<li><a href="#Session 6: Networked Applications    3">Session 6: Networked Applications    3</a><ul>
+<li><a href="#19. WebPerf: Evaluating What-If Scenarios for Cloud-hosted Web Applications.">19. WebPerf: Evaluating What-If Scenarios for Cloud-hosted Web Applications.</a></li>
+<li><a href="#20. CS2P: Improving Video Bitrate Selection and Adaptation with Data-Driven Throughput Prediction.">20. CS2P: Improving Video Bitrate Selection and Adaptation with Data-Driven Throughput Prediction.</a></li>
+<li><a href="#21. Via: Improving Internet Telephony Call Quality Using Predictive Relay Selection.">21. Via: Improving Internet Telephony Call Quality Using Predictive Relay Selection.</a></li>
+</ul>
+</li>
+<li><a href="#Session 7: Verification    4">Session 7: Verification    4</a><ul>
+<li><a href="#22. Fast Control Plane Analysis Using an Abstract Representation.">22. Fast Control Plane Analysis Using an Abstract Representation.</a></li>
+<li><a href="#23. SymNet: Scalable symbolic execution for modern networks.">23. SymNet: Scalable symbolic execution for modern networks.</a></li>
+<li><a href="#24. Don't Mind the Gap: Bridging Network-wide Objectives and Device-level Configurations.">24. Don't Mind the Gap: Bridging Network-wide Objectives and Device-level Configurations.</a></li>
+<li><a href="#25. Jumpstarting BGP Security with Path-End Validation.">25. Jumpstarting BGP Security with Path-End Validation.</a></li>
+</ul>
+</li>
+<li><a href="#Session 8: Wireless    5">Session 8: Wireless    5</a><ul>
+<li><a href="#26. Inter-Technology Backscatter: Towards Internet Connectivity for Implanted Devices.">26. Inter-Technology Backscatter: Towards Internet Connectivity for Implanted Devices.</a></li>
+<li><a href="#27. Enabling Practical Backscatter Communication for On-body Sensors.">27. Enabling Practical Backscatter Communication for On-body Sensors.</a></li>
+<li><a href="#28. Braidio: An Integrated Active-Passive Radio for Mobile Devices with Asymmetric Energy Budgets.">28. Braidio: An Integrated Active-Passive Radio for Mobile Devices with Asymmetric Energy Budgets.</a></li>
+<li><a href="#29. Eliminating Channel Feedback in Next-Generation Cellular Networks.">29. Eliminating Channel Feedback in Next-Generation Cellular Networks.</a></li>
+<li><a href="#30. Real-time Distributed MIMO Systems.">30. Real-time Distributed MIMO Systems.</a></li>
+</ul>
+</li>
+<li><a href="#Session 9: Datacenters    3">Session 9: Datacenters    3</a><ul>
+<li><a href="#31. Robotron: Top-down Network Management at Facebook Scale.">31. Robotron: Top-down Network Management at Facebook Scale.</a></li>
+<li><a href="#32. Taking the Blame Game out of Data Centers Operations with NetPoirot.">32. Taking the Blame Game out of Data Centers Operations with NetPoirot.</a></li>
+<li><a href="#33. Globally Synchronized Time via Datacenter Networks.">33. Globally Synchronized Time via Datacenter Networks.</a></li>
+</ul>
+</li>
+<li><a href="#Session 10: Censorship and Choice    3">Session 10: Censorship and Choice    3</a><ul>
+<li><a href="#34. An Internet-Wide Analysis of Traffic Policing.">34. An Internet-Wide Analysis of Traffic Policing.</a></li>
+<li><a href="#35. Neutral Net Neutrality.">35. Neutral Net Neutrality.</a></li>
+<li><a href="#36. The Deforestation of L2.">36. The Deforestation of L2.</a></li>
+</ul>
+</li>
+<li><a href="#Session 11: SDN & NFV    3">Session 11: SDN &amp; NFV    3</a><ul>
+<li><a href="#37. OpenBox: A Software-Defined Framework for Developing, Deploying, and Managing Network Functions.">37. OpenBox: A Software-Defined Framework for Developing, Deploying, and Managing Network Functions.</a></li>
+<li><a href="#38. PISCES: A Programmable, Protocol-Independent Software Switch.">38. PISCES: A Programmable, Protocol-Independent Software Switch.</a></li>
+<li><a href="#39. Dataplane Specialization for High-performance OpenFlow Software Switching.">39. Dataplane Specialization for High-performance OpenFlow Software Switching.</a></li>
+</ul>
+</li>
+<li><a href="#Posters    21">Posters    21</a><ul>
+<li><a href="#40. PieBridge: A Cross-DR scale Large Data Transmission Scheduling System.">40. PieBridge: A Cross-DR scale Large Data Transmission Scheduling System.</a></li>
+<li><a href="#41. Best Effort Task Scheduling for Data Parallel Jobs.">41. Best Effort Task Scheduling for Data Parallel Jobs.</a></li>
+<li><a href="#42. A Longitudinal Analysis of .i2p Leakage in the Public DNS Infrastructure.">42. A Longitudinal Analysis of .i2p Leakage in the Public DNS Infrastructure.</a></li>
+<li><a href="#43. Application-specific Acceleration Framework for Mobile Applications.">43. Application-specific Acceleration Framework for Mobile Applications.</a></li>
+<li><a href="#44. Performance Evaluation of Locator/Identifier Separation Protocol through RIPE Atlas.">44. Performance Evaluation of Locator/Identifier Separation Protocol through RIPE Atlas.</a></li>
+<li><a href="#45. TafLoc: Time-adaptive and Fine-grained Device-free Localization with Little Cost.">45. TafLoc: Time-adaptive and Fine-grained Device-free Localization with Little Cost.</a></li>
+<li><a href="#46. Efficient Remapping of Internet Routing Events.">46. Efficient Remapping of Internet Routing Events.</a></li>
+<li><a href="#47. A First Look into Transnational Routing Detours.">47. A First Look into Transnational Routing Detours.</a></li>
+<li><a href="#48. PathCache: A Path Prediction Toolkit.">48. PathCache: A Path Prediction Toolkit.</a></li>
+<li><a href="#49. Privacy-Aware Infrastructure for Managing Personal Data.">49. Privacy-Aware Infrastructure for Managing Personal Data.</a></li>
+<li><a href="#50. Named Data Networking Based Smart Home Lighting.">50. Named Data Networking Based Smart Home Lighting.</a></li>
+<li><a href="#51. Conan: Content-aware Access Network Flow Scheduling to Improve QoE of Home Users.">51. Conan: Content-aware Access Network Flow Scheduling to Improve QoE of Home Users.</a></li>
+<li><a href="#52. Horse: towards an SDN traffic dynamics simulator for large scale networks.">52. Horse: towards an SDN traffic dynamics simulator for large scale networks.</a></li>
+<li><a href="#53. FAST: A Simple Programming Abstraction for Complex State-Dependent SDN Programming.">53. FAST: A Simple Programming Abstraction for Complex State-Dependent SDN Programming.</a></li>
+<li><a href="#54. SLA-NFV: an SLA-aware High Performance Framework for Network Function Virtualization.">54. SLA-NFV: an SLA-aware High Performance Framework for Network Function Virtualization.</a></li>
+<li><a href="#55. Building Application-Aware Network Environments using SDN for Optimizing Hadoop Applications.">55. Building Application-Aware Network Environments using SDN for Optimizing Hadoop Applications.</a></li>
+<li><a href="#56. Achieving Consistent SDN Control With Declarative Applications.">56. Achieving Consistent SDN Control With Declarative Applications.</a></li>
+<li><a href="#57. Modular SDN Compiler Design with Intermediate Representation.">57. Modular SDN Compiler Design with Intermediate Representation.</a></li>
+<li><a href="#58. Rethinking the Design of OpenFlow Switch Counters.">58. Rethinking the Design of OpenFlow Switch Counters.</a></li>
+<li><a href="#59. Taming the Flow Table Overflow in OpenFlow Switch.">59. Taming the Flow Table Overflow in OpenFlow Switch.</a></li>
+<li><a href="#60. Magellan: Generating Multi-Table Datapath from Datapath Oblivious Algorithmic SDN Policies.">60. Magellan: Generating Multi-Table Datapath from Datapath Oblivious Algorithmic SDN Policies.</a></li>
+</ul>
+</li>
+<li><a href="#Demos    18">Demos    18</a><ul>
+<li><a href="#61. Source Address Validation in Software Defined Networks.">61. Source Address Validation in Software Defined Networks.</a></li>
+<li><a href="#62. Towards Transiently Secure Updates in Asynchronous SDNs.">62. Towards Transiently Secure Updates in Asynchronous SDNs.</a></li>
+<li><a href="#63. Cases for Including a Reference Monitor to SDN.">63. Cases for Including a Reference Monitor to SDN.</a></li>
+<li><a href="#64. Roaming Edge vNFs using Glasgow Network Functions.">64. Roaming Edge vNFs using Glasgow Network Functions.</a></li>
+<li><a href="#65. A Transparent Highway for inter-Virtual Network Function Communication with Open vSwitch.">65. A Transparent Highway for inter-Virtual Network Function Communication with Open vSwitch.</a></li>
+<li><a href="#66. Modeling Native Software Components as Virtual Network Functions.">66. Modeling Native Software Components as Virtual Network Functions.</a></li>
+<li><a href="#67. Mininet-WiFi: A Platform for Hybrid Physical-Virtual Software-Defined Wireless Networking Research.">67. Mininet-WiFi: A Platform for Hybrid Physical-Virtual Software-Defined Wireless Networking Research.</a></li>
+<li><a href="#68. Off-the-Shelf Software-defined Wi-Fi Networks.">68. Off-the-Shelf Software-defined Wi-Fi Networks.</a></li>
+<li><a href="#69. Enabling Backscatter Communication among Commodity WiFi Radios.">69. Enabling Backscatter Communication among Commodity WiFi Radios.</a></li>
+<li><a href="#70. Multi-Domain Orchestration across RAN and Transport for 5G.">70. Multi-Domain Orchestration across RAN and Transport for 5G.</a></li>
+<li><a href="#71. EasyApp: A Cross-platform Mobile Applications Development Environment Based on OSGi.">71. EasyApp: A Cross-platform Mobile Applications Development Environment Based on OSGi.</a></li>
+<li><a href="#72. Application Driven Network: providing On-Demand Services for Applications.">72. Application Driven Network: providing On-Demand Services for Applications.</a></li>
+<li><a href="#73. Fibbing in action: On-demand load-balancing for better video delivery.">73. Fibbing in action: On-demand load-balancing for better video delivery.</a></li>
+<li><a href="#74. Capture and Replay: Reproducible Network Experiments in Mininet.">74. Capture and Replay: Reproducible Network Experiments in Mininet.</a></li>
+<li><a href="#75. MACSAD: Multi-Architecture Compiler System for Abstract Dataplanes (aka Partnering P4 with ODP">75. MACSAD: Multi-Architecture Compiler System for Abstract Dataplanes (aka Partnering P4 with ODP).</a>.)</li>
+<li><a href="#76. ARTEMIS: Real-Time Detection and Automatic Mitigation for BGP Prefix Hijacking.">76. ARTEMIS: Real-Time Detection and Automatic Mitigation for BGP Prefix Hijacking.</a></li>
+<li><a href="#77. A 60Gbps DPI Prototype based on Memory-Centric FPGA.">77. A 60Gbps DPI Prototype based on Memory-Centric FPGA.</a></li>
+<li><a href="#78. High speed packet forwarding compiled from protocol independent data plane specifications.">78. High speed packet forwarding compiled from protocol independent data plane specifications.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="ACM SIGCOMM Conference 2016:Florianopolis, Brazil">ACM SIGCOMM Conference 2016:Florianopolis, Brazil</h1>
+<p><a href="http://doi.acm.org/10.1145/2934872">Proceedings of the 2016 conference on ACM SIGCOMM 2016 Conference, Florianopolis, Brazil, August 22-26, 2016.</a> ACM
+【<a href="http://dblp.uni-trier.de/db/conf/sigcomm/sigcomm2016.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 78 || Session Num: 13">Paper Num: 78 || Session Num: 13</h2>
+<ul>
+<li><a href="#Demos    18">Demos    18</a></li>
+<li><a href="#Posters    21">Posters    21</a></li>
+<li><a href="#Session 10: Censorship and Choice    3">Session 10: Censorship and Choice    3</a></li>
+<li><a href="#Session 11: SDN & NFV    3">Session 11: SDN &amp; NFV    3</a></li>
+<li><a href="#Session 1: SDN & NFV    4">Session 1: SDN &amp; NFV    4</a></li>
+<li><a href="#Session 2: Wide Area Networks    3">Session 2: Wide Area Networks    3</a></li>
+<li><a href="#Session 3: Monitoring and Diagnostics    3">Session 3: Monitoring and Diagnostics    3</a></li>
+<li><a href="#Session 4: Scheduling    4">Session 4: Scheduling    4</a></li>
+<li><a href="#Session 5: Datacenters    4">Session 5: Datacenters    4</a></li>
+<li><a href="#Session 6: Networked Applications    3">Session 6: Networked Applications    3</a></li>
+<li><a href="#Session 7: Verification    4">Session 7: Verification    4</a></li>
+<li><a href="#Session 8: Wireless    5">Session 8: Wireless    5</a></li>
+<li><a href="#Session 9: Datacenters    3">Session 9: Datacenters    3</a></li>
+</ul>
+<h2 id="Session 1: SDN & NFV    4">Session 1: SDN &amp; NFV    4</h2>
+<h3 id="1. ClickNP: Highly flexible and High-performance Network Processing with Reconfigurable Hardware.">1. ClickNP: Highly flexible and High-performance Network Processing with Reconfigurable Hardware.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934897">Paper Link</a>】    【Pages】:1-14</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Bojie">Bojie Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tan:Kun">Kun Tan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Luo:Layong_Larry">Layong Larry Luo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Peng:Yanqing">Yanqing Peng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Luo:Renqian">Renqian Luo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Ningyi">Ningyi Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xiong:Yongqiang">Yongqiang Xiong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cheng:Peng">Peng Cheng</a></p>
+<p>【Abstract】:
+Highly flexible software network functions (NFs) are crucial components to enable multi-tenancy in the clouds. However, software packet processing on a commodity server has limited capacity and induces high latency. While software NFs could scale out using more servers, doing so adds significant cost. This paper focuses on accelerating NFs with programmable hardware, i.e., FPGA, which is now a mature technology and inexpensive for datacenters. However, FPGA is predominately programmed using low-level hardware description languages (HDLs), which are hard to code and difficult to debug. More importantly, HDLs are almost inaccessible for most software programmers. This paper presents ClickNP, a FPGA-accelerated platform for highly flexible and high-performance NFs with commodity servers. ClickNP is highly flexible as it is completely programmable using high-level C-like languages, and exposes a modular programming abstraction that resembles Click Modular Router. ClickNP is also high performance. Our prototype NFs show that they can process traffic at up to 200 million packets per second with ultra-low latency ($&lt; 2\mu$s). Compared to existing software counterparts, with FPGA, ClickNP improves throughput by 10x, while reducing latency by 10x. To the best of our knowledge, ClickNP is the first FPGA-accelerated platform for NFs, written completely in high-level language and achieving 40 Gbps line rate at any packet size.</p>
+<p>【Keywords】:
+Compiler; FPGA; Network Function Virtualization; Reconfigurable Hardware</p>
+<h3 id="2. Packet Transactions: High-Level Programming for Line-Rate Switches.">2. Packet Transactions: High-Level Programming for Line-Rate Switches.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934900">Paper Link</a>】    【Pages】:15-28</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sivaraman:Anirudh">Anirudh Sivaraman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cheung:Alvin">Alvin Cheung</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Budiu:Mihai">Mihai Budiu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Changhoon">Changhoon Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Alizadeh:Mohammad">Mohammad Alizadeh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Balakrishnan:Hari">Hari Balakrishnan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Varghese:George">George Varghese</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McKeown:Nick">Nick McKeown</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Licking:Steve">Steve Licking</a></p>
+<p>【Abstract】:
+Many algorithms for congestion control, scheduling, network measurement, active queue management, and traffic engineering require custom processing of packets in the data plane of a network switch. To run at line rate, these data-plane algorithms must be implemented in hardware. With today's switch hardware, algorithms cannot be changed, nor new algorithms installed, after a switch has been built. This paper shows how to program data-plane algorithms in a high-level language and compile those programs into low-level microcode that can run on emerging programmable line-rate switching chips. The key challenge is that many data-plane algorithms create and modify algorithmic state. To achieve line-rate programmability for stateful algorithms, we introduce the notion of a packet transaction: a sequential packet-processing code block that is atomic and isolated from other such code blocks. We have developed this idea in Domino, a C-like imperative language to express data-plane algorithms. We show with many examples that Domino provides a convenient way to express sophisticated data-plane algorithms, and show that these algorithms can be run at line rate with modest estimated chip-area overhead.</p>
+<p>【Keywords】:
+Programmable switches; stateful data-plane algorithms</p>
+<h3 id="3. SNAP: Stateful Network-Wide Abstractions for Packet Processing.">3. SNAP: Stateful Network-Wide Abstractions for Packet Processing.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934892">Paper Link</a>】    【Pages】:29-43</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Arashloo:Mina_Tahmasbi">Mina Tahmasbi Arashloo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Koral:Yaron">Yaron Koral</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Greenberg_0002:Michael">Michael Greenberg</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rexford:Jennifer">Jennifer Rexford</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Walker:David">David Walker</a></p>
+<p>【Abstract】:
+Early programming languages for software-defined networking (SDN) were built on top of the simple match-action paradigm offered by OpenFlow 1.0. However, emerging hardware and software switches offer much more sophisticated support for persistent state in the data plane, without involving a central controller. Nevertheless, managing stateful, distributed systems efficiently and correctly is known to be one of the most challenging programming problems. To simplify this new SDN problem, we introduce SNAP. SNAP offers a simpler "centralized" stateful programming model, by allowing programmers to develop programs on top of one big switch rather than many. These programs may contain reads and writes to global, persistent arrays, and as a result, programmers can implement a broad range of applications, from stateful firewalls to fine-grained traffic monitoring. The SNAP compiler relieves programmers of having to worry about how to distribute, place, and optimize access to these stateful arrays by doing it all for them. More specifically, the compiler discovers read/write dependencies between arrays and translates one-big-switch programs into an efficient internal representation based on a novel variant of binary decision diagrams. This internal representation is used to construct a mixed-integer linear program, which jointly optimizes the placement of state and the routing of traffic across the underlying physical topology. We have implemented a prototype compiler and applied it to about 20 SNAP programs over various topologies to demonstrate our techniques' scalability.</p>
+<p>【Keywords】:
+Network Programming Language; One Big Switch; Optimization; SNAP; Software Defined Networks; Stateful Packet Processing</p>
+<h3 id="4. Programmable Packet Scheduling at Line Rate.">4. Programmable Packet Scheduling at Line Rate.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934899">Paper Link</a>】    【Pages】:44-57</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sivaraman:Anirudh">Anirudh Sivaraman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Subramanian:Suvinay">Suvinay Subramanian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Alizadeh:Mohammad">Mohammad Alizadeh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chole:Sharad">Sharad Chole</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chuang:Shang=Tse">Shang-Tse Chuang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Agrawal:Anurag">Anurag Agrawal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Balakrishnan:Hari">Hari Balakrishnan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Edsall:Tom">Tom Edsall</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Katti:Sachin">Sachin Katti</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McKeown:Nick">Nick McKeown</a></p>
+<p>【Abstract】:
+Switches today provide a small menu of scheduling algorithms. While we can tweak scheduling parameters, we cannot modify algorithmic logic, or add a completely new algorithm, after the switch has been designed. This paper presents a design for a {\em programmable} packet scheduler, which allows scheduling algorithms---potentially algorithms that are unknown today---to be programmed into a switch without requiring hardware redesign. Our design uses the property that scheduling algorithms make two decisions: in what order to schedule packets and when to schedule them. Further, we observe that in many scheduling algorithms, definitive decisions on these two questions can be made when packets are enqueued. We use these observations to build a programmable scheduler using a single abstraction: the push-in first-out queue (PIFO), a priority queue that maintains the scheduling order or time. We show that a PIFO-based scheduler lets us program a wide variety of scheduling algorithms. We present a hardware design for this scheduler for a 64-port 10 Gbit/s shared-memory (output-queued) switch. Our design costs an additional 4% in chip area. In return, it lets us program many sophisticated algorithms, such as a 5-level hierarchical scheduler with programmable decisions at each level.</p>
+<p>【Keywords】:
+Programmable scheduling; switch hardware</p>
+<h2 id="Session 2: Wide Area Networks    3">Session 2: Wide Area Networks    3</h2>
+<h3 id="5. Evolve or Die: High-Availability Design Principles Drawn from Googles Network Infrastructure.">5. Evolve or Die: High-Availability Design Principles Drawn from Googles Network Infrastructure.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934891">Paper Link</a>】    【Pages】:58-72</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Govindan:Ramesh">Ramesh Govindan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Minei:Ina">Ina Minei</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kallahalla:Mahesh">Mahesh Kallahalla</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Koley:Bikash">Bikash Koley</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vahdat:Amin">Amin Vahdat</a></p>
+<p>【Abstract】:
+Maintaining the highest levels of availability for content providers is challenging in the face of scale, network evolution and complexity. Little, however, is known about failures large content providers are susceptible to, and what mechanisms they employ to ensure high availability. From a detailed analysis of over 100 high-impact failure events in a global-scale content provider encompassing several data centers and two WANs, we quantify several dimensions of availability failures. We find that failures are evenly distributed across different network types and planes, but that a large number of failures happen when a management operation is in progress within the network. We discuss some of these failures in detail, and also describe our design principles for high availability motivated by these failures, including using defense in depth, maintaining consistency across planes, failing open on large failures, carefully preventing and avoiding failures, and assessing root cause quickly. Our findings suggest that, as networks become more complicated, failures lurk everywhere, and, counter-intuitively, continuous incremental evolution of the network can, when applied together with our design principles, result in a more robust network.</p>
+<p>【Keywords】:
+Availability; Control Plane; Management Plane</p>
+<h3 id="6. Dynamic Pricing and Traffic Engineering for Timely Inter-Datacenter Transfers.">6. Dynamic Pricing and Traffic Engineering for Timely Inter-Datacenter Transfers.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934893">Paper Link</a>】    【Pages】:73-86</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jalaparti:Virajith">Virajith Jalaparti</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bliznets:Ivan">Ivan Bliznets</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kandula:Srikanth">Srikanth Kandula</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lucier:Brendan">Brendan Lucier</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Menache:Ishai">Ishai Menache</a></p>
+<p>【Abstract】:
+Neither traffic engineering nor fixed prices (e.g., \$/GB) alone fully address the challenges of highly utilized inter-datacenter WANs. The former offers more service to users who overstate their demands and poor service overall. The latter offers no service guarantees to customers, and providers have no lever to steer customer demand to lightly loaded paths/times. To address these issues, we design and evaluate Pretium -- a framework that combines dynamic pricing with traffic engineering for inter-datacenter bandwidth. In Pretium, users specify their required rates or transfer sizes with deadlines, and a price module generates a price quote for different guarantees (promises) on these requests. The price quote is generated using internal prices (which can vary over time and links) which are maintained and periodically updated by Pretium based on history. A supplementary schedule adjustment module gears the agreed-upon network transfers towards an efficient operating point by optimizing time-varying operation costs. Experiments using traces from a large production WAN show that Pretium improves total system efficiency (value of routed transfers minus operation costs) by more than 3.5X relative to current usage-based pricing schemes, while increasing the provider profits by 2X.</p>
+<p>【Keywords】:
+Inter-datacenter networks;; deadline scheduling; dynamic pricing;; percentile pricing;</p>
+<h3 id="7. Optimizing Bulk Transfers with Software-Defined Optical WAN.">7. Optimizing Bulk Transfers with Software-Defined Optical WAN.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934904">Paper Link</a>】    【Pages】:87-100</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jin:Xin">Xin Jin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Yiran">Yiran Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wei:Da">Da Wei</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Siming">Siming Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gao:Jie">Jie Gao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Lei">Lei Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Guangzhi">Guangzhi Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Wei">Wei Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rexford:Jennifer">Jennifer Rexford</a></p>
+<p>【Abstract】:
+Bulk transfer on the wide-area network (WAN) is a fundamental service to many globally-distributed applications. It is challenging to efficiently utilize expensive WAN bandwidth to achieve short transfer completion time and meet mission-critical deadlines. Advancements in software-defined networking (SDN) and optical hardware make it feasible and beneficial to quickly reconfigure optical devices in the optical layer, which brings a new opportunity for traffic management on the WAN. We present Owan, a novel traffic management system that optimizes wide-area bulk transfers with centralized joint control of the optical and network layers. \sysname can dynamically change the network-layer topology by reconfiguring the optical devices. We develop efficient algorithms to jointly optimize optical circuit setup, routing and rate allocation, and dynamically adapt them to traffic demand changes. We have built a prototype of Owan with commodity optical and electrical hardware. Testbed experiments and large-scale simulations on two ISP topologies and one inter-DC topology show that \sysname completes transfers up to 4.45x faster on average, and up to 1.36x more transfers meet their deadlines, as compared to prior methods that only control the network layer.</p>
+<p>【Keywords】:
+Software-defined networking; bulk transfers; cross-layer network management; optical networks; wide area networks</p>
+<h2 id="Session 3: Monitoring and Diagnostics    3">Session 3: Monitoring and Diagnostics    3</h2>
+<h3 id="8. One Sketch to Rule Them All: Rethinking Network Flow Monitoring with UnivMon.">8. One Sketch to Rule Them All: Rethinking Network Flow Monitoring with UnivMon.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934906">Paper Link</a>】    【Pages】:101-114</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Zaoxing">Zaoxing Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Manousis:Antonis">Antonis Manousis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vorsanger:Gregory">Gregory Vorsanger</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sekar:Vyas">Vyas Sekar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Braverman:Vladimir">Vladimir Braverman</a></p>
+<p>【Abstract】:
+Network management requires accurate estimates of metrics for traffic engineering (e.g., heavy hitters), anomaly detection (e.g., entropy of source addresses), and security (e.g., DDoS detection). Obtaining accurate estimates given router CPU and memory constraints is a challenging problem. Existing approaches fall in one of two undesirable extremes: (1) low fidelity general-purpose approaches such as sampling, or (2) high fidelity but complex algorithms customized to specific application-level metrics. Ideally, a solution should be both general (i.e., supports many applications) and provide accuracy comparable to custom algorithms. This paper presents UnivMon, a framework for flow monitoring which leverages recent theoretical advances and demonstrates that it is possible to achieve both generality and high accuracy. UnivMon uses an application-agnostic data plane monitoring primitive; different (and possibly unforeseen) estimation algorithms run in the control plane, and use the statistics from the data plane to compute application-level metrics. We present a proof-of-concept implementation of UnivMon using P4 and develop simple coordination techniques to provide a ``one-big-switch'' abstraction for network-wide monitoring. We evaluate the effectiveness of UnivMon using a range of trace-driven evaluations and show that it offers comparable (and sometimes better) accuracy relative to custom sketching solutions.</p>
+<p>【Keywords】:
+Flow Monitoring; Sketching; Streaming Algorithm</p>
+<h3 id="9. The Good, the Bad, and the Differences: Better Network Diagnostics with Differential Provenance.">9. The Good, the Bad, and the Differences: Better Network Diagnostics with Differential Provenance.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934910">Paper Link</a>】    【Pages】:115-128</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Ang">Ang Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Yang">Yang Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Haeberlen:Andreas">Andreas Haeberlen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Wenchao">Wenchao Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Loo:Boon_Thau">Boon Thau Loo</a></p>
+<p>【Abstract】:
+In this paper, we propose a new approach to diagnosing problems in complex distributed systems. Our approach is based on the insight that many of the trickiest problems are anomalies. For instance, in a network, problems often affect only a small fraction of the traffic (e.g., perhaps a certain subnet), or they only manifest infrequently. Thus, it is quite common for the operator to have “examples” of both working and non-working traffic readily available – perhaps a packet that was misrouted, and a similar packet that was routed correctly. In this case, the cause of the problem is likely to be wherever the two packets were treated differently by the network. We present the design of a debugger that can leverage this information using a novel concept that we call differential provenance. Differential provenance tracks the causal connections between network states and state changes, just like classical provenance, but it can additionally perform root-cause analysis by reasoning about the differences between two provenance trees. We have built a diagnostic tool that is based on differential provenance, and we have used our tool to debug a number of complex, realistic problems in two scenarios: software-defined networks and MapReduce jobs. Our results show that differential provenance can be maintained at relatively low cost, and that it can deliver very precise diagnostic information; in many cases, it can even identify the precise root cause of the problem.</p>
+<p>【Keywords】:
+Debugging; Network diagnostics; Provenance</p>
+<h3 id="10. Trumpet: Timely and Precise Triggers in Data Centers.">10. Trumpet: Timely and Precise Triggers in Data Centers.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934879">Paper Link</a>】    【Pages】:129-143</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Moshref:Masoud">Masoud Moshref</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yu:Minlan">Minlan Yu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Govindan:Ramesh">Ramesh Govindan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vahdat:Amin">Amin Vahdat</a></p>
+<p>【Abstract】:
+As data centers grow larger and strive to provide tight performance and availability SLAs, their monitoring infrastructure must move from passive systems that provide aggregated inputs to human operators, to active systems that enable programmed control. In this paper, we propose Trumpet, an event monitoring system that leverages CPU resources and end-host programmability, to monitor every packet and report events at millisecond timescales. Trumpet users can express many <em>network-wide events</em>, and the system efficiently detects these events using <em>triggers</em> at end-hosts. Using careful design, Trumpet can evaluate triggers by inspecting every packet at full line rate even on future generations of NICs, scale to thousands of triggers per end-host while bounding packet processing delay to a few microseconds, and report events to a controller within 10 milliseconds, even in the presence of attacks. We demonstrate these properties using an implementation of Trumpet, and also show that it allows operators to describe new network events such as detecting correlated bursts and loss, identifying the root cause of transient congestion, and detecting short-term anomalies at the scale of a data center tenant.</p>
+<p>【Keywords】:
+End-host Monitoring; Network Event Monitoring</p>
+<h2 id="Session 4: Scheduling    4">Session 4: Scheduling    4</h2>
+<h3 id="11. 2DFQ: Two-Dimensional Fair Queuing for Multi-Tenant Cloud Services.">11. 2DFQ: Two-Dimensional Fair Queuing for Multi-Tenant Cloud Services.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934878">Paper Link</a>】    【Pages】:144-159</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mace:Jonathan">Jonathan Mace</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bod=iacute=k:Peter">Peter Bodík</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Musuvathi:Madanlal">Madanlal Musuvathi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fonseca:Rodrigo">Rodrigo Fonseca</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Varadarajan:Krishnan">Krishnan Varadarajan</a></p>
+<p>【Abstract】:
+In many important cloud services, different tenants execute their requests in the thread pool of the same process, requiring fair sharing of resources. However, using fair queue schedulers to provide fairness in this context is difficult because of high execution concurrency, and because request costs are unknown and have high variance. Using fair schedulers like WFQ and WF²Q in such settings leads to bursty schedules, where large requests block small ones for long periods of time. In this paper, we propose Two-Dimensional Fair Queueing (2DFQ), which spreads requests of different costs across di erent threads and minimizes the impact of tenants with unpredictable requests. In evaluation on production workloads from Azure Storage, a large-scale cloud system at Microsoft, we show that 2DFQ reduces the burstiness of service by 1-2 orders of magnitude. On workloads where many large requests compete with small ones, 2DFQ improves 99th percentile latencies by up to 2 orders of magnitude.</p>
+<p>【Keywords】:
+Fair Request Scheduling; Multi-Tenant Systems</p>
+<h3 id="12. CODA: Toward Automatically Identifying and Scheduling Coflows in the Dark.">12. CODA: Toward Automatically Identifying and Scheduling Coflows in the Dark.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934880">Paper Link</a>】    【Pages】:160-173</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Hong">Hong Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Li">Li Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yi:Bairen">Bairen Yi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen_0005:Kai">Kai Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chowdhury:Mosharaf">Mosharaf Chowdhury</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Geng:Yanhui">Yanhui Geng</a></p>
+<p>【Abstract】:
+Leveraging application-level requirements using coflows has recently been shown to improve application-level communication performance in data-parallel clusters. However, existing coflow-based solutions rely on modifying applications to extract coflows, making them inapplicable to many practical scenarios. In this paper, we present CODA, a first attempt at automatically identifying and scheduling coflows without any application-level modifications. We employ an incremental clustering algorithm to perform fast, application-transparent coflow identification and complement it by proposing an error-tolerant coflow scheduler to mitigate occasional identification errors. Testbed experiments and large-scale simulations with production workloads show that CODA can identify coflows with over 90% accuracy, and its scheduler is robust to inaccuracies, enabling communication stages to complete 2.4x (5.1x) faster on average (95-th percentile) compared to per-flow mechanisms. Overall, CODA's performance is comparable to that of solutions requiring application modifications.</p>
+<p>【Keywords】:
+Coflow;; data-intensive applications;; datacenter networks</p>
+<h3 id="13. Scheduling Mix-flows in Commodity Datacenters with Karuna.">13. Scheduling Mix-flows in Commodity Datacenters with Karuna.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934888">Paper Link</a>】    【Pages】:174-187</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Li">Li Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen_0005:Kai">Kai Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bai_0001:Wei">Wei Bai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Alizadeh:Mohammad">Mohammad Alizadeh</a></p>
+<p>【Abstract】:
+Cloud applications generate a mix of flows with and without deadlines. Scheduling such mix-flows is a key challenge; our experiments show that trivially combining existing schemes for deadline/non-deadline flows is problematic. For example, prioritizing deadline flows hurts flow completion time (FCT) for non-deadline flows, with minor improvement for deadline miss rate. We present Karuna, a first systematic solution for scheduling mix-flows. Our key insight is that deadline flows should meet their deadlines while minimally impacting the FCT of non-deadline flows. To achieve this goal, we design a novel Minimal-impact Congestion control Protocol (MCP) that handles deadline flows with as little bandwidth as possible. For non-deadline flows, we extend an existing FCT minimization scheme to schedule flows with known and unknown sizes. Karuna requires no switch modifications and is back- ward compatible with legacy TCP/IP stacks. Our testbed experiments and simulations show that Karuna effectively schedules mix-flows, for example, reducing the 95th percentile FCT of non-deadline flows by up to 47.78% at high load compared to pFabric, while maintaining low (&lt;5.8%) deadline miss rate.</p>
+<p>【Keywords】:
+Datacenter networks; Deadline; Flow scheduling</p>
+<h3 id="14. NUMFabric: Fast and Flexible Bandwidth Allocation in Datacenters.">14. NUMFabric: Fast and Flexible Bandwidth Allocation in Datacenters.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934890">Paper Link</a>】    【Pages】:188-201</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Nagaraj:Kanthi">Kanthi Nagaraj</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bharadia:Dinesh">Dinesh Bharadia</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mao:Hongzi">Hongzi Mao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chinchali:Sandeep">Sandeep Chinchali</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Alizadeh:Mohammad">Mohammad Alizadeh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Katti:Sachin">Sachin Katti</a></p>
+<p>【Abstract】:
+We present xFabric, a novel datacenter transport design that provides flexible and fast bandwidth allocation control. xFabric is flexible: it enables operators to specify how bandwidth is allocated amongst contending flows to optimize for different service-level objectives such as minimizing flow completion times, weighted allocations, different notions of fairness, etc. xFabric is also very fast, it converges to the specified allocation one-to-two order of magnitudes faster than prior schemes. Underlying xFabric, is a novel distributed algorithm that uses in-network packet scheduling to rapidly solve general network utility maximization problems for bandwidth allocation. We evaluate xFabric using realistic datacenter topologies and highly dynamic workloads and show that it is able to provide flexibility and fast convergence in such stressful environments.</p>
+<p>【Keywords】:
+Datacenters; NUM; Networking; Resource Allocation</p>
+<h2 id="Session 5: Datacenters    4">Session 5: Datacenters    4</h2>
+<h3 id="15. RDMA over Commodity Ethernet at Scale.">15. RDMA over Commodity Ethernet at Scale.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934908">Paper Link</a>】    【Pages】:202-215</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Guo:Chuanxiong">Chuanxiong Guo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Haitao">Haitao Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Deng:Zhong">Zhong Deng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Soni:Gaurav">Gaurav Soni</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Ye:Jianxi">Jianxi Ye</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Padhye:Jitu">Jitu Padhye</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lipshteyn:Marina">Marina Lipshteyn</a></p>
+<p>【Abstract】:
+Over the past one and half years, we have been using RDMA over commodity Ethernet (RoCEv2) to support some of Microsoft's highly-reliable, latency-sensitive services. This paper describes the challenges we encountered during the process and the solutions we devised to address them. In order to scale RoCEv2 beyond VLAN, we have designed a DSCP-based priority flow-control (PFC) mechanism to ensure large-scale deployment. We have addressed the safety challenges brought by PFC-induced deadlock (yes, it happened!), RDMA transport livelock, and the NIC PFC pause frame storm problem. We have also built the monitoring and management systems to make sure RDMA works as expected. Our experiences show that the safety and scalability issues of running RoCEv2 at scale can all be addressed, and RDMA can replace TCP for intra data center communications and achieve low latency, low CPU overhead, and high throughput.</p>
+<p>【Keywords】:
+Deadlock; PFC; PFC propagation; RDMA; RoCEv2</p>
+<h3 id="16. ProjecToR: Agile Reconfigurable Data Center Interconnect.">16. ProjecToR: Agile Reconfigurable Data Center Interconnect.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934911">Paper Link</a>】    【Pages】:216-229</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Ghobadi:Monia">Monia Ghobadi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mahajan:Ratul">Ratul Mahajan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Phanishayee:Amar">Amar Phanishayee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Devanur:Nikhil_R=">Nikhil R. Devanur</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kulkarni:Janardhan">Janardhan Kulkarni</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ranade:Gireeja">Gireeja Ranade</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Blanche:Pierre=Alexandre">Pierre-Alexandre Blanche</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rastegarfar:Houman">Houman Rastegarfar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Glick:Madeleine">Madeleine Glick</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kilper:Daniel_C=">Daniel C. Kilper</a></p>
+<p>【Abstract】:
+We explore a novel, free-space optics based approach for building data center interconnects. It uses a digital micromirror device (DMD) and mirror assembly combination as a transmitter and a photodetector on top of the rack as a receiver (Figure 1). Our approach enables all pairs of racks to establish direct links, and we can reconfigure such links (i.e., connect different rack pairs) within 12 us. To carry traffic from a source to a destination rack, transmitters and receivers in our interconnect can be dynamically linked in millions of ways. We develop topology construction and routing methods to exploit this flexibility, including a flow scheduling algorithm that is a constant factor approximation to the offline optimal solution. Experiments with a small prototype point to the feasibility of our approach. Simulations using realistic data center workloads show that, compared to the conventional folded-Clos interconnect, our approach can improve mean flow completion time by 30-95% and reduce cost by 25-40%.</p>
+<p>【Keywords】:
+Data Centers; Free-Space Optics; Reconfigurability</p>
+<h3 id="17. Virtualized Congestion Control.">17. Virtualized Congestion Control.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934889">Paper Link</a>】    【Pages】:230-243</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cronkite=Ratcliff:Bryce">Bryce Cronkite-Ratcliff</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bergman:Aran">Aran Bergman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vargaftik:Shay">Shay Vargaftik</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ravi:Madhusudhan">Madhusudhan Ravi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McKeown:Nick">Nick McKeown</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Abraham:Ittai">Ittai Abraham</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Keslassy:Isaac">Isaac Keslassy</a></p>
+<p>【Abstract】:
+New congestion control algorithms are rapidly improving datacenters by reducing latency, overcoming incast, increasing throughput and improving fairness. Ideally, the operating system in every server and virtual machine is updated to support new congestion control algorithms. However, legacy applications often cannot be upgraded to a new operating system version, which means the advances are off-limits to them. Worse, as we show, legacy applications can be squeezed out, which in the worst case prevents the entire network from adopting new algorithms. Our goal is to make it easy to deploy new and improved congestion control algorithms into multitenant datacenters, without having to worry about TCP-friendliness with non-participating virtual machines. This paper presents a solution we call virtualized congestion control. The datacenter owner may introduce a new congestion control algorithm in the hypervisors. Internally, the hypervisors translate between the new congestion control algorithm and the old legacy congestion control, allowing legacy applications to enjoy the benefits of the new algorithm. We have implemented proof-of-concept systems for virtualized congestion control in the Linux kernel and in VMware’s ESXi hypervisor, achieving improved fairness, performance, and control over guest bandwidth allocations.</p>
+<p>【Keywords】:
+DCTCP;; ECN;; TCP.; Virtualized congestion control;; algorithmic virtualization;; datacenters;; hypervisors;</p>
+<h3 id="18. AC/DC TCP: Virtual Congestion Control Enforcement for Datacenter Networks.">18. AC/DC TCP: Virtual Congestion Control Enforcement for Datacenter Networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934903">Paper Link</a>】    【Pages】:244-257</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/He:Keqiang">Keqiang He</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rozner:Eric">Eric Rozner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Agarwal:Kanak">Kanak Agarwal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gu:Yu_=Jason=">Yu (Jason) Gu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Felter:Wes">Wes Felter</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Carter:John_B=">John B. Carter</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Akella:Aditya">Aditya Akella</a></p>
+<p>【Abstract】:
+Multi-tenant datacenters are successful because tenants can seamlessly port their applications and services to the cloud. Virtual Machine (VM) technology plays an integral role in this success by enabling a diverse set of software to be run on a unified underlying framework. This flexibility, however, comes at the cost of dealing with out-dated, inefficient, or misconfigured TCP stacks implemented in the VMs. This paper investigates if administrators can take control of a VM's TCP congestion control algorithm without making changes to the VM or network hardware. We propose AC/DC TCP, a scheme that exerts fine-grained control over arbitrary tenant TCP stacks by enforcing per-flow congestion control in the virtual switch (vSwitch). Our scheme is light-weight, flexible, scalable and can police non-conforming flows. In our evaluation the computational overhead of AC/DC TCP is less than one percentage point and we show implementing an administrator-defined congestion control algorithm in the vSwitch (i.e., DCTCP) closely tracks its native performance, regardless of the VM's TCP stack.</p>
+<p>【Keywords】:
+Congestion Control; Datacenter Networks; Virtualization</p>
+<h2 id="Session 6: Networked Applications    3">Session 6: Networked Applications    3</h2>
+<h3 id="19. WebPerf: Evaluating What-If Scenarios for Cloud-hosted Web Applications.">19. WebPerf: Evaluating What-If Scenarios for Cloud-hosted Web Applications.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934882">Paper Link</a>】    【Pages】:258-271</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jiang:Yurong">Yurong Jiang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sivalingam:Lenin_Ravindranath">Lenin Ravindranath Sivalingam</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nath:Suman">Suman Nath</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Govindan:Ramesh">Ramesh Govindan</a></p>
+<p>【Abstract】:
+Developers deploying web applications in the cloud often need to determine how changes such as service tiers or runtime loads may affect user-perceived page load time. We devise and evaluate a systematic methodology for exploring such "what-if" questions at the time a web application is deployed. Given a website, a web request, and “whatif” scenario, with a hypothetical configuration and runtime condition, our methodology, embedded in a system called WebPerf, can estimate a distribution of end-to-end response times for the request under the “what-if” scenario. WebPerf makes three contributions: (1) automated instrumentation of web sites written with increasingly popular task parallel libraries, to capture causal call dependencies of various computation and asynchronous I/O calls; (2) an algorithm to use the call dependencies, together with online- and offlineprofiled models of various I/O calls to estimate a distribution of end-to-end latency of the request; and (3) an algorithm to optimize modeling errors by deciding how many measurements to take within a limited time. We have implemented WebPerf for Microsoft Azure. Our experiments with five real websites and seven scenarios show that the median error of WebPerf’s estimation is within 7% for all applications and scenarios.</p>
+<p>【Keywords】:
+Async-Await; Dependency; Instrumentation; What-if</p>
+<h3 id="20. CS2P: Improving Video Bitrate Selection and Adaptation with Data-Driven Throughput Prediction.">20. CS2P: Improving Video Bitrate Selection and Adaptation with Data-Driven Throughput Prediction.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934898">Paper Link</a>】    【Pages】:272-285</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sun:Yi">Yi Sun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yin:Xiaoqi">Xiaoqi Yin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jiang:Junchen">Junchen Jiang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sekar:Vyas">Vyas Sekar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lin:Fuyuan">Fuyuan Lin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Nanshu">Nanshu Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Tao">Tao Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sinopoli:Bruno">Bruno Sinopoli</a></p>
+<p>【Abstract】:
+Bitrate adaptation is critical in ensuring good users’ quality-of-experience (QoE) in Internet video delivery system. Several efforts have argued that accurate throughput prediction can dramatically improve (1) initial bitrate selection for low startup delay and high initial resolution; (2) midstream bitrate adaptation for high QoE. However, prior ef- forts did not systematically quantify real-world throughput predictability or develop good prediction algorithms. To bridge this gap, this paper makes three key technical contributions: First, we analyze the throughput characteristics in a dataset with 20M+ sessions. We find: (a) Sessions sharing similar key features (e.g., ISP, region) present similar initial values and dynamical patterns; (b) There is a natural “stateful” dynamical behavior within a given session. Second, building on these insights, we develop CS2P, a better throughput prediction system. CS2P leverages data-driven approach to learn (a) clusters of similar sessions, (b) an initial throughput predictor, and (c) a Hidden-Markov-Model based midstream predictor modeling the stateful evolution of throughput. Third, we develop a prototype system and show by trace-driven simulation and real-world experiments that CS2P outperforms state-of-art by 40% and 50% median pre- diction error respectively for initial and midstream through- put and improves QoE by 14% over buffer-based adaptation algorithm.</p>
+<p>【Keywords】:
+Bitrate Adaptation; Dynamic Adaptive Streaming over HTTP (DASH); Internet Video; TCP; Throughput Prediction</p>
+<h3 id="21. Via: Improving Internet Telephony Call Quality Using Predictive Relay Selection.">21. Via: Improving Internet Telephony Call Quality Using Predictive Relay Selection.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934907">Paper Link</a>】    【Pages】:286-299</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jiang:Junchen">Junchen Jiang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Das:Rajdeep">Rajdeep Das</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Ananthanarayanan:Ganesh">Ganesh Ananthanarayanan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chou:Philip_A=">Philip A. Chou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Padmanabhan:Venkata_N=">Venkata N. Padmanabhan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sekar:Vyas">Vyas Sekar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dominique:Esbjorn">Esbjorn Dominique</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Goliszewski:Marcin">Marcin Goliszewski</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kukoleca:Dalibor">Dalibor Kukoleca</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vafin:Renat">Renat Vafin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang_0001:Hui">Hui Zhang</a></p>
+<p>【Abstract】:
+Interactive real-time streaming applications such as audio-video conferencing, online gaming and app streaming, place stringent requirements on the network in terms of delay, jitter, and packet loss. Many of these applications inherently involve client-to-client communication, which is particularly challenging since the performance requirements need to be met while traversing the public wide-area network (WAN). This is different from the typical situation of cloud-to-client communication, where the WAN can often be bypassed by moving a communication end-point to a cloud “edge”, close to the client. Can we nevertheless take advantage of cloud resources to improve the performance of real-time client-to-client streaming over the WAN? In this paper, we start by analyzing data from a large VoIP provider whose clients are spread across over 21,000 AS’es and nearly all the countries, to understand the challenges faced by interactive audio streaming in the wild. We find that while inter-AS and international paths exhibit significantly worse performance than intra-AS and domestic paths, the pattern of poor performance is nevertheless quite scattered, both temporally and spatially. So any effort to improve performance would have to be fine-grained and dynamic. Then, we turn to the idea of overlay routing, but in the context of the well-provisioned, managed network of a cloud provider rather than peer-to-peer as has been considered in past work. Such a network typically has a global footprint and peers with a large number of network providers. When the performance of a call via the direct path is predicted to be poor, the call traffic could be directed to enter the managed network close to one end point and exit it close to the other end point, thereby avoiding wide-area communication over the public Internet. We present and evaluate data-driven techniques to deciding whether to relay a call through the managed network and if so how to pick the ingress and egress relays to maximize performance, all while operating within a budget for relaying calls via the managed overlay network. We show that call performance can potentially improve by 40%-80% on average, with our techniques closely matching it.</p>
+<p>【Keywords】:
+Internet Telephony; Managed Overlay Networks; Predictive Relay Selection; Quality of Experience</p>
+<h2 id="Session 7: Verification    4">Session 7: Verification    4</h2>
+<h3 id="22. Fast Control Plane Analysis Using an Abstract Representation.">22. Fast Control Plane Analysis Using an Abstract Representation.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934876">Paper Link</a>】    【Pages】:300-313</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gember=Jacobson:Aaron">Aaron Gember-Jacobson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Viswanathan:Raajay">Raajay Viswanathan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Akella:Aditya">Aditya Akella</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mahajan:Ratul">Ratul Mahajan</a></p>
+<p>【Abstract】:
+Networks employ complex, and hence error-prone, routing control plane configurations. In many cases, the impact of errors manifests only under failures and leads to devastating effects. Thus, it is important to proactively verify control plane behavior under arbitrary link failures. State-of-the-art verifiers are either too slow or impractical to use for such verification tasks. In this paper we propose a new high level abstraction for control planes, ARC, that supports fast control plane analyses under arbitrary failures. ARC can check key invariants without generating the data plane--which is the main reason for current tools' ineffectiveness. This is possible because of the nature of verification tasks and the constrained nature of control plane designs in networks today. We develop algorithms to derive a network's ARC from its configuration files. Our evaluation over 314 networks shows that ARC computation is quick, and that ARC can verify key invariants in under 1s in most cases, which is orders-of-magnitude faster than the state-of-the-art.</p>
+<p>【Keywords】:
+Network verification; abstract representation; control plane</p>
+<h3 id="23. SymNet: Scalable symbolic execution for modern networks.">23. SymNet: Scalable symbolic execution for modern networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934881">Paper Link</a>】    【Pages】:314-327</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Stoenescu:Radu">Radu Stoenescu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Popovici:Matei">Matei Popovici</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Negreanu:Lorina">Lorina Negreanu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Raiciu:Costin">Costin Raiciu</a></p>
+<p>【Abstract】:
+We present SymNet, a network static analysis tool based on symbolic execution. SymNet injects symbolic packets and tracks their evolution through the network. Our key novelty is SEFL, a language we designed for expressing data plane processing in a symbolic-execution friendly manner. SymNet statically analyzes an abstract data plane model that consists of the SEFL code for every node and the links between nodes. SymNet can check networks containing routers with hundreds of thousands of prefixes and NATs in seconds, while verifying packet header memory-safety and covering network functionality such as dynamic tunneling, stateful processing and encryption. We used SymNet to debug mid- dlebox interactions from the literature, to check properties of our department’s network and the Stanford backbone. Modeling network functionality is not easy. To aid users we have developed parsers that automatically generate SEFL models from router and switch tables, firewall configura- tions and arbitrary Click modular router configurations. The parsers rely on prebuilt models that are exact and fast to an- alyze. Finally, we have built an automated testing tool that combines symbolic execution and testing to check whether the model is an accurate representation of the real code.</p>
+<p>【Keywords】:
+Data plane verification; SymNet; Symbolic execution friendly language</p>
+<h3 id="24. Don't Mind the Gap: Bridging Network-wide Objectives and Device-level Configurations.">24. Don't Mind the Gap: Bridging Network-wide Objectives and Device-level Configurations.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934909">Paper Link</a>】    【Pages】:328-341</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Beckett:Ryan">Ryan Beckett</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mahajan:Ratul">Ratul Mahajan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Millstein:Todd_D=">Todd D. Millstein</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Padhye:Jitendra">Jitendra Padhye</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Walker:David">David Walker</a></p>
+<p>【Abstract】:
+We develop Propane, a language and compiler to help network operators with a challenging, error-prone task—bridging the gap between network-wide routing objectives and low-level configurations of devices that run complex, distributed protocols. The language allows operators to specify their objectives naturally, using high-level constraints on both the shape and relative preference of traffic paths. The compiler automatically translates these specifications to router-level BGP configurations, using an effective intermediate representation that compactly encodes the flow of routing information along policy-compliant paths. It guarantees that the compiled configurations correctly implement the specified policy under all possible combinations of failures. We show that Propane can effectively express the policies of datacenter and backbone networks of a large cloud provider; and despite its strong guarantees, our compiler scales to networks with hundreds or thousands of routers.</p>
+<p>【Keywords】:
+BGP; Compilation; Distributed Systems; Domain-specific Language; Fault Tolerance; Propane; Synthesis</p>
+<h3 id="25. Jumpstarting BGP Security with Path-End Validation.">25. Jumpstarting BGP Security with Path-End Validation.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934883">Paper Link</a>】    【Pages】:342-355</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cohen:Avichai">Avichai Cohen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gilad:Yossi">Yossi Gilad</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Herzberg:Amir">Amir Herzberg</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schapira:Michael">Michael Schapira</a></p>
+<p>【Abstract】:
+Extensive standardization and R&amp;D efforts are dedicated to establishing secure interdomain routing. These efforts focus on two mechanisms: origin authentication with RPKI, and path validation with BGPsec. However, while RPKI is finally gaining traction, the adoption of BGPsec seems not even on the horizon due to inherent, possibly insurmountable, obstacles, including the need to replace today's routing infrastructure, the overhead of online cryptography, and meagre benefits in partial deployment. Consequently, secure interdomain routing remains a distant dream. We propose an easily deployable, modest extension to RPKI, called ``path-end validation'', which does not entail replacing/upgrading today's BGP routers nor online cryptographic operations. We show, through rigorous security analyses and extensive simulations on empirically-derived datasets, that path-end validation yields significant security benefits even in very limited partial adoption. We present an open-source, readily deployable prototype implementation of path-end validation.</p>
+<p>【Keywords】:
+BGP security; RPKI; Routing security</p>
+<h2 id="Session 8: Wireless    5">Session 8: Wireless    5</h2>
+<h3 id="26. Inter-Technology Backscatter: Towards Internet Connectivity for Implanted Devices.">26. Inter-Technology Backscatter: Towards Internet Connectivity for Implanted Devices.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934894">Paper Link</a>】    【Pages】:356-369</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/i/Iyer:Vikram">Vikram Iyer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Talla:Vamsi">Vamsi Talla</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kellogg:Bryce">Bryce Kellogg</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gollakota:Shyamnath">Shyamnath Gollakota</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Smith:Joshua_R=">Joshua R. Smith</a></p>
+<p>【Abstract】:
+We introduce inter-technology backscatter, a novel approach that transforms wireless transmissions from one technology to another, on the air. Specifically, we show for the first time that Bluetooth transmissions can be used to create Wi-Fi and ZigBee-compatible signals using backscatter communication. Since Bluetooth, Wi-Fi and ZigBee radios are widely available, this approach enables a backscatter design that works using only commodity devices. We build prototype backscatter hardware using an FPGA and experiment with various Wi-Fi, Bluetooth and ZigBee devices. Our experiments show we can create 2--11~Mbps Wi-Fi standards-compliant signals by backscattering Bluetooth transmissions. To show the generality of our approach, we also demonstrate generation of standards-complaint ZigBee signals by backscattering Bluetooth transmissions. Finally, we build proof-of-concepts for previously infeasible applications including the first contact lens form-factor antenna prototype and an implantable neural recording interface that communicate directly with commodity devices such as smartphones and watches, thus enabling the vision of Internet connected implanted devices.</p>
+<p>【Keywords】:
+Backscatter; Implantable Devices; Internet of things</p>
+<h3 id="27. Enabling Practical Backscatter Communication for On-body Sensors.">27. Enabling Practical Backscatter Communication for On-body Sensors.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934901">Paper Link</a>】    【Pages】:370-383</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Pengyu">Pengyu Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rostami:Mohammad">Mohammad Rostami</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Pan">Pan Hu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Ganesan:Deepak">Deepak Ganesan</a></p>
+<p>【Abstract】:
+In this paper, we look at making backscatter practical for ultra-low power on-body sensors by leveraging radios on existing smartphones and wearables (e.g. WiFi and Bluetooth). The difficulty lies in the fact that in order to extract the weak backscattered signal, the system needs to deal with self-interference from the wireless carrier (WiFi or Bluetooth) without relying on built-in capability to cancel or reject the carrier interference. Frequency-shifted backscatter (or FS-Backscatter) is based on a novel idea --- the backscatter tag shifts the carrier signal to an adjacent non-overlapping frequency band (i.e. adjacent WiFi or Bluetooth band) and isolates the spectrum of the backscattered signal from the spectrum of the primary signal to enable more robust decoding. We show that this enables communication of up to 4.8 meters using commercial WiFi and Bluetooth radios as the carrier generator and receiver. We also show that we can support a range of bitrates using packet-level and bit-level decoding methods. We build on this idea and show that we can also leverage multiple radios typically present on mobile and wearable devices to construct multi-carrier or multi-receiver scenarios to improve robustness. Finally, we also address the problem of designing an ultra-low power tag that can frequency shift by 20MHz while consuming tens of micro-watts. Our results show that FS-Backscatter is practical in typical mobile and static on-body sensing scenarios while only using commodity radios and antennas.</p>
+<p>【Keywords】:
+Backscatter; Sensor; Wireless</p>
+<h3 id="28. Braidio: An Integrated Active-Passive Radio for Mobile Devices with Asymmetric Energy Budgets.">28. Braidio: An Integrated Active-Passive Radio for Mobile Devices with Asymmetric Energy Budgets.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934902">Paper Link</a>】    【Pages】:384-397</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Pan">Pan Hu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Pengyu">Pengyu Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rostami:Mohammad">Mohammad Rostami</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Ganesan:Deepak">Deepak Ganesan</a></p>
+<p>【Abstract】:
+While many radio technologies are available for mobile devices, none of them are designed to deal with asymmetric available energy. Battery capacities of mobile devices vary by up to three orders of magnitude between laptops and wearables, and our inability to deal with such asymmetry has limited the lifetime of constrained portable devices. This paper presents a radically new design for low-power radios --- one that is capable of dynamically splitting the power burden of communication between the transmitter and receiver in proportion to the available energy on the two devices. We achieve this with a novel carrier offload method that dynamically moves carrier generation across end points. While such a design might raise the specter of a high-power, large form-factor radio, we show that this integration can be achieved with no more than a BLE-style active radio augmented with a few additional components. Our design, Braidio is a low-power, tightly integrated, low-cost radio capable of operating as an active and passive transceiver. When these modes operate in an interleaved (braided) manner, the end result is a power-proportional low-power radio that is able to achieve 1:2546 to 3546:1 power consumption ratios between a transmitter and a receiver, all while operating at low power.</p>
+<p>【Keywords】:
+Backscatter; Wireless; Architecture; Asymmetric; Energy</p>
+<h3 id="29. Eliminating Channel Feedback in Next-Generation Cellular Networks.">29. Eliminating Channel Feedback in Next-Generation Cellular Networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934895">Paper Link</a>】    【Pages】:398-411</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/v/Vasisht:Deepak">Deepak Vasisht</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kumar:Swarun">Swarun Kumar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rahul:Hariharan">Hariharan Rahul</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Katabi:Dina">Dina Katabi</a></p>
+<p>【Abstract】:
+This paper focuses on a simple, yet fundamental question: ``Can a node infer the wireless channels on one frequency band by observing the channels on a different frequency band?'' This question arises in cellular networks, where the uplink and the downlink operate on different frequencies. Addressing this question is critical for the deployment of key 5G solutions such as massive MIMO, multi-user MIMO, and distributed MIMO, which require channel state information. We introduce R2-F2, a system that enables LTE base stations to infer the downlink channels to a client by observing the uplink channels from that client. By doing so, R2-F2 extends the concept of reciprocity to LTE cellular networks, where downlink and uplink transmissions occur on different frequency bands. It also removes a major hurdle for the deployment of 5G MIMO solutions. We have implemented R2-F2 in software radios and integrated it within the LTE OFDM physical layer. Our results show that the channels computed by R2-F2 deliver accurate MIMO beamforming (to within 0.7~dB of beamforming gains with ground truth channels) while eliminating channel feedback overhead.</p>
+<p>【Keywords】:
+LTE; FDD Systems</p>
+<h3 id="30. Real-time Distributed MIMO Systems.">30. Real-time Distributed MIMO Systems.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934905">Paper Link</a>】    【Pages】:412-425</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hamed:Ezzeldin">Ezzeldin Hamed</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rahul:Hariharan">Hariharan Rahul</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Abdelghany:Mohammed_A=">Mohammed A. Abdelghany</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Katabi:Dina">Dina Katabi</a></p>
+<p>【Abstract】:
+Recent years have seen a lot of work in moving distributed MIMO from theory to practice. While this prior work demonstrates the feasibility of synchronizing multiple transmitters in time, frequency, and phase, none of them deliver a full-fledged PHY capable of supporting distributed MIMO in real-time. Further, none of them can address dynamic environments or mobile clients. Addressing these challenges, requires new solutions for low-overhead and fast tracking of wireless channels, which are the key parameters of any distributed MIMO system. It also requires a software-hardware architecture that can deliver a distributed MIMO within a full-fledged 802.11 PHY, while still meeting the tight timing constraints of the 802.11 protocol. This architecture also needs to perform coordinated power control across distributed MIMO nodes, as opposed to simply letting each node perform power control as if it were operating alone. This paper describes the design and implementation of MegaMIMO 2.0, a system that achieves these goals and delivers the first real-time fully distributed 802.11 MIMO system.</p>
+<p>【Keywords】:
+Distributed MIMO; Multi-user MIMO; Wireless Networks</p>
+<h2 id="Session 9: Datacenters    3">Session 9: Datacenters    3</h2>
+<h3 id="31. Robotron: Top-down Network Management at Facebook Scale.">31. Robotron: Top-down Network Management at Facebook Scale.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934874">Paper Link</a>】    【Pages】:426-439</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sung:Yu=Wei_Eric">Yu-Wei Eric Sung</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tie:Xiaozheng">Xiaozheng Tie</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wong:Starsky_H=_Y=">Starsky H. Y. Wong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zeng:Hongyi">Hongyi Zeng</a></p>
+<p>【Abstract】:
+Network management facilitates a healthy and sustainable network. However, its practice is not well understood outside the network engineering community. In this paper, we present Robotron, a system for managing a massive production network in a top-down fashion. The system's goal is to reduce effort and errors on management tasks by minimizing direct human interaction with network devices. Engineers use Robotron to express high-level design intent, which is translated into low-level device configurations and deployed safely. Robotron also monitors devices' operational state to ensure it does not deviate from the desired state. Since 2008, Robotron has been used to manage tens of thousands of network devices connecting hundreds of thousands of servers globally at Facebook.</p>
+<p>【Keywords】:
+Facebook; Network Management; Robotron</p>
+<h3 id="32. Taking the Blame Game out of Data Centers Operations with NetPoirot.">32. Taking the Blame Game out of Data Centers Operations with NetPoirot.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934884">Paper Link</a>】    【Pages】:440-453</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Arzani:Behnaz">Behnaz Arzani</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Ciraci:Selim">Selim Ciraci</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Loo:Boon_Thau">Boon Thau Loo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schuster:Assaf">Assaf Schuster</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Outhred:Geoff">Geoff Outhred</a></p>
+<p>【Abstract】:
+Today, root cause analysis of failures in data centers is mostly done through manual inspection. More often than not, cus- tomers blame the network as the culprit. However, other components of the system might have caused these failures. To troubleshoot, huge volumes of data are collected over the entire data center. Correlating such large volumes of diverse data collected from different vantage points is a daunting task even for the most skilled technicians. In this paper, we revisit the question: how much can you infer about a failure in the data center using TCP statistics collected at one of the endpoints? Using an agent that cap- tures TCP statistics we devised a classification algorithm that identifies the root cause of failure using this information at a single endpoint. Using insights derived from this classi- fication algorithm we identify dominant TCP metrics that indicate where/why problems occur in the network. We val- idate and test these methods using data that we collect over a period of six months in a production data center.</p>
+<p>【Keywords】:
+Network manageability;; Network monitoring;; Network performance analysis;; Network reliability;; Network transport protocols;</p>
+<h3 id="33. Globally Synchronized Time via Datacenter Networks.">33. Globally Synchronized Time via Datacenter Networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934885">Paper Link</a>】    【Pages】:454-467</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Ki=Suh">Ki-Suh Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Han">Han Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shrivastav:Vishal">Vishal Shrivastav</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Weatherspoon:Hakim">Hakim Weatherspoon</a></p>
+<p>【Abstract】:
+In this paper, we present Datacenter Time Protocol (DTP), a clock synchronization protocol that does not use packets at all, but is able to achieve nanosecond precision. In essence, DTP uses the physical layer of network devices to implement a decentralized clock synchronization protocol. By doing so, DTP eliminates most non-deterministic elements in clock synchronization protocols. Further, DTP uses control messages in the physical layer for communicating hundreds of thousands of protocol messages without interfering with higher layer packets. Thus, DTP has virtually zero overhead since it does not add load at layers 2 or higher layers. It does require replacing network devices, which can be done incrementally. We demonstrate that the precision provided by DTP is bounded by 25.6 nanoseconds for directly connected nodes, and in general, is bounded by 4TD where D is the longest distance between any two servers in a network in terms of number of hops and T is the period of the fastest clock (≈ 6.4ns). Moreover, in software, a DTP daemon can access the DTP clock with usually better than 4T (≈ 25.6ns) precision. As a result, the end-to-end precision can be better than 4T D + 8T nanoseconds. By contrast, the precision of the state of the art protocol is not bounded: The precision is hundreds of nanoseconds when a network is idle and can decrease to hundreds of microseconds when a network is heavily congested.</p>
+<p>【Keywords】:
+Datacenter Networks</p>
+<h2 id="Session 10: Censorship and Choice    3">Session 10: Censorship and Choice    3</h2>
+<h3 id="34. An Internet-Wide Analysis of Traffic Policing.">34. An Internet-Wide Analysis of Traffic Policing.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934873">Paper Link</a>】    【Pages】:468-482</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Flach:Tobias">Tobias Flach</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Papageorge:Pavlos">Pavlos Papageorge</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Terzis:Andreas">Andreas Terzis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pedrosa:Luis">Luis Pedrosa</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cheng:Yuchung">Yuchung Cheng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Karim:Tayeb">Tayeb Karim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Katz=Bassett:Ethan">Ethan Katz-Bassett</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Govindan:Ramesh">Ramesh Govindan</a></p>
+<p>【Abstract】:
+Large flows like videos consume significant bandwidth. Some ISPs actively manage these high volume flows with techniques like policing, which enforces a flow rate by dropping excess traffic. While the existence of policing is well known, our contribution is an Internet-wide study quantifying its prevalence and impact on video quality metrics. We developed a heuristic to identify policing from server-side traces and built a pipeline to deploy it at scale on traces from a large online content provider, collected from hundreds of servers worldwide. Using a dataset of 270 billion packets served to 28,400 client ASes, we find that, depending on region, up to 7% of lossy transfers are policed. Loss rates are on average six times higher when a trace is policed, and it impacts video playback quality. We show that alternatives to policing, like pacing and shaping, can achieve traffic management goals while avoiding the deleterious effects of policing.</p>
+<p>【Keywords】:
+Network measurement; TCP; Traffic policing; Traffic shaping</p>
+<h3 id="35. Neutral Net Neutrality.">35. Neutral Net Neutrality.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934896">Paper Link</a>】    【Pages】:483-496</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yiakoumis:Yiannis">Yiannis Yiakoumis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Katti:Sachin">Sachin Katti</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McKeown:Nick">Nick McKeown</a></p>
+<p>【Abstract】:
+Should applications receive special treatment from the network? And if so, who decides which applications are preferred? This discussion, known as net neutrality, goes beyond technology and is a hot political topic. In this paper we approach net neutrality from a user's perspective. Through user studies, we demonstrate that users do indeed want some services to receive preferential treatment; and their preferences have a heavy-tail: a one-size-fits-all approach is unlikely to work. This suggests that users should be able to decide how their traffic is treated. A crucial part to enable user preferences, is the mechanism to express them. To this end, we present network cookies, a general mechanism to express user preferences to the network. Using cookies, we prototype Boost, a user-defined fast-lane and deploy it in 161 homes.</p>
+<p>【Keywords】:
+Differentiated Services; Fast-Lanes; Net Neutrality; Network Cookies; Zero-Rating</p>
+<h3 id="36. The Deforestation of L2.">36. The Deforestation of L2.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934877">Paper Link</a>】    【Pages】:497-510</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/McCauley:James_Murphy">James Murphy McCauley</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhao:Mingjie">Mingjie Zhao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jackson:Ethan_J=">Ethan J. Jackson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Raghavan:Barath">Barath Raghavan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ratnasamy:Sylvia">Sylvia Ratnasamy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shenker:Scott">Scott Shenker</a></p>
+<p>【Abstract】:
+A major staple of layer 2 has long been the combination of flood-and-learn Ethernet switches with some variant of the Spanning Tree Protocol. However, STP has significant shortcomings -- chiefly, that it throws away network capacity by removing links, and that it can be relatively slow to reconverge after topology changes. In recent years, attempts to rectify these shortcomings have been made by either making L2 look more like L3 (notably TRILL and SPB, which both incorporate L3-like routing) or by replacing L2 switches with "L3 switching" hardware and extending IP all the way to the host. In this paper, we examine an alternate point in the L2 design space, which is simple (in that it is a single data plane mechanism with no separate control plane), converges quickly, delivers packets during convergence, utilizes all available links, and can be extended to support both equal-cost multipath and efficient multicast.</p>
+<p>【Keywords】:
+L2 routing; spanning tree</p>
+<h2 id="Session 11: SDN & NFV    3">Session 11: SDN &amp; NFV    3</h2>
+<h3 id="37. OpenBox: A Software-Defined Framework for Developing, Deploying, and Managing Network Functions.">37. OpenBox: A Software-Defined Framework for Developing, Deploying, and Managing Network Functions.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934875">Paper Link</a>】    【Pages】:511-524</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bremler=Barr:Anat">Anat Bremler-Barr</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Harchol:Yotam">Yotam Harchol</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hay:David">David Hay</a></p>
+<p>【Abstract】:
+We present OpenBox — a software-defined framework for network-wide development, deployment, and management of network functions (NFs). OpenBox effectively decouples the control plane of NFs from their data plane, similarly to SDN solutions that only address the network’s forwarding plane. OpenBox consists of three logic components. First, user-defined OpenBox applications provide NF specifications through the OpenBox north-bound API. Second, a logically-centralized OpenBox controller is able to merge logic of multiple NFs, possibly from multiple tenants, and to use a network-wide view to efficiently deploy and scale NFs across the network data plane. Finally, OpenBox instances constitute OpenBox’s data plane and are implemented either purely in software or contain specific hardware accelerators (e.g., a TCAM). In practice, different NFs carry out similar processing steps on the same packet, and our experiments indeed show a significant improvement of the network performance when using OpenBox. Moreover, OpenBox readily supports smart NF placement, NF scaling, and multi-tenancy through its controller.</p>
+<p>【Keywords】:
+Middleboxes; Network functions; Software-Defined Networks</p>
+<h3 id="38. PISCES: A Programmable, Protocol-Independent Software Switch.">38. PISCES: A Programmable, Protocol-Independent Software Switch.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934886">Paper Link</a>】    【Pages】:525-538</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Shahbaz:Muhammad">Muhammad Shahbaz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Choi:Sean">Sean Choi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pfaff:Ben">Ben Pfaff</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Changhoon">Changhoon Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Feamster:Nick">Nick Feamster</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McKeown:Nick">Nick McKeown</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rexford:Jennifer">Jennifer Rexford</a></p>
+<p>【Abstract】:
+Hypervisors use software switches to steer packets to and from virtual machines (VMs). These switches frequently need upgrading and customization—to support new protocol headers or encapsulations for tunneling and overlays, to improve measurement and debugging features, and even to add middlebox-like functions. Software switches are typically based on a large body of code, including kernel code, and changing the switch is a formidable undertaking requiring domain mastery of network protocol design and developing, testing, and maintaining a large, complex codebase. Changing how a software switch forwards packets should not require intimate knowledge of its implementation. Instead, it should be possible to specify how packets are processed and forwarded in a high-level domain-specific language (DSL) such as P4, and compiled to run on a software switch. We present PISCES, a software switch derived from Open vSwitch (OVS), a hard-wired hypervisor switch, whose behavior is customized using P4. PISCES is not hard-wired to specific protocols; this independence makes it easy to add new features. We also show how the compiler can analyze the high-level specification to optimize forwarding performance. Our evaluation shows that PISCES performs comparably to OVS and that PISCES programs are about 40 times shorter than equivalent changes to OVS source code.</p>
+<p>【Keywords】:
+Compiler Optimizations; Domain-Specific Languages (DSL); OVS; P4; PISCES; Programmable Data Planes; Software Switch; Software-Defined Networks (SDN)</p>
+<h3 id="39. Dataplane Specialization for High-performance OpenFlow Software Switching.">39. Dataplane Specialization for High-performance OpenFlow Software Switching.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2934887">Paper Link</a>】    【Pages】:539-552</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Moln=aacute=r:L=aacute=szl=oacute=">László Molnár</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pongr=aacute=cz:Gergely">Gergely Pongrácz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Enyedi:G=aacute=bor">Gábor Enyedi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kis:Zolt=aacute=n_Lajos">Zoltán Lajos Kis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Csikor:Levente">Levente Csikor</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Juh=aacute=sz:Ferenc">Ferenc Juhász</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kor=ouml=si:Attila">Attila Korösi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/R=eacute=tv=aacute=ri:G=aacute=bor">Gábor Rétvári</a></p>
+<p>【Abstract】:
+OpenFlow is an amazingly expressive dataplane programming language, but this expressiveness comes at a severe performance price as switches must do excessive packet classification in the fast path. The prevalent OpenFlow software switch architecture is therefore built on flow caching, but this imposes intricate limitations on the workloads that can be supported efficiently and may even open the door to malicious cache overflow attacks. In this paper we argue that instead of enforcing the same universal flow cache semantics to all OpenFlow applications and optimize for the common case, a switch should rather automatically specialize its dataplane piecemeal with respect to the configured workload. We introduce ESwitch, a novel switch architecture that uses on-the-fly template-based code generation to compile any OpenFlow pipeline into efficient machine code, which can then be readily used as fast path. We present a proof-of-concept prototype and we demonstrate on illustrative use cases that ESwitch yields a simpler architecture, superior packet processing speed, improved latency and CPU scalability, and predictable performance. Our prototype can easily scale beyond 100 Gbps on a single Intel blade even with complex OpenFlow pipelines.</p>
+<p>【Keywords】:
+OpenFlow software switching; packet classification; template-based code generation</p>
+<h2 id="Posters    21">Posters    21</h2>
+<h3 id="40. PieBridge: A Cross-DR scale Large Data Transmission Scheduling System.">40. PieBridge: A Cross-DR scale Large Data Transmission Scheduling System.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959046">Paper Link</a>】    【Pages】:553-554</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Yuchao">Yuchao Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Ke">Ke Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yao:Guang">Guang Yao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Miao">Miao Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nie:Xiaohui">Xiaohui Nie</a></p>
+<p>【Abstract】:
+Cross-DR WAN (Datacenter Region Wide Area Network) with various services are deployed to provide timely data information and analytics for users in a wide range of geographical locations. For its reliability and performance, data duplication synchronization is essential among different IDCs (Internet datacenters). However, this problem poses a challenge. First, data duplication requires huge amount of bandwidth whereas the bandwidth of cross-DR links and the upload/download rates of server interfaces are limited. Second, data transmissions are time sensitive, but the current network cannot complete such tasks in a timely manner. In this work, we present PieBridge, a cross-RD data duplicate transmission platform that accommodates hundreds of TBs of data generated from user applications online data analytics. We deployed PieBridge on the IDCs of Baidu and obtained promising performance results in comparison with the prevalent approaches.</p>
+<p>【Keywords】:
+Cross-DR WAN; Large-scale Data Transmission</p>
+<h3 id="41. Best Effort Task Scheduling for Data Parallel Jobs.">41. Best Effort Task Scheduling for Data Parallel Jobs.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959047">Paper Link</a>】    【Pages】:555-556</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Ziyang">Ziyang Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Yiming">Yiming Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhao:Yunxiang">Yunxiang Zhao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Peng:Yuxing">Yuxing Peng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Dongsheng">Dongsheng Li</a></p>
+<p>【Abstract】:
+The tasks of data-parallel computation jobs come up with diverse and time-varying resource requirements. The dynamic nature of task requirements brings challenges on making good scheduling decisions, due to it is hard to keep work-conserving. In this paper, we present BETS to cope with the requirement dynamics that aims at utilizing cluster resources fully. BETS employs a task model that represents for runtime task requirements, a coarse-grained task pipeline to make use of resources in a time-division multiplexing fashion, and fine-grained resource management to guarantee performance.</p>
+<p>【Keywords】:
+Data-parallel jobs; Task model; Task scheduling</p>
+<h3 id="42. A Longitudinal Analysis of .i2p Leakage in the Public DNS Infrastructure.">42. A Longitudinal Analysis of .i2p Leakage in the Public DNS Infrastructure.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2960423">Paper Link</a>】    【Pages】:557-558</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jeong:Seong_Hoon">Seong Hoon Jeong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kang:Ah_Reum">Ah Reum Kang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Joongheon">Joongheon Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Huy_Kang">Huy Kang Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mohaisen:Aziz">Aziz Mohaisen</a></p>
+<p>【Abstract】:
+The Invisible Internet Project (I2P) is an overlay network that provides secure and anonymous communication channels. EepSites are the anonymous websites hosted in the I2P network. To access the eepSites, DNS requests of a domain name suffixed with the {\sf .i2p} pseudo top-level domain (TLD) are routed within the I2P network. However, not only that {\sf .i2p} queries are leaking in the public DNS infrastructure, but also such leakage has various plausible root causes and implications that are different from other related leakage. In this paper, we analyze the leaked {\sf .i2p} requests captured in the A and J root name servers of the public DNS, showing that a large number of queries are observed and outlining various potential directions of addressing such leakage.</p>
+<p>【Keywords】:
+DNS; I2P; Network Analysis; Privacy; Security</p>
+<h3 id="43. Application-specific Acceleration Framework for Mobile Applications.">43. Application-specific Acceleration Framework for Mobile Applications.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959049">Paper Link</a>】    【Pages】:559-560</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Choi:Byungkwon">Byungkwon Choi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Jeongmin">Jeongmin Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Han:Dongsu">Dongsu Han</a></p>
+<p>【Abstract】:
+Minimizing response times for mobile applications is critical for quality user experience that often impacts the revenue of mobile services. Generalized approaches to accelerated mobile applications (e.g., TCP acceleration, SPDY, compression) are less effective because they do not take account for application specific behaviors. In contrast, application specific approaches build application-specific proxies by leveraging the app-specific protocol behaviors to enable dynamic caching and/or prefetching. However, this is non-trivial because it requires manual analysis of application level protocols and their interactions. Therefore, only a small number of apps enjoyed the benefit. This paper addresses the problem of scaling the number of applications by automating the process. To this end, we present a framework for mobile application acceleration that leverages automatic protocol analysis to automatically discover opportunities for app acceleration. The framework automatically finds out when and where to prefetch or perform dynamic caching. We present the framework design and a preliminary result that demonstrates its viability.</p>
+<p>【Keywords】:
+android; automatic proxying; protocol behavior; static analysis</p>
+<h3 id="44. Performance Evaluation of Locator/Identifier Separation Protocol through RIPE Atlas.">44. Performance Evaluation of Locator/Identifier Separation Protocol through RIPE Atlas.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959050">Paper Link</a>】    【Pages】:561-562</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Yue">Yue Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/i/Iannone:Luigi">Luigi Iannone</a></p>
+<p>【Abstract】:
+The \emph{Locator/Identifier Separation Protocol} (LISP) introduces several benefits to the Internet architecture, yet, since it is just in the initial deployment stage, comprehensive understanding of its integration performance with legacy Internet becomes essential. We leverage on RIPE Atlas, the largest Internet measurement infrastructure, to conduct large scale measurements analysis to provide the feedback to improve LISP technology. The preliminary evaluations show that LISP generally has a reliable performance, compared with the existing Internet. From our vantage point, we observe that LISP introduces a non-negligible latency for the European and North American destinations, occasionally some extremely large delay, however, it shows a faster connection for the Asian intercontinental transmission.</p>
+<p>【Keywords】:
+LISP; RIPE Atlas; experimentation; measurement</p>
+<h3 id="45. TafLoc: Time-adaptive and Fine-grained Device-free Localization with Little Cost.">45. TafLoc: Time-adaptive and Fine-grained Device-free Localization with Little Cost.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959051">Paper Link</a>】    【Pages】:563-564</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chang:Liqiong">Liqiong Chang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xiong:Jie">Jie Xiong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Xiaojiang">Xiaojiang Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Ju">Ju Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Junhao">Junhao Hu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fang:Dingyi">Dingyi Fang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang_0056:Wei">Wei Wang</a></p>
+<p>【Abstract】:
+Many emerging applications drive the needs of device-free localization (DfL), in which the target can be localized without any device attached. Because of the ubiquitousness of WiFi infrastructures nowadays, the widely available Received Signal Strength (RSS) information at the WiFi Access points are commonly employed for localization purposes. However, current RSS based DfL systems have one main drawback hindering their real-life applications. That is, the RSS measurements (fingerprints) vary slowly in time even without any change in the environment and frequent updates of RSS at each location lead to a high human labor cost. In this paper, we propose an RSS based low cost DfL system named TafLoc which is able to accurately localize the target over a long time scale. To reduce the amount of human labor cost in updating the RSS fingerprints, TafLoc represents the RSS fingerprints as a matrix which has several unique properties. Based on these properties, we propose a novel fingerprint matrix reconstruction scheme to update the whole fingerprint database with just a few RSS measurements, thus the labor cost is greatly reduced. Extensive experiments illustrate the effectiveness of TafLoc, outperforming the state-of-the-art RSS based DfL systems.</p>
+<p>【Keywords】:
+Device Free Localization; Fine-grained; Received Signal Strength; Time Adaptive</p>
+<h3 id="46. Efficient Remapping of Internet Routing Events.">46. Efficient Remapping of Internet Routing Events.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959052">Paper Link</a>】    【Pages】:565-566</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Fazzion:Elverton_C=">Elverton C. Fazzion</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cunha:=Iacute=talo">Ítalo Cunha</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Guedes:Dorgival_O=">Dorgival O. Guedes</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Meira_Jr=:Wagner">Wagner Meira Jr.</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Teixeira:Renata">Renata Teixeira</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Veitch:Darryl">Darryl Veitch</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Diot:Christophe">Christophe Diot</a></p>
+<p>【Abstract】:
+Routing events impact multiple paths in the Internet, but current active topology mapping techniques monitor paths independently. Detecting a routing event on one Internet path does not trigger any measurements on other possibly-impacted paths. This approach leads to outdated and inconsistent routing information. We characterize routing events in the Internet and investigate probing strategies to efficiently identify paths impacted by a routing event. Our results indicate that targeted probing can help us quickly remap routing events and maintain more up-to-date and consistent topology maps.</p>
+<p>【Keywords】:
+Routing events; Topology mapping; Traceroute</p>
+<h3 id="47. A First Look into Transnational Routing Detours.">47. A First Look into Transnational Routing Detours.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959081">Paper Link</a>】    【Pages】:567-568</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/e/Edmundson:Anne">Anne Edmundson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Ensafi:Roya">Roya Ensafi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Feamster:Nick">Nick Feamster</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rexford:Jennifer">Jennifer Rexford</a></p>
+<p>【Abstract】:
+An increasing number of countries are passing laws that facilitate the mass surveillance of their citizens. In response, governments and citizens are increasingly paying attention to the countries that their Internet traffic traverses. In some cases, countries are taking extreme steps, such as building new IXPs and encouraging local interconnection to keep local traffic local. We find that although many of these efforts are extensive, they are often futile, due to the inherent lack of hosting and route diversity for many popular sites. We investigate how the use of overlay network relays and the DNS open resolver infrastructure can prevent traffic from traversing certain jurisdictions.</p>
+<p>【Keywords】:
+routing; surveillance</p>
+<h3 id="48. PathCache: A Path Prediction Toolkit.">48. PathCache: A Path Prediction Toolkit.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959053">Paper Link</a>】    【Pages】:569-570</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Singh:Rachee">Rachee Singh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gill:Phillipa">Phillipa Gill</a></p>
+<p>【Abstract】:
+Path prediction on the Internet has been a topic of research in the networking community for close to a decade. Applications of path prediction solutions have ranged from optimizing selection of peers in peer- to-peer networks to improving and debugging CDN predictions. Recently, revelations of traffic correlation and surveillance on the Internet have raised the topic of path prediction in the context of network security. Specifically, predicting network paths can allow us to identify and avoid given organizations on network paths (e.g., to avoid traffic correlation attacks in Tor) or to infer the impact of hijacks and interceptions when direct measurements are not available. In this poster we propose the design and implementation of PathCache which aims to reuse measurement data to estimate AS level paths on the Internet. Unlike similar systems, PathCache does not assume that routing on the Internet is destination based. Instead, we develop an algorithm to compute confidence in paths between ASes. These multiple paths ranked by their confidence values are returned to the user.</p>
+<p>【Keywords】:
+Internet Measurement</p>
+<h3 id="49. Privacy-Aware Infrastructure for Managing Personal Data.">49. Privacy-Aware Infrastructure for Managing Personal Data.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959054">Paper Link</a>】    【Pages】:571-572</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Amar:Yousef">Yousef Amar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Haddadi:Hamed">Hamed Haddadi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mortier:Richard">Richard Mortier</a></p>
+<p>【Abstract】:
+In recent times, we have seen a proliferation of personal data. This can be attributed not just to a larger proportion of our lives moving online, but also through the rise of ubiquitous sensing through mobile and IoT devices. Alongside this surge, concerns over privacy, trust, and security are expressed more and more as different parties attempt to take advantage of this rich assortment of data. The Databox seeks to enable all the advantages of personal data analytics while at the same time enforcing <strong>accountability</strong> and <strong>control</strong> in order to protect a user's privacy. In this work, we propose and delineate a personal networked device that allows users to <strong>collate</strong>, <strong>curate</strong>, and <strong>mediate</strong> their personal data.</p>
+<p>【Keywords】:
+Networks; Personal Data; Privacy</p>
+<h3 id="50. Named Data Networking Based Smart Home Lighting.">50. Named Data Networking Based Smart Home Lighting.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959055">Paper Link</a>】    【Pages】:573-574</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Silva:Upeka_De">Upeka De Silva</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lertsinsrubtavee:Adisorn">Adisorn Lertsinsrubtavee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sathiaseelan:Arjuna">Arjuna Sathiaseelan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kanchanasut:Kanchana">Kanchana Kanchanasut</a></p>
+<p>【Abstract】:
+In this paper, we provide an initial evaluation of a home smart lighting system - demonstrating the advantages of ICN paradigm through the primitive features of NDN architecture. A prototype of NDN based smart home lighting was developed and benchmarked against the IP cloud based approach.</p>
+<p>【Keywords】:
+Networks → Home networks; Networks → Network design principles; Networks → Network protocol design</p>
+<h3 id="51. Conan: Content-aware Access Network Flow Scheduling to Improve QoE of Home Users.">51. Conan: Content-aware Access Network Flow Scheduling to Improve QoE of Home Users.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959056">Paper Link</a>】    【Pages】:575-576</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Haixiang">Haixiang Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Xiaoliang">Xiaoliang Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nguyen:Cam=Tu">Cam-Tu Nguyen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lu:Sanglu">Sanglu Lu</a></p>
+<p>【Abstract】:
+There has always been a gap of perception between Internet Service Providers (ISPs) and their customers when considering the performance of network service. On one hand, ISPs invest to increase downstream speed of access network infrastructure. On the other hand, users cannot achieve perceived quality of experience (QoE). This paper addresses this problem by introducing a system, Conan, which enables content-aware flow scheduling to improve the QoE of users. Conan exploits to satisfy users' requirements in the access network (LAN), which is the performance bottleneck actually. By leveraging the technique of software defined networking (SDN), Conan are able to specify the expected network capacity for different applications. Automatic application identification is deployed at home gateway to improve the scalability, and flexible bandwidth allocation is realized at LAN for specified applications. Using video streaming service optimization as an example, we demonstrate that our system can automatically allocate bandwidth for video flows.</p>
+<p>【Keywords】:
+Dynamic Resource Allocation; QoE; SDN</p>
+<h3 id="52. Horse: towards an SDN traffic dynamics simulator for large scale networks.">52. Horse: towards an SDN traffic dynamics simulator for large scale networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959082">Paper Link</a>】    【Pages】:577-578</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Fernandes:Eder_Le=atilde=o">Eder Leão Fernandes</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Antichi:Gianni">Gianni Antichi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Castro:Ignacio">Ignacio Castro</a> ; <a href="http://dblp.uni-trier.de/pers/hd/u/Uhlig:Steve">Steve Uhlig</a></p>
+<p>【Abstract】:
+The Software Defined Networking (SDN) paradigm can be successfully applied to the inter-domain ecosystem to empower network fabrics with finer grained policies and traffic engineering capabilities. However, introducing SDN at the inter-domain level might also lead to misconfigurations with potential to negatively impact on the Internet. Simulators are a popular approach to verify network behaviour and test applications before going into production. In the case of SDN, the available options do not scale for large scale networks nor high traffic loads. In this paper we propose a new simulator to foster SDN research and improve our understanding on the impact of the new use cases over the traffic flow. A simulation tool capable of efficiently reproducing large scale networks, high traffic loads, and policies, by abstracting the interactions between switches and controllers of the SDN network.</p>
+<p>【Keywords】:
+Software Defined Networking; simulation</p>
+<h3 id="53. FAST: A Simple Programming Abstraction for Complex State-Dependent SDN Programming.">53. FAST: A Simple Programming Abstraction for Complex State-Dependent SDN Programming.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2960424">Paper Link</a>】    【Pages】:579-580</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gao:Kai">Kai Gao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gu:Chen">Chen Gu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xiang:Qiao">Qiao Xiang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Yang_Richard">Yang Richard Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bi:Jun">Jun Bi</a></p>
+<p>【Abstract】:
+Handling state dependencies is a major challenge in modern SDN programming, but existing frameworks do not provide sufficient abstractions nor tools to address this challenge. In this paper, we propose a novel, high-level programming abstraction and implement the <em>Function Automation SysTem (FAST)</em>. With the two key features, i.e., <em>automated state dependency tracking</em> and <em>efficient re-execution scheduling</em>, we demonstrate that FAST substantially simplifies state-dependent SDN programming and boosts the performance.</p>
+<p>【Keywords】:
+Programming abstraction;; SDN; State dependency</p>
+<h3 id="54. SLA-NFV: an SLA-aware High Performance Framework for Network Function Virtualization.">54. SLA-NFV: an SLA-aware High Performance Framework for Network Function Virtualization.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959058">Paper Link</a>】    【Pages】:581-582</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sun:Chen">Chen Sun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bi:Jun">Jun Bi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zheng:Zhilong">Zhilong Zheng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Hongxin">Hongxin Hu</a></p>
+<p>【Abstract】:
+We propose SLA-NFV, a Service Level Agreement (SLA) aware framework, for building high-performance NFV, focusing on fulfilling SLAs of service subscribers (or tenants). SLA-NFV leverages a hybrid infrastructure with both software and programmable hardware to enhance NFV’s capability with respect to various SLAs. Evaluations show that a hybrid service chain could reduce latency by up to 60% compared with a pure soft- ware service chain.</p>
+<p>【Keywords】:
+High Performance; Hybrid Infrastructure; NFV; SLA</p>
+<h3 id="55. Building Application-Aware Network Environments using SDN for Optimizing Hadoop Applications.">55. Building Application-Aware Network Environments using SDN for Optimizing Hadoop Applications.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959059">Paper Link</a>】    【Pages】:583-584</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhao:Shuai">Shuai Zhao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sydney:Ali">Ali Sydney</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Medhi:Deep">Deep Medhi</a></p>
+<p>【Abstract】:
+Hadoop has become the de facto standard for Big Data analytics, especially for workloads that use the MapReduce (M/R) framework. However, the lack of network awareness of the default MapReduce resource manager in Hadoop can cause unbalanced job scheduling, network bottleneck, and eventually increase the Hadoop run time if Hadoop nodes are clustered in several geographically distributed locations. In this paper, we present an application-aware network approach using software-defined networking (SDN) for distributed Hadoop clusters. We develop the SDN applications for this environment that consider network topology discovery, traffic monitoring, and flow rerouting in addition to loop avoidance mechanisms.</p>
+<p>【Keywords】:
+Application-Aware Networking; Hadoop; Software-Defined Networking</p>
+<h3 id="56. Achieving Consistent SDN Control With Declarative Applications.">56. Achieving Consistent SDN Control With Declarative Applications.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959060">Paper Link</a>】    【Pages】:585-586</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Wen">Wen Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Cong">Cong Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Su:Jinshu">Jinshu Su</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/He:Wenbo">Wenbo He</a></p>
+<p>【Abstract】:
+Software-defined networking enables applications act as blackboxes independently to control the network flexibly. However, these independent applications may generate conflicting control decisions. To reconcile applications automatically and dynamically, we implement control applications with Prolog, which enables applications to execute jointly to make consistent control decisions. When conflicts occur, we design a compromise algorithm by sacrificing a subset of applications to maximize the desired control objectives.</p>
+<p>【Keywords】:
+Network Control Consistency; Software-Defined Networking</p>
+<h3 id="57. Modular SDN Compiler Design with Intermediate Representation.">57. Modular SDN Compiler Design with Intermediate Representation.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959061">Paper Link</a>】    【Pages】:587-588</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Hao">Hao Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Chengchen">Chengchen Hu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang_0011:Peng">Peng Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xie_0002:Lei">Lei Xie</a></p>
+<p>【Abstract】:
+Software Defined Networking (SDN) is evolving to such a phase that multiple programming languages and rule specifications coexist. However, current SDN compilers are closely bound to both languages and rules, thus disable the interoperability and compatibility of SDN programs. To solve this problem, we propose to modularize the SDN compiler by leveraging intermediate representation (IR), a common technique for computer compiler design. Specifically, we introduce Semantic Rule (SR) as the first IR for SDN compilers, which is a simple, language-independent, and semantic-preserving representation. We develop two optimizations on the semantic rule to coordinate cross-language programs in a single network and compress the number of compiled rules. We implement a modular compiler prototype with the proposed SR, and demonstrate that RYU programs can run at both OpenFlow and POF network. With synthetic network configurations, we demonstrate that the optimizations on SRs are effective, efficient and scalable.</p>
+<p>【Keywords】:
+Intermediate representation; Software-Defined Networks</p>
+<h3 id="58. Rethinking the Design of OpenFlow Switch Counters.">58. Rethinking the Design of OpenFlow Switch Counters.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959062">Paper Link</a>】    【Pages】:589-590</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Ji">Ji Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Chengchen">Chengchen Hu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zheng:Peng">Peng Zheng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Ruilong">Ruilong Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang_0011:Peng">Peng Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Guan:Xiaohong">Xiaohong Guan</a></p>
+<p>【Abstract】:
+OpenFlow, as the Software Defined Networking (SDN) primitive, provides a simple forwarding plane abstraction, which heavily relies on the fast memory inside the OpenFlow Switch (OFS). OFS components, e.g. flow table, meter table, counters, have to compete for the limited fast memory resource. As a result, only a few counting functions are defined as mandatory in the OFS specification, although a lot of SDN proposals depend on a detailed states collected by the optional counters in the specification. This fact motivates us to rethink the way to maintain counters in the OFS. We propose a new architecture called CACTI, which only consumes several registers in the fast path and moves the completed counters into the on chip RAM like cache in the slow path processor. Theoretical analysis and experiments on the prototype system demonstrated the efficiency of our architecture: CACTI is capable to achieve the throughput of 29.4-39.7M pps packets per second (pps). No RAM resource is needed any more in the fast path, instead, CACTI consumes only 0.24-0.54\% Look-Up Table and 0.35-0.43\% flip-flops compared with the entire FPGA-based OFS design in the fast path, and the unused CPU cache in the slow path.</p>
+<p>【Keywords】:
+OpenFlow; SDN counter</p>
+<h3 id="59. Taming the Flow Table Overflow in OpenFlow Switch.">59. Taming the Flow Table Overflow in OpenFlow Switch.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959063">Paper Link</a>】    【Pages】:591-592</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/q/Qiao:Siyi">Siyi Qiao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Chengchen">Chengchen Hu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Guan:Xiaohong">Xiaohong Guan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zou:Jianhua">Jianhua Zou</a></p>
+<p>【Abstract】:
+SDN has become the wide area network technology, which the academic and industry most concerned about.The limited table sizes of today’s SDN switches has turned to the most prominent short planks in the network design implementation. TCAM based flow table can provide an excellent matching performance while it really costs much. Even the flow table overflow cannot be prevented by a fixed-capacity flow table. In this paper, we design FTS(Flow Table Sharing) mechanism that can improve the performance disaster caused by overflow. We demonstrate that FTS reduces both control messages quantity and RTT time by two orders of magnitude compared to current state-of-the-art OpenFlow table-miss handler.</p>
+<p>【Keywords】:
+SDN; flowtable; overflow; table-miss</p>
+<h3 id="60. Magellan: Generating Multi-Table Datapath from Datapath Oblivious Algorithmic SDN Policies.">60. Magellan: Generating Multi-Table Datapath from Datapath Oblivious Algorithmic SDN Policies.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959064">Paper Link</a>】    【Pages】:593-594</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/v/Voellmy:Andreas">Andreas Voellmy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Shenshen">Shenshen Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Xin">Xin Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Yang_Richard">Yang Richard Yang</a></p>
+<p>【Abstract】:
+Despite the emergence of multi-table pipelining as a key feature of next-generation SDN data-path models, there is no existing work that addresses the substantial programming challenge of utilizing multi-tables automatically. In this paper, we present Magellan, the first system that addresses the aforementioned challenge. Introducing two novel, substantial algorithms, map-explore and table-design, Magellan achieves automatic derivation and population of multi-table pipelines from a datapath-oblivious, high-level SDN program written in a general-purpose language. Comparing the flow tables generated by Magellan with those produced by standard SDN controllers including OpenDaylight and Floodlight, we show that Magellan uses between 46-68x fewer rules.</p>
+<p>【Keywords】:
+Multi-table pipeline; Programming model; SDN</p>
+<h2 id="Demos    18">Demos    18</h2>
+<h3 id="61. Source Address Validation in Software Defined Networks.">61. Source Address Validation in Software Defined Networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2960425">Paper Link</a>】    【Pages】:595-596</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Bingyang">Bingyang Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bi:Jun">Jun Bi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Yu">Yu Zhou</a></p>
+<p>【Abstract】:
+In this paper, we present the preliminary design and implementation of SDN-SAVI, an SDN application that enables SAVI functionalities in SDN networks. In this proposal, all the functionalities are implemented on the controller without modifying SDN switches. To enforce SAVI on packets in the data plane, the controller installs binding tables in switches using existing SDN techniques, such as OpenFlow. With SDN-SAVI, a network administrator can now enforce SAVI in her network by merely integrating a module on the controller, rather than purchasing SAVI-capable switches and replacing legacy ones.</p>
+<p>【Keywords】:
+SAVI; SDN</p>
+<h3 id="62. Towards Transiently Secure Updates in Asynchronous SDNs.">62. Towards Transiently Secure Updates in Asynchronous SDNs.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959083">Paper Link</a>】    【Pages】:597-598</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Shukla:Apoorv">Apoorv Shukla</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schmid:Stefan">Stefan Schmid</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Feldmann:Anja">Anja Feldmann</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Ludwig:Arne">Arne Ludwig</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dudycz:Szymon">Szymon Dudycz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schuetze:Andre">Andre Schuetze</a></p>
+<p>【Abstract】:
+Software-Defined Networks (SDNs) promise to overcome the often complex and error-prone operation of tradi- tional computer networks, by enabling programmabil- ity, automation and verifiability. Yet, SDNs also in- troduce new challenges, for example due to the asyn- chronous communication channel between the logically centralized control platform and the switches in the data plane. In particular, the asynchronous commu- nication of network update commands (e.g., OpenFlow FlowMod messages) may lead to transient inconsisten- cies, such as loops or bypassed waypoints (e.g., fire- walls). One approach to ensure transient consistency even in asynchronous environments is to employ smart scheduling algorithms: algorithms which update subsets of switches in each communication round only, where each subset in itself guarantees consistency. In this demo, we show how to change routing policies in a transiently consistent manner. We demonstrate two al- gorithms, namely, Wayup [5] and Peacock [4], which partition the network updates sent from SDN controller towards OpenFlow software switches into multiple rounds as per respective algorithms. Later, the barrier mes- sages are utilized to ensure reliable network updates.</p>
+<p>【Keywords】:
+Mininet; SDN</p>
+<h3 id="63. Cases for Including a Reference Monitor to SDN.">63. Cases for Including a Reference Monitor to SDN.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959066">Paper Link</a>】    【Pages】:599-600</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gkounis:Dimitrios">Dimitrios Gkounis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Klaedtke:Felix">Felix Klaedtke</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bifulco:Roberto">Roberto Bifulco</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Karame:Ghassan_O=">Ghassan O. Karame</a></p>
+<p>【Abstract】:
+No abstract written</p>
+<p>【Keywords】:</p>
+<h3 id="64. Roaming Edge vNFs using Glasgow Network Functions.">64. Roaming Edge vNFs using Glasgow Network Functions.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959067">Paper Link</a>】    【Pages】:601-602</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cziva:Richard">Richard Cziva</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jouet:Simon">Simon Jouet</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pezaros:Dimitrios_P=">Dimitrios P. Pezaros</a></p>
+<p>【Abstract】:
+While the network edge is becoming more important for the provision of customized services in next generation mobile networks, current NFV architectures are unsuitable to meet the increasing future demand. They rely on commodity servers with resource-hungry Virtual Machines that are unable to provide the high network function density and mobility requirements necessary for upcoming wide-area and 5G networks. In this demo, we showcase Glasgow Network Functions (GNF), a virtualization framework suitable for next generation mobile networks that exploits lightweight network functions (NFs) deployed at the edge and transparently following  users' devices as they roam between cells.</p>
+<p>【Keywords】:
+container network functions; fifth-generation mobile networks; glasgow network functions; network function virtualization; software-defined networks</p>
+<h3 id="65. A Transparent Highway for inter-Virtual Network Function Communication with Open vSwitch.">65. A Transparent Highway for inter-Virtual Network Function Communication with Open vSwitch.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959068">Paper Link</a>】    【Pages】:603-604</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bernal:Mauricio_V=aacute=squez">Mauricio Vásquez Bernal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cerrato:Ivano">Ivano Cerrato</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Risso:Fulvio">Fulvio Risso</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Verbeiren:David">David Verbeiren</a></p>
+<p>【Abstract】:
+This paper presents a software architecture that can dynamically and transparently establish direct communication paths between DPDK-based virtual network functions executed in virtual machines, by recognizing new point-to-point connections in traffic steering rules. We demonstrate the huge advantages of this architecture in terms of performance and the possibility to implement it with localized modifications in Open vSwitch and DPDK, without touching the VNFs.</p>
+<p>【Keywords】:
+DPDK; NFV; Open vSwitch; performance</p>
+<h3 id="66. Modeling Native Software Components as Virtual Network Functions.">66. Modeling Native Software Components as Virtual Network Functions.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959069">Paper Link</a>】    【Pages】:605-606</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Baldi:Mario">Mario Baldi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bonafiglia:Roberto">Roberto Bonafiglia</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Risso:Fulvio">Fulvio Risso</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sapio:Amedeo">Amedeo Sapio</a></p>
+<p>【Abstract】:
+Virtual Network Functions (VNFs) are often realized using virtual machines (VMs) because they provide an isolated environment compatible with classical cloud computing technologies. However, VMs are demanding in terms of required resources (CPU and memory) and therefore not suitable for low-cost devices like residential gateways. Such equipment often runs a Linux-based operating system that includes by default a (large) number of common network functions, which can provide some of the services otherwise offered by simple VNFs, but with reduced overhead. In this paper those native software components are made available through a Network Function Virtualization (NFV) platform, thus making their use transparent from the VNF developer point of view.</p>
+<p>【Keywords】:
+Network Functions Virtualization; Service Orchestration; Software Defined Networks; Virtual Network Functions</p>
+<h3 id="67. Mininet-WiFi: A Platform for Hybrid Physical-Virtual Software-Defined Wireless Networking Research.">67. Mininet-WiFi: A Platform for Hybrid Physical-Virtual Software-Defined Wireless Networking Research.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959070">Paper Link</a>】    【Pages】:607-608</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Fontes:Ramon_dos_Reis">Ramon dos Reis Fontes</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rothenberg:Christian_Esteve">Christian Esteve Rothenberg</a></p>
+<p>【Abstract】:
+Software-Defined Wireless Networking (SDWN) is being considered an appealing paradigm to design and operate wireless networks through higher-level abstractions and programmatic interfaces such as the OpenFlow protocol. Identified benefits include cost savings, service velocity and customization, resource optimization through novel approaches to user mobility, traffic offloading, multi-layer and multi-path routing, and so on. This demonstration features Mininet-WiFi as a SDWN emulator with the ability to run realistic experiments in hybrid physical-virtual environments, where users attending the conference are able to experience first hand by connecting their devices and interacting with virtual WiFi stations in a wireless mesh network or reach the Internet through the emulated SDWN infrastructure. OpenFlow 1.3 metering and IP header re-writing actions will showcase HTTP flow redirection and rate limitation of real users' wireless traffic.</p>
+<p>【Keywords】:
+OpenFlow; SDN; SDWN; emulator; mesh network; wireless</p>
+<h3 id="68. Off-the-Shelf Software-defined Wi-Fi Networks.">68. Off-the-Shelf Software-defined Wi-Fi Networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959071">Paper Link</a>】    【Pages】:609-610</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/H=auml=t=ouml=nen:Seppo">Seppo Hätönen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Savolainen:Petri">Petri Savolainen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rao:Ashwin">Ashwin Rao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Flinck:Hannu">Hannu Flinck</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tarkoma:Sasu">Sasu Tarkoma</a></p>
+<p>【Abstract】:
+Wi-Fi networks were one of the first use-cases for Software-defined networking (SDN). However, to deploy a software-defined Wi-Fi network today, one has to rely on research prototypes with availability, documentation, hardware requirements, and scalability issues. To alleviate this situation, we demonstrate two simple techniques to bring SDN functionality to existing Wi-Fi networks and discuss their benefits and short-comings. Researchers can use our techniques to convert their existing Wi-Fi testbeds into software defined Wi-Fi testbeds. Our two techniques thus significantly lower the barrier-to-entry for deploying software-defined Wi-Fi networks.</p>
+<p>【Keywords】:
+SDN; Testbeds; Wi-fi</p>
+<h3 id="69. Enabling Backscatter Communication among Commodity WiFi Radios.">69. Enabling Backscatter Communication among Commodity WiFi Radios.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959072">Paper Link</a>】    【Pages】:611-612</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Pengyu">Pengyu Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bharadia:Dinesh">Dinesh Bharadia</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Joshi:Kiran_Raj">Kiran Raj Joshi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Katti:Sachin">Sachin Katti</a></p>
+<p>【Abstract】:
+We present the first low power backscatter system that can be deployed completely using commodity WiFi infrastructure. With this system, a low power tag reflects existing 802.11b transmissions from a commodity WiFi transmitter, and the backscattered signals can be decoded as a standard WiFi packet by a commodity 802.11b receiver. The key invention is a novel technique called \textbf{codeword translation}, which allows a backscatter tag to embed its information on standard 802.11b packets by just translating the original transmitted 802.11b codeword to another valid 802.11b codeword. This allows any 802.11b receiver to decode the backscattered packet, thus opening the doors for widespread deployment of low-power backscatter communication using widely available WiFi infrastructure. We show experimentally that we can achieve an uplink throughput of up to 1Mbps at ranges of up to 8m and ranges of up to 50m where it achieves a throughput of around 100Kbps, which is twice as better than the recently published passive WiFi system.</p>
+<p>【Keywords】:
+Backscatter</p>
+<h3 id="70. Multi-Domain Orchestration across RAN and Transport for 5G.">70. Multi-Domain Orchestration across RAN and Transport for 5G.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959073">Paper Link</a>】    【Pages】:613-614</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Rostami:Ahmad">Ahmad Rostami</a> ; <a href="http://dblp.uni-trier.de/pers/hd/=/=Ouml=hl=eacute=n:Peter">Peter Öhlén</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Santos:Mateus_Augusto_Silva">Mateus Augusto Silva Santos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vidal:Allan">Allan Vidal</a></p>
+<p>【Abstract】:
+End-to-End programmability across radio, transport and compute resources is a key enabler for the fifth generation of mobile communication networks (5G). In our work we look into how SDN can realize the required cross-domain programmability, as well as slicing of resources towards multiple clients. We present design and implementation of a hierarchical, modular and programmable orchestration architecture across radio access networks and transport networks. We demonstrate how the developed multi-domain orchestration improves the service creation as well as resource utilization across the domains using real-time monitoring.</p>
+<p>【Keywords】:
+5G; SDN; multi-domain orchestration; network slicing</p>
+<h3 id="71. EasyApp: A Cross-platform Mobile Applications Development Environment Based on OSGi.">71. EasyApp: A Cross-platform Mobile Applications Development Environment Based on OSGi.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959074">Paper Link</a>】    【Pages】:615-616</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Zhaoning">Zhaoning Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cheng:Bo">Bo Cheng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhai:Zhongyi">Zhongyi Zhai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jin:Ying">Ying Jin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Feng:Yimeng">Yimeng Feng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Junliang">Junliang Chen</a></p>
+<p>【Abstract】:
+<strong><em> The rapid development of mobile internet abstracts many non-professional persons to creating mobile applications. Traditional development process cannot meet their needs. In this paper, we present a cross-platform mobile development environment based on OSGi framework, EasyApp. It provides a highly-integrated, UI-friendly and easily-operating environment. Applications are comprehensively developed with web techniques. Users could create mobile applications with draggable widgets. Native APIs of mobile phone can be invoked with abundant plugins. After designing, users could package and download applications of multiple platforms. </em></strong></p>
+<p>【Keywords】:
+End-user development; Mobile application; OSGi; Widgets communication</p>
+<h3 id="72. Application Driven Network: providing On-Demand Services for Applications.">72. Application Driven Network: providing On-Demand Services for Applications.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959075">Paper Link</a>】    【Pages】:617-618</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Yi">Yi Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lin:Dong">Dong Lin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Changtai">Changtai Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Junping">Junping Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Peng">Peng Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Chengchen">Chengchen Hu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Gong">Gong Zhang</a></p>
+<p>【Abstract】:
+Application Driven Network(ADN) is a new paradigm that provides on-demand differentiated services for applications. A physical network in ADN is sliced into various logically isolated sub-networks. Each network slice can have its own network architecture and protocol to serve one application exclusively. ADN enhances the user experience while keeping the resource efficiency by further imposing multiplexing among these logically isolated sub-networks.</p>
+<p>【Keywords】:
+Application Driven Network; DiffServ; NFV; SDN</p>
+<h3 id="73. Fibbing in action: On-demand load-balancing for better video delivery.">73. Fibbing in action: On-demand load-balancing for better video delivery.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959084">Paper Link</a>】    【Pages】:619-620</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Tilmans:Olivier">Olivier Tilmans</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vissicchio:Stefano">Stefano Vissicchio</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vanbever:Laurent">Laurent Vanbever</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rexford:Jennifer">Jennifer Rexford</a></p>
+<p>【Abstract】:
+Video streaming, in conjunction with social networks, have given birth to a new traffic pattern over the Internet: transient, localized traffic surges, known as flash crowds. Traditional traffic-engineering methods can hardly cope with these surges, as they are unpredictable by nature. Consequently, networks either have to be over-provisioned, which is expensive and wastes resources, or risk to periodically incur congestion, which infuriates customers. This demonstration shows how Fibbing can improve network performance and preserve users’ quality of experience when accessing video streams, by implementing a fine-grained load-balancing service. This service leverages two unique features of Fibbing: programming per destination load-balancing and implementing uneven splitting ratios.</p>
+<p>【Keywords】:
+Fibbing; Traffic engineering; Uneven load-balancing</p>
+<h3 id="74. Capture and Replay: Reproducible Network Experiments in Mininet.">74. Capture and Replay: Reproducible Network Experiments in Mininet.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959076">Paper Link</a>】    【Pages】:621-622</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Fr=ouml=mmgen:Alexander">Alexander Frömmgen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stohr:Denny">Denny Stohr</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fornoff:Jan">Jan Fornoff</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Effelsberg:Wolfgang">Wolfgang Effelsberg</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Buchmann:Alejandro_P=">Alejandro P. Buchmann</a></p>
+<p>【Abstract】:
+Network emulations are widely used in the networking community. The network emulator Mininet recently gained popularity, as it allows running real Linux applications on top of an emulated network. The specification of the network includes the topology as well as static bandwidth, latency, and packet drops probability parameters. Even though evaluations with static parameters provide useful insights, real world measurements show dynamically changing bandwidths, posing special challenges that need to be addressed in network research. In this demo, we capture bandwidth traces in the wild and reproducibly replay these traces in Mininet. Our \emph{capture and replay} infrastructure consists of a Mininet extension for replaying bandwidth traces, a measurement Android app, as well as a graphical repository for bandwidth traces. We exemplary demonstrate this toolchain for reproducible DASH and Multipath TCP experiments.</p>
+<p>【Keywords】:
+Bandwidth Replay; Mininet; Reproducible Research</p>
+<h3 id="75. MACSAD: Multi-Architecture Compiler System for Abstract Dataplanes (aka Partnering P4 with ODP).">75. MACSAD: Multi-Architecture Compiler System for Abstract Dataplanes (aka Partnering P4 with ODP).</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959077">Paper Link</a>】    【Pages】:623-624</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Patra:P=_Gyanesh">P. Gyanesh Patra</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rothenberg:Christian_Esteve">Christian Esteve Rothenberg</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pongr=aacute=cz:Gergely">Gergely Pongrácz</a></p>
+<p>【Abstract】:
+Software Defined Networking (SDN) strives for deep programmable hardware and software dataplanes without giving up on performance. Domain Specific Languages (DSL) such as P4 seek to provide top-down high-level capabilities to define the datapath pipeline agnostic to the network platform and independent from any network protocols. At the crossroads, bottom-up industry efforts at the OpenDataPlane (ODP) initiative are pursuing open-source multiarchitecture APIs for dataplane programmability across various networking platforms. Towards P4 code reuse for various targets (portability), we propose MACSAD as a compiler system that brings together the higher-level P4 language and the abstract, target-independent ODP APIs. The demo showcases two P4 applications compiled into heterogeneous datapath platforms supporting ODP.</p>
+<p>【Keywords】:
+OpenDataPlane; P4; Software Defined Networking</p>
+<h3 id="76. ARTEMIS: Real-Time Detection and Automatic Mitigation for BGP Prefix Hijacking.">76. ARTEMIS: Real-Time Detection and Automatic Mitigation for BGP Prefix Hijacking.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959078">Paper Link</a>】    【Pages】:625-626</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chaviaras:Gavriil">Gavriil Chaviaras</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gigis:Petros">Petros Gigis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sermpezis:Pavlos">Pavlos Sermpezis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dimitropoulos:Xenofontas_A=">Xenofontas A. Dimitropoulos</a></p>
+<p>【Abstract】:
+Prefix hijacking is a common phenomenon in the Internet that often causes routing problems and economic losses. In this demo, we propose ARTEMIS, a tool that enables network administrators to detect and mitigate prefix hijacking incidents, against their own prefixes. ARTEMIS is based on the real-time monitoring of BGP data in the Internet, and software-defined networking (SDN) principles, and can completely mitigate a prefix hijacking within a few minutes (e.g., 5-6mins in our experiments) after it has been~launched.</p>
+<p>【Keywords】:
+Network management; Network monitoring; Network security</p>
+<h3 id="77. A 60Gbps DPI Prototype based on Memory-Centric FPGA.">77. A 60Gbps DPI Prototype based on Memory-Centric FPGA.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959079">Paper Link</a>】    【Pages】:627-628</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Su:Jinshu">Jinshu Su</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Shuhui">Shuhui Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Han:Biao">Biao Han</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Chengcheng">Chengcheng Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Xin">Xin Wang</a></p>
+<p>【Abstract】:
+Deep packet inspection (DPI) is widely used in content-aware network applications to detect string features. It is of vital importance to improve the DPI performance due to the ever-increasing link speed. In this demo, we propose a novel DPI architecture with a hierarchy memory structure and parallel matching engines based on memory-centric FPGA. The implemented DPI prototype is able to provide up to 60Gbps full-text string matching throughput and fast rules update speed.</p>
+<p>【Keywords】:
+DPI; hierarchical memory; string matching</p>
+<h3 id="78. High speed packet forwarding compiled from protocol independent data plane specifications.">78. High speed packet forwarding compiled from protocol independent data plane specifications.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2934872.2959080">Paper Link</a>】    【Pages】:629-630</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Laki:S=aacute=ndor">Sándor Laki</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Horp=aacute=csi:D=aacute=niel">Dániel Horpácsi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/V=ouml=r=ouml=s:Peter">Peter Vörös</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kitlei:R=oacute=bert">Róbert Kitlei</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lesk=oacute=:D=aacute=niel">Dániel Leskó</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tejfel:M=aacute=t=eacute=">Máté Tejfel</a></p>
+<p>【Abstract】:
+P4 is a high level language for programming network switches that allows for great flexibility in the description of packet structure and processing, independent of the specifics of the underlying hardware. In this demo, we present our prototype P4 compiler in which the hardware independent and hardware specific functionalities are separated. We have identified the requisites of the latter, which form the interface of our target specific Hardware Abstraction Library (HAL); the compiler turns P4 code into a target independent core program that is linked to this library and invokes its operations. The two stage separation improves portability: to support a new architecture, only the hardware dependent library has to be implemented. In the demo, we demonstrate the flexibility of our compiler with a HAL for Intel DPDK, and show the packet processing and forwarding performance of compiled switches in different scenarios.</p>
+<p>【Keywords】:
+P4; Packet forwarding; Programmable data plane; SDN</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="https://github.com/huntercmd/ccf"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>
