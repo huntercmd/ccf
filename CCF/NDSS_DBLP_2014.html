@@ -1,0 +1,476 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/skin.js"></script>
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/classie.js"></script>
+
+<!-- This is for Mathjax -->
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#NDSS 2014:San Diego, California, USA">NDSS 2014:San Diego, California, USA</a><ul>
+<li><a href="#Paper Num: 55 || Session Num: 0">Paper Num: 55 || Session Num: 0</a><ul>
+<li><a href="#1. On the Mismanagement and Maliciousness of Networks.">1. On the Mismanagement and Maliciousness of Networks.</a></li>
+<li><a href="#2. No Direction Home: The True Cost of Routing Around Decoys.">2. No Direction Home: The True Cost of Routing Around Decoys.</a></li>
+<li><a href="#3. Gaining Control of Cellular Traffic Accounting by Spurious TCP Retransmission.">3. Gaining Control of Cellular Traffic Accounting by Spurious TCP Retransmission.</a></li>
+<li><a href="#4. CyberProbe: Towards Internet-Scale Active Detection of Malicious Servers.">4. CyberProbe: Towards Internet-Scale Active Detection of Malicious Servers.</a></li>
+<li><a href="#5. Amplification Hell: Revisiting Network Protocols for DDoS Abuse.">5. Amplification Hell: Revisiting Network Protocols for DDoS Abuse.</a></li>
+<li><a href="#6. ROPecker: A Generic and Practical Approach For Defending Against ROP Attacks.">6. ROPecker: A Generic and Practical Approach For Defending Against ROP Attacks.</a></li>
+<li><a href="#7. A Trusted Safety Verifier for Process Controller Code.">7. A Trusted Safety Verifier for Process Controller Code.</a></li>
+<li><a href="#8. AVATAR: A Framework to Support Dynamic Security Analysis of Embedded Systems' Firmwares.">8. AVATAR: A Framework to Support Dynamic Security Analysis of Embedded Systems' Firmwares.</a></li>
+<li><a href="#9. SafeDispatch: Securing C++ Virtual Calls from Memory Corruption Attacks.">9. SafeDispatch: Securing C++ Virtual Calls from Memory Corruption Attacks.</a></li>
+<li><a href="#10. Hybrid-Bridge: Efficiently Bridging the Semantic-Gap in VMI via Decoupled Execution and Training Memoization.">10. Hybrid-Bridge: Efficiently Bridging the Semantic-Gap in VMI via Decoupled Execution and Training Memoization.</a></li>
+<li><a href="#11. Screenmilker: How to Milk Your Android Screen for Secrets.">11. Screenmilker: How to Milk Your Android Screen for Secrets.</a></li>
+<li><a href="#12. AccelPrint: Imperfections of Accelerometers Make Smartphones Trackable.">12. AccelPrint: Imperfections of Accelerometers Make Smartphones Trackable.</a></li>
+<li><a href="#13. Smartphones as Practical and Secure Location Verification Tokens for Payments.">13. Smartphones as Practical and Secure Location Verification Tokens for Payments.</a></li>
+<li><a href="#14. Breaking and Fixing Origin-Based Access Control in Hybrid Web/Mobile Application Frameworks.">14. Breaking and Fixing Origin-Based Access Control in Hybrid Web/Mobile Application Frameworks.</a></li>
+<li><a href="#15. Inside Job: Understanding and Mitigating the Threat of External Device Mis-Binding on Android.">15. Inside Job: Understanding and Mitigating the Threat of External Device Mis-Binding on Android.</a></li>
+<li><a href="#16. DSpin: Detecting Automatically Spun Content on the Web.">16. DSpin: Detecting Automatically Spun Content on the Web.</a></li>
+<li><a href="#17. Toward Black-Box Detection of Logic Flaws in Web Applications.">17. Toward Black-Box Detection of Logic Flaws in Web Applications.</a></li>
+<li><a href="#18. Macaroons: Cookies with Contextual Caveats for Decentralized Authorization in the Cloud.">18. Macaroons: Cookies with Contextual Caveats for Decentralized Authorization in the Cloud.</a></li>
+<li><a href="#19. Detecting Logic Vulnerabilities in E-commerce Applications.">19. Detecting Logic Vulnerabilities in E-commerce Applications.</a></li>
+<li><a href="#20. Simulation of Built-in PHP Features for Precise Static Code Analysis.">20. Simulation of Built-in PHP Features for Precise Static Code Analysis.</a></li>
+<li><a href="#21. Enhanced Certificate Transparency and End-to-End Encrypted Mail.">21. Enhanced Certificate Transparency and End-to-End Encrypted Mail.</a></li>
+<li><a href="#22. Privacy through Pseudonymity in Mobile Telephony Systems.">22. Privacy through Pseudonymity in Mobile Telephony Systems.</a></li>
+<li><a href="#23. Privacy-Preserving Distributed Stream Monitoring.">23. Privacy-Preserving Distributed Stream Monitoring.</a></li>
+<li><a href="#24. The Sniper Attack: Anonymously Deanonymizing and Disabling the Tor Network.">24. The Sniper Attack: Anonymously Deanonymizing and Disabling the Tor Network.</a></li>
+<li><a href="#25. Selling off User Privacy at Auction.">25. Selling off User Privacy at Auction.</a></li>
+<li><a href="#26. The Tangled Web of Password Reuse.">26. The Tangled Web of Password Reuse.</a></li>
+<li><a href="#27. On Semantic Patterns of Passwords and their Security Impact.">27. On Semantic Patterns of Passwords and their Security Impact.</a></li>
+<li><a href="#28. From Very Weak to Very Strong: Analyzing Password-Strength Meters.">28. From Very Weak to Very Strong: Analyzing Password-Strength Meters.</a></li>
+<li><a href="#29. Copker: Computing with Private Keys without RAM.">29. Copker: Computing with Private Keys without RAM.</a></li>
+<li><a href="#30. Practical Dynamic Searchable Encryption with Small Leakage.">30. Practical Dynamic Searchable Encryption with Small Leakage.</a></li>
+<li><a href="#31. Decentralized Anonymous Credentials.">31. Decentralized Anonymous Credentials.</a></li>
+<li><a href="#32. Dynamic Searchable Encryption in Very-Large Databases: Data Structures and Implementation.">32. Dynamic Searchable Encryption in Very-Large Databases: Data Structures and Implementation.</a></li>
+<li><a href="#33. Authentication Using Pulse-Response Biometrics.">33. Authentication Using Pulse-Response Biometrics.</a></li>
+<li><a href="#34. Hardening Persona - Improving Federated Web Login.">34. Hardening Persona - Improving Federated Web Login.</a></li>
+<li><a href="#35. Two-Factor Authentication Resilient to Server Compromise Using Mix-Bandwidth Devices.">35. Two-Factor Authentication Resilient to Server Compromise Using Mix-Bandwidth Devices.</a></li>
+<li><a href="#36. Leveraging USB to Establish Host Identity Using Commodity Devices.">36. Leveraging USB to Establish Host Identity Using Commodity Devices.</a></li>
+<li><a href="#37. PlaceAvoider: Steering First-Person Cameras away from Sensitive Spaces.">37. PlaceAvoider: Steering First-Person Cameras away from Sensitive Spaces.</a></li>
+<li><a href="#38. Auditable Version Control Systems.">38. Auditable Version Control Systems.</a></li>
+<li><a href="#39. Power Attack: An Increasing Threat to Data Centers.">39. Power Attack: An Increasing Threat to Data Centers.</a></li>
+<li><a href="#40. Scambaiter: Understanding Targeted Nigerian Scams on Craigslist.">40. Scambaiter: Understanding Targeted Nigerian Scams on Craigslist.</a></li>
+<li><a href="#41. Botcoin: Monetizing Stolen Cycles.">41. Botcoin: Monetizing Stolen Cycles.</a></li>
+<li><a href="#42. A Machine-learning Approach for Classifying and Categorizing Android Sources and Sinks.">42. A Machine-learning Approach for Classifying and Categorizing Android Sources and Sinks.</a></li>
+<li><a href="#43. AirBag: Boosting Smartphone Resistance to Malware Infection.">43. AirBag: Boosting Smartphone Resistance to Malware Infection.</a></li>
+<li><a href="#44. SMV-Hunter: Large Scale, Automated Detection of SSL/TLS Man-in-the-Middle Vulnerabilities in Android Apps.">44. SMV-Hunter: Large Scale, Automated Detection of SSL/TLS Man-in-the-Middle Vulnerabilities in Android Apps.</a></li>
+<li><a href="#45. AppSealer: Automatic Generation of Vulnerability-Specific Patches for Preventing Component Hijacking Attacks in Android Applications.">45. AppSealer: Automatic Generation of Vulnerability-Specific Patches for Preventing Component Hijacking Attacks in Android Applications.</a></li>
+<li><a href="#46. Execute This! Analyzing Unsafe and Malicious Dynamic Code Loading in Android Applications.">46. Execute This! Analyzing Unsafe and Malicious Dynamic Code Loading in Android Applications.</a></li>
+<li><a href="#47. Nazca: Detecting Malware Distribution in Large-Scale Networks.">47. Nazca: Detecting Malware Distribution in Large-Scale Networks.</a></li>
+<li><a href="#48. Persistent Data-only Malware: Function Hooks without Code.">48. Persistent Data-only Malware: Function Hooks without Code.</a></li>
+<li><a href="#49. DREBIN: Effective and Explainable Detection of Android Malware in Your Pocket.">49. DREBIN: Effective and Explainable Detection of Android Malware in Your Pocket.</a></li>
+<li><a href="#50. Gyrus: A Framework for User-Intent Monitoring of Text-based Networked Applications.">50. Gyrus: A Framework for User-Intent Monitoring of Text-based Networked Applications.</a></li>
+<li><a href="#51. Neural Signatures of User-Centered Security: An fMRI Study of Phishing, and Malware Warnings.">51. Neural Signatures of User-Centered Security: An fMRI Study of Phishing, and Malware Warnings.</a></li>
+<li><a href="#52. Web PKI: Closing the Gap between Guidelines and Practices.">52. Web PKI: Closing the Gap between Guidelines and Practices.</a></li>
+<li><a href="#53. Efficient Private File Retrieval by Combining ORAM and PIR.">53. Efficient Private File Retrieval by Combining ORAM and PIR.</a></li>
+<li><a href="#54. Practical Known-Plaintext Attacks against Physical Layer Security in Wireless MIMO Systems.">54. Practical Known-Plaintext Attacks against Physical Layer Security in Wireless MIMO Systems.</a></li>
+<li><a href="#55. Practical Issues with TLS Client Certificate Authentication.">55. Practical Issues with TLS Client Certificate Authentication.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="NDSS 2014:San Diego, California, USA">NDSS 2014:San Diego, California, USA</h1>
+<p><a href="http://www.internetsociety.org/events/ndss-symposium-2014">21st Annual Network and Distributed System Security Symposium, NDSS 2014, San Diego, California, USA, February 23-26, 2014.</a> The Internet Society
+【<a href="http://dblp.uni-trier.de/db/conf/ndss/ndss2014.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 55 || Session Num: 0">Paper Num: 55 || Session Num: 0</h2>
+<h3 id="1. On the Mismanagement and Maliciousness of Networks.">1. On the Mismanagement and Maliciousness of Networks.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/mismanagement-and-maliciousness-networks">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Jing">Jing Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Durumeric:Zakir">Zakir Durumeric</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bailey:Michael">Michael Bailey</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Mingyan">Mingyan Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Karir:Manish">Manish Karir</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="2. No Direction Home: The True Cost of Routing Around Decoys.">2. No Direction Home: The True Cost of Routing Around Decoys.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/no-direction-home-true-cost-routing-around-decoys">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Houmansadr:Amir">Amir Houmansadr</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wong:Edmund_L=">Edmund L. Wong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shmatikov:Vitaly">Vitaly Shmatikov</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="3. Gaining Control of Cellular Traffic Accounting by Spurious TCP Retransmission.">3. Gaining Control of Cellular Traffic Accounting by Spurious TCP Retransmission.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/gaining-control-cellular-traffic-accounting-spurious-tcp-retransmission">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Go:Younghwan">Younghwan Go</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jeong:Eunyoung">Eunyoung Jeong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Won:Jongil">Jongil Won</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Yongdae">Yongdae Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kune:Denis_Foo">Denis Foo Kune</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Park:KyoungSoo">KyoungSoo Park</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="4. CyberProbe: Towards Internet-Scale Active Detection of Malicious Servers.">4. CyberProbe: Towards Internet-Scale Active Detection of Malicious Servers.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/cyberprobe-towards-internet-scale-active-detection-malicious-servers">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Nappa:Antonio">Antonio Nappa</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Zhaoyan">Zhaoyan Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rafique:M=_Zubair">M. Zubair Rafique</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Caballero:Juan">Juan Caballero</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gu:Guofei">Guofei Gu</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="5. Amplification Hell: Revisiting Network Protocols for DDoS Abuse.">5. Amplification Hell: Revisiting Network Protocols for DDoS Abuse.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/amplification-hell-revisiting-network-protocols-ddos-abuse">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Rossow:Christian">Christian Rossow</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="6. ROPecker: A Generic and Practical Approach For Defending Against ROP Attacks.">6. ROPecker: A Generic and Practical Approach For Defending Against ROP Attacks.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/ropecker-generic-and-practical-approach-defending-against-rop-attacks">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cheng:Yueqiang">Yueqiang Cheng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Zongwei">Zongwei Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yu:Miao">Miao Yu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Ding:Xuhua">Xuhua Ding</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Deng:Robert_H=">Robert H. Deng</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="7. A Trusted Safety Verifier for Process Controller Code.">7. A Trusted Safety Verifier for Process Controller Code.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/trusted-safety-verifier-process-controller-code">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/McLaughlin:Stephen_E=">Stephen E. McLaughlin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zonouz:Saman_A=">Saman A. Zonouz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pohly:Devin_J=">Devin J. Pohly</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McDaniel:Patrick_D=">Patrick D. McDaniel</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="8. AVATAR: A Framework to Support Dynamic Security Analysis of Embedded Systems' Firmwares.">8. AVATAR: A Framework to Support Dynamic Security Analysis of Embedded Systems' Firmwares.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/avatar-framework-support-dynamic-security-analysis-embedded-systems%E2%80%99-firmwares">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zaddach:Jonas">Jonas Zaddach</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bruno:Luca">Luca Bruno</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Francillon:Aur=eacute=lien">Aurélien Francillon</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Balzarotti:Davide">Davide Balzarotti</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="9. SafeDispatch: Securing C++ Virtual Calls from Memory Corruption Attacks.">9. SafeDispatch: Securing C++ Virtual Calls from Memory Corruption Attacks.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/safedispatch-securing-c-virtual-calls-memory-corruption-attacks">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jang:Dongseok">Dongseok Jang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tatlock:Zachary">Zachary Tatlock</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lerner:Sorin">Sorin Lerner</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="10. Hybrid-Bridge: Efficiently Bridging the Semantic-Gap in VMI via Decoupled Execution and Training Memoization.">10. Hybrid-Bridge: Efficiently Bridging the Semantic-Gap in VMI via Decoupled Execution and Training Memoization.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/hybrid-bridge-efficiently-bridging-semantic-gap-virtual-machine-introspection-decoupled">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Saberi:Alireza">Alireza Saberi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fu:Yangchun">Yangchun Fu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lin:Zhiqiang">Zhiqiang Lin</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="11. Screenmilker: How to Milk Your Android Screen for Secrets.">11. Screenmilker: How to Milk Your Android Screen for Secrets.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/screenmilker-how-milk-your-android-screen-secrets">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lin:Chia=Chi">Chia-Chi Lin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Hongyang">Hongyang Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Xiao=yong">Xiao-yong Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:XiaoFeng">XiaoFeng Wang</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="12. AccelPrint: Imperfections of Accelerometers Make Smartphones Trackable.">12. AccelPrint: Imperfections of Accelerometers Make Smartphones Trackable.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/accelprint-imperfections-accelerometers-make-smartphones-trackable">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dey:Sanorita">Sanorita Dey</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Roy:Nirupam">Nirupam Roy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Wenyuan">Wenyuan Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Choudhury:Romit_Roy">Romit Roy Choudhury</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nelakuditi:Srihari">Srihari Nelakuditi</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="13. Smartphones as Practical and Secure Location Verification Tokens for Payments.">13. Smartphones as Practical and Secure Location Verification Tokens for Payments.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/smartphones-practical-and-secure-location-verification-tokens-payments">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Marforio:Claudio">Claudio Marforio</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Karapanos:Nikolaos">Nikolaos Karapanos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Soriente:Claudio">Claudio Soriente</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kostiainen:Kari">Kari Kostiainen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Capkun:Srdjan">Srdjan Capkun</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="14. Breaking and Fixing Origin-Based Access Control in Hybrid Web/Mobile Application Frameworks.">14. Breaking and Fixing Origin-Based Access Control in Hybrid Web/Mobile Application Frameworks.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/breaking-and-fixing-origin-based-access-control-hybrid-webmobile-application-frameworks">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Georgiev:Martin">Martin Georgiev</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jana:Suman">Suman Jana</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shmatikov:Vitaly">Vitaly Shmatikov</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="15. Inside Job: Understanding and Mitigating the Threat of External Device Mis-Binding on Android.">15. Inside Job: Understanding and Mitigating the Threat of External Device Mis-Binding on Android.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/inside-job-understanding-and-mitigating-threat-external-device-mis-bonding-android">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Naveed_0001:Muhammad">Muhammad Naveed</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Xiao=yong">Xiao-yong Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Demetriou:Soteris">Soteris Demetriou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:XiaoFeng">XiaoFeng Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gunter:Carl_A=">Carl A. Gunter</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="16. DSpin: Detecting Automatically Spun Content on the Web.">16. DSpin: Detecting Automatically Spun Content on the Web.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/dspin-detecting-automatically-spun-content-web">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Qing">Qing Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:David_Y=">David Y. Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Voelker:Geoffrey_M=">Geoffrey M. Voelker</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="17. Toward Black-Box Detection of Logic Flaws in Web Applications.">17. Toward Black-Box Detection of Logic Flaws in Web Applications.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/toward-black-box-detection-logic-flaws-web-applications">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Pellegrino:Giancarlo">Giancarlo Pellegrino</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Balzarotti:Davide">Davide Balzarotti</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="18. Macaroons: Cookies with Contextual Caveats for Decentralized Authorization in the Cloud.">18. Macaroons: Cookies with Contextual Caveats for Decentralized Authorization in the Cloud.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/macaroons-cookies-contextual-caveats-decentralized-authorization-cloud">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Birgisson:Arnar">Arnar Birgisson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Politz:Joe_Gibbs">Joe Gibbs Politz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Erlingsson:=Uacute=lfar">Úlfar Erlingsson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Taly:Ankur">Ankur Taly</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vrable:Michael">Michael Vrable</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lentczner:Mark">Mark Lentczner</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="19. Detecting Logic Vulnerabilities in E-commerce Applications.">19. Detecting Logic Vulnerabilities in E-commerce Applications.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/detecting-logic-vulnerabilities-e-commerce-applications">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sun:Fangqi">Fangqi Sun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Liang">Liang Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Su:Zhendong">Zhendong Su</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="20. Simulation of Built-in PHP Features for Precise Static Code Analysis.">20. Simulation of Built-in PHP Features for Precise Static Code Analysis.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/simulation-built-php-features-precise-static-code-analysis">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dahse:Johannes">Johannes Dahse</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Holz:Thorsten">Thorsten Holz</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="21. Enhanced Certificate Transparency and End-to-End Encrypted Mail.">21. Enhanced Certificate Transparency and End-to-End Encrypted Mail.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/enhanced-certificate-transparency-and-end-end-encrypted-mail">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Ryan:Mark_Dermot">Mark Dermot Ryan</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="22. Privacy through Pseudonymity in Mobile Telephony Systems.">22. Privacy through Pseudonymity in Mobile Telephony Systems.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/privacy-through-pseudonymity-mobile-telephony-systems">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Arapinis:Myrto">Myrto Arapinis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mancini:Loretta_Ilaria">Loretta Ilaria Mancini</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ritter:Eike">Eike Ritter</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ryan:Mark">Mark Ryan</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="23. Privacy-Preserving Distributed Stream Monitoring.">23. Privacy-Preserving Distributed Stream Monitoring.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/privacy-preserving-distributed-stream-monitoring">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Friedman:Arik">Arik Friedman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sharfman:Izchak">Izchak Sharfman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Keren:Daniel">Daniel Keren</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schuster:Assaf">Assaf Schuster</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="24. The Sniper Attack: Anonymously Deanonymizing and Disabling the Tor Network.">24. The Sniper Attack: Anonymously Deanonymizing and Disabling the Tor Network.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/sniper-attack-anonymously-deanonymizing-and-disabling-tor-network">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jansen:Rob">Rob Jansen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tschorsch:Florian">Florian Tschorsch</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Johnson:Aaron">Aaron Johnson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Scheuermann:Bj=ouml=rn">Björn Scheuermann</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="25. Selling off User Privacy at Auction.">25. Selling off User Privacy at Auction.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/selling-privacy-auction">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/o/Olejnik:Lukasz">Lukasz Olejnik</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tran:Minh=Dung">Minh-Dung Tran</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Castelluccia:Claude">Claude Castelluccia</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="26. The Tangled Web of Password Reuse.">26. The Tangled Web of Password Reuse.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/tangled-web-password-reuse">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Das:Anupam">Anupam Das</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bonneau:Joseph">Joseph Bonneau</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Caesar:Matthew">Matthew Caesar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Borisov:Nikita">Nikita Borisov</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:XiaoFeng">XiaoFeng Wang</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="27. On Semantic Patterns of Passwords and their Security Impact.">27. On Semantic Patterns of Passwords and their Security Impact.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/semantic-patterns-passwords-and-their-security-impact">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/v/Veras:Rafael">Rafael Veras</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Collins:Christopher">Christopher Collins</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Thorpe:Julie">Julie Thorpe</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="28. From Very Weak to Very Strong: Analyzing Password-Strength Meters.">28. From Very Weak to Very Strong: Analyzing Password-Strength Meters.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/very-weak-very-strong-analyzing-password-strength-meters">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Carnavalet:Xavier_de_Carn=eacute=_de">Xavier de Carné de Carnavalet</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mannan:Mohammad">Mohammad Mannan</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="29. Copker: Computing with Private Keys without RAM.">29. Copker: Computing with Private Keys without RAM.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/copker-computing-private-keys-without-ram">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Guan:Le">Le Guan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lin:Jingqiang">Jingqiang Lin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Luo:Bo">Bo Luo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jing:Jiwu">Jiwu Jing</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="30. Practical Dynamic Searchable Encryption with Small Leakage.">30. Practical Dynamic Searchable Encryption with Small Leakage.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/practical-dynamic-searchable-encryption-small-leakage">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Stefanov:Emil">Emil Stefanov</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Papamanthou:Charalampos">Charalampos Papamanthou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shi:Elaine">Elaine Shi</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="31. Decentralized Anonymous Credentials.">31. Decentralized Anonymous Credentials.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/decentralized-anonymous-credentials">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Garman:Christina">Christina Garman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Green_0001:Matthew">Matthew Green</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Miers:Ian">Ian Miers</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="32. Dynamic Searchable Encryption in Very-Large Databases: Data Structures and Implementation.">32. Dynamic Searchable Encryption in Very-Large Databases: Data Structures and Implementation.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/dynamic-searchable-encryption-very-large-databases-data-structures-and-implementation">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cash:David">David Cash</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jaeger:Joseph">Joseph Jaeger</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jarecki:Stanislaw">Stanislaw Jarecki</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jutla:Charanjit_S=">Charanjit S. Jutla</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Krawczyk:Hugo">Hugo Krawczyk</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rosu:Marcel=Catalin">Marcel-Catalin Rosu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Steiner:Michael">Michael Steiner</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="33. Authentication Using Pulse-Response Biometrics.">33. Authentication Using Pulse-Response Biometrics.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/authentication-using-pulse-response-biometrics">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Rasmussen:Kasper_Bonne">Kasper Bonne Rasmussen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Roeschlin:Marc">Marc Roeschlin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Martinovic:Ivan">Ivan Martinovic</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tsudik:Gene">Gene Tsudik</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="34. Hardening Persona - Improving Federated Web Login.">34. Hardening Persona - Improving Federated Web Login.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/hardening-persona-%E2%80%93-improving-federated-web-login">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dietz:Michael">Michael Dietz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wallach:Dan_S=">Dan S. Wallach</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="35. Two-Factor Authentication Resilient to Server Compromise Using Mix-Bandwidth Devices.">35. Two-Factor Authentication Resilient to Server Compromise Using Mix-Bandwidth Devices.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/two-factor-authentication-resilient-server-compromise-using-mix-bandwidth-devices">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Shirvanian:Maliheh">Maliheh Shirvanian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jarecki:Stanislaw">Stanislaw Jarecki</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Saxena:Nitesh">Nitesh Saxena</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nathan:Naveen">Naveen Nathan</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="36. Leveraging USB to Establish Host Identity Using Commodity Devices.">36. Leveraging USB to Establish Host Identity Using Commodity Devices.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/leveraging-usb-establish-host-identity-using-commodity-devices">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bates:Adam_M=">Adam M. Bates</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Leonard:Ryan">Ryan Leonard</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pruse:Hannah">Hannah Pruse</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lowd:Daniel">Daniel Lowd</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Butler:Kevin_R=_B=">Kevin R. B. Butler</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="37. PlaceAvoider: Steering First-Person Cameras away from Sensitive Spaces.">37. PlaceAvoider: Steering First-Person Cameras away from Sensitive Spaces.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/placeavoider-steering-first-person-cameras-away-sensitive-spaces">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Templeman:Robert">Robert Templeman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Korayem:Mohammed">Mohammed Korayem</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Crandall:David_J=">David J. Crandall</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kapadia:Apu">Apu Kapadia</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="38. Auditable Version Control Systems.">38. Auditable Version Control Systems.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/auditable-version-control-systems">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Bo">Bo Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Curtmola:Reza">Reza Curtmola</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="39. Power Attack: An Increasing Threat to Data Centers.">39. Power Attack: An Increasing Threat to Data Centers.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/power-attack-increasing-threat-data-centers">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Zhang">Zhang Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Haining">Haining Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Zichen">Zichen Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Xiaorui">Xiaorui Wang</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="40. Scambaiter: Understanding Targeted Nigerian Scams on Craigslist.">40. Scambaiter: Understanding Targeted Nigerian Scams on Craigslist.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/scambaiter-understanding-targeted-nigerian-scams-craigslist">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Park:Youngsam">Youngsam Park</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jones:Jackie">Jackie Jones</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McCoy:Damon">Damon McCoy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shi:Elaine">Elaine Shi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jakobsson:Markus">Markus Jakobsson</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="41. Botcoin: Monetizing Stolen Cycles.">41. Botcoin: Monetizing Stolen Cycles.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/botcoin-monetizing-stolen-cycles">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Huang:Danny_Yuxing">Danny Yuxing Huang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dharmdasani:Hitesh">Hitesh Dharmdasani</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Meiklejohn:Sarah">Sarah Meiklejohn</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dave:Vacha">Vacha Dave</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Grier:Chris">Chris Grier</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McCoy:Damon">Damon McCoy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Savage:Stefan">Stefan Savage</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Weaver:Nicholas">Nicholas Weaver</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Snoeren:Alex_C=">Alex C. Snoeren</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Levchenko:Kirill">Kirill Levchenko</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="42. A Machine-learning Approach for Classifying and Categorizing Android Sources and Sinks.">42. A Machine-learning Approach for Classifying and Categorizing Android Sources and Sinks.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/machine-learning-approach-classifying-and-categorizing-android-sources-and-sinks">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Rasthofer:Siegfried">Siegfried Rasthofer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Arzt:Steven">Steven Arzt</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bodden:Eric">Eric Bodden</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="43. AirBag: Boosting Smartphone Resistance to Malware Infection.">43. AirBag: Boosting Smartphone Resistance to Malware Infection.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/airbag-boosting-smartphone-resistance-malware-infection">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Chiachih">Chiachih Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Yajin">Yajin Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Patel:Kunal">Kunal Patel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liang:Zhenkai">Zhenkai Liang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jiang:Xuxian">Xuxian Jiang</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="44. SMV-Hunter: Large Scale, Automated Detection of SSL/TLS Man-in-the-Middle Vulnerabilities in Android Apps.">44. SMV-Hunter: Large Scale, Automated Detection of SSL/TLS Man-in-the-Middle Vulnerabilities in Android Apps.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/smv-hunter-large-scale-automated-detection-ssltls-man-middle-vulnerabilities-android-apps">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sounthiraraj:David">David Sounthiraraj</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sahs:Justin">Justin Sahs</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Greenwood:Garret">Garret Greenwood</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lin:Zhiqiang">Zhiqiang Lin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Khan:Latifur">Latifur Khan</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="45. AppSealer: Automatic Generation of Vulnerability-Specific Patches for Preventing Component Hijacking Attacks in Android Applications.">45. AppSealer: Automatic Generation of Vulnerability-Specific Patches for Preventing Component Hijacking Attacks in Android Applications.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/appsealer-automatic-generation-vulnerability-specific-patches-preventing-component-hijacking">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Mu">Mu Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yin:Heng">Heng Yin</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="46. Execute This! Analyzing Unsafe and Malicious Dynamic Code Loading in Android Applications.">46. Execute This! Analyzing Unsafe and Malicious Dynamic Code Loading in Android Applications.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/execute-analyzing-unsafe-and-malicious-dynamic-code-loading-android-applications">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Poeplau:Sebastian">Sebastian Poeplau</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fratantonio:Yanick">Yanick Fratantonio</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bianchi:Antonio">Antonio Bianchi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kruegel:Christopher">Christopher Kruegel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vigna:Giovanni">Giovanni Vigna</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="47. Nazca: Detecting Malware Distribution in Large-Scale Networks.">47. Nazca: Detecting Malware Distribution in Large-Scale Networks.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/nazca-detecting-malware-distribution-large-scale-networks">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/i/Invernizzi:Luca">Luca Invernizzi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Miskovic:Stanislav">Stanislav Miskovic</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Torres:Ruben">Ruben Torres</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kruegel:Christopher">Christopher Kruegel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Saha:Sabyasachi">Sabyasachi Saha</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vigna:Giovanni">Giovanni Vigna</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Sung=Ju">Sung-Ju Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mellia:Marco">Marco Mellia</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="48. Persistent Data-only Malware: Function Hooks without Code.">48. Persistent Data-only Malware: Function Hooks without Code.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/persistent-data-only-malware-function-hooks-without-code">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/v/Vogl:Sebastian">Sebastian Vogl</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pfoh:Jonas">Jonas Pfoh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kittel_0001:Thomas">Thomas Kittel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Eckert:Claudia">Claudia Eckert</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="49. DREBIN: Effective and Explainable Detection of Android Malware in Your Pocket.">49. DREBIN: Effective and Explainable Detection of Android Malware in Your Pocket.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/drebin-effective-and-explainable-detection-android-malware-your-pocket">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Arp:Daniel">Daniel Arp</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Spreitzenbarth:Michael">Michael Spreitzenbarth</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hubner:Malte">Malte Hubner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gascon:Hugo">Hugo Gascon</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rieck:Konrad">Konrad Rieck</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="50. Gyrus: A Framework for User-Intent Monitoring of Text-based Networked Applications.">50. Gyrus: A Framework for User-Intent Monitoring of Text-based Networked Applications.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/gyrus-framework-user-intent-monitoring-text-based-networked-applications">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jang:Yeongjin">Yeongjin Jang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chung:Simon_P=">Simon P. Chung</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Payne:Bryan_D=">Bryan D. Payne</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Wenke">Wenke Lee</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="51. Neural Signatures of User-Centered Security: An fMRI Study of Phishing, and Malware Warnings.">51. Neural Signatures of User-Centered Security: An fMRI Study of Phishing, and Malware Warnings.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/neural-signatures-user-centered-security-fmri-study-phishing-and-malware-warnings">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Neupane:Ajaya">Ajaya Neupane</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Saxena:Nitesh">Nitesh Saxena</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kuruvilla:Keya">Keya Kuruvilla</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Georgescu:Michael">Michael Georgescu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kana:Rajesh_K=">Rajesh K. Kana</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="52. Web PKI: Closing the Gap between Guidelines and Practices.">52. Web PKI: Closing the Gap between Guidelines and Practices.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/web-pki-closing-gap-between-guidelines-and-practices">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Delignat=Lavaud:Antoine">Antoine Delignat-Lavaud</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Abadi:Mart=iacute=n">Martín Abadi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Birrell:Andrew">Andrew Birrell</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mironov:Ilya">Ilya Mironov</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wobber:Ted">Ted Wobber</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xie:Yinglian">Yinglian Xie</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="53. Efficient Private File Retrieval by Combining ORAM and PIR.">53. Efficient Private File Retrieval by Combining ORAM and PIR.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/efficient-private-file-retrieval-combining-oram-and-pir">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mayberry:Travis">Travis Mayberry</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Blass:Erik=Oliver">Erik-Oliver Blass</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chan:Agnes_Hui">Agnes Hui Chan</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="54. Practical Known-Plaintext Attacks against Physical Layer Security in Wireless MIMO Systems.">54. Practical Known-Plaintext Attacks against Physical Layer Security in Wireless MIMO Systems.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/practical-known-plaintext-attacks-against-physical-layer-security-wireless-mimo-systems">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Schulz:Matthias">Matthias Schulz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Loch:Adrian">Adrian Loch</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hollick:Matthias">Matthias Hollick</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="55. Practical Issues with TLS Client Certificate Authentication.">55. Practical Issues with TLS Client Certificate Authentication.</h3>
+<p>【<a href="http://www.internetsociety.org/doc/practical-issues-tls-client-certificate-authentication">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Parsovs:Arnis">Arnis Parsovs</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="https://github.com/huntercmd/ccf"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>

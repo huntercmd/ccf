@@ -1,0 +1,529 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/skin.js"></script>
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/classie.js"></script>
+
+<!-- This is for Mathjax -->
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#26. ACSAC 2010:Austin, Texas, USA">26. ACSAC 2010:Austin, Texas, USA</a><ul>
+<li><a href="#Paper Num: 42 || Session Num: 16">Paper Num: 42 || Session Num: 16</a></li>
+<li><a href="#Social networks    3">Social networks    3</a><ul>
+<li><a href="#1. Detecting spammers on social networks.">1. Detecting spammers on social networks.</a></li>
+<li><a href="#2. Toward worm detection in online social networks.">2. Toward worm detection in online social networks.</a></li>
+<li><a href="#3. Who is tweeting on Twitter: human, bot, or cyborg?">3. Who is tweeting on Twitter: human, bot, or cyborg?</a></li>
+</ul>
+</li>
+<li><a href="#Software defenses    3">Software defenses    3</a><ul>
+<li><a href="#4. Cujo: efficient detection and prevention of drive-by-download attacks.">4. Cujo: efficient detection and prevention of drive-by-download attacks.</a></li>
+<li><a href="#5. Fast and practical instruction-set randomization for commodity systems.">5. Fast and practical instruction-set randomization for commodity systems.</a></li>
+<li><a href="#6. G-Free: defeating return-oriented programming through gadget-less binaries.">6. G-Free: defeating return-oriented programming through gadget-less binaries.</a></li>
+</ul>
+</li>
+<li><a href="#Authentication    3">Authentication    3</a><ul>
+<li><a href="#7. Towards practical anonymous password authentication.">7. Towards practical anonymous password authentication.</a></li>
+<li><a href="#8. Securing interactive sessions using mobile device through visual channel and visual inspection.">8. Securing interactive sessions using mobile device through visual channel and visual inspection.</a></li>
+<li><a href="#9. Exploring usability effects of increasing security in click-based graphical passwords.">9. Exploring usability effects of increasing security in click-based graphical passwords.</a></li>
+</ul>
+</li>
+<li><a href="#Vulnerability assessment of embedded devices    3">Vulnerability assessment of embedded devices    3</a><ul>
+<li><a href="#10. Security analysis of a fingerprint-protected USB drive.">10. Security analysis of a fingerprint-protected USB drive.</a></li>
+<li><a href="#11. A quantitative analysis of the insecurity of embedded network devices: results of a wide-area scan.">11. A quantitative analysis of the insecurity of embedded network devices: results of a wide-area scan.</a></li>
+<li><a href="#12. Multi-vendor penetration testing in the advanced metering infrastructure.">12. Multi-vendor penetration testing in the advanced metering infrastructure.</a></li>
+</ul>
+</li>
+<li><a href="#Classic paper I    1">Classic paper I    1</a><ul>
+<li><a href="#13. Network intrusion detection: dead or alive?">13. Network intrusion detection: dead or alive?</a></li>
+</ul>
+</li>
+<li><a href="#Invited essayist    1">Invited essayist    1</a><ul>
+<li><a href="#14. Barriers to science in security.">14. Barriers to science in security.</a></li>
+</ul>
+</li>
+<li><a href="#Botnets    3">Botnets    3</a><ul>
+<li><a href="#15. Friends of an enemy: identifying local members of peer-to-peer botnets using mutual contacts.">15. Friends of an enemy: identifying local members of peer-to-peer botnets using mutual contacts.</a></li>
+<li><a href="#16. The case for in-the-lab botnet experimentation: creating and taking down a 3000-node botnet.">16. The case for in-the-lab botnet experimentation: creating and taking down a 3000-node botnet.</a></li>
+<li><a href="#17. Conficker and beyond: a large-scale empirical study.">17. Conficker and beyond: a large-scale empirical study.</a></li>
+</ul>
+</li>
+<li><a href="#Email, e-commerce, and web 2.0    3">Email, e-commerce, and web 2.0    3</a><ul>
+<li><a href="#18. Spam mitigation using spatio-temporal reputations from blacklist history.">18. Spam mitigation using spatio-temporal reputations from blacklist history.</a></li>
+<li><a href="#19. Breaking e-banking CAPTCHAs.">19. Breaking e-banking CAPTCHAs.</a></li>
+<li><a href="#20. FIRM: capability-based inline mediation of Flash behaviors.">20. FIRM: capability-based inline mediation of Flash behaviors.</a></li>
+</ul>
+</li>
+<li><a href="#Hardware-assisted security    3">Hardware-assisted security    3</a><ul>
+<li><a href="#21. T-DRE: a hardware trusted computing base for direct recording electronic vote machines.">21. T-DRE: a hardware trusted computing base for direct recording electronic vote machines.</a></li>
+<li><a href="#22. Hardware assistance for trustworthy systems through 3-D integration.">22. Hardware assistance for trustworthy systems through 3-D integration.</a></li>
+<li><a href="#23. SCA-resistant embedded processors: the next generation.">23. SCA-resistant embedded processors: the next generation.</a></li>
+</ul>
+</li>
+<li><a href="#Security protocols and portable storage    3">Security protocols and portable storage    3</a><ul>
+<li><a href="#24. Porscha: policy oriented secure content handling in Android.">24. Porscha: policy oriented secure content handling in Android.</a></li>
+<li><a href="#25. Kells: a protection framework for portable data.">25. Kells: a protection framework for portable data.</a></li>
+<li><a href="#26. Keeping data secret under full compromise using porter devices.">26. Keeping data secret under full compromise using porter devices.</a></li>
+</ul>
+</li>
+<li><a href="#Model checking and vulnerability analysis    3">Model checking and vulnerability analysis    3</a><ul>
+<li><a href="#27. Familiarity breeds contempt: the honeymoon effect and the role of legacy code in zero-day vulnerabilities.">27. Familiarity breeds contempt: the honeymoon effect and the role of legacy code in zero-day vulnerabilities.</a></li>
+<li><a href="#28. Quantifying information leaks in software.">28. Quantifying information leaks in software.</a></li>
+<li><a href="#29. Analyzing and improving Linux kernel memory protection: a model checking approach.">29. Analyzing and improving Linux kernel memory protection: a model checking approach.</a></li>
+</ul>
+</li>
+<li><a href="#Classic paper II    1">Classic paper II    1</a><ul>
+<li><a href="#30. Back to Berferd.">30. Back to Berferd.</a></li>
+</ul>
+</li>
+<li><a href="#Intrusion detection and live forensics    3">Intrusion detection and live forensics    3</a><ul>
+<li><a href="#31. Comprehensive shellcode detection using runtime heuristics.">31. Comprehensive shellcode detection using runtime heuristics.</a></li>
+<li><a href="#32. Cross-layer comprehensive intrusion harm analysis for production workload server systems.">32. Cross-layer comprehensive intrusion harm analysis for production workload server systems.</a></li>
+<li><a href="#33. Forenscope: a framework for live forensics.">33. Forenscope: a framework for live forensics.</a></li>
+</ul>
+</li>
+<li><a href="#Distributed systems and operating systems    3">Distributed systems and operating systems    3</a><ul>
+<li><a href="#34. A multi-user steganographic file system on untrusted shared storage.">34. A multi-user steganographic file system on untrusted shared storage.</a></li>
+<li><a href="#35. Heap Taichi: exploiting memory allocation granularity in heap-spraying attacks.">35. Heap Taichi: exploiting memory allocation granularity in heap-spraying attacks.</a></li>
+<li><a href="#36. SCOBA: source code based attestation on custom software.">36. SCOBA: source code based attestation on custom software.</a></li>
+</ul>
+</li>
+<li><a href="#Mobile and wireless    3">Mobile and wireless    3</a><ul>
+<li><a href="#37. Paranoid Android: versatile protection for smartphones.">37. Paranoid Android: versatile protection for smartphones.</a></li>
+<li><a href="#38. Exploiting smart-phone USB connectivity for fun and profit.">38. Exploiting smart-phone USB connectivity for fun and profit.</a></li>
+<li><a href="#39. Defending DSSS-based broadcast communication against insider jammers via delayed seed-disclosure.">39. Defending DSSS-based broadcast communication against insider jammers via delayed seed-disclosure.</a></li>
+</ul>
+</li>
+<li><a href="#Security engineering and management    3">Security engineering and management    3</a><ul>
+<li><a href="#40. Always up-to-date: scalable offline patching of VM images in a compute cloud.">40. Always up-to-date: scalable offline patching of VM images in a compute cloud.</a></li>
+<li><a href="#41. A framework for testing hardware-software security architectures.">41. A framework for testing hardware-software security architectures.</a></li>
+<li><a href="#42. Two methodologies for physical penetration testing using social engineering.">42. Two methodologies for physical penetration testing using social engineering.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="26. ACSAC 2010:Austin, Texas, USA">26. ACSAC 2010:Austin, Texas, USA</h1>
+<p><a href="http://doi.acm.org/10.1145/1920261">Twenty-Sixth Annual Computer Security Applications Conference, ACSAC 2010, Austin, Texas, USA, 6-10 December 2010.</a> ACM
+【<a href="http://dblp.uni-trier.de/db/conf/acsac/acsac2010.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 42 || Session Num: 16">Paper Num: 42 || Session Num: 16</h2>
+<ul>
+<li><a href="#Authentication    3">Authentication    3</a></li>
+<li><a href="#Botnets    3">Botnets    3</a></li>
+<li><a href="#Classic paper I    1">Classic paper I    1</a></li>
+<li><a href="#Classic paper II    1">Classic paper II    1</a></li>
+<li><a href="#Distributed systems and operating systems    3">Distributed systems and operating systems    3</a></li>
+<li><a href="#Email, e-commerce, and web 2.0    3">Email, e-commerce, and web 2.0    3</a></li>
+<li><a href="#Hardware-assisted security    3">Hardware-assisted security    3</a></li>
+<li><a href="#Intrusion detection and live forensics    3">Intrusion detection and live forensics    3</a></li>
+<li><a href="#Invited essayist    1">Invited essayist    1</a></li>
+<li><a href="#Mobile and wireless    3">Mobile and wireless    3</a></li>
+<li><a href="#Model checking and vulnerability analysis    3">Model checking and vulnerability analysis    3</a></li>
+<li><a href="#Security engineering and management    3">Security engineering and management    3</a></li>
+<li><a href="#Security protocols and portable storage    3">Security protocols and portable storage    3</a></li>
+<li><a href="#Social networks    3">Social networks    3</a></li>
+<li><a href="#Software defenses    3">Software defenses    3</a></li>
+<li><a href="#Vulnerability assessment of embedded devices    3">Vulnerability assessment of embedded devices    3</a></li>
+</ul>
+<h2 id="Social networks    3">Social networks    3</h2>
+<h3 id="1. Detecting spammers on social networks.">1. Detecting spammers on social networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920263">Paper Link</a>】    【Pages】:1-9</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Stringhini:Gianluca">Gianluca Stringhini</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kruegel:Christopher">Christopher Kruegel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vigna:Giovanni">Giovanni Vigna</a></p>
+<p>【Abstract】:
+Social networking has become a popular way for users to meet and interact online. Users spend a significant amount of time on popular social network platforms (such as Facebook, MySpace, or Twitter), storing and sharing a wealth of personal information. This information, as well as the possibility of contacting thousands of users, also attracts the interest of cybercriminals. For example, cybercriminals might exploit the implicit trust relationships between users in order to lure victims to malicious websites. As another example, cybercriminals might find personal information valuable for identity theft or to drive targeted spam campaigns. In this paper, we analyze to which extent spam has entered social networks. More precisely, we analyze how spammers who target social networking sites operate. To collect the data about spamming activity, we created a large and diverse set of "honey-profiles" on three large social networking sites, and logged the kind of contacts and messages that they received. We then analyzed the collected data and identified anomalous behavior of users who contacted our profiles. Based on the analysis of this behavior, we developed techniques to detect spammers in social networks, and we aggregated their messages in large spam campaigns. Our results show that it is possible to automatically identify the accounts used by spammers, and our analysis was used for take-down efforts in a real-world social network. More precisely, during this study, we collaborated with Twitter and correctly detected and deleted 15,857 spam profiles.</p>
+<p>【Keywords】:</p>
+<h3 id="2. Toward worm detection in online social networks.">2. Toward worm detection in online social networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920264">Paper Link</a>】    【Pages】:11-20</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Wei">Wei Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Fangfang">Fangfang Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Sencun">Sencun Zhu</a></p>
+<p>【Abstract】:
+Worms propagating in online social networking (OSN) websites have become a major security threat to both the websites and their users in recent years. Since these worms exhibit unique propagation vectors, existing Internet worm detection mechanisms cannot be applied to them. In this work, we propose an early warning OSN worms detection system, which leverages both the propagation characteristics of these worms and the topological properties of online social networks. Our system can effectively monitor the entire social graph by keeping only a small number of user accounts under surveillance. Moreover, the system applies a two-level correlation scheme to reduce the noise from normal user communications such that infected user accounts can be identified with a higher accuracy. Our evaluation on the real social graph data obtained from Flickr indicates that by monitoring five hundreds users out of 1.8 million users, the proposed detection system can detect the burst of an OSN worm when less than 0.13% of total user accounts are infected. Besides, by adopting simple countermeasures, the detection system is also shown to be very helpful for worm containment.</p>
+<p>【Keywords】:
+decoy; dominating set; early warning; online social networks; worm detection</p>
+<h3 id="3. Who is tweeting on Twitter: human, bot, or cyborg?">3. Who is tweeting on Twitter: human, bot, or cyborg?</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920265">Paper Link</a>】    【Pages】:21-30</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chu:Zi">Zi Chu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gianvecchio:Steven">Steven Gianvecchio</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Haining">Haining Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jajodia:Sushil">Sushil Jajodia</a></p>
+<p>【Abstract】:
+Twitter is a new web application playing dual roles of online social networking and micro-blogging. Users communicate with each other by publishing text-based posts. The popularity and open structure of Twitter have attracted a large number of automated programs, known as bots, which appear to be a double-edged sword to Twitter. Legitimate bots generate a large amount of benign tweets delivering news and updating feeds, while malicious bots spread spam or malicious contents. More interestingly, in the middle between human and bot, there has emerged cyborg referred to either bot-assisted human or human-assisted bot. To assist human users in identifying who they are interacting with, this paper focuses on the classification of human, bot and cyborg accounts on Twitter. We first conduct a set of large-scale measurements with a collection of over 500,000 accounts. We observe the difference among human, bot and cyborg in terms of tweeting behavior, tweet content, and account properties. Based on the measurement results, we propose a classification system that includes the following four parts: (1) an entropy-based component, (2) a machine-learning-based component, (3) an account properties component, and (4) a decision maker. It uses the combination of features extracted from an unknown user to determine the likelihood of being a human, bot or cyborg. Our experimental evaluation demonstrates the efficacy of the proposed classification system.</p>
+<p>【Keywords】:
+Twitter; automatic identification; bot; cyborg</p>
+<h2 id="Software defenses    3">Software defenses    3</h2>
+<h3 id="4. Cujo: efficient detection and prevention of drive-by-download attacks.">4. Cujo: efficient detection and prevention of drive-by-download attacks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920267">Paper Link</a>】    【Pages】:31-39</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Rieck:Konrad">Konrad Rieck</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Krueger:Tammo">Tammo Krueger</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dewald:Andreas">Andreas Dewald</a></p>
+<p>【Abstract】:
+The JavaScript language is a core component of active and dynamic web content in the Internet today. Besides its great success in enhancing web applications, however, JavaScript provides the basis for so-called drive-by downloads---attacks exploiting vulnerabilities in web browsers and their extensions for unnoticeably downloading malicious software. Due to the diversity and frequent use of obfuscation in these attacks, static code analysis is largely ineffective in practice. While dynamic analysis and honeypots provide means to identify drive-by-download attacks, current approaches induce a significant overhead which renders immediate prevention of attacks intractable. In this paper, we present Cujo, a system for automatic detection and prevention of drive-by-download attacks. Embedded in a web proxy, Cujo transparently inspects web pages and blocks delivery of malicious JavaScript code. Static and dynamic code features are extracted on-the-fly and analysed for malicious patterns using efficient techniques of machine learning. We demonstrate the efficacy of Cujo in different experiments, where it detects 94% of the drive-by downloads with few false alarms and a median run-time of 500 ms per web page---a quality that, to the best of our knowledge, has not been attained in previous work on detection of drive-by-download attacks.</p>
+<p>【Keywords】:
+drive-by downloads; dynamic code analysis; machine learning; static code analysis; web security</p>
+<h3 id="5. Fast and practical instruction-set randomization for commodity systems.">5. Fast and practical instruction-set randomization for commodity systems.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920268">Paper Link</a>】    【Pages】:41-48</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Portokalidis:Georgios">Georgios Portokalidis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Keromytis:Angelos_D=">Angelos D. Keromytis</a></p>
+<p>【Abstract】:
+Instruction-set randomization (ISR) is a technique based on randomizing the "language" understood by a system to protect it from code-injection attacks. Such attacks were used by many computer worms in the past, but still pose a threat as it was confirmed by the recent Conficker worm outbreak, and the latest exploits targeting some of Adobe's most popular products. This paper presents a fast and practical implementation of ISR that can be applied on currently deployed software. Our solution builds on a binary instrumentation tool to provide an ISR-enabled execution environment entirely in software. Applications are randomized using a simple XOR function and a 16-bit key that is randomly generated every time an application is launched. Shared libraries can be also randomized using separate keys, and their randomized versions can be used by all applications running under ISR. Moreover, we introduce a key management system to keep track of the keys used in the system. To the best of our knowledge we are the first to apply ISR on truly shared libraries. Finally, we evaluate our implementation using real applications including the Apache web server, and the MySQL database server. For the first, we show that our implementation has negligible overhead (less than 1%) for static HTML loads, while the overhead when running MySQL can be as low as 75%. We see that our system can be used with little cost with I/O intensive network applications, while it can also be a good candidate for deployment with CPU intensive applications, in scenarios where security outweighs performance.</p>
+<p>【Keywords】:
+code-injection; performance; randomization; security</p>
+<h3 id="6. G-Free: defeating return-oriented programming through gadget-less binaries.">6. G-Free: defeating return-oriented programming through gadget-less binaries.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920269">Paper Link</a>】    【Pages】:49-58</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/o/Onarlioglu:Kaan">Kaan Onarlioglu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bilge:Leyla">Leyla Bilge</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lanzi:Andrea">Andrea Lanzi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Balzarotti:Davide">Davide Balzarotti</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kirda:Engin">Engin Kirda</a></p>
+<p>【Abstract】:
+Despite the numerous prevention and protection mechanisms that have been introduced into modern operating systems, the exploitation of memory corruption vulnerabilities still represents a serious threat to the security of software systems and networks. A recent exploitation technique, called Return-Oriented Programming (ROP), has lately attracted a considerable attention from academia. Past research on the topic has mostly focused on refining the original attack technique, or on proposing partial solutions that target only particular variants of the attack. In this paper, we present G-Free, a compiler-based approach that represents the first practical solution against any possible form of ROP. Our solution is able to eliminate all unaligned free-branch instructions inside a binary executable, and to protect the aligned free-branch instructions to prevent them from being misused by an attacker. We developed a prototype based on our approach, and evaluated it by compiling GNU libc and a number of real-world applications. The results of the experiments show that our solution is able to prevent any form of return-oriented programming.</p>
+<p>【Keywords】:
+ROP; return-oriented programming; return-to-libc</p>
+<h2 id="Authentication    3">Authentication    3</h2>
+<h3 id="7. Towards practical anonymous password authentication.">7. Towards practical anonymous password authentication.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920271">Paper Link</a>】    【Pages】:59-68</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Yanjiang">Yanjiang Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Jianying">Jianying Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wong:Jun_Wen">Jun Wen Wong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bao:Feng">Feng Bao</a></p>
+<p>【Abstract】:
+The conventional approach for anonymous password authentication incurs O(N) server computation, linear to the total number of users. In ACSAC'09, Yang et al. proposed a new approach for anonymous password authentication, breaking this lower bound. However, Yang et al.'s scheme has not considered membership withdrawal and online guessing attacks, two issues must be addressed before anonymous password authentication is acceptable for practical use. Thus our main thrust in this work is to provide solutions to these issues. We do not just work upon Yang et al.'s scheme; rather, we use a set of different primitives, and as a result, our scheme has much better performance. We prove the security of our scheme. Furthermore, we empirically evaluate the efficiency of our scheme, and implement a proof-of-concept prototype.</p>
+<p>【Keywords】:
+anonymity; guessing attack; password authentication</p>
+<h3 id="8. Securing interactive sessions using mobile device through visual channel and visual inspection.">8. Securing interactive sessions using mobile device through visual channel and visual inspection.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920272">Paper Link</a>】    【Pages】:69-78</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Fang:Chengfang">Chengfang Fang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chang:Ee=Chien">Ee-Chien Chang</a></p>
+<p>【Abstract】:
+Communication channel established from a display to a device's camera is known as visual channel, and is helpful in securing key exchange protocol [16]. In this paper, we study how visual channel can be exploited by a network terminal and mobile device to jointly verify information in an interactive session, and how such information can be jointly presented in a user-friendly manner, taking into account that the mobile device can only capture and display a small region. Motivated by applications in Kiosk computing and multi-factor authentication, we consider three security models: (1) the mobile device is trusted, (2) at most one of the terminal or the mobile device is dishonest, and (3) both the terminal and device are dishonest but they do not collude or communicate. We give a few protocols and investigate them under the abovementioned models. We point out a form of replay attack that renders some other straightforward implementations cumbersome to use. To enhance user-friendliness, we propose a solution using visual cues embedded into the 2D barcodes and incorporate the framework of "augmented reality" for easy verifications through visual inspection. We give a proof-of-concept implementation to show that our scheme is feasible in practice.</p>
+<p>【Keywords】:
+2D-barcodes; sub-region authentication; user-friendly verification; visual channel</p>
+<h3 id="9. Exploring usability effects of increasing security in click-based graphical passwords.">9. Exploring usability effects of increasing security in click-based graphical passwords.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920273">Paper Link</a>】    【Pages】:79-88</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Stobert:Elizabeth">Elizabeth Stobert</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Forget:Alain">Alain Forget</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chiasson:Sonia">Sonia Chiasson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Oorschot:Paul_C=_van">Paul C. van Oorschot</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Biddle:Robert">Robert Biddle</a></p>
+<p>【Abstract】:
+Graphical passwords have been proposed to address known problems with traditional text passwords. For example, memorable user-chosen text passwords are predictable, but random system-assigned passwords are difficult to remember. We explore the usability effects of modifying system parameters to increase the security of a click-based graphical password system. Generally, usability tests for graphical passwords have used configurations resulting in password spaces smaller than that of common text passwords. Our two-part lab study compares the effects of varying the number of click-points and the image size, including when different configurations provide comparable password spaces. For comparable spaces, no usability advantage was evident between more click-points, or a larger image. This is contrary to our expectation that larger image size (with fewer click-points) might offer usability advantages over more click-points (with correspondingly smaller images). The results suggest promising opportunities for better matching graphical password system configurations to device constraints, or capabilities of individual users, without degrading usability. For example, more click-points could be used on smart-phone displays where larger image sizes are not possible.</p>
+<p>【Keywords】:</p>
+<h2 id="Vulnerability assessment of embedded devices    3">Vulnerability assessment of embedded devices    3</h2>
+<h3 id="10. Security analysis of a fingerprint-protected USB drive.">10. Security analysis of a fingerprint-protected USB drive.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920275">Paper Link</a>】    【Pages】:89-96</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Rodes:Benjamin">Benjamin Rodes</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Xunhua">Xunhua Wang</a></p>
+<p>【Abstract】:
+Fingerprint-protected Universal Serial Bus (USB) drives have seen increasing deployment recently to protect mobile data. Compared to regular USB drives, a fingerprint-protected USB drive has an integrated optical scanner and a private partition/drive (for example, drive G: on MS Windows), which is not accessible before a successful fingerprint authentication. This paper studies the security of a representative fingerprint-protected USB drive called AliceFDrive. Our results are twofold. First, through black-box reverse engineering and manipulation of binary code in a DLL, we bypassed AliceF-Drive's fingerprint authentication and accessed the private drive without actually presenting a valid fingerprint. This authentication bypass is a class attack in that the modified DLL can be distributed to any naive users to bypass AliceF-Drive's fingerprint authentication. Second, in our security analysis of AliceFDrive, we developed a program to automatically recover fingerprint reference templates from AliceFDrive, which may make AliceF-Drive worse than a regular USB drive: when Alice loses her fingerprint-protected USB drive, she does not only lose her data, she also loses her good-quality fingerprints, which are hard to recover as Alice's fingerprints do not change much over a long period of time.</p>
+<p>【Keywords】:
+USB drive; fingerprint authentication; fuzzy vault</p>
+<h3 id="11. A quantitative analysis of the insecurity of embedded network devices: results of a wide-area scan.">11. A quantitative analysis of the insecurity of embedded network devices: results of a wide-area scan.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920276">Paper Link</a>】    【Pages】:97-106</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cui:Ang">Ang Cui</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stolfo:Salvatore_J=">Salvatore J. Stolfo</a></p>
+<p>【Abstract】:
+We present a quantitative lower bound on the number of vulnerable embedded device on a global scale. Over the past year, we have systematically scanned large portions of the internet to monitor the presence of trivially vulnerable embedded devices. At the time of writing, we have identified over 540,000 publicly accessible embedded devices configured with factory default root passwords. This constitutes over 13% of all discovered embedded devices. These devices range from enterprise equipment such as firewalls and routers to consumer appliances such as VoIP adapters, cable and IPTV boxes to office equipment such as network printers and video conferencing units. Vulnerable devices were detected in 144 countries, across 17,427 unique private enterprise, ISP, government, educational, satellite provider as well as residential network environments. Preliminary results from our longitudinal study tracking over 102,000 vulnerable devices revealed that over 96% of such accessible devices remain vulnerable after a 4-month period. We believe the data presented in this paper provides a conservative lower bound on the actual population of vulnerable devices in the wild. By combining the observed vulnerability distributions and its potential root causes, we propose a set of mitigation strategies and hypothesize about its quantitative impact on reducing the global vulnerable embedded device population. Employing our strategy, we have partnered with Team Cymru to engage key organizations capable of significantly reducing the number of trivially vulnerable embedded devices currently on the internet. As an ongoing longitudinal study, we plan to gather data continuously over the next year in order to quantify the effectiveness of community's cumulative effort to mitigate this pervasive threat.</p>
+<p>【Keywords】:</p>
+<h3 id="12. Multi-vendor penetration testing in the advanced metering infrastructure.">12. Multi-vendor penetration testing in the advanced metering infrastructure.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920277">Paper Link</a>】    【Pages】:107-116</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/McLaughlin:Stephen_E=">Stephen E. McLaughlin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Podkuiko:Dmitry">Dmitry Podkuiko</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Miadzvezhanka:Sergei">Sergei Miadzvezhanka</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Delozier:Adam">Adam Delozier</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McDaniel:Patrick_D=">Patrick D. McDaniel</a></p>
+<p>【Abstract】:
+The advanced metering infrastructure (AMI) is revolutionizing electrical grids. Intelligent AMI "smart meters" report real time usage data that enables efficient energy generation and use. However, aggressive deployments are outpacing security efforts: new devices from a dizzying array of vendors are being introduced into grids with little or no understanding of the security problems they represent. In this paper we develop an archetypal attack tree approach to guide penetration testing across multiple-vendor implementations of a technology class. In this, we graft archetypal attack trees modeling broad adversary goals and attack vectors to vendor-specific concrete attack trees. Evaluators then use the grafted trees as a roadmap to penetration testing. We apply this approach within AMI to model attacker goals such as energy fraud and denial of service. Our experiments with multiple vendors generate real attack scenarios using vulnerabilities identified during directed penetration testing, e.g., manipulation of energy usage data, spoofing meters, and extracting sensitive data from internal registers. More broadly, we show how we can reuse efforts in penetration testing to efficiently evaluate the increasingly large body of AMI technologies being deployed in the field.</p>
+<p>【Keywords】:</p>
+<h2 id="Classic paper I    1">Classic paper I    1</h2>
+<h3 id="13. Network intrusion detection: dead or alive?">13. Network intrusion detection: dead or alive?</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920279">Paper Link</a>】    【Pages】:117-126</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/v/Vigna:Giovanni">Giovanni Vigna</a></p>
+<p>【Abstract】:
+Research on network intrusion detection has produced a number of interesting results. In this paper, I look back to the NetSTAT system, which was presented at ACSAC in 1998. In addition to describing the original system, I discuss some historical context, with reference to well-known evaluation efforts and to the evolution of network intrusion detection into a broader field that includes malware detection and the analysis of malicious behavior.</p>
+<p>【Keywords】:
+intrusion detection; network security</p>
+<h2 id="Invited essayist    1">Invited essayist    1</h2>
+<h3 id="14. Barriers to science in security.">14. Barriers to science in security.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920281">Paper Link</a>】    【Pages】:127-129</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Longstaff:Tom">Tom Longstaff</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Balenson:David_M=">David M. Balenson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Matties:Mark">Mark Matties</a></p>
+<p>【Abstract】:
+In the past year, there has been significant interest in promoting the idea of applying scientific principles to information security. The main point made by information security professionals who brief at conferences seems to be that our field of information security is finally mature enough to begin making significant strides towards applying the scientific approach. Audiences everywhere enthusiastically agree and thrash themselves for bypassing science all along, bemoaning the fact that we could be "so much further along" if we only did science. Of course, after the presentation is over, everyone goes back to the methods that have been used throughout our generation to generate prototypes and tools with no regard for the scientific principles involved.</p>
+<p>【Keywords】:</p>
+<h2 id="Botnets    3">Botnets    3</h2>
+<h3 id="15. Friends of an enemy: identifying local members of peer-to-peer botnets using mutual contacts.">15. Friends of an enemy: identifying local members of peer-to-peer botnets using mutual contacts.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920283">Paper Link</a>】    【Pages】:131-140</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Coskun:Baris">Baris Coskun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dietrich:Sven">Sven Dietrich</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Memon:Nasir_D=">Nasir D. Memon</a></p>
+<p>【Abstract】:
+In this work we show that once a single peer-to-peer (P2P) bot is detected in a network, it may be possible to efficiently identify other members of the same botnet in the same network even before they exhibit any overtly malicious behavior. Detection is based on an analysis of connections made by the hosts in the network. It turns out that if bots select their peers randomly and independently (i.e. unstructured topology), any given pair of P2P bots in a network communicate with at least one mutual peer outside the network with a surprisingly high probability. This, along with the low probability of any other host communicating with this mutual peer, allows us to link local nodes within a P2P botnet together. We propose a simple method to identify potential members of an unstructured P2P botnet in a network starting from a known peer. We formulate the problem as a graph problem and mathematically analyze a solution using an iterative algorithm. The proposed scheme is simple and requires only flow records captured at network borders. We analyze the efficacy of the proposed scheme using real botnet data, including data obtained from both observing and crawling the Nugache botnet.</p>
+<p>【Keywords】:
+IDS; P2P botnet; network security</p>
+<h3 id="16. The case for in-the-lab botnet experimentation: creating and taking down a 3000-node botnet.">16. The case for in-the-lab botnet experimentation: creating and taking down a 3000-node botnet.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920284">Paper Link</a>】    【Pages】:141-150</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Calvet:Joan">Joan Calvet</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Davis:Carlton_R=">Carlton R. Davis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fernandez:Jos=eacute=_M=">José M. Fernandez</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Marion:Jean=Yves">Jean-Yves Marion</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/St=Onge:Pier=Luc">Pier-Luc St-Onge</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Guizani:Wadie">Wadie Guizani</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bureau:Pierre=Marc">Pierre-Marc Bureau</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Somayaji:Anil">Anil Somayaji</a></p>
+<p>【Abstract】:
+Botnets constitute a serious security problem. A lot of effort has been invested towards understanding them better, while developing and learning how to deploy effective counter-measures against them. Their study via various analysis, modelling and experimental methods are integral parts of the development cycle of any such botnet mitigation schemes. It also constitutes a vital part of the process of understanding present threats and predicting future ones. Currently, the most popular of these techniques are "in-the-wild" botnet studies, where researchers interact directly with real-world botnets. This approach is less than ideal, for many reasons that we discuss in this paper, including scientific validity, ethical and legal issues. Consequently, we present an alternative approach employing "in the lab" experiments involving at-scale emulated botnets. We discuss the advantages of such an approach over reverse engineering, analytical modelling, simulation and in-the-wild studies. Moreover, we discuss the requirements that facilities supporting them must have. We then describe an experiment in which we emulated a 3000-node, fully-featured version of the Waledac botnet, complete with an emulated command and control (C&C;) infrastructure. By observing the load characteristics and yield (rate of spamming) of such a botnet, we can draw interesting conclusions about its real-world operations and design decisions made by its creators. Furthermore, we conducted experiments with sybil attacks launched against it and verified their viability. However, we were able to determine that mounting such attacks is not so simple: high resource consumption can cause havoc and partially neutralise them. Finally, we were able to repeat the attacks with varying parameters, in an attempt to optimise them. The merits of this experimental approach is underlined since by the fact that it would have been difficult to obtain these results by other methods.</p>
+<p>【Keywords】:</p>
+<h3 id="17. Conficker and beyond: a large-scale empirical study.">17. Conficker and beyond: a large-scale empirical study.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920285">Paper Link</a>】    【Pages】:151-160</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Shin:Seungwon">Seungwon Shin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gu:Guofei">Guofei Gu</a></p>
+<p>【Abstract】:
+Conficker [26] is the most recent widespread, well-known worm/bot. According to several reports [16, 28], it has infected about 7 million to 15 million hosts and the victims are still increasing even now. In this paper, we analyze Conficker infections at a large scale, including about 25 millions victims, and study various interesting aspects about this state-of-the-art malware. By analyzing Conficker, we intend to understand current and new trends in malware propagation, which could be very helpful in predicting future malware trends and providing insights for future malware defense. We observe that Conficker has some very different victim distribution patterns compared to many previous generation worms/botnets, suggesting that new malware spreading models and defense strategies are likely needed. Furthermore, we intend to determine how well a reputation-based blacklisting approach can perform when faced with new malware threats such as Conficker. We cross-check several DNS blacklists and IP/AS reputation data from Dshield [6] and FIRE [7], and our evaluation shows that unlike a previous study [18] which shows that a blacklist-based approach can detect most bots, these reputation-based approaches did relatively poorly for Conficker. This raised the question, how can we improve and complement existing reputation-based techniques to prepare for future malware defense? Finally, we look into some insights for defenders. We show that neighborhood watch is a surprisingly effective approach in the Conficker case. This suggests that security alert sharing/correlation (particularly among neighborhood networks) could be a promising approach and play a more important role for future malware defense.</p>
+<p>【Keywords】:</p>
+<h2 id="Email, e-commerce, and web 2.0    3">Email, e-commerce, and web 2.0    3</h2>
+<h3 id="18. Spam mitigation using spatio-temporal reputations from blacklist history.">18. Spam mitigation using spatio-temporal reputations from blacklist history.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920287">Paper Link</a>】    【Pages】:161-170</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/West:Andrew_G=">Andrew G. West</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Aviv:Adam_J=">Adam J. Aviv</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chang:Jian">Jian Chang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Insup">Insup Lee</a></p>
+<p>【Abstract】:
+IP blacklists are a spam filtering tool employed by a large number of email providers. Centrally maintained and well regarded, blacklists can filter 80+% of spam without having to perform computationally expensive content-based filtering. However, spammers can vary which hosts send spam (often in intelligent ways), and as a result, some percentage of spamming IPs are not actively listed on any blacklist. Blacklists also provide a previously untapped resource of rich historical information. Leveraging this history in combination with spatial reasoning, this paper presents a novel reputation model (PreSTA), designed to aid in spam classification. In simulation on arriving email at a large university mail system, PreSTA is capable of classifying up to 50% of spam not identified by blacklists alone, and 93% of spam on average (when used in combination with blacklists). Further, the system is consistent in maintaining this blockage-rate even during periods of decreased blacklist performance. PreSTA is scalable and can classify over 500,000 emails an hour. Such a system can be implemented as a complementary blacklist service or used as a first-level filter or prioritization mechanism on an email server.</p>
+<p>【Keywords】:</p>
+<h3 id="19. Breaking e-banking CAPTCHAs.">19. Breaking e-banking CAPTCHAs.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920288">Paper Link</a>】    【Pages】:171-180</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Shujun">Shujun Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shah:S=_Amier_Haider">S. Amier Haider Shah</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Khan:M=_Asad_Usman">M. Asad Usman Khan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Khayam:Syed_Ali">Syed Ali Khayam</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sadeghi:Ahmad=Reza">Ahmad-Reza Sadeghi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schmitz:Roland">Roland Schmitz</a></p>
+<p>【Abstract】:
+Many financial institutions have deployed CAPTCHAs to protect their services (e.g., e-banking) from automated attacks. In addition to CAPTCHAs for login, CAPTCHAs are also used to prevent malicious manipulation of e-banking transactions by automated Man-in-the-Middle (MitM) attackers. Despite serious financial risks, security of e-banking CAPTCHAs is largely unexplored. In this paper, we report the first comprehensive study on e-banking CAPTCHAs deployed around the world. A new set of image processing and pattern recognition techniques is proposed to break all e-banking CAPTCHA schemes that we found over the Internet, including three e-banking CAPTCHA schemes for transaction verification and 41 schemes for login. These broken e-banking CAPTCHA schemes are used by thousands of financial institutions worldwide, which are serving hundreds of millions of e-banking customers. The success rate of our proposed attacks are either equal to or close to 100%. We also discuss possible improvements to these e-banking CAPTCHA schemes and show essential difficulties of designing e-banking CAPTCHAs that are both secure and usable.</p>
+<p>【Keywords】:
+CAPTCHA; e-banking; electronic commerce; malware; man-in-the-middle attack</p>
+<h3 id="20. FIRM: capability-based inline mediation of Flash behaviors.">20. FIRM: capability-based inline mediation of Flash behaviors.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920289">Paper Link</a>】    【Pages】:181-190</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Zhou">Zhou Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:XiaoFeng">XiaoFeng Wang</a></p>
+<p>【Abstract】:
+The wide use of Flash technologies makes the security risks posed by Flash content an increasingly serious issue. Such risks cannot be effectively addressed by the Flash player, which either completely blocks Flash content's access to web resources or grants it unconstrained access. Efforts to mitigate this threat have to face the practical challenges that Adobe Flash player is closed source, and any changes to it need to be distributed to a large number of web clients. We demonstrate in this paper, however, that it is completely feasible to avoid these hurdles while still achieving fine-grained control of the interactions between Flash content and its hosting page. Our solution is FIRM, a system that embeds an inline reference monitor (IRM) within the web page hosting Flash content. The IRM effectively mediates the interactions between the content and DOM objects, and those between different Flash applications, using the capability tokens assigned by the web designer. FIRM can effectively protect the integrity of its IRM and the confidentiality of capability tokens. It can be deployed without making any changes to browsers. Our evaluation based upon real-world web applications and Flash applications demonstrates that FIRM effectively protects valuable user information and incurs small overhead.</p>
+<p>【Keywords】:
+Adobe Flash; cross-site scripting; inline reference monitor</p>
+<h2 id="Hardware-assisted security    3">Hardware-assisted security    3</h2>
+<h3 id="21. T-DRE: a hardware trusted computing base for direct recording electronic vote machines.">21. T-DRE: a hardware trusted computing base for direct recording electronic vote machines.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920291">Paper Link</a>】    【Pages】:191-198</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gallo:Roberto">Roberto Gallo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kawakami:Henrique">Henrique Kawakami</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dahab:Ricardo">Ricardo Dahab</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Azevedo:Rafael">Rafael Azevedo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lima:Saulo">Saulo Lima</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Araujo:Guido">Guido Araujo</a></p>
+<p>【Abstract】:
+We present a hardware trusted computing base (TCB) aimed at Direct Recording Voting Machines (T-DRE), with novel design features concerning vote privacy, device verifiability, signed-code execution and device resilience. Our proposal is largely compliant with the VVSG (Voluntary Voting System Guidelines), while also strengthening some of its rec-comendations. To the best of our knowledge, T-DRE is the first architecture to employ multi-level, certification-based, hardware-enforced privileges to the running software. T-DRE also makes a solid case for the feasibility of strong security systems: it is the basis of 165,000 voting machines, set to be used in a large upcoming national election. In short, our contribution is a viable computational trusted base for both modern and classical voting protocols.</p>
+<p>【Keywords】:</p>
+<h3 id="22. Hardware assistance for trustworthy systems through 3-D integration.">22. Hardware assistance for trustworthy systems through 3-D integration.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920292">Paper Link</a>】    【Pages】:199-210</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/v/Valamehr:Jonathan">Jonathan Valamehr</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tiwari:Mohit">Mohit Tiwari</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sherwood:Timothy">Timothy Sherwood</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kastner:Ryan">Ryan Kastner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Huffmire:Ted">Ted Huffmire</a> ; <a href="http://dblp.uni-trier.de/pers/hd/i/Irvine:Cynthia_E=">Cynthia E. Irvine</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Levin:Timothy_E=">Timothy E. Levin</a></p>
+<p>【Abstract】:
+Hardware resources are abundant; state-of-the-art processors have over one billion transistors. Yet for a variety of reasons, specialized hardware functions for high assurance processing are seldom (i.e., a couple of features per vendor over twenty years) integrated into these commodity processors, despite a small flurry of late (e.g., ARM TrustZone, Intel VT-x/VT-d and AMD-V/AMD-Vi, Intel TXT and AMD SVM, and Intel AES-NI). Furthermore, as chips increase in complexity, trustworthy processing of sensitive information can become increasingly difficult to achieve due to extensive on-chip resource sharing and the lack of corresponding protection mechanisms. In this paper, we introduce a method to enhance the security of commodity integrated circuits, using minor modifications, in conjunction with a separate integrated circuit that can provide monitoring, access control, and other useful security functions. We introduce a new architecture using a separate control plane, stacked using 3D integration, that allows for the function and economics of specialized security mechanisms, not available from a co-processor alone, to be integrated with the underlying commodity computing hardware. We first describe a general methodology to modify the host computation plane by attaching an optional control plane using 3-D integration. In a developed example we show how this approach can increase system trustworthiness, through mitigating the cache-based side channel problem by routing signals from the computation plane through a cache monitor in the 3-D control plane. We show that the overhead of our example application, in terms of area, delay and performance impact, is negligible.</p>
+<p>【Keywords】:</p>
+<h3 id="23. SCA-resistant embedded processors: the next generation.">23. SCA-resistant embedded processors: the next generation.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920293">Paper Link</a>】    【Pages】:211-220</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Tillich:Stefan">Stefan Tillich</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kirschbaum:Mario">Mario Kirschbaum</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Szekely:Alexander">Alexander Szekely</a></p>
+<p>【Abstract】:
+Resistance against side-channel analysis (SCA) attacks is an important requirement for many secure embedded systems. Microprocessors and microcontrollers which include suitable countermeasures can be a vital building block for such systems. In this paper, we present a detailed concept for building embedded processors with SCA countermeasures. Our concept is based on ideas for the secure implementation of cryptographic instruction set extensions. On the one hand, it draws from known SCA countermeasures like DPA-resistant logic styles. On the other hand, our protection scheme is geared towards use in modern embedded applications like PDAs and smart phones. It supports multitasking and a separation of secure system software and (potentially insecure) user applications. Furthermore, our concept affords support for a wide range of cryptographic algorithms. Based on this concept, embedded processor cores with support for a selected set of cryptographic algorithms can be built using a fully automated design flow.</p>
+<p>【Keywords】:
+SCA countermeasures; embedded processors; side-channel analysis</p>
+<h2 id="Security protocols and portable storage    3">Security protocols and portable storage    3</h2>
+<h3 id="24. Porscha: policy oriented secure content handling in Android.">24. Porscha: policy oriented secure content handling in Android.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920295">Paper Link</a>】    【Pages】:221-230</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/o/Ongtang:Machigar">Machigar Ongtang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Butler:Kevin_R=_B=">Kevin R. B. Butler</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McDaniel:Patrick_D=">Patrick D. McDaniel</a></p>
+<p>【Abstract】:
+The penetration of cellular networks worldwide and emergence of smart phones has led to a revolution in mobile content. Users consume diverse content when, for example, exchanging photos, playing games, browsing websites, and viewing multimedia. Current phone platforms provide protections for user privacy, the cellular radio, and the integrity of the OS itself. However, few offer protections to protect the content once it enters the phone. For example, MP3-based MMS or photo content placed on Android smart phones can be extracted and shared with impunity. In this paper, we explore the requirements and enforcement of digital rights management (DRM) policy on smart phones. An analysis of the Android market shows that DRM services should ensure: a) protected content is accessible only by authorized phones b) content is only accessible by provider-endorsed applications, and c) access is regulated by contextual constraints, e.g., used for a limited time, a maximum number of viewings, etc. The Porscha system developed in this work places content proxies and reference monitors within the Android middleware to enforce DRM policies embedded in received content. A pilot study controlling content obtained over SMS, MMS, and email illustrates the expressibility and enforcement of Porscha policies. Our experiments demonstrate that Porscha is expressive enough to articulate needed DRM policies and that their enforcement has limited impact on performance.</p>
+<p>【Keywords】:
+Android; DRM; mobile phone security; security policy</p>
+<h3 id="25. Kells: a protection framework for portable data.">25. Kells: a protection framework for portable data.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920296">Paper Link</a>】    【Pages】:231-240</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Butler:Kevin_R=_B=">Kevin R. B. Butler</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McLaughlin:Stephen_E=">Stephen E. McLaughlin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McDaniel:Patrick_D=">Patrick D. McDaniel</a></p>
+<p>【Abstract】:
+Portable storage devices, such as key-chain USB devices, are ubiquitous. These devices are often used with impunity, with users repeatedly using the same storage device in open computer laboratories, Internet cafes, and on office and home computers. Consequently, they are the target of malware that exploit the data present or use them as a means to propagate malicious software. This paper presents the Kells mobile storage system. Kells limits untrusted or unknown systems from accessing sensitive data by continuously validating the accessing host's integrity state. We explore the design and operation of Kells, and implement a proof-of-concept USB 2.0 storage device on experimental hardware. Our analysis of Kells is twofold. We first prove the security of device operation (within a freshness security parameter Δt) using the LS2 logic of secure systems. Second, we empirically evaluate the performance of Kells. These experiments indicate nominal overheads associated with host validation, showing a worst case throughput overhead of 1.22% for read operations and 2.78% for writes.</p>
+<p>【Keywords】:</p>
+<h3 id="26. Keeping data secret under full compromise using porter devices.">26. Keeping data secret under full compromise using porter devices.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920297">Paper Link</a>】    【Pages】:241-250</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/P=ouml=pper:Christina">Christina Pöpper</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Basin:David_A=">David A. Basin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Capkun:Srdjan">Srdjan Capkun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cremers:Cas_J=_F=">Cas J. F. Cremers</a></p>
+<p>【Abstract】:
+We address the problem of confidentiality in scenarios where the attacker is not only able to observe the communication between principals, but can also fully compromise the communicating parties (their devices, not only their long term secrets) after the confidential data has been exchanged. We formalize this problem and explore solutions that provide confidentiality after the full compromise of devices and user passwords. We propose two new solutions that use explicit key deletion and forward-secret protocols combined with key storage on porter devices. Our solutions provide the users with control over their privacy. We analyze the proposed solutions using an automatic verification tool. We also implement a prototype using a mobile phone as a porter device to illustrate how the solution can be realized on modern platforms.</p>
+<p>【Keywords】:
+full compromise; security protocol; system security</p>
+<h2 id="Model checking and vulnerability analysis    3">Model checking and vulnerability analysis    3</h2>
+<h3 id="27. Familiarity breeds contempt: the honeymoon effect and the role of legacy code in zero-day vulnerabilities.">27. Familiarity breeds contempt: the honeymoon effect and the role of legacy code in zero-day vulnerabilities.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920299">Paper Link</a>】    【Pages】:251-260</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Clark:Sandy">Sandy Clark</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Frei:Stefan">Stefan Frei</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Blaze:Matt">Matt Blaze</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Smith:Jonathan_M=">Jonathan M. Smith</a></p>
+<p>【Abstract】:
+Work on security vulnerabilities in software has primarily focused on three points in the software life-cycle: (1) finding and removing software defects, (2) patching or hardening software after vulnerabilities have been discovered, and (3) measuring the rate of vulnerability exploitation. This paper examines an earlier period in the software vulnerability life-cycle, starting from the release date of a version through to the disclosure of the fourth vulnerability, with a particular focus on the time from release until the very first disclosed vulnerability. Analysis of software vulnerability data, including up to a decade of data for several versions of the most popular operating systems, server applications and user applications (both open and closed source), shows that properties extrinsic to the software play a much greater role in the rate of vulnerability discovery than do intrinsic properties such as software quality. This leads us to the observation that (at least in the first phase of a product's existence), software vulnerabilities have different properties from software defects. We show that the length of the period after the release of a software product (or version) and before the discovery of the first vulnerability (the 'Honeymoon' period) is primarily a function of familiarity with the system. In addition, we demonstrate that legacy code resulting from code re-use is a major contributor to both the rate of vulnerability discovery and the numbers of vulnerabilities found; this has significant implications for software engineering principles and practice.</p>
+<p>【Keywords】:</p>
+<h3 id="28. Quantifying information leaks in software.">28. Quantifying information leaks in software.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920300">Paper Link</a>】    【Pages】:261-269</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Heusser:Jonathan">Jonathan Heusser</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Malacaria:Pasquale">Pasquale Malacaria</a></p>
+<p>【Abstract】:
+Leakage of confidential information represents a serious security risk. Despite a number of novel, theoretical advances, it has been unclear if and how quantitative approaches to measuring leakage of confidential information could be applied to substantial, real-world programs. This is mostly due to the high complexity of computing precise leakage quantities. In this paper, we introduce a technique which makes it possible to decide if a program conforms to a quantitative policy which scales to large state-spaces with the help of bounded model checking. Our technique is applied to a number of officially reported information leak vulnerabilities in the Linux Kernel. Additionally, we also analysed authentication routines in the Secure Remote Password suite and of a Internet Message Support Protocol implementation. Our technique shows when there is unacceptable leakage; the same technique is also used to verify, for the first time, that the applied software patches indeed plug the information leaks. This is the first demonstration of quantitative information flow addressing security concerns of real-world industrial programs.</p>
+<p>【Keywords】:
+Linux kernel; information leakage; quantitative information flow</p>
+<h3 id="29. Analyzing and improving Linux kernel memory protection: a model checking approach.">29. Analyzing and improving Linux kernel memory protection: a model checking approach.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920301">Paper Link</a>】    【Pages】:271-280</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Liakh:Siarhei">Siarhei Liakh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Grace:Michael_C=">Michael C. Grace</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jiang:Xuxian">Xuxian Jiang</a></p>
+<p>【Abstract】:
+Code injection continues to pose a serious threat to computer systems. Among existing solutions, W ⊕ X is a notable approach to prevent the execution of injected code. In this paper, we focus on the Linux kernel memory protection and systematically check for possible W ⊕ X violations in the Linux kernel design and implementation. In particular, we have developed a Murphi-based abstract model and used it to discover several serious shortcomings in the current Linux kernel that violate the W ⊕ X property. We have confirmed with the Linux community the presence of these problems and accordingly developed five Linux kernel patches. (Four of them are in the process of being integrated into the mainline Linux kernel.) Our evaluation with these patches indicate that they involve only minimal changes to the existing code base and incur negligible performance overhead.</p>
+<p>【Keywords】:</p>
+<h2 id="Classic paper II    1">Classic paper II    1</h2>
+<h3 id="30. Back to Berferd.">30. Back to Berferd.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920303">Paper Link</a>】    【Pages】:281-286</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cheswick:William_R=">William R. Cheswick</a></p>
+<p>【Abstract】:
+It has been nearly twenty years since I published the Berferd paper. Much of it is quite outdated, reflecting the state of technology at the time. But it did touch a number of issues that have become quite important. I discuss some of the existing conditions around the time of the paper, and some of these issues.</p>
+<p>【Keywords】:</p>
+<h2 id="Intrusion detection and live forensics    3">Intrusion detection and live forensics    3</h2>
+<h3 id="31. Comprehensive shellcode detection using runtime heuristics.">31. Comprehensive shellcode detection using runtime heuristics.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920305">Paper Link</a>】    【Pages】:287-296</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Polychronakis:Michalis">Michalis Polychronakis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Anagnostakis:Kostas_G=">Kostas G. Anagnostakis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Markatos:Evangelos_P=">Evangelos P. Markatos</a></p>
+<p>【Abstract】:
+A promising method for the detection of previously unknown code injection attacks is the identification of the shellcode that is part of the attack vector using payload execution. Existing systems based on this approach rely on the self-decrypting behavior of polymorphic code and can identify only that particular class of shellcode. Plain, and more importantly, metamorphic shellcode do not carry a decryption routine nor exhibit any self-modifications and thus both evade existing detection systems. In this paper, we present a comprehensive shellcode detection technique that uses a set of runtime heuristics to identify the presence of shellcode in arbitrary data streams. We have identified fundamental machine-level operations that are inescapably performed by different shellcode types, based on which we have designed heuristics that enable the detection of plain and metamorphic shellcode regardless of the use of self-decryption. We have implemented our technique in Gene, a code injection attack detection system based on passive network monitoring. Our experimental evaluation and real-world deployment show that Gene can effectively detect a large and diverse set of shellcode samples that are currently missed by existing detectors, while so far it has not generated any false positives.</p>
+<p>【Keywords】:
+code emulation; payload execution; shellcode detection</p>
+<h3 id="32. Cross-layer comprehensive intrusion harm analysis for production workload server systems.">32. Cross-layer comprehensive intrusion harm analysis for production workload server systems.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920306">Paper Link</a>】    【Pages】:297-306</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Shengzhi">Shengzhi Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jia:Xiaoqi">Xiaoqi Jia</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu_0005:Peng">Peng Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jing:Jiwu">Jiwu Jing</a></p>
+<p>【Abstract】:
+Analyzing the (harm of) intrusion to enterprise servers is an onerous and error-prone work. Though dynamic taint tracking enables automatic fine-grained intrusion harm analysis for enterprise servers, the significant runtime overhead introduced is generally intolerable in the production workload environment. Thus, we propose PEDA (Production Environment Damage Analysis) system, which decouples the onerous analysis work from the online execution of the production servers. Once compromised, the "has-been-infected" execution is analyzed during high fidelity replay on a separate instrumentation platform. The replay is implemented based on the heterogeneous virtual machine migration. The servers' online execution runs atop fast hardware-assisted virtual machines (such as Xen for near native speed), while the infected execution is replayed atop binary instrumentation virtual machines (such as Qemu for the implementation of taint analysis). From identified intrusion symptoms, PEDA is capable of locating the fine-grained taint seed by integrating the backward system call dependency tracking and one-step-forward taint information flow auditing. Started with the fine-grained taint seed, PEDA applies dynamic taint analysis during the replayed execution. Evaluation demonstrates the efficiency of PEDA system with runtime overhead as low as 5%. The real-life intrusion studies successfully show the comprehensiveness and the precision of PEDA's intrusion harm analysis.</p>
+<p>【Keywords】:
+cross-layer intrusion harm analysis; forward and backward tracking; heterogeneous virtual machine migration</p>
+<h3 id="33. Forenscope: a framework for live forensics.">33. Forenscope: a framework for live forensics.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920307">Paper Link</a>】    【Pages】:307-316</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chan:Ellick">Ellick Chan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Venkataraman:Shivaram">Shivaram Venkataraman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/David:Francis_M=">Francis M. David</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chaugule:Amey">Amey Chaugule</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Campbell:Roy_H=">Roy H. Campbell</a></p>
+<p>【Abstract】:
+Current post-mortem cyber-forensic techniques may cause significant disruption to the evidence gathering process by breaking active network connections and unmounting encrypted disks. Although newer live forensic analysis tools can preserve active state, they may taint evidence by leaving footprints in memory. To help address these concerns we present Forenscope, a framework that allows an investigator to examine the state of an active system without the effects of taint or forensic blurriness caused by analyzing a running system. We show how Forenscope can fit into accepted workflows to improve the evidence gathering process. Forenscope preserves the state of the running system and allows running processes, open files, encrypted filesystems and open network sockets to persist during the analysis process. Forenscope has been tested on live systems to show that it does not operationally disrupt critical processes and that it can perform an analysis in less than 15 seconds while using only 125 KB of memory. We show that Forenscope can detect stealth rootkits, neutralize threats and expedite the investigation process by finding evidence in memory.</p>
+<p>【Keywords】:
+forensics; introspection; memory remanence</p>
+<h2 id="Distributed systems and operating systems    3">Distributed systems and operating systems    3</h2>
+<h3 id="34. A multi-user steganographic file system on untrusted shared storage.">34. A multi-user steganographic file system on untrusted shared storage.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920309">Paper Link</a>】    【Pages】:317-326</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Han:Jin">Jin Han</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pan:Meng">Meng Pan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gao:Debin">Debin Gao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pang:HweeHwa">HweeHwa Pang</a></p>
+<p>【Abstract】:
+Existing steganographic file systems enable a user to hide the existence of his secret data by claiming that they are (static) dummy data created during disk initialization. Such a claim is plausible if the adversary only sees the disk content at the point of attack. In a multi-user computing environment that employs untrusted shared storage, however, the adversary could have taken multiple snapshots of the disk content over time. Since the dummy data are static, the differences across snapshots thus disclose the locations of user data, and could even reveal the user passwords. In this paper, we introduce a Dummy-Relocatable Steganographic (DRSteg) file system to provide deniability in multi-user environments where the adversary may have multiple snapshots of the disk content. With its novel techniques for sharing and relocating dummy data during runtime, DRSteg allows a data owner to surrender only some data and attribute the unexplained changes across snapshots to the dummy operations. The level of deniability offered by DRSteg is configurable by the users, to balance against the resulting performance overhead. Additionally, DRSteg guarantees the integrity of the protected data, except where users voluntarily overwrite data under duress.</p>
+<p>【Keywords】:</p>
+<h3 id="35. Heap Taichi: exploiting memory allocation granularity in heap-spraying attacks.">35. Heap Taichi: exploiting memory allocation granularity in heap-spraying attacks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920310">Paper Link</a>】    【Pages】:327-336</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Ding:Yu">Yu Ding</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wei:Tao">Tao Wei</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Tielei">Tielei Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liang:Zhenkai">Zhenkai Liang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zou:Wei">Wei Zou</a></p>
+<p>【Abstract】:
+Heap spraying is an attack technique commonly used in hijacking browsers to download and execute malicious code. In this attack, attackers first fill a large portion of the victim process's heap with malicious code. Then they exploit a vulnerability to redirect the victim process's control to attackers' code on the heap. Because the location of the injected code is not exactly predictable, traditional heap-spraying attacks need to inject a huge amount of executable code to increase the chance of success. Injected executable code usually includes lots of NOP-like instructions leading to attackers' shellcode. Targeting this attack characteristic, previous solutions detect heap-spraying attacks by searching for the existence of such large amount of NOP sled and other shellcode. In this paper, we analyze the implication of modern operating systems' memory allocation granularity and present Heap Taichi, a new heap spraying technique exploiting the weakness in memory alignment. We describe four new heap object structures that can evade existing detection tools, as well as proof-of-concept heap-spraying code implementing our technique. Our research reveals that a large amount of NOP sleds is not necessary for a reliable heap-spraying attack. In our experiments, we showed that our heap-spraying attacks are a realistic threat by evading existing detection mechanisms. To detect and prevent the new heap-spraying attacks, we propose enhancement to existing approaches and propose to use finer memory allocation granularity at memory managers of all levels. We also studied the impact of our solution on system performance.</p>
+<p>【Keywords】:</p>
+<h3 id="36. SCOBA: source code based attestation on custom software.">36. SCOBA: source code based attestation on custom software.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920311">Paper Link</a>】    【Pages】:337-346</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gu:Liang">Liang Gu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Guo:Yao">Yao Guo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ruan:Anbang">Anbang Ruan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shen:Qingni">Qingni Shen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mei:Hong">Hong Mei</a></p>
+<p>【Abstract】:
+Most existing attestation schemes deal with binaries and typically require an exhaustive list of known-good measurements beforehand in order to perform verification. However, many programs nowadays are custom-built: the end user is allowed to tailor, compile and build the source code into various versions, or even build everything from scratch. As a result, it is very difficult, if not impossible, for existing schemes to attest the custom-built software with theoretically unlimited number of valid binaries available. This paper introduce SCOBA, a new Source COde Based Attestation framework, to specifically deal with the attestation on custom software. Instead of trying to obtain a know-good measurement list, SCOBA focuses on the source code and provides a trusted building process to attest the resulting binaries based on the source files and building configuration. SCOBA introduces a trusted verifier to certify the binary code of custom-build program according to its source code and building configuration. For custom-built software based on open-source distributions, we implemented a fully automatic trusted building system prototype for SCOBA based on GCC and TPM. As a case study, we also applied SCOBA to Gentoo and its Portage, which is a source code based package management system. Experimental results show that remote attestation, one of the key TCG features, can be made practically available to the free software community.</p>
+<p>【Keywords】:
+custom software; free software; property-based attestation; remote attestation; trusted computing</p>
+<h2 id="Mobile and wireless    3">Mobile and wireless    3</h2>
+<h3 id="37. Paranoid Android: versatile protection for smartphones.">37. Paranoid Android: versatile protection for smartphones.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920313">Paper Link</a>】    【Pages】:347-356</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Portokalidis:Georgios">Georgios Portokalidis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Homburg:Philip">Philip Homburg</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Anagnostakis:Kostas">Kostas Anagnostakis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bos:Herbert">Herbert Bos</a></p>
+<p>【Abstract】:
+Smartphone usage has been continuously increasing in recent years. Moreover, smartphones are often used for privacy-sensitive tasks, becoming highly valuable targets for attackers. They are also quite different from PCs, so that PC-oriented solutions are not always applicable, or do not offer comprehensive security. We propose an alternative solution, where security checks are applied on remote security servers that host exact replicas of the phones in virtual environments. The servers are not subject to the same constraints, allowing us to apply multiple detection techniques simultaneously. We implemented a prototype of this security model for Android phones, and show that it is both practical and scalable: we generate no more than 2KiB/s and 64B/s of trace data for high-loads and idle operation respectively, and are able to support more than a hundred replicas running on a single server.</p>
+<p>【Keywords】:
+Android; decoupled security; smartphones</p>
+<h3 id="38. Exploiting smart-phone USB connectivity for fun and profit.">38. Exploiting smart-phone USB connectivity for fun and profit.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920314">Paper Link</a>】    【Pages】:357-366</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Zhaohui">Zhaohui Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stavrou:Angelos">Angelos Stavrou</a></p>
+<p>【Abstract】:
+The Universal Serial Bus (USB) connection has become the de-facto standard for both charging and data transfers for smart phone devices including Google's Android and Apple's iPhone. To further enhance their functionality, smart phones are equipped with programmable USB hardware and open source operating systems that empower them to alter the default behavior of the end-to-end USB communications. Unfortunately, these new capabilities coupled with the inherent trust that users place on the USB physical connectivity and the lack of any protection mechanisms render USB a insecure link, prone to exploitation. To demonstrate this new avenue of exploitation, we introduce novel attack strategies that exploit the functional capabilities of the USB physical link. In addition, we detail how a sophisticated adversary who has under his control one of the connected devices can subvert the other. This includes attacks where a compromised smart phone poses as a Human Interface Device (HID) and sends keystrokes in order to control the victim host. Moreover, we explain how to boot a smart phone device into USB host mode and take over another phone using a specially crafted cable. Finally, we point out the underlying reasons behind USB exploits and propose potential defense mechanisms that would limit or even prevent such USB borne attacks.</p>
+<p>【Keywords】:</p>
+<h3 id="39. Defending DSSS-based broadcast communication against insider jammers via delayed seed-disclosure.">39. Defending DSSS-based broadcast communication against insider jammers via delayed seed-disclosure.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920315">Paper Link</a>】    【Pages】:367-376</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Liu:An">An Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Ning:Peng">Peng Ning</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dai:Huaiyu">Huaiyu Dai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Yao">Yao Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Cliff">Cliff Wang</a></p>
+<p>【Abstract】:
+Spread spectrum techniques such as Direct Sequence Spread Spectrum (DSSS) and Frequency Hopping (FH) have been commonly used for anti-jamming wireless communication. However, traditional spread spectrum techniques require that sender and receivers share a common secret in order to agree upon, for example, a common hopping sequence (in FH) or a common spreading code sequence (in DSSS). Such a requirement prevents these techniques from being effective for anti-jamming broadcast communication, where a jammer may learn the key from a compromised receiver and then disrupt the wireless communication. In this paper, we develop a novel Delayed Seed-Disclosure DSSS (DSD-DSSS) scheme for efficient anti-jamming broadcast communication. DSD-DSSS achieves its anti-jamming capability through randomly generating the spreading code sequence for each message using a random seed and delaying the disclosure of the seed at the end of the message. We also develop an effective protection mechanism for seed disclosure using content-based code subset selection. DSD-DSSS is superior to all previous attempts for anti-jamming spread spectrum broadcast communication without shared keys. In particular, even if a jammer possesses real-time online analysis capability to launch reactive jamming attacks, DSD-DSSS can still defeat the jamming attacks with a very high probability. We evaluate DSD-DSSS through both theoretical analysis and a prototype implementation based on GNU Radio; our evaluation results demonstrate that DSD-DSSS is practical and have superior security properties.</p>
+<p>【Keywords】:</p>
+<h2 id="Security engineering and management    3">Security engineering and management    3</h2>
+<h3 id="40. Always up-to-date: scalable offline patching of VM images in a compute cloud.">40. Always up-to-date: scalable offline patching of VM images in a compute cloud.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920317">Paper Link</a>】    【Pages】:377-386</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Wu">Wu Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Ning:Peng">Peng Ning</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Xiaolan">Xiaolan Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Ammons:Glenn">Glenn Ammons</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Ruowen">Ruowen Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bala:Vasanth">Vasanth Bala</a></p>
+<p>【Abstract】:
+Patching is a critical security service that keeps computer systems up to date and defends against security threats. Existing patching systems all require running systems. With the increasing adoption of virtualization and cloud computing services, there is a growing number of dormant virtual machine (VM) images. Such VM images cannot benefit from existing patching systems, and thus are often left vulnerable to emerging security threats. It is possible to bring VM images online, apply patches, and capture the VMs back to dormant images. However, such approaches suffer from unpredictability, performance challenges, and high operational costs, particularly in large-scale compute clouds where there could be thousands of dormant VM images. This paper presents a novel tool named Nüwa that enables efficient and scalable offline patching of dormant VM images. Nüwa analyzes patches and, when possible, converts them into patches that can be applied offline by rewriting the patching scripts. Nüwa also leverages the VM image manipulation technologies offered by the Mirage image library to provide an efficient and scalable way to patch VM images in batch. Nüwa has been evaluated on freshly built images and on real-world images from the IBM Research Compute Cloud (RC2), a compute cloud used by IBM researchers worldwide. When applying security patches to a fresh installation of Ubuntu-8.04, Nüwa successfully applies 402 of 406 patches. It speeds up the patching process by more than 4 times compared to the online approach and by another 2--10 times when integrated with Mirage. Nüwa also successfully applies the 10 latest security updates to all VM images in RC2.</p>
+<p>【Keywords】:</p>
+<h3 id="41. A framework for testing hardware-software security architectures.">41. A framework for testing hardware-software security architectures.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920318">Paper Link</a>】    【Pages】:387-397</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dwoskin:Jeffrey_S=">Jeffrey S. Dwoskin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gomathisankaran:Mahadevan">Mahadevan Gomathisankaran</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Yu=Yuan">Yu-Yuan Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Ruby_B=">Ruby B. Lee</a></p>
+<p>【Abstract】:
+New security architectures are difficult to prototype and test at the design stage. Fine-grained monitoring of the interactions between hardware, the operating system and applications is required. We have designed and prototyped a testing framework, using virtualization, that can emulate the behavior of new hardware mechanisms in the virtual CPU and can perform a wide range of hardware and software attacks on the system under test. Our testing framework provides APIs for monitoring hardware and software events in the system under test, launching attacks, and observing their effects. We demonstrate its use by testing the security properties of the Secret Protection (SP) architecture using a suite of attacks. We show two important lessons learned from the testing of the SP architecture that affect the design and implementation of the architecture. Our framework enables extensive testing of hardware-software security architectures, in a realistic and flexible environment, with good performance provided by virtualization.</p>
+<p>【Keywords】:</p>
+<h3 id="42. Two methodologies for physical penetration testing using social engineering.">42. Two methodologies for physical penetration testing using social engineering.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/1920261.1920319">Paper Link</a>】    【Pages】:399-408</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dimkov:Trajce">Trajce Dimkov</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pieters:Wolter">Wolter Pieters</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hartel:Pieter_H=">Pieter H. Hartel</a></p>
+<p>【Abstract】:
+Penetration tests on IT systems are sometimes coupled with physical penetration tests and social engineering. In physical penetration tests where social engineering is allowed, the penetration tester directly interacts with the employees. These interactions are usually based on deception and if not done properly can upset the employees, violate their privacy or damage their trust toward the organization and might lead to law suits and loss of productivity. We propose two methodologies for performing a physical penetration test where the goal is to gain an asset using social engineering. These methodologies aim to reduce the impact of the penetration test on the employees. The methodologies have been validated by a set of penetration tests performed over a period of two years.</p>
+<p>【Keywords】:
+methodology; penetration testing; physical security; research ethics; social engineering</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="https://github.com/huntercmd/ccf"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>

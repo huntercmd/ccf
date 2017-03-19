@@ -1,0 +1,508 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/skin.js"></script>
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/classie.js"></script>
+
+<!-- This is for Mathjax -->
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#21. USENIX Security Symposium 2012:Bellevue, WA, USA">21. USENIX Security Symposium 2012:Bellevue, WA, USA</a><ul>
+<li><a href="#Paper Num: 43 || Session Num: 15">Paper Num: 43 || Session Num: 15</a></li>
+<li><a href="#Spam and Drugs    3">Spam and Drugs    3</a><ul>
+<li><a href="#1. PharmaLeaks: Understanding the Business of Online Pharmaceutical Affiliate Programs.">1. PharmaLeaks: Understanding the Business of Online Pharmaceutical Affiliate Programs.</a></li>
+<li><a href="#2. B@bel: Leveraging Email Delivery for Spam Mitigation.">2. B@bel: Leveraging Email Delivery for Spam Mitigation.</a></li>
+<li><a href="#3. Impact of Spam Exposure on User Engagement.">3. Impact of Spam Exposure on User Engagement.</a></li>
+</ul>
+</li>
+<li><a href="#CAPTCHAs and Password Strength    3">CAPTCHAs and Password Strength    3</a><ul>
+<li><a href="#4. Security and Usability Challenges of Moving-Object CAPTCHAs: Decoding Codewords in Motion.">4. Security and Usability Challenges of Moving-Object CAPTCHAs: Decoding Codewords in Motion.</a></li>
+<li><a href="#5. How Does Your Password Measure Up? The Effect of Strength Meters on Password Creation.">5. How Does Your Password Measure Up? The Effect of Strength Meters on Password Creation.</a></li>
+<li><a href="#6. I Forgot Your Password: Randomness Attacks Against PHP Applications.">6. I Forgot Your Password: Randomness Attacks Against PHP Applications.</a></li>
+</ul>
+</li>
+<li><a href="#Browser Security    2">Browser Security    2</a><ul>
+<li><a href="#7. An Evaluation of the Google Chrome Extension Security Architecture.">7. An Evaluation of the Google Chrome Extension Security Architecture.</a></li>
+<li><a href="#8. Establishing Browser Security Guarantees through Formal Shim Verification.">8. Establishing Browser Security Guarantees through Formal Shim Verification.</a></li>
+</ul>
+</li>
+<li><a href="#The Brain    2">The Brain    2</a><ul>
+<li><a href="#9. Neuroscience Meets Cryptography: Designing Crypto Primitives Secure Against Rubber Hose Attacks.">9. Neuroscience Meets Cryptography: Designing Crypto Primitives Secure Against Rubber Hose Attacks.</a></li>
+<li><a href="#10. On the Feasibility of Side-Channel Attacks with Brain-Computer Interfaces.">10. On the Feasibility of Side-Channel Attacks with Brain-Computer Interfaces.</a></li>
+</ul>
+</li>
+<li><a href="#A Chance of Clouds    3">A Chance of Clouds    3</a><ul>
+<li><a href="#11. Whispers in the Hyper-space: High-speed Covert Channel Attacks in the Cloud.">11. Whispers in the Hyper-space: High-speed Covert Channel Attacks in the Cloud.</a></li>
+<li><a href="#12. Policy-Sealed Data: A New Abstraction for Building Trusted Cloud Services.">12. Policy-Sealed Data: A New Abstraction for Building Trusted Cloud Services.</a></li>
+<li><a href="#13. STEALTHMEM: System-Level Protection Against Cache-Based Side Channel Attacks in the Cloud.">13. STEALTHMEM: System-Level Protection Against Cache-Based Side Channel Attacks in the Cloud.</a></li>
+</ul>
+</li>
+<li><a href="#Embedded Security    3">Embedded Security    3</a><ul>
+<li><a href="#14. Mining Your Ps and Qs: Detection of Widespread Weak Keys in Network Devices.">14. Mining Your Ps and Qs: Detection of Widespread Weak Keys in Network Devices.</a></li>
+<li><a href="#15. TARDIS: Time and Remanence Decay in SRAM to Implement Secure Protocols on Embedded Devices without Clocks.">15. TARDIS: Time and Remanence Decay in SRAM to Implement Secure Protocols on Embedded Devices without Clocks.</a></li>
+<li><a href="#16. Gone in 360 Seconds: Hijacking with Hitag2.">16. Gone in 360 Seconds: Hijacking with Hitag2.</a></li>
+</ul>
+</li>
+<li><a href="#Secure Computation and PIR    3">Secure Computation and PIR    3</a><ul>
+<li><a href="#17. Taking Proof-Based Verified Computation a Few Steps Closer to Practicality.">17. Taking Proof-Based Verified Computation a Few Steps Closer to Practicality.</a></li>
+<li><a href="#18. Optimally Robust Private Information Retrieval.">18. Optimally Robust Private Information Retrieval.</a></li>
+<li><a href="#19. Billion-Gate Secure Computation with Malicious Adversaries.">19. Billion-Gate Secure Computation with Malicious Adversaries.</a></li>
+</ul>
+</li>
+<li><a href="#Authentication and Secure Deletion    3">Authentication and Secure Deletion    3</a><ul>
+<li><a href="#20. Progressive Authentication: Deciding When to Authenticate on Mobile Phones.">20. Progressive Authentication: Deciding When to Authenticate on Mobile Phones.</a></li>
+<li><a href="#21. Origin-Bound Certificates: A Fresh Approach to Strong Client Authentication for the Web.">21. Origin-Bound Certificates: A Fresh Approach to Strong Client Authentication for the Web.</a></li>
+<li><a href="#22. Data Node Encrypted File System: Efficient Secure Deletion for Flash Memory.">22. Data Node Encrypted File System: Efficient Secure Deletion for Flash Memory.</a></li>
+</ul>
+</li>
+<li><a href="#Privacy Enhancing Technologies and Network Traffic Analysis    3">Privacy Enhancing Technologies and Network Traffic Analysis    3</a><ul>
+<li><a href="#23. Throttling Tor Bandwidth Parasites.">23. Throttling Tor Bandwidth Parasites.</a></li>
+<li><a href="#24. Chimera: A Declarative Language for Streaming Network Traffic Analysis.">24. Chimera: A Declarative Language for Streaming Network Traffic Analysis.</a></li>
+<li><a href="#25. New Attacks on Timing-based Network Flow Watermarks.">25. New Attacks on Timing-based Network Flow Watermarks.</a></li>
+</ul>
+</li>
+<li><a href="#Web Security    3">Web Security    3</a><ul>
+<li><a href="#26. On Breaking SAML: Be Whoever You Want to Be.">26. On Breaking SAML: Be Whoever You Want to Be.</a></li>
+<li><a href="#27. Clickjacking: Attacks and Defenses.">27. Clickjacking: Attacks and Defenses.</a></li>
+<li><a href="#28. Privilege Separation in HTML5 Applications.">28. Privilege Separation in HTML5 Applications.</a></li>
+</ul>
+</li>
+<li><a href="#Software Security I    3">Software Security I    3</a><ul>
+<li><a href="#29. Fuzzing with Code Fragments.">29. Fuzzing with Code Fragments.</a></li>
+<li><a href="#30. kGuard: Lightweight Kernel Protection against Return-to-User Attacks.">30. kGuard: Lightweight Kernel Protection against Return-to-User Attacks.</a></li>
+<li><a href="#31. Enhanced Operating System Security Through Efficient and Fine-grained Address Space Randomization.">31. Enhanced Operating System Security Through Efficient and Fine-grained Address Space Randomization.</a></li>
+</ul>
+</li>
+<li><a href="#Botnets and Web Security    3">Botnets and Web Security    3</a><ul>
+<li><a href="#32. From Throw-Away Traffic to Bots: Detecting the Rise of DGA-Based Malware.">32. From Throw-Away Traffic to Bots: Detecting the Rise of DGA-Based Malware.</a></li>
+<li><a href="#33. PUBCRAWL: Protecting Users and Businesses from CRAWLers.">33. PUBCRAWL: Protecting Users and Businesses from CRAWLers.</a></li>
+<li><a href="#34. Enemy of the State: A State-Aware Black-Box Web Vulnerability Scanner.">34. Enemy of the State: A State-Aware Black-Box Web Vulnerability Scanner.</a></li>
+</ul>
+</li>
+<li><a href="#Mobile Devices    3">Mobile Devices    3</a><ul>
+<li><a href="#35. Aurasium: Practical Policy Enforcement for Android Applications.">35. Aurasium: Practical Policy Enforcement for Android Applications.</a></li>
+<li><a href="#36. AdSplit: Separating Smartphone Advertising from Applications.">36. AdSplit: Separating Smartphone Advertising from Applications.</a></li>
+<li><a href="#37. DroidScope: Seamlessly Reconstructing the OS and Dalvik Semantic Views for Dynamic Android Malware Analysis.">37. DroidScope: Seamlessly Reconstructing the OS and Dalvik Semantic Views for Dynamic Android Malware Analysis.</a></li>
+</ul>
+</li>
+<li><a href="#Software Security II    3">Software Security II    3</a><ul>
+<li><a href="#38. STING: Finding Name Resolution Vulnerabilities in Programs.">38. STING: Finding Name Resolution Vulnerabilities in Programs.</a></li>
+<li><a href="#39. Tracking Rootkit Footprints with a Practical Memory Analysis System.">39. Tracking Rootkit Footprints with a Practical Memory Analysis System.</a></li>
+<li><a href="#40. Tachyon: Tandem Execution for Efficient Live Patch Testing.">40. Tachyon: Tandem Execution for Efficient Live Patch Testing.</a></li>
+</ul>
+</li>
+<li><a href="#Being Social    3">Being Social    3</a><ul>
+<li><a href="#41. Privacy-Preserving Social Plugins.">41. Privacy-Preserving Social Plugins.</a></li>
+<li><a href="#42. Social Networking with Frientegrity: Privacy and Integrity with an Untrusted Provider.">42. Social Networking with Frientegrity: Privacy and Integrity with an Untrusted Provider.</a></li>
+<li><a href="#43. Efficient and Scalable Socware Detection in Online Social Networks.">43. Efficient and Scalable Socware Detection in Online Social Networks.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="21. USENIX Security Symposium 2012:Bellevue, WA, USA">21. USENIX Security Symposium 2012:Bellevue, WA, USA</h1>
+<p><a href="https://www.usenix.org/publications/proceedings/?f[0]=im_group_audience%3A334">Proceedings of the 21th USENIX Security Symposium, Bellevue, WA, USA, August 8-10, 2012.</a> USENIX Association
+【<a href="http://dblp.uni-trier.de/db/conf/uss/uss2012.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 43 || Session Num: 15">Paper Num: 43 || Session Num: 15</h2>
+<ul>
+<li><a href="#A Chance of Clouds    3">A Chance of Clouds    3</a></li>
+<li><a href="#Authentication and Secure Deletion    3">Authentication and Secure Deletion    3</a></li>
+<li><a href="#Being Social    3">Being Social    3</a></li>
+<li><a href="#Botnets and Web Security    3">Botnets and Web Security    3</a></li>
+<li><a href="#Browser Security    2">Browser Security    2</a></li>
+<li><a href="#CAPTCHAs and Password Strength    3">CAPTCHAs and Password Strength    3</a></li>
+<li><a href="#Embedded Security    3">Embedded Security    3</a></li>
+<li><a href="#Mobile Devices    3">Mobile Devices    3</a></li>
+<li><a href="#Privacy Enhancing Technologies and Network Traffic Analysis    3">Privacy Enhancing Technologies and Network Traffic Analysis    3</a></li>
+<li><a href="#Secure Computation and PIR    3">Secure Computation and PIR    3</a></li>
+<li><a href="#Software Security I    3">Software Security I    3</a></li>
+<li><a href="#Software Security II    3">Software Security II    3</a></li>
+<li><a href="#Spam and Drugs    3">Spam and Drugs    3</a></li>
+<li><a href="#The Brain    2">The Brain    2</a></li>
+<li><a href="#Web Security    3">Web Security    3</a></li>
+</ul>
+<h2 id="Spam and Drugs    3">Spam and Drugs    3</h2>
+<h3 id="1. PharmaLeaks: Understanding the Business of Online Pharmaceutical Affiliate Programs.">1. PharmaLeaks: Understanding the Business of Online Pharmaceutical Affiliate Programs.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/mccoy">Paper Link</a>】    【Pages】:1-16</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/McCoy:Damon">Damon McCoy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pitsillidis:Andreas">Andreas Pitsillidis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jordan:Grant">Grant Jordan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Weaver:Nicholas">Nicholas Weaver</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kreibich:Christian">Christian Kreibich</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Krebs:Brian">Brian Krebs</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Voelker:Geoffrey_M=">Geoffrey M. Voelker</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Savage:Stefan">Stefan Savage</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Levchenko:Kirill">Kirill Levchenko</a></p>
+<p>【Abstract】:
+Online sales of counterfeit or unauthorized products drive a robust underground advertising industry that includes email spam, “black hat” search engine optimization, forum abuse and so on. Virtually everyone has encountered enticements to purchase drugs, prescription-free, from an online “Canadian Pharmacy.” However, even though such sites are clearly economically motivated, the shape of the underlying business enterprise is not well understood precisely because it is “underground.” In this paper we exploit a rare opportunity to view three such organizations—the GlavMed, SpamIt and RX-Promotion pharmaceutical affiliate programs—from the inside. Using “ground truth” data sets including four years of raw transaction logs covering over $170 million in sales, we provide an in-depth empirical analysis of worldwide consumer demand, the key role of independent third-party advertisers, and a detailed cost accounting of the overall business model.</p>
+<p>【Keywords】:</p>
+<h3 id="2. B@bel: Leveraging Email Delivery for Spam Mitigation.">2. B@bel: Leveraging Email Delivery for Spam Mitigation.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/stringhini">Paper Link</a>】    【Pages】:16-32</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Stringhini:Gianluca">Gianluca Stringhini</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Egele:Manuel">Manuel Egele</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zarras:Apostolis">Apostolis Zarras</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Holz:Thorsten">Thorsten Holz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kruegel:Christopher">Christopher Kruegel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vigna:Giovanni">Giovanni Vigna</a></p>
+<p>【Abstract】:
+Traditional spam detection systems either rely on content analysis to detect spam emails, or attempt to detect spammers before they send a message, (i.e., they rely on the origin of the message). In this paper, we introduce a third approach: we present a system for filtering spam that takes into account how messages are sent by spammers. More precisely, we focus on the email delivery mechanism, and analyze the communication at the SMTP protocol level. We introduce two complementary techniques as concrete instances of our new approach. First, we leverage the insight that different mail clients (and bots) implement the SMTP protocol in slightly different ways. We automatically learn these SMTP dialects and use them to detect bots during an SMTP transaction. Empirical results demonstrate that this technique is successful in identifying (and rejecting) bots that attempt to send emails. Second, we observe that spammers also take into account server feedback (for example to detect and remove non-existent recipients from email address lists). We can take advantage of this observation by returning fake information, thereby poisoning the server feedback on which the spammers rely. The results of our experiments show that by sending misleading information to a spammer, it is possible to prevent recipients from receiving subsequent spam emails from that same spammer.</p>
+<p>【Keywords】:</p>
+<h3 id="3. Impact of Spam Exposure on User Engagement.">3. Impact of Spam Exposure on User Engagement.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/dasgupta">Paper Link</a>】    【Pages】:33-48</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dasgupta_0001:Anirban">Anirban Dasgupta</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Punera:Kunal">Kunal Punera</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rao:Justin_M=">Justin M. Rao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Xuanhui">Xuanhui Wang</a></p>
+<p>【Abstract】:
+In this paper we quantify the effect of unsolicited emails (spam) on behavior and engagement of email users. Since performing randomized experiments in this setting is rife with practical and moral issues, we seek to determine causal relationships using observational data, something that is difficult in many cases. Using a novel modification of a user matching method combined with a time series regression on matched user pairs, we develop a framework for such causal inference that is particularly suited for the spam exposure use case. Using our matching technique, we objectively quantify the effect that continued exposure to spam has on user engagement in Yahoo! Mail. We find that indeed spam exposure leads to significantly, both statistically and economically, lower user engagement. The impact is non-linear; large changes impact users in a progressively more negative fashion. The impact is the strongest on “voluntary” categories of engagement such as composed emails and lowest on “responsive” engagement metrics. Our estimation technique and results not only quantify the negative impact of abuse, but also allow decision makers to estimate potential engagement gains from proposed investments in abuse mitigation.</p>
+<p>【Keywords】:</p>
+<h2 id="CAPTCHAs and Password Strength    3">CAPTCHAs and Password Strength    3</h2>
+<h3 id="4. Security and Usability Challenges of Moving-Object CAPTCHAs: Decoding Codewords in Motion.">4. Security and Usability Challenges of Moving-Object CAPTCHAs: Decoding Codewords in Motion.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/xu_y">Paper Link</a>】    【Pages】:49-64</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Yi">Yi Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Reynaga:Gerardo">Gerardo Reynaga</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chiasson:Sonia">Sonia Chiasson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Frahm:Jan=Michael">Jan-Michael Frahm</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Monrose:Fabian">Fabian Monrose</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Oorschot:Paul_C=_van">Paul C. van Oorschot</a></p>
+<p>【Abstract】:
+We explore the robustness and usability of moving-image object recognition (video) captchas, designing and implementing automated attacks based on computer vision techniques. Our approach is suitable for broad classes of moving-image captchas involving rigid objects. We first present an attack that defeats instances of such a captcha (NuCaptcha) representing the state-of-the-art, involving dynamic text strings called codewords. We then consider design modifications to mitigate the attacks (e.g., overlapping characters more closely). We implement the modified captchas and test if designs modified for greater robustness maintain usability. Our lab-based studies show that the modified captchas fail to offer viable usability, even when the captcha strength is reduced below acceptable targets—signaling that the modified designs are not viable. We also implement and test another variant of moving text strings using the known emerging images idea. This variant is resilient to our attacks and also offers similar usability to commercially available approaches. We explain why fundamental elements of the emerging images concept resist our current attack where others fails.</p>
+<p>【Keywords】:</p>
+<h3 id="5. How Does Your Password Measure Up? The Effect of Strength Meters on Password Creation.">5. How Does Your Password Measure Up? The Effect of Strength Meters on Password Creation.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/ur">Paper Link</a>】    【Pages】:65-80</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/u/Ur:Blase">Blase Ur</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kelley:Patrick_Gage">Patrick Gage Kelley</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Komanduri:Saranga">Saranga Komanduri</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Joel">Joel Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Maass:Michael">Michael Maass</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mazurek:Michelle_L=">Michelle L. Mazurek</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Passaro:Timothy">Timothy Passaro</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shay:Richard">Richard Shay</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vidas:Timothy">Timothy Vidas</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bauer:Lujo">Lujo Bauer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Christin:Nicolas">Nicolas Christin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cranor:Lorrie_Faith">Lorrie Faith Cranor</a></p>
+<p>【Abstract】:
+To help users create stronger text-based passwords, many web sites have deployed password meters that provide visual feedback on password strength. Although these meters are in wide use, their effects on the security and usability of passwords have not been well studied. We present a 2,931-subject study of password creation in the presence of 14 password meters. We found that meters with a variety of visual appearances led users to create longer passwords. However, significant increases in resistance to a password-cracking algorithm were only achieved using meters that scored passwords stringently. These stringent meters also led participants to include more digits, symbols, and uppercase letters. Password meters also affected the act of password creation. Participants who saw stringent meters spent longer creating their password and were more likely to change their password while entering it, yet they were also more likely to find the password meter annoying. However, the most stringent meter and those without visual bars caused participants to place less importance on satisfying the meter. Participants who saw more lenient meters tried to fill the meter and were averse to choosing passwords a meter deemed “bad” or “poor.” Our findings can serve as guidelines for administrators seeking to nudge users towards stronger passwords.</p>
+<p>【Keywords】:</p>
+<h3 id="6. I Forgot Your Password: Randomness Attacks Against PHP Applications.">6. I Forgot Your Password: Randomness Attacks Against PHP Applications.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/argyros">Paper Link</a>】    【Pages】:81-96</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Argyros:George">George Argyros</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kiayias:Aggelos">Aggelos Kiayias</a></p>
+<p>【Abstract】:
+We provide a number of practical techniques and algorithms for exploiting randomness vulnerabilities in PHP applications.We focus on the predictability of password reset tokens and demonstrate how an attacker can take over user accounts in a web application via predicting or algorithmically derandomizing the PHP core randomness generators. While our techniques are designed for the PHP language, the principles behind our techniques and our algorithms are independent of PHP and can readily apply to any system that utilizes weak randomness generators or low entropy sources. Our results include: algorithms that reduce the entropy of time variables, identifying and exploiting vulnerabilities of the PHP system that enable the recovery or reconstruction of PRNG seeds, an experimental analysis of the Håstad-Shamir framework for breaking truncated linear variables, an optimized online Gaussian solver for large sparse linear systems, and an algorithm for recovering the state of the Mersenne twister generator from any level of truncation. We demonstrate the gravity of our attacks via a number of case studies. Specifically, we show that a number of current widely used web applications can be broken using our techniques including Mediawiki, Joomla, Gallery, osCommerce and others.</p>
+<p>【Keywords】:</p>
+<h2 id="Browser Security    2">Browser Security    2</h2>
+<h3 id="7. An Evaluation of the Google Chrome Extension Security Architecture.">7. An Evaluation of the Google Chrome Extension Security Architecture.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/carlini">Paper Link</a>】    【Pages】:97-111</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Carlini:Nicholas">Nicholas Carlini</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Felt:Adrienne_Porter">Adrienne Porter Felt</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wagner:David">David Wagner</a></p>
+<p>【Abstract】:
+Vulnerabilities in browser extensions put users at risk by providing a way for website and network attackers to gain access to users’ private data and credentials. Extensions can also introduce vulnerabilities into the websites that they modify. In 2009, Google Chrome introduced a new extension platform with several features intended to prevent and mitigate extension vulnerabilities: strong isolation between websites and extensions, privilege separation within an extension, and an extension permission system. We performed a security review of 100 Chrome extensions and found 70 vulnerabilities across 40 extensions. Given these vulnerabilities, we evaluate how well each of the security mechanisms defends against extension vulnerabilities. We find that the mechanisms mostly succeed at preventing web attacks, but new security mechanisms are needed to protect users from network attacks on extensions, website metadata attacks on extensions, and vulnerabilities that extensions add to websites. We propose and evaluate additional defenses, and we conclude that banning HTTP scripts and inline scripts would prevent 47 of the 50 most severe vulnerabilities with only modest impact on developers.</p>
+<p>【Keywords】:</p>
+<h3 id="8. Establishing Browser Security Guarantees through Formal Shim Verification.">8. Establishing Browser Security Guarantees through Formal Shim Verification.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/jang">Paper Link</a>】    【Pages】:113-128</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jang:Dongseok">Dongseok Jang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tatlock:Zachary">Zachary Tatlock</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lerner:Sorin">Sorin Lerner</a></p>
+<p>【Abstract】:
+Web browsers mediate access to valuable private data in domains ranging from health care to banking. Despite this critical role, attackers routinely exploit browser vulnerabilities to exfiltrate private data and take over the underlying system. We present QUARK, a browser whose kernel has been implemented and verified in Coq. We give a specification of our kernel, show that the implementation satisfies the specification, and finally show that the specification implies several security properties, including tab non-interference, cookie integrity and confidentiality, and address bar integrity.</p>
+<p>【Keywords】:</p>
+<h2 id="The Brain    2">The Brain    2</h2>
+<h3 id="9. Neuroscience Meets Cryptography: Designing Crypto Primitives Secure Against Rubber Hose Attacks.">9. Neuroscience Meets Cryptography: Designing Crypto Primitives Secure Against Rubber Hose Attacks.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/bojinov">Paper Link</a>】    【Pages】:129-141</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bojinov:Hristo">Hristo Bojinov</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sanchez:Daniel">Daniel Sanchez</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Reber:Paul_J=">Paul J. Reber</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Boneh:Dan">Dan Boneh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lincoln:Patrick">Patrick Lincoln</a></p>
+<p>【Abstract】:
+Cryptographic systems often rely on the secrecy of cryptographic keys given to users. Many schemes, however, cannot resist coercion attacks where the user is forcibly asked by an attacker to reveal the key. These attacks, known as rubber hose cryptanalysis, are often the easiest way to defeat cryptography. We present a defense against coercion attacks using the concept of implicit learning from cognitive psychology. Implicit learning refers to learning of patterns without any conscious knowledge of the learned pattern. We use a carefully crafted computer game to plant a secret password in the participant’s brain without the participant having any conscious knowledge of the trained password. While the planted secret can be used for authentication, the participant cannot be coerced into revealing it since he or she has no conscious knowledge of it. We performed a number of user studies using Amazon’s Mechanical Turk to verify that participants can successfully re-authenticate over time and that they are unable to reconstruct or even recognize short fragments of the planted secret.</p>
+<p>【Keywords】:</p>
+<h3 id="10. On the Feasibility of Side-Channel Attacks with Brain-Computer Interfaces.">10. On the Feasibility of Side-Channel Attacks with Brain-Computer Interfaces.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/martinovic">Paper Link</a>】    【Pages】:143-158</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Martinovic:Ivan">Ivan Martinovic</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Davies:Doug">Doug Davies</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Frank:Mario">Mario Frank</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Perito:Daniele">Daniele Perito</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ros:Tomas">Tomas Ros</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Song:Dawn">Dawn Song</a></p>
+<p>【Abstract】:
+Brain computer interfaces (BCI) are becoming increasingly popular in the gaming and entertainment industries. Consumer-grade BCI devices are available for a few hundred dollars and are used in a variety of applications, such as video games, hands-free keyboards, or as an assistant in relaxation training. There are application stores similar to the ones used for smart phones, where application developers have access to an API to collect data from the BCI devices. The security risks involved in using consumer-grade BCI devices have never been studied and the impact of malicious software with access to the device is unexplored. We take a first step in studying the security implications of such devices and demonstrate that this upcoming technology could be turned against users to reveal their private and secret information. We use inexpensive electroencephalography (EEG) based BCI devices to test the feasibility of simple, yet effective, attacks. The captured EEG signal could reveal the user’s private informa- tion about, e.g., bank cards, PIN numbers, area of living, the knowledge of the known persons. This is the first attempt to study the security implications of consumer-grade BCI devices. We show that the entropy of the private information is decreased on the average by approximately 15 % - 40 % compared to random guessing attacks.</p>
+<p>【Keywords】:</p>
+<h2 id="A Chance of Clouds    3">A Chance of Clouds    3</h2>
+<h3 id="11. Whispers in the Hyper-space: High-speed Covert Channel Attacks in the Cloud.">11. Whispers in the Hyper-space: High-speed Covert Channel Attacks in the Cloud.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/wu">Paper Link</a>】    【Pages】:159-173</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Zhenyu">Zhenyu Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Zhang">Zhang Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Haining">Haining Wang</a></p>
+<p>【Abstract】:
+Information security and privacy in general are major concerns that impede enterprise adaptation of shared or public cloud computing. Specifically, the concern of virtual machine (VM) physical co-residency stems from the threat that hostile tenants can leverage various forms of side channels (such as cache covert channels) to exfiltrate sensitive information of victims on the same physical system. However, on virtualized x86 systems, covert channel attacks have not yet proven to be practical, and thus the threat is widely considered a “potential risk”. In this paper, we present a novel covert channel attack that is capable of high-bandwidth and reliable data transmission in the cloud. We first study the application of existing cache channel techniques in a virtualized environment, and uncover their major insufficiency and difficulties. We then overcome these obstacles by (1) redesigning a pure timing-based data transmission scheme, and (2) exploiting the memory bus as a high-bandwidth covert channel medium. We further design and implement a robust communication protocol, and demonstrate realistic covert channel attacks on various virtualized x86 systems. Our experiments show that covert channels do pose serious threats to information security in the cloud. Finally, we discuss our insights on covert channel mitigation in virtualized environments.</p>
+<p>【Keywords】:</p>
+<h3 id="12. Policy-Sealed Data: A New Abstraction for Building Trusted Cloud Services.">12. Policy-Sealed Data: A New Abstraction for Building Trusted Cloud Services.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/santos">Paper Link</a>】    【Pages】:175-188</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Santos_0001:Nuno">Nuno Santos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rodrigues:Rodrigo">Rodrigo Rodrigues</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gummadi:Krishna_P=">Krishna P. Gummadi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Saroiu:Stefan">Stefan Saroiu</a></p>
+<p>【Abstract】:
+Accidental or intentional mismanagement of cloud software by administrators poses a serious threat to the integrity and confidentiality of customer data hosted by cloud services. Trusted computing provides an important foundation for designing cloud services that are more resilient to these threats. However, current trusted computing technology is ill-suited to the cloud as it exposes too many internal details of the cloud infrastructure, hinders fault tolerance and load-balancing flexibility, and performs poorly. We present Excalibur, a system that addresses these limitations by enabling the design of trusted cloud services. Excalibur provides a new trusted computing abstraction, called policy-sealed data, that lets data be sealed (i.e., encrypted to a customer-defined policy) and then unsealed (i.e., decrypted) only by nodes whose configurations match the policy. To provide this abstraction, Excalibur uses attribute-based encryption, which reduces the overhead of key management and improves the performance of the distributed protocols employed. To demonstrate that Excalibur is practical, we incorporated it in the Eucalyptus open-source cloud platform. Policy-sealed data can provide greater confidence to Eucalyptus customers that their data is not being mismanaged.</p>
+<p>【Keywords】:</p>
+<h3 id="13. STEALTHMEM: System-Level Protection Against Cache-Based Side Channel Attacks in the Cloud.">13. STEALTHMEM: System-Level Protection Against Cache-Based Side Channel Attacks in the Cloud.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/kim">Paper Link</a>】    【Pages】:189-204</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Taesoo">Taesoo Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Peinado:Marcus">Marcus Peinado</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mainar=Ruiz:Gloria">Gloria Mainar-Ruiz</a></p>
+<p>【Abstract】:
+Cloud services are rapidly gaining adoption due to the promises of cost efficiency, availability, and on-demand scaling. To achieve these promises, cloud providers share physical resources to support multi-tenancy of cloud platforms. However, the possibility of sharing the same hard- ware with potential attackers makes users reluctant to offload sensitive data into the cloud. Worse yet, researchers have demonstrated side channel attacks via shared memory caches to break full encryption keys of AES, DES, and RSA. We present STEALTHMEM, a system-level protection mechanism against cache-based side channel attacks in the cloud. STEALTHMEM manages a set of locked cache lines per core, which are never evicted from the cache, and efficiently multiplexes them so that each VM can load its own sensitive data into the locked cache lines. Thus, any VM can hide memory access patterns on confidential data from other VMs. Unlike existing state-of-the-art mitigation methods, STEALTHMEM works with existing commodity hardware and does not require profound changes to application software. We also present a novel idea and prototype for isolating cache lines while fully utilizing memory by exploiting architectural properties of set-associative caches. STEALTHMEM imposes 5.9% of performance overhead on the SPEC 2006 CPU benchmark, and between 2% and 5% overhead on secured AES, DES and Blowfish, requiring only between 3 and 34 lines of code changes from the original implementations.</p>
+<p>【Keywords】:</p>
+<h2 id="Embedded Security    3">Embedded Security    3</h2>
+<h3 id="14. Mining Your Ps and Qs: Detection of Widespread Weak Keys in Network Devices.">14. Mining Your Ps and Qs: Detection of Widespread Weak Keys in Network Devices.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/heninger">Paper Link</a>】    【Pages】:205-220</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Heninger:Nadia">Nadia Heninger</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Durumeric:Zakir">Zakir Durumeric</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wustrow:Eric">Eric Wustrow</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Halderman:J=_Alex">J. Alex Halderman</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="15. TARDIS: Time and Remanence Decay in SRAM to Implement Secure Protocols on Embedded Devices without Clocks.">15. TARDIS: Time and Remanence Decay in SRAM to Implement Secure Protocols on Embedded Devices without Clocks.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/rahmati">Paper Link</a>】    【Pages】:221-236</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Rahmati:Amir">Amir Rahmati</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Salajegheh:Mastooreh">Mastooreh Salajegheh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Holcomb:Daniel_E=">Daniel E. Holcomb</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sorber:Jacob">Jacob Sorber</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Burleson:Wayne_P=">Wayne P. Burleson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fu:Kevin">Kevin Fu</a></p>
+<p>【Abstract】:
+Lack of a locally trustworthy clock makes security protocols challenging to implement on batteryless embedded devices such as contact smartcards, contactless smartcards, and RFID tags. A device that knows how much time has elapsed between queries from an untrusted reader could better protect against attacks that depend on the existence of a rate-unlimited encryption oracle. The TARDIS (Time and Remanence Decay in SRAM) helps locally maintain a sense of time elapsed without power and without special-purpose hardware. The TARDIS software computes the expiration state of a timer by analyzing the decay of existing on-chip SRAM. The TARDIS enables coarse-grained, hourglass-like timers such that cryptographic software can more deliberately decide how to throttle its response rate. Our experiments demonstrate that the TARDIS can measure time ranging from seconds to several hours depending on hardware parameters. Key challenges to implementing a practical TARDIS include compensating for temperature and handling variation across hardware. Our contributions are (1) the algorithmic building blocks for computing elapsed time from SRAM decay; (2) characterizing TARDIS behavior under different temperatures, capacitors, SRAM sizes, and chips; and (3) three proof-of-concept implementations that use the TARDIS to enable privacy-preserving RFID tags, to deter double swiping of contactless credit cards, and to increase the difficulty of brute-force attacks against e-passports.</p>
+<p>【Keywords】:</p>
+<h3 id="16. Gone in 360 Seconds: Hijacking with Hitag2.">16. Gone in 360 Seconds: Hijacking with Hitag2.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/verdult">Paper Link</a>】    【Pages】:237-252</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/v/Verdult:Roel">Roel Verdult</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Garcia:Flavio_D=">Flavio D. Garcia</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Balasch:Josep">Josep Balasch</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Secure Computation and PIR    3">Secure Computation and PIR    3</h2>
+<h3 id="17. Taking Proof-Based Verified Computation a Few Steps Closer to Practicality.">17. Taking Proof-Based Verified Computation a Few Steps Closer to Practicality.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/setty">Paper Link</a>】    【Pages】:253-268</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Setty:Srinath_T=_V=">Srinath T. V. Setty</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vu:Victor">Victor Vu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Panpalia:Nikhil">Nikhil Panpalia</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Braun:Benjamin">Benjamin Braun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Blumberg:Andrew_J=">Andrew J. Blumberg</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Walfish:Michael">Michael Walfish</a></p>
+<p>【Abstract】:
+We describe GINGER, a built system for unconditional, general-purpose, and nearly practical verification of outsourced computation. GINGER is based on PEPPER, which uses the PCP theorem and cryptographic techniques to implement an efficient argument system (a kind of interactive protocol). GINGER slashes the query size and costs via theoretical refinements that are of independent interest; broadens the computational model to include (primitive) floating-point fractions, inequality comparisons, logical operations, and conditional control flow; and includes a parallel GPU-based implementation that dramatically reduces latency.</p>
+<p>【Keywords】:</p>
+<h3 id="18. Optimally Robust Private Information Retrieval.">18. Optimally Robust Private Information Retrieval.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/devet">Paper Link</a>】    【Pages】:269-283</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Devet:Casey">Casey Devet</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Goldberg:Ian">Ian Goldberg</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Heninger:Nadia">Nadia Heninger</a></p>
+<p>【Abstract】:
+We give a protocol for multi-server information-theoretic private information retrieval which achieves the theoretical limit for Byzantine robustness. That is, the protocol can allow a client to successfully complete queries and identify server misbehavior in the presence of the maximum possible number of malicious servers. We have implemented our scheme and it is extremely fast in practice: up to thousands of times faster than previous work. We achieve these improvements by using decoding algorithms for error-correcting codes that take advantage of the practical scenario where the client is interested in multiple blocks of the database.</p>
+<p>【Keywords】:</p>
+<h3 id="19. Billion-Gate Secure Computation with Malicious Adversaries.">19. Billion-Gate Secure Computation with Malicious Adversaries.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/kreuter">Paper Link</a>】    【Pages】:285-300</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kreuter:Benjamin">Benjamin Kreuter</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shelat:Abhi">Abhi Shelat</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shen:Chih=Hao">Chih-Hao Shen</a></p>
+<p>【Abstract】:
+The goal of this paper is to assess the feasibility of two-party secure computation in the presence of a malicious adversary. Prior work has shown the feasibility of billion-gate circuits in the semi-honest model, but only the 35k-gate AES circuit in the malicious model, in part because security in the malicious model is much harder to achieve. We show that by incorporating the best known techniques and parallelizing almost all steps of the resulting protocol, evaluating billion-gate circuits is feasible in the malicious model. Our results are in the standard model (i.e., no common reference strings or PKIs) and, in contrast to prior work, we do not use the random oracle model which has well-established theoretical shortcomings.</p>
+<p>【Keywords】:</p>
+<h2 id="Authentication and Secure Deletion    3">Authentication and Secure Deletion    3</h2>
+<h3 id="20. Progressive Authentication: Deciding When to Authenticate on Mobile Phones.">20. Progressive Authentication: Deciding When to Authenticate on Mobile Phones.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/riva">Paper Link</a>】    【Pages】:301-316</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Riva:Oriana">Oriana Riva</a> ; <a href="http://dblp.uni-trier.de/pers/hd/q/Qin:Chuan">Chuan Qin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Strauss:Karin">Karin Strauss</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lymberopoulos:Dimitrios">Dimitrios Lymberopoulos</a></p>
+<p>【Abstract】:
+Mobile users are often faced with a trade-off between security and convenience. Either users do not use any security lock and risk compromising their data, or they use security locks but then have to inconveniently authenticate every time they use the device. Rather than exploring a new authentication scheme, we address the problem of deciding when to surface authentication and for which applications. We believe reducing the number of times a user is requested to authenticate lowers the barrier of entry for users who currently do not use any security. Progressive authentication, the approach we propose, combines multiple signals (biometric, continuity, possession) to determine a level of confidence in a user’s authenticity. Based on this confidence level and the degree of protection the user has configured for his applications, the system determines whether access to them requires authentication. We built a prototype running on modern phones to demonstrate progressive authentication and used it in a lab study with nine users. Compared to the state-of-the-art, the system is able to reduce the number of required authentications by 42% and still provide acceptable security guarantees, thus representing an attractive solution for users who do not use any security mechanism on their devices.</p>
+<p>【Keywords】:</p>
+<h3 id="21. Origin-Bound Certificates: A Fresh Approach to Strong Client Authentication for the Web.">21. Origin-Bound Certificates: A Fresh Approach to Strong Client Authentication for the Web.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/dietz">Paper Link</a>】    【Pages】:317-331</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dietz:Michael">Michael Dietz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Czeskis:Alexei">Alexei Czeskis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Balfanz:Dirk">Dirk Balfanz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wallach:Dan_S=">Dan S. Wallach</a></p>
+<p>【Abstract】:
+Client authentication on the web has remained in the internet-equivalent of the stone ages for the last two decades. Instead of adopting modern public-key-based authentication mechanisms, we seem to be stuck with passwords and cookies. In this paper, we propose to break this stalemate by presenting a fresh approach to public-key-based client authentication on the web. We describe a simple TLS extension that allows clients to establish strong authenticated channels with servers and to bind existing authentication tokens like HTTP cookies to such channels. This allows much of the existing infrastructure of the web to remain unchanged, while at the same time strengthening client authentication considerably against a wide range of attacks. We implemented our system in Google Chrome and Google’s web serving infrastructure, and provide a performance evaluation of this implementation.</p>
+<p>【Keywords】:</p>
+<h3 id="22. Data Node Encrypted File System: Efficient Secure Deletion for Flash Memory.">22. Data Node Encrypted File System: Efficient Secure Deletion for Flash Memory.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/reardon">Paper Link</a>】    【Pages】:333-348</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Reardon:Joel">Joel Reardon</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Capkun:Srdjan">Srdjan Capkun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Basin:David_A=">David A. Basin</a></p>
+<p>【Abstract】:
+We propose the Data Node Encrypted File System (DNEFS), which uses on-the-fly encryption and decryption of file system data nodes to efficiently and securely delete data on flash memory systems. DNEFS is a generic modification of existing flash file systems or controllers that enables secure data deletion while preserving the underlying systems’ desirable properties: application-independence, fine-grained data access, wear-levelling, and efficiency. We describe DNEFS both abstractly and in the context of the flash file system UBIFS. We propose UBIFSec, which integrates DNEFS into UBIFS. We implement UBIFSec by extending UBIFS’s Linux implementation and we integrate UBIFSec in the Android operating system running on a Google Nexus One smartphone. We show that it is efficient and usable; Android OS and applications (including video and audio playback) run normally on top of UBIFSec. To the best of our knowledge, this work presents the first comprehensive and fully-implemented secure deletion solution that works within the specification of flash memory.</p>
+<p>【Keywords】:</p>
+<h2 id="Privacy Enhancing Technologies and Network Traffic Analysis    3">Privacy Enhancing Technologies and Network Traffic Analysis    3</h2>
+<h3 id="23. Throttling Tor Bandwidth Parasites.">23. Throttling Tor Bandwidth Parasites.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/jansen">Paper Link</a>】    【Pages】:349-363</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jansen:Rob">Rob Jansen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Syverson:Paul_F=">Paul F. Syverson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hopper:Nicholas">Nicholas Hopper</a></p>
+<p>【Abstract】:
+Tor is vulnerable to network congestion and performance problems due to bulk data transfers. A large fraction of the available network capacity is consumed by a small percentage of Tor users, resulting in severe service degra- dation for the majority. Bulk users continuously drain relays of excess bandwidth, creating new network bottlenecks and exacerbating the effects of existing ones. While this problem may currently be attributed to rational users utilizing the network, it may also be exploited by a relatively low-resource adversary using similar techniques to contribute to a network denial of service (DoS) attack. Degraded service discourages the use of Tor, af- fecting both Tor’s client diversity and anonymity. Equipped with mechanisms from communication networks, we design and implement three Tor-specific algorithms that throttle bulk transfers to reduce network congestion and increase network responsiveness. Unlike existing techniques, our algorithms adapt to network dynamics using only information local to a relay. We experiment with full-network deployments of our algorithms under a range of light to heavy network loads. We find that throttling results in significant improvements to web client performance while mitigating the negative effects of bulk transfers. We also analyze how throttling affects anonymity and compare the security of our algorithms under adversarial attack. We find that throttling reduces information leakage compared to unthrottled Tor while improving anonymity against realistic adversaries.</p>
+<p>【Keywords】:</p>
+<h3 id="24. Chimera: A Declarative Language for Streaming Network Traffic Analysis.">24. Chimera: A Declarative Language for Streaming Network Traffic Analysis.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/borders">Paper Link</a>】    【Pages】:365-379</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Borders:Kevin">Kevin Borders</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Springer:Jonathan">Jonathan Springer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Burnside:Matthew">Matthew Burnside</a></p>
+<p>【Abstract】:
+Intrusion detection systems play a vital role in network security. Central to these systems is the language used to express policies. Ideally, this language should be powerful, implementation-agnostic, and cross-platform. Unfortunately, today’s popular intrusion detection systems fall short of this goal. Each has their own policy language in which expressing complicated logic requires implementation-specific code. Database systems have adapted SQL to handle streaming data, but have yet to achieve the efficiency and flexibility required for complex intrusion detection tasks. In this paper, we introduce Chimera, a declarative query language for network traffic processing that bridges the gap between powerful intrusion detection systems and a simple, platform-independent SQL syntax. Chimera extends streaming SQL languages to better handle network traffic by adding structured data types, first-class functions, and dynamic window boundaries. We show how these constructs can be applied to real-world scenarios, such as side-jacking detection and DNS feature extraction. Finally, we describe the implementation and evaluation of a compiler that translates Chimera queries into low-level code for the Bro event language.</p>
+<p>【Keywords】:</p>
+<h3 id="25. New Attacks on Timing-based Network Flow Watermarks.">25. New Attacks on Timing-based Network Flow Watermarks.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/zin">Paper Link</a>】    【Pages】:381-396</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lin:Zi">Zi Lin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hopper:Nicholas">Nicholas Hopper</a></p>
+<p>【Abstract】:
+A network flow watermarking scheme attempts to manipulate the statistical properties of a flow of packets to insert a “mark” making it easier to detect the flow after passing through one or more relay hosts. Because an attacker that is willing to tolerate delay can (nearly) always eliminate such marks, recent schemes have concentrated on making the marks “invisible” so that a passive attacker cannot detect the presence of the mark. In this work, we argue that from a system’s perspective, security against passive detection is insufficient for successful traffic analysis. We introduce a stronger, but feasible attack model (a known/chosen flow attacker) and a second security goal (security against copy attacks) and argue that security against both of these attacks is required for successful traffic analysis. We also demonstrate successful attacks against two recent watermarking schemes, RAINBOW and SWIRL, and show how considering these stronger attacks can aid in the design of passive detection attacks against each as well.</p>
+<p>【Keywords】:</p>
+<h2 id="Web Security    3">Web Security    3</h2>
+<h3 id="26. On Breaking SAML: Be Whoever You Want to Be.">26. On Breaking SAML: Be Whoever You Want to Be.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/somorovsky">Paper Link</a>】    【Pages】:397-412</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Somorovsky:Juraj">Juraj Somorovsky</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mayer:Andreas">Andreas Mayer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schwenk:J=ouml=rg">Jörg Schwenk</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kampmann:Marco">Marco Kampmann</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jensen:Meiko">Meiko Jensen</a></p>
+<p>【Abstract】:
+The Security Assertion Markup Language (SAML) is a widely adopted language for making security statements about subjects. It is a critical component for the development of federated identity deployments and Single Sign-On scenarios. In order to protect integrity and authenticity of the exchanged SAML assertions, the XML Signature standard is applied. However, the signature verification algorithm is much more complex than in traditional signature formats like PKCS#7. The integrity protection can thus be successfully circumvented by application of different XML Signature specific attacks, under a weak adversarial model. In this paper we describe an in-depth analysis of 14 major SAML frameworks and show that 11 of them, including Salesforce, Shibboleth, and IBM XS40, have critical XML Signature wrapping (XSW) vulnerabilities. Based on our analysis, we developed an automated penetration testing tool for XSW in SAML frameworks. Its feasibility was proven by additional discovery of a new XSW variant. We propose the first framework to analyze such attacks, which is based on the information flow between two components of the Relying Party. Surprisingly, this analysis also yields efficient and practical countermeasures.</p>
+<p>【Keywords】:</p>
+<h3 id="27. Clickjacking: Attacks and Defenses.">27. Clickjacking: Attacks and Defenses.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/huang">Paper Link</a>】    【Pages】:413-428</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Huang:Lin=Shung">Lin-Shung Huang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Moshchuk:Alexander">Alexander Moshchuk</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Helen_J=">Helen J. Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schecter:Stuart">Stuart Schecter</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jackson:Collin">Collin Jackson</a></p>
+<p>【Abstract】:
+Clickjacking attacks are an emerging threat on the web. In this paper, we design new clickjacking attack variants using existing techniques and demonstrate that existing clickjacking defenses are insufficient. Our attacks show that clickjacking can cause severe damages, including compromising a user’s private webcam, email or other private data, and web surfing anonymity. We observe the root cause of clickjacking is that an attacker application presents a sensitive UI element of a target application out of context to a user (such as hiding the sensitive UI by making it transparent), and hence the user is tricked to act out of context. To address this root cause, we propose a new defense, InContext, in which web sites (or applications) mark UI elements that are sensitive, and browsers (or OSes) enforce context integrity of user actions on these sensitive UI elements, ensuring that a user sees everything she should see before her ac- tion and that the timing of the action corresponds to her intent. We have conducted user studies on Amazon Mechanical Turk with 2064 participants to evaluate the effectiveness of our attacks and our defense. We show that our attacks have success rates ranging from 43% to 98%, and our InContext defense can be very effective against the clickjacking attacks in which the use of clickjacking is more effective than social engineering.</p>
+<p>【Keywords】:</p>
+<h3 id="28. Privilege Separation in HTML5 Applications.">28. Privilege Separation in HTML5 Applications.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/akhawe">Paper Link</a>】    【Pages】:429-444</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Akhawe:Devdatta">Devdatta Akhawe</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Saxena:Prateek">Prateek Saxena</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Song:Dawn">Dawn Song</a></p>
+<p>【Abstract】:
+The standard approach for privilege separation in web applications is to execute application components in different web origins. This limits the practicality of privilege separation since each web origin has finan- cial and administrative cost. In this paper, we propose a new design for achieving effective privilege separation in HTML5 applications that shows how applications can cheaply create arbitrary number of components. Our approach utilizes standardized abstractions already implemented in modern browsers. We do not advocate any changes to the underlying browser or require learning new high-level languages, which contrasts prior approaches. We empirically show that we can retrofit our design to real-world HTML5 applica- tions (browser extensions and rich client-side applications) and achieve reduction of 6x to 10000x in TCB for our case studies. Our mechanism requires less than 13 lines of application-specific code changes and considerably improves auditability.</p>
+<p>【Keywords】:</p>
+<h2 id="Software Security I    3">Software Security I    3</h2>
+<h3 id="29. Fuzzing with Code Fragments.">29. Fuzzing with Code Fragments.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/holler">Paper Link</a>】    【Pages】:445-458</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Holler:Christian">Christian Holler</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Herzig:Kim">Kim Herzig</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zeller:Andreas">Andreas Zeller</a></p>
+<p>【Abstract】:
+Fuzz testing is an automated technique providing random data as input to a software system in the hope to expose a vulnerability. In order to be effective, the fuzzed input must be common enough to pass elementary consistency checks; a JavaScript interpreter, for instance, would only accept a semantically valid program. On the other hand, the fuzzed input must be uncommon enough to trigger exceptional behavior, such as a crash of the interpreter. The LangFuzz approach resolves this conflict by using a grammar to randomly generate valid programs; the code fragments, however, partially stem from programs known to have caused invalid behavior before. LangFuzz is an effective tool for security testing: Applied on the Mozilla JavaScript interpreter, it discovered a total of 105 new severe vulnerabilities within three months of operation (and thus became one of the top security bug bounty collectors within this period); applied on the PHP interpreter, it discovered 18 new defects causing crashes.</p>
+<p>【Keywords】:</p>
+<h3 id="30. kGuard: Lightweight Kernel Protection against Return-to-User Attacks.">30. kGuard: Lightweight Kernel Protection against Return-to-User Attacks.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/kemerlis">Paper Link</a>】    【Pages】:459-474</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kemerlis:Vasileios_P=">Vasileios P. Kemerlis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Portokalidis:Georgios">Georgios Portokalidis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Keromytis:Angelos_D=">Angelos D. Keromytis</a></p>
+<p>【Abstract】:
+Return-to-user (ret2usr) attacks exploit the operating system kernel, enabling local users to hijack privileged execution paths and execute arbitrary code with elevated privileges. Current defenses have proven to be inadequate, as they have been repeatedly circumvented, incur considerable overhead, or rely on extended hyperv sors and special hardware features. We present kGuard, a compiler plugin that augments the kernel with compact inline guards, which prevent ret2usr with low performance and space overhead. kGuard can be used with any operating system that features a weak separation between kernel and user space, requires no modifications to the OS, and is applicable to both 32- and 64-bit architectures. Our evaluation demonstrates that Linux kernels compiled with kGuard become impervious to a variety of control-flow hijacking exploits. kGuard exhibits lower overhead than previous work, imposing on average an overhead of 11.4% on system call and I/O latency on x86 OSs, and 10.3% on x86-64. The size of a kGuard-protected kernel grows between 3.5% and 5.6%, due to the inserted checks, while the impact on real-life applications is minimal (≤1%).</p>
+<p>【Keywords】:</p>
+<h3 id="31. Enhanced Operating System Security Through Efficient and Fine-grained Address Space Randomization.">31. Enhanced Operating System Security Through Efficient and Fine-grained Address Space Randomization.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/giuffrida">Paper Link</a>】    【Pages】:475-490</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Giuffrida:Cristiano">Cristiano Giuffrida</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kuijsten:Anton">Anton Kuijsten</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tanenbaum:Andrew_S=">Andrew S. Tanenbaum</a></p>
+<p>【Abstract】:
+In recent years, the deployment of many application-level countermeasures against memory errors and the increasing number of vulnerabilities discovered in the kernel has fostered a renewed interest in kernel-level exploitation. Unfortunately, no comprehensive and well-established mechanism exists to protect the operating system from arbitrary attacks, due to the relatively new development of the area and the challenges involved. In this paper, we propose the first design for fine-grained address space randomization (ASR) inside the operating system (OS), providing an efficient and comprehensive countermeasure against classic and emerging attacks, such as return-oriented programming. To motivate our design, we investigate the differences with application-level ASR and find that some of the well-established assumptions in existing solutions are no longer valid inside the OS; above all, perhaps, that information leakage becomes a major concern in the new context. We show that our ASR strategy outperforms state-of-the-art solutions in terms of both performance and security without affecting the software distribution model. Finally, we present the first comprehensive live rerandomization strategy, which we found to be particularly important inside the OS. Experimental results demonstrate that our techniques yield low run-time performance overhead (less than 5% on average on both SPEC and syscall-intensive benchmarks) and limited run-time memory footprint increase (around 15% during the execution of our benchmarks). We believe our techniques can greatly enhance the level of OS security without compromising the performance and reliability of the OS.</p>
+<p>【Keywords】:</p>
+<h2 id="Botnets and Web Security    3">Botnets and Web Security    3</h2>
+<h3 id="32. From Throw-Away Traffic to Bots: Detecting the Rise of DGA-Based Malware.">32. From Throw-Away Traffic to Bots: Detecting the Rise of DGA-Based Malware.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/antonakakis">Paper Link</a>】    【Pages】:491-506</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Antonakakis:Manos">Manos Antonakakis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Perdisci:Roberto">Roberto Perdisci</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nadji:Yacin">Yacin Nadji</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vasiloglou_II:Nikolaos">Nikolaos Vasiloglou II</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Abu=Nimeh:Saeed">Saeed Abu-Nimeh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Wenke">Wenke Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dagon:David">David Dagon</a></p>
+<p>【Abstract】:
+Many botnet detection systems employ a blacklist of known command and control (C&amp;C) domains to detect bots and block their traffic. Similar to signature-based virus detection, such a botnet detection approach is static because the blacklist is updated only after running an external (and often manual) process of domain discovery. As a response, botmasters have begun employing domain generation algorithms (DGAs) to dynamically produce a large number of random domain names and select a small subset for actual C&amp;C use. That is, a C&amp;C domain is randomly generated and used for a very short period of time, thus rendering detection approaches that rely on static domain lists ineffective. Naturally, if we know how a domain generation algorithm works, we can generate the domains ahead of time and still identify and block botnet C&amp;C traffic. The existing solutions are largely based on reverse engineering of the bot malware executables, which is not always feasible. In this paper we present a new technique to detect randomly generated domains without reversing. Our insight is that most of the DGA-generated (random) domains that a bot queries would result in Non-Existent Domain (NXDomain) responses, and that bots from the same botnet (with the same DGA algorithm) would generate similar NXDomain traffic. Our approach uses a combination of clustering and classification algorithms. The clustering algorithm clusters domains based on the similarity in the make-ups of domain names as well as the groups of machines that queried these domains. The classification algorithm is used to assign the generated clusters to models of known DGAs. If a cluster cannot be assigned to a known model, then a new model is produced, indicating a new DGA variant or family. We implemented a prototype system and evaluated it on real-world DNS traffic obtained from large ISPs in North America. We report the discovery of twelve DGAs. Half of them are variants of known (botnet) DGAs, and the other half are brand new DGAs that have never been reported before.</p>
+<p>【Keywords】:</p>
+<h3 id="33. PUBCRAWL: Protecting Users and Businesses from CRAWLers.">33. PUBCRAWL: Protecting Users and Businesses from CRAWLers.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/jacob">Paper Link</a>】    【Pages】:507-522</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jacob:Gr=eacute=goire">Grégoire Jacob</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kirda:Engin">Engin Kirda</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kruegel:Christopher">Christopher Kruegel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vigna:Giovanni">Giovanni Vigna</a></p>
+<p>【Abstract】:
+Web crawlers are automated tools that browse the web to retrieve and analyze information. Although crawlers are useful tools that help users to find content on the web, they may also be malicious. Unfortunately, unauthorized (malicious) crawlers are increasingly becoming a threat for service providers because they typically collect information that attackers can abuse for spamming, phishing, or targeted attacks. In particular, social networking sites are frequent targets of malicious crawling, and there were recent cases of scraped data sold on the black market and used for blackmailing. In this paper, we introduce PUBCRAWL, a novel approach for the detection and containment of crawlers. Our detection is based on the observation that crawler traffic significantly differs from user traffic, even when many users are hidden behind a single proxy. Moreover, we present the first technique for crawler campaign attribution that discovers synchronized traffic coming from multiple hosts. Finally, we introduce a containment strategy that leverages our detection results to efficiently block crawlers while minimizing the impact on legitimate users. Our experimental results in a large, well-known social networking site (receiving tens of millions of requests per day) demonstrate that PUBCRAWL can distinguish between crawlers and users with high accuracy. We have completed our technology transfer, and the social networking site is currently running PUBCRAWL in production.</p>
+<p>【Keywords】:</p>
+<h3 id="34. Enemy of the State: A State-Aware Black-Box Web Vulnerability Scanner.">34. Enemy of the State: A State-Aware Black-Box Web Vulnerability Scanner.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/doupe">Paper Link</a>】    【Pages】:523-538</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Doup=eacute=:Adam">Adam Doupé</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cavedon:Ludovico">Ludovico Cavedon</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kruegel:Christopher">Christopher Kruegel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vigna:Giovanni">Giovanni Vigna</a></p>
+<p>【Abstract】:
+Black-box web vulnerability scanners are a popular choice for finding security vulnerabilities in web applications in an automated fashion. These tools operate in a point-and-shoot manner, testing any web application—regardless of the server-side language—for common security vulnerabilities. Unfortunately, black-box tools suffer from a number of limitations, particularly when interacting with complex applications that have multiple actions that can change the application’s state. If a vulnerability analysis tool does not take into account changes in the web application’s state, it might overlook vulnerabilities or completely miss entire portions of the web application. We propose a novel way of inferring the web application’s internal state machine from the outside—that is, by navigating through the web application, observing differences in output, and incrementally producing a model representing the web application’s state. We utilize the inferred state machine to drive a black-box web application vulnerability scanner. Our scanner traverses a web application’s state machine to find and fuzz user-input vectors and discover security flaws. We implemented our technique in a prototype crawler and linked it to the fuzzing component from an open-source web vulnerability scanner. We show that our state-aware black-box web vulnerability scanner is able to not only exercise more code of the web application, but also discover vulnerabilities that other vulnerability scanners miss.</p>
+<p>【Keywords】:</p>
+<h2 id="Mobile Devices    3">Mobile Devices    3</h2>
+<h3 id="35. Aurasium: Practical Policy Enforcement for Android Applications.">35. Aurasium: Practical Policy Enforcement for Android Applications.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/xu_rubin">Paper Link</a>】    【Pages】:539-552</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Rubin">Rubin Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sa=iuml=di:Hassen">Hassen Saïdi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Anderson:Ross_J=">Ross J. Anderson</a></p>
+<p>【Abstract】:
+The increasing popularity of Google’s mobile platform Android makes it the prime target of the latest surge in mobile malware. Most research on enhancing the platform’s security and privacy controls requires extensive modification to the operating system, which has significant usability issues and hinders efforts for widespread adoption. We develop a novel solution called Aurasium that bypasses the need to modify the Android OS while providing much of the security and privacy that users desire. We automatically repackage arbitrary applications to attach user-level sandboxing and policy enforcement code, which closely watches the application’s behavior for security and privacy violations such as attempts to retrieve a user’s sensitive information, send SMS covertly to premium numbers, or access malicious IP addresses. Aurasium can also detect and prevent cases of privilege escalation attacks. Experiments show that we can apply this solution to a large sample of benign and malicious applications with a near 100 percent success rate, without significant performance and space overhead. Aurasium has been tested on three versions of the Android OS, and is freely available.</p>
+<p>【Keywords】:</p>
+<h3 id="36. AdSplit: Separating Smartphone Advertising from Applications.">36. AdSplit: Separating Smartphone Advertising from Applications.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/shekhar">Paper Link</a>】    【Pages】:553-567</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Shekhar:Shashi">Shashi Shekhar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dietz:Michael">Michael Dietz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wallach:Dan_S=">Dan S. Wallach</a></p>
+<p>【Abstract】:
+A wide variety of smartphone applications today rely on third-party advertising services, which provide libraries that are linked into the hosting application. This situation is undesirable for both the application author and the advertiser. Advertising libraries require their own permissions, resulting in additional permission requests to users. Likewise, a malicious application could simulate the behavior of the advertising library, forging the user’s interaction and stealing money from the advertiser. This paper describes AdSplit, where we extended Android to allow an application and its advertising to run as separate processes, under separate user-ids, eliminating the need for applications to request permissions on behalf of their advertising libraries, and providing services to validate the legitimacy of clicks, locally and remotely. AdSplit automatically recompiles apps to extract their ad services, and we measure minimal runtime overhead. AdSplit also supports a system resource that allows advertisements to display their content in an embedded HTML widget, without requiring any native code.</p>
+<p>【Keywords】:</p>
+<h3 id="37. DroidScope: Seamlessly Reconstructing the OS and Dalvik Semantic Views for Dynamic Android Malware Analysis.">37. DroidScope: Seamlessly Reconstructing the OS and Dalvik Semantic Views for Dynamic Android Malware Analysis.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/yan">Paper Link</a>】    【Pages】:569-584</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yan:Lok=Kwong">Lok-Kwong Yan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yin:Heng">Heng Yin</a></p>
+<p>【Abstract】:
+The prevalence of mobile platforms, the large market share of Android, plus the openness of the Android Market makes it a hot target for malware attacks. Once a malware sample has been identified, it is critical to quickly reveal its malicious intent and inner workings. In this paper we present DroidScope, an Android analysis platform that continues the tradition of virtualization-based malware analysis. Unlike current desktop malware analysis platforms, DroidScope reconstructs both the OS-level and Java-level semantics simultaneously and seamlessly. To facilitate custom analysis, DroidScope exports three tiered APIs that mirror the three levels of an Android device: hardware, OS and Dalvik Virtual Machine. On top of DroidScope, we further developed several analysis tools to collect detailed native and Dalvik instruction traces, profile API-level activity, and track information leakage through both the Java and native components using taint analysis. These tools have proven to be effective in analyzing real world malware samples and incur reasonably low performance overheads.</p>
+<p>【Keywords】:</p>
+<h2 id="Software Security II    3">Software Security II    3</h2>
+<h3 id="38. STING: Finding Name Resolution Vulnerabilities in Programs.">38. STING: Finding Name Resolution Vulnerabilities in Programs.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/vijayakumar">Paper Link</a>】    【Pages】:585-599</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/v/Vijayakumar:Hayawardh">Hayawardh Vijayakumar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schiffman:Joshua">Joshua Schiffman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jaeger:Trent">Trent Jaeger</a></p>
+<p>【Abstract】:
+The process of name resolution, where names are resolved into resource references, is fundamental to computer science, but its use has resulted in several classes of vulnerabilities. These vulnerabilities are difficult for programmers to eliminate because their cause is external to the program: the adversary changes namespace bindings in the system to redirect victim programs to a resource of the adversary’s choosing. Researchers have also found that these attacks are very difficult to prevent systematically. Any successful defense must have both knowledge about the system namespace and the program intent to eradicate such attacks. As a result, finding and fixing program vulnerabilities to such as attacks is our best defense. In this paper, we propose the STING test engine, which finds name resolution vulnerabilities in programs by performing a dynamic analysis of name resolution processing to produce directed test cases whenever an attack may be possible. The key insight is that such name resolution attacks are possible whenever an adversary has write access to a directory shared with the victim, so STING automatically identifies when such directories will be accessed in name resolution to produce test cases that are likely to indicate a true vulnerability if undefended. Using STING, we found 21 previously-unknown vulnerabilities in a variety of Linux programs on Ubuntu and Fedora systems, demonstrating that comprehensive testing for name resolution vulnerabilities is practical.</p>
+<p>【Keywords】:</p>
+<h3 id="39. Tracking Rootkit Footprints with a Practical Memory Analysis System.">39. Tracking Rootkit Footprints with a Practical Memory Analysis System.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/cui">Paper Link</a>】    【Pages】:601-615</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cui:Weidong">Weidong Cui</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Peinado:Marcus">Marcus Peinado</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Zhilei">Zhilei Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chan:Ellick">Ellick Chan</a></p>
+<p>【Abstract】:
+In this paper, we present MAS, a practical memory analysis system for identifying a kernel rootkit’s memory footprint in an infected system. We also present two large-scale studies of applying MAS to 848 real-world Windows kernel crash dumps and 154,768 potential malware samples. Error propagation and invalid pointers are two key challenges that stop previous pointer-based memory traversal solutions from effectively and efficiently analyzing real-world systems. MAS uses a new memory traversal algorithm to support error correction and stop error propagation. Our enhanced static analysis allows the MAS memory traversal to avoid error-prone operations and provides it with a reliable partial type assignment. Our experiments show that MAS was able to analyze all memory snapshots quickly with typical running times between 30 and 160 seconds per snapshot and with near perfect accuracy. Our kernel malware study observes that the malware samples we tested hooked 191 different function pointers in 31 different data structures. With MAS, we were able to determine quickly that 95 out of the 848 crash dumps contained kernel rootkits.</p>
+<p>【Keywords】:</p>
+<h3 id="40. Tachyon: Tandem Execution for Efficient Live Patch Testing.">40. Tachyon: Tandem Execution for Efficient Live Patch Testing.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/maurer">Paper Link</a>】    【Pages】:617-630</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Maurer:Matthew">Matthew Maurer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Brumley:David">David Brumley</a></p>
+<p>【Abstract】:
+The vast number of security incidents are caused by exploits against vulnerabilities for which a patch is already available, but that users simply did not install. Patch installation is often delayed because patches must be tested manually to make sure they do not introduce problems, especially at the enterprise level. In this paper we propose a new tandem execution approach for automated patch testing. Our approach is based on a patch execution consistency model which maintains that a patch is safe to apply if the executions of the pre and post-patch program only differ on attack inputs. Tandem execution runs both pre and postpatch programs simultaneously in order to check for execution consistency. We have implemented our techniques in TACHYON, a system for online patch testing in Linux. TACHYON is able to automatically check and verify patches without source access.</p>
+<p>【Keywords】:</p>
+<h2 id="Being Social    3">Being Social    3</h2>
+<h3 id="41. Privacy-Preserving Social Plugins.">41. Privacy-Preserving Social Plugins.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/kontaxis">Paper Link</a>】    【Pages】:631-646</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Portokalidis:Georgios">Georgios Portokalidis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Polychronakis:Michalis">Michalis Polychronakis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Keromytis:Angelos_D=">Angelos D. Keromytis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Markatos:Evangelos_P=">Evangelos P. Markatos</a></p>
+<p>【Abstract】:
+The widespread adoption of social plugins, such as Facebook’s Like and Google’s +1 buttons, has raised concerns about their implications to user privacy, as they enable social networking services to track a growing part of their members’ browsing activity. Existing mitigations in the form of browser extensions can prevent social plugins from tracking user visits, but inevitably disable any kind of content personalization, ruining the user experience. In this paper we propose a novel design for privacy-preserving social plugins that decouples the retrieval of user-specific content from the loading of a social plugin. In contrast to existing solutions, this design preserves the functionality of existing social plugins by delivering the same personalized content, while it protects user privacy by avoiding the transmission of user-identifying information at load time. We have implemented our design in SafeButton, an add-on for Firefox that fully supports seven out of the nine social plugins currently provided by Facebook, including the Like button, and partially due to API restrictions the other two. As privacy-preserving social plugins maintain the functionality of existing social plugins, we envisage that they could be adopted by social networking services themselves for the benefit of their members. To that end, we also present a pure JavaScript design that can be offered transparently as a service without the need to install any browser add-ons.</p>
+<p>【Keywords】:</p>
+<h3 id="42. Social Networking with Frientegrity: Privacy and Integrity with an Untrusted Provider.">42. Social Networking with Frientegrity: Privacy and Integrity with an Untrusted Provider.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/feldman">Paper Link</a>】    【Pages】:647-662</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Feldman:Ariel_J=">Ariel J. Feldman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Blankstein:Aaron">Aaron Blankstein</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Freedman:Michael_J=">Michael J. Freedman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Felten:Edward_W=">Edward W. Felten</a></p>
+<p>【Abstract】:
+Today’s social networking services require users to trust the service provider with the confidentiality and integrity of their data. But with their history of data leaks and privacy controversies, these services are not always deserving of this trust. Indeed, a malicious provider could not only violate users’ privacy, it could equivocate and show different users divergent views of the system’s state. Such misbehavior can lead to numerous harms including surreptitious censorship. In light of these threats, this paper presents Frientegrity, a framework for social networking applications that can be realized with an untrusted service provider. In Frientegrity, a provider observes only encrypted data and cannot deviate from correct execution without being detected. Prior secure social networking systems have either been decentralized, sacrificing the availability and convenience of a centralized provider, or have focused almost entirely on users’ privacy while ignoring the threat of equivocation. On the other hand, existing systems that are robust to equivocation do not scale to the needs social networking applications in which users may have hundreds of friends, and in which users are mainly interested the latest updates, not in the thousands that may have come before. To address these challenges, we present a novel method for detecting provider equivocation in which clients collaborate to verify correctness. In addition, we introduce an access control mechanism that offers efficient revocation and scales logarithmically with the number of friends. We present a prototype implementation demonstrating that Frientegrity provides latency and throughput that meet the needs of a realistic workload.</p>
+<p>【Keywords】:</p>
+<h3 id="43. Efficient and Scalable Socware Detection in Online Social Networks.">43. Efficient and Scalable Socware Detection in Online Social Networks.</h3>
+<p>【<a href="https://www.usenix.org/conference/usenixsecurity12/technical-sessions/presentation/rahman">Paper Link</a>】    【Pages】:663-678</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Rahman:Md=_Sazzadur">Md. Sazzadur Rahman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Huang:Ting=Kai">Ting-Kai Huang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Madhyastha:Harsha_V=">Harsha V. Madhyastha</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Faloutsos:Michalis">Michalis Faloutsos</a></p>
+<p>【Abstract】:
+Online social networks (OSNs) have become the new vector for cybercrime, and hackers are finding new ways to propagate spam and malware on these platforms, which we refer to as socware. As we show here, socware cannot be identified with existing security mechanisms (e.g., URL blacklists), because it exploits different weaknesses and often has different intentions. In this paper, we present MyPageKeeper, a Facebook application that we have developed to protect Facebook users from socware. Here, we present results from the perspective of over 12K users who have installed MyPageKeeper and their roughly 2.4 million friends. Our work makes three main contributions. First, to enable protection of users at scale, we design an efficient socware detection method which takes advantage of the social context of posts. We find that our classifier is both accurate (97% of posts flagged by it are indeed socware and it incorrectly flags only 0.005% of benign posts) and efficient (it requires 46 ms on average to classify a post). Second, we show that socware significantly differs from traditional email spam or web-based malware. For example, website blacklists identify only 3% of the posts flagged by MyPageKeeper, while 26% of flagged posts point to malicious apps and pages hosted on Facebook (which no current antivirus or blacklist is designed to detect). Third, we quantify the prevalence of socware by analyzing roughly 40 million posts over four months; 49% of our users were exposed to at least one socware post in this period. Finally, we identify a new type of parasitic behavior, which we refer to as “Like-as-a-Service”, whose goal is to artificially boost the number of “Likes” of a Facebook page.</p>
+<p>【Keywords】:</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="https://github.com/huntercmd/ccf"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>

@@ -1,0 +1,332 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/skin.js"></script>
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/classie.js"></script>
+
+<!-- This is for Mathjax -->
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#NDSS 2011:San Diego, California, USA">NDSS 2011:San Diego, California, USA</a><ul>
+<li><a href="#Paper Num: 28 || Session Num: 9">Paper Num: 28 || Session Num: 9</a></li>
+<li><a href="#Session 1: Secure Emerging Applications: Social Networks and Smartphones    3">Session 1: Secure Emerging Applications: Social Networks and Smartphones    3</a><ul>
+<li><a href="#1. Soundcomber: A Stealthy and Context-Aware Sound Trojan for Smartphones.">1. Soundcomber: A Stealthy and Context-Aware Sound Trojan for Smartphones.</a></li>
+<li><a href="#2. A Security API for Distributed Social Networks.">2. A Security API for Distributed Social Networks.</a></li>
+<li><a href="#3. Location Privacy via Private Proximity Testing.">3. Location Privacy via Private Proximity Testing.</a></li>
+</ul>
+</li>
+<li><a href="#Session 2: Wireless Attacks!    3">Session 2: Wireless Attacks!    3</a><ul>
+<li><a href="#4. Relay Attacks on Passive Keyless Entry and Start Systems in Modern Cars.">4. Relay Attacks on Passive Keyless Entry and Start Systems in Modern Cars.</a></li>
+<li><a href="#5. Using Classification to Protect the Integrity of Spectrum Measurements in White Space Networks.">5. Using Classification to Protect the Integrity of Spectrum Measurements in White Space Networks.</a></li>
+<li><a href="#6. Good Neighbor: Ad hoc Pairing of Nearby Wireless Devices by Multiple Antennas.">6. Good Neighbor: Ad hoc Pairing of Nearby Wireless Devices by Multiple Antennas.</a></li>
+</ul>
+</li>
+<li><a href="#Session 3: OS Security    3">Session 3: OS Security    3</a><ul>
+<li><a href="#7. Practical Protection of Kernel Integrity for Commodity OS from Untrusted Extensions.">7. Practical Protection of Kernel Integrity for Commodity OS from Untrusted Extensions.</a></li>
+<li><a href="#8. Efficient Monitoring of Untrusted Kernel-Mode Execution.">8. Efficient Monitoring of Untrusted Kernel-Mode Execution.</a></li>
+<li><a href="#9. SigGraph: Brute Force Scanning of Kernel Data Structure Instances Using Graph-based Signatures.">9. SigGraph: Brute Force Scanning of Kernel Data Structure Instances Using Graph-based Signatures.</a></li>
+</ul>
+</li>
+<li><a href="#Session 4: Network Malware    2">Session 4: Network Malware    2</a><ul>
+<li><a href="#10. Losing Control of the Internet: Using the Data Plane to Attack the Control Plane.">10. Losing Control of the Internet: Using the Data Plane to Attack the Control Plane.</a></li>
+<li><a href="#11. EXPOSURE: Finding Malicious Domains Using Passive DNS Analysis.">11. EXPOSURE: Finding Malicious Domains Using Passive DNS Analysis.</a></li>
+</ul>
+</li>
+<li><a href="#Session 5: Software Security / Code Analysis    5">Session 5: Software Security / Code Analysis    5</a><ul>
+<li><a href="#12. Howard: A Dynamic Excavator for Reverse Engineering Data Structures.">12. Howard: A Dynamic Excavator for Reverse Engineering Data Structures.</a></li>
+<li><a href="#13. No Loitering: Exploiting Lingering Vulnerabilities in Default COM Objects.">13. No Loitering: Exploiting Lingering Vulnerabilities in Default COM Objects.</a></li>
+<li><a href="#14. TIE: Principled Reverse Engineering of Types in Binary Programs.">14. TIE: Principled Reverse Engineering of Types in Binary Programs.</a></li>
+<li><a href="#15. DTA++: Dynamic Taint Analysis with Targeted Control-Flow Propagation.">15. DTA++: Dynamic Taint Analysis with Targeted Control-Flow Propagation.</a></li>
+<li><a href="#16. AEG: Automatic Exploit Generation.">16. AEG: Automatic Exploit Generation.</a></li>
+</ul>
+</li>
+<li><a href="#Session 6: Web Security    3">Session 6: Web Security    3</a><ul>
+<li><a href="#17. Automated Discovery of Parameter Pollution Vulnerabilities in Web Applications.">17. Automated Discovery of Parameter Pollution Vulnerabilities in Web Applications.</a></li>
+<li><a href="#18. WebShield: Enabling Various Web Defense Techniques without Client Side Modifications.">18. WebShield: Enabling Various Web Defense Techniques without Client Side Modifications.</a></li>
+<li><a href="#19. HTTPOS: Sealing Information Leaks with Browser-side Obfuscation of Encrypted Flows.">19. HTTPOS: Sealing Information Leaks with Browser-side Obfuscation of Encrypted Flows.</a></li>
+</ul>
+</li>
+<li><a href="#Session 7: Network Security    3">Session 7: Network Security    3</a><ul>
+<li><a href="#20. Accurate and Provably Secure Latency Estimation with Treeple.">20. Accurate and Provably Secure Latency Estimation with Treeple.</a></li>
+<li><a href="#21. On Measuring the Similarity of Network Hosts: Pitfalls, New Metrics, and Empirical Analyses.">21. On Measuring the Similarity of Network Hosts: Pitfalls, New Metrics, and Empirical Analyses.</a></li>
+<li><a href="#22. SWIRL: A Scalable Watermark to Detect Correlated Network Flows.">22. SWIRL: A Scalable Watermark to Detect Correlated Network Flows.</a></li>
+</ul>
+</li>
+<li><a href="#Session 8: Real-World Security: Cloud Computing, Biometrics, and Humans    3">Session 8: Real-World Security: Cloud Computing, Biometrics, and Humans    3</a><ul>
+<li><a href="#23. SPARE: Replicas on Hold.">23. SPARE: Replicas on Hold.</a></li>
+<li><a href="#24. Efficient Privacy-Preserving Biometric Identification.">24. Efficient Privacy-Preserving Biometric Identification.</a></li>
+<li><a href="#25. Usability Testing a Malware-Resistant Input Mechanism.">25. Usability Testing a Malware-Resistant Input Mechanism.</a></li>
+</ul>
+</li>
+<li><a href="#Session 9: Privacy    3">Session 9: Privacy    3</a><ul>
+<li><a href="#26. Tracker: Security and Privacy for RFID-based Supply Chains.">26. Tracker: Security and Privacy for RFID-based Supply Chains.</a></li>
+<li><a href="#27. PiOS: Detecting Privacy Leaks in iOS Applications.">27. PiOS: Detecting Privacy Leaks in iOS Applications.</a></li>
+<li><a href="#28. Privacy-Preserving Aggregation of Time-Series Data.">28. Privacy-Preserving Aggregation of Time-Series Data.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="NDSS 2011:San Diego, California, USA">NDSS 2011:San Diego, California, USA</h1>
+<p><a href="http://www.isoc.org/isoc/conferences/ndss/11/">Proceedings of the Network and Distributed System Security Symposium, NDSS 2011, San Diego, California, USA, 6th February - 9th February 2011.</a> The Internet Society
+【<a href="http://dblp.uni-trier.de/db/conf/ndss/ndss2011.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 28 || Session Num: 9">Paper Num: 28 || Session Num: 9</h2>
+<ul>
+<li><a href="#Session 1: Secure Emerging Applications: Social Networks and Smartphones    3">Session 1: Secure Emerging Applications: Social Networks and Smartphones    3</a></li>
+<li><a href="#Session 2: Wireless Attacks!    3">Session 2: Wireless Attacks!    3</a></li>
+<li><a href="#Session 3: OS Security    3">Session 3: OS Security    3</a></li>
+<li><a href="#Session 4: Network Malware    2">Session 4: Network Malware    2</a></li>
+<li><a href="#Session 5: Software Security / Code Analysis    5">Session 5: Software Security / Code Analysis    5</a></li>
+<li><a href="#Session 6: Web Security    3">Session 6: Web Security    3</a></li>
+<li><a href="#Session 7: Network Security    3">Session 7: Network Security    3</a></li>
+<li><a href="#Session 8: Real-World Security: Cloud Computing, Biometrics, and Humans    3">Session 8: Real-World Security: Cloud Computing, Biometrics, and Humans    3</a></li>
+<li><a href="#Session 9: Privacy    3">Session 9: Privacy    3</a></li>
+</ul>
+<h2 id="Session 1: Secure Emerging Applications: Social Networks and Smartphones    3">Session 1: Secure Emerging Applications: Social Networks and Smartphones    3</h2>
+<h3 id="1. Soundcomber: A Stealthy and Context-Aware Sound Trojan for Smartphones.">1. Soundcomber: A Stealthy and Context-Aware Sound Trojan for Smartphones.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/1_1.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Schlegel:Roman">Roman Schlegel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Kehuan">Kehuan Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Xiao=yong">Xiao-yong Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/i/Intwala:Mehool">Mehool Intwala</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kapadia:Apu">Apu Kapadia</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:XiaoFeng">XiaoFeng Wang</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="2. A Security API for Distributed Social Networks.">2. A Security API for Distributed Social Networks.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/1_2.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Backes_0001:Michael">Michael Backes</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Maffei:Matteo">Matteo Maffei</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pecina:Kim">Kim Pecina</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="3. Location Privacy via Private Proximity Testing.">3. Location Privacy via Private Proximity Testing.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/1_3.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Narayanan:Arvind">Arvind Narayanan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Thiagarajan:Narendran">Narendran Thiagarajan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lakhani:Mugdha">Mugdha Lakhani</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hamburg:Michael">Michael Hamburg</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Boneh:Dan">Dan Boneh</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Session 2: Wireless Attacks!    3">Session 2: Wireless Attacks!    3</h2>
+<h3 id="4. Relay Attacks on Passive Keyless Entry and Start Systems in Modern Cars.">4. Relay Attacks on Passive Keyless Entry and Start Systems in Modern Cars.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/2_1.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Francillon:Aur=eacute=lien">Aurélien Francillon</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Danev:Boris">Boris Danev</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Capkun:Srdjan">Srdjan Capkun</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="5. Using Classification to Protect the Integrity of Spectrum Measurements in White Space Networks.">5. Using Classification to Protect the Integrity of Spectrum Measurements in White Space Networks.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/2_2.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Fatemieh:Omid">Omid Fatemieh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Farhadi:Ali">Ali Farhadi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chandra:Ranveer">Ranveer Chandra</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gunter:Carl_A=">Carl A. Gunter</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="6. Good Neighbor: Ad hoc Pairing of Nearby Wireless Devices by Multiple Antennas.">6. Good Neighbor: Ad hoc Pairing of Nearby Wireless Devices by Multiple Antennas.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/2_3.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cai:Liang">Liang Cai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zeng:Kai">Kai Zeng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen_0003:Hao">Hao Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mohapatra:Prasant">Prasant Mohapatra</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Session 3: OS Security    3">Session 3: OS Security    3</h2>
+<h3 id="7. Practical Protection of Kernel Integrity for Commodity OS from Untrusted Extensions.">7. Practical Protection of Kernel Integrity for Commodity OS from Untrusted Extensions.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/3_1.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/x/Xiong:Xi">Xi Xiong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tian:Donghai">Donghai Tian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu_0005:Peng">Peng Liu</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="8. Efficient Monitoring of Untrusted Kernel-Mode Execution.">8. Efficient Monitoring of Untrusted Kernel-Mode Execution.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/3_2.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Srivastava:Abhinav">Abhinav Srivastava</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Giffin:Jonathon_T=">Jonathon T. Giffin</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="9. SigGraph: Brute Force Scanning of Kernel Data Structure Instances Using Graph-based Signatures.">9. SigGraph: Brute Force Scanning of Kernel Data Structure Instances Using Graph-based Signatures.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/3_3.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lin:Zhiqiang">Zhiqiang Lin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rhee:Junghwan">Junghwan Rhee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Xiangyu">Xiangyu Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Dongyan">Dongyan Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jiang:Xuxian">Xuxian Jiang</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Session 4: Network Malware    2">Session 4: Network Malware    2</h2>
+<h3 id="10. Losing Control of the Internet: Using the Data Plane to Attack the Control Plane.">10. Losing Control of the Internet: Using the Data Plane to Attack the Control Plane.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/4_1.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Schuchard:Max">Max Schuchard</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mohaisen:Abedelaziz">Abedelaziz Mohaisen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kune:Denis_Foo">Denis Foo Kune</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hopper:Nicholas">Nicholas Hopper</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Yongdae">Yongdae Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vasserman:Eugene_Y=">Eugene Y. Vasserman</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="11. EXPOSURE: Finding Malicious Domains Using Passive DNS Analysis.">11. EXPOSURE: Finding Malicious Domains Using Passive DNS Analysis.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/4_2.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bilge:Leyla">Leyla Bilge</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kirda:Engin">Engin Kirda</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kruegel:Christopher">Christopher Kruegel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Balduzzi:Marco">Marco Balduzzi</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Session 5: Software Security / Code Analysis    5">Session 5: Software Security / Code Analysis    5</h2>
+<h3 id="12. Howard: A Dynamic Excavator for Reverse Engineering Data Structures.">12. Howard: A Dynamic Excavator for Reverse Engineering Data Structures.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/5_1.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Slowinska:Asia">Asia Slowinska</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stancescu:Traian">Traian Stancescu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bos:Herbert">Herbert Bos</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="13. No Loitering: Exploiting Lingering Vulnerabilities in Default COM Objects.">13. No Loitering: Exploiting Lingering Vulnerabilities in Default COM Objects.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/5_2.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dewey:David">David Dewey</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Traynor:Patrick">Patrick Traynor</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="14. TIE: Principled Reverse Engineering of Types in Binary Programs.">14. TIE: Principled Reverse Engineering of Types in Binary Programs.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/5_3.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lee:JongHyup">JongHyup Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Avgerinos:Thanassis">Thanassis Avgerinos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Brumley:David">David Brumley</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="15. DTA++: Dynamic Taint Analysis with Targeted Control-Flow Propagation.">15. DTA++: Dynamic Taint Analysis with Targeted Control-Flow Propagation.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/5_4.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kang:Min_Gyung">Min Gyung Kang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McCamant:Stephen">Stephen McCamant</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Poosankam:Pongsin">Pongsin Poosankam</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Song:Dawn">Dawn Song</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="16. AEG: Automatic Exploit Generation.">16. AEG: Automatic Exploit Generation.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/5_5.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Avgerinos:Thanassis">Thanassis Avgerinos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cha:Sang_Kil">Sang Kil Cha</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hao:Brent_Lim_Tze">Brent Lim Tze Hao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Brumley:David">David Brumley</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Session 6: Web Security    3">Session 6: Web Security    3</h2>
+<h3 id="17. Automated Discovery of Parameter Pollution Vulnerabilities in Web Applications.">17. Automated Discovery of Parameter Pollution Vulnerabilities in Web Applications.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/6_1.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Balduzzi:Marco">Marco Balduzzi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gimenez:Carmen_Torrano">Carmen Torrano Gimenez</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Balzarotti:Davide">Davide Balzarotti</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kirda:Engin">Engin Kirda</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="18. WebShield: Enabling Various Web Defense Techniques without Client Side Modifications.">18. WebShield: Enabling Various Web Defense Techniques without Client Side Modifications.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/6_2.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Zhichun">Zhichun Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tang:Yi">Yi Tang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cao:Yinzhi">Yinzhi Cao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rastogi:Vaibhav">Vaibhav Rastogi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Yan">Yan Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu_0001:Bin">Bin Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sbisa:Clint">Clint Sbisa</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="19. HTTPOS: Sealing Information Leaks with Browser-side Obfuscation of Encrypted Flows.">19. HTTPOS: Sealing Information Leaks with Browser-side Obfuscation of Encrypted Flows.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/6_3.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Luo:Xiapu">Xiapu Luo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Peng">Peng Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chan:Edmond_W=_W=">Edmond W. W. Chan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Wenke">Wenke Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chang:Rocky_K=_C=">Rocky K. C. Chang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Perdisci:Roberto">Roberto Perdisci</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Session 7: Network Security    3">Session 7: Network Security    3</h2>
+<h3 id="20. Accurate and Provably Secure Latency Estimation with Treeple.">20. Accurate and Provably Secure Latency Estimation with Treeple.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/7_1.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chan=Tin:Eric">Eric Chan-Tin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hopper:Nicholas">Nicholas Hopper</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="21. On Measuring the Similarity of Network Hosts: Pitfalls, New Metrics, and Empirical Analyses.">21. On Measuring the Similarity of Network Hosts: Pitfalls, New Metrics, and Empirical Analyses.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/7_2.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Coull:Scott_E=">Scott E. Coull</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Monrose:Fabian">Fabian Monrose</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bailey:Michael">Michael Bailey</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="22. SWIRL: A Scalable Watermark to Detect Correlated Network Flows.">22. SWIRL: A Scalable Watermark to Detect Correlated Network Flows.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/7_3.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Houmansadr:Amir">Amir Houmansadr</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Borisov:Nikita">Nikita Borisov</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Session 8: Real-World Security: Cloud Computing, Biometrics, and Humans    3">Session 8: Real-World Security: Cloud Computing, Biometrics, and Humans    3</h2>
+<h3 id="23. SPARE: Replicas on Hold.">23. SPARE: Replicas on Hold.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/8_1.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Distler:Tobias">Tobias Distler</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Popov:Ivan">Ivan Popov</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schr=ouml=der=Preikschat:Wolfgang">Wolfgang Schröder-Preikschat</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Reiser:Hans_P=">Hans P. Reiser</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kapitza:R=uuml=diger">Rüdiger Kapitza</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="24. Efficient Privacy-Preserving Biometric Identification.">24. Efficient Privacy-Preserving Biometric Identification.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/8_2.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Huang_0001:Yan">Yan Huang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Malka:Lior">Lior Malka</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Evans:David">David Evans</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Katz:Jonathan">Jonathan Katz</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="25. Usability Testing a Malware-Resistant Input Mechanism.">25. Usability Testing a Malware-Resistant Input Mechanism.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/8_3.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Libonati:Alana">Alana Libonati</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McCune:Jonathan_M=">Jonathan M. McCune</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Reiter:Michael_K=">Michael K. Reiter</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Session 9: Privacy    3">Session 9: Privacy    3</h2>
+<h3 id="26. Tracker: Security and Privacy for RFID-based Supply Chains.">26. Tracker: Security and Privacy for RFID-based Supply Chains.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/9_1.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Blass:Erik=Oliver">Erik-Oliver Blass</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Elkhiyaoui:Kaoutar">Kaoutar Elkhiyaoui</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Molva:Refik">Refik Molva</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="27. PiOS: Detecting Privacy Leaks in iOS Applications.">27. PiOS: Detecting Privacy Leaks in iOS Applications.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/9_2.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/e/Egele:Manuel">Manuel Egele</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kruegel:Christopher">Christopher Kruegel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kirda:Engin">Engin Kirda</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vigna:Giovanni">Giovanni Vigna</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="28. Privacy-Preserving Aggregation of Time-Series Data.">28. Privacy-Preserving Aggregation of Time-Series Data.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/11/pdf/9_3.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Shi:Elaine">Elaine Shi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chan:T==H=_Hubert">T.-H. Hubert Chan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rieffel:Eleanor_G=">Eleanor G. Rieffel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chow:Richard">Richard Chow</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Song:Dawn">Dawn Song</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="https://github.com/huntercmd/ccf"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>

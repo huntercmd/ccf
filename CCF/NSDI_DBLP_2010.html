@@ -1,0 +1,349 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/skin.js"></script>
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/classie.js"></script>
+
+<!-- This is for Mathjax -->
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#7. NSDI 2010:San Jose, California, USA">7. NSDI 2010:San Jose, California, USA</a><ul>
+<li><a href="#Paper Num: 29 || Session Num: 11">Paper Num: 29 || Session Num: 11</a></li>
+<li><a href="#Cloud Services    3">Cloud Services    3</a><ul>
+<li><a href="#1. Centrifuge: Integrated Lease Management and Partitioning for Cloud Services.">1. Centrifuge: Integrated Lease Management and Partitioning for Cloud Services.</a></li>
+<li><a href="#2. Volley: Automated Data Placement for Geo-Distributed Cloud Services.">2. Volley: Automated Data Placement for Geo-Distributed Cloud Services.</a></li>
+<li><a href="#3. Optimizing Cost and Performance in Online Service Provider Networks.">3. Optimizing Cost and Performance in Online Service Provider Networks.</a></li>
+</ul>
+</li>
+<li><a href="#Wireless 1    2">Wireless 1    2</a><ul>
+<li><a href="#4. Exploring Link Correlation for Efficient Flooding in Wireless Sensor Networks.">4. Exploring Link Correlation for Efficient Flooding in Wireless Sensor Networks.</a></li>
+<li><a href="#5. Supporting Demanding Wireless Applications with Frequency-agile Radios.">5. Supporting Demanding Wireless Applications with Frequency-agile Radios.</a></li>
+</ul>
+</li>
+<li><a href="#Peer-to-Peer    3">Peer-to-Peer    3</a><ul>
+<li><a href="#6. Contracts: Practical Contribution Incentives for P2P Live Streaming.">6. Contracts: Practical Contribution Incentives for P2P Live Streaming.</a></li>
+<li><a href="#7. Experiences with CoralCDN: A Five-Year Operational View.">7. Experiences with CoralCDN: A Five-Year Operational View.</a></li>
+<li><a href="#8. Whanau: A Sybil-proof Distributed Hash Table.">8. Whanau: A Sybil-proof Distributed Hash Table.</a></li>
+</ul>
+</li>
+<li><a href="#Web Services 1    3">Web Services 1    3</a><ul>
+<li><a href="#9. Crom: Faster Web Browsing Using Speculative Execution.">9. Crom: Faster Web Browsing Using Speculative Execution.</a></li>
+<li><a href="#10. WebProphet: Automating Performance Prediction for Web Services.">10. WebProphet: Automating Performance Prediction for Web Services.</a></li>
+<li><a href="#11. Mugshot: Deterministic Capture and Replay for JavaScript Applications.">11. Mugshot: Deterministic Capture and Replay for JavaScript Applications.</a></li>
+</ul>
+</li>
+<li><a href="#Wireless 2    3">Wireless 2    3</a><ul>
+<li><a href="#12. AccuRate: Constellation Based Rate Estimation in Wireless Networks.">12. AccuRate: Constellation Based Rate Estimation in Wireless Networks.</a></li>
+<li><a href="#13. Scalable WiFi Media Delivery through Adaptive Broadcasts.">13. Scalable WiFi Media Delivery through Adaptive Broadcasts.</a></li>
+<li><a href="#14. Maranello: Practical Partial Packet Recovery for 802.11.">14. Maranello: Practical Partial Packet Recovery for 802.11.</a></li>
+</ul>
+</li>
+<li><a href="#Routing    2">Routing    2</a><ul>
+<li><a href="#15. Reverse traceroute.">15. Reverse traceroute.</a></li>
+<li><a href="#16. Seamless BGP Migration with Router Grafting.">16. Seamless BGP Migration with Router Grafting.</a></li>
+</ul>
+</li>
+<li><a href="#Datacenter Networking    3">Datacenter Networking    3</a><ul>
+<li><a href="#17. ElasticTree: Saving Energy in Data Center Networks.">17. ElasticTree: Saving Energy in Data Center Networks.</a></li>
+<li><a href="#18. SPAIN: COTS Data-Center Ethernet for Multipathing over Arbitrary Topologies.">18. SPAIN: COTS Data-Center Ethernet for Multipathing over Arbitrary Topologies.</a></li>
+<li><a href="#19. Hedera: Dynamic Flow Scheduling for Data Center Networks.">19. Hedera: Dynamic Flow Scheduling for Data Center Networks.</a></li>
+</ul>
+</li>
+<li><a href="#Improving MapReduce    2">Improving MapReduce    2</a><ul>
+<li><a href="#20. Airavat: Security and Privacy for MapReduce.">20. Airavat: Security and Privacy for MapReduce.</a></li>
+<li><a href="#21. MapReduce Online.">21. MapReduce Online.</a></li>
+</ul>
+</li>
+<li><a href="#Web Services 2    2">Web Services 2    2</a><ul>
+<li><a href="#22. The Architecture and Implementation of an Extensible Web Crawler.">22. The Architecture and Implementation of an Extensible Web Crawler.</a></li>
+<li><a href="#23. Prophecy: Using History for High-Throughput Fault Tolerance.">23. Prophecy: Using History for High-Throughput Fault Tolerance.</a></li>
+</ul>
+</li>
+<li><a href="#Malware    3">Malware    3</a><ul>
+<li><a href="#24. Carousel: Scalable Logging for Intrusion Prevention Systems.">24. Carousel: Scalable Logging for Intrusion Prevention Systems.</a></li>
+<li><a href="#25. SplitScreen: Enabling Efficient, Distributed Malware Detection.">25. SplitScreen: Enabling Efficient, Distributed Malware Detection.</a></li>
+<li><a href="#26. Behavioral Clustering of HTTP-Based Malware and Signature Generation Using Malicious Network Traces.">26. Behavioral Clustering of HTTP-Based Malware and Signature Generation Using Malicious Network Traces.</a></li>
+</ul>
+</li>
+<li><a href="#Network Performance    3">Network Performance    3</a><ul>
+<li><a href="#27. Glasnost: Enabling End Users to Detect Traffic Differentiation.">27. Glasnost: Enabling End Users to Detect Traffic Differentiation.</a></li>
+<li><a href="#28. EndRE: An End-System Redundancy Elimination Service for Enterprises.">28. EndRE: An End-System Redundancy Elimination Service for Enterprises.</a></li>
+<li><a href="#29. Cheap and Large CAMs for High Performance Data-Intensive Networked Systems.">29. Cheap and Large CAMs for High Performance Data-Intensive Networked Systems.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="7. NSDI 2010:San Jose, California, USA">7. NSDI 2010:San Jose, California, USA</h1>
+<p><a href="https://www.usenix.org/publications/proceedings/?f[0]=im_group_audience%3A1">Proceedings of the 7th USENIX Symposium on Networked Systems Design and Implementation, NSDI 2010, April 28-30, 2010, San Jose, CA, USA.</a> USENIX Association
+【<a href="http://dblp.uni-trier.de/db/conf/nsdi/nsdi2010.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 29 || Session Num: 11">Paper Num: 29 || Session Num: 11</h2>
+<ul>
+<li><a href="#Cloud Services    3">Cloud Services    3</a></li>
+<li><a href="#Datacenter Networking    3">Datacenter Networking    3</a></li>
+<li><a href="#Improving MapReduce    2">Improving MapReduce    2</a></li>
+<li><a href="#Malware    3">Malware    3</a></li>
+<li><a href="#Network Performance    3">Network Performance    3</a></li>
+<li><a href="#Peer-to-Peer    3">Peer-to-Peer    3</a></li>
+<li><a href="#Routing    2">Routing    2</a></li>
+<li><a href="#Web Services 1    3">Web Services 1    3</a></li>
+<li><a href="#Web Services 2    2">Web Services 2    2</a></li>
+<li><a href="#Wireless 1    2">Wireless 1    2</a></li>
+<li><a href="#Wireless 2    3">Wireless 2    3</a></li>
+</ul>
+<h2 id="Cloud Services    3">Cloud Services    3</h2>
+<h3 id="1. Centrifuge: Integrated Lease Management and Partitioning for Cloud Services.">1. Centrifuge: Integrated Lease Management and Partitioning for Cloud Services.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/adya.pdf">Paper Link</a>】    【Pages】:1-16</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Adya:Atul">Atul Adya</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dunagan:John">John Dunagan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wolman:Alec">Alec Wolman</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="2. Volley: Automated Data Placement for Geo-Distributed Cloud Services.">2. Volley: Automated Data Placement for Geo-Distributed Cloud Services.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/agarwal.pdf">Paper Link</a>】    【Pages】:17-32</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Agarwal:Sharad">Sharad Agarwal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dunagan:John">John Dunagan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jain:Navendu">Navendu Jain</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Saroiu:Stefan">Stefan Saroiu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wolman:Alec">Alec Wolman</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="3. Optimizing Cost and Performance in Online Service Provider Networks.">3. Optimizing Cost and Performance in Online Service Provider Networks.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/zhang.pdf">Paper Link</a>】    【Pages】:33-48</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Zheng">Zheng Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Ming">Ming Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Greenberg:Albert_G=">Albert G. Greenberg</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Y=_Charlie">Y. Charlie Hu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mahajan:Ratul">Ratul Mahajan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Christian:Blaine">Blaine Christian</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Wireless 1    2">Wireless 1    2</h2>
+<h3 id="4. Exploring Link Correlation for Efficient Flooding in Wireless Sensor Networks.">4. Exploring Link Correlation for Efficient Flooding in Wireless Sensor Networks.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/zhu.pdf">Paper Link</a>】    【Pages】:49-64</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Ting">Ting Zhu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhong:Ziguo">Ziguo Zhong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/He:Tian">Tian He</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Zhi=Li">Zhi-Li Zhang</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="5. Supporting Demanding Wireless Applications with Frequency-agile Radios.">5. Supporting Demanding Wireless Applications with Frequency-agile Radios.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/yang.pdf">Paper Link</a>】    【Pages】:65-80</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yang_0020:Lei">Lei Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hou:Wei">Wei Hou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cao:Lili">Lili Cao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhao:Ben_Y=">Ben Y. Zhao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zheng:Haitao">Haitao Zheng</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Peer-to-Peer    3">Peer-to-Peer    3</h2>
+<h3 id="6. Contracts: Practical Contribution Incentives for P2P Live Streaming.">6. Contracts: Practical Contribution Incentives for P2P Live Streaming.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/piatek.pdf">Paper Link</a>】    【Pages】:81-94</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Piatek:Michael">Michael Piatek</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Krishnamurthy:Arvind">Arvind Krishnamurthy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Venkataramani:Arun">Arun Venkataramani</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Yang_Richard">Yang Richard Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:David">David Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jaffe:Alexander">Alexander Jaffe</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="7. Experiences with CoralCDN: A Five-Year Operational View.">7. Experiences with CoralCDN: A Five-Year Operational View.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/freedman.pdf">Paper Link</a>】    【Pages】:95-110</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Freedman:Michael_J=">Michael J. Freedman</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="8. Whanau: A Sybil-proof Distributed Hash Table.">8. Whanau: A Sybil-proof Distributed Hash Table.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/lesniewski-laas.pdf">Paper Link</a>】    【Pages】:111-126</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lesniewski=Laas:Chris">Chris Lesniewski-Laas</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kaashoek:M=_Frans">M. Frans Kaashoek</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Web Services 1    3">Web Services 1    3</h2>
+<h3 id="9. Crom: Faster Web Browsing Using Speculative Execution.">9. Crom: Faster Web Browsing Using Speculative Execution.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/mickens-crom.pdf">Paper Link</a>】    【Pages】:127-142</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mickens:James_W=">James W. Mickens</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Elson:Jeremy">Jeremy Elson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Howell:Jon">Jon Howell</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lorch:Jay">Jay Lorch</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="10. WebProphet: Automating Performance Prediction for Web Services.">10. WebProphet: Automating Performance Prediction for Web Services.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/li.pdf">Paper Link</a>】    【Pages】:143-158</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Zhichun">Zhichun Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Ming">Ming Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Zhaosheng">Zhaosheng Zhu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Yan">Yan Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Greenberg:Albert_G=">Albert G. Greenberg</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Yi=Min">Yi-Min Wang</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="11. Mugshot: Deterministic Capture and Replay for JavaScript Applications.">11. Mugshot: Deterministic Capture and Replay for JavaScript Applications.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/mickens-mugshot.pdf">Paper Link</a>】    【Pages】:159-174</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mickens:James_W=">James W. Mickens</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Elson:Jeremy">Jeremy Elson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Howell:Jon">Jon Howell</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Wireless 2    3">Wireless 2    3</h2>
+<h3 id="12. AccuRate: Constellation Based Rate Estimation in Wireless Networks.">12. AccuRate: Constellation Based Rate Estimation in Wireless Networks.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/sen_souvik.pdf">Paper Link</a>】    【Pages】:175-190</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sen:Souvik">Souvik Sen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Santhapuri:Naveen">Naveen Santhapuri</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Choudhury:Romit_Roy">Romit Roy Choudhury</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nelakuditi:Srihari">Srihari Nelakuditi</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="13. Scalable WiFi Media Delivery through Adaptive Broadcasts.">13. Scalable WiFi Media Delivery through Adaptive Broadcasts.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/sen_sayandeep.pdf">Paper Link</a>】    【Pages】:191-204</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sen:Sayandeep">Sayandeep Sen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Madabhushi:Neel_Kamal">Neel Kamal Madabhushi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Banerjee:Suman">Suman Banerjee</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="14. Maranello: Practical Partial Packet Recovery for 802.11.">14. Maranello: Practical Partial Packet Recovery for 802.11.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/han.pdf">Paper Link</a>】    【Pages】:205-218</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Han:Bo">Bo Han</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schulman:Aaron">Aaron Schulman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gringoli:Francesco">Francesco Gringoli</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Spring:Neil">Neil Spring</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bhattacharjee:Bobby">Bobby Bhattacharjee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nava:Lorenzo">Lorenzo Nava</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Ji:Lusheng">Lusheng Ji</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Seungjoon">Seungjoon Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Miller:Robert_R=">Robert R. Miller</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Routing    2">Routing    2</h2>
+<h3 id="15. Reverse traceroute.">15. Reverse traceroute.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/katz-bassett.pdf">Paper Link</a>】    【Pages】:219-234</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Katz=Bassett:Ethan">Ethan Katz-Bassett</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Madhyastha:Harsha_V=">Harsha V. Madhyastha</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Adhikari:Vijay_Kumar">Vijay Kumar Adhikari</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Scott:Colin">Colin Scott</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sherry:Justine">Justine Sherry</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wesep:Peter_van">Peter van Wesep</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Anderson:Thomas_E=">Thomas E. Anderson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Krishnamurthy:Arvind">Arvind Krishnamurthy</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="16. Seamless BGP Migration with Router Grafting.">16. Seamless BGP Migration with Router Grafting.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/keller.pdf">Paper Link</a>】    【Pages】:235-248</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Keller:Eric">Eric Keller</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rexford:Jennifer">Jennifer Rexford</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Merwe:Jacobus_E=_van_der">Jacobus E. van der Merwe</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Datacenter Networking    3">Datacenter Networking    3</h2>
+<h3 id="17. ElasticTree: Saving Energy in Data Center Networks.">17. ElasticTree: Saving Energy in Data Center Networks.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/heller.pdf">Paper Link</a>】    【Pages】:249-264</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Heller:Brandon">Brandon Heller</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Seetharaman:Srinivasan">Srinivasan Seetharaman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mahadevan:Priya">Priya Mahadevan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yiakoumis:Yiannis">Yiannis Yiakoumis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sharma:Puneet">Puneet Sharma</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Banerjee:Sujata">Sujata Banerjee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McKeown:Nick">Nick McKeown</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="18. SPAIN: COTS Data-Center Ethernet for Multipathing over Arbitrary Topologies.">18. SPAIN: COTS Data-Center Ethernet for Multipathing over Arbitrary Topologies.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/mudigonda.pdf">Paper Link</a>】    【Pages】:265-280</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mudigonda:Jayaram">Jayaram Mudigonda</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yalagandula:Praveen">Praveen Yalagandula</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Al=Fares:Mohammad">Mohammad Al-Fares</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mogul:Jeffrey_C=">Jeffrey C. Mogul</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="19. Hedera: Dynamic Flow Scheduling for Data Center Networks.">19. Hedera: Dynamic Flow Scheduling for Data Center Networks.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/al-fares.pdf">Paper Link</a>】    【Pages】:281-296</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Al=Fares:Mohammad">Mohammad Al-Fares</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Radhakrishnan:Sivasankar">Sivasankar Radhakrishnan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Raghavan:Barath">Barath Raghavan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Huang:Nelson">Nelson Huang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vahdat:Amin">Amin Vahdat</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Improving MapReduce    2">Improving MapReduce    2</h2>
+<h3 id="20. Airavat: Security and Privacy for MapReduce.">20. Airavat: Security and Privacy for MapReduce.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/roy.pdf">Paper Link</a>】    【Pages】:297-312</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Roy:Indrajit">Indrajit Roy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Setty:Srinath_T=_V=">Srinath T. V. Setty</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kilzer:Ann">Ann Kilzer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shmatikov:Vitaly">Vitaly Shmatikov</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Witchel:Emmett">Emmett Witchel</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="21. MapReduce Online.">21. MapReduce Online.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/condie.pdf">Paper Link</a>】    【Pages】:313-328</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Condie:Tyson">Tyson Condie</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Conway:Neil">Neil Conway</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Alvaro:Peter">Peter Alvaro</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hellerstein:Joseph_M=">Joseph M. Hellerstein</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Elmeleegy:Khaled">Khaled Elmeleegy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sears:Russell">Russell Sears</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Web Services 2    2">Web Services 2    2</h2>
+<h3 id="22. The Architecture and Implementation of an Extensible Web Crawler.">22. The Architecture and Implementation of an Extensible Web Crawler.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/hsieh.pdf">Paper Link</a>】    【Pages】:329-344</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hsieh:Jonathan_M=">Jonathan M. Hsieh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gribble:Steven_D=">Steven D. Gribble</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Levy:Henry_M=">Henry M. Levy</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="23. Prophecy: Using History for High-Throughput Fault Tolerance.">23. Prophecy: Using History for High-Throughput Fault Tolerance.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/sen_siddhartha.pdf">Paper Link</a>】    【Pages】:345-360</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sen:Siddhartha">Siddhartha Sen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lloyd:Wyatt">Wyatt Lloyd</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Freedman:Michael_J=">Michael J. Freedman</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Malware    3">Malware    3</h2>
+<h3 id="24. Carousel: Scalable Logging for Intrusion Prevention Systems.">24. Carousel: Scalable Logging for Intrusion Prevention Systems.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/lam.pdf">Paper Link</a>】    【Pages】:361-376</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lam:Vinh_The">Vinh The Lam</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mitzenmacher:Michael">Michael Mitzenmacher</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Varghese:George">George Varghese</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="25. SplitScreen: Enabling Efficient, Distributed Malware Detection.">25. SplitScreen: Enabling Efficient, Distributed Malware Detection.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/cha.pdf">Paper Link</a>】    【Pages】:377-390</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cha:Sang_Kil">Sang Kil Cha</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Moraru:Iulian">Iulian Moraru</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jang:Jiyong">Jiyong Jang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Truelove:John">John Truelove</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Brumley:David">David Brumley</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Andersen:David_G=">David G. Andersen</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="26. Behavioral Clustering of HTTP-Based Malware and Signature Generation Using Malicious Network Traces.">26. Behavioral Clustering of HTTP-Based Malware and Signature Generation Using Malicious Network Traces.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/perdisci.pdf">Paper Link</a>】    【Pages】:391-404</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Perdisci:Roberto">Roberto Perdisci</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Wenke">Wenke Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Feamster:Nick">Nick Feamster</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Network Performance    3">Network Performance    3</h2>
+<h3 id="27. Glasnost: Enabling End Users to Detect Traffic Differentiation.">27. Glasnost: Enabling End Users to Detect Traffic Differentiation.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/dischinger.pdf">Paper Link</a>】    【Pages】:405-418</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dischinger:Marcel">Marcel Dischinger</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Marcon:Massimiliano">Massimiliano Marcon</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Guha:Saikat">Saikat Guha</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gummadi:P=_Krishna">P. Krishna Gummadi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mahajan:Ratul">Ratul Mahajan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Saroiu:Stefan">Stefan Saroiu</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="28. EndRE: An End-System Redundancy Elimination Service for Enterprises.">28. EndRE: An End-System Redundancy Elimination Service for Enterprises.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/aggarwal.pdf">Paper Link</a>】    【Pages】:419-432</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Agarwal:Bhavish">Bhavish Agarwal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Akella:Aditya">Aditya Akella</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Anand:Ashok">Ashok Anand</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Balachandran:Athula">Athula Balachandran</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chitnis:Pushkar">Pushkar Chitnis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Muthukrishnan:Chitra">Chitra Muthukrishnan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ramjee:Ramachandran">Ramachandran Ramjee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Varghese:George">George Varghese</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="29. Cheap and Large CAMs for High Performance Data-Intensive Networked Systems.">29. Cheap and Large CAMs for High Performance Data-Intensive Networked Systems.</h3>
+<p>【<a href="http://www.usenix.org/events/nsdi10/tech/full_papers/anand.pdf">Paper Link</a>】    【Pages】:433-448</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Anand:Ashok">Ashok Anand</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Muthukrishnan:Chitra">Chitra Muthukrishnan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kappes:Steven">Steven Kappes</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Akella:Aditya">Aditya Akella</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nath:Suman">Suman Nath</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="https://github.com/huntercmd/ccf"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>

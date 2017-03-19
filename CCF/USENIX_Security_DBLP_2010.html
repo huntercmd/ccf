@@ -1,0 +1,351 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/skin.js"></script>
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/classie.js"></script>
+
+<!-- This is for Mathjax -->
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#18. USENIX Security Symposium 2010:Washington, DC, USA">18. USENIX Security Symposium 2010:Washington, DC, USA</a><ul>
+<li><a href="#Paper Num: 30 || Session Num: 10">Paper Num: 30 || Session Num: 10</a></li>
+<li><a href="#Protection Mechanisms    3">Protection Mechanisms    3</a><ul>
+<li><a href="#1. Adapting Software Fault Isolation to Contemporary CPU Architectures.">1. Adapting Software Fault Isolation to Contemporary CPU Architectures.</a></li>
+<li><a href="#2. Making Linux Protection Mechanisms Egalitarian with UserFS.">2. Making Linux Protection Mechanisms Egalitarian with UserFS.</a></li>
+<li><a href="#3. Capsicum: Practical Capabilities for UNIX.">3. Capsicum: Practical Capabilities for UNIX.</a></li>
+</ul>
+</li>
+<li><a href="#Privacy    3">Privacy    3</a><ul>
+<li><a href="#4. Structuring Protocol Implementations to Protect Sensitive Data.">4. Structuring Protocol Implementations to Protect Sensitive Data.</a></li>
+<li><a href="#5. PrETP: Privacy-Preserving Electronic Toll Pricing.">5. PrETP: Privacy-Preserving Electronic Toll Pricing.</a></li>
+<li><a href="#6. An Analysis of Private Browsing Modes in Modern Browsers.">6. An Analysis of Private Browsing Modes in Modern Browsers.</a></li>
+</ul>
+</li>
+<li><a href="#Detection of Network Attacks    3">Detection of Network Attacks    3</a><ul>
+<li><a href="#7. BotGrep: Finding P2P Bots with Structured Graph Analysis.">7. BotGrep: Finding P2P Bots with Structured Graph Analysis.</a></li>
+<li><a href="#8. Fast Regular Expression Matching Using Small TCAMs for Network Intrusion Detection and Prevention Systems.">8. Fast Regular Expression Matching Using Small TCAMs for Network Intrusion Detection and Prevention Systems.</a></li>
+<li><a href="#9. Searching the Searchers with SearchAudit.">9. Searching the Searchers with SearchAudit.</a></li>
+</ul>
+</li>
+<li><a href="#Dissecting Bugs    3">Dissecting Bugs    3</a><ul>
+<li><a href="#10. Toward Automated Detection of Logic Vulnerabilities in Web Applications.">10. Toward Automated Detection of Logic Vulnerabilities in Web Applications.</a></li>
+<li><a href="#11. Baaz: A System for Detecting Access Control Misconfigurations.">11. Baaz: A System for Detecting Access Control Misconfigurations.</a></li>
+<li><a href="#12. Cling: A Memory Allocator to Mitigate Dangling Pointers.">12. Cling: A Memory Allocator to Mitigate Dangling Pointers.</a></li>
+</ul>
+</li>
+<li><a href="#Cryptography    3">Cryptography    3</a><ul>
+<li><a href="#13. ZKPDL: A Language-Based System for Efficient Zero-Knowledge Proofs and Electronic Cash.">13. ZKPDL: A Language-Based System for Efficient Zero-Knowledge Proofs and Electronic Cash.</a></li>
+<li><a href="#14. P4P: Practical Large-Scale Privacy-Preserving Distributed Computation Robust against Malicious Users.">14. P4P: Practical Large-Scale Privacy-Preserving Distributed Computation Robust against Malicious Users.</a></li>
+<li><a href="#15. SEPIA: Privacy-Preserving Aggregation of Multi-Domain Network Events and Statistics.">15. SEPIA: Privacy-Preserving Aggregation of Multi-Domain Network Events and Statistics.</a></li>
+</ul>
+</li>
+<li><a href="#Internet Security    3">Internet Security    3</a><ul>
+<li><a href="#16. Dude, Where's That IP? Circumventing Measurement-based IP Geolocation.">16. Dude, Where's That IP? Circumventing Measurement-based IP Geolocation.</a></li>
+<li><a href="#17. Idle Port Scanning and Non-interference Analysis of Network Protocol Stacks Using Model Checking.">17. Idle Port Scanning and Non-interference Analysis of Network Protocol Stacks Using Model Checking.</a></li>
+<li><a href="#18. Building a Dynamic Reputation System for DNS.">18. Building a Dynamic Reputation System for DNS.</a></li>
+</ul>
+</li>
+<li><a href="#Real-World Security    3">Real-World Security    3</a><ul>
+<li><a href="#19. Scantegrity II Municipal Election at Takoma Park: The First E2E Binding Governmental Election with Ballot Privacy.">19. Scantegrity II Municipal Election at Takoma Park: The First E2E Binding Governmental Election with Ballot Privacy.</a></li>
+<li><a href="#20. Acoustic Side-Channel Attacks on Printers.">20. Acoustic Side-Channel Attacks on Printers.</a></li>
+<li><a href="#21. Security and Privacy Vulnerabilities of In-Car Wireless Networks: A Tire Pressure Monitoring System Case Study.">21. Security and Privacy Vulnerabilities of In-Car Wireless Networks: A Tire Pressure Monitoring System Case Study.</a></li>
+</ul>
+</li>
+<li><a href="#Web Security    3">Web Security    3</a><ul>
+<li><a href="#22. VEX: Vetting Browser Extensions for Security Vulnerabilities.">22. VEX: Vetting Browser Extensions for Security Vulnerabilities.</a></li>
+<li><a href="#23. Securing Script-Based Extensibility in Web Browsers.">23. Securing Script-Based Extensibility in Web Browsers.</a></li>
+<li><a href="#24. AdJail: Practical Enforcement of Confidentiality and Integrity Policies on Web Advertisements.">24. AdJail: Practical Enforcement of Confidentiality and Integrity Policies on Web Advertisements.</a></li>
+</ul>
+</li>
+<li><a href="#Securing Systems    3">Securing Systems    3</a><ul>
+<li><a href="#25. Realization of RF Distance Bounding.">25. Realization of RF Distance Bounding.</a></li>
+<li><a href="#26. The Case for Ubiquitous Transport-Level Encryption.">26. The Case for Ubiquitous Transport-Level Encryption.</a></li>
+<li><a href="#27. Automatic Generation of Remediation Procedures for Malware Infections.">27. Automatic Generation of Remediation Procedures for Malware Infections.</a></li>
+</ul>
+</li>
+<li><a href="#Using Humans    3">Using Humans    3</a><ul>
+<li><a href="#28. Re: CAPTCHAs-Understanding CAPTCHA-Solving Services in an Economic Context.">28. Re: CAPTCHAs-Understanding CAPTCHA-Solving Services in an Economic Context.</a></li>
+<li><a href="#29. Chipping Away at Censorship Firewalls with User-Generated Content.">29. Chipping Away at Censorship Firewalls with User-Generated Content.</a></li>
+<li><a href="#30. Fighting Coercion Attacks in Key Generation using Skin Conductance.">30. Fighting Coercion Attacks in Key Generation using Skin Conductance.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="18. USENIX Security Symposium 2010:Washington, DC, USA">18. USENIX Security Symposium 2010:Washington, DC, USA</h1>
+<p><a href="https://www.usenix.org/publications/proceedings/?f[0]=im_group_audience%3A21">19th USENIX Security Symposium, Washington, DC, USA, August 11-13, 2010, Proceedings.</a> USENIX Association
+【<a href="http://dblp.uni-trier.de/db/conf/uss/uss2010.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 30 || Session Num: 10">Paper Num: 30 || Session Num: 10</h2>
+<ul>
+<li><a href="#Cryptography    3">Cryptography    3</a></li>
+<li><a href="#Detection of Network Attacks    3">Detection of Network Attacks    3</a></li>
+<li><a href="#Dissecting Bugs    3">Dissecting Bugs    3</a></li>
+<li><a href="#Internet Security    3">Internet Security    3</a></li>
+<li><a href="#Privacy    3">Privacy    3</a></li>
+<li><a href="#Protection Mechanisms    3">Protection Mechanisms    3</a></li>
+<li><a href="#Real-World Security    3">Real-World Security    3</a></li>
+<li><a href="#Securing Systems    3">Securing Systems    3</a></li>
+<li><a href="#Using Humans    3">Using Humans    3</a></li>
+<li><a href="#Web Security    3">Web Security    3</a></li>
+</ul>
+<h2 id="Protection Mechanisms    3">Protection Mechanisms    3</h2>
+<h3 id="1. Adapting Software Fault Isolation to Contemporary CPU Architectures.">1. Adapting Software Fault Isolation to Contemporary CPU Architectures.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Sehr.pdf">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sehr:David">David Sehr</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Muth:Robert">Robert Muth</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Biffle:Cliff">Cliff Biffle</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Khimenko:Victor">Victor Khimenko</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pasko:Egor">Egor Pasko</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schimpf:Karl">Karl Schimpf</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yee:Bennet">Bennet Yee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Brad">Brad Chen</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="2. Making Linux Protection Mechanisms Egalitarian with UserFS.">2. Making Linux Protection Mechanisms Egalitarian with UserFS.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Kim.pdf">Paper Link</a>】    【Pages】:13-28</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Taesoo">Taesoo Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zeldovich:Nickolai">Nickolai Zeldovich</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="3. Capsicum: Practical Capabilities for UNIX.">3. Capsicum: Practical Capabilities for UNIX.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Watson.pdf">Paper Link</a>】    【Pages】:29-46</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Watson:Robert_N=_M=">Robert N. M. Watson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Anderson:Jonathan">Jonathan Anderson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Laurie:Ben">Ben Laurie</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kennaway:Kris">Kris Kennaway</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Privacy    3">Privacy    3</h2>
+<h3 id="4. Structuring Protocol Implementations to Protect Sensitive Data.">4. Structuring Protocol Implementations to Protect Sensitive Data.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Marchenko.pdf">Paper Link</a>】    【Pages】:47-62</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Marchenko:Petr">Petr Marchenko</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Karp:Brad">Brad Karp</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="5. PrETP: Privacy-Preserving Electronic Toll Pricing.">5. PrETP: Privacy-Preserving Electronic Toll Pricing.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Balasch.pdf">Paper Link</a>】    【Pages】:63-78</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Balasch:Josep">Josep Balasch</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rial:Alfredo">Alfredo Rial</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Troncoso:Carmela">Carmela Troncoso</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Preneel:Bart">Bart Preneel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Verbauwhede:Ingrid">Ingrid Verbauwhede</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Geuens:Christophe">Christophe Geuens</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="6. An Analysis of Private Browsing Modes in Modern Browsers.">6. An Analysis of Private Browsing Modes in Modern Browsers.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Aggarwal.pdf">Paper Link</a>】    【Pages】:79-94</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Aggarwal:Gaurav">Gaurav Aggarwal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bursztein:Elie">Elie Bursztein</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jackson:Collin">Collin Jackson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Boneh:Dan">Dan Boneh</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Detection of Network Attacks    3">Detection of Network Attacks    3</h2>
+<h3 id="7. BotGrep: Finding P2P Bots with Structured Graph Analysis.">7. BotGrep: Finding P2P Bots with Structured Graph Analysis.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Nagaraja.pdf">Paper Link</a>】    【Pages】:95-110</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Nagaraja:Shishir">Shishir Nagaraja</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mittal:Prateek">Prateek Mittal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hong:Chi=Yao">Chi-Yao Hong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Caesar:Matthew">Matthew Caesar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Borisov:Nikita">Nikita Borisov</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="8. Fast Regular Expression Matching Using Small TCAMs for Network Intrusion Detection and Prevention Systems.">8. Fast Regular Expression Matching Using Small TCAMs for Network Intrusion Detection and Prevention Systems.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Meiners.pdf">Paper Link</a>】    【Pages】:111-126</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Meiners:Chad_R=">Chad R. Meiners</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Patel:Jignesh">Jignesh Patel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Norige:Eric">Eric Norige</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Torng:Eric">Eric Torng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Alex_X=">Alex X. Liu</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="9. Searching the Searchers with SearchAudit.">9. Searching the Searchers with SearchAudit.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/John.pdf">Paper Link</a>】    【Pages】:127-142</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/John:John_P=">John P. John</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yu:Fang">Fang Yu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xie:Yinglian">Yinglian Xie</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Abadi:Mart=iacute=n">Martín Abadi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Krishnamurthy:Arvind">Arvind Krishnamurthy</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Dissecting Bugs    3">Dissecting Bugs    3</h2>
+<h3 id="10. Toward Automated Detection of Logic Vulnerabilities in Web Applications.">10. Toward Automated Detection of Logic Vulnerabilities in Web Applications.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Felmetsger.pdf">Paper Link</a>】    【Pages】:143-160</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Felmetsger:Viktoria">Viktoria Felmetsger</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cavedon:Ludovico">Ludovico Cavedon</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kruegel:Christopher">Christopher Kruegel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vigna:Giovanni">Giovanni Vigna</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="11. Baaz: A System for Detecting Access Control Misconfigurations.">11. Baaz: A System for Detecting Access Control Misconfigurations.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Das.pdf">Paper Link</a>】    【Pages】:161-176</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Das:Tathagata">Tathagata Das</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bhagwan:Ranjita">Ranjita Bhagwan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Naldurg:Prasad">Prasad Naldurg</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="12. Cling: A Memory Allocator to Mitigate Dangling Pointers.">12. Cling: A Memory Allocator to Mitigate Dangling Pointers.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Akritidis.pdf">Paper Link</a>】    【Pages】:177-192</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Akritidis:Periklis">Periklis Akritidis</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Cryptography    3">Cryptography    3</h2>
+<h3 id="13. ZKPDL: A Language-Based System for Efficient Zero-Knowledge Proofs and Electronic Cash.">13. ZKPDL: A Language-Based System for Efficient Zero-Knowledge Proofs and Electronic Cash.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Meiklejohn.pdf">Paper Link</a>】    【Pages】:193-206</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Meiklejohn:Sarah">Sarah Meiklejohn</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Erway:C=_Christopher">C. Christopher Erway</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/K=uuml=p=ccedil==uuml=:Alptekin">Alptekin Küpçü</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hinkle:Theodora">Theodora Hinkle</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lysyanskaya:Anna">Anna Lysyanskaya</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="14. P4P: Practical Large-Scale Privacy-Preserving Distributed Computation Robust against Malicious Users.">14. P4P: Practical Large-Scale Privacy-Preserving Distributed Computation Robust against Malicious Users.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Duan.pdf">Paper Link</a>】    【Pages】:207-222</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Duan:Yitao">Yitao Duan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Youdao:NetEase">NetEase Youdao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Canny:John">John Canny</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhan:Justin_Z=">Justin Z. Zhan</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="15. SEPIA: Privacy-Preserving Aggregation of Multi-Domain Network Events and Statistics.">15. SEPIA: Privacy-Preserving Aggregation of Multi-Domain Network Events and Statistics.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Burkhart.pdf">Paper Link</a>】    【Pages】:223-240</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Burkhart:Martin">Martin Burkhart</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Strasser:Mario">Mario Strasser</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Many:Dilip">Dilip Many</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dimitropoulos:Xenofontas_A=">Xenofontas A. Dimitropoulos</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Internet Security    3">Internet Security    3</h2>
+<h3 id="16. Dude, Where's That IP? Circumventing Measurement-based IP Geolocation.">16. Dude, Where's That IP? Circumventing Measurement-based IP Geolocation.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Gill.pdf">Paper Link</a>】    【Pages】:241-256</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gill:Phillipa">Phillipa Gill</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Ganjali:Yashar">Yashar Ganjali</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wong:Bernard">Bernard Wong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lie:David">David Lie</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="17. Idle Port Scanning and Non-interference Analysis of Network Protocol Stacks Using Model Checking.">17. Idle Port Scanning and Non-interference Analysis of Network Protocol Stacks Using Model Checking.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Ensafi.pdf">Paper Link</a>】    【Pages】:257-272</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/e/Ensafi:Roya">Roya Ensafi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Park:Jong_Chun">Jong Chun Park</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kapur:Deepak">Deepak Kapur</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Crandall:Jedidiah_R=">Jedidiah R. Crandall</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="18. Building a Dynamic Reputation System for DNS.">18. Building a Dynamic Reputation System for DNS.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Antonakakis.pdf">Paper Link</a>】    【Pages】:273-290</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Antonakakis:Manos">Manos Antonakakis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Perdisci:Roberto">Roberto Perdisci</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dagon:David">David Dagon</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Wenke">Wenke Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Feamster:Nick">Nick Feamster</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Real-World Security    3">Real-World Security    3</h2>
+<h3 id="19. Scantegrity II Municipal Election at Takoma Park: The First E2E Binding Governmental Election with Ballot Privacy.">19. Scantegrity II Municipal Election at Takoma Park: The First E2E Binding Governmental Election with Ballot Privacy.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Carback.pdf">Paper Link</a>】    【Pages】:291-306</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Carback:Richard">Richard Carback</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chaum:David">David Chaum</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Clark:Jeremy">Jeremy Clark</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Conway:John">John Conway</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Essex:Aleksander">Aleksander Essex</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Herrnson:Paul_S=">Paul S. Herrnson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mayberry:Travis">Travis Mayberry</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Popoveniuc:Stefan">Stefan Popoveniuc</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rivest:Ronald_L=">Ronald L. Rivest</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shen:Emily">Emily Shen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sherman:Alan_T=">Alan T. Sherman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vora:Poorvi_L=">Poorvi L. Vora</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="20. Acoustic Side-Channel Attacks on Printers.">20. Acoustic Side-Channel Attacks on Printers.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Backes.pdf">Paper Link</a>】    【Pages】:307-322</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Backes_0001:Michael">Michael Backes</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/D=uuml=rmuth:Markus">Markus Dürmuth</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gerling:Sebastian">Sebastian Gerling</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pinkal:Manfred">Manfred Pinkal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sporleder:Caroline">Caroline Sporleder</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="21. Security and Privacy Vulnerabilities of In-Car Wireless Networks: A Tire Pressure Monitoring System Case Study.">21. Security and Privacy Vulnerabilities of In-Car Wireless Networks: A Tire Pressure Monitoring System Case Study.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Rouf.pdf">Paper Link</a>】    【Pages】:323-338</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Rouf:Ishtiaq">Ishtiaq Rouf</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Miller:Robert_D=">Robert D. Miller</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mustafa:Hossen_A=">Hossen A. Mustafa</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Taylor:Travis">Travis Taylor</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Oh:Sangho">Sangho Oh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Wenyuan">Wenyuan Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gruteser:Marco">Marco Gruteser</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Trappe:Wade">Wade Trappe</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Seskar:Ivan">Ivan Seskar</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Web Security    3">Web Security    3</h2>
+<h3 id="22. VEX: Vetting Browser Extensions for Security Vulnerabilities.">22. VEX: Vetting Browser Extensions for Security Vulnerabilities.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Bandhakavi.pdf">Paper Link</a>】    【Pages】:339-354</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bandhakavi:Sruthi">Sruthi Bandhakavi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/King:Samuel_T=">Samuel T. King</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Madhusudan:P=">P. Madhusudan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Winslett:Marianne">Marianne Winslett</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="23. Securing Script-Based Extensibility in Web Browsers.">23. Securing Script-Based Extensibility in Web Browsers.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Djeric.pdf">Paper Link</a>】    【Pages】:355-370</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Djeric:Vladan">Vladan Djeric</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Goel:Ashvin">Ashvin Goel</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="24. AdJail: Practical Enforcement of Confidentiality and Integrity Policies on Web Advertisements.">24. AdJail: Practical Enforcement of Confidentiality and Integrity Policies on Web Advertisements.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/TerLouw.pdf">Paper Link</a>】    【Pages】:371-388</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Louw:Mike_Ter">Mike Ter Louw</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Ganesh:Karthik_Thotta">Karthik Thotta Ganesh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Venkatakrishnan:V=_N=">V. N. Venkatakrishnan</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Securing Systems    3">Securing Systems    3</h2>
+<h3 id="25. Realization of RF Distance Bounding.">25. Realization of RF Distance Bounding.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Rasmussen.pdf">Paper Link</a>】    【Pages】:389-402</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Rasmussen:Kasper_Bonne">Kasper Bonne Rasmussen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Capkun:Srdjan">Srdjan Capkun</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="26. The Case for Ubiquitous Transport-Level Encryption.">26. The Case for Ubiquitous Transport-Level Encryption.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Bittau.pdf">Paper Link</a>】    【Pages】:403-418</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bittau:Andrea">Andrea Bittau</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hamburg:Michael">Michael Hamburg</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Handley:Mark">Mark Handley</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mazi=egrave=res:David">David Mazières</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Boneh:Dan">Dan Boneh</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="27. Automatic Generation of Remediation Procedures for Malware Infections.">27. Automatic Generation of Remediation Procedures for Malware Infections.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Paleari.pdf">Paper Link</a>】    【Pages】:419-434</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Paleari:Roberto">Roberto Paleari</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Martignoni:Lorenzo">Lorenzo Martignoni</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Passerini:Emanuele">Emanuele Passerini</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Davidson:Drew">Drew Davidson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fredrikson:Matt">Matt Fredrikson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Giffin:Jonathon_T=">Jonathon T. Giffin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jha:Somesh">Somesh Jha</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Using Humans    3">Using Humans    3</h2>
+<h3 id="28. Re: CAPTCHAs-Understanding CAPTCHA-Solving Services in an Economic Context.">28. Re: CAPTCHAs-Understanding CAPTCHA-Solving Services in an Economic Context.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Motoyama.pdf">Paper Link</a>】    【Pages】:435-462</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Motoyama:Marti">Marti Motoyama</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Levchenko:Kirill">Kirill Levchenko</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kanich:Chris">Chris Kanich</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McCoy:Damon">Damon McCoy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Voelker:Geoffrey_M=">Geoffrey M. Voelker</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Savage:Stefan">Stefan Savage</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="29. Chipping Away at Censorship Firewalls with User-Generated Content.">29. Chipping Away at Censorship Firewalls with User-Generated Content.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Burnett.pdf">Paper Link</a>】    【Pages】:463-468</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Burnett:Sam">Sam Burnett</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Feamster:Nick">Nick Feamster</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vempala:Santosh">Santosh Vempala</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="30. Fighting Coercion Attacks in Key Generation using Skin Conductance.">30. Fighting Coercion Attacks in Key Generation using Skin Conductance.</h3>
+<p>【<a href="http://www.usenix.org/events/sec10/tech/full_papers/Gupta.pdf">Paper Link</a>】    【Pages】:469-484</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gupta:Payas">Payas Gupta</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gao:Debin">Debin Gao</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="https://github.com/huntercmd/ccf"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>

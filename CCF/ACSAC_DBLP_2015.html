@@ -1,0 +1,569 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/skin.js"></script>
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/classie.js"></script>
+
+<!-- This is for Mathjax -->
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#31. ACSAC 2015:Los Angeles, CA, USA">31. ACSAC 2015:Los Angeles, CA, USA</a><ul>
+<li><a href="#Paper Num: 47 || Session Num: 16">Paper Num: 47 || Session Num: 16</a></li>
+<li><a href="#Human Factors    3">Human Factors    3</a><ul>
+<li><a href="#1. Evaluating the Flexibility of the Java Sandbox.">1. Evaluating the Flexibility of the Java Sandbox.</a></li>
+<li><a href="#2. Emerging Image Game CAPTCHAs for Resisting Automated and Human-Solver Relay Attacks.">2. Emerging Image Game CAPTCHAs for Resisting Automated and Human-Solver Relay Attacks.</a></li>
+<li><a href="#3. On the Security and Usability of Crypto Phones.">3. On the Security and Usability of Crypto Phones.</a></li>
+</ul>
+</li>
+<li><a href="#Network Security    3">Network Security    3</a><ul>
+<li><a href="#4. Decentralized Authorization and Privacy-Enhanced Routing for Information-Centric Networks.">4. Decentralized Authorization and Privacy-Enhanced Routing for Information-Centric Networks.</a></li>
+<li><a href="#5. Know Your Achilles' Heel: Automatic Detection of Network Critical Services.">5. Know Your Achilles' Heel: Automatic Detection of Network Critical Services.</a></li>
+<li><a href="#6. Proactive Security Analysis of Changes in Virtualized Infrastructures.">6. Proactive Security Analysis of Changes in Virtualized Infrastructures.</a></li>
+</ul>
+</li>
+<li><a href="#Apps    3">Apps    3</a><ul>
+<li><a href="#7. Vulnerability Assessment of OAuth Implementations in Android Applications.">7. Vulnerability Assessment of OAuth Implementations in Android Applications.</a></li>
+<li><a href="#8. BareDroid: Large-Scale Analysis of Android Apps on Real Devices.">8. BareDroid: Large-Scale Analysis of Android Apps on Real Devices.</a></li>
+<li><a href="#9. Experimental Study with Real-world Data for Android App Security Analysis using Machine Learning.">9. Experimental Study with Real-world Data for Android App Security Analysis using Machine Learning.</a></li>
+</ul>
+</li>
+<li><a href="#Control Flow (Part 1">Control Flow (Part 1)    3</a>    3)<ul>
+<li><a href="#10. Control Flow and Code Integrity for COTS binaries: An Effective Defense Against Real-World ROP Attacks.">10. Control Flow and Code Integrity for COTS binaries: An Effective Defense Against Real-World ROP Attacks.</a></li>
+<li><a href="#11. A Principled Approach for ROP Defense.">11. A Principled Approach for ROP Defense.</a></li>
+<li><a href="#12. Defeating ROP Through Denial of Stack Pivot.">12. Defeating ROP Through Denial of Stack Pivot.</a></li>
+</ul>
+</li>
+<li><a href="#Securing the Internet of Things    3">Securing the Internet of Things    3</a><ul>
+<li><a href="#13. Handling Reboots and Mobility in 802.15.4 Security.">13. Handling Reboots and Mobility in 802.15.4 Security.</a></li>
+<li><a href="#14. Using Channel State Information for Tamper Detection in the Internet of Things.">14. Using Channel State Information for Tamper Detection in the Internet of Things.</a></li>
+<li><a href="#15. Using Visual Challenges to Verify the Integrity of Security Cameras.">15. Using Visual Challenges to Verify the Integrity of Security Cameras.</a></li>
+</ul>
+</li>
+<li><a href="#Web Security    3">Web Security    3</a><ul>
+<li><a href="#16. JaTE: Transparent and Efficient JavaScript Confinement.">16. JaTE: Transparent and Efficient JavaScript Confinement.</a></li>
+<li><a href="#17. Cross-Site Framing Attacks.">17. Cross-Site Framing Attacks.</a></li>
+<li><a href="#18. Covert Botnet Command and Control Using Twitter.">18. Covert Botnet Command and Control Using Twitter.</a></li>
+</ul>
+</li>
+<li><a href="#Mobile (Part 1">Mobile (Part 1)    3</a>    3)<ul>
+<li><a href="#19. AuDroid: Preventing Attacks on Audio Channels in Mobile Devices.">19. AuDroid: Preventing Attacks on Audio Channels in Mobile Devices.</a></li>
+<li><a href="#20. On the Robustness of Mobile Device Fingerprinting: Can Mobile Users Escape Modern Web-Tracking Mechanisms?">20. On the Robustness of Mobile Device Fingerprinting: Can Mobile Users Escape Modern Web-Tracking Mechanisms?</a></li>
+<li><a href="#21. Grab 'n Run: Secure and Practical Dynamic Code Loading for Android Applications.">21. Grab 'n Run: Secure and Practical Dynamic Code Loading for Android Applications.</a></li>
+</ul>
+</li>
+<li><a href="#Potpourri (Part 1">Potpourri (Part 1)    3</a>    3)<ul>
+<li><a href="#22. Provenance-based Integrity Protection for Windows.">22. Provenance-based Integrity Protection for Windows.</a></li>
+<li><a href="#23. MOSE: Live Migration Based On-the-Fly Software Emulation.">23. MOSE: Live Migration Based On-the-Fly Software Emulation.</a></li>
+<li><a href="#24. Privacy-preserving Virtual Machine.">24. Privacy-preserving Virtual Machine.</a></li>
+</ul>
+</li>
+<li><a href="#Embedded Devices & Computer Subsystems    3">Embedded Devices &amp; Computer Subsystems    3</a><ul>
+<li><a href="#25. Soteria: Offline Software Protection within Low-cost Embedded Devices.">25. Soteria: Offline Software Protection within Low-cost Embedded Devices.</a></li>
+<li><a href="#26. PIE: Parser Identification in Embedded Systems.">26. PIE: Parser Identification in Embedded Systems.</a></li>
+<li><a href="#27. Defending Against Malicious USB Firmware with GoodUSB.">27. Defending Against Malicious USB Firmware with GoodUSB.</a></li>
+</ul>
+</li>
+<li><a href="#Access Control    3">Access Control    3</a><ul>
+<li><a href="#28. Proximity Verification for Contactless Access Control and Authentication Systems.">28. Proximity Verification for Contactless Access Control and Authentication Systems.</a></li>
+<li><a href="#29. Scalable and Secure Concurrent Evaluation of History-based Access Control Policies.">29. Scalable and Secure Concurrent Evaluation of History-based Access Control Policies.</a></li>
+<li><a href="#30. Entity-Based Access Control: supporting more expressive access control policies.">30. Entity-Based Access Control: supporting more expressive access control policies.</a></li>
+</ul>
+</li>
+<li><a href="#Pa$$w0rdz    3">Pa$$w0rdz    3</a><ul>
+<li><a href="#31. Is Bigger Better? Comparing User-Generated Passwords on 3x3 vs. 4x4 Grid Sizes for Android's Pattern Unlock.">31. Is Bigger Better? Comparing User-Generated Passwords on 3x3 vs. 4x4 Grid Sizes for Android's Pattern Unlock.</a></li>
+<li><a href="#32. ErsatzPasswords: Ending Password Cracking and Detecting Password Leakage.">32. ErsatzPasswords: Ending Password Cracking and Detecting Password Leakage.</a></li>
+<li><a href="#33. PARS: A Uniform and Open-source Password Analysis and Research System.">33. PARS: A Uniform and Open-source Password Analysis and Research System.</a></li>
+</ul>
+</li>
+<li><a href="#Control Flow (Part 2">Control Flow (Part 2)    3</a>    3)<ul>
+<li><a href="#34. Binary Code Continent: Finer-Grained Control Flow Integrity for Stripped Binaries.">34. Binary Code Continent: Finer-Grained Control Flow Integrity for Stripped Binaries.</a></li>
+<li><a href="#35. ShrinkWrap: VTable Protection without Loose Ends.">35. ShrinkWrap: VTable Protection without Loose Ends.</a></li>
+<li><a href="#36. DynaGuard: Armoring Canary-based Protections against Brute-force Attacks.">36. DynaGuard: Armoring Canary-based Protections against Brute-force Attacks.</a></li>
+</ul>
+</li>
+<li><a href="#Mobile (Part 2">Mobile (Part 2)    3</a>    3)<ul>
+<li><a href="#37. Towards Analyzing the Input Validation Vulnerabilities associated with Android System Services.">37. Towards Analyzing the Input Validation Vulnerabilities associated with Android System Services.</a></li>
+<li><a href="#38. MorphDroid: Fine-grained Privacy Verification.">38. MorphDroid: Fine-grained Privacy Verification.</a></li>
+<li><a href="#39. MobiPluto: File System Friendly Deniable Storage for Mobile Devices.">39. MobiPluto: File System Friendly Deniable Storage for Mobile Devices.</a></li>
+</ul>
+</li>
+<li><a href="#Potpourri (Part 2">Potpourri (Part 2)    3</a>    3)<ul>
+<li><a href="#40. Analyzing and Modeling Longitudinal Security Data: Promise and Pitfalls.">40. Analyzing and Modeling Longitudinal Security Data: Promise and Pitfalls.</a></li>
+<li><a href="#41. Accurate, Low Cost and Instrumentation-Free Security Audit Logging for Windows.">41. Accurate, Low Cost and Instrumentation-Free Security Audit Logging for Windows.</a></li>
+<li><a href="#42. SeSQLite: Security Enhanced SQLite: Mandatory Access Control for Android databases.">42. SeSQLite: Security Enhanced SQLite: Mandatory Access Control for Android databases.</a></li>
+</ul>
+</li>
+<li><a href="#Applied Crypto    2">Applied Crypto    2</a><ul>
+<li><a href="#43. Combining Differential Privacy and Secure Multiparty Computation.">43. Combining Differential Privacy and Secure Multiparty Computation.</a></li>
+<li><a href="#44. Secure and Efficient Key Derivation in Portfolio Authentication Schemes Using Blakley Secret Sharing.">44. Secure and Efficient Key Derivation in Portfolio Authentication Schemes Using Blakley Secret Sharing.</a></li>
+</ul>
+</li>
+<li><a href="#Hardware & Reverse Engineering    3">Hardware &amp; Reverse Engineering    3</a><ul>
+<li><a href="#45. Getting to know your Card: Reverse-Engineering the Smart-Card Application Protocol Data Unit.">45. Getting to know your Card: Reverse-Engineering the Smart-Card Application Protocol Data Unit.</a></li>
+<li><a href="#46. Logical Partitions on Many-Core Platforms.">46. Logical Partitions on Many-Core Platforms.</a></li>
+<li><a href="#47. Hardware-assisted Memory Tracing on New SoCs Embedding FPGA Fabrics.">47. Hardware-assisted Memory Tracing on New SoCs Embedding FPGA Fabrics.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="31. ACSAC 2015:Los Angeles, CA, USA">31. ACSAC 2015:Los Angeles, CA, USA</h1>
+<p><a href="http://dl.acm.org/citation.cfm?id=2818000">Proceedings of the 31st Annual Computer Security Applications Conference, Los Angeles, CA, USA, December 7-11, 2015.</a> ACM
+【<a href="http://dblp.uni-trier.de/db/conf/acsac/acsac2015.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 47 || Session Num: 16">Paper Num: 47 || Session Num: 16</h2>
+<ul>
+<li><a href="#Access Control    3">Access Control    3</a></li>
+<li><a href="#Applied Crypto    2">Applied Crypto    2</a></li>
+<li><a href="#Apps    3">Apps    3</a></li>
+<li><a href="#Control Flow (Part 1">Control Flow (Part 1)    3</a>    3)</li>
+<li><a href="#Control Flow (Part 2">Control Flow (Part 2)    3</a>    3)</li>
+<li><a href="#Embedded Devices & Computer Subsystems    3">Embedded Devices &amp; Computer Subsystems    3</a></li>
+<li><a href="#Hardware & Reverse Engineering    3">Hardware &amp; Reverse Engineering    3</a></li>
+<li><a href="#Human Factors    3">Human Factors    3</a></li>
+<li><a href="#Mobile (Part 1">Mobile (Part 1)    3</a>    3)</li>
+<li><a href="#Mobile (Part 2">Mobile (Part 2)    3</a>    3)</li>
+<li><a href="#Network Security    3">Network Security    3</a></li>
+<li><a href="#Pa$$w0rdz    3">Pa$$w0rdz    3</a></li>
+<li><a href="#Potpourri (Part 1">Potpourri (Part 1)    3</a>    3)</li>
+<li><a href="#Potpourri (Part 2">Potpourri (Part 2)    3</a>    3)</li>
+<li><a href="#Securing the Internet of Things    3">Securing the Internet of Things    3</a></li>
+<li><a href="#Web Security    3">Web Security    3</a></li>
+</ul>
+<h2 id="Human Factors    3">Human Factors    3</h2>
+<h3 id="1. Evaluating the Flexibility of the Java Sandbox.">1. Evaluating the Flexibility of the Java Sandbox.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818003">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Coker:Zack">Zack Coker</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Maass:Michael">Michael Maass</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Ding:Tianyuan">Tianyuan Ding</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Goues:Claire_Le">Claire Le Goues</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sunshine:Joshua">Joshua Sunshine</a></p>
+<p>【Abstract】:
+The ubiquitously-installed Java Runtime Environment (JRE) provides a complex, flexible set of mechanisms that support the execution of untrusted code inside a secure sandbox. However, many recent exploits have successfully escaped the sandbox, allowing attackers to infect numerous Java hosts. We hypothesize that the Java security model affords developers more flexibility than they need or use in practice, and thus its complexity compromises security without improving practical functionality. We describe an empirical study of the ways benign open-source Java applications use and interact with the Java security manager. We found that developers regularly misunderstand or misuse Java security mechanisms, that benign programs do not use all of the vast flexibility afforded by the Java security model, and that there are clear differences between the ways benign and exploit programs interact with the security manager. We validate these results by deriving two restrictions on application behavior that restrict (1) security manager modifications and (2) privilege escalation. We demonstrate that enforcing these rules at runtime stop a representative proportion of modern Java 7 exploits without breaking backwards compatibility with benign applications. These practical rules should be enforced in the JRE to fortify the Java sandbox.</p>
+<p>【Keywords】:</p>
+<h3 id="2. Emerging Image Game CAPTCHAs for Resisting Automated and Human-Solver Relay Attacks.">2. Emerging Image Game CAPTCHAs for Resisting Automated and Human-Solver Relay Attacks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818006">Paper Link</a>】    【Pages】:11-20</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gao_0010:Song">Song Gao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mohamed:Manar">Manar Mohamed</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Saxena:Nitesh">Nitesh Saxena</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Chengcui">Chengcui Zhang</a></p>
+<p>【Abstract】:
+CAPTCHAs represent an important pillar in the web security domain. Yet, current CAPTCHAs do not fully meet the web security requirements. Many existing CAPTCHAs can be broken using automated attacks based on image processing and machine learning techniques. Moreover, most existing CAPTCHAs are completely vulnerable to human-solver relay attacks, whereby CAPTCHA challenges are simply outsourced to a remote human solver. In this paper, we introduce a new class of CAPTCHAs that can not only resist automated attacks but can also make relay attacks hard and detectable. These CAPTCHAs are carefully built on the notions of dynamic cognitive games (DCG) and emerging images (EI), present in the literature. While existing CAPTCHAs based on the DCG notion alone (e.g., an object matching game embedded in a clear background) are prone to automated attacks and those based on the EI notion alone (e.g., moving text embedded in emerging images) are prone to relay attacks, we show that a careful amalgamation of the two notions can resist both forms of attacks. Specifically, we formalize, design and implement a concrete instantiation of EI-DCG CAPTCHAs, and demonstrate its security with respect to image processing and object tracking techniques as well as their resistance to and detectability of relay attacks.</p>
+<p>【Keywords】:</p>
+<h3 id="3. On the Security and Usability of Crypto Phones.">3. On the Security and Usability of Crypto Phones.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818007">Paper Link</a>】    【Pages】:21-30</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Shirvanian:Maliheh">Maliheh Shirvanian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Saxena:Nitesh">Nitesh Saxena</a></p>
+<p>【Abstract】:
+Crypto Phones represent an important approach for end-to-end VoIP security, claiming to prevent "wiretapping" and session hijacking attacks without relying upon third parties. In order to establish a secure session, Crypto Phones rely upon end users to perform two tasks: (1) checksum comparison: verbally communicating and matching short checksums displayed on users' devices, and (2) speaker verification: ascertaining that the voice announcing the checksum is the voice of the legitimate user at the other end. However, the human errors in executing these tasks may adversely affect the security and usability of Crypto Phones. Particularly, failure to detect mismatching checksums or imitated voices would result in a compromise of Crypto Phones session communications. We present a human factors study, with 128 online participants, investigating the security and usability of Crypto Phones with respect to both checksum comparison and speaker verification. To mimic a realistic VoIP scenario, we conducted our study using the WebRTC platform where each participant made a call to our IVR server via a browser, and was presented with several challenges having matching and mismatching checksums, spoken in the legitimate user's voice, different speakers' voices and automatically synthesized voices. Our results show that Crypto Phones offer a weak level of security (significantly weaker than that guaranteed by the underlying protocols), and their usability is low (although might still be acceptable). Quantitatively, the overall average likelihood of failing to detect an attack session was about 25-50%, while the average likelihood of accepting a legitimate session was about 75%. Moreover, while the theory promises an exponential increase in security with increase in checksum size, we found a degradation in security when moving from 2-word checksum to 4-word checksum.</p>
+<p>【Keywords】:</p>
+<h2 id="Network Security    3">Network Security    3</h2>
+<h3 id="4. Decentralized Authorization and Privacy-Enhanced Routing for Information-Centric Networks.">4. Decentralized Authorization and Privacy-Enhanced Routing for Information-Centric Networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818001">Paper Link</a>】    【Pages】:31-40</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Raykova_0001:Mariana">Mariana Raykova</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lakhani:Hasnain">Hasnain Lakhani</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kazmi:Hasanat">Hasanat Kazmi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gehani:Ashish">Ashish Gehani</a></p>
+<p>【Abstract】:
+As information-centric networks are deployed in increasingly diverse settings, there is a growing need to protect the privacy of participants. We describe the design, implementation, and evaluation of a security framework that achieves this. It ensures the integrity and confidentiality of published content, the associated descriptive metadata, and the interests of subscribers. Publishers can scope access to the content, as well as which nodes in the network can broker access to it. Subscribers can limit which nodes can see their interests. Scopes are defined as policies over attributes of the individual nodes. The system transparently realizes the policies with suitable cryptographic primitives. It supports deployment in heterogeneous mobile ad hoc environments where trust may derive from multiple independent sources. Further, no external public key infrastructure is assumed. We also report on the overhead that the security adds in actual deployments on Android devices.</p>
+<p>【Keywords】:</p>
+<h3 id="5. Know Your Achilles' Heel: Automatic Detection of Network Critical Services.">5. Know Your Achilles' Heel: Automatic Detection of Network Critical Services.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818012">Paper Link</a>】    【Pages】:41-50</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zand:Ali">Ali Zand</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Houmansadr:Amir">Amir Houmansadr</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vigna:Giovanni">Giovanni Vigna</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kemmerer:Richard_A=">Richard A. Kemmerer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kruegel:Christopher">Christopher Kruegel</a></p>
+<p>【Abstract】:
+Administrators need effective tools to quickly and automatically obtain a succinct, yet informative, overview of the status of their networks to make critical administrative decisions in a timely and effective manner. While the existing tools might help in pointing out machines that are heavily used or services that are failing, more subtle relationships, such as indirect dependencies between services, are not made apparent. In this paper, we propose novel techniques to automatically provide insights into the state of a network and the importance of the network components. We developed a tool, called Paris, which receives traffic information from various off-the-shelf network monitoring devices. Paris computes an importance metric for the network's components based on which the administrators can prioritize their defensive and prohibitive actions. We evaluated Paris by running it on a mid-size, real-world network. The results show that Paris is able to automatically provide situation awareness in a timely, effective manner.</p>
+<p>【Keywords】:</p>
+<h3 id="6. Proactive Security Analysis of Changes in Virtualized Infrastructures.">6. Proactive Security Analysis of Changes in Virtualized Infrastructures.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818034">Paper Link</a>】    【Pages】:51-60</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bleikertz:S=ouml=ren">Sören Bleikertz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vogel:Carsten">Carsten Vogel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gro=szlig=:Thomas">Thomas Groß</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/M=ouml=dersheim:Sebastian">Sebastian Mödersheim</a></p>
+<p>【Abstract】:
+The pervasiveness of cloud computing can be attributed to its scale and elasticity. However, the operational complexity of the underlying cloud infrastructure is high, due to its dynamics, multi-tenancy, and size. Misconfigurations and insider attacks carry significant operational and security risks, such as breaches in tenant isolation put both the infrastructure provider and the consumers at risk. We tackle this challenge by establishing a practical security system, called Weatherman, that proactively analyzes changes induced by management operations with respect to security policies. We achieve this by contributing the first formal model of cloud management operations that captures their impact on the infrastructure in the form of graph transformations. Our approach combines such a model of operations with an information flow analysis suited for isolation as well as a policy verifier for a variety of security and operational policies. Our system provides a run-time enforcement of infrastructure security policies, as well as a what-if analysis for change planning.</p>
+<p>【Keywords】:</p>
+<h2 id="Apps    3">Apps    3</h2>
+<h3 id="7. Vulnerability Assessment of OAuth Implementations in Android Applications.">7. Vulnerability Assessment of OAuth Implementations in Android Applications.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818024">Paper Link</a>】    【Pages】:61-70</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Hui">Hui Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Yuanyuan">Yuanyuan Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Juanru">Juanru Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Hui">Hui Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Wenbo">Wenbo Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Bodong">Bodong Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gu:Dawu">Dawu Gu</a></p>
+<p>【Abstract】:
+Enforcing security on various implementations of OAuth in Android apps should consider a wide range of issues comprehensively. OAuth implementations in Android apps differ from the recommended specification due to the provider and platform factors, and the varied implementations often become vulnerable. Current vulnerability assessments on these OAuth implementations are ad hoc and lack a systematic manner. As a result, insecure OAuth implementations are still widely used and the situation is far from optimistic in many mobile app ecosystems. To address this problem, we propose a systematic vulnerability assessment framework for OAuth implementations on Android platform. Different from traditional OAuth security analyses that are experiential with a restrictive three-party model, our proposed framework utilizes an systematic security assessing methodology that adopts a five-party, three-stage model to detect typical vulnerabilities of popular OAuth implementations in Android apps. Based on this framework, a comprehensive investigation on vulnerable OAuth implementations is conducted at the level of an entire mobile app ecosystem. The investigation studies the Chinese mainland mobile app markets (e.g., Baidu App Store, Tencent, Anzhi) that covers 15 mainstream OAuth service providers. Top 100 relevant relying party apps (RP apps) are thoroughly assessed to detect vulnerable OAuth implementations, and we further perform an empirical study of over 4,000 apps to validate how frequently developers misuse the OAuth protocol. The results demonstrate that 86.2% of the apps incorporating OAuth services are vulnerable, and this ratio of Chinese mainland Android app market is much higher than that (58.7%) of Google Play.</p>
+<p>【Keywords】:</p>
+<h3 id="8. BareDroid: Large-Scale Analysis of Android Apps on Real Devices.">8. BareDroid: Large-Scale Analysis of Android Apps on Real Devices.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818036">Paper Link</a>】    【Pages】:71-80</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mutti:Simone">Simone Mutti</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fratantonio:Yanick">Yanick Fratantonio</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bianchi:Antonio">Antonio Bianchi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/i/Invernizzi:Luca">Luca Invernizzi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Corbetta:Jacopo">Jacopo Corbetta</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kirat:Dhilung">Dhilung Kirat</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kruegel:Christopher">Christopher Kruegel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vigna:Giovanni">Giovanni Vigna</a></p>
+<p>【Abstract】:
+To protect Android users, researchers have been analyzing unknown, potentially-malicious applications by using systems based on emulators, such as the Google's Bouncer and Andrubis. Emulators are the go-to choice because of their convenience: they can scale horizontally over multiple hosts, and can be reverted to a known, clean state in a matter of seconds. Emulators, however, are fundamentally different from real devices, and previous research has shown how it is possible to automatically develop heuristics to identify an emulated environment, ranging from simple flag checks and unrealistic sensor input, to fingerprinting the hypervisor's handling of basic blocks of instructions. Aware of this aspect, malware authors are starting to exploit this fundamental weakness to evade current detection systems. Unfortunately, analyzing apps directly on bare metal at scale has been so far unfeasible, because the time to restore a device to a clean snapshot is prohibitive: with the same budget, one can analyze an order of magnitude less apps on a physical device than on an emulator. In this paper, we propose BareDroid, a system that makes bare-metal analysis of Android apps feasible by quickly restoring real devices to a clean snapshot. We show how BareDroid is not detected as an emulated analysis environment by emulator-aware malware or by heuristics from prior research, allowing BareDroid to observe more potentially malicious activity generated by apps. Moreover, we provide a cost analysis, which shows that replacing emulators with BareDroid requires a financial investment of less than twice the cost of the servers that would be running the emulators. Finally, we release BareDroid as an open source project, in the hope it can be useful to other researchers to strengthen their analysis systems.</p>
+<p>【Keywords】:
+Android; Bare-metal Analysis; Evasive Malware</p>
+<h3 id="9. Experimental Study with Real-world Data for Android App Security Analysis using Machine Learning.">9. Experimental Study with Real-world Data for Android App Security Analysis using Machine Learning.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818038">Paper Link</a>】    【Pages】:81-90</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Roy:Sankardas">Sankardas Roy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/DeLoach:Jordan">Jordan DeLoach</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Yuping">Yuping Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Herndon:Nic">Nic Herndon</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Caragea:Doina">Doina Caragea</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Ou:Xinming">Xinming Ou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ranganath:Venkatesh_Prasad">Venkatesh Prasad Ranganath</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Hongmin">Hongmin Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Guevara:Nicolais">Nicolais Guevara</a></p>
+<p>【Abstract】:
+Although Machine Learning (ML) based approaches have shown promise for Android malware detection, a set of critical challenges remain unaddressed. Some of those challenges arise in relation to proper evaluation of the detection approach while others are related to the design decisions of the same. In this paper, we systematically study the impact of these challenges as a set of research questions (i.e., hypotheses). We design an experimentation framework where we can reliably vary several parameters while evaluating ML-based Android malware detection approaches. The results from the experiments are then used to answer the research questions. Meanwhile, we also demonstrate the impact of some challenges on some existing ML-based approaches. The large (market-scale) dataset (benign and malicious apps) we use in the above experiments represents the real-world Android app security analysis scale. We envision this study to encourage the practice of employing a better evaluation strategy and better designs of future ML-based approaches for Android malware detection.</p>
+<p>【Keywords】:</p>
+<h2 id="Control Flow (Part 1)    3">Control Flow (Part 1)    3</h2>
+<h3 id="10. Control Flow and Code Integrity for COTS binaries: An Effective Defense Against Real-World ROP Attacks.">10. Control Flow and Code Integrity for COTS binaries: An Effective Defense Against Real-World ROP Attacks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818016">Paper Link</a>】    【Pages】:91-100</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Mingwei">Mingwei Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sekar:R=">R. Sekar</a></p>
+<p>【Abstract】:
+Despite decades of sustained effort, memory corruption attacks continue to be one of the most serious security threats faced today. They are highly sought after by attackers, as they provide ultimate control --- the ability to execute arbitrary low-level code. Attackers have shown time and again their ability to overcome widely deployed countermeasures such as Address Space Layout Randomization (ASLR) and Data Execution Prevention (DEP) by crafting Return Oriented Programming (ROP) attacks. Although Turing-complete ROP attacks have been demonstrated in research papers, real-world ROP payloads have had a more limited objective: that of disabling DEP so that injected native code attacks can be carried out. In this paper, we provide a systematic defense, called Control Flow and Code Integrity (CFCI), that makes injected native code attacks impossible. CFCI achieves this without sacrificing compatibility with existing software, the need to replace system programs such as the dynamic loader, and without significant performance penalty. We will release CFCI as open-source software by the time of this conference.</p>
+<p>【Keywords】:</p>
+<h3 id="11. A Principled Approach for ROP Defense.">11. A Principled Approach for ROP Defense.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818021">Paper Link</a>】    【Pages】:101-110</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/q/Qiao:Rui">Rui Qiao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Mingwei">Mingwei Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sekar:R=">R. Sekar</a></p>
+<p>【Abstract】:
+Return-Oriented Programming (ROP) is an effective attack technique that can escape modern defenses such as DEP. ROP is based on repeated abuse of existing code snippets ending with return instructions (called gadgets), as compared to using injected code. Several defense mechanisms have been proposed to counter ROP by enforcing policies on the targets of return instructions, and/or their frequency. However, these policies have been repeatedly bypassed by more advanced ROP attacks. While stricter policies have the potential to thwart ROP, they lead to incompatibilities which discourage their deployment. In this work, we address this challenge by presenting a principled approach for ROP defense. Our experimental evaluation shows that our approach enforces a strong policy, while offering better compatibility and good performance.</p>
+<p>【Keywords】:</p>
+<h3 id="12. Defeating ROP Through Denial of Stack Pivot.">12. Defeating ROP Through Denial of Stack Pivot.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818023">Paper Link</a>】    【Pages】:111-120</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Prakash:Aravind">Aravind Prakash</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yin:Heng">Heng Yin</a></p>
+<p>【Abstract】:
+Return-Oriented Programming (ROP) is a popular and prevalent infiltration technique. While current solutions based on code randomization, artificial diversification and Control-Flow Integrity (CFI) have rendered ROP attacks harder to accomplish, they have been unsuccessful in completely eliminating them. Particularly, CFI-based approaches lack incremental deployability and impose high performance overhead -- two key requirements for practical application. In this paper, we present a novel compiler-level defense against ROP attacks. We observe that stack pivoting -- a key step in executing ROP attacks -- often moves the stack pointer from the stack region to a non-stack (often heap) region, thereby violating the integrity of the stack pointer. Unlike CFI-based defenses, our defense does not rely on the control-flow of the program. Instead, we assert the sanity of stack pointer at predetermined execution points in order to detect stack pivoting and thereby defeat ROP. The key advantage of our approach is that it allows for incremental deployability, an Achilles heel for CFI. That is, we can selectively protect some modules that can coexist with other unprotected modules. Other advantages include: (1) We do not depend on ASLR -- which is particularly vulnerable to information disclosure attacks, and (2) We do not make any assumptions regarding the so called "gadget". We implemented our defense in a proof-of-concept LLVM-based system called PBlocker. We evaluated PBlocker on SPEC 2006 benchmark and show an average runtime overhead of 1.04%.</p>
+<p>【Keywords】:</p>
+<h2 id="Securing the Internet of Things    3">Securing the Internet of Things    3</h2>
+<h3 id="13. Handling Reboots and Mobility in 802.15.4 Security.">13. Handling Reboots and Mobility in 802.15.4 Security.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818002">Paper Link</a>】    【Pages】:121-130</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Krentz:Konrad=Felix">Konrad-Felix Krentz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Meinel:Christoph">Christoph Meinel</a></p>
+<p>【Abstract】:
+To survive reboots, 802.15.4 security normally requires an 802.15.4 node to store both its anti-replay data and its frame counter in non-volatile memory. However, the only non-volatile memory on most 802.15.4 nodes is flash memory, which is energy consuming, slow, as well as prone to wear. Establishing session keys frees 802.15.4 nodes from storing anti-replay data and frame counters in non-volatile memory. For establishing pairwise session keys for use in 802.15.4 security in particular, Krentz et al. proposed the Adaptable Pairwise Key Establishment Scheme (APKES). Yet, APKES neither supports reboots nor mobile nodes. In this paper, we propose the Adaptive Key Establishment Scheme (AKES) to overcome these limitations of APKES. Above all, AKES makes 802.15.4 security survive reboots without storing data in non-volatile memory. Also, we implemented AKES for Contiki and demonstrate its memory and energy efficiency. Of independent interest, we resolve the issue that 802.15.4 security stops to work if a node's frame counter reaches its maximum value, as well as propose a technique for reducing the security-related per frame overhead.</p>
+<p>【Keywords】:
+6LoWPAN; Internet of things; link layer security; rejuvenation; self-adaptiveness</p>
+<h3 id="14. Using Channel State Information for Tamper Detection in the Internet of Things.">14. Using Channel State Information for Tamper Detection in the Internet of Things.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818028">Paper Link</a>】    【Pages】:131-140</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bagci:Ibrahim_Ethem">Ibrahim Ethem Bagci</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Roedig:Utz">Utz Roedig</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Martinovic:Ivan">Ivan Martinovic</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schulz:Matthias">Matthias Schulz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hollick:Matthias">Matthias Hollick</a></p>
+<p>【Abstract】:
+The Internet of Things (IoT) is increasingly used for critical applications and securing the IoT has become a major concern. Among other issues it is important to ensure that tampering with IoT devices is detected. Many IoT devices use WiFi for communication and Channel State Information (CSI) based tamper detection is a valid option. Each 802.11n WiFi frame contains a preamble which allows a receiver to estimate the impact of the wireless channel, the transmitter and the receiver on the signal. The estimation result - the CSI - is used by a receiver to extract the transmitted information. However, as the CSI depends on the communication environment and the transmitter hardware, it can be used as well for security purposes. If an attacker tampers with a transmitter it will have an effect on the CSI measured at a receiver. Unfortunately not only tamper events lead to CSI fluctuations; movement of people in the communication environment has an impact too. We propose to analyse CSI values of a transmission simultaneously at multiple receivers to improve distinction of tamper and movement events. A moving person is expected to have an impact on some but not all communication links between transmitter and the receivers. A tamper event impacts on all links between transmitter and the receivers. The paper describes the necessary algorithms for the proposed tamper detection method. In particular we analyse the tamper detection capability in practical deployments with varying intensity of people movement. In our experiments the proposed system deployed in a busy office environment was capable to detect 53% of tamper events (TPR = 53%) while creating zero false alarms (FPR = 0%).</p>
+<p>【Keywords】:
+802.11n; Channel State Information; OFDM; PHY; Security; Tamper Detection; Wireless</p>
+<h3 id="15. Using Visual Challenges to Verify the Integrity of Security Cameras.">15. Using Visual Challenges to Verify the Integrity of Security Cameras.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818045">Paper Link</a>】    【Pages】:141-150</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/v/Valente:Junia">Junia Valente</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/C=aacute=rdenas:Alvaro_A=">Alvaro A. Cárdenas</a></p>
+<p>【Abstract】:
+We propose a new way to verify the integrity and freshness of footage from security cameras by sending visual challenges to the area being monitored by the camera. We study the effectiveness of periodically updating plain text and QR code visual challenges, propose attack detection statistics for each of them, and study their performance under normal conditions (without attack) and against a variety of adversaries. Our implementation results show that visual challenges are an effective method to add defense-in-depth mechanisms to improve the trustworthiness of security cameras.</p>
+<p>【Keywords】:</p>
+<h2 id="Web Security    3">Web Security    3</h2>
+<h3 id="16. JaTE: Transparent and Efficient JavaScript Confinement.">16. JaTE: Transparent and Efficient JavaScript Confinement.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818019">Paper Link</a>】    【Pages】:151-160</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Tran:Tung">Tung Tran</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pelizzi:Riccardo">Riccardo Pelizzi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sekar:R=">R. Sekar</a></p>
+<p>【Abstract】:
+Inclusion of third-party scripts is a common practice, even among major sites handling sensitive data. The default browser security policies are ill-suited for securing web sites from vulnerable or malicious third-party scripts: the choice is between full privilege (<script>) and isolation (<iframe>), with nearly all use cases (advertisement, libraries, analytics, etc.) requiring the former. Previous work attempted to bridge the gap between the two alternatives, but all the solutions were plagued by one or more of the following problems: (a) lack of compatibility, causing most existing third-party scripts to fail (b) excessive performance overheads, and (c) not supporting object-level policies. For these reasons, confinement of JavaScript code suitable for widespread deployment is still an open problem. Our solution, JaTE, has none of the above shortcomings. In contrast, our approach can be deployed on today's web sites, while imposing a relatively low overhead of about 20%, even on web pages that include about a megabyte of minified JavaScript code.</p>
+<p>【Keywords】:</p>
+<h3 id="17. Cross-Site Framing Attacks.">17. Cross-Site Framing Attacks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818029">Paper Link</a>】    【Pages】:161-170</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gelernter:Nethanel">Nethanel Gelernter</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Grinstein:Yoel">Yoel Grinstein</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Herzberg:Amir">Amir Herzberg</a></p>
+<p>【Abstract】:
+We identify the threat of cross-site framing attacks, which involves planting false evidence that incriminates computer users, without requiring access to their computer. We further show that a variety of framing-evidence can be planted using only modest framing-attacker capabilities. The attacker can plant evidence in both the logs of popular reputable sites and in the computer of the victim, without requiring client-side malware and without leaving traces. To infect the records of several of the most popular sites, we identified operations that are often considered benign and hence not protected from cross-site request forgery (CSRF) attacks. We demonstrate the attacks on the largest search engines: Google, Bing, and Yahoo!, on Youtube and Facebook, and on the e-commerce sites: Amazon, eBay, and Craigslist. To plant pieces of framing evidence on the computer, we abused the vulnerabilities of browsers and weaknesses in the examination procedure done by forensic software. Specifically, we show that it is possible to manipulate the common NTFS file system and to plant files on the hard disk of the victim, without leaving any traces indicating that these files were created via the browser. We validated the effectiveness of the framing evidence with the assistance of law authorities, in addition to using prominent forensic software. This work also discusses tactics for defense against cross-site framing and its applicability to web-services, browsers, and forensic software.</p>
+<p>【Keywords】:
+Forensic; Framing; Security; Web attacks</p>
+<h3 id="18. Covert Botnet Command and Control Using Twitter.">18. Covert Botnet Command and Control Using Twitter.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818047">Paper Link</a>】    【Pages】:171-180</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Pantic:Nick">Nick Pantic</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Husain:Mohammad_Iftekhar">Mohammad Iftekhar Husain</a></p>
+<p>【Abstract】:
+Botnets are one of the primary threats in computer security today. They are used for launching denial of service attacks, sending spam and phishing emails, and collecting private information. However, every botnet requires coordination. In order to initiate an attack, a botmaster must communicate to all of the bots in the network. In this paper, we present a steganographic system that demonstrates the feasibility of the social networking website Twitter as a botnet command and control center that an attacker could use to reliably communicate messages to a botnet with low latency and nearly perfect rate of transmission. Our system generates plausible cover messages based on a required tweet length determined by an encoding map that has been constructed based on the structure of the secret messages. The system considers both the input symbol frequencies (e.g. English letter frequencies) as well as the tweet length posting frequencies for constructing the encoding maps. A technique for automatically generating Twitter account names based on Markov chains is also presented so that the bots can connect to new accounts if the existing botmaster account is unavailable. All the experiments were performed using the 7.3M actual tweets from 3.7K verified accounts collected by the tweet parser developed by us. We have evaluated the efficacy of the system using Emulab and usability of the system through Amazon's Mechanical Turk with promising results. An analysis of the steganographic security of the proposed system has also been provided. By demonstrating how a botmaster might perform such communication using online social networks, our work provides the basis to detect and prevent emerging botnet activities.</p>
+<p>【Keywords】:
+Botnet; Command and Control; Denial of Service; Social Network; Steganography; Twitter</p>
+<h2 id="Mobile (Part 1)    3">Mobile (Part 1)    3</h2>
+<h3 id="19. AuDroid: Preventing Attacks on Audio Channels in Mobile Devices.">19. AuDroid: Preventing Attacks on Audio Channels in Mobile Devices.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818005">Paper Link</a>】    【Pages】:181-190</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Petracca:Giuseppe">Giuseppe Petracca</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sun:Yuqiong">Yuqiong Sun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jaeger:Trent">Trent Jaeger</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Atamli:Ahmad">Ahmad Atamli</a></p>
+<p>【Abstract】:
+Voice control is a popular way to operate mobile devices, enabling users to communicate requests to their devices. However, adversaries can leverage voice control to trick mobile devices into executing commands to leak secrets or to modify critical information. Contemporary mobile operating systems fail to prevent such attacks because they do not control access to the speaker at all and fail to control when untrusted apps may use the microphone, enabling authorized apps to create exploitable communication channels. In this paper, we propose a security mechanism that tracks the creation of audio communication channels explicitly and controls the information flows over these channels to prevent several types of attacks. We design and implement AuDroid, an extension to the SE Linux reference monitor integrated into the Android operating system for enforcing lattice security policies over the dynamically changing use of system audio resources. To enhance flexibility, when information flow errors are detected, the device owner, system apps and services are given the opportunity to resolve information flow errors using known methods, enabling AuDroid to run many configurations safely. We evaluate our approach on 17 widely-used apps that make extensive use of the microphone and speaker, finding that AuDroid prevents six types of attack scenarios on audio channels while permitting all 17 apps to run effectively. AuDroid shows that it is possible to prevent attacks using audio channels without compromising functionality or introducing significant performance overhead.</p>
+<p>【Keywords】:
+Authorization; Information Flow; Mobile Systems Security</p>
+<h3 id="20. On the Robustness of Mobile Device Fingerprinting: Can Mobile Users Escape Modern Web-Tracking Mechanisms?">20. On the Robustness of Mobile Device Fingerprinting: Can Mobile Users Escape Modern Web-Tracking Mechanisms?</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818032">Paper Link</a>】    【Pages】:191-200</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hupperich:Thomas">Thomas Hupperich</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Maiorca:Davide">Davide Maiorca</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/K=uuml=hrer:Marc">Marc Kührer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Holz:Thorsten">Thorsten Holz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Giacinto:Giorgio">Giorgio Giacinto</a></p>
+<p>【Abstract】:
+Client fingerprinting techniques enhance classical cookie-based user tracking to increase the robustness of tracking techniques. A unique identifier is created based on characteristic attributes of the client device, and then used for deployment of personalized advertisements or similar use cases. Whereas fingerprinting performs well for highly customized devices (especially desktop computers), these methods often lack in precision for highly standardized devices like mobile phones. In this paper, we show that widely used techniques do not perform well for mobile devices yet, but that it is possible to build a fingerprinting system for precise recognition and identification. We evaluate our proposed system in an online study and verify its robustness against misclassification. Fingerprinting of web clients is often seen as an offence to web users' privacy as it usually takes place without the users' knowledge, awareness, and consent. Thus, we also analyze whether it is possible to outrun fingerprinting of mobile devices. We investigate different scenarios in which users are able to circumvent a fingerprinting system and evade our newly created methods.</p>
+<p>【Keywords】:</p>
+<h3 id="21. Grab 'n Run: Secure and Practical Dynamic Code Loading for Android Applications.">21. Grab 'n Run: Secure and Practical Dynamic Code Loading for Android Applications.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818042">Paper Link</a>】    【Pages】:201-210</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Falsina:Luca">Luca Falsina</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fratantonio:Yanick">Yanick Fratantonio</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zanero:Stefano">Stefano Zanero</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kruegel:Christopher">Christopher Kruegel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vigna:Giovanni">Giovanni Vigna</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Maggi:Federico">Federico Maggi</a></p>
+<p>【Abstract】:
+Android introduced the dynamic code loading (DCL) mechanism to allow for code reuse, to achieve extensibility, to enable updating functionalities, or to boost application start-up performance. In spite of its wide adoption by developers, previous research has shown that the secure implementation of DCL-based functionality is challenging, often leading to remote code injection vulnerabilities. Unfortunately, previous attempts to address this problem by both the academic and Android developers communities are affected by either practicality or completeness issues, and, in some cases, are affected by severe vulnerabilities. In this paper, we propose, design, implement, and test Grab 'n Run, a novel code verification protocol and a series of supporting libraries, APIs, and tools, that address the problem by abstracting away from the developer many of the challenging implementation details. Grab 'n Run is designed to be practical: Among its tools, it provides a drop-in library, which requires no modifications to the Android framework or the underlying Dalvik/ART runtime, is very similar to the native API, and most code can be automatically rewritten to use it. Grab 'n Run also contains an application-rewriting tool, which allows to easily port legacy or third-party applications to use the secure APIs developed in this work. We evaluate the Grab 'n Run library with a user study, obtaining very encouraging results in vulnerability reduction, ease of use, and speed of development. We also show that the performance overhead introduced by our library is negligible. For the benefit of the security of the Android ecosystem, we released Grab 'n Run as open source.</p>
+<p>【Keywords】:
+Android; DexClassLoader; Dynamic Code Loading</p>
+<h2 id="Potpourri (Part 1)    3">Potpourri (Part 1)    3</h2>
+<h3 id="22. Provenance-based Integrity Protection for Windows.">22. Provenance-based Integrity Protection for Windows.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818011">Paper Link</a>】    【Pages】:211-220</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sze:Wai=Kit">Wai-Kit Sze</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sekar:R=">R. Sekar</a></p>
+<p>【Abstract】:
+Existing malware defenses are primarily reactive in nature, with defenses effective only on malware that has previously been observed. Unfortunately, we are witnessing a generation of stealthy, highly targeted exploits and malware that these defenses are unprepared for. Thwarting such malware requires new defenses that are, by design, secure against unknown malware. In this paper, we present Spif, an approach that defends against malware by tracking code and data origin, and ensuring that any process that is influenced by code or data from untrusted sources will be prevented from modifying important system resources, and interacting with benign processes. Spif is designed for Windows, the most widely deployed desktop OS, and the primary platform targeted by malware. Spif is compatible with all recent Windows versions (Windows XP to Windows 10), and supports a wide range of feature rich, unmodified applications, including all popular browsers, office software and media players. Spif imposes minimal performance overheads while being able to stop a variety of malware attacks, including Stuxnet and the recently reported Sandworm malware. An open-source implementation of our system is available.</p>
+<p>【Keywords】:</p>
+<h3 id="23. MOSE: Live Migration Based On-the-Fly Software Emulation.">23. MOSE: Live Migration Based On-the-Fly Software Emulation.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818022">Paper Link</a>】    【Pages】:221-230</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wei:Jinpeng">Jinpeng Wei</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yan:Lok_K=">Lok K. Yan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hakim:Muhammad_Azizul">Muhammad Azizul Hakim</a></p>
+<p>【Abstract】:
+Software emulation has been proven useful in many scenarios, such as software testing, malware analysis, and intrusion response. However, fine-grained software emulation (e.g., at the instruction level) incurs considerable execution overhead (about 8x performance degradation), which hampers its use in production settings. In this paper, we propose MOSE (Live Migration based On-the-fly Software Emulation) that combines the performance advantages of hardware virtualization and the fine-grained analysis capability (comprehensiveness) of whole-system software emulation. Namely, a system can run as normal on a hardware-virtualized platform at near native speed, but when needed, it can be live-migrated to an emulator, not necessarily running on the same physical system, for in-depth analysis and triage; when the analysis is complete, the virtual machine can be migrated back to benefit from full hardware-virtualization again. In this way, the performance degradation is only experienced during analysis and triage. To demonstrate this new capability, we built a proof of concept on-the-fly software emulation system, based on QEMU/KVM and DECAF, the Dynamic Executable Code Analysis Framework. We also perform three case studies: automated kernel panic triage, live-patching a security vulnerability, and on-demand symbolic execution, to illustrate on-demand instruction level analysis.</p>
+<p>【Keywords】:
+Demand emulation; live migration; software analysis; symbolic execution</p>
+<h3 id="24. Privacy-preserving Virtual Machine.">24. Privacy-preserving Virtual Machine.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818044">Paper Link</a>】    【Pages】:231-240</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Tianlin">Tianlin Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Yaohui">Yaohui Hu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang_0002:Ping">Ping Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gopalan:Kartik">Kartik Gopalan</a></p>
+<p>【Abstract】:
+Cloud computing systems routinely process users' confidential data, but the underlying virtualization software in use today is not constructed to minimize the exposure of such data. For instance, virtual machine (VM) checkpointing can drastically prolong the lifetime and vulnerability of confidential data without users' knowledge by storing such data as part of a persistent snapshot. A key requirement for minimizing the exposure of any data is the ability to cleanly isolate such data for either exclusion or processing. Traditional mechanisms for memory taint tracking are expensive whereas those for isolating application footprint in VM-based sandboxes are not transparent. In this paper, we propose a transparent and lightweight mechanism for isolating a confidential application's memory footprint in a VM. The key idea is for a parent VM to spawn a child VM, called a Privacy-preserving Virtual Machine (PPVM) within which the confidential application executes. Hypervisor features, such as VM checkpointing, that need to exclude the memory of a confidential application can safely ignore the child VM's memory footprint. Alternatively, features such as checkpoint encryption or malware tracking can operate only on the child VM's memory. We implement memory isolation for PPVM through a lightweight VM fork operation that uses copy-on-write to reduce the memory and filesystem overhead of the PPVM. Transparency is achieved through a confidential shell that allows the parent VM to spawn the confidential application in the PPVM and exercise control over it during runtime. We demonstrate the effectiveness of PPVM through its use with VM checkpointing, which can safely checkpoint the parent VM while excluding or encrypting the associated PPVM. We show that our PPVM implementation achieves effective memory isolation with low overheads on memory, CPU, and network performance.</p>
+<p>【Keywords】:</p>
+<h2 id="Embedded Devices & Computer Subsystems    3">Embedded Devices &amp; Computer Subsystems    3</h2>
+<h3 id="25. Soteria: Offline Software Protection within Low-cost Embedded Devices.">25. Soteria: Offline Software Protection within Low-cost Embedded Devices.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2856129">Paper Link</a>】    【Pages】:241-250</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/G=ouml=tzfried:Johannes">Johannes Götzfried</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/M=uuml=ller:Tilo">Tilo Müller</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Clercq:Ruan_de">Ruan de Clercq</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Maene:Pieter">Pieter Maene</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Freiling:Felix_C=">Felix C. Freiling</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Verbauwhede:Ingrid">Ingrid Verbauwhede</a></p>
+<p>【Abstract】:
+Protecting the intellectual property of software that is distributed to third-party devices which are not under full control of the software author is difficult to achieve on commodity hardware today. Modern techniques of reverse engineering such as static and dynamic program analysis with system privileges are increasingly powerful, and despite possibilities of encryption, software eventually needs to be processed in clear by the CPU. To anyhow be able to protect software on these devices, a small part of the hardware must be considered trusted. In the past, general purpose trusted computing bases added to desktop computers resulted in costly and rather heavyweight solutions. In contrast, we present Soteria, a lightweight solution for low-cost embedded systems. At its heart, Soteria is a program-counter based memory access control extension for the TI MSP430 microprocessor. Based on our open implementation of Soteria as an openMSP430 extension, and our FPGA-based evaluation, we show that the proposed solution has a minimal performance, size and cost overhead while effectively protecting the confidentiality and integrity of an application's code against all kinds of software attacks including attacks from the system level.</p>
+<p>【Keywords】:
+Embedded Systems; Software Protection; Trusted Computing</p>
+<h3 id="26. PIE: Parser Identification in Embedded Systems.">26. PIE: Parser Identification in Embedded Systems.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818035">Paper Link</a>】    【Pages】:251-260</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cojocar:Lucian">Lucian Cojocar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zaddach:Jonas">Jonas Zaddach</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Verdult:Roel">Roel Verdult</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bos:Herbert">Herbert Bos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Francillon:Aur=eacute=lien">Aurélien Francillon</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Balzarotti:Davide">Davide Balzarotti</a></p>
+<p>【Abstract】:
+Embedded systems are responsible for the security and safety of modern societies, controlling the correct operation of cars and airplanes, satellites and medical equipment, military units and all critical infrastructures. Being integrated in large and complex environments, embedded systems need to support several communication protocols to interact with other devices or with their users. Interestingly, embedded software often implements protocols that deviate from their original specifications. Some are extended with additional features, while others are completely undocumented. Furthermore, embedded parsers often consist of complex C code which is optimized to improve performance and reduce size. However, this code is rarely designed with security in mind, and often lacks proper input validation, making those devices vulnerable to memory corruption attacks. Furthermore, most embedded designs are closed source and third party security evaluations are only possible by looking at the binary firmware. In this paper we propose a methodology to identify parsers and complex processing logic present in binary code without access to their source code or documentation. Specifically we establish and evaluate a heuristic for detecting this type of code by means of static analysis. Afterwards we demonstrate the utility of this heuristic to identify firmware components treating input, perform reverse engineering to extract protocols, and discover and analyze bugs on four widely used devices: a GPS receiver, a power meter, a hard disk drive (HDD) and a Programmable Logic Controller (PLC).</p>
+<p>【Keywords】:</p>
+<h3 id="27. Defending Against Malicious USB Firmware with GoodUSB.">27. Defending Against Malicious USB Firmware with GoodUSB.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818040">Paper Link</a>】    【Pages】:261-270</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Tian:Jing_=Dave=">Jing (Dave) Tian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bates:Adam_M=">Adam M. Bates</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Butler:Kevin_R=_B=">Kevin R. B. Butler</a></p>
+<p>【Abstract】:
+USB attacks are becoming more sophisticated. Rather than using USB devices solely as a delivery mechanism for host-side exploits, attackers are targeting the USB stack itself, embedding malicious code in device firmware to covertly request additional USB interfaces, providing unacknowledged and malicious functionality that lies outside the apparent purpose of the device. This allows for attacks such as BadUSB, where a USB storage device with malicious firmware is capable of covertly acting as a keyboard as well, allowing it to inject malicious scripts into the host machine. We observe that the root cause of such attacks is that the USB Stack exposes a set of unrestricted device privileges and note that the most reliable information about a device's capabilities comes from the end user's expectation of the device's functionality. We design and implement GoodUSB, a mediation architecture for the Linux USB Stack. We defend against BadUSB attacks by enforcing permissions based on user expectations of device functionality. GoodUSB includes a security image component to simplify use, and a honeypot mechanism for observing suspicious USB activities. GoodUSB introduces only 5.2% performance overhead compared to the unmodified Linux USB subsystem. It is an important step forward in defending against USB attacks and towards allowing the safe deployment of USB devices in the enterprise.</p>
+<p>【Keywords】:
+BadUSB; Linux Kernel; USB</p>
+<h2 id="Access Control    3">Access Control    3</h2>
+<h3 id="28. Proximity Verification for Contactless Access Control and Authentication Systems.">28. Proximity Verification for Contactless Access Control and Authentication Systems.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818004">Paper Link</a>】    【Pages】:271-280</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Ranganathan:Aanjhan">Aanjhan Ranganathan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Danev:Boris">Boris Danev</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Capkun:Srdjan">Srdjan Capkun</a></p>
+<p>【Abstract】:
+Today, contactless smart cards are used to provide physical access control and authentication in a wide variety of applications. Prior research have demonstrated the vulnerability of contactless smart cards to relay attacks. For example, an attacker can relay the communication between the card reader and the smart card to steal a car or pay for goods in a supermarket. To solve this problem, smart cards need to be enhanced with secure proximity verification, i.e., distance bounding, which enables the card reader and the card to verify their mutual distance. However, existing technologies do not support the deployment of distance bounding in such systems: NFC cannot provide sufficient distance resolution, and hardware complexity of the proposed (e.g., UWB-based) distance bounding radios prevents their use in contactless smart cards. In this work, we propose a novel distance bounding system specifically designed for short-range contactless access control and authentication applications. Our system combines frequency modulated continuous wave (FMCW) and backscatter communication. The use of backscatter communication enables low-complexity, power-efficient design of the prover which is critical for contactless smart cards. In addition, our distance bounding system enables the implementation of a majority of distance bounding protocols developed in prior art. We analyze our system against various attack scenarios and show that it offers strong security guarantees. Additionally, we evaluate our system's communication and distance measurement characteristics using a prototype implementation.</p>
+<p>【Keywords】:</p>
+<h3 id="29. Scalable and Secure Concurrent Evaluation of History-based Access Control Policies.">29. Scalable and Secure Concurrent Evaluation of History-based Access Control Policies.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818008">Paper Link</a>】    【Pages】:281-290</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Decat:Maarten">Maarten Decat</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lagaisse:Bert">Bert Lagaisse</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Joosen:Wouter">Wouter Joosen</a></p>
+<p>【Abstract】:
+Many of today's applications are deployed on large-scale distributed infrastructures to handle large amounts of users concurrently. When applying access control to such applications, the access control policies must be evaluated concurrently as well. However, for certain classes of policies such as history-based policies one access decision depends on the previous ones. As a result, concurrency can be exploited to achieve incorrect access decisions and privilege escalation. Moreover, general techniques for concurrency control are not able to scale to the size of current applications and at the same time provide the full consistency required for security. Therefore, we present an efficient concurrency control scheme specifically for access control. By leveraging the specific structure of a policy evaluation, this scheme is able to prevent incorrect decisions due to concurrency and at the same time scale to a large number of machines while incurring only a limited and bounded latency overhead. As such, this work facilitates the adoption of policy-based access control in realistic and large-scale applications.</p>
+<p>【Keywords】:
+Security; access control; concurrency; distribution; performance; scalability</p>
+<h3 id="30. Entity-Based Access Control: supporting more expressive access control policies.">30. Entity-Based Access Control: supporting more expressive access control policies.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818009">Paper Link</a>】    【Pages】:291-300</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bogaerts:Jasper">Jasper Bogaerts</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Decat:Maarten">Maarten Decat</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lagaisse:Bert">Bert Lagaisse</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Joosen:Wouter">Wouter Joosen</a></p>
+<p>【Abstract】:
+Access control is an important part of security that restricts the actions that users can perform on resources. Policy models specify how these restrictions are formulated in policies. Over the last decades, we have seen several such models, including role-based access control and more recently, attribute-based access control. However, these models do not take into account the relationships between users, resources and entities and their corresponding properties. This limits the expressiveness of these models. In this work, we present Entity-Based Access Control (EBAC). EBAC introduces entities as a primary concept and takes into account both attributes and relationships to evaluate policies. In addition, we present Auctoritas. Auctoritas is a authorization system that provides a practical policy language and evaluation engine for EBAC. We find that EBAC increases the expressiveness of policies and fits the application domain well. Moreover, our evaluation shows that entity-based policies described in Auctoritas can be enforced with a low policy evaluation latency.</p>
+<p>【Keywords】:
+ABAC; Access Control; Access Control Model; Attribute; Authorization; EBAC; Entity; Language; Policy Language; Relationship; XACML</p>
+<h2 id="Pa$$w0rdz    3">Pa$$w0rdz    3</h2>
+<h3 id="31. Is Bigger Better? Comparing User-Generated Passwords on 3x3 vs. 4x4 Grid Sizes for Android's Pattern Unlock.">31. Is Bigger Better? Comparing User-Generated Passwords on 3x3 vs. 4x4 Grid Sizes for Android's Pattern Unlock.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818014">Paper Link</a>】    【Pages】:301-310</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Aviv:Adam_J=">Adam J. Aviv</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Budzitowski:Devon">Devon Budzitowski</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kuber:Ravi">Ravi Kuber</a></p>
+<p>【Abstract】:
+Android's graphical authentication mechanism requires users to unlock their devices by "drawing" a pattern that connects a sequence of contact points arranged in a 3x3 grid. Prior studies demonstrated that human-generated 3x3 patterns are weak (CCS'13); large portions can be trivially guessed with sufficient training. An obvious solution would be to increase the grid size to increase the complexity of chosen patterns. In this paper we ask the question: Does increasing the grid size increase the security of human-generated patterns? We conducted two large studies to answer this question, and our analysis shows that for both 3x3 and 4x4 patterns, there is a high incidence of repeated patterns and symmetric pairs (patterns that derive from others based on a sequence of flips and rotations), and many 4x4 patterns are expanded versions of 3x3 patterns. Leveraging this information, we developed an advanced guessing algorithm and used it to quantified the strength of the patterns using the partial guessing entropy. We find that guessing the first 20% (G0.2) of patterns for both 3x3 and 4x4 can be done as efficiently as guessing a random 2-digit PIN. While guessing larger portions of 4x4 patterns (G0.5) requires 2-bits more entropy than guessing the same ratio of 3x3 patterns, it remains on the order of cracking random 3-digit PINs. Of the patterns tested, our guessing algorithm successful cracks 15% of 3x3 patterns within 20 guesses (a typical phone lockout) and 19% of 4x4 patterns within 20 guesses; however, after 50,000 guesses, we correctly guess 95.9% of 3x3 patterns but only 66.7% of 4x4 patterns. While there may be some benefit to expanding the grid size to 4x4, we argue the majority of patterns chosen by users will remain trivially guessable and insecure against broad guessing attacks.</p>
+<p>【Keywords】:</p>
+<h3 id="32. ErsatzPasswords: Ending Password Cracking and Detecting Password Leakage.">32. ErsatzPasswords: Ending Password Cracking and Detecting Password Leakage.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818015">Paper Link</a>】    【Pages】:311-320</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Almeshekah:Mohammed_H=">Mohammed H. Almeshekah</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gutierrez:Christopher_N=">Christopher N. Gutierrez</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Atallah:Mikhail_J=">Mikhail J. Atallah</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Spafford:Eugene_H=">Eugene H. Spafford</a></p>
+<p>【Abstract】:
+In this work we present a simple, yet effective and practical, scheme to improve the security of stored password hashes, rendering their cracking detectable and insuperable at the same time. We utilize a machine-dependent function, such as a physically unclonable function (PUF) or a hardware security module (HSM) at the authentication server to prevent off-site password discovery, and a deception mechanism to alert us if such an action is attempted. Our scheme can be easily integrated with legacy systems without the need of any additional servers, changing the structure of the hashed password file or any client modifications. When using the scheme the structure of the hashed passwords file, etc/shadow or etc/master.passwd, will appear no different than in the traditional scheme.1 However, when an attacker exfiltrates the hashed passwords file and tries to crack it, the only passwords he will get are the ersatzpasswords --- the "fake passwords". When an attempt to login using these ersatzpasswords is detected an alarm will be triggered in the system. Even with an adversary who knows about the scheme, cracking cannot be launched without physical access to the authentication server. The scheme also includes a secure backup mechanism in the event of a failure of the hardware dependent function. We discuss our implementation and provide some discussion in comparison to the traditional authentication scheme.</p>
+<p>【Keywords】:
+Authentication; Deception; HSM; Offline Dictionary Attack; PUF; Password Cracking; Passwords</p>
+<h3 id="33. PARS: A Uniform and Open-source Password Analysis and Research System.">33. PARS: A Uniform and Open-source Password Analysis and Research System.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818018">Paper Link</a>】    【Pages】:321-330</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Ji:Shouling">Shouling Ji</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Shukun">Shukun Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Ting">Ting Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Changchang">Changchang Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Wei=Han">Wei-Han Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Beyah:Raheem_A=">Raheem A. Beyah</a></p>
+<p>【Abstract】:
+In this paper, we introduce an open-source and modular password analysis and research system, PARS, which provides a uniform, comprehensive and scalable research platform for password security. To the best of our knowledge, PARS is the first such system that enables researchers to conduct fair and comparable password security research. PARS contains 12 state-of-the-art cracking algorithms, 15 intra-site and cross-site password strength metrics, 8 academic password meters, and 15 of the 24 commercial password meters from the top-150 websites ranked by Alexa. Also, detailed taxonomies and large-scale evaluations of the PARS modules are presented in the paper.</p>
+<p>【Keywords】:
+Passwords; cracking; evaluation; measurement; metrics</p>
+<h2 id="Control Flow (Part 2)    3">Control Flow (Part 2)    3</h2>
+<h3 id="34. Binary Code Continent: Finer-Grained Control Flow Integrity for Stripped Binaries.">34. Binary Code Continent: Finer-Grained Control Flow Integrity for Stripped Binaries.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818017">Paper Link</a>】    【Pages】:331-340</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Minghua">Minghua Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yin:Heng">Heng Yin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bhaskar:Abhishek_Vasisht">Abhishek Vasisht Bhaskar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Su:Purui">Purui Su</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Feng:Dengguo">Dengguo Feng</a></p>
+<p>【Abstract】:
+Control Flow Integrity (CFI) is an effective technique to mitigate threats such as code-injection and code-reuse attacks in programs by protecting indirect transfers. For stripped binaries, a CFI policy has to be made conservatively due to the lack of source code level semantics. Existing binary-only CFI solutions such as BinCFI and CCFIR demonstrate the ability to protect stripped binaries, but the policies they apply are too permissive, allowing sophisticated code-reuse attacks. In this paper, we propose a new binary-only CFI protection scheme called BinCC, which applies static binary rewriting to provide finer-grained protection for x86 stripped ELF binaries. Through code duplication and static analysis, we divide the binary code into several mutually exclusive code continents. We further classify each indirect transfer within a code continent as either an Intra-Continent transfer or an Inter-Continent transfer, and apply separate, strict CFI polices to constrain these transfers. To evaluate BinCC, we introduce new metrics to estimate the average amount of legitimate targets of each kind of indirect transfer as well as the difficulty to leverage call preceded gadgets to generate ROP exploits. Compared to the state of the art binary-only CFI, BinCFI, the experimental results show that BinCC significantly reduces the legitimate transfer targets by 81.34% and increases the difficulty for adversaries to bypass CFI restriction to launch sophisticated ROP attacks. Also, BinCC achieves a reasonable performance, around 14% of the space overhead decrease and only 4% runtime overhead increase as compared to BinCFI.</p>
+<p>【Keywords】:
+Control Flow Integrity</p>
+<h3 id="35. ShrinkWrap: VTable Protection without Loose Ends.">35. ShrinkWrap: VTable Protection without Loose Ends.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818025">Paper Link</a>】    【Pages】:341-350</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Haller:Istv=aacute=n">István Haller</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/G=ouml=ktas:Enes">Enes Göktas</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Athanasopoulos:Elias">Elias Athanasopoulos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Portokalidis:Georgios">Georgios Portokalidis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bos:Herbert">Herbert Bos</a></p>
+<p>【Abstract】:
+As VTable hijacking becomes the primary mode of exploitation against modern browsers, protecting said VTables has recently become a prime research interest. While multiple source- and binary-based solutions for protecting VTables have been proposed already, we found that in practice they are too conservative, which allows determined attackers to circumvent them. In this paper we delve into the design of C++ VTables and match that knowledge against the now industry standard protection scheme of VTV. We propose an end-to-end design that significantly refines VTV, to offer a provably optimal protection scheme. As we build on top of VTV, we preserve all of its advantages in terms of software compatibility and overhead. Thus, our proposed design comes "for free" for any user today. Besides the design we propose a testing methodology, which can be used by future developers to validate their implementations. We evaluated our protection scheme on Google Chrome and show that no compatibility issues were introduced, while overhead is also unchanged compared to the baseline of VTV.</p>
+<p>【Keywords】:</p>
+<h3 id="36. DynaGuard: Armoring Canary-based Protections against Brute-force Attacks.">36. DynaGuard: Armoring Canary-based Protections against Brute-force Attacks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818031">Paper Link</a>】    【Pages】:351-360</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Petsios:Theofilos">Theofilos Petsios</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kemerlis:Vasileios_P=">Vasileios P. Kemerlis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Polychronakis:Michalis">Michalis Polychronakis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Keromytis:Angelos_D=">Angelos D. Keromytis</a></p>
+<p>【Abstract】:
+Over the past decade many exploit mitigation techniques have been introduced to defend against memory corruption attacks. W^X, ASLR, and canary-based protections are nowadays widely deployed and considered standard practice. However, despite the fact that these techniques have evolved over time, they still suffer from limitations that enable skilled adversaries to bypass them. In this work, we focus on countermeasures against the byte-by-byte discovery of stack canaries in forking programs. This limitation, although known for years, has yet to be addressed effectively, and was recently abused by a series of exploits that allowed for the remote compromise of the popular Nginx web server and a full ASLR bypass in x86-64 Linux. We present DynaGuard, an extension to canary-based protections that further armors hardened applications against brute-force canary attacks. We have implemented DynaGuard in two flavors: a compiler-based version, which incurs an average runtime overhead of 1.2%, and a version based on dynamic binary instrumentation, which can protect binary-only applications without requiring access to source code. We have evaluated both implementations using a set of popular server applications and benchmark suites, and examined how the proposed design overcomes the limitations of previous proposals, ensuring application correctness and seamless integration with third-party software.</p>
+<p>【Keywords】:
+canary re-randomization; canary-based protection</p>
+<h2 id="Mobile (Part 2)    3">Mobile (Part 2)    3</h2>
+<h3 id="37. Towards Analyzing the Input Validation Vulnerabilities associated with Android System Services.">37. Towards Analyzing the Input Validation Vulnerabilities associated with Android System Services.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818033">Paper Link</a>】    【Pages】:361-370</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cao:Chen">Chen Cao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gao:Neng">Neng Gao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu_0005:Peng">Peng Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xiang:Ji">Ji Xiang</a></p>
+<p>【Abstract】:
+Although the input validation vulnerabilities play a critical role in web application security, such vulnerabilities are so far largely neglected in the Android security research community. We found that due to the unique Framework Code layer, Android devices do need specific input validation vulnerability analysis in system services. In this work, we take the first steps to analyze Android specific input validation vulnerabilities. In particular, a) we take the first steps towards measuring the corresponding attack surface and reporting the current input validation status of Android system services. b) We developed a new input validation vulnerability scanner for Android devices. This tool fuzzes all the Android system services by sending requests with malformed arguments to them. Through comprehensive evaluation of Android system with over 90 system services and over 1,900 system service methods, we identified 16 vulnerabilities in Android system services. We have reported all the issues to Google and Google has confirmed them.</p>
+<p>【Keywords】:</p>
+<h3 id="38. MorphDroid: Fine-grained Privacy Verification.">38. MorphDroid: Fine-grained Privacy Verification.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818037">Paper Link</a>】    【Pages】:371-380</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Ferrara:Pietro">Pietro Ferrara</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tripp:Omer">Omer Tripp</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pistoia:Marco">Marco Pistoia</a></p>
+<p>【Abstract】:
+Mobile devices are rich in sensors, such as a Global Positioning System (GPS) tracker, microphone and camera, and have access to numerous sources of personal information, including the device ID, contacts and social data. This richness increases the functionality of mobile apps, but also creates privacy threats. As a result, different solutions have been proposed to verify or enforce privacy policies. A key limitation of existing approaches is that they reason about privacy at a coarse level, without accounting for declassification rules, such that the location for instance is treated as a single unit of information without reference to its many fields. As a result, legitimate app behaviors --- such as releasing the user's city rather than exact address --- are perceived as privacy violations, rendering existing analyses overly conservative and thus of limited usability. In this paper, we present MorphDroid, a novel static analysis algorithm that verifies mobile applications against fine-grained privacy policies. Such policies define constraints over combinations of fine-grained units of private data. Specifically, through a novel design, MorphDroid tracks flows of fine-grained privacy units while addressing important challenges, including (i) detection of correlations between different units (e.g. longitude and latitude) and (ii) modeling of semantic transformations over private data (e.g. conversion of the location into an address). We have implemented MorphDroid, and present a thorough experimental evaluation atop a comprehensive benchmark suite for Android static and dynamic analyses (DroidBench), as well as the 500 top-popular Google Play applications in 2014. Our experiments involve a spectrum of 5 security policies, ranging from a strict coarse-grained policy to a more realistic fine-grained policy that accounts for declassification rules. The experiment on DroidBench shows that MorphDroid achieves precision and recall scores of over 90%. The experiments on popular apps show that the gap between policies is dramatic, the most conservative policy yielding warnings on 171 of the applications (34%), and the more realistic policy flagging only 4 of the applications as misbehaved (&lt; 1%). In addition, MorphDroid exhibits good performance with an average analysis time of &lt; 20 seconds, where on average apps consist of 1.4M lines of code.</p>
+<p>【Keywords】:</p>
+<h3 id="39. MobiPluto: File System Friendly Deniable Storage for Mobile Devices.">39. MobiPluto: File System Friendly Deniable Storage for Mobile Devices.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818046">Paper Link</a>】    【Pages】:381-390</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chang:Bing">Bing Chang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Zhan">Zhan Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Bo">Bo Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Fengwei">Fengwei Zhang</a></p>
+<p>【Abstract】:
+Mobile devices are prevalently used for processing personal private data and sometimes collecting evidence of social injustice or political oppression. The device owners may always feel reluctant to expose this type of data to undesired observers or inspectors. This usually can be achieved by encryption. However, the traditional encryption may not work when an adversary is able to coerce device owners into revealing their encrypted content. Plausibly Deniable Encryption (PDE) is thus designed to protect sensitive data against this type of powerful adversaries. In this paper, we present MobiPluto, a file system friendly PDE scheme for denying the existence of sensitive data stored on mobile devices. MobiPluto achieves deniability feature as nothing but a "side-effect" of combining thin provisioning, a well-established tool in Linux kernel, with encryption. This feature makes MobiPluto more plausible for users to have such software on their mobile devices. A salient difference between MobiPluto and the existing PDE schemes is that MobiPluto is "file system friendly", i.e., any block-based file systems can be deployed on top of it. Thus, it is possible to deploy MobiPluto on most mobile devices. We provide a proof-of-concept implementation for MobiPluto in an Android phone to assess its feasibility and performance.</p>
+<p>【Keywords】:
+LVM; Mobile; Plausibly Deniable Encryption; Thin Provisioning</p>
+<h2 id="Potpourri (Part 2)    3">Potpourri (Part 2)    3</h2>
+<h3 id="40. Analyzing and Modeling Longitudinal Security Data: Promise and Pitfalls.">40. Analyzing and Modeling Longitudinal Security Data: Promise and Pitfalls.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818010">Paper Link</a>】    【Pages】:391-400</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/e/Edwards:Benjamin">Benjamin Edwards</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hofmeyr:Steven_A=">Steven A. Hofmeyr</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Forrest:Stephanie">Stephanie Forrest</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Eeten:Michel_van">Michel van Eeten</a></p>
+<p>【Abstract】:
+Many cybersecurity problems occur on a worldwide scale, but we lack rigorous methods for determining how best to intervene and mitigate damage globally, both short- and long-term. Analysis of longitudinal security data can provide insight into the effectiveness and differential impacts of security interventions on a global level. In this paper we consider the example of spam, studying a large high-resolution data set of messages sent from 260 ISPs in 60 countries over the course of a decade. The statistical analysis is designed to avoid common pitfalls that could lead to erroneous conclusions. We show how factors such as geography, national economics, Internet connectivity and traffic flow impact can affect local spam concentrations. Additionally, we present a statistical model to study temporal transitions in the dataset, and we use a simple extension of the model to investigate the effect of historical botnet takedowns on spam levels. We find that in aggregate most historical takedowns are beneficial in the short-term, but few have long-term impact. Further, even when takedowns are effective globally, they can be detrimental in specific geographic regions or countries. The analysis and modeling described here are based on a single data set. However, the techniques are general and could be adapted to other data sets to help improve decision making about when and how to deploy security interventions.</p>
+<p>【Keywords】:
+Spam; statistical model; takedowns</p>
+<h3 id="41. Accurate, Low Cost and Instrumentation-Free Security Audit Logging for Windows.">41. Accurate, Low Cost and Instrumentation-Free Security Audit Logging for Windows.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818039">Paper Link</a>】    【Pages】:401-410</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Ma:Shiqing">Shiqing Ma</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Kyu_Hyung">Kyu Hyung Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Chung_Hwan">Chung Hwan Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rhee:Junghwan">Junghwan Rhee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Xiangyu">Xiangyu Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Dongyan">Dongyan Xu</a></p>
+<p>【Abstract】:
+Audit logging is an important approach to cyber attack investigation. However, traditional audit logging either lacks accuracy or requires expensive and complex binary instrumentation. In this paper, we propose a Windows based audit logging technique that features accuracy and low cost. More importantly, it does not require instrumenting the applications, which is critical for commercial software with IP protection. The technique is build on Event Tracing for Windows (ETW). By analyzing ETW log and critical parts of application executables, a model can be constructed to parse ETW log to units representing independent sub-executions in a process. Causality inferred at the unit level renders much higher accuracy, allowing us to perform accurate attack investigation and highly effective log reduction.</p>
+<p>【Keywords】:</p>
+<h3 id="42. SeSQLite: Security Enhanced SQLite: Mandatory Access Control for Android databases.">42. SeSQLite: Security Enhanced SQLite: Mandatory Access Control for Android databases.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818041">Paper Link</a>】    【Pages】:411-420</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mutti:Simone">Simone Mutti</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bacis:Enrico">Enrico Bacis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Paraboschi:Stefano">Stefano Paraboschi</a></p>
+<p>【Abstract】:
+SQLite is the most widely deployed in-process library that implements a SQL database engine. It offers high storage efficiency, fast query operation and small memory needs. Due to the fact that a complete SQLite database is stored in a single cross-platform disk file and SQLite does not support multiple users, anyone who has direct access to the file can read the whole database content. SELinux was originally developed as a Mandatory Access Control (MAC) mechanism for Linux to demonstrate how to overcome DAC limitations. However, SELinux provides per-file protection, thus the database file is treated as an atomic unit, impeding the definition of a fine-grained mandatory access control (MAC) policy for database objects. We introduce SeSQLite, an SQLite extension that integrates SELinux access controls into SQLite with minimal performance and storage overhead. SeSQLite implements labeling and access control at both schema level (for tables and columns) and row level. This permits the management of a fine-grained access policy for database objects. A prototype has been implemented and it has been used to improve the security of Android Content Providers.</p>
+<p>【Keywords】:
+Android; Database security; Mandatory Access Control</p>
+<h2 id="Applied Crypto    2">Applied Crypto    2</h2>
+<h3 id="43. Combining Differential Privacy and Secure Multiparty Computation.">43. Combining Differential Privacy and Secure Multiparty Computation.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818027">Paper Link</a>】    【Pages】:421-430</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Pettai:Martin">Martin Pettai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Laud:Peeter">Peeter Laud</a></p>
+<p>【Abstract】:
+We consider how to perform privacy-preserving analyses on private data from different data providers and containing personal information of many different individuals. We combine differential privacy and secret sharing based secure multiparty computation in the same system to protect the privacy of both the data providers and the individuals. We have implemented a prototype of this combination and have found that the overhead of adding differential privacy to secure multiparty computation is small enough to be usable in practice.</p>
+<p>【Keywords】:</p>
+<h3 id="44. Secure and Efficient Key Derivation in Portfolio Authentication Schemes Using Blakley Secret Sharing.">44. Secure and Efficient Key Derivation in Portfolio Authentication Schemes Using Blakley Secret Sharing.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818043">Paper Link</a>】    【Pages】:431-440</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mayer:Peter">Peter Mayer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Volkamer:Melanie">Melanie Volkamer</a></p>
+<p>【Abstract】:
+The ubiquitous usage of mobile devices in public spaces increases the risk of falling victim to shoulder surfing attacks, i.e. being observed by others during authentication. A promising approach to mitigating such shoulder surfing risks is portfolio authentication. It requires only an authorized subset of the password as input during each authentication attempt. One open challenge regarding portfolio authentication is how to securely and efficiently verify that a user input is actually an authorized subset of the password. In this paper we propose the (t, n)-threshold verification scheme, a novel scheme using Blakley secret sharing to provide secure verification of all authorized subsets of the password. Due to the lack of a viable alternative, we evaluate the efficiency of the (t, n)-threshold verification scheme in comparison to a naive approach. In terms of storage, the (t, n)-threshold verification scheme outperforms the naive approach in all settings and it offers lower computation times in most settings.</p>
+<p>【Keywords】:
+authentication; key derivation; secret sharing; verification</p>
+<h2 id="Hardware & Reverse Engineering    3">Hardware &amp; Reverse Engineering    3</h2>
+<h3 id="45. Getting to know your Card: Reverse-Engineering the Smart-Card Application Protocol Data Unit.">45. Getting to know your Card: Reverse-Engineering the Smart-Card Application Protocol Data Unit.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818020">Paper Link</a>】    【Pages】:441-450</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gkaniatsou:Andriana">Andriana Gkaniatsou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McNeill:Fiona">Fiona McNeill</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bundy:Alan">Alan Bundy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Steel:Graham">Graham Steel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Focardi:Riccardo">Riccardo Focardi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bozzato:Claudio">Claudio Bozzato</a></p>
+<p>【Abstract】:
+Smart-cards are considered to be one of the most secure, tamper-resistant, and trusted devices for implementing confidential operations, such as authentication, key management, encryption and decryption for financial, communication, security and data management purposes. The commonly used RSA PKCS#11 standard defines the Application Programming Interface for cryptographic devices such as smart-cards. Though there has been work on formally verifying the correctness of the implementation of PKCS#11 in the API level, little attention has been paid to the low-level cryptographic protocols that implement it. We present REPROVE, the first automated system that reverse-engineers the low-level communication between a smart-card and a reader, deduces the card's functionality and translates PKCS#11 cryptographic functions into communication steps. REPROVE analyzes both standard-conforming and proprietary implementations, and does not require access to the card. To the best of our knowledge, REPROVE is the first system to address proprietary implementations and the only system that maps cryptographic functions to communication steps and on-card operations. We have evaluated REPROVE on five commercially available smart-cards and we show how essential functions to gain access to the card's private objects and perform cryptographic functions can be compromised through reverse-engineering traces of the low-level communication.</p>
+<p>【Keywords】:
+APDU attacks; APDU formal modeling; PKCS#11 low-level attacks; Smart-card reverse-engineering</p>
+<h3 id="46. Logical Partitions on Many-Core Platforms.">46. Logical Partitions on Many-Core Platforms.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818026">Paper Link</a>】    【Pages】:451-460</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Masti:Ramya_Jayaram">Ramya Jayaram Masti</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Marforio:Claudio">Claudio Marforio</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kostiainen:Kari">Kari Kostiainen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Soriente:Claudio">Claudio Soriente</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Capkun:Srdjan">Srdjan Capkun</a></p>
+<p>【Abstract】:
+Cloud platforms that use logical partitions to allocate dedicated resources to VMs can benefit from small and therefore secure hypervisors. Many-core platforms, with their abundant resources, are an attractive basis to create and deploy logical partitions on a large scale. However, many-core platforms are designed for efficient cross-core data sharing rather than isolation, which is a key requirement for logical partitions. Typically, logical partitions leverage hardware virtualization extensions that require complex CPU core enhancements. These extensions are not optimal for many-core platforms, where it is preferable to keep the cores as simple as possible. In this paper, we show that a simple address-space isolation mechanism, that can be implemented in the Network-on-Chip of the many-core processor, is sufficient to enable logical partitions. We implement the proposed change for the Intel Single-Chip Cloud Computer (SCC). We also design a cloud architecture that relies on a small and disengaged hypervisor for the security-enhanced Intel SCC. Our prototype hypervisor is 3.4K LOC which is comparable to the smallest hypervisors available today. Furthermore, virtual machines execute bare-metal avoiding runtime interaction with the hypervisor and virtualization overhead.</p>
+<p>【Keywords】:</p>
+<h3 id="47. Hardware-assisted Memory Tracing on New SoCs Embedding FPGA Fabrics.">47. Hardware-assisted Memory Tracing on New SoCs Embedding FPGA Fabrics.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2818000.2818030">Paper Link</a>】    【Pages】:461-470</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Letitia_W=">Letitia W. Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Duc:Guillaume">Guillaume Duc</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pacalet:Renaud">Renaud Pacalet</a></p>
+<p>【Abstract】:
+The FPGA world recently experienced significant changes with the introduction of new Systems-on-Chip (SoCs) embedding high-end microprocessors and programmable logic on the same integrated circuit. The architecture of these SoCs can be exploited to offer an unprecedented level of monitoring of the memory accesses of running software components, a key element of performance, safety and security analysis. This paper presents the hardware / software implementation of such a memory tracing tool on one of these SoCs. It also proposes example applications in the security field and two attacks --- a pass-phrase retrieval and an access control bypass --- to demonstrate the power of hardware-assisted memory tracing.</p>
+<p>【Keywords】:
+Memory tracing; Systems-on-Chip; memory protection</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="https://github.com/huntercmd/ccf"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>

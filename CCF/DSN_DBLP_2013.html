@@ -1,0 +1,736 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/skin.js"></script>
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/classie.js"></script>
+
+<!-- This is for Mathjax -->
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#DSN 2013:Budapest, Hungary">DSN 2013:Budapest, Hungary</a><ul>
+<li><a href="#Paper Num: 72 || Session Num: 0">Paper Num: 72 || Session Num: 0</a><ul>
+<li><a href="#1. Performability analysis of RAID10 versus RAID6.">1. Performability analysis of RAID10 versus RAID6.</a></li>
+<li><a href="#2. EagleEye: Towards mandatory security monitoring in virtualized datacenter environment.">2. EagleEye: Towards mandatory security monitoring in virtualized datacenter environment.</a></li>
+<li><a href="#3. Application-driven TCP recovery and non-stop BGP.">3. Application-driven TCP recovery and non-stop BGP.</a></li>
+<li><a href="#4. PHYS: Profiled-HYbrid Sampling for soft error reliability benchmarking.">4. PHYS: Profiled-HYbrid Sampling for soft error reliability benchmarking.</a></li>
+<li><a href="#5. The Third International Workshop on Dependability of Clouds, Data Centers and Virtual Machine Technology DCDV 2013.">5. The Third International Workshop on Dependability of Clouds, Data Centers and Virtual Machine Technology DCDV 2013.</a></li>
+<li><a href="#6. Towards secure monitoring and control systems: Diversify!">6. Towards secure monitoring and control systems: Diversify!</a></li>
+<li><a href="#7. Evasive bots masquerading as human beings on the web.">7. Evasive bots masquerading as human beings on the web.</a></li>
+<li><a href="#8. Redefining web browser principals with a Configurable Origin Policy.">8. Redefining web browser principals with a Configurable Origin Policy.</a></li>
+<li><a href="#9. Security implications of memory deduplication in a virtualized environment.">9. Security implications of memory deduplication in a virtualized environment.</a></li>
+<li><a href="#10. Lilliput meets brobdingnagian: Data center systems management through mobile devices.">10. Lilliput meets brobdingnagian: Data center systems management through mobile devices.</a></li>
+<li><a href="#11. simFI: From single to simultaneous software fault injections.">11. simFI: From single to simultaneous software fault injections.</a></li>
+<li><a href="#12. Increasing network resiliency by optimally assigning diverse variants to routing nodes.">12. Increasing network resiliency by optimally assigning diverse variants to routing nodes.</a></li>
+<li><a href="#13. SIDE: Isolated and efficient execution of unmodified device drivers.">13. SIDE: Isolated and efficient execution of unmodified device drivers.</a></li>
+<li><a href="#14. Design of event-based Intrusion Detection System on OpenFlow Network.">14. Design of event-based Intrusion Detection System on OpenFlow Network.</a></li>
+<li><a href="#15. Analysis of bugs in Apache Virtual Computing Lab.">15. Analysis of bugs in Apache Virtual Computing Lab.</a></li>
+<li><a href="#16. Guaranteeing Proper-Temporal-Embedding safety rules in wireless CPS: A hybrid formal modeling approach.">16. Guaranteeing Proper-Temporal-Embedding safety rules in wireless CPS: A hybrid formal modeling approach.</a></li>
+<li><a href="#17. Lightweight message tracing for debugging wireless sensor networks.">17. Lightweight message tracing for debugging wireless sensor networks.</a></li>
+<li><a href="#18. Hector: Detecting Resource-Release Omission Faults in error-handling code for systems software.">18. Hector: Detecting Resource-Release Omission Faults in error-handling code for systems software.</a></li>
+<li><a href="#19. Stress balancing to mitigate NBTI effects in register files.">19. Stress balancing to mitigate NBTI effects in register files.</a></li>
+<li><a href="#20. Towards SDN enabled network control delegation in clouds.">20. Towards SDN enabled network control delegation in clouds.</a></li>
+<li><a href="#21. Distal: A framework for implementing fault-tolerant distributed algorithms.">21. Distal: A framework for implementing fault-tolerant distributed algorithms.</a></li>
+<li><a href="#22. An algorithmic approach to error localization and partial recomputation for low-overhead fault tolerance.">22. An algorithmic approach to error localization and partial recomputation for low-overhead fault tolerance.</a></li>
+<li><a href="#23. Message from the general chair.">23. Message from the general chair.</a></li>
+<li><a href="#24. Fitting second-order acyclic Marked Markovian Arrival Processes.">24. Fitting second-order acyclic Marked Markovian Arrival Processes.</a></li>
+<li><a href="#25. Fault detection and localization in distributed systems using invariant relationships.">25. Fault detection and localization in distributed systems using invariant relationships.</a></li>
+<li><a href="#26. Consistency or latency? A quantitative analysis of replication systems based on replicated state machines.">26. Consistency or latency? A quantitative analysis of replication systems based on replicated state machines.</a></li>
+<li><a href="#27. Improving SSD reliability with RAID via Elastic Striping and Anywhere Parity.">27. Improving SSD reliability with RAID via Elastic Striping and Anywhere Parity.</a></li>
+<li><a href="#28. DRIP: A framework for purifying trojaned kernel drivers.">28. DRIP: A framework for purifying trojaned kernel drivers.</a></li>
+<li><a href="#29. SPECTRE: A dependable introspection framework via System Management Mode.">29. SPECTRE: A dependable introspection framework via System Management Mode.</a></li>
+<li><a href="#30. Fault-tolerance characteristics of data center network topologies using fault regions.">30. Fault-tolerance characteristics of data center network topologies using fault regions.</a></li>
+<li><a href="#31. Implementing the ADVISE security modeling formalism in Möbius.">31. Implementing the ADVISE security modeling formalism in Möbius.</a></li>
+<li><a href="#32. FTSPM: A Fault-Tolerant ScratchPad Memory.">32. FTSPM: A Fault-Tolerant ScratchPad Memory.</a></li>
+<li><a href="#33. Lumpability of fluid models with heterogeneous agent types.">33. Lumpability of fluid models with heterogeneous agent types.</a></li>
+<li><a href="#34. Message from the DCCS program chair.">34. Message from the DCCS program chair.</a></li>
+<li><a href="#35. Locality matters: Reducing Internet traffic graphs using location analysis.">35. Locality matters: Reducing Internet traffic graphs using location analysis.</a></li>
+<li><a href="#36. Reading between the lines of failure logs: Understanding how HPC systems fail.">36. Reading between the lines of failure logs: Understanding how HPC systems fail.</a></li>
+<li><a href="#37. A practical characterization of a NASA SpaceCube application through fault emulation and laser testing.">37. A practical characterization of a NASA SpaceCube application through fault emulation and laser testing.</a></li>
+<li><a href="#38. Intrusion detection and honeypots in nested virtualization environments.">38. Intrusion detection and honeypots in nested virtualization environments.</a></li>
+<li><a href="#39. CloudPD: Problem determination and diagnosis in shared dynamic clouds.">39. CloudPD: Problem determination and diagnosis in shared dynamic clouds.</a></li>
+<li><a href="#40. Geo-replicated storage with scalable deferred update replication.">40. Geo-replicated storage with scalable deferred update replication.</a></li>
+<li><a href="#41. State-of-the-practice in data center virtualization: Toward a better understanding of VM usage.">41. State-of-the-practice in data center virtualization: Toward a better understanding of VM usage.</a></li>
+<li><a href="#42. WirelessHART modeling and performance evaluation.">42. WirelessHART modeling and performance evaluation.</a></li>
+<li><a href="#43. Generative software-based memory error detection and correction for operating system data structures.">43. Generative software-based memory error detection and correction for operating system data structures.</a></li>
+<li><a href="#44. Increasing the trustworthiness of commodity hardware through software.">44. Increasing the trustworthiness of commodity hardware through software.</a></li>
+<li><a href="#45. Manipulating semantic values in kernel data structures: Attack assessments and implications.">45. Manipulating semantic values in kernel data structures: Attack assessments and implications.</a></li>
+<li><a href="#46. Seamless kernel updates.">46. Seamless kernel updates.</a></li>
+<li><a href="#47. Addressing memory exhaustion failures in Virtual Machines in a cloud environment.">47. Addressing memory exhaustion failures in Virtual Machines in a cloud environment.</a></li>
+<li><a href="#48. Availability study on cloud computing environments: Live migration as a rejuvenation mechanism.">48. Availability study on cloud computing environments: Live migration as a rejuvenation mechanism.</a></li>
+<li><a href="#49. Mitigating access-driven timing channels in clouds using StopWatch.">49. Mitigating access-driven timing channels in clouds using StopWatch.</a></li>
+<li><a href="#50. Evaluating Xilinx SEU Controller Macro for fault injection.">50. Evaluating Xilinx SEU Controller Macro for fault injection.</a></li>
+<li><a href="#51. Network traffic anomaly detection based on growing hierarchical SOM.">51. Network traffic anomaly detection based on growing hierarchical SOM.</a></li>
+<li><a href="#52. Why is my smartphone slow? On the fly diagnosis of underperformance on the mobile Internet.">52. Why is my smartphone slow? On the fly diagnosis of underperformance on the mobile Internet.</a></li>
+<li><a href="#53. An adaptive approach to dependable circuits for a digital power control.">53. An adaptive approach to dependable circuits for a digital power control.</a></li>
+<li><a href="#54. Modeling and analysing operation processes for dependability.">54. Modeling and analysing operation processes for dependability.</a></li>
+<li><a href="#55. The architecture of a resilience infrastructure for computing and communication systems.">55. The architecture of a resilience infrastructure for computing and communication systems.</a></li>
+<li><a href="#56. Operating SECDED-based caches at ultra-low voltage with FLAIR.">56. Operating SECDED-based caches at ultra-low voltage with FLAIR.</a></li>
+<li><a href="#57. DATAFLASKS: An epidemic dependable key-value substrate.">57. DATAFLASKS: An epidemic dependable key-value substrate.</a></li>
+<li><a href="#58. Model-based performance analysis of local re-execution scheme in offloading system.">58. Model-based performance analysis of local re-execution scheme in offloading system.</a></li>
+<li><a href="#59. Automating the debugging of datacenter applications with ADDA.">59. Automating the debugging of datacenter applications with ADDA.</a></li>
+<li><a href="#60. A review of cloud deployment models for e-learning systems.">60. A review of cloud deployment models for e-learning systems.</a></li>
+<li><a href="#61. A view on the past and future of fault injection.">61. A view on the past and future of fault injection.</a></li>
+<li><a href="#62. An empirical investigation of fault repairs and mitigations in space mission system software.">62. An empirical investigation of fault repairs and mitigations in space mission system software.</a></li>
+<li><a href="#63. Complementing static and dynamic analysis approaches for better network defense.">63. Complementing static and dynamic analysis approaches for better network defense.</a></li>
+<li><a href="#64. A logic for model-checking mean-field models.">64. A logic for model-checking mean-field models.</a></li>
+<li><a href="#65. Detecting malicious landing pages in Malware Distribution Networks.">65. Detecting malicious landing pages in Malware Distribution Networks.</a></li>
+<li><a href="#66. Chasing the optimum in replicated in-memory transactional platforms via protocol adaptation.">66. Chasing the optimum in replicated in-memory transactional platforms via protocol adaptation.</a></li>
+<li><a href="#67. Dependability models for designing disaster tolerant cloud computing systems.">67. Dependability models for designing disaster tolerant cloud computing systems.</a></li>
+<li><a href="#68. Uniform node sampling service robust against collusions of malicious nodes.">68. Uniform node sampling service robust against collusions of malicious nodes.</a></li>
+<li><a href="#69. Message from the PDS program chair.">69. Message from the PDS program chair.</a></li>
+<li><a href="#70. Error detector placement for soft computation.">70. Error detector placement for soft computation.</a></li>
+<li><a href="#71. Practical automated vulnerability monitoring using program state invariants.">71. Practical automated vulnerability monitoring using program state invariants.</a></li>
+<li><a href="#72. Crossing the threshold: Detecting network malfeasance via sequential hypothesis testing.">72. Crossing the threshold: Detecting network malfeasance via sequential hypothesis testing.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="DSN 2013:Budapest, Hungary">DSN 2013:Budapest, Hungary</h1>
+<p><a href="http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=6569391">2013 43rd Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN), Budapest, Hungary, June 24-27, 2013.</a> IEEE Computer Society
+【<a href="http://dblp.uni-trier.de/db/conf/dsn/dsn2013.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 72 || Session Num: 0">Paper Num: 72 || Session Num: 0</h2>
+<h3 id="1. Performability analysis of RAID10 versus RAID6.">1. Performability analysis of RAID10 versus RAID6.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575339">Paper Link</a>】    【Pages】:1-2</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Machida:Fumio">Fumio Machida</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xiang:Jianwen">Jianwen Xiang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tadano:Kumiko">Kumiko Tadano</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Maeno:Yoshiharu">Yoshiharu Maeno</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Horikawa:Takashi">Takashi Horikawa</a></p>
+<p>【Abstract】:
+Design of storage system configuration is one of the key issues for providing dependable IT systems. An appropriate RAID storage configuration should consider both performance and availability. To assist the design, this paper presents the performability models for RAID10 and RAID6 that can be used to compare the configuration quantitatively. A performability advantage of RAID6 over RAID10 in sequential read access is discovered by the numerical study in conjunction with performance benchmark results.</p>
+<p>【Keywords】:
+Reliability; Benchmark testing; Arrays; Data models; Computational modeling; Numerical models; Analytical models</p>
+<h3 id="2. EagleEye: Towards mandatory security monitoring in virtualized datacenter environment.">2. EagleEye: Towards mandatory security monitoring in virtualized datacenter environment.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575300">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Yu=Sung">Yu-Sung Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sun:Pei=Keng">Pei-Keng Sun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Huang:Chun=Chi">Chun-Chi Huang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lu:Sung=Jer">Sung-Jer Lu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lai:Syu=Fang">Syu-Fang Lai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Yi=Yung">Yi-Yung Chen</a></p>
+<p>【Abstract】:
+Virtualized datacenter (VDC) has become a popular approach to large-scale system consolidation and the enabling technology for infrastructure-as-a-service cloud computing. The consolidation inevitably aggregates the security threats once faced by individual systems towards a VDC, and a VDC operator should remain vigilant of the threats at all times. We envision the need for on-demand mandatory security monitoring of critical guest systems as a means to track and deter security threats that could jeopardize the operation of a VDC. Unfortunately, existing VDC security monitoring mechanisms all require pre-installed guest components to operate. The security monitoring would either be up to the discretion of individual tenants or require costly direct management of guest systems by the VDC operator. We propose the EagleEye approach for on-demand mandatory security monitoring in VDC environment, which does not depend on pre-installed guest components. We implement a prototype on-access anti-virus monitor to demonstrate the feasibility of the EagleEye approach. We also identify challenges particular to this approach, and provide a set of solutions meant to strengthen future research in this area.</p>
+<p>【Keywords】:
+Security; Monitoring; Virtual machine monitors; Kernel; Engines; Prototypes; Virtualization</p>
+<h3 id="3. Application-driven TCP recovery and non-stop BGP.">3. Application-driven TCP recovery and non-stop BGP.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575313">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Surton:Robert">Robert Surton</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Birman:Ken">Ken Birman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Renesse:Robbert_van">Robbert van Renesse</a></p>
+<p>【Abstract】:
+Some network protocols tie application state to underlying TCP connections, leading to unacceptable service outages when an endpoint loses TCP state during fail-over or migration. For example, BGP ties forwarding tables to its control plane connections so that the failure of a BGP endpoint can lead to widespread routing disruption, even if it recovers all of its state but what was encapsulated by its TCP implementation. Although techniques exist for recovering TCP state transparently, they make assumptions that do not hold for applications such as BGP. We introduce application-driven TCP recovery, a technique that separates application recovery from TCP recovery. We evaluate our prototype, TCPR, and show that it outperforms existing BGP recovery techniques.</p>
+<p>【Keywords】:
+Graceful Restart; TCP; fault tolerance; middleware; BGP; non-stop routing</p>
+<h3 id="4. PHYS: Profiled-HYbrid Sampling for soft error reliability benchmarking.">4. PHYS: Profiled-HYbrid Sampling for soft error reliability benchmarking.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575352">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Suh:Jinho">Jinho Suh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Annavaram:Murali">Murali Annavaram</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dubois:Michel">Michel Dubois</a></p>
+<p>【Abstract】:
+In this paper, we introduce PHYS (Profiled-HYbrid Sampling), a sampling framework for soft-error benchmarking of caches. Reliability simulations of caches are much more complex than performance simulations and therefore exhibit large simulation slowdowns (two orders of magnitude) over performance simulations. The major problem is that the reliability lifetime of every accessed block must be tracked from beginning to end, on top of simulating the benchmark, in order to track the total number of vulnerability cycles (VCs) between two accesses to the block. Because of the need to track SDCs (silent error corruption) and to distinguish between true and false DUEs (detected but unrecoverable errors) vulnerability cycles cannot be truncated when data is written back from cache to main memory. Vulnerability cycles must be maintained even during a block's sojourn in main memory to track whether corrupted values in a block are used by the processor, until program termination. PHYS solves this problem by sampling intervals between accesses to each memory block, instead of sampling the execution of the processor in a time interval as is classically done in performance simulations. At first a statistical profiling phase captures the distribution of VCs for every block. This profiling step provides a statistical guarantee of the minimum sampling rate of access intervals needed to meet a desired FIT error target with a given confidence interval. Then, per cacheset sampling rates are dynamically adjusted to sample VCs with higher merit. We compare PHYS with many other possible sampling methods, some of which are widely used to accelerate performance-centric simulations but have also been applied in the past to track reliability lifetime. We demonstrate the superiority of PHYS in the context of reliability benchmarking through exhaustive evaluations of various sampling techniques.</p>
+<p>【Keywords】:
+simulation sampling; Soft-error; reliability benchmarking</p>
+<h3 id="5. The Third International Workshop on Dependability of Clouds, Data Centers and Virtual Machine Technology DCDV 2013.">5. The Third International Workshop on Dependability of Clouds, Data Centers and Virtual Machine Technology DCDV 2013.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575319">Paper Link</a>】    【Pages】:1-2</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Muppala:Jogesh_K=">Jogesh K. Muppala</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hiltunen:Matti_A=">Matti A. Hiltunen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Campbell:Roy">Roy Campbell</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Ver=iacute=ssimo:Paulo">Paulo Veríssimo</a></p>
+<p>【Abstract】:
+The Third International Workshop on Dependability of Clouds, Data Centers, and Virtual Machine Technology (DCDV 2013) features papers covering various aspects of dependability and security in Clouds and Data Centers. Four sessions covering Cloud and Data Center Networking, Dependability Evaluation, Mobile and Cloud Computing, and Virtualization and Cloud include eleven papers.</p>
+<p>【Keywords】:
+Security; Cloud; Data Centers; Dependability</p>
+<h3 id="6. Towards secure monitoring and control systems: Diversify!">6. Towards secure monitoring and control systems: Diversify!</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575341">Paper Link</a>】    【Pages】:1-2</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cotroneo:Domenico">Domenico Cotroneo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pecchia:Antonio">Antonio Pecchia</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Russo:Stefano">Stefano Russo</a></p>
+<p>【Abstract】:
+Cyber attacks have become surprisingly sophisticated over the past fifteen years. While early infections mostly targeted individual machines, recent threats leverage the widespread network connectivity to develop complex and highly coordinated attacks involving several distributed nodes [1]. Attackers are currently targeting very diverse domains, e.g., e-commerce systems, corporate networks, datacenter facilities and industrial systems, to achieve a variety of objectives, which range from credentials compromise to sabotage of physical devices, by means of smarter and smarter worms and rootkits. Stuxnet is a recent worm that well emphasizes the strong technical advances achieved by the attackers' community. It was discovered in July 2010 and firstly affected Iranian nuclear plants [2]. Stuxnet compromises the regular behavior of the supervisory control and data acquisition (SCADA) system by reprogramming the code of programmable logic controllers (PLC). Once compromised, PLCs can progressively destroy a device (e.g., components of a centrifuge, such as the case of the Iranian plant) by sending malicious control signals. Stuxnet combines a relevant number of challenging features: it exploits zero-days vulnerabilities of the Windows OS to affect the nodes connected to the PLC; it propagates either locally (e.g., by means of USB sticks) or remotely (e.g., via shared folders or the print spooler vulnerability); it is able to modify its behavior during the progression of the attack, and communicates with a remote command and control server. More importantly, Stuxnet can remain undetected for many months [3] because it is able to fool the SCADA system by emulating regular monitoring signals.</p>
+<p>【Keywords】:
+Security; Monitoring; SCADA systems; Smart grids; Sensors; Proposals</p>
+<h3 id="7. Evasive bots masquerading as human beings on the web.">7. Evasive bots masquerading as human beings on the web.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575366">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jin:Jing">Jing Jin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Offutt:Jeff">Jeff Offutt</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zheng:Nan">Nan Zheng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mao:Feng">Feng Mao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Koehl:Aaron">Aaron Koehl</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Haining">Haining Wang</a></p>
+<p>【Abstract】:
+Web bots such as crawlers are widely used to automate various online tasks over the Internet. In addition to the conventional approach of human interactive proofs such as CAPTCHAs, a more recent approach of human observational proofs (HOP) has been developed to automatically distinguish web bots from human users. Its design rationale is that web bots behave intrinsically differently from human beings, allowing them to be detected. This paper escalates the battle against web bots by exploring the limits of current HOP-based bot detection systems. We develop an evasive web bot system based on human behavioral patterns. Then we prototype a general web bot framework and a set of flexible de-classifier plugins, primarily based on application-level event evasion. We further abstract and define a set of benchmarks for measuring our system's evasion performance on contemporary web applications, including social network sites. Our results show that the proposed evasive system can effectively mimic human behaviors and evade detectors by achieving high similarities between human users and evasive bots.</p>
+<p>【Keywords】:
+human observation proofs; Web security; bot; machine learning</p>
+<h3 id="8. Redefining web browser principals with a Configurable Origin Policy.">8. Redefining web browser principals with a Configurable Origin Policy.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575317">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cao:Yinzhi">Yinzhi Cao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rastogi:Vaibhav">Vaibhav Rastogi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Zhichun">Zhichun Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Yan">Yan Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Moshchuk:Alexander">Alexander Moshchuk</a></p>
+<p>【Abstract】:
+With the advent of Web 2.0, web developers have designed multiple additions to break SOP boundary, such as splitting and combining traditional web browser protection boundaries (security principals). However, these newly generated principals lack a new label to represent its security property. To address the inconsistent label problem, this paper proposes a new way to define a security principal and its labels in the browser. In particular, we propose a Configurable Origin Policy (COP), in which a browser's security principal is defined by a configurable ID rather than a fixed triple &lt;;scheme, host, port&gt;. The server-side and client-side code of a web application can create, join, and destroy its own principals. We perform a formal security analysis on COP to ensure session integrity. Then we also show that COP is compatible with legacy web sites, and those sites utilizing COP are also compatible with legacy browsers.</p>
+<p>【Keywords】:
+Browsers; Servers; Security; Web sites; Ports (Computers); Google; Mashups</p>
+<h3 id="9. Security implications of memory deduplication in a virtualized environment.">9. Security implications of memory deduplication in a virtualized environment.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575349">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/x/Xiao:Jidong">Jidong Xiao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Zhang">Zhang Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Huang:Hai">Hai Huang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Haining">Haining Wang</a></p>
+<p>【Abstract】:
+Memory deduplication has been widely used in various commodity hypervisors. By merging identical memory contents, it allows more virtual machines to run concurrently on top of a hypervisor. However, while this technique improves memory efficiency, it has a large impact on system security. In particular, memory deduplication is usually implemented using a variant of copy-on-write techniques, for which, writing to a shared page would incur a longer access time than those non-shared. In this paper, we investigate the security implication of memory deduplication from the perspectives of both attackers and defenders. On one hand, using the artifact above, we demonstrate two new attacks to create a covert channel and detect virtualization, respectively. On the other hand, we also show that memory deduplication can be leveraged to safeguard Linux kernel integrity.</p>
+<p>【Keywords】:
+Virtual machine monitors; Linux</p>
+<h3 id="10. Lilliput meets brobdingnagian: Data center systems management through mobile devices.">10. Lilliput meets brobdingnagian: Data center systems management through mobile devices.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575327">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bagchi:Saurabh">Saurabh Bagchi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Arshad:Fahad_A=">Fahad A. Arshad</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rellermeyer:Jan_S=">Jan S. Rellermeyer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Osiecki:Thomas_H=">Thomas H. Osiecki</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kistler:Michael">Michael Kistler</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gheith:Ahmed">Ahmed Gheith</a></p>
+<p>【Abstract】:
+In this paper, we put forward the notion that systems management for large masses of virtual machines in data centers is going to be done differently in the short to medium term future-through smart phones and through controlled crowdsourcing to a variety of experts within an organization, rather than dedicated system administrators alone. We lay out the research and practitioner challenges this model raises and give some preliminary solution directions that are being developed, here at IBM and elsewhere.</p>
+<p>【Keywords】:
+Mobile communication; Servers; Security; Monitoring; Smart phones; Throughput</p>
+<h3 id="11. simFI: From single to simultaneous software fault injections.">11. simFI: From single to simultaneous software fault injections.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575310">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Winter:Stefan">Stefan Winter</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tretter:Michael">Michael Tretter</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sattler:Benjamin">Benjamin Sattler</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Suri:Neeraj">Neeraj Suri</a></p>
+<p>【Abstract】:
+Software-implemented fault injection (SWIFI) is an established experimental technique to evaluate the robustness of software systems. While a large number of SWIFI frameworks exist, virtually all are based on a single-fault assumption, i.e., interactions of simultaneously occurring independent faults are not investigated. As software systems containing more than a single fault often are the norm than an exception [1] and current safety standards require the consideration of &#x201C;multi-point faults&#x201D; [2], the validity of this single-fault assumption is at question for contemporary software systems. To address the issue and support simultaneous SWIFI (simFI), we analyze how independent faults can manifest in a generic software composition model and extend an existing SWIFI tool to support some characteristic simultaneous fault types. We implement three simultaneous fault models and demonstrate their utility in evaluating the robustness of the Windows CE kernel. Our findings indicate that simultaneous fault injections prove highly efficient in triggering robustness vulnerabilities.</p>
+<p>【Keywords】:
+robustness testing; Software fault injections; fault models</p>
+<h3 id="12. Increasing network resiliency by optimally assigning diverse variants to routing nodes.">12. Increasing network resiliency by optimally assigning diverse variants to routing nodes.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575305">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Newell:Andrew">Andrew Newell</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Obenshain:Daniel">Daniel Obenshain</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tantillo:Thomas">Thomas Tantillo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nita=Rotaru:Cristina">Cristina Nita-Rotaru</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Amir:Yair">Yair Amir</a></p>
+<p>【Abstract】:
+Networks with homogeneous routing nodes are constantly at risk as any vulnerability found against a node could be used to compromise all nodes. Introducing diversity among nodes can be used to address this problem. With few variants, the choice of assignment of variants to nodes is critical to the overall network resiliency. We present the Diversity Assignment Problem (DAP), the assignment of variants to nodes in a network, and we show how to compute the optimal solution in medium-size networks. We also present a greedy approximation to DAP that scales well to large networks. Our solution shows that a high level of overall network resiliency can be obtained even from variants that are weak on their own. For real-world systems that grow incrementally over time, we provide an online version of our solution. Lastly, we provide a variation of our solution that is tunable for specific applications (e.g., BFT).</p>
+<p>【Keywords】:
+Routing; Network topology; Topology; Operating systems; Context; Cloud computing; Approximation methods</p>
+<h3 id="13. SIDE: Isolated and efficient execution of unmodified device drivers.">13. SIDE: Isolated and efficient execution of unmodified device drivers.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575348">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sun:Yifeng">Yifeng Sun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chiueh:Tzi=cker">Tzi-cker Chiueh</a></p>
+<p>【Abstract】:
+Buggy device drivers are a major threat to the reliability of their host operating system. There have been myriad attempts to protect the kernel, but most of them either required driver modifications or incur substantial performance overhead. This paper describes an isolated device driver execution system called SIDE (Streamlined Isolated Driver Execution), which focuses specifically on unmodified device drivers and strives to avoid changing the existing kernel code as much as possible. SIDE exploits virtual memory hardware to set up a device driver execution environment that is compatible with existing device drivers and yet is fully isolated from the kernel. SIDE is able to run an unmodified device driver for a Gigabit Ethernet NIC and the latency and throughput penalty is kept under 1% when augmented with a set of performance optimizations designed to reduce the number of protection domain crossings between an isolated device driver and the kernel.</p>
+<p>【Keywords】:
+device driver isolation; fault tolerance</p>
+<h3 id="14. Design of event-based Intrusion Detection System on OpenFlow Network.">14. Design of event-based Intrusion Detection System on OpenFlow Network.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575335">Paper Link</a>】    【Pages】:1-2</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Yung=Li">Yung-Li Hu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Su:Wei=Bing">Wei-Bing Su</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Li=ying">Li-ying Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Huang:Yennun">Yennun Huang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kuo:Sy=Yen">Sy-Yen Kuo</a></p>
+<p>【Abstract】:
+OpenFlow (OF) Network is a novel network architecture many famous cloud service providers have applied it to build their data center network. The difference between OF Network and traditional network architecture is the decoupling of controller planes and data planes for network management. Intrusion detection is very important in cloud computing to improve system security. Because OF network can improve the response time of an alert by efficiently configuring network flows, we design an event-based Intrusion Detection System (IDS) architecture on OF network.</p>
+<p>【Keywords】:
+Intrusion Detection Systems; OpenFlow Network</p>
+<h3 id="15. Analysis of bugs in Apache Virtual Computing Lab.">15. Analysis of bugs in Apache Virtual Computing Lab.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575324">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Frattini:Flavio">Flavio Frattini</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Ghosh:Rahul">Rahul Ghosh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cinque:Marcello">Marcello Cinque</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rindos:Andy">Andy Rindos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Trivedi:Kishor_S=">Kishor S. Trivedi</a></p>
+<p>【Abstract】:
+Understanding the bugs in software platforms is extremely valuable for developers, especially during the testing phase. However, this is a rarely investigated issue for open source Cloud platforms till date. In this paper, we present the analysis of 146 bug reports from Apache Virtual Computing Lab, a representative open source Cloud platform. Analysis is performed by means of an empirical approach tailored to open source Clouds. For VCL development and test teams, these results provide useful guidelines, e.g., directing volunteers' effort to components where more residual bugs are expected to be found.</p>
+<p>【Keywords】:
+Computer bugs; Iron; Testing; Authentication; Software systems; Engines</p>
+<h3 id="16. Guaranteeing Proper-Temporal-Embedding safety rules in wireless CPS: A hybrid formal modeling approach.">16. Guaranteeing Proper-Temporal-Embedding safety rules in wireless CPS: A hybrid formal modeling approach.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575357">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Tan:Feng">Feng Tan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Yufei">Yufei Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Qixin">Qixin Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bu:Lei">Lei Bu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zheng:Rong">Rong Zheng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Suri:Neeraj">Neeraj Suri</a></p>
+<p>【Abstract】:
+Cyber-Physical Systems (CPS) integrate discrete-time computing and continuous-time physical-world entities, which are often wirelessly interlinked. The use of wireless safety critical CPS (control, healthcare etc.) requires safety guarantees despite communication faults. This paper focuses on one important set of such safety rules: Proper-Temporal-Embedding (PTE). Our solution introduces hybrid automata to formally describe and analyze CPS design patterns. We propose a novel lease based design pattern, along with closed-form configuration constraints, to guarantee PTE safety rules under arbitrary wireless communication faults. We propose a formal methodology to transform the design pattern hybrid automata into specific wireless CPS designs. This methodology can effectively isolate physical world parameters from affecting the PTE safety of the resultant specific designs. We conduct a case study on laser tracheotomy wireless CPS to show that the resulting system is safe and can withstand communication disruptions.</p>
+<p>【Keywords】:
+Safety; Wireless communication; Automata; Synchronization; Lasers; Computers; Base stations</p>
+<h3 id="17. Lightweight message tracing for debugging wireless sensor networks.">17. Lightweight message tracing for debugging wireless sensor networks.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575302">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sundaram:Vinaitheerthan">Vinaitheerthan Sundaram</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Eugster:Patrick">Patrick Eugster</a></p>
+<p>【Abstract】:
+Wireless sensor networks (WSNs) deployments are subjected not infrequently to complex runtime failures that are difficult to diagnose. Alas, debugging techniques for traditional distributed systems are inapplicable because of extreme resource constraints in WSNs, and existing WSN-specific debugging solutions address either only specific types of failures, focus on individual nodes, or exhibit high overheads hampering their scalability. Message tracing is a core issue underlying the efficient and effective debugging of WSNs. We propose a message tracing solution which addresses key challenges in WSNs - besides stringent resource constraints, these include out-of-order message arrivals and message losses - while being streamlined for the common case of successful in-order message transmission. Our approach reduces energy overhead significantly (up to 95% and on average 59% smaller) compared to state-of-the-art message tracing approaches making use of Lamport clocks. We demonstrate the effectiveness of our approach through case studies of several complex faults in three well-known distributed protocols.</p>
+<p>【Keywords】:
+Wireless sensor networks; Clocks; Debugging; Out of order; Protocols; Runtime; Unicast</p>
+<h3 id="18. Hector: Detecting Resource-Release Omission Faults in error-handling code for systems software.">18. Hector: Detecting Resource-Release Omission Faults in error-handling code for systems software.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575307">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Saha:Suman">Suman Saha</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lozi:Jean=Pierre">Jean-Pierre Lozi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Thomas_0001:Ga=euml=l">Gaël Thomas</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lawall:Julia_L=">Julia L. Lawall</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Muller:Gilles">Gilles Muller</a></p>
+<p>【Abstract】:
+Omitting resource-release operations in systems error handling code can lead to memory leaks, crashes, and deadlocks. Finding omission faults is challenging due to the difficulty of reproducing system errors, the diversity of system resources, and the lack of appropriate abstractions in the C language. To address these issues, numerous approaches have been proposed that globally scan a code base for common resource-release operations. Such macroscopic approaches are notorious for their many false positives, while also leaving many faults undetected. We propose a novel microscopic approach to finding resource-release omission faults in systems software. Rather than generalizing from the entire source code, our approach focuses on the error-handling code of each function. Using our tool, Hector, we have found over 370 faults in six systems software projects, including Linux, with a 23% false positive rate. Some of these faults allow an unprivileged malicious user to crash the entire system.</p>
+<p>【Keywords】:
+Linux; Computer crashes; Runtime; Kernel; System recovery; Protocols</p>
+<h3 id="19. Stress balancing to mitigate NBTI effects in register files.">19. Stress balancing to mitigate NBTI effects in register files.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575315">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Amrouch:Hussam">Hussam Amrouch</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Ebi:Thomas">Thomas Ebi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Henkel:J=ouml=rg">Jörg Henkel</a></p>
+<p>【Abstract】:
+Negative Bias Temperature Instability (NBTI) is considered one of the major reliability concerns of transistors in current and upcoming technology nodes and a main cause of their diminished lifetime. We propose a new means to mitigate the effects of NBTI on SRAM-based register files, which are particularly vulnerable due to their small structure size and are under continuous voltage stress for prolonged intervals. The conducted results from our technology simulator demonstrate the severity of NBTI effects on the SRAM cells - especially when process variation is taken into account. Based on the presented analysis, we show that NBTI stress in different registers needs to be tackled using different strategies corresponding to their access patterns. To this end, we propose to selectively increase the resilience of individual registers against NBTI. Our technique balances the gate voltage stress of the two PMOS transistors of an SRAM cell such that both are under stress for approximately the same amount of time during operation - thereby minimizing the deleterious effects of NBTI. We present mitigation implementations in both hardware and in software along with the incurred overhead. Through a wide range of applications we can show that our technique reduces the NBTI-induced reliability degradation by 35% on average. This is 22% better than current State-of-the-Art.</p>
+<p>【Keywords】:
+Microarchitecture; Embedded system; Reliability; Aging; Register File; NBTI</p>
+<h3 id="20. Towards SDN enabled network control delegation in clouds.">20. Towards SDN enabled network control delegation in clouds.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575320">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Malik:Muhammad_Salman">Muhammad Salman Malik</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Montanari:Mirko">Mirko Montanari</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Huh:Jun_Ho">Jun Ho Huh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bobba:Rakesh_B=">Rakesh B. Bobba</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Campbell:Roy_H=">Roy H. Campbell</a></p>
+<p>【Abstract】:
+In today's IaaS clouds users only get a logical view of the underlying network and have limited control. Delegating more control to end users would be beneficial but would also raise security concerns for the provider. Emerging Software Defined Networking (SDN) technologies have the capabilities to facilitate delegation of network controls and provide some level of network abstractions to end users. However, any delegation solution should try to balance the level of controls delegated to end users with the security constraints of the provider. In this paper, we propose a SDN-based framework to facilitate delegation of some network controls to end users, providing the means to monitor and configure their own slices of the underlying networks. Using two instantiations of this framework, we illustrate the tradeoffs between security and the level of network abstractions provided to end users.</p>
+<p>【Keywords】:
+Control Delegation; SDN; Cloud</p>
+<h3 id="21. Distal: A framework for implementing fault-tolerant distributed algorithms.">21. Distal: A framework for implementing fault-tolerant distributed algorithms.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575306">Paper Link</a>】    【Pages】:1-8</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Biely:Martin">Martin Biely</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Delgado:Pamela">Pamela Delgado</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Milosevic_0001:Zarko">Zarko Milosevic</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schiper:Andr=eacute=">André Schiper</a></p>
+<p>【Abstract】:
+We introduce Distal, a new framework that simplifies turning pseudocode of fault tolerant distributed algorithms into efficient executable code. Without proper tool support, even small amounts of pseudocode normally ends up in several thousands of non-trivial lines of Java or C++. Distal is implemented as a library in Scala and consists of two main parts: a domain specific language (DSL) in which algorithms are expressed and an efficient messaging layer that deals with low level issues such as connection management, threading and (de)serialization. The DSL is designed such that implementations of distributed algorithms highly resemble the pseudocode found in research papers. By writing code that is close to the protocol description, one can be more convinced that the implemented system really reflects the protocol specification on paper. Distal does not only make it simple and intuitive to implement distributed algorithms but it also leads to efficient implementations.</p>
+<p>【Keywords】:
+SMR; DSL; fault-tolerant distributed algorithms; Paxos</p>
+<h3 id="22. An algorithmic approach to error localization and partial recomputation for low-overhead fault tolerance.">22. An algorithmic approach to error localization and partial recomputation for low-overhead fault tolerance.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575309">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sloan:Joseph">Joseph Sloan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kumar_0002:Rakesh">Rakesh Kumar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bronevetsky:Greg">Greg Bronevetsky</a></p>
+<p>【Abstract】:
+The increasing size and complexity of massively parallel systems (e.g. HPC systems) is making it increasingly likely that individual circuits will produce erroneous results. For this reason, novel fault tolerance approaches are increasingly needed. Prior fault tolerance approaches often rely on checkpoint-rollback based schemes. Unfortunately, such schemes are primarily limited to rare error event scenarios as the overheads of such schemes become prohibitive if faults are common. In this paper, we propose a novel approach for algorithmic correction of faulty application outputs. The key insight for this approach is that even under high error scenarios, even if the result of an algorithm is erroneous, most of it is correct. Instead of simply rolling back to the most recent checkpoint and repeating the entire segment of computation, our novel resilience approach uses algorithmic error localization and partial recomputation to efficiently correct the corrupted results. We evaluate our approach in the specific algorithmic scenario of linear algebra operations, focusing on matrix-vector multiplication (MVM) and iterative linear solvers. We develop a novel technique for localizing errors in MVM and show how to achieve partial recomputation within this algorithm, and demonstrate that this approach both improves the performance of the Conjugate Gradient solver in high error scenarios by 3x-4x and increases the probability that it completes successfully by up to 60% with parallel experiments up to 100 nodes.</p>
+<p>【Keywords】:
+sparse linear algebra; algorithmic error correction; partial recomputation; error localization; numerical methods</p>
+<h3 id="23. Message from the general chair.">23. Message from the general chair.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575288">Paper Link</a>】    【Pages】:1</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Pataricza:Andr=aacute=s">András Pataricza</a></p>
+<p>【Abstract】:
+It is my distinguished pleasure to welcome all the participants to Budapest and the 43nd Annual IEEE/IFIP International Conference on Dependable Systems and Networks. The Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN) is the most prestigious international forum for presenting research results in the field of dependability and security. It is especially important for us that this conference is organized in our region for the first time in its history.</p>
+<p>【Keywords】:</p>
+<h3 id="24. Fitting second-order acyclic Marked Markovian Arrival Processes.">24. Fitting second-order acyclic Marked Markovian Arrival Processes.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575347">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sansottera:Andrea">Andrea Sansottera</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Casale:Giuliano">Giuliano Casale</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cremonesi:Paolo">Paolo Cremonesi</a></p>
+<p>【Abstract】:
+Markovian Arrival Processes (MAPs) are a tractable class of point-processes useful to model correlated time series, such as those commonly found in network traces and system logs used in performance analysis and reliability evaluation. Marked MAPs (MMAPs) generalize MAPs by further allowing the modeling of multi-class traces, possibly with cross-correlation between multi-class arrivals. In this paper, we present analytical formulas to fit second-order acyclic MMAPs with an arbitrary number of classes. We initially define closed-form formulas to fit second-order MMAPs with two classes, where the underlying MAP is in canonical form. Our approach leverages forward and backward moments, which have recently been defined, but never exploited jointly for fitting. Then, we show how to sequentially apply these formulas to fit an arbitrary number of classes. Representative examples and trace-driven simulation using storage traces show the effectiveness of our approach for fitting empirical datasets.</p>
+<p>【Keywords】:
+dependence; Multi-class workload; point process</p>
+<h3 id="25. Fault detection and localization in distributed systems using invariant relationships.">25. Fault detection and localization in distributed systems using invariant relationships.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575304">Paper Link</a>】    【Pages】:1-8</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sharma:Abhishek_B=">Abhishek B. Sharma</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Haifeng">Haifeng Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Ding:Min">Min Ding</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yoshihira:Kenji">Kenji Yoshihira</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jiang:Guofei">Guofei Jiang</a></p>
+<p>【Abstract】:
+Recent advances in sensing and communication technologies enable us to collect round-the-clock monitoring data from a wide-array of distributed systems including data centers, manufacturing plants, transportation networks, automobiles, etc. Often this data is in the form of time series collected from multiple sensors (hardware as well as software based). Previously, we developed a time-invariant relationships based approach that uses Auto-Regressive models with eXogenous input (ARX) to model this data. A tool based on our approach has been effective for fault detection and capacity planning in distributed systems. In this paper, we first describe our experience in applying this tool in real-world settings. We also discuss the challenges in fault localization that we face when using our tool, and present two approaches - a spatial approach based on invariant graphs and a temporal approach based on expected broken invariant patterns - that we developed to address this problem.</p>
+<p>【Keywords】:
+Time series analysis; Monitoring; Time measurement; Noise; Data models; Servers</p>
+<h3 id="26. Consistency or latency? A quantitative analysis of replication systems based on replicated state machines.">26. Consistency or latency? A quantitative analysis of replication systems based on replicated state machines.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575361">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Xu">Xu Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sun:Hailong">Hailong Sun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Deng:Ting">Ting Deng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Huai:Jinpeng">Jinpeng Huai</a></p>
+<p>【Abstract】:
+Existing theories like CAP and PACELC have claimed that there are tradeoffs between some pairs of performance measures in distributed replication systems, such as consistency and latency. However, current systems take a very vague view on how to balance those tradeoffs, e.g. eventual consistency. In this work, we are concerned with providing a quantitative analysis on consistency and latency for widely-used replicated state machines(RSMs). Based on our presented generic RSM model called RSM-d, probabilistic models are built to quantify consistency and latency. We show that both are affected by d, which is the number of ACKs received by the coordinator before committing a write request. And we further define a payoff model through combining the consistency and latency models. Finally, with Monte Carlo based simulation, we validate our presented models and show the effectiveness of our solutions in terms of how to obtain an optimal tradeoff between consistency and latency.</p>
+<p>【Keywords】:
+replicated state machine; consistency; write conflict; latency</p>
+<h3 id="27. Improving SSD reliability with RAID via Elastic Striping and Anywhere Parity.">27. Improving SSD reliability with RAID via Elastic Striping and Anywhere Parity.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575359">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Jaeho">Jaeho Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Jongmin">Jongmin Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Choi:Jongmoo">Jongmoo Choi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Donghee">Donghee Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Noh:Sam_H=">Sam H. Noh</a></p>
+<p>【Abstract】:
+While the move from SLC to MLC/TLC flash memory technology is increasing SSD capacity at lower cost, it is being done at the cost of sacrificing reliability. An approach to remedy this loss is to employ the RAID architecture with the chips that comprise SSDs. However, using the traditional RAID approach may result in negative effects as the total number of writes may increase due to the parity updates, consequently leading to increased P/E cycles and higher bit error rates. Using a technique that we call Elastic Striping and Anywhere Parity (eSAP), we develop eSAP-RAID, a RAID scheme that significantly reduces parity writes while providing reliability better than RAID-5. We derive performance and lifetime models of SSDs employing RAID-5 and eSAP-RAID that show the benefits of eSAP-RAID. We also implement these schemes in SSDs using DiskSim with SSD Extension and validate the models using realistic workloads. Our results show that eSAP-RAID improves reliability considerably, while limiting its wear. Specifically, the expected lifetime of eSAP-RAID employing SSDs may be as long as current ECC based SSDs, while its reliability level can be maintained at the level of the early stages of current ECC based SSDs throughout its entire lifetime.</p>
+<p>【Keywords】:
+SSD; Flash memory; Reliability; RAID</p>
+<h3 id="28. DRIP: A framework for purifying trojaned kernel drivers.">28. DRIP: A framework for purifying trojaned kernel drivers.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575342">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gu:Zhongshu">Zhongshu Gu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sumner:William_N=">William N. Sumner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Deng:Zhui">Zhui Deng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Xiangyu">Xiangyu Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Dongyan">Dongyan Xu</a></p>
+<p>【Abstract】:
+Kernel drivers are usually provided in the form of loadable kernel extensions, which can be loaded/unloaded dynamically at runtime and execute with the same privilege as the core operating system kernel. The unrestricted security access from the drivers to the kernel is nevertheless a double-edged sword that makes them susceptible targets of trojan attacks. Given a benign driver, it is now easy to implant malicious logic with existing hacking tools. Once implanted, such malicious logic is difficult to detect. In this paper we propose DRIP, a framework for detecting and eliminating malicious logic embedded in a kernel driver through iteratively eliminating unnecessary kernel API invocations from the driver. When provided with the binary of a trojaned driver, DRIP generates a purified driver with benign functionalities preserved and malicious ones eliminated. Our evaluation shows that DRIP successfully eliminates malicious effects of trojaned drivers in the system, with the purified drivers maintaining or even improving their performance over the trojaned drivers.</p>
+<p>【Keywords】:
+Trojan Detection; System Security; Kernel Drivers</p>
+<h3 id="29. SPECTRE: A dependable introspection framework via System Management Mode.">29. SPECTRE: A dependable introspection framework via System Management Mode.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575343">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Fengwei">Fengwei Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Leach:Kevin">Kevin Leach</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sun:Kun">Kun Sun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stavrou:Angelos">Angelos Stavrou</a></p>
+<p>【Abstract】:
+Virtual Machine Introspection (VMI) systems have been widely adopted for malware detection and analysis. VMI systems use hypervisor technology for system introspection and to expose malicious activity. However, recent malware can detect the presence of virtualization or corrupt the hypervisor state thus avoiding detection. We introduce SPECTRE, a hardware-assisted dependability framework that leverages System Management Mode (SMM) to inspect the state of a system. Contrary to VMI, our trusted code base is limited to BIOS and the SMM implementations. SPECTRE is capable of transparently and quickly examining all layers of running system code including a hypervisor, the OS, and user level applications. We demonstrate several use cases of SPECTRE including heap spray, heap overflow, and rootkit detection using real-world attacks on Windows and Linux platforms. In our experiments, full inspection with SPECTRE is 100 times faster than similar VMI systems because there is no performance overhead due to virtualization.</p>
+<p>【Keywords】:
+memory attacks; SMM; introspection</p>
+<h3 id="30. Fault-tolerance characteristics of data center network topologies using fault regions.">30. Fault-tolerance characteristics of data center network topologies using fault regions.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575321">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Yang">Yang Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Muppala:Jogesh_K=">Jogesh K. Muppala</a></p>
+<p>【Abstract】:
+Data center networks (DCNs) are inherently failure-prone owing to the existence of many links, switches and servers. Many times the failures of the components may be correlated resulting a set of connected components failing together. This correlated failure behaviour could be captured through the use of fault regions [1]. This paper explores the effect of such failures in DCNs, using four topologies, viz., Fat Tree, DCell, FlatNet and BCube. We used two categories of metrics for evaluation: connection-oriented metrics, including aggregated bottleneck throughput (ABT), average path length (APL) and routing failure rate (RFR); and network size-oriented metrics, including Component Decomposition Number (CDN) and Smallest/Largest Component Size (SCS/LCS).</p>
+<p>【Keywords】:
+Evaluation; Data Center Network; Fault Region</p>
+<h3 id="31. Implementing the ADVISE security modeling formalism in Möbius.">31. Implementing the ADVISE security modeling formalism in Möbius.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575362">Paper Link</a>】    【Pages】:1-8</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Ford:Michael_D=">Michael D. Ford</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Keefe:Ken">Ken Keefe</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/LeMay:Elizabeth">Elizabeth LeMay</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sanders:William_H=">William H. Sanders</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Muehrcke:Carol">Carol Muehrcke</a></p>
+<p>【Abstract】:
+The ADversary VIew Security Evaluation (ADVISE) model formalism provides a system security model from the perspective of an adversary. An ADVISE atomic model consists of an attack execution graph (AEG) composed of attack steps, system state variables, and attack goals, as well as an adversary profile that defines the abilities and interests of a particular adversary. The ADVISE formalism has been implemented as a Mo&#x0308;bius atomic model formalism in order to leverage the existing set of mature modeling formalisms and solution techniques offered by Mo&#x0308;bius. This tool paper explains the ADVISE implementation in Mo&#x0308;bius and provides technical details for Mo&#x0308;bius users who want to use ADVISE either alone or in combination with other modeling formalisms provided by Mo&#x0308;bius.</p>
+<p>【Keywords】:
+M&#x00F6;bius Atomic Model Formalism; Quantitative Security Metrics; State-based Security Model</p>
+<h3 id="32. FTSPM: A Fault-Tolerant ScratchPad Memory.">32. FTSPM: A Fault-Tolerant ScratchPad Memory.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575351">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Monazzah:Amir_Mahdi_Hosseini">Amir Mahdi Hosseini Monazzah</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Farbeh:Hamed">Hamed Farbeh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Miremadi:Seyed_Ghassem">Seyed Ghassem Miremadi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fazeli:Mahdi">Mahdi Fazeli</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Asadi:Hossein">Hossein Asadi</a></p>
+<p>【Abstract】:
+ScratchPad Memory (SPM) is an important part of most modern embedded processors. The use of embedded processors in safety-critical applications implies including fault tolerance in the design of SPM. This paper proposes a method, called FTSPM, which integrates a multi-priority mapping algorithm with a hybrid SPM structure. The proposed structure divides SPM into three parts: 1) a part is equipped with Non-Volatile Memory (NVM) which is immune against soft errors, 2) a part is equipped with Error-Correcting Code, and 3) a part is equipped with parity. The proposed mapping algorithm is responsible to distribute the program blocks among the above three parts with regards to their vulnerability level. The simulation results demonstrate that the FTSPM reduces the SPM vulnerability by about 7x in comparison to a pure SRAM-based SPM. In addition, the dynamic energy consumption of the proposed method is 77% and 47% less than that of a pure NVM-based SPM and a pure SRAM-based SPM, respectively.</p>
+<p>【Keywords】:
+Non-Volatile Memory; Reliability; Mapping of SPM; SPM</p>
+<h3 id="33. Lumpability of fluid models with heterogeneous agent types.">33. Lumpability of fluid models with heterogeneous agent types.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575346">Paper Link</a>】    【Pages】:1-11</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/i/Iacobelli:Giulio">Giulio Iacobelli</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tribastone:Mirco">Mirco Tribastone</a></p>
+<p>【Abstract】:
+Fluid models have gained popularity in the performance modeling of computing systems and communication networks. When the model under study consists of many different types of agents, the size of the associated system of ordinary differential equations (ODEs) increases with the number of types, making the analysis more difficult. We study this problem for a class of models where heterogeneity is expressed as a perturbation of certain parameters of the ODE vector field. We provide an a-priori bound that relates the solutions of the original, heterogenous model with that of an ODE system of smaller size which arises from aggregating system variables concerning different types of agents. By showing that this bound grows linearly with the intensity of the perturbation, we provide a formal justification to the intuitive possibility of neglecting small differences in agents' behavior as a means to reducing the dimensionality of the original system.</p>
+<p>【Keywords】:
+Computational modeling; Vectors; Mathematical model; Numerical models; Analytical models; Bandwidth; Jacobian matrices</p>
+<h3 id="34. Message from the DCCS program chair.">34. Message from the DCCS program chair.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575289">Paper Link</a>】    【Pages】:1</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Candea:George">George Candea</a></p>
+<p>【Abstract】:
+Welcome to DCCS 2013 - this is a fantastic time to work on dependability. Everyday life has become inherently dependent on computerized networked systems whose complexity is rapidly growing. Providing resilience to malicious attacks, accidental faults, design errors, and unexpected operating conditions is therefore becoming simultaneously more important and more challenging. If these systems are unreliable, insecure or untrustworthy, significant harm can result, and users will abandon them, thus squandering opportunities for progress.</p>
+<p>【Keywords】:</p>
+<h3 id="35. Locality matters: Reducing Internet traffic graphs using location analysis.">35. Locality matters: Reducing Internet traffic graphs using location analysis.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575365">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Berger:Andreas">Andreas Berger</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ruehrup:Stefan">Stefan Ruehrup</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gansterer:Wilfried_N=">Wilfried N. Gansterer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jung:Oliver">Oliver Jung</a></p>
+<p>【Abstract】:
+The representation of Internet traffic as connection graphs augments anomaly detection systems by providing insight on the structural connection properties, i.e., who-talks-to-whom. However, these graphs are extremely large and one has to decide in advance on which aspect to focus. In the context of malware detection, this is difficult as malware often mimics legitimate traffic. In this paper, we present a statistical approach for extracting the typical traffic destinations for a set of monitored hosts, and derive a reduced graph that contains only connections that are anomalous for that host. This graph can then be analyzed efficiently. Our system is designed to scale to thousands of monitored hosts. We evaluate our approach using a data set from a real network, and show that we can reliably detect injected malware activity.</p>
+<p>【Keywords】:
+malware detection; Network monitoring; statistical anomaly detection; graph analysis; traffic modeling</p>
+<h3 id="36. Reading between the lines of failure logs: Understanding how HPC systems fail.">36. Reading between the lines of failure logs: Understanding how HPC systems fail.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575356">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/e/El=Sayed:Nosayba">Nosayba El-Sayed</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schroeder:Bianca">Bianca Schroeder</a></p>
+<p>【Abstract】:
+As the component count in supercomputing installations continues to increase, system reliability is becoming one of the major issues in designing HPC systems. These issues will become more challenging in future Exascale systems, which are predicted to include millions of CPU cores. Even with relatively reliable individual components, the sheer number of components will increase failure rates to unprecedented levels. Efficiently running those systems will require a good understanding of how different factors impact system reliability. In this paper we use a decade worth of field data made available by Los Alamos National Lab to study the impact of a diverse set of factors on the reliability of HPC systems. We provide insights into the nature of correlations between failures, and investigate the impact of factors, such as the power quality, temperature, fan and chiller reliability, system usage and utilization, and external factors, such as cosmic radiation, on system reliability.</p>
+<p>【Keywords】:
+Correlation; Probability; Hardware; Reliability; Program processors; Analytical models</p>
+<h3 id="37. A practical characterization of a NASA SpaceCube application through fault emulation and laser testing.">37. A practical characterization of a NASA SpaceCube application through fault emulation and laser testing.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575354">Paper Link</a>】    【Pages】:1-8</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Walters:John_Paul">John Paul Walters</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zick:Kenneth_M=">Kenneth M. Zick</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/French:Matthew">Matthew French</a></p>
+<p>【Abstract】:
+Historically, space-based processing systems have lagged behind their terrestrial counterparts by several processor generations due, in part, to the cost and complexity of implementing radiation-hardened processor designs. Efforts such as NASA's SpaceCube seek to change this paradigm, using higher performance commercial hardware wherever possible. This has the potential to revolutionize onboard data processing, but it cannot happen unless the soft error reliability can be characterized and deemed sufficient. A variety of fault injection techniques are used to evaluate system reliability, most commonly fault emulation, fault simulation, laser testing, and particle beam testing. Combining multiple techniques is more complex and less common. In this study we characterize a real-world application that leverages a radiation-hardening by software (RHBSW) solution for the SpaceCube platform, using two fault injection strategies: laser testing and fault emulation. We describe several valuable lessons learned, and show how both validation techniques can be combined to greater effect.</p>
+<p>【Keywords】:
+Circuit faults; Testing; Emulation; Computer crashes; Laser applications; Field programmable gate arrays</p>
+<h3 id="38. Intrusion detection and honeypots in nested virtualization environments.">38. Intrusion detection and honeypots in nested virtualization environments.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575329">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Beham:Michael">Michael Beham</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vlad:Marius">Marius Vlad</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Reiser:Hans_P=">Hans P. Reiser</a></p>
+<p>【Abstract】:
+Several research projects in the past have built intrusion detection systems and honeypot architectures based on virtual machine introspection (VMI). These systems directly benefit from the use of virtualization technology. The VMI approach, however, requires direct interaction with the virtual machine monitor, and typically is not available to clients of current public clouds. Recently, nested virtualization has gained popularity in research as an approach that could enable cloud customers to use virtualization-based solutions within a cloud by nesting two virtual machine monitors, with the inner one under control of the client. In this paper, we compare the performance of existing nested-virtualization solutions and analyze the impact of the performance overhead on VMI-based intrusion detection and honeypot systems.</p>
+<p>【Keywords】:
+Cloud computing; Intrusion detection; Honeypots; Nested virtualization</p>
+<h3 id="39. CloudPD: Problem determination and diagnosis in shared dynamic clouds.">39. CloudPD: Problem determination and diagnosis in shared dynamic clouds.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575298">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sharma:Bikash">Bikash Sharma</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jayachandran:Praveen">Praveen Jayachandran</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Verma:Akshat">Akshat Verma</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Das:Chita_R=">Chita R. Das</a></p>
+<p>【Abstract】:
+In this work, we address problem determination in virtualized clouds. We show that high dynamism, resource sharing, frequent reconfiguration, high propensity to faults and automated management introduce significant new challenges towards fault diagnosis in clouds. Towards this, we propose CloudPD, a fault management framework for clouds. CloudPD leverages (i) a canonical representation of the operating environment to quantify the impact of sharing; (ii) an online learning process to tackle dynamism; (iii) a correlation-based performance models for higher detection accuracy; and (iv) an integrated end-to-end feedback loop to synergize with a cloud management ecosystem. Using a prototype implementation with cloud representative batch and transactional workloads like Hadoop, Olio and RUBiS, it is shown that CloudPD detects and diagnoses faults with low false positives (&lt;; 16%) and high accuracy of 88%, 83% and 83%, respectively. In an enterprise trace-based case study, CloudPD diagnosed anomalies within 30 seconds and with an accuracy of 77%, demonstrating its effectiveness in real-life operations.</p>
+<p>【Keywords】:
+Hadoop MapReduce; Cloud; Problem Determination; Fault Diagnosis; Virtualization; Performance</p>
+<h3 id="40. Geo-replicated storage with scalable deferred update replication.">40. Geo-replicated storage with scalable deferred update replication.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575360">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sciascia:Daniele">Daniele Sciascia</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pedone:Fernando">Fernando Pedone</a></p>
+<p>【Abstract】:
+Many current online services are deployed over geographically distributed sites (i.e., datacenters). Such distributed services call for geo-replicated storage, that is, storage distributed and replicated among many sites. Geographical distribution and replication can improve locality and availability of a service. Locality is achieved by moving data closer to the users. High availability is attained by replicating data in multiple servers and sites. This paper considers a class of scalable replicated storage systems based on deferred update replication with transactional properties. The paper discusses different ways to deploy scalable deferred update replication in geographically distributed systems, considers the implications of these deployments on user-perceived latency, and proposes solutions. Our results are substantiated by a series of microbenchmarks and a social network application.</p>
+<p>【Keywords】:
+transactional systems; Database replication; scalable data store; fault tolerance; high performance</p>
+<h3 id="41. State-of-the-practice in data center virtualization: Toward a better understanding of VM usage.">41. State-of-the-practice in data center virtualization: Toward a better understanding of VM usage.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575350">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Birke:Robert">Robert Birke</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Podzimek:Andrej">Andrej Podzimek</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Lydia_Y=">Lydia Y. Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Smirni:Evgenia">Evgenia Smirni</a></p>
+<p>【Abstract】:
+Hardware virtualization is the prevalent way to share data centers among different tenants. In this paper we present a large scale workload characterization study that aims to a better understanding of the state-of-the-practice, i.e., how data centers in the private cloud are used by their customers, how physical resources are shared among different tenants using virtualization, and how virtualization technologies are actually employed. Our study focuses on all corporate data centers of a major infrastructure provider that are geographically dispersed across the entire globe and reports on their observed usage across a 19-day period. We especially focus on how virtual machines are deployed across different physical resources with an emphasis on processors and memory, focusing on resource sharing and usage of physical resources, virtual machine life cycles, and migration patterns and frequencies. Our study illustrates that there is a huge tendency in over provisioning resources while being conservative to the several possibilities opened up by virtualization (e.g., migration and co-location), showing tremendous potential for the development of policies aiming to reduce data center operational costs.</p>
+<p>【Keywords】:
+workload characterization; Data Centers; virtualization; private cloud</p>
+<h3 id="42. WirelessHART modeling and performance evaluation.">42. WirelessHART modeling and performance evaluation.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575358">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Remke:Anne">Anne Remke</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Xian">Xian Wu</a></p>
+<p>【Abstract】:
+In process industries wired supervisory and control networks are more and more replaced by wireless systems. Wireless communication inevitably introduces time delays and message losses, which may degrade the system reliability and performance. WirelessHART, as the first international standard for wireless process supervision and control has received notable academic attention. This paper models WirelessHART networks with link failures using Discrete-time Markov chains and evaluates the network performance in a typical WirelessHART environment with respect to delay and reachability. The evaluation shows that although the performance of WirelessHART is influenced by several factors, it is capable to deliver reliable service in typical industrial environments. The proposed model can also be used to predict path performance and to provide routing suggestions.</p>
+<p>【Keywords】:
+Logic gates; Schedules; Wireless communication; Delays; Computational modeling; Uplink; Routing</p>
+<h3 id="43. Generative software-based memory error detection and correction for operating system data structures.">43. Generative software-based memory error detection and correction for operating system data structures.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575308">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Borchert:Christoph">Christoph Borchert</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schirmeier:Horst">Horst Schirmeier</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Spinczyk:Olaf">Olaf Spinczyk</a></p>
+<p>【Abstract】:
+Recent studies indicate that the number of system failures caused by main memory errors is much higher than expected. In contrast to the commonly used hardware-based countermeasures, for example using ECC memory, software-based fault-tolerance measures are much more flexible and can exploit application knowledge, such as the criticality of specific data structures. This paper presents a software-based memory error protection approach, which we used to harden the eCos operating system in a case study. The main benefits of our approach are the flexibility to choose from an extensible toolbox of easily pluggable error detection and correction schemes as well as its very low runtime overhead, which totals in a range of 0.09-1.7 %. The implementation is based on aspect-oriented programming and exploits the object-oriented program structure of eCos to identify well-suited code locations for the insertion of generative fault-tolerance measures.</p>
+<p>【Keywords】:
+Data structures; Computer crashes</p>
+<h3 id="44. Increasing the trustworthiness of commodity hardware through software.">44. Increasing the trustworthiness of commodity hardware through software.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575328">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/e/Elphinstone:Kevin">Kevin Elphinstone</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shen:Yanyan">Yanyan Shen</a></p>
+<p>【Abstract】:
+Advances in formal software verification has produced an operating system that is guaranteed mathematically to be correct and enforce access isolation. Such an operating system could potentially consolidate safety and security critical software on a single device where previously multiple devices were used. One of the barriers to consolidation on commodity hardware is the lack of hardware dependability features. A hardware fault triggered by cosmic rays, alpha particle strikes, etc. potentially invalidates the strong mathematical guarantees. This paper discusses improving the trustworthiness of commodity hardware to enable a verified microkernel to be used in some situations previously needing separate computers. We explore leveraging multicore processors to provide redundancy, and report the results of our initial performance investigation.</p>
+<p>【Keywords】:
+reliability; multicore; kernel</p>
+<h3 id="45. Manipulating semantic values in kernel data structures: Attack assessments and implications.">45. Manipulating semantic values in kernel data structures: Attack assessments and implications.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575344">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Prakash:Aravind">Aravind Prakash</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Venkataramani:Eknath">Eknath Venkataramani</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yin:Heng">Heng Yin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lin:Zhiqiang">Zhiqiang Lin</a></p>
+<p>【Abstract】:
+Semantic values in kernel data structures are critical to many security applications, such as virtual machine introspection, malware analysis, and memory forensics. However, malware, or more specifically a kernel rootkit, can often directly tamper with the raw kernel data structures, known as DKOM (Direct Kernel Object Manipulation) attacks, thereby significantly thwarting security analysis. In addition to manipulating pointer fields to hide certain kernel objects, DKOM attacks may also mutate semantic values, which are data values with important semantic meanings. Prior research efforts have been made to defeat pointer manipulation attacks and thus identify hidden kernel objects. However, the space and severity of Semantic Value Manipulation (SVM) attacks have not received sufficient understanding. In this paper, we take a first step to systematically assess this attack space. To this end, we devise a new fuzz testing technique, namely - duplicate-value directed semantic field fuzzing, and implement a prototype called MOSS. Using MOSS, we evaluate two widely used operating systems: Windows XP and Ubuntu 10.04. Our experimental results show that the space of SVM attacks is vast for both OSes. Our proof-of-concept kernel rootkit further demonstrates that it can successfully evade all the security tools tested in our experiments, including recently proposed robust signature schemes. Moreover, our duplicate value analysis implies the challenges in defeating SVM attacks, such as an intuitive cross checking approach on duplicate values can only provide marginal detection improvement. Our study motivates revisiting of existing security solutions and calls for more effective defense against kernel threats.</p>
+<p>【Keywords】:
+Semantics; Kernel; Testing; Heuristic algorithms; Data structures; Security; Support vector machines</p>
+<h3 id="46. Seamless kernel updates.">46. Seamless kernel updates.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575312">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Siniavine:Maxim">Maxim Siniavine</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Goel:Ashvin">Ashvin Goel</a></p>
+<p>【Abstract】:
+Kernel patches are released frequently to fix bugs and security vulnerabilities. However, users and system administrators often delay installing these updates because they require a system reboot, which results in disruption of service and the loss of application state. Unfortunately, the longer a system remains out-of-date, the higher is the likelihood of system failure or a successful attack. Approaches, such as dynamic patching and hot swapping, have been proposed for updating the kernel. All of them either limit the types of updates that are supported, or require significant programming effort to manage. We have designed a system that checkpoints application-visible state, updates the kernel, and restores the application state thus minimizing disruption of service. By checkpointing high-level state, our system no longer depends on the precise implementation of a patch and can apply all backward compatible patches. Our results show that updates to major releases of the Linux kernel can be applied with minimal effort and no observable overhead.</p>
+<p>【Keywords】:
+Kernel; Instruction sets; Data structures; Linux; Protocols; Transfer functions; Reliability</p>
+<h3 id="47. Addressing memory exhaustion failures in Virtual Machines in a cloud environment.">47. Addressing memory exhaustion failures in Virtual Machines in a cloud environment.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575330">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Molina:Jose_Antonio_Navas">Jose Antonio Navas Molina</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mishra:Shivakant">Shivakant Mishra</a></p>
+<p>【Abstract】:
+With the expansion of the cloud computing usage over a wide range of areas and different kinds of users, the cloud providers are taking full advantage of all their resources as much as they can. Memory is the most expensive resource in terms of oversubscribing and this has resulted in high price to the end user. Furthermore, performing swapping in Virtual Machines (VM) is expensive, so the cloud provider usually do not offer any swapping space for its systems. As a consequence, when a VM runs out of memory, user processes are killed. This scenario in the cloud environment is especially critical, since the user loses all of his/her execution time and, by extension, the money invested in this computation. This paper addresses this critical problem by providing a kernel extension that monitors the memory requirements of a VM and prevents the out of memory state by creating swapping space dynamically. The paper describes the design and implementation of a preliminary prototype of this kernel extensions and evaluates its performance.</p>
+<p>【Keywords】:
+cloud; Virtual machine; memory exhaustion; swapping</p>
+<h3 id="48. Availability study on cloud computing environments: Live migration as a rejuvenation mechanism.">48. Availability study on cloud computing environments: Live migration as a rejuvenation mechanism.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575322">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Melo:Matheus">Matheus Melo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Maciel:Paulo_Romero_Martins">Paulo Romero Martins Maciel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Araujo:Jean">Jean Araujo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Matos:Rubens_de_S=">Rubens de S. Matos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Ara=uacute=jo:Carlos">Carlos Araújo</a></p>
+<p>【Abstract】:
+With the increasing adoption of cloud computing environments, studies about high availability in those systems became more and more significant. Software rejuvenation is an important mechanism to improve system availability. This paper presents a comprehensive availability model to evaluate the utilization of the live migration mechanism to enable VMM rejuvenation with minimum service interruption. Live migrations are performed observing a time-based trigger. We evaluate five different scenarios, with distinct time intervals for triggering the rejuvenation. The results show that the live migration can significantly reduce the system downtime.</p>
+<p>【Keywords】:
+availability; Cloud computing; software aging and rejuvenation; live migration</p>
+<h3 id="49. Mitigating access-driven timing channels in clouds using StopWatch.">49. Mitigating access-driven timing channels in clouds using StopWatch.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575299">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Peng">Peng Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gao:Debin">Debin Gao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Reiter:Michael_K=">Michael K. Reiter</a></p>
+<p>【Abstract】:
+This paper presents StopWatch , a system that defends against timing-based side-channel attacks that arise from coresidency of victims and attackers in infrastructure-as-a-service clouds. StopWatch triplicates each cloud-resident guest virtual machine (VM) and places replicas so that the three replicas of a guest VM are coresident with nonoverlapping sets of (replicas of) other VMs. StopWatch uses the timing of I/O events at a VM's replicas collectively to determine the timings observed by each one or by an external observer, so that observable timing behaviors are similarly likely in the absence of any other individual, coresident VM. We detail the design and implementation of StopWatch in Xen, evaluate the factors that influence its performance, and address the problem of placing VM replicas in a cloud under the constraints of StopWatch so as to still enable adequate cloud utilization.</p>
+<p>【Keywords】:
+Clocks; Real-time systems; Virtual machine monitors; Hardware; Synchronization; Radiation detectors</p>
+<h3 id="50. Evaluating Xilinx SEU Controller Macro for fault injection.">50. Evaluating Xilinx SEU Controller Macro for fault injection.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575336">Paper Link</a>】    【Pages】:1-2</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Nunes:Jose_Luis">Jose Luis Nunes</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cunha:Jo=atilde=o_Carlos">João Carlos Cunha</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Barbosa:Raul">Raul Barbosa</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rela:M=aacute=rio_Zenha">Mário Zenha Rela</a></p>
+<p>【Abstract】:
+This paper presents a preliminary evaluation of the SEU Controller Macro, a VHDL component developed by Xilinx for the detection and recovery of single event upsets, as a building block of an FPGA fault-injector. We found that this SEU Controller Macro is extremely effective for injecting faults into the FPGA configuration memory, as single and double bit-flips, with precise location, virtually no intrusiveness, and coarse timing accuracy. We present some clues on how to extend its functionalities to build a fully-fledge FPGA fault injector.</p>
+<p>【Keywords】:
+embedded systems; fault injection; FPGA; SEU</p>
+<h3 id="51. Network traffic anomaly detection based on growing hierarchical SOM.">51. Network traffic anomaly detection based on growing hierarchical SOM.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575338">Paper Link</a>】    【Pages】:1-2</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Huang:Shin=Ying">Shin-Ying Huang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Huang:Yennun">Yennun Huang</a></p>
+<p>【Abstract】:
+Network anomaly detection aims to detect patterns in a given network traffic data that do not conform to an established normal behavior. Distinguishing different anomaly patterns from large amount of data can be a challenge, let alone visualizing them in a comparative perspective. Recently, the unsupervised learning method such as the K-means [3], self-organizing map (SOM) [2], and growing hierarchical self-organizing map (GHSOM) [1] have been shown to be able to facilitate network anomaly detection [4][5]. However, there is no study addressing both mining and detecting task. This study leverages the advantage of GHSOM to analyze the network traffic data and visualize the distribution of attack patterns with hierarchical relationship. In the mining stage, the geometric distances between each pattern and its descriptive information are revealed in the topological space. The density and the sample size of each node can help to detect anomalous network traffic. In the detecting stage, this study extends the traditional GHSOM and uses the support vector machine (SVM) [6] to classify network traffic data into the predefined categories. The proposed approach achieves (1) help understand the behaviors of anomalous network traffic data (2) provide effective classification rule to facilitate network anomaly detection and (3) accumulate network anomaly detection knowledge for both mining and detecting purpose. The public dataset and the private dataset are used to evaluate the proposed approach. The expected result is to confirm that the proposed approach can help understand network traffic data, and the detecting mechanism is effective for identifying anomalous behavior.</p>
+<p>【Keywords】:
+Visualization; Network anomaly detection; Neural networks; Data Clustering; Data Classification</p>
+<h3 id="52. Why is my smartphone slow? On the fly diagnosis of underperformance on the mobile Internet.">52. Why is my smartphone slow? On the fly diagnosis of underperformance on the mobile Internet.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575301">Paper Link</a>】    【Pages】:1-8</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Amrutkar:Chaitrali">Chaitrali Amrutkar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hiltunen:Matti_A=">Matti A. Hiltunen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jim:Trevor">Trevor Jim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Joshi:Kaustubh_R=">Kaustubh R. Joshi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Spatscheck:Oliver">Oliver Spatscheck</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Traynor:Patrick">Patrick Traynor</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Venkataraman:Shobha">Shobha Venkataraman</a></p>
+<p>【Abstract】:
+The perceived end-to-end performance of the mobile Internet can be impacted by multiple factors including websites, devices, and network components. Constant changes in these factors and network complexity make identifying root causes of high latency difficult. In this paper, we propose a multidimensional diagnosis technique using passive IP flow data collected at ISPs for investigating factors that impact the performance of the mobile Internet. We implement and evaluate our technique over four days of data from a major US cellular provider's network. Our approach identifies several combinations of factors affecting performance. We investigate four combinations indepth to confirm the latency causes chosen by our technique. Our findings include a popular gaming website showing poor performance on a specific device type for over 50% of the flows and web browser traffic on older devices accounting for 99% of poorly performing traffic. Our technique can direct operators in choosing factors having high impact on latency in the mobile Internet.</p>
+<p>【Keywords】:
+Performance evaluation; Internet; Mobile communication; IP networks; Monitoring; Servers; Mobile computing</p>
+<h3 id="53. An adaptive approach to dependable circuits for a digital power control.">53. An adaptive approach to dependable circuits for a digital power control.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575333">Paper Link</a>】    【Pages】:1-2</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Saysanasongkham:Aromhack">Aromhack Saysanasongkham</a> ; <a href="http://dblp.uni-trier.de/pers/hd/i/Imai:Kenta">Kenta Imai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Arai:Masayuki">Masayuki Arai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fukumoto:Satoshi">Satoshi Fukumoto</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wada:Keiji">Keiji Wada</a></p>
+<p>【Abstract】:
+Recently, a microcomputer and a FPGA are apt to be used for control of the power conversion circuits because of their capability to simplify the parameter resetting and also their flexibility on the basis of programming by software. On the other hand, the control circuits are getting extremely close to the high current main circuit. Thus the electro-magnetic radiation generated nearby the high current pulse may affect the control circuit as transient faults. In this study, we focus on transient noise caused by switching activities of a DC-DC converter and propose a dependable digital power control circuit by FPGA. The basic idea is to keep the sampling times as far away from the switching times as possible to avoid the effects of transient noise. A control circuit, with the proposed method applied, is designed and its effectiveness is shown by simulations.</p>
+<p>【Keywords】:
+Noise; Switches; Power control; Field programmable gate arrays; Circuit faults; Transient analysis; Integrated circuit modeling</p>
+<h3 id="54. Modeling and analysing operation processes for dependability.">54. Modeling and analysing operation processes for dependability.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575337">Paper Link</a>】    【Pages】:1-2</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Xiwei">Xiwei Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Liming">Liming Zhu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Jim_Zhanwen">Jim Zhanwen Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bass:Len">Len Bass</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lu:Qinghua">Qinghua Lu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fu:Min">Min Fu</a></p>
+<p>【Abstract】:
+Application dependability issues depend on increasingly sophisticated activities during operation time for deployment, upgrade, scaling out/in and reactions to various failures. Traditional approaches to improving application dependability focus on artifact-oriented troubleshooting and improvements. In this paper, we present an approach using process models to represent and analyze operations with considerations of exception handlings and fault-proneness. Our goal is to reduce diagnosis and repair time for application failures that occur during operation activities such as deployment and upgrade.</p>
+<p>【Keywords】:
+Computational modeling; Analytical models; Maintenance engineering; Biological system modeling; Availability; Data models; Educational institutions</p>
+<h3 id="55. The architecture of a resilience infrastructure for computing and communication systems.">55. The architecture of a resilience infrastructure for computing and communication systems.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575340">Paper Link</a>】    【Pages】:1-2</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Avizienis:Algirdas">Algirdas Avizienis</a></p>
+<p>【Abstract】:
+The resilience infrastructure is a physically and functionally separate add-on to a &#x201C;Client&#x201D; computing and/or communication system that provides resilience to the Client system. This short paper summarizes the main features of the architecture of a resilience infrastructure.</p>
+<p>【Keywords】:
+fault tolerance; resilience; infrastructure; dependability</p>
+<h3 id="56. Operating SECDED-based caches at ultra-low voltage with FLAIR.">56. Operating SECDED-based caches at ultra-low voltage with FLAIR.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575314">Paper Link</a>】    【Pages】:1-11</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/q/Qureshi:Moinuddin_K=">Moinuddin K. Qureshi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chishti:Zeshan">Zeshan Chishti</a></p>
+<p>【Abstract】:
+Voltage scaling is often limited by bit failures in large on-chip caches. Prior approaches for enabling cache operation at low voltages rely on correcting cache lines with multi-bit failures. Unfortunately, multi-bit Error Correcting Codes (ECC) incur significant storage overhead and complex logic. Our goal is to develop solutions that enable ultra-low voltage operation while incurring minimal changes to existing SECDED-based cache designs. We exploit the observation that only a small percentage of cache lines have multi-bit failures. We propose FLexible And Introspective Replication (FLAIR) that performs two-way replication for part of the cache during testing to maintain robustness, and disables lines with multi-bit failures after testing. FLAIR leverages the correction features of existing SECDED code to greatly improve on simple two-way replication. FLAIR provides a Vmin of 485mv (similar to ECC-8) and maintains robustness to soft-error, while incurring a storage overhead of only one bit per cache line.</p>
+<p>【Keywords】:
+Testing; Error correction codes; Low voltage; Circuit faults; Robustness; Microprocessors</p>
+<h3 id="57. DATAFLASKS: An epidemic dependable key-value substrate.">57. DATAFLASKS: An epidemic dependable key-value substrate.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575326">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Maia:Francisco">Francisco Maia</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Matos:Miguel">Miguel Matos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vila=ccedil=a:Ricardo_Manuel_Pereira">Ricardo Manuel Pereira Vilaça</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pereira:Jos=eacute=_Orlando">José Orlando Pereira</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Oliveira:Rui">Rui Oliveira</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Riviere:Etienne">Etienne Riviere</a></p>
+<p>【Abstract】:
+Recently, tuple-stores have become pivotal structures in many information systems. Their ability to handle large datasets makes them important in an era with unprecedented amounts of data being produced and exchanged. However, these tuple-stores typically rely on structured peer-to-peer protocols which assume moderately stable environments. Such assumption does not always hold for very large scale systems sized in the scale of thousands of machines. In this paper we present a novel approach to the design of a tuple-store. Our approach follows a stratified design based on an unstructured substrate. We focus on this substrate and how the use of epidemic protocols allow reaching high dependability and scalability.</p>
+<p>【Keywords】:
+Large Scale Data Stores; Dependability; Epidemic Protocols; Distributed Systems</p>
+<h3 id="58. Model-based performance analysis of local re-execution scheme in offloading system.">58. Model-based performance analysis of local re-execution scheme in offloading system.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575325">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Qiushi">Qiushi Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Huaming">Huaming Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wolter:Katinka">Katinka Wolter</a></p>
+<p>【Abstract】:
+Offloading is a useful approach to save energy and time for mobile devices by migrating heavy computation to remote powerful servers. However, the unreliable wireless network constrains the implementation of offloading applications. The execution continuity is always interrupted by network failures. To deal with this problem, locally re-executing the pre-determined offloading task in the mobile device is a valid method. Challenges arise due to the best trade-off between costs and benefits of Local Re-execution. In this paper, using a Stochastic Activity Network model, we defined three metrics to investigate the performance of Local Re-execution, which is launched by different timeout values. Through comprehensively comparing the simulation results, we further explored the optimal timeout value for activating Local Re-execution, and reached the conclusion that the optimum is mainly controlled by the delay of network recovery.</p>
+<p>【Keywords】:
+timeout; Modeling; performance analysis; Offloading; Stochastic Activity Network</p>
+<h3 id="59. Automating the debugging of datacenter applications with ADDA.">59. Automating the debugging of datacenter applications with ADDA.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575303">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zamfir:Cristian">Cristian Zamfir</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Altekar:Gautam">Gautam Altekar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stoica:Ion">Ion Stoica</a></p>
+<p>【Abstract】:
+Debugging data-intensive distributed applications running in datacenters is complex and time-consuming because developers do not have practical ways of deterministically replaying failed executions. The reason why building such tools is hard is that non-determinism that may be tolerable on a single node is exacerbated in large clusters of interacting nodes, and datacenter applications produce terabytes of intermediate data exchanged by nodes, thus making full input recording infeasible. We present ADDA, a replay-debugging system for datacenters that has lower recording and storage overhead than existing systems. ADDA is based on two techniques: First, ADDA provides control plane determinism, leveraging our observation that many typical datacenter applications consist of a separate &#x201C;control plane&#x201D; and &#x201C;data plane&#x201D;, and most bugs reside in the former. Second, ADDA does not record &#x201C;data plane&#x201D; inputs, instead it synthesizes them during replay, starting from the application's external inputs, which are typically persisted in append-only storage for reasons unrelated to debugging. We evaluate ADDA and show that it deterministically replays real-world failures in Hypertable and Memcached.</p>
+<p>【Keywords】:
+storage; debugging; record-replay; reliability; data-center</p>
+<h3 id="60. A review of cloud deployment models for e-learning systems.">60. A review of cloud deployment models for e-learning systems.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575331">Paper Link</a>】    【Pages】:1-2</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Leloglu:Engin">Engin Leloglu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Ayav:Tolga">Tolga Ayav</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Aslan:Burak_Galip">Burak Galip Aslan</a></p>
+<p>【Abstract】:
+With the significant growth in the cloud-based systems, many industries give their attention to cloud computing solutions. E-learning is a promising application area since its typical requirements such as dynamically allocation of computation and storage resources, coincide well with cloud characteristics. This paper presents some possible cloud solutions in e-learning environments by emphasizing its pros and cons. It is of paramount importance to choose the most suitable cloud model for an e-learning application or an educational organization in terms of scalability, portability and security. We distinguish various deployment alternatives of cloud computing and discuss their benefits against typical e-learning requirements.</p>
+<p>【Keywords】:
+deployment models; cloud computing; e-learning</p>
+<h3 id="61. A view on the past and future of fault injection.">61. A view on the past and future of fault injection.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575332">Paper Link</a>】    【Pages】:1-2</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Silva:Nuno">Nuno Silva</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Barbosa:Ricardo">Ricardo Barbosa</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cunha:Jo=atilde=o_Carlos">João Carlos Cunha</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vieira:Marco">Marco Vieira</a></p>
+<p>【Abstract】:
+Fault injection is a well-known technology that enables assessing dependability attributes of computer systems. Many works on fault injection have been developed in the past, and fault injection has been used in different application domains. This fast abstract briefly revises previous applications of fault injection, especially for embedded systems, and puts forward ideas on its future use, both in terms of application areas and business markets.</p>
+<p>【Keywords】:
+Fault Models; Fault Injection; Dependability</p>
+<h3 id="62. An empirical investigation of fault repairs and mitigations in space mission system software.">62. An empirical investigation of fault repairs and mitigations in space mission system software.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575355">Paper Link</a>】    【Pages】:1-8</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Alonso:Javier">Javier Alonso</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Grottke:Michael">Michael Grottke</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nikora:Allen_P=">Allen P. Nikora</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Trivedi:Kishor_S=">Kishor S. Trivedi</a></p>
+<p>【Abstract】:
+Faults in software systems can have different characteristics. In an earlier paper, the anomaly reports for a number of JPL/NASA missions were analyzed and the underlying faults were classified as Bohrbugs, non-aging-related Mandelbugs, and aging-related bugs. In another paper the times to failure for each of these fault types were examined to identify trends within missions as well as across the missions. The results of those papers are now starting to provide guidance to improve the dependability of space mission software. Just as there are different types of faults, there are different kinds of mitigations of faults and failures. This paper analyzes the mitigations associated with each fault studied in our previous papers. We identify trends of mitigation type proportions within missions as well as from mission to mission. We also look for relationships between fault types and mitigation types. The results will be used to increase the reliability of space mission software.</p>
+<p>【Keywords】:
+Software; Space vehicles; Instruments; NASA; Software reliability; Testing</p>
+<h3 id="63. Complementing static and dynamic analysis approaches for better network defense.">63. Complementing static and dynamic analysis approaches for better network defense.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575334">Paper Link</a>】    【Pages】:1-2</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Pareek:Himanshu">Himanshu Pareek</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Babu:N=_Sarat_Chandra">N. Sarat Chandra Babu</a></p>
+<p>【Abstract】:
+This paper presents a novel approach to prevent execution of malicious files on host system present in the network. For preventing a malicious file at gateway level, it is required to do reassembly of packets which in turn reduces the network performance by huge margins. This work combines static and dynamic analysis approaches and implements a minimal agent based system to prevent malicious files and in turn increase the dependability using existing systems.</p>
+<p>【Keywords】:
+malware; network defense; heuristics</p>
+<h3 id="64. A logic for model-checking mean-field models.">64. A logic for model-checking mean-field models.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575345">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kolesnichenko:Anna">Anna Kolesnichenko</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Boer:Pieter=Tjerk_de">Pieter-Tjerk de Boer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Remke:Anne">Anne Remke</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Haverkort:Boudewijn_R=">Boudewijn R. Haverkort</a></p>
+<p>【Abstract】:
+Recently the mean-field method has been adopted for analysing systems consisting of a large number of interacting objects in computer science, biology, chemistry, etc. It allows for a quick and accurate analysis of such systems, while avoiding the state-space explosion problem. So far, the method has primarily been used for performance evaluation. In this paper, we use the mean-field method for model-checking. We define and motivate a logic MF-CSL for describing properties of systems composed of many identical interacting objects. The proposed logic allows describing both properties of the overall system and of a random individual object. Algorithms to check the satisfaction relation for all MF-CSL operators are proposed. Furthermore, we explain how the set of all time instances that fulfill a given MF-CSL formula for a certain distribution of objects can be computed.</p>
+<p>【Keywords】:
+Computers</p>
+<h3 id="65. Detecting malicious landing pages in Malware Distribution Networks.">65. Detecting malicious landing pages in Malware Distribution Networks.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575316">Paper Link</a>】    【Pages】:1-11</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Gang">Gang Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stokes:Jack_W=">Jack W. Stokes</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Herley:Cormac">Cormac Herley</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Felstead:David">David Felstead</a></p>
+<p>【Abstract】:
+Drive-by download attacks attempt to compromise a victim's computer through browser vulnerabilities. Often they are launched from Malware Distribution Networks (MDNs) consisting of landing pages to attract traffic, intermediate redirection servers, and exploit servers which attempt the compromise. In this paper, we present a novel approach to discovering the landing pages that lead to drive-by downloads. Starting from partial knowledge of a given collection of MDNs we identify the malicious content on their landing pages using multiclass feature selection. We then query the webpage cache of a commercial search engine to identify landing pages containing the same or similar content. In this way we are able to identify previously unknown landing pages belonging to already identified MDNs, which allows us to expand our understanding of the MDN. We explore using both a rule-based and classifier approach to identifying potentially malicious landing pages. We build both systems and independently verify using a high-interaction honeypot that the newly identified landing pages indeed attempt drive-by downloads. For the rule-based system 57% of the landing pages predicted as malicious are confirmed, and this success rate remains constant in two large trials spaced five months apart. This extends the known footprint of the MDNs studied by 17%. The classifier-based system is less successful, and we explore possible reasons.</p>
+<p>【Keywords】:
+signature; Drive-by download; malware distribution network</p>
+<h3 id="66. Chasing the optimum in replicated in-memory transactional platforms via protocol adaptation.">66. Chasing the optimum in replicated in-memory transactional platforms via protocol adaptation.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575311">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Couceiro:Maria">Maria Couceiro</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ruivo:Pedro">Pedro Ruivo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Romano_0002:Paolo">Paolo Romano</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rodrigues:Lu=iacute=s_E=_T=">Luís E. T. Rodrigues</a></p>
+<p>【Abstract】:
+Replication plays an essential role for in-memory distributed transactional platforms, such as NoSQL data grids, given that it represents the primary mean to ensure data durability. Unfortunately, no single replication technique can ensure optimal performance across a wide range of workloads and system configurations. This paper tackles this problem by presenting MORPHR, a framework that allows to automatically adapt the replication protocol of in-memory transactional platforms according to the current operational conditions. MORPHR presents two key innovative aspects. On one hand, it allows to plug in, in a modular fashion, specialized algorithms to regulate the switching between arbitrary replication protocols. On the other hand, MORPHR relies on state of the art machine learning techniques to autonomously determine the optimal replication in face of varying workloads. We integrated MORPHR in a popular open-source in-memory NoSQL data grid, and evaluated it by means of an extensive experimental study. The results highlight that MORPHR is accurate in identifying the optimal replication strategy in presence of complex, realistic workloads, and does so with minimal overhead.</p>
+<p>【Keywords】:
+Protocols</p>
+<h3 id="67. Dependability models for designing disaster tolerant cloud computing systems.">67. Dependability models for designing disaster tolerant cloud computing systems.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575323">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Silva:Bruno">Bruno Silva</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Maciel:Paulo_Romero_Martins">Paulo Romero Martins Maciel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tavares:Eduardo">Eduardo Tavares</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zimmermann:Armin">Armin Zimmermann</a></p>
+<p>【Abstract】:
+Hundreds of natural disasters occur in many parts of the world every year, causing billions of dollars in damages. This fact contrasts with the high availability requirement of cloud computing systems, and, to protect such systems from unforeseen catastrophe, a recovery plan requires the utilization of different data centers located far enough apart. However, the time to migrate a VM from a data center to another increases due to distance. This work presents dependability models for evaluating distributed cloud computing systems deployed into multiple data centers considering disaster occurrence. Additionally, we present a case study which evaluates several scenarios with different VM migration times and distances between data centers.</p>
+<p>【Keywords】:
+stochastic Petri nets; cloud computing; dependability evaluation</p>
+<h3 id="68. Uniform node sampling service robust against collusions of malicious nodes.">68. Uniform node sampling service robust against collusions of malicious nodes.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575363">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Anceaume:Emmanuelle">Emmanuelle Anceaume</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Busnel:Yann">Yann Busnel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sericola:Bruno">Bruno Sericola</a></p>
+<p>【Abstract】:
+We consider the problem of achieving uniform node sampling in large scale systems in presence of a strong adversary. We first propose an omniscient strategy that processes on the fly an unbounded and arbitrarily biased input stream made of node identifiers exchanged within the system, and outputs a stream that preserves Uniformity and Freshness properties. We show through Markov chains analysis that both properties hold despite any arbitrary bias introduced by the adversary. We then propose a knowledge-free strategy and show through extensive simulations that this strategy accurately approximates the omniscient one. We also evaluate its resilience against a strong adversary by studying two representative attacks (flooding and targeted attacks). We quantify the minimum number of identifiers that the adversary must insert in the input stream to prevent uniformity. To our knowledge, such an analysis has never been proposed before.</p>
+<p>【Keywords】:
+randomized approximation algorithm; Data stream; strong adversary; uniform sampling; Markov chains</p>
+<h3 id="69. Message from the PDS program chair.">69. Message from the PDS program chair.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575290">Paper Link</a>】    【Pages】:1</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kemper:Peter">Peter Kemper</a></p>
+<p>【Abstract】:
+PDS is a well-recognized, major international forum for researchers and practitioners to present innovative, high-quality results in the analysis and assessment of computer systems and networks in terms of their performance, dependability, and security. As much as the considered systems vary from extremely small embedded devices and hardware components to large scale networked systems and infrastructures, so do the properties of interest with various aspects of performance, dependability, and security and the assessment approaches ranging from empirical and experimental studies to refined mathematical modeling methods. This year, we received 113 submissions (95 regular papers, 11 practical experience reports, and 7 tool descriptions) from 20 countries, covering various facets of research and practice on these topics.</p>
+<p>【Keywords】:</p>
+<h3 id="70. Error detector placement for soft computation.">70. Error detector placement for soft computation.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575353">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Thomas:Anna">Anna Thomas</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pattabiraman:Karthik">Karthik Pattabiraman</a></p>
+<p>【Abstract】:
+The scaling of Silicon devices has exacerbated the unreliability of modern computer systems, and power constraints have necessitated the involvement of software in hardware error detection. At the same time, emerging workloads in the form of soft computing applications, (e.g., multimedia applications) can tolerate most hardware errors as long as the erroneous outputs do not deviate significantly from error-free outcomes. We term outcomes that deviate significantly from the error-free outcomes as Egregious Data Corruptions (EDCs). In this study, we propose a technique to place detectors for selectively detecting EDC causing errors in an application. We performed an initial study to formulate heuristics that identify EDC causing data. Based on these heuristics, we developed an algorithm that identifies program locations for placing high coverage detectors for EDCs using static analysis.We evaluate our technique on six benchmarks to measure the EDC coverage under given performance overhead bounds. Our technique achieves an average EDC coverage of 82%, under performance overheads of 10%, while detecting 10% of the Non-EDC and benign faults.</p>
+<p>【Keywords】:
+Detectors; Benchmark testing; PSNR; Decoding; Arrays; Measurement; Hardware</p>
+<h3 id="71. Practical automated vulnerability monitoring using program state invariants.">71. Practical automated vulnerability monitoring using program state invariants.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575318">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Giuffrida:Cristiano">Cristiano Giuffrida</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cavallaro:Lorenzo">Lorenzo Cavallaro</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tanenbaum:Andrew_S=">Andrew S. Tanenbaum</a></p>
+<p>【Abstract】:
+Despite the growing attention to security concerns and advances in code verification tools, many memory errors still escape testing and plague production applications with security vulnerabilities. We present RCORE, an efficient dynamic program monitoring infrastructure to perform automated security vulnerability monitoring. Our approach is to perform extensive static analysis at compile time to automatically index program state invariants (PSIs). At runtime, our novel dynamic analysis continuously inspects the program state and produces a report when PSI violations are found. Our technique retrofits existing applications and is designed for both offline and production runs. To avoid slowing down production applications, we can perform our dynamic analysis on idle cores to detect suspicious behavior in the background. The alerts raised by our analysis are symptoms of memory corruption or other-potentially exploitable-dangerous behavior. Our experimental evaluation confirms that RCORE can report on several classes of vulnerabilities with very low overhead.</p>
+<p>【Keywords】:
+Systems Security; Program State Invariants; Vulnerability Analysis; Memory Errors</p>
+<h3 id="72. Crossing the threshold: Detecting network malfeasance via sequential hypothesis testing.">72. Crossing the threshold: Detecting network malfeasance via sequential hypothesis testing.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2013.6575364">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Krishnan:Srinivas">Srinivas Krishnan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Taylor:Teryl">Teryl Taylor</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Monrose:Fabian">Fabian Monrose</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McHugh:John">John McHugh</a></p>
+<p>【Abstract】:
+The domain name system plays a vital role in the dependability and security of modern network. Unfortunately, it has also been widely misused for nefarious activities. Recently, attackers have turned their attention to the use of algorithmically generated domain names (AGDs) in an effort to circumvent network defenses. However, because such domain names are increasingly being used in benign applications, this transition has significant implications for techniques that classify AGDs based solely on the format of a domain name. To highlight the challenges they face, we examine contemporary approaches and demonstrate their limitations. We address these shortcomings by proposing an online form of sequential hypothesis testing that classifies clients based solely on the non-existent (NX) responses they elicit. Our evaluations on real-world data show that we outperform existing approaches, and for the vast majority of cases, we detect malware before they are able to successfully rendezvous with their command and control centers.</p>
+<p>【Keywords】:
+Program processors; Engines</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="https://github.com/huntercmd/ccf"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>

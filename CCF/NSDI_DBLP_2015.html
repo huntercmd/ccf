@@ -1,0 +1,482 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/skin.js"></script>
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/classie.js"></script>
+
+<!-- This is for Mathjax -->
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#12. NSDI 2015:Oakland, CA, USA">12. NSDI 2015:Oakland, CA, USA</a><ul>
+<li><a href="#Paper Num: 42 || Session Num: 11">Paper Num: 42 || Session Num: 11</a></li>
+<li><a href="#Datacenters    4">Datacenters    4</a><ul>
+<li><a href="#1. Queues Don't Matter When You Can JUMP Them!">1. Queues Don't Matter When You Can JUMP Them!</a></li>
+<li><a href="#2. Explicit Path Control in Commodity Data Centers: Design and Applications.">2. Explicit Path Control in Commodity Data Centers: Design and Applications.</a></li>
+<li><a href="#3. Increasing Datacenter Network Utilisation with GRIN.">3. Increasing Datacenter Network Utilisation with GRIN.</a></li>
+<li><a href="#4. Designing Distributed Systems Using Approximate Synchrony in Data Center Networks.">4. Designing Distributed Systems Using Approximate Synchrony in Data Center Networks.</a></li>
+</ul>
+</li>
+<li><a href="#SDN    4">SDN    4</a><ul>
+<li><a href="#5. Kinetic: Verifiable Dynamic Network Control.">5. Kinetic: Verifiable Dynamic Network Control.</a></li>
+<li><a href="#6. Enforcing Customizable Consistency Properties in Software-Defined Networks.">6. Enforcing Customizable Consistency Properties in Software-Defined Networks.</a></li>
+<li><a href="#7. CoVisor: A Compositional Hypervisor for Software-Defined Networks.">7. CoVisor: A Compositional Hypervisor for Software-Defined Networks.</a></li>
+<li><a href="#8. Compiling Packet Programs to Reconfigurable Switches.">8. Compiling Packet Programs to Reconfigurable Switches.</a></li>
+</ul>
+</li>
+<li><a href="#Operational Systems Track 1    3">Operational Systems Track 1    3</a><ul>
+<li><a href="#9. The Design and Implementation of Open vSwitch.">9. The Design and Implementation of Open vSwitch.</a></li>
+<li><a href="#10. C3: Internet-Scale Control Plane for Video Quality Optimization.">10. C3: Internet-Scale Control Plane for Video Quality Optimization.</a></li>
+<li><a href="#11. Attaining the Promise and Avoiding the Pitfalls of TCP in the Datacenter.">11. Attaining the Promise and Avoiding the Pitfalls of TCP in the Datacenter.</a></li>
+</ul>
+</li>
+<li><a href="#Wireless    5">Wireless    5</a><ul>
+<li><a href="#12. Beyond Sensing: Multi-GHz Realtime Spectrum Analytics.">12. Beyond Sensing: Multi-GHz Realtime Spectrum Analytics.</a></li>
+<li><a href="#13. Atomix: A Framework for Deploying Signal Processing Applications on Wireless Infrastructure.">13. Atomix: A Framework for Deploying Signal Processing Applications on Wireless Infrastructure.</a></li>
+<li><a href="#14. WiDeo: Fine-grained Device-free Motion Tracing using RF Backscatter.">14. WiDeo: Fine-grained Device-free Motion Tracing using RF Backscatter.</a></li>
+<li><a href="#15. FlexRadio: Fully Flexible Radios and Networks.">15. FlexRadio: Fully Flexible Radios and Networks.</a></li>
+<li><a href="#16. Towards Wifi Mobility without Fast Handover.">16. Towards Wifi Mobility without Fast Handover.</a></li>
+</ul>
+</li>
+<li><a href="#PHY Layer    4">PHY Layer    4</a><ul>
+<li><a href="#17. Securing RFIDs by Randomizing the Modulation and Channel.">17. Securing RFIDs by Randomizing the Modulation and Channel.</a></li>
+<li><a href="#18. Relative Localization of RFID Tags using Spatial-Temporal Phase Profiling.">18. Relative Localization of RFID Tags using Spatial-Temporal Phase Profiling.</a></li>
+<li><a href="#19. Ripple: Communicating through Physical Vibration.">19. Ripple: Communicating through Physical Vibration.</a></li>
+<li><a href="#20. Multi-Person Localization via RF Body Reflections.">20. Multi-Person Localization via RF Body Reflections.</a></li>
+</ul>
+</li>
+<li><a href="#Data Analytics    4">Data Analytics    4</a><ul>
+<li><a href="#21. Making Sense of Performance in Data Analytics Frameworks.">21. Making Sense of Performance in Data Analytics Frameworks.</a></li>
+<li><a href="#22. CellIQ : Real-Time Cellular Network Analytics at Scale.">22. CellIQ : Real-Time Cellular Network Analytics at Scale.</a></li>
+<li><a href="#23. Global Analytics in the Face of Bandwidth and Regulatory Constraints.">23. Global Analytics in the Face of Bandwidth and Regulatory Constraints.</a></li>
+<li><a href="#24. Succinct: Enabling Queries on Compressed Data.">24. Succinct: Enabling Queries on Compressed Data.</a></li>
+</ul>
+</li>
+<li><a href="#Operational Systems Track 2    3">Operational Systems Track 2    3</a><ul>
+<li><a href="#25. Wormhole: Reliable Pub-Sub to Support Geo-replicated Internet Services.">25. Wormhole: Reliable Pub-Sub to Support Geo-replicated Internet Services.</a></li>
+<li><a href="#26. Flywheel: Google's Data Compression Proxy for the Mobile Web.">26. Flywheel: Google's Data Compression Proxy for the Mobile Web.</a></li>
+<li><a href="#27. FastRoute: A Scalable Load-Aware Anycast Routing Architecture for Modern CDNs.">27. FastRoute: A Scalable Load-Aware Anycast Routing Architecture for Modern CDNs.</a></li>
+</ul>
+</li>
+<li><a href="#Protocol Design and Implementation    5">Protocol Design and Implementation    5</a><ul>
+<li><a href="#28. PCC: Re-architecting Congestion Control for Consistent High Performance.">28. PCC: Re-architecting Congestion Control for Consistent High Performance.</a></li>
+<li><a href="#29. Raising the Bar for Using GPUs in Software Packet Processing.">29. Raising the Bar for Using GPUs in Software Packet Processing.</a></li>
+<li><a href="#30. ModNet: A Modular Approach to Network Stack Extension.">30. ModNet: A Modular Approach to Network Stack Extension.</a></li>
+<li><a href="#31. Klotski: Reprioritizing Web Content to Improve User Experience on Mobile Devices.">31. Klotski: Reprioritizing Web Content to Improve User Experience on Mobile Devices.</a></li>
+<li><a href="#32. Information-Agnostic Flow Scheduling for Commodity Data Centers.">32. Information-Agnostic Flow Scheduling for Commodity Data Centers.</a></li>
+</ul>
+</li>
+<li><a href="#Correctness    3">Correctness    3</a><ul>
+<li><a href="#33. A General Approach to Network Configuration Analysis.">33. A General Approach to Network Configuration Analysis.</a></li>
+<li><a href="#34. Analyzing Protocol Implementations for Interoperability.">34. Analyzing Protocol Implementations for Interoperability.</a></li>
+<li><a href="#35. Checking Beliefs in Dynamic Networks.">35. Checking Beliefs in Dynamic Networks.</a></li>
+</ul>
+</li>
+<li><a href="#Distributed Storage    3">Distributed Storage    3</a><ul>
+<li><a href="#36. C3: Cutting Tail Latency in Cloud Data Stores via Adaptive Replica Selection.">36. C3: Cutting Tail Latency in Cloud Data Stores via Adaptive Replica Selection.</a></li>
+<li><a href="#37. CubicRing: Enabling One-Hop Failure Detection and Recovery for Distributed In-Memory Storage Systems.">37. CubicRing: Enabling One-Hop Failure Detection and Recovery for Distributed In-Memory Storage Systems.</a></li>
+<li><a href="#38. CosTLO: Cost-Effective Redundancy for Lower Latency Variance on Cloud Storage Services.">38. CosTLO: Cost-Effective Redundancy for Lower Latency Variance on Cloud Storage Services.</a></li>
+</ul>
+</li>
+<li><a href="#Virtualization and Fault Tolerance    4">Virtualization and Fault Tolerance    4</a><ul>
+<li><a href="#39. Jitsu: Just-In-Time Summoning of Unikernels.">39. Jitsu: Just-In-Time Summoning of Unikernels.</a></li>
+<li><a href="#40. Tardigrade: Leveraging Lightweight Virtual Machines to Easily and Efficiently Construct Fault-Tolerant Services.">40. Tardigrade: Leveraging Lightweight Virtual Machines to Easily and Efficiently Construct Fault-Tolerant Services.</a></li>
+<li><a href="#41. Retro: Targeted Resource Management in Multi-tenant Distributed Systems.">41. Retro: Targeted Resource Management in Multi-tenant Distributed Systems.</a></li>
+<li><a href="#42. Scalable Error Isolation for Distributed Systems.">42. Scalable Error Isolation for Distributed Systems.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="12. NSDI 2015:Oakland, CA, USA">12. NSDI 2015:Oakland, CA, USA</h1>
+<p><a href="https://www.usenix.org/publications/proceedings/?f[0]=im_group_audience%3A456">12th USENIX Symposium on Networked Systems Design and Implementation, NSDI 15, Oakland, CA, USA, May 4-6, 2015.</a> USENIX Association
+【<a href="http://dblp.uni-trier.de/db/conf/nsdi/nsdi2015.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 42 || Session Num: 11">Paper Num: 42 || Session Num: 11</h2>
+<ul>
+<li><a href="#Correctness    3">Correctness    3</a></li>
+<li><a href="#Data Analytics    4">Data Analytics    4</a></li>
+<li><a href="#Datacenters    4">Datacenters    4</a></li>
+<li><a href="#Distributed Storage    3">Distributed Storage    3</a></li>
+<li><a href="#Operational Systems Track 1    3">Operational Systems Track 1    3</a></li>
+<li><a href="#Operational Systems Track 2    3">Operational Systems Track 2    3</a></li>
+<li><a href="#PHY Layer    4">PHY Layer    4</a></li>
+<li><a href="#Protocol Design and Implementation    5">Protocol Design and Implementation    5</a></li>
+<li><a href="#SDN    4">SDN    4</a></li>
+<li><a href="#Virtualization and Fault Tolerance    4">Virtualization and Fault Tolerance    4</a></li>
+<li><a href="#Wireless    5">Wireless    5</a></li>
+</ul>
+<h2 id="Datacenters    4">Datacenters    4</h2>
+<h3 id="1. Queues Don't Matter When You Can JUMP Them!">1. Queues Don't Matter When You Can JUMP Them!</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/grosvenor">Paper Link</a>】    【Pages】:1-14</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Grosvenor:Matthew_P=">Matthew P. Grosvenor</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schwarzkopf:Malte">Malte Schwarzkopf</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gog:Ionel">Ionel Gog</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Watson:Robert_N=_M=">Robert N. M. Watson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Moore_0002:Andrew_W=">Andrew W. Moore</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hand:Steven">Steven Hand</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Crowcroft:Jon">Jon Crowcroft</a></p>
+<p>【Abstract】:
+QJUMP is a simple and immediately deployable approach to controlling network interference in datacenter networks. Network interference occurs when congestion from throughput-intensive applications causes queueing that delays traffic from latency-sensitive applications. To mitigate network interference, QJUMP applies Internet QoS-inspired techniques to datacenter applications. Each application is assigned to a latency sensitivity level (or class). Packets from higher levels are rate-limited in the end host, but once allowed into the network can “jump-the-queue” over packets from lower levels. In settings with known node counts and link speeds, QJUMP can support service levels ranging from strictly bounded latency (but with low rate) through to line-rate throughput (but with high latency variance). We have implemented QJUMP as a Linux Traffic Control module. We show that QJUMP achieves bounded latency and reduces in-network interference by up to 300x, outperforming Ethernet Flow Control (802.3x), ECN (WRED) and DCTCP. We also show that QJUMP improves average flow completion times, performing close to or better than DCTCP and pFabric.</p>
+<p>【Keywords】:</p>
+<h3 id="2. Explicit Path Control in Commodity Data Centers: Design and Applications.">2. Explicit Path Control in Commodity Data Centers: Design and Applications.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/hu">Paper Link</a>】    【Pages】:15-28</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Shuihai">Shuihai Hu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen_0005:Kai">Kai Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Haitao">Haitao Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bai_0001:Wei">Wei Bai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lan:Chang">Chang Lan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang_0022:Hao">Hao Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhao:Hongze">Hongze Zhao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Guo:Chuanxiong">Chuanxiong Guo</a></p>
+<p>【Abstract】:
+Many data center network (DCN) applications require explicit routing path control over the underlying topologies. This paper introduces XPath, a simple, practical and readily-deployable way to implement explicit path control, using existing commodity switches. At its core, XPath explicitly identifies an end-to-end path with a path ID and leverages a two-step compression algorithm to pre-install all the desired paths into IP TCAM tables of commodity switches. Our evaluation and implementation show that XPath scales to large DCNs and is readilydeployable. Furthermore, on our testbed, we integrate XPath into four applications to showcase its utility.</p>
+<p>【Keywords】:</p>
+<h3 id="3. Increasing Datacenter Network Utilisation with GRIN.">3. Increasing Datacenter Network Utilisation with GRIN.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/agache">Paper Link</a>】    【Pages】:29-42</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Agache:Alexandru">Alexandru Agache</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Deaconescu:Razvan">Razvan Deaconescu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Raiciu:Costin">Costin Raiciu</a></p>
+<p>【Abstract】:
+Various full bisection designs have been proposed for datacenter networks. They are provisioned for the worst case in which every server sends flat out and there is no congestion anywhere in the network. However, these topologies are prone to considerable underutilisation in the average case encountered in practice. To utilise spare capacity we propose GRIN, a simple, cheap and easily deployable solution that simply wires up any free ports datacenter servers may have. GRIN allows each server to use up to a maximum amount of bandwidth dependent on the number of available ports and the distribution of idle uplinks in the network. Our evaluation found significant benefits for bandwidth-hungry applications running over our testbed, as well as on 1000 EC2 instances. GRIN can be used to augment any existing datacenter network, with a small initial effort and no additional maintenance costs.</p>
+<p>【Keywords】:</p>
+<h3 id="4. Designing Distributed Systems Using Approximate Synchrony in Data Center Networks.">4. Designing Distributed Systems Using Approximate Synchrony in Data Center Networks.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/ports">Paper Link</a>】    【Pages】:43-57</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Ports:Dan_R=_K=">Dan R. K. Ports</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Jialin">Jialin Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Vincent">Vincent Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sharma:Naveen_Kr=">Naveen Kr. Sharma</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Krishnamurthy:Arvind">Arvind Krishnamurthy</a></p>
+<p>【Abstract】:
+Distributed systems are traditionally designed independently from the underlying network, making worst-case assumptions (e.g., complete asynchrony) about its behavior. However, many of today’s distributed applications are deployed in data centers, where the network is more reliable, predictable, and extensible. In these environments, it is possible to co-design distributed systems with their network layer, and doing so can offer substantial benefits. This paper explores network-level mechanisms for providing Mostly-Ordered Multicast (MOM): a best-effort ordering property for concurrent multicast operations. Using this primitive, we design Speculative Paxos, a state machine replication protocol that relies on the network to order requests in the normal case. This approach leads to substantial performance benefits: under realistic data center conditions, Speculative Paxos can provide 40% lower latency and 2:6 higher throughput than the standard Paxos protocol. It offers lower latency than a latencyoptimized protocol (Fast Paxos) with the same throughput as a throughput-optimized protocol (batching).</p>
+<p>【Keywords】:</p>
+<h2 id="SDN    4">SDN    4</h2>
+<h3 id="5. Kinetic: Verifiable Dynamic Network Control.">5. Kinetic: Verifiable Dynamic Network Control.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/kim">Paper Link</a>】    【Pages】:59-72</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Hyojoon">Hyojoon Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Reich:Joshua">Joshua Reich</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gupta:Arpit">Arpit Gupta</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shahbaz:Muhammad">Muhammad Shahbaz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Feamster:Nick">Nick Feamster</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Clark:Russell_J=">Russell J. Clark</a></p>
+<p>【Abstract】:
+Network conditions are dynamic; unfortunately, current approaches to configuring networks are not. Network operators need tools to express how a network’s data-plane behavior should respond to a wide range of events and changing conditions, ranging from unexpected failures to shifting traffic patterns to planned maintenance. Yet, to update the network configuration today, operators typically rely on a combination of manual intervention and ad hoc scripts. In this paper, we present Kinetic, a domain specific language and network control system that enables operators to control their networks dynamically in a concise, intuitive way. Kinetic also automatically verifies the correctness of these control programs with respect to userspecified temporal properties. Our user study of Kinetic with several hundred network operators demonstrates that Kinetic is intuitive and usable, and our performance evaluation shows that realistic Kinetic programs scale well with the number of policies and the size of the network.</p>
+<p>【Keywords】:</p>
+<h3 id="6. Enforcing Customizable Consistency Properties in Software-Defined Networks.">6. Enforcing Customizable Consistency Properties in Software-Defined Networks.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/zhou">Paper Link</a>】    【Pages】:73-85</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Wenxuan">Wenxuan Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jin:Dong_=Kevin=">Dong (Kevin) Jin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Croft:Jason">Jason Croft</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Caesar:Matthew">Matthew Caesar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Godfrey:Philip_Brighten">Philip Brighten Godfrey</a></p>
+<p>【Abstract】:
+It is critical to ensure that network policy remains consistent during state transitions. However, existing techniques impose a high cost in update delay, and/or FIB space. We propose the Customizable Consistency Generator (CCG), a fast and generic framework to support customizable consistency policies during network updates. CCG effectively reduces the task of synthesizing an update plan under the constraint of a given consistency policy to a verification problem, by checking whether an update can safely be installed in the network at a particular time, and greedily processing network state transitions to heuristically minimize transition delay. We show a large class of consistency policies are guaranteed by this greedy heuristic alone; in addition, CCG makes judicious use of existing heavier-weight network update mechanisms to provide guarantees when necessary. As such, CCG nearly achieves the “best of both worlds”: the efficiency of simply passing through updates in most cases, with the consistency guarantees of more heavyweight techniques. Mininet and physical testbed evaluations demonstrate CCG’s capability to achieve various types of consistency, such as path and bandwidth properties, with zero switch memory overhead and up to a 3 delay reduction compared to previous solutions.</p>
+<p>【Keywords】:</p>
+<h3 id="7. CoVisor: A Compositional Hypervisor for Software-Defined Networks.">7. CoVisor: A Compositional Hypervisor for Software-Defined Networks.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/jin">Paper Link</a>】    【Pages】:87-101</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jin:Xin">Xin Jin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gossels:Jennifer">Jennifer Gossels</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rexford:Jennifer">Jennifer Rexford</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Walker:David">David Walker</a></p>
+<p>【Abstract】:
+We present CoVisor, a new kind of network hypervisor that enables, in a single network, the deployment of multiple control applications written in different programming languages and operating on different controller platforms. Unlike past hypervisors, which focused on slicing the network into disjoint parts for separate control by separate entities, CoVisor allows multiple controllers to cooperate on managing the same shared traffic. Consequently, network administrators can use CoVisor to assemble a collection of independently-developed “best of breed” applications—a firewall, a load balancer, a gateway, a router, a traffic monitor—and can apply those applications in combination, or separately, to the desired traffic. CoVisor also abstracts concrete topologies, providing custom virtual topologies in their place, and allows administrators to specify access controls that regulate the packets a given controller may see, modify, monitor, or reroute. The central technical contribution of the work is a new set of efficient algorithms for composing controller policies, for compiling virtual networks into concrete OpenFlow rules, and for efficiently processing controller rule updates. We have built a CoVisor prototype, and shown that it is several orders of magnitude faster than a naive implementation.</p>
+<p>【Keywords】:</p>
+<h3 id="8. Compiling Packet Programs to Reconfigurable Switches.">8. Compiling Packet Programs to Reconfigurable Switches.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/jose">Paper Link</a>】    【Pages】:103-115</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jose:Lavanya">Lavanya Jose</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yan:Lisa">Lisa Yan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Varghese:George">George Varghese</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McKeown:Nick">Nick McKeown</a></p>
+<p>【Abstract】:
+Programmable switching chips are becoming more commonplace, along with new packet processing languages to configure the forwarding behavior. Our paper explores the design of a compiler for such switching chips, in particular how to map logical lookup tables to physical tables, while meeting data and control dependencies in the program. We study the interplay between Integer Linear Programming (ILP) and greedy algorithms to generate solutions optimized for latency, pipeline occupancy, or power consumption. ILP is slower but more likely to fit hard cases; further, ILP can be used to suggest the best greedy approach. We compile benchmarks from real production networks to two dierent programmable switch architectures: RMT and Intel’s FlexPipe. Greedy solutions can fail to fit and can require up to 38% more stages, 42% more cycles, or 45% more power for some benchmarks. Our analysis also identifies critical resources in chips. For a complicated use case, doubling the TCAM per stage reduces the minimum number of stages needed by 12.5%.</p>
+<p>【Keywords】:</p>
+<h2 id="Operational Systems Track 1    3">Operational Systems Track 1    3</h2>
+<h3 id="9. The Design and Implementation of Open vSwitch.">9. The Design and Implementation of Open vSwitch.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/pfaff">Paper Link</a>】    【Pages】:117-130</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Pfaff:Ben">Ben Pfaff</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pettit:Justin">Justin Pettit</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Koponen:Teemu">Teemu Koponen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jackson:Ethan_J=">Ethan J. Jackson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Andy">Andy Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rajahalme:Jarno">Jarno Rajahalme</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gross:Jesse">Jesse Gross</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Alex">Alex Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stringer:Joe">Joe Stringer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shelar:Pravin">Pravin Shelar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Amidon:Keith">Keith Amidon</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Casado:Mart=iacute=n">Martín Casado</a></p>
+<p>【Abstract】:
+We describe the design and implementation of Open vSwitch, a multi-layer, open source virtual switch for all major hypervisor platforms. Open vSwitch was designed de novo for networking in virtual environments, resulting in major design departures from traditional software switching architectures. We detail the advanced flow classification and caching techniques that Open vSwitch uses to optimize its operations and conserve hypervisor resources. We evaluate Open vSwitch performance, drawing from our deployment experiences over the past seven years of using and improving Open vSwitch.</p>
+<p>【Keywords】:</p>
+<h3 id="10. C3: Internet-Scale Control Plane for Video Quality Optimization.">10. C3: Internet-Scale Control Plane for Video Quality Optimization.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/ganjam">Paper Link</a>】    【Pages】:131-144</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Ganjam:Aditya">Aditya Ganjam</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Siddiqui:Faisal">Faisal Siddiqui</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhan:Jibin">Jibin Zhan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Xi">Xi Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stoica:Ion">Ion Stoica</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jiang:Junchen">Junchen Jiang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sekar:Vyas">Vyas Sekar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang_0001:Hui">Hui Zhang</a></p>
+<p>【Abstract】:
+As Internet video goes mainstream, we see increasing user expectations for higher video quality and new global policy requirements for content providers. Inspired by the case for centralizing network-layer control, we present C3, a control system for optimizing Internet video delivery. The design of C3 addresses key challenges in ensuring scalability and tackling data plane heterogeneity. First, to ensure scalability and responsiveness, C3 introduces a novel split control plane architecture that can tolerate a small increase in model staleness for a dramatic increase in scalability. Second, C3 supports diverse client-side platforms via a minimal clientside sensing/actuation layer and offloads complex monitoring and control logic to the control plane. C3 has been operational for eight years, and today handles more than 100M sessions per day from 244 countries for 100+ content providers and has improved the video quality significantly. In doing so, C3 serves as a proof point of the viability of fine-grained centralized control for Internetscale applications. Our experiences reinforce the case for centralizing control with the continued emergence of new use case pulls (e.g., client diversity) and technology pushes (e.g., big data platforms).</p>
+<p>【Keywords】:</p>
+<h3 id="11. Attaining the Promise and Avoiding the Pitfalls of TCP in the Datacenter.">11. Attaining the Promise and Avoiding the Pitfalls of TCP in the Datacenter.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/judd">Paper Link</a>】    【Pages】:145-157</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Judd:Glenn">Glenn Judd</a></p>
+<p>【Abstract】:
+Over the last several years, datacenter computing has become a pervasive part of the computing landscape. In spite of the success of the datacenter computing paradigm, there are significant challenges remaining to be solved—particularly in the area of networking. The success of TCP/IP in the Internet makes TCP/IP a natural candidate for datacenter network communication. A growing body of research and operational experience, however, has found that TCP often performs poorly in datacenter settings. TCP’s poor performance has led some groups to abandon TCP entirely in the datacenter. This is not desirable, however, as it requires reconstruction of a new transport protocol as well as rewriting applications to use the new protocol. Over the last few years, promising research has focused on adapting TCP to operate in the datacenter environment. We have been running large datacenter computations for several years, and have experienced the promises and the pitfalls that datacenter computation presents. In this paper, we discuss our experiences with network communication performance within our datacenter, and discuss how we have leveraged and extended recent research to significantly improve network performance within our datacenter.</p>
+<p>【Keywords】:</p>
+<h2 id="Wireless    5">Wireless    5</h2>
+<h3 id="12. Beyond Sensing: Multi-GHz Realtime Spectrum Analytics.">12. Beyond Sensing: Multi-GHz Realtime Spectrum Analytics.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/shi">Paper Link</a>】    【Pages】:159-172</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Shi:Lixin">Lixin Shi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bahl:Paramvir">Paramvir Bahl</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Katabi:Dina">Dina Katabi</a></p>
+<p>【Abstract】:
+Spectrum sensing has been an active research area for the past two decades. Nonetheless, current spectrum sensing systems provide only coarse occupancy data. They lack information about the detailed signal patterns in each band and can easily miss fleeting signals like radar. This paper presents SpecInsight, a system for acquiring a detailed view of 4 GHz of spectrum in realtime. SpecInsight’s design addresses the intrinsic conflict between the need to quickly scan a wide spectrum and the desire to obtain very detailed information about each band. Its key enabler is a learned database of signal patterns and a new scheduling algorithm that leverages these patterns to identify when to sample each band to maximize the probability of sensing active signals. SpecInsight is implemented using off-the-shelf USRP radios with only tens of MHz of instantaneous bandwidth, but it is able to sense 4 GHz of spectrum, and capture very low duty-cycle signals in the radar band. Using SpecInsight, we perform a large-scale study of the spectrum in 7 locations in the US that span major cities and suburban areas, and build a first-of-its-kind database of spectrum usage patterns.</p>
+<p>【Keywords】:</p>
+<h3 id="13. Atomix: A Framework for Deploying Signal Processing Applications on Wireless Infrastructure.">13. Atomix: A Framework for Deploying Signal Processing Applications on Wireless Infrastructure.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/bansal">Paper Link</a>】    【Pages】:173-188</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bansal:Manu">Manu Bansal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schulman:Aaron">Aaron Schulman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Katti:Sachin">Sachin Katti</a></p>
+<p>【Abstract】:
+Multi-processor DSPs have become the platform of choice for wireless infrastructure. This trend presents an opportunity to enable faster and wider scale deployment of signal processing applications at scale. However, achieving the hardware-like performance required by signal processing applications requires interacting with bare metal features on the DSP. This makes it challenging to build modular applications. We present Atomix, a modular software framework for building applications on wireless infrastructure. We demonstrate that it is feasible to build modular DSP software by building the application entirely out of fixedtiming computations that we call atoms. We show that applications built in Atomix achieve hardware-like performance by building an 802.11a receiver that operates at high bandwidth and low latency. We also demonstrate that the modular structure of software built with Atomix makes it easy for programmers to deploy new signal processing applications. We demonstrate this by tailoring the 802.11a receiver to long-distance environments and adding RF localization to it.</p>
+<p>【Keywords】:</p>
+<h3 id="14. WiDeo: Fine-grained Device-free Motion Tracing using RF Backscatter.">14. WiDeo: Fine-grained Device-free Motion Tracing using RF Backscatter.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/joshi">Paper Link</a>】    【Pages】:189-204</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Joshi:Kiran_Raj">Kiran Raj Joshi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bharadia:Dinesh">Dinesh Bharadia</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kotaru:Manikanta">Manikanta Kotaru</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Katti:Sachin">Sachin Katti</a></p>
+<p>【Abstract】:
+Could we build a motion tracing camera using wireless communication signals as the light source? This paper shows we can, we present the design and implementation ofWiDeo, a novel system that enables accurate, high resolution, device free human motion tracing in indoor environments using WiFi signals and compact WiFi radios. The insight behind WiDeo is to mine the backscatter reflections from the environment that WiFi transmissions naturally produce to trace where reflecting objects are located and how they are moving. We invent novel backscatter measurement techniques that work in spite of the low bandwidth and dynamic range of WiFi radios, new algorithms that separate out the moving backscatter from the clutter that static reflectors produce and then trace the original motion that produced the backscatter in spite of the fact that it could have undergone multiple reflections. We prototype WiDeo using off-the-shelf software radios and show that it accurately traces motion even when there are multiple independent human motions occurring concurrently (up to 5) with a median error in the traced path of less than 7cm.</p>
+<p>【Keywords】:</p>
+<h3 id="15. FlexRadio: Fully Flexible Radios and Networks.">15. FlexRadio: Fully Flexible Radios and Networks.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/chen">Paper Link</a>】    【Pages】:205-218</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Bo">Bo Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yenamandra:Vivek">Vivek Yenamandra</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Srinivasan:Kannan">Kannan Srinivasan</a></p>
+<p>【Abstract】:
+When a wireless node has multiple RF chains, there are several techniques that are possible; MIMO, full-duplex and interference alignment. This paper aims to unify these techniques into a single wireless node. It proposes to make a wireless node fully flexible such that it can choose any number of its RF chains for transmission and the remaining for simultaneous reception. Thus, MIMO and full duplex are subset configurations in our design. Surprisingly, this flexibility performs better than MIMO or full duplex or interference alignment or multi-user MIMO. This paper presents the design and implementation of FlexRadio, the first system enabling flexible RF resource allocation. We implement FlexRadio on the NI PXIe 1082 platform using XCVR2450 radio front-ends. FlexRadio node networks achieves a median gain of 47% and 38% over same networks with full duplex and MIMO nodes respectively.</p>
+<p>【Keywords】:</p>
+<h3 id="16. Towards Wifi Mobility without Fast Handover.">16. Towards Wifi Mobility without Fast Handover.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/croitoru">Paper Link</a>】    【Pages】:219-234</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Croitoru:Andrei">Andrei Croitoru</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Niculescu:Dragos">Dragos Niculescu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Raiciu:Costin">Costin Raiciu</a></p>
+<p>【Abstract】:
+WiFi is emerging as the preferred connectivity solution for mobile clients because of its low power consumption and high capacity. Dense urban WiFi deployments cover entire central areas, but the one thing missing is a seamless mobile experience. Mobility in WiFi has traditionally pursued fast handover, but we argue that this is the wrong goal to begin with. Instead, we propose that mobile clients should connect to all the access points they see, and split traffic over them with the newly deployed MPTCP protocol. We let a mobile connect to multiple APs on the same channel, or on different channels, and show via detailed experiments and simulation that this solution greatly enhances capacity and reliability of TCP connections straight away for certain flavors of WiFi a/b/g. We also find there are situations where connecting to multiple APs severely decreases throughput, and propose a series of client-side changes that make this solution robust across a wide range of scenarios.</p>
+<p>【Keywords】:</p>
+<h2 id="PHY Layer    4">PHY Layer    4</h2>
+<h3 id="17. Securing RFIDs by Randomizing the Modulation and Channel.">17. Securing RFIDs by Randomizing the Modulation and Channel.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/hassanieh">Paper Link</a>】    【Pages】:235-249</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hassanieh:Haitham">Haitham Hassanieh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Jue">Jue Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Katabi:Dina">Dina Katabi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kohno:Tadayoshi">Tadayoshi Kohno</a></p>
+<p>【Abstract】:
+RFID cards are widely used in sensitive applications such as access control and payment systems. Past work shows that an eavesdropper snooping on the communication between a card and its legitimate reader can break their cryptographic protocol and obtain their secret keys. One solution to this problem is to install stronger encryption on the cards. However, RFIDs’ size, power, and cost limitations do not allow for strong encryption protocols. Further, changing the encryption on the cards requires revoking billions of cards in consumers’ hands, which is impracticable. This paper presents RF-Cloak, a solution that protects RFIDs from the above attacks, without any changes to today’s cards. RF-Cloak achieves this performance using a novel transmission systemthat randomizes both themodulation and the wireless channels. It is the first system that defends RFIDs against MIMO eavesdroppers, even when the RFID reader has no MIMO capability. A prototype of our design built using software radios demonstrates its ability to protect commercial RFIDs from both single-antenna and MIMO eavesdroppers.</p>
+<p>【Keywords】:</p>
+<h3 id="18. Relative Localization of RFID Tags using Spatial-Temporal Phase Profiling.">18. Relative Localization of RFID Tags using Spatial-Temporal Phase Profiling.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/shangguan">Paper Link</a>】    【Pages】:251-263</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Shangguan:Longfei">Longfei Shangguan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Zheng">Zheng Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Alex_X=">Alex X. Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Zimu">Zimu Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Yunhao">Yunhao Liu</a></p>
+<p>【Abstract】:
+Many object localization applications need the relative locations of a set of objects as oppose to their absolute locations. Although many schemes for object localization using Radio Frequency Identification (RFID) tags have been proposed, they mostly focus on absolute object localization and are not suitable for relative object localization because of large error margins and the special hardware that they require. In this paper, we propose an approach called Spatial-Temporal Phase Profiling (STPP) to RFID based relative object localization. The basic idea of STPP is that by moving a reader over a set of tags during which the reader continuously interrogating the tags, for each tag, the reader obtains a sequence of RF phase values, which we call a phase profile, from the tag’s responses over time. By analyzing the spatial-temporal dynamics in the phase profiles, STPP can calculate the spatial ordering among the tags. In comparison with prior absolute object localization schemes, STPP requires neither dedicated infrastructure nor special hardware. We implemented STPP and evaluated its performance in two real-world applications: locating misplaced books in a library and determining baggage order in an airport. The experimental results show that STPP achieves about 84% ordering accuracy for misplaced books and 95% ordering accuracy for baggage handling.</p>
+<p>【Keywords】:</p>
+<h3 id="19. Ripple: Communicating through Physical Vibration.">19. Ripple: Communicating through Physical Vibration.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/roy">Paper Link</a>】    【Pages】:265-278</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Roy:Nirupam">Nirupam Roy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gowda:Mahanth">Mahanth Gowda</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Choudhury:Romit_Roy">Romit Roy Choudhury</a></p>
+<p>【Abstract】:
+This paper investigates the possibility of communicating through vibrations. By modulating the vibration motors available in all mobile phones, and decoding them through accelerometers, we aim to communicate small packets of information. Of course, this will not match the bit rates available through RF modalities, such as NFC or Bluetooth, which utilize a much larger bandwidth. However, where security is vital, vibratory communication may offer advantages. We develop Ripple, a system that achieves up to 200 bits/s of secure transmission using off-the-shelf vibration motor chips, and 80 bits/s on Android smartphones. This is an outcome of designing and integrating a range of techniques, including multicarrier modulation, orthogonal vibration division, vibration braking, side-channel jamming, etc. Not all these techniques are novel; some are borrowed and suitably modified for our purposes, while others are unique to this relatively new platform of vibratory communication.</p>
+<p>【Keywords】:</p>
+<h3 id="20. Multi-Person Localization via RF Body Reflections.">20. Multi-Person Localization via RF Body Reflections.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/adib">Paper Link</a>】    【Pages】:279-292</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Adib:Fadel">Fadel Adib</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kabelac:Zachary">Zachary Kabelac</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Katabi:Dina">Dina Katabi</a></p>
+<p>【Abstract】:
+We have recently witnessed the emergence of RF-based indoor localization systems that can track user motion without requiring the user to hold or wear any device. These systems can localize a user and track his gestures by relying solely on the reflections of wireless signals off his body, and work even if the user is behind a wall or obstruction. However, in order for these systems to become practical, they need to address two main challenges: 1) They need to be able to operate in the presence of more than one user in the environment, and 2) they must be able to localize a user without requiring him to move or change his position. This paper presents WiTrack2.0, a multi-person localization system that operates in multipath-rich indoor environments and pinpoints users’ locations based purely on the reflections of wireless signals off their bodies. WiTrack2.0 can even localize static users, and does so by sensing the minute movements due to their breathing.We built a prototype ofWiTrack2.0 and evaluated it in a standard office building. Our results show that it can localize up to five people simultaneously with a median accuracy of 11.7 cm in each of the x=y dimensions. Furthermore, WiTrack2.0 provides coarse tracking of body parts, identifying the direction of a pointing hand with a median error of 12.5º, for multiple users in the environment.</p>
+<p>【Keywords】:</p>
+<h2 id="Data Analytics    4">Data Analytics    4</h2>
+<h3 id="21. Making Sense of Performance in Data Analytics Frameworks.">21. Making Sense of Performance in Data Analytics Frameworks.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/ousterhout">Paper Link</a>】    【Pages】:293-307</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/o/Ousterhout:Kay">Kay Ousterhout</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rasti:Ryan">Ryan Rasti</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ratnasamy:Sylvia">Sylvia Ratnasamy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shenker:Scott">Scott Shenker</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chun:Byung=Gon">Byung-Gon Chun</a></p>
+<p>【Abstract】:
+There has been much research devoted to improving the performance of data analytics frameworks, but comparatively little effort has been spent systematically identifying the performance bottlenecks of these systems. In this paper, we develop blocked time analysis, a methodology for quantifying performance bottlenecks in distributed computation frameworks, and use it to analyze the Spark framework’s performance on two SQL benchmarks and a production workload. Contrary to our expectations, we find that (i) CPU (and not I/O) is often the bottleneck, (ii) improving network performance can improve job completion time by a median of at most 2%, and (iii) the causes of most stragglers can be identified.</p>
+<p>【Keywords】:</p>
+<h3 id="22. CellIQ : Real-Time Cellular Network Analytics at Scale.">22. CellIQ : Real-Time Cellular Network Analytics at Scale.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/iyer">Paper Link</a>】    【Pages】:309-322</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/i/Iyer:Anand_P=">Anand P. Iyer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Li_Erran">Li Erran Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stoica:Ion">Ion Stoica</a></p>
+<p>【Abstract】:
+We present CellIQ, a real-time cellular network analytics system that supports rich and sophisticated analysis tasks. CellIQ is motivated by the lack of support for realtime analytics or advanced tasks such as spatio-temporal trac hotspots and hando sequences with performance problems in state-of-the-art systems, and the interest in such tasks by network operators. CellIQ represents cellular network data as a stream of domain specific graphs, each from a batch of data. Leveraging domain specific characteristics—the spatial and temporal locality of cellular network data—CellIQ presents a number of optimizations including geo-partitioning of input data, radiusbased message broadcast, and incremental graph updates to support ecient analysis. Using data from a live cellular network and representative analytic tasks, we demonstrate that CellIQ enables fast and ecient cellular network analytics—compared to an implementation without cellular specific operators, CellIQ is 2x to 5x faster.</p>
+<p>【Keywords】:</p>
+<h3 id="23. Global Analytics in the Face of Bandwidth and Regulatory Constraints.">23. Global Analytics in the Face of Bandwidth and Regulatory Constraints.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/vulimiri">Paper Link</a>】    【Pages】:323-336</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/v/Vulimiri:Ashish">Ashish Vulimiri</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Curino:Carlo">Carlo Curino</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Godfrey:Philip_Brighten">Philip Brighten Godfrey</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jungblut:Thomas">Thomas Jungblut</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Padhye:Jitu">Jitu Padhye</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Varghese:George">George Varghese</a></p>
+<p>【Abstract】:
+Global-scale organizations produce large volumes of data across geographically distributed data centers. Querying and analyzing such data as a whole introduces new research issues at the intersection of networks and databases. Today systems that compute SQL analytics over geographically distributed data operate by pulling all data to a central location. This is problematic at large data scales due to expensive transoceanic links, and may be rendered impossible by emerging regulatory constraints. The new problem of Wide-Area Big Data (WABD) consists in orchestrating query execution across data centers to minimize bandwidth while respecting regulatory constaints. WABD combines classical query planning with novel network-centric mechanisms designed for a wide-area setting such as pseudo-distributed execution, joint query optimization, and deltas on cached subquery results. Our prototype, Geode, builds upon Hive and uses 250 less bandwidth than centralized analytics in a Microsoft production workload and up to 360 less on popular analytics benchmarks including TPC-CH and Berkeley Big Data. Geode supports all SQL operators, including Joins, across global data.</p>
+<p>【Keywords】:</p>
+<h3 id="24. Succinct: Enabling Queries on Compressed Data.">24. Succinct: Enabling Queries on Compressed Data.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/agarwal">Paper Link</a>】    【Pages】:337-350</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Agarwal_0001:Rachit">Rachit Agarwal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Khandelwal:Anurag">Anurag Khandelwal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stoica:Ion">Ion Stoica</a></p>
+<p>【Abstract】:
+Succinct is a data store that enables efficient queries directly on a compressed representation of the input data. Succinct uses a compression technique that allows random access into the input, thus enabling efficient storage and retrieval of data. In addition, Succinct natively supports a wide range of queries including count and search of arbitrary strings, range and wildcard queries. What differentiates Succinct from previous techniques is that Succinct supports these queries without storing indexes — all the required information is embedded within the compressed representation. Evaluation on real-world datasets show that Succinct requires an order of magnitude lower memory than systems with similar functionality. Succinct thus pushes more data in memory, and provides low query latency for a larger range of input sizes than existing systems.</p>
+<p>【Keywords】:</p>
+<h2 id="Operational Systems Track 2    3">Operational Systems Track 2    3</h2>
+<h3 id="25. Wormhole: Reliable Pub-Sub to Support Geo-replicated Internet Services.">25. Wormhole: Reliable Pub-Sub to Support Geo-replicated Internet Services.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/sharma">Paper Link</a>】    【Pages】:351-366</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sharma:Yogeshwer">Yogeshwer Sharma</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Ajoux:Philippe">Philippe Ajoux</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Ang:Petchean">Petchean Ang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Callies:David">David Callies</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Choudhary:Abhishek">Abhishek Choudhary</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Demailly:Laurent">Laurent Demailly</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fersch:Thomas">Thomas Fersch</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Guz:Liat_Atsmon">Liat Atsmon Guz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kotulski:Andrzej">Andrzej Kotulski</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kulkarni:Sachin">Sachin Kulkarni</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kumar:Sanjeev">Sanjeev Kumar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Harry_C=">Harry C. Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Jun">Jun Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Makeev:Evgeniy">Evgeniy Makeev</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Prakasam:Kowshik">Kowshik Prakasam</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Renesse:Robbert_van">Robbert van Renesse</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Roy:Sabyasachi">Sabyasachi Roy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Seth:Pratyush">Pratyush Seth</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Song:Yee_Jiun">Yee Jiun Song</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wester:Benjamin">Benjamin Wester</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Veeraraghavan:Kaushik">Kaushik Veeraraghavan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xie:Peter">Peter Xie</a></p>
+<p>【Abstract】:
+Wormhole is a publish-subscribe (pub-sub) system developed for use within Facebook’s geographically replicated datacenters. It is used to reliably replicate changes among several Facebook services including TAO, Graph Search and Memcache. This paper describes the design and implementation of Wormhole as well as the operational challenges of scaling the system to support the multiple data storage systems deployed at Facebook. Our production deployment of Wormhole transfers over 35 GBytes/sec in steady state (50 millions messages/sec or 5 trillion messages/day) across all deployments with bursts up to 200 GBytes/sec during failure recovery. We demonstrate that Wormhole publishes updates with low latency to subscribers that can fail or consume updates at varying rates, without compromising efficiency.</p>
+<p>【Keywords】:</p>
+<h3 id="26. Flywheel: Google's Data Compression Proxy for the Mobile Web.">26. Flywheel: Google's Data Compression Proxy for the Mobile Web.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/agababov">Paper Link</a>】    【Pages】:367-380</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Agababov:Victor">Victor Agababov</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Buettner:Michael">Michael Buettner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chudnovsky:Victor">Victor Chudnovsky</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cogan:Mark">Mark Cogan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Greenstein:Ben">Ben Greenstein</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McDaniel:Shane">Shane McDaniel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Piatek:Michael">Michael Piatek</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Scott:Colin">Colin Scott</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Welsh:Matt">Matt Welsh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yin:Bolian">Bolian Yin</a></p>
+<p>【Abstract】:
+Mobile devices are increasingly the dominant Internet access technology. Nevertheless, high costs, data caps, and throttling are a source of widespread frustration, and a significant barrier to adoption in emerging markets. This paper presents Flywheel, an HTTP proxy service that extends the life of mobile data plans by compressing responses in-flight between origin servers and client browsers. Flywheel is integrated with the Chrome web browser and reduces the size of proxied web pages by 50% for a median user. We report measurement results from millions of users as well as experience gained during three years of operating and evolving the production service at Google.</p>
+<p>【Keywords】:</p>
+<h3 id="27. FastRoute: A Scalable Load-Aware Anycast Routing Architecture for Modern CDNs.">27. FastRoute: A Scalable Load-Aware Anycast Routing Architecture for Modern CDNs.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/flavel">Paper Link</a>】    【Pages】:381-394</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Flavel:Ashley">Ashley Flavel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mani:Pradeepkumar">Pradeepkumar Mani</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Maltz:David_A=">David A. Maltz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Holt:Nick">Nick Holt</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Jie">Jie Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Yingying">Yingying Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Surmachev:Oleg">Oleg Surmachev</a></p>
+<p>【Abstract】:
+Performance of online applications directly impacts user satisfaction. A major component of the user-perceived performance of the application is the time spent in transit between the user’s device and the application existing in data centers. Content Delivery Networks (CDNs) are typically used to improve user-perceived application performance through a combination of caching and intelligent routing via proxies. In this paper, we describe FastRoute, a highly scalable and operational anycastbased system that has significantly improved the performance of numerous popular online services. While anycast is a common technique in modern CDNs for providing high-performance proximity routing, it sacrifices control over the load arriving at any individual proxy. We demonstrate that by collocating DNS and proxy services in each FastRoute node location, we can create a highperformance, completely distributed system for routing users to a nearby proxy while still enabling the graceful avoidance of overload an any individual proxy.</p>
+<p>【Keywords】:</p>
+<h2 id="Protocol Design and Implementation    5">Protocol Design and Implementation    5</h2>
+<h3 id="28. PCC: Re-architecting Congestion Control for Consistent High Performance.">28. PCC: Re-architecting Congestion Control for Consistent High Performance.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/dong">Paper Link</a>】    【Pages】:395-408</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dong:Mo">Mo Dong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Qingxi">Qingxi Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zarchy:Doron">Doron Zarchy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Godfrey:Philip_Brighten">Philip Brighten Godfrey</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schapira:Michael">Michael Schapira</a></p>
+<p>【Abstract】:
+TCP and its variants have suffered from surprisingly poor performance for decades. We argue the TCP family has little hope of achieving consistent high performance due to a fundamental architectural deficiency: hardwiring packet-level events to control responses. We propose Performance-oriented Congestion Control (PCC), a new congestion control architecture in which each sender continuously observes the connection between its actions and empirically experienced performance, enabling it to consistently adopt actions that result in high performance. We prove that PCC converges to a stable and fair equilibrium. Across many real-world and challenging environments, PCC shows consistent and often 10 performance improvement, with better fairness and stability than TCP. PCC requires no router hardware support or new packet format.</p>
+<p>【Keywords】:</p>
+<h3 id="29. Raising the Bar for Using GPUs in Software Packet Processing.">29. Raising the Bar for Using GPUs in Software Packet Processing.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/kalia">Paper Link</a>】    【Pages】:409-423</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kalia:Anuj">Anuj Kalia</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Dong">Dong Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kaminsky:Michael">Michael Kaminsky</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Andersen:David_G=">David G. Andersen</a></p>
+<p>【Abstract】:
+Numerous recent research eorts have explored the use of Graphics Processing Units (GPUs) as accelerators for software-based routing and packet handling applications, typically demonstrating throughput several times higher than using legacy code on the CPU alone. In this paper, we explore a new hypothesis about such designs: For many such applications, the benefits arise less from the GPU hardware itself as from the expression of the problem in a language such as CUDA or OpenCL that facilitates memory latency hiding and vectorization through massive concurrency. We demonstrate that in several cases, after applying a similar style of optimization to algorithm implementations, a CPU-only implementation is, in fact, more resource efficient than the version running on the GPU. To “raise the bar” for future uses of GPUs in packet processing applications, we present and evaluate a preliminary language/compiler-based framework called G-Opt that can accelerate CPU-based packet handling programs by automatically hiding memory access latency.</p>
+<p>【Keywords】:</p>
+<h3 id="30. ModNet: A Modular Approach to Network Stack Extension.">30. ModNet: A Modular Approach to Network Stack Extension.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/pathak">Paper Link</a>】    【Pages】:425-438</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Pathak:Sharvanath">Sharvanath Pathak</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pai:Vivek_S=">Vivek S. Pai</a></p>
+<p>【Abstract】:
+The existing interfaces between the network stack and the operating system are less than ideal for certain important classes of network traffic, such as video and mobile communication. While TCP has become the de facto transport protocol for much of this traffic, the opacity of some of the current network abstractions prevents demanding applications from controlling TCP to the fullest extent possible. At the same time, non-TCP protocols face an uphill battle as the network management and control infrastructure around TCP grows and improves. In this paper, we introduce ModNet, a lightweight kernel mechanism that allows demanding applications better customization of the TCP stack, while preserving existing network interfaces for unmodified applications. We demonstrate ModNet’s utility by implementing a range of network server enhancements for demanding environments, including adaptive bitrate video, mobile content adaptation, dynamic data and image compression, and flash crowd resource management. These enhancements operate as untrusted user-level modules, enabling easy deployment, but can still operate at scale, often providing gigabits per second of throughput with low performance overheads.</p>
+<p>【Keywords】:</p>
+<h3 id="31. Klotski: Reprioritizing Web Content to Improve User Experience on Mobile Devices.">31. Klotski: Reprioritizing Web Content to Improve User Experience on Mobile Devices.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/butkiewicz">Paper Link</a>】    【Pages】:439-453</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Butkiewicz:Michael">Michael Butkiewicz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Daimeng">Daimeng Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Zhe">Zhe Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Madhyastha:Harsha_V=">Harsha V. Madhyastha</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sekar:Vyas">Vyas Sekar</a></p>
+<p>【Abstract】:
+Despite web access on mobile devices becoming commonplace, users continue to experience poor web performance on these devices. Traditional approaches for improving web performance (e.g., compression, SPDY, faster browsers) face an uphill battle due to the fundamentally conflicting trends in user expectations of lower load times and richer web content. Embracing the reality that page load times will continue to be higher than user tolerance limits for the foreseeable future, we ask: How can we deliver the best possible user experience? To this end, we present KLOTSKI, a system that prioritizes the content most relevant to a user’s preferences. In designing KLOTSKI, we address several challenges in: (1) accounting for inter-resource dependencies on a page; (2) enabling fast selection and load time estimation for the subset of resources to be prioritized; and (3) developing a practical implementation that requires no changes to websites. Across a range of user preference criteria, KLOTSKI can significantly improve the user experience relative to native websites.</p>
+<p>【Keywords】:</p>
+<h3 id="32. Information-Agnostic Flow Scheduling for Commodity Data Centers.">32. Information-Agnostic Flow Scheduling for Commodity Data Centers.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/bai">Paper Link</a>】    【Pages】:455-468</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bai_0001:Wei">Wei Bai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen_0005:Kai">Kai Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang_0022:Hao">Hao Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Li">Li Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Han:Dongsu">Dongsu Han</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tian:Chen">Chen Tian</a></p>
+<p>【Abstract】:
+Many existing data center network (DCN) flow scheduling schemes minimize flow completion times (FCT) based on prior knowledge of flows and custom switch functions, making them superior in performance but hard to use in practice. By contrast, we seek to minimize FCT with no prior knowledge and existing commodity switch hardware. To this end, we present PIAS, a DCN flow scheduling mechanism that aims to minimize FCT by mimicking Shortest Job First (SJF) on the premise that flow size is not known a priori. At its heart, PIAS leverages multiple priority queues available in existing commodity switches to implement a Multiple Level Feedback Queue (MLFQ), in which a PIAS flow is gradually demoted from higher-priority queues to lower-priority queues based on the number of bytes it has sent. As a result, short flows are likely to be finished in the first few high-priority queues and thus be prioritized over long flows in general, which enables PIAS to emulate SJF without knowing flow sizes beforehand. We have implemented a PIAS prototype and evaluated PIAS through both testbed experiments and ns-2 simulations. We show that PIAS is readily deployable with commodity switches and backward compatible with legacy TCP/IP stacks. Our evaluation results show that PIAS significantly outperforms existing information-agnostic schemes. For example, it reduces FCT by up to 50% and 40% over DCTCP and L2DCT respectively; and it only has a 4.9% performance gap to an ideal information-aware scheme, pFabric, for short flows under a production DCN workload.</p>
+<p>【Keywords】:</p>
+<h2 id="Correctness    3">Correctness    3</h2>
+<h3 id="33. A General Approach to Network Configuration Analysis.">33. A General Approach to Network Configuration Analysis.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/fogel">Paper Link</a>】    【Pages】:469-483</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Fogel:Ari">Ari Fogel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fung:Stanley">Stanley Fung</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pedrosa:Luis">Luis Pedrosa</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Walraed=Sullivan:Meg">Meg Walraed-Sullivan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Govindan:Ramesh">Ramesh Govindan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mahajan:Ratul">Ratul Mahajan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Millstein:Todd_D=">Todd D. Millstein</a></p>
+<p>【Abstract】:
+We present an approach to detect network configuration errors, which combines the benefits of two prior approaches. Like prior techniques that analyze configuration files, our approach can find errors proactively, before the configuration is applied, and answer “what if” questions. Like prior techniques that analyze data-plane snapshots, our approach can check a broad range of forwarding properties and produce actual packets that violate checked properties. We accomplish this combination by faithfully deriving and then analyzing the data plane that would emerge from the configuration. Our derivation of the data plane is fully declarative, employing a set of logical relations that represent the control plane, the data plane, and their relationship. Operators can query these relations to understand identified errors and their provenance. We use our approach to analyze two large university networks with qualitatively different routing designs and find many misconfigurations in each. Operators have confirmed the majority of these as errors and have fixed their configurations accordingly.</p>
+<p>【Keywords】:</p>
+<h3 id="34. Analyzing Protocol Implementations for Interoperability.">34. Analyzing Protocol Implementations for Interoperability.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/pedrosa">Paper Link</a>】    【Pages】:485-498</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Pedrosa:Luis">Luis Pedrosa</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fogel:Ari">Ari Fogel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kothari:Nupur">Nupur Kothari</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Govindan:Ramesh">Ramesh Govindan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mahajan:Ratul">Ratul Mahajan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Millstein:Todd_D=">Todd D. Millstein</a></p>
+<p>【Abstract】:
+We propose PIC, a tool that helps developers search for non-interoperabilities in protocol implementations. We formulate this problem using intersection of the sets of messages that one protocol participant can send but another will reject as non-compliant. PIC leverages symbolic execution to characterize these sets and uses two novel techniques to scale to real-world implementations. First, it uses joint symbolic execution, in which receiver-side program analysis is constrained based on sender-side constraints, dramatically reducing the number of execution paths to consider. Second, it incorporates a search strategy that steers symbolic execution toward likely non-interoperabilities. We show that PIC is able to find multiple previously unknown noninteroperabilities in large and mature implementations of the SIP and SPDY (v2 through v3.1) protocols, some of which have since been fixed by the respective developers.</p>
+<p>【Keywords】:</p>
+<h3 id="35. Checking Beliefs in Dynamic Networks.">35. Checking Beliefs in Dynamic Networks.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/lopes">Paper Link</a>】    【Pages】:499-512</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lopes:Nuno_P=">Nuno P. Lopes</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bj=oslash=rner:Nikolaj">Nikolaj Bjørner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Godefroid:Patrice">Patrice Godefroid</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jayaraman:Karthick">Karthick Jayaraman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Varghese:George">George Varghese</a></p>
+<p>【Abstract】:
+Network Verification is a form of model checking in which a model of the network is checked for properties stated using a specification language. Existing network verification tools lack a general specification language and hardcode the network model. Hence they cannot, for example, model policies at a high level of abstraction. Neither can they model dynamic networks; even a simple packet format change requires changes to internals. Standard verification tools (e.g., model checkers) have expressive specification and modeling languages but do not scale to large header spaces. We introduce Network Optimized Datalog (NoD) as a tool for network verification in which both the specification language and modeling languages are Datalog. NoD can also scale to large to large header spaces because of a new filter-project operator and a symbolic header representation. As a consequence, NoD allows checking for beliefs about network reachability policies in dynamic networks. A belief is a high-level invariant (e.g., “Internal controllers cannot be accessed from the Internet”) that a network operator thinks is true. Beliefs may not hold, but checking them can uncover bugs or policy exceptions with little manual effort. Refuted beliefs can be used as a basis for revised beliefs. Further, in real networks, machines are added and links fail; on a longer term, packet formats and even forwarding behaviors can change, enabled by OpenFlow and P4. NoD allows the analyst to model such dynamic networks by adding new Datalog rules. For a large Singapore data center with 820K rules, NoD checks if any guest VM can access any controller (the equivalent of 5K specific reachability invariants) in 12 minutes. NoD checks for loops in an experimental SWAN backbone network with new headers in a fraction of a second. NoD generalizes a specialized system, SecGuru, we currently use in production to catch hundreds of configuration bugs a year. NoD has been released as part of the publicly available Z3 SMT solver.</p>
+<p>【Keywords】:</p>
+<h2 id="Distributed Storage    3">Distributed Storage    3</h2>
+<h3 id="36. C3: Cutting Tail Latency in Cloud Data Stores via Adaptive Replica Selection.">36. C3: Cutting Tail Latency in Cloud Data Stores via Adaptive Replica Selection.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/suresh">Paper Link</a>】    【Pages】:513-527</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Suresh:P=_Lalith">P. Lalith Suresh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Canini:Marco">Marco Canini</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schmid:Stefan">Stefan Schmid</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Feldmann:Anja">Anja Feldmann</a></p>
+<p>【Abstract】:
+Achieving predictable performance is critical for many distributed applications, yet difficult to achieve due to many factors that skew the tail of the latency distribution even in well-provisioned systems. In this paper, we present the fundamental challenges involved in designing a replica selection scheme that is robust in the face of performance fluctuations across servers. We illustrate these challenges through performance evaluations of the Cassandra distributed database on Amazon EC2. We then present the design and implementation of an adaptive replica selection mechanism, C3, that is robust to performance variability in the environment. We demonstrate C3’s effectiveness in reducing the latency tail and improving throughput through extensive evaluations on Amazon EC2 and through simulations. Our results show that C3 significantly improves the latencies along the mean, median, and tail (up to 3 times improvement at the 99.9th percentile) and provides higher system throughput.</p>
+<p>【Keywords】:</p>
+<h3 id="37. CubicRing: Enabling One-Hop Failure Detection and Recovery for Distributed In-Memory Storage Systems.">37. CubicRing: Enabling One-Hop Failure Detection and Recovery for Distributed In-Memory Storage Systems.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/zhang">Paper Link</a>】    【Pages】:529-542</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Yiming">Yiming Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Guo:Chuanxiong">Chuanxiong Guo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Dongsheng">Dongsheng Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chu:Rui">Rui Chu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Haitao">Haitao Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xiong:Yongqiang">Yongqiang Xiong</a></p>
+<p>【Abstract】:
+In-memory storage has the benefits of low I/O latency and high I/O throughput. Fast failure recovery is cru- cial for large-scale in-memory storage systems, bringing network-related challenges including false detection due to transient network problems, traffic congestion during the recovery, and top-of-rack switch failures. This paper presents CubicRing, a distributed structure for cube- based networks which exploits network proximity to restrict failure detection and recovery within the small- est possible one-hop range. We leverage the Cubic- Ring structure to address the aforementioned challenges and design a network-aware in-memory key-value store called MemCube. In a 64-node 10GbE testbed, Mem- Cube recovers 48 GB of data for a single server failure in 3.1 seconds. The 14 recovery servers achieve 123.9 Gb/sec aggregate recovery throughput, which is 88.5% of the ideal aggregate bandwidth.</p>
+<p>【Keywords】:</p>
+<h3 id="38. CosTLO: Cost-Effective Redundancy for Lower Latency Variance on Cloud Storage Services.">38. CosTLO: Cost-Effective Redundancy for Lower Latency Variance on Cloud Storage Services.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/wu">Paper Link</a>】    【Pages】:543-557</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Zhe">Zhe Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yu:Curtis">Curtis Yu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Madhyastha:Harsha_V=">Harsha V. Madhyastha</a></p>
+<p>【Abstract】:
+We present CosTLO, a system that reduces the high latency variance associated with cloud storage services by augmenting GET/PUT requests issued by end-hosts with redundant requests, so that the earliest response can be considered. To reduce the cost overhead imposed by redundancy, unlike prior efforts that have used this approach, CosTLO combines the use of multiple forms of redundancy. Since this results in a large number of configurations in which CosTLO can issue redundant requests, we conduct a comprehensive measurement study on S3 and Azure to identify the configurations that are viable in practice. Informed by this study, we design CosTLO to satisfy any application’s goals for latency variance by 1) estimating the latency variance offered by any particular configuration, 2) efficiently searching through the configuration space to select a cost-effective configuration among the ones that can offer the desired latency variance, and 3) preserving data consistency despite CosTLO’s use of redundant requests. We show that, for the median PlanetLab node, CosTLO can halve the latency variance associated with fetching content from Amazon S3, with only a 25% increase in cost.</p>
+<p>【Keywords】:</p>
+<h2 id="Virtualization and Fault Tolerance    4">Virtualization and Fault Tolerance    4</h2>
+<h3 id="39. Jitsu: Just-In-Time Summoning of Unikernels.">39. Jitsu: Just-In-Time Summoning of Unikernels.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/madhavapeddy">Paper Link</a>】    【Pages】:559-573</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Madhavapeddy:Anil">Anil Madhavapeddy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Leonard:Thomas">Thomas Leonard</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Skjegstad:Magnus">Magnus Skjegstad</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gazagnaire:Thomas">Thomas Gazagnaire</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sheets:David">David Sheets</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Scott:David_J=">David J. Scott</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mortier:Richard">Richard Mortier</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chaudhry:Amir">Amir Chaudhry</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Singh:Balraj">Balraj Singh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Ludlam:Jon">Jon Ludlam</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Crowcroft:Jon">Jon Crowcroft</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Leslie:Ian_M=">Ian M. Leslie</a></p>
+<p>【Abstract】:
+Network latency is a problem for all cloud services. It can be mitigated by moving computation out of remote datacenters by rapidly instantiating local services near the user. This requires an embedded cloud platform on which to deploy multiple applications securely and quickly. We present Jitsu, a new Xen toolstack that satisfies the demands of secure multi-tenant isolation on resource-constrained embedded ARM devices. It does this by using unikernels: lightweight, compact, single address space, memory-safe virtual machines (VMs) written in a high-level language. Using fast shared memory channels, Jitsu provides a directory service that launches unikernels in response to network traffic and masks boot latency. Our evaluation shows Jitsu to be a power-efficient and responsive platform for hosting cloud services in the edge network while preserving the strong isolation guarantees of a type-1 hypervisor.</p>
+<p>【Keywords】:</p>
+<h3 id="40. Tardigrade: Leveraging Lightweight Virtual Machines to Easily and Efficiently Construct Fault-Tolerant Services.">40. Tardigrade: Leveraging Lightweight Virtual Machines to Easily and Efficiently Construct Fault-Tolerant Services.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/lorch">Paper Link</a>】    【Pages】:575-588</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lorch:Jacob_R=">Jacob R. Lorch</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Baumann:Andrew">Andrew Baumann</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Glendenning:Lisa">Lisa Glendenning</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Meyer:Dutch_T=">Dutch T. Meyer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Warfield:Andrew">Andrew Warfield</a></p>
+<p>【Abstract】:
+Many services need to survive machine failures, but designing and deploying fault-tolerant services can be difficult and error-prone. In this work, we present Tardigrade, a system that deploys an existing, unmodified binary as a fault-tolerant service. Tardigrade replicates the service on several machines so that it continues running even when some of them fail. Yet, it keeps the service states synchronized so clients see strongly consistent results. To achieve this efficiently, we use lightweight virtual machine replication. A lightweight virtual machine is a process sandboxed so that its external dependencies are completely encapsulated, enabling it to be migrated across machines. To let unmodified binaries run within such a sandbox, the sandbox also contains a library OS providing the expected API. We evaluate Tardigrade’s performance and demonstrate its applicability to a variety of services, showing that it can convert these services into fault-tolerant ones transparently and efficiently.</p>
+<p>【Keywords】:</p>
+<h3 id="41. Retro: Targeted Resource Management in Multi-tenant Distributed Systems.">41. Retro: Targeted Resource Management in Multi-tenant Distributed Systems.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/mace">Paper Link</a>】    【Pages】:589-603</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mace:Jonathan">Jonathan Mace</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bod=iacute=k:Peter">Peter Bodík</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fonseca:Rodrigo">Rodrigo Fonseca</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Musuvathi:Madanlal">Madanlal Musuvathi</a></p>
+<p>【Abstract】:
+In distributed systems shared by multiple tenants, effective resource management is an important pre-requisite to providing quality of service guarantees. Many systems deployed today lack performance isolation and experience contention, slowdown, and even outages caused by aggressive workloads or by improperly throttled maintenance tasks such as data replication. In this work we present Retro, a resource management framework for shared distributed systems. Retro monitors per-tenant resource usage both within and across distributed systems, and exposes this information to centralized resource management policies through a high-level API. A policy can shape the resources consumed by a tenant using Retro’s control points, which enforce sharing and ratelimiting decisions. We demonstrate Retro through three policies providing bottleneck resource fairness, dominant resource fairness, and latency guarantees to high-priority tenants, and evaluate the system across five distributed systems: HBase, Yarn, MapReduce, HDFS, and Zookeeper. Our evaluation shows that Retro has low overhead, and achieves the policies’ goals, accurately detecting contended resources, throttling tenants responsible for slowdown and overload, and fairly distributing the remaining cluster capacity.</p>
+<p>【Keywords】:</p>
+<h3 id="42. Scalable Error Isolation for Distributed Systems.">42. Scalable Error Isolation for Distributed Systems.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/behrens">Paper Link</a>】    【Pages】:605-620</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Behrens:Diogo">Diogo Behrens</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Serafini:Marco">Marco Serafini</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Junqueira:Flavio_Paiva">Flavio Paiva Junqueira</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Arnautov:Sergei">Sergei Arnautov</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fetzer:Christof">Christof Fetzer</a></p>
+<p>【Abstract】:
+In distributed systems, data corruption on a single node can propagate to other nodes in the system and cause severe outages. The probability of data corruption is already non-negligible today in large computer populations (e.g., in large datacenters). The resilience of processors is expected to decline in the near future, making it necessary to devise cost-effective software approaches to deal with data corruption. In this paper, we present SEI, an algorithm that tolerates Arbitrary State Corruption (ASC) faults and prevents data corruption from propagating across a distributed system. SEI scales in three dimensions: memory, number of processing threads, and development effort. To evaluate development effort, fault coverage, and performance with our library, we hardened two realworld applications: a DNS resolver and memcached. Hardening these applications required minimal changes to the existing code base, and the performance overhead is negligible in the case of applications that are not CPUintensive, such as memcached. The memory overhead is negligible independent of the application when using ECC memory. Finally, SEI covers faults effectively: it detected all hardware-injected errors and reduced undetected errors from 44% down to only 0.15% of the software-injected computation errors in our experiments.</p>
+<p>【Keywords】:</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="https://github.com/huntercmd/ccf"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>

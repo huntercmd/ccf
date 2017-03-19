@@ -1,0 +1,580 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/skin.js"></script>
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/classie.js"></script>
+
+<!-- This is for Mathjax -->
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#30. ACSAC 2014:New Orleans, LA, USA">30. ACSAC 2014:New Orleans, LA, USA</a><ul>
+<li><a href="#Paper Num: 48 || Session Num: 17">Paper Num: 48 || Session Num: 17</a></li>
+<li><a href="#Invited essayist    1">Invited essayist    1</a><ul>
+<li><a href="#1. Taking two-factor to the next level: protecting online poker, banking, healthcare and other applications.">1. Taking two-factor to the next level: protecting online poker, banking, healthcare and other applications.</a></li>
+</ul>
+</li>
+<li><a href="#Secure builds and configuration    3">Secure builds and configuration    3</a><ul>
+<li><a href="#2. Hot-hardening: getting more out of your security settings.">2. Hot-hardening: getting more out of your security settings.</a></li>
+<li><a href="#3. Challenges and implications of verifiable builds for security-critical open-source software.">3. Challenges and implications of verifiable builds for security-critical open-source software.</a></li>
+<li><a href="#4. Cloud radar: near real-time detection of security failures in dynamic virtualized infrastructures.">4. Cloud radar: near real-time detection of security failures in dynamic virtualized infrastructures.</a></li>
+</ul>
+</li>
+<li><a href="#Mobile systems security I    3">Mobile systems security I    3</a><ul>
+<li><a href="#5. Scippa: system-centric IPC provenance on Android.">5. Scippa: system-centric IPC provenance on Android.</a></li>
+<li><a href="#6. Android security framework: extensible multi-layered access control on Android.">6. Android security framework: extensible multi-layered access control on Android.</a></li>
+<li><a href="#7. Towards a scalable resource-driven approach for detecting repackaged Android applications.">7. Towards a scalable resource-driven approach for detecting repackaged Android applications.</a></li>
+</ul>
+</li>
+<li><a href="#Social computing and networks    3">Social computing and networks    3</a><ul>
+<li><a href="#8. TroGuard: context-aware protection against web-based socially engineered trojans.">8. TroGuard: context-aware protection against web-based socially engineered trojans.</a></li>
+<li><a href="#9. Spam ain't as diverse as it seems: throttling OSN spam with templates underneath.">9. Spam ain't as diverse as it seems: throttling OSN spam with templates underneath.</a></li>
+<li><a href="#10. A taste of tweets: reverse engineering Twitter spammers.">10. A taste of tweets: reverse engineering Twitter spammers.</a></li>
+</ul>
+</li>
+<li><a href="#Systems security    3">Systems security    3</a><ul>
+<li><a href="#11. New models of cache architectures characterizing information leakage from cache side channels.">11. New models of cache architectures characterizing information leakage from cache side channels.</a></li>
+<li><a href="#12. ICE: a passive, high-speed, state-continuity scheme.">12. ICE: a passive, high-speed, state-continuity scheme.</a></li>
+<li><a href="#13. Interrupt-oriented bugdoor programming: a minimalist approach to bugdooring embedded systems firmware.">13. Interrupt-oriented bugdoor programming: a minimalist approach to bugdooring embedded systems firmware.</a></li>
+</ul>
+</li>
+<li><a href="#Cyber physical systems I    3">Cyber physical systems I    3</a><ul>
+<li><a href="#14. Through the eye of the PLC: semantic security monitoring for industrial processes.">14. Through the eye of the PLC: semantic security monitoring for industrial processes.</a></li>
+<li><a href="#15. CPS: market analysis of attacks against demand response in the smart grid.">15. CPS: market analysis of attacks against demand response in the smart grid.</a></li>
+<li><a href="#16. CPS: driving cyber-physical systems to unsafe operating conditions by timing DoS attacks on sensor signals.">16. CPS: driving cyber-physical systems to unsafe operating conditions by timing DoS attacks on sensor signals.</a></li>
+</ul>
+</li>
+<li><a href="#Secure distributed systems    3">Secure distributed systems    3</a><ul>
+<li><a href="#17. Uncovering network tarpits with degreaser.">17. Uncovering network tarpits with degreaser.</a></li>
+<li><a href="#18. Network dialog minimization and network dialog diffing: two novel primitives for network security applications.">18. Network dialog minimization and network dialog diffing: two novel primitives for network security applications.</a></li>
+<li><a href="#19. Lightweight authentication of freshness in outsourced key-value stores.">19. Lightweight authentication of freshness in outsourced key-value stores.</a></li>
+</ul>
+</li>
+<li><a href="#Securing memory and storage    3">Securing memory and storage    3</a><ul>
+<li><a href="#20. SEER: practical memory virus scanning as a service.">20. SEER: practical memory virus scanning as a service.</a></li>
+<li><a href="#21. MACE: high-coverage and robust memory analysis for commodity operating systems.">21. MACE: high-coverage and robust memory analysis for commodity operating systems.</a></li>
+<li><a href="#22. Assisted deletion of related content.">22. Assisted deletion of related content.</a></li>
+</ul>
+</li>
+<li><a href="#Mobile systems security II    3">Mobile systems security II    3</a><ul>
+<li><a href="#23. Morpheus: automatically generating heuristics to detect Android emulators.">23. Morpheus: automatically generating heuristics to detect Android emulators.</a></li>
+<li><a href="#24. Design and implementation of an Android host-based intrusion prevention system.">24. Design and implementation of an Android host-based intrusion prevention system.</a></li>
+<li><a href="#25. MoRePriv: mobile OS support for application personalization and privacy.">25. MoRePriv: mobile OS support for application personalization and privacy.</a></li>
+</ul>
+</li>
+<li><a href="#Secure communications    3">Secure communications    3</a><ul>
+<li><a href="#26. IMSI-catch me if you can: IMSI-catcher-catchers.">26. IMSI-catch me if you can: IMSI-catcher-catchers.</a></li>
+<li><a href="#27. Advanced Wi-Fi attacks using commodity hardware.">27. Advanced Wi-Fi attacks using commodity hardware.</a></li>
+<li><a href="#28. Whitewash: outsourcing garbled circuit generation for mobile devices.">28. Whitewash: outsourcing garbled circuit generation for mobile devices.</a></li>
+</ul>
+</li>
+<li><a href="#Usable security    3">Usable security    3</a><ul>
+<li><a href="#29. Using automatic speech recognition for attacking acoustic CAPTCHAs: the trade-off between usability and security.">29. Using automatic speech recognition for attacking acoustic CAPTCHAs: the trade-off between usability and security.</a></li>
+<li><a href="#30. Understanding visual perceptions of usability and security of Android's graphical password pattern.">30. Understanding visual perceptions of usability and security of Android's graphical password pattern.</a></li>
+<li><a href="#31. It's the psychology stupid: how heuristics explain software vulnerabilities and how priming can illuminate developer's blind spots.">31. It's the psychology stupid: how heuristics explain software vulnerabilities and how priming can illuminate developer's blind spots.</a></li>
+</ul>
+</li>
+<li><a href="#Privacy    3">Privacy    3</a><ul>
+<li><a href="#32. Exploring and mitigating privacy threats of HTML5 geolocation API.">32. Exploring and mitigating privacy threats of HTML5 geolocation API.</a></li>
+<li><a href="#33. Differentially private data aggregation with optimal utility.">33. Differentially private data aggregation with optimal utility.</a></li>
+<li><a href="#34. On the privacy provisions of Bloom filters in lightweight bitcoin clients.">34. On the privacy provisions of Bloom filters in lightweight bitcoin clients.</a></li>
+</ul>
+</li>
+<li><a href="#Network infrastructure security    3">Network infrastructure security    3</a><ul>
+<li><a href="#35. OSPF vulnerability to persistent poisoning attacks: a systematic analysis.">35. OSPF vulnerability to persistent poisoning attacks: a systematic analysis.</a></li>
+<li><a href="#36. Less is more: cipher-suite negotiation for DNSSEC.">36. Less is more: cipher-suite negotiation for DNSSEC.</a></li>
+<li><a href="#37. DNS authentication as a service: preventing amplification attacks.">37. DNS authentication as a service: preventing amplification attacks.</a></li>
+</ul>
+</li>
+<li><a href="#Access control and malware    3">Access control and malware    3</a><ul>
+<li><a href="#38. Relation extraction for inferring access control rules from natural language artifacts.">38. Relation extraction for inferring access control rules from natural language artifacts.</a></li>
+<li><a href="#39. Centrality metrics of importance in access behaviors and malware detections.">39. Centrality metrics of importance in access behaviors and malware detections.</a></li>
+<li><a href="#40. Scalability, fidelity and stealth in the DRAKVUF dynamic malware analysis system.">40. Scalability, fidelity and stealth in the DRAKVUF dynamic malware analysis system.</a></li>
+</ul>
+</li>
+<li><a href="#Software security    3">Software security    3</a><ul>
+<li><a href="#41. Towards automated integrity protection of C++ virtual function tables in binary programs.">41. Towards automated integrity protection of C++ virtual function tables in binary programs.</a></li>
+<li><a href="#42. Leveraging semantic signatures for bug search in binary programs.">42. Leveraging semantic signatures for bug search in binary programs.</a></li>
+<li><a href="#43. IntFlow: improving the accuracy of arithmetic error detection using information flow tracking.">43. IntFlow: improving the accuracy of arithmetic error detection using information flow tracking.</a></li>
+</ul>
+</li>
+<li><a href="#Cyber physical systems II    2">Cyber physical systems II    2</a><ul>
+<li><a href="#44. CPS: beyond usability: applying value sensitive design based methods to investigate domain characteristics for security for implantable cardiac devices.">44. CPS: beyond usability: applying value sensitive design based methods to investigate domain characteristics for security for implantable cardiac devices.</a></li>
+<li><a href="#45. A security evaluation of AIS automated identification system.">45. A security evaluation of AIS automated identification system.</a></li>
+</ul>
+</li>
+<li><a href="#Web security    3">Web security    3</a><ul>
+<li><a href="#46. NodeSentry: least-privilege library integration for server-side JavaScript.">46. NodeSentry: least-privilege library integration for server-side JavaScript.</a></li>
+<li><a href="#47. TrueClick: automatically distinguishing trick banners from genuine download links.">47. TrueClick: automatically distinguishing trick banners from genuine download links.</a></li>
+<li><a href="#48. JShield: towards real-time and vulnerability-based detection of polluted drive-by download attacks.">48. JShield: towards real-time and vulnerability-based detection of polluted drive-by download attacks.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="30. ACSAC 2014:New Orleans, LA, USA">30. ACSAC 2014:New Orleans, LA, USA</h1>
+<p><a href="http://dl.acm.org/citation.cfm?id=2664243">Proceedings of the 30th Annual Computer Security Applications Conference, ACSAC 2014, New Orleans, LA, USA, December 8-12, 2014.</a> ACM
+【<a href="http://dblp.uni-trier.de/db/conf/acsac/acsac2014.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 48 || Session Num: 17">Paper Num: 48 || Session Num: 17</h2>
+<ul>
+<li><a href="#Access control and malware    3">Access control and malware    3</a></li>
+<li><a href="#Cyber physical systems I    3">Cyber physical systems I    3</a></li>
+<li><a href="#Cyber physical systems II    2">Cyber physical systems II    2</a></li>
+<li><a href="#Invited essayist    1">Invited essayist    1</a></li>
+<li><a href="#Mobile systems security I    3">Mobile systems security I    3</a></li>
+<li><a href="#Mobile systems security II    3">Mobile systems security II    3</a></li>
+<li><a href="#Network infrastructure security    3">Network infrastructure security    3</a></li>
+<li><a href="#Privacy    3">Privacy    3</a></li>
+<li><a href="#Secure builds and configuration    3">Secure builds and configuration    3</a></li>
+<li><a href="#Secure communications    3">Secure communications    3</a></li>
+<li><a href="#Secure distributed systems    3">Secure distributed systems    3</a></li>
+<li><a href="#Securing memory and storage    3">Securing memory and storage    3</a></li>
+<li><a href="#Social computing and networks    3">Social computing and networks    3</a></li>
+<li><a href="#Software security    3">Software security    3</a></li>
+<li><a href="#Systems security    3">Systems security    3</a></li>
+<li><a href="#Usable security    3">Usable security    3</a></li>
+<li><a href="#Web security    3">Web security    3</a></li>
+</ul>
+<h2 id="Invited essayist    1">Invited essayist    1</h2>
+<h3 id="1. Taking two-factor to the next level: protecting online poker, banking, healthcare and other applications.">1. Taking two-factor to the next level: protecting online poker, banking, healthcare and other applications.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2684461">Paper Link</a>】    【Pages】:1-5</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Rubin:Aviel_D=">Aviel D. Rubin</a></p>
+<p>【Abstract】:
+As an avid poker player, I enjoyed playing low stakes cash games and low buy-in tournaments on Full Tilt Poker before Black Friday.i However, as a Computer Scientist specializing in network and software security, I would never play poker online for any significant stakes, due to security concerns around malware and malicious remote access tools. Similarly, malware and remote access tools threaten online banking, online access to healthcare records and many other applications. In this article, I describe a new solution to the problem of remote access via malware that is easy to adopt, requires no new hardware or user training, and which I believe greatly reduces the threats to online applications.</p>
+<p>【Keywords】:
+online applications security; security; two-factor</p>
+<h2 id="Secure builds and configuration    3">Secure builds and configuration    3</h2>
+<h3 id="2. Hot-hardening: getting more out of your security settings.">2. Hot-hardening: getting more out of your security settings.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664246">Paper Link</a>】    【Pages】:6-15</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Biedermann:Sebastian">Sebastian Biedermann</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Katzenbeisser_0001:Stefan">Stefan Katzenbeisser</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Szefer:Jakub">Jakub Szefer</a></p>
+<p>【Abstract】:
+Applying optimized security settings to applications is a difficult and laborious task. Especially in cloud computing, where virtual servers with various pre-installed software packages are leased, selecting optimized security settings is very difficult. In particular, optimized security settings are not identical in every setup. They depend on characteristics of the setup, on the ways an application is used or on other applications running on the same system. Configuring optimized settings given these interdependencies is a complex and time-consuming task. In this work, we present an autonomous agent which improves security settings of applications which run in virtual servers. The agent retrieves custom-made security settings for a target application by investigating its specific setup, it tests and transparently changes settings via introspection techniques unbeknownst from the perspective of the virtual server. During setting selection, the application's operation is not disturbed nor any user interaction is needed. Since optimal settings can change over time or they can change depending on different tasks the application handles, the agent can continuously adapt settings as well as improve them periodically. We call this approach hot-hardening and present results of an implementation that can hot-harden popular networking applications such as Apache2 and OpenSSH.</p>
+<p>【Keywords】:</p>
+<h3 id="3. Challenges and implications of verifiable builds for security-critical open-source software.">3. Challenges and implications of verifiable builds for security-critical open-source software.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664288">Paper Link</a>】    【Pages】:16-25</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Carnavalet:Xavier_de_Carn=eacute=_de">Xavier de Carné de Carnavalet</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mannan:Mohammad">Mohammad Mannan</a></p>
+<p>【Abstract】:
+The majority of computer users download compiled software and run it directly on their machine. Apparently, this is also true for open-sourced software -- most users would not compile the available source, and implicitly trust that the available binaries have been compiled from the published source code (i.e., no backdoor has been inserted in the binary). To verify that the official binaries indeed correspond to the released source, one can compile the source of a given application, and then compare the locally generated binaries with the developer-provided official ones. However, such simple verification is non-trivial to achieve in practice, as modern compilers, and more generally, toolchains used in software packaging, have not been designed with verifiability in mind. Rather, the output of compilers is often dependent on parameters that can be strongly tied to the building environment. In this paper, we analyze a widely-used encryption tool, TrueCrypt, to verify its official binary with the corresponding source. We first manually replicate a close match to the official binaries of sixteen most recent versions of TrueCrypt for Windows up to v7.1a, and then explain the remaining differences that can solely be attributed to non-determinism in the build process. Our analysis provides the missing guarantee on official binaries that they are indeed backdoor-free, and makes audits on TrueCrypt's source code more meaningful. Also, we uncover several sources of non-determinism in TrueCrypt's compilation process; these findings may help create future verifiable build processes.</p>
+<p>【Keywords】:
+TrueCrypt; bitcoin; debian; deterministic build; reproducible build; tor</p>
+<h3 id="4. Cloud radar: near real-time detection of security failures in dynamic virtualized infrastructures.">4. Cloud radar: near real-time detection of security failures in dynamic virtualized infrastructures.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664274">Paper Link</a>】    【Pages】:26-35</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bleikertz:S=ouml=ren">Sören Bleikertz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vogel:Carsten">Carsten Vogel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gro=szlig=:Thomas">Thomas Groß</a></p>
+<p>【Abstract】:
+Cloud infrastructures are designed to share physical resources among many different tenants while ensuring overall security and tenant isolation. The complexity of dynamically changing and growing cloud environments, as well as insider attacks, can lead to misconfigurations that ultimately result in security failures. The detection of these misconfigurations and subsequent failures is a crucial challenge for cloud providers---an insurmountable challenge without tools. We establish an automated security analysis of dynamic virtualized infrastructures that detects misconfigurations and security failures in near real-time. The key is a systematic, differential approach that detects changes in the infrastructure and uses those changes to update its analysis, rather than performing one from scratch. Our system, called Cloud Radar, monitors virtualized infrastructures for changes, updates a graph model representation of the infrastructure, and also maintains a dynamic information flow graph to determine isolation properties. Whereas existing research in this area performs analyses on static snapshots of such infrastructures, our change-based approach yields significant performance improvements as demonstrated with our prototype for VMware environments.</p>
+<p>【Keywords】:</p>
+<h2 id="Mobile systems security I    3">Mobile systems security I    3</h2>
+<h3 id="5. Scippa: system-centric IPC provenance on Android.">5. Scippa: system-centric IPC provenance on Android.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664264">Paper Link</a>】    【Pages】:36-45</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Backes_0001:Michael">Michael Backes</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bugiel:Sven">Sven Bugiel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gerling:Sebastian">Sebastian Gerling</a></p>
+<p>【Abstract】:
+Google's Android OS provides a lightweight IPC mechanism called Binder, which enables the development of feature-rich apps that seamlessly integrate services and data of other apps. Whenever apps can act both as service consumers and service providers, it is inevitable that the IPC mechanism provides message receivers with message provenance information to establish trust. However, the Android OS currently fails in providing sufficient provenance information, which has led to a number of attacks. We present an extension to the Android IPC mechanism, called Scippa, that establishes IPC call-chains across application processes. Scippa provides provenance information required to effectively prevent recent attacks such as confused deputy attacks. Our solution constitutes a system-centric approach that extends the Binder kernel module and Android's message handlers. Scippa integrates seamlessly into the system architecture and our evaluation shows a performance overhead of only 2.23% on Android OS v4.2.2.</p>
+<p>【Keywords】:</p>
+<h3 id="6. Android security framework: extensible multi-layered access control on Android.">6. Android security framework: extensible multi-layered access control on Android.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664265">Paper Link</a>】    【Pages】:46-55</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Backes_0001:Michael">Michael Backes</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bugiel:Sven">Sven Bugiel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gerling:Sebastian">Sebastian Gerling</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Styp=Rekowsky:Philipp_von">Philipp von Styp-Rekowsky</a></p>
+<p>【Abstract】:
+We introduce the Android Security Framework (ASF), a generic, extensible security framework for Android that enables the development and integration of a wide spectrum of security models in form of code-based security modules. The design of ASF reflects lessons learned from the literature on established security frameworks (such as Linux Security Modules or the BSD MAC Framework) and intertwines them with the particular requirements and challenges from the design of Android's software stack. ASF provides a novel security API that supports authors of Android security extensions in developing their modules. This overcomes the current unsatisfactory situation to provide security solutions as separate patches to the Android software stack or to embed them into Android's mainline codebase. This system security extensibility is of particular benefit for enterprise or government solutions that require deployment of advanced security models, not supported by vanilla Android. We present a prototypical implementation of ASF and demonstrate its effectiveness and efficiency by modularizing different security models from related work, such as dynamic permissions, inlined reference monitoring, and type enforcement.</p>
+<p>【Keywords】:</p>
+<h3 id="7. Towards a scalable resource-driven approach for detecting repackaged Android applications.">7. Towards a scalable resource-driven approach for detecting repackaged Android applications.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664275">Paper Link</a>】    【Pages】:56-65</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Shao:Yuru">Yuru Shao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Luo:Xiapu">Xiapu Luo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/q/Qian:Chenxiong">Chenxiong Qian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Pengfei">Pengfei Zhu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang_0006:Lei">Lei Zhang</a></p>
+<p>【Abstract】:
+Repackaged Android applications (or simply apps) are one of the major sources of mobile malware and also an important cause of severe revenue loss to app developers. Although a number of solutions have been proposed to detect repackaged apps, the majority of them heavily rely on code analysis, thus suffering from two limitations: (1) poor scalability due to the billion opcode problem; (2) unreliability to code obfuscation/app hardening techniques. In this paper, we explore an alternative approach that exploits core resources, which have close relationships with codes, to detect repackaged apps. More precisely, we define new features for characterizing apps, investigate two kinds of algorithms for searching similar apps, and propose a two-stage methodology to speed up the detection. We realize our approach in a system named ResDroid and conduct large scale evaluation on it. The results show that ResDroid can identify repackaged apps efficiently and effectively even if they are protected by obfuscation or hardening systems.</p>
+<p>【Keywords】:</p>
+<h2 id="Social computing and networks    3">Social computing and networks    3</h2>
+<h3 id="8. TroGuard: context-aware protection against web-based socially engineered trojans.">8. TroGuard: context-aware protection against web-based socially engineered trojans.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664270">Paper Link</a>】    【Pages】:66-75</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Han:Rui">Rui Han</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mesa:Alejandro">Alejandro Mesa</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Christodorescu:Mihai">Mihai Christodorescu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zonouz:Saman_A=">Saman A. Zonouz</a></p>
+<p>【Abstract】:
+Despite the increasing number of social engineering attacks through web browser applications, detection of socially engineered trojan downloads by enticed victim users remains a challenging endeavor. In this paper, we present TroGuard, a semi-automated web-based trojan detection solution, that notifies the user if the application she downloaded behaves differently than what she expected at download time. TroGuard builds on the hypothesis that in spite of millions of currently downloadable executables on the Internet, almost all of them provide functionalities from a limited set. Additionally, because each functionality, e.g., text editor, requires particular system resources, it exhibits a unique system-level activity pattern. During an offline process, TroGuard creates a profile dictionary of various functionalities. This profile dictionary is then used to warn the user if she downloads an executable whose observed activity does not match its advertised functionality (extracted through automated analysis of the download website). Our experimental results prove the above mentioned premise empirically and show that TroGuard can identify real-world socially engineered trojan download attacks effectively.</p>
+<p>【Keywords】:</p>
+<h3 id="9. Spam ain't as diverse as it seems: throttling OSN spam with templates underneath.">9. Spam ain't as diverse as it seems: throttling OSN spam with templates underneath.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664251">Paper Link</a>】    【Pages】:76-85</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gao:Hongyu">Hongyu Gao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Yi">Yi Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bu:Kai">Kai Bu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Yan">Yan Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Downey:Doug">Doug Downey</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Kathy">Kathy Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Choudhary:Alok_N=">Alok N. Choudhary</a></p>
+<p>【Abstract】:
+In online social networks (OSNs), spam originating from friends and acquaintances not only reduces the joy of Internet surfing but also causes damage to less security-savvy users. Prior countermeasures combat OSN spam from different angles. Due to the diversity of spam, there is hardly any existing method that can independently detect the majority or most of OSN spam. In this paper, we empirically analyze the textual pattern of a large collection of OSN spam. An inspiring finding is that the majority (63.0%) of the collected spam is generated with underlying templates. We therefore propose extracting templates of spam detected by existing methods and then matching messages against the templates toward accurate and fast spam detection. We implement this insight through Tangram, an OSN spam filtering system that performs online inspection on the stream of user-generated messages. Tangram automatically divides OSN spam into segments and uses the segments to construct templates to filter future spam. Experimental results show that Tangram is highly accurate and can rapidly generate templates to throttle newly emerged campaigns. Specifically, Tangram detects the most prevalent template-based spam with 95.7% true positive rate, whereas the existing template generation approach detects only 32.3%. The integration of Tangram and its auxiliary spam filter achieves an overall accuracy of 85.4% true positive rate and 0.33% false positive rate.</p>
+<p>【Keywords】:
+online social networks; spam; spam campaigns</p>
+<h3 id="10. A taste of tweets: reverse engineering Twitter spammers.">10. A taste of tweets: reverse engineering Twitter spammers.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664258">Paper Link</a>】    【Pages】:86-95</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Chao">Chao Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Jialong">Jialong Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gu:Guofei">Guofei Gu</a></p>
+<p>【Abstract】:
+In this paper, through reverse engineering Twitter spammers' tastes (their preferred targets to spam), we aim at providing guidelines for building more effective social honeypots, and generating new insights to defend against social spammers. Specifically, we first perform a measurement study by deploying "benchmark" social honeypots on Twitter with diverse and fine-grained social behavior patterns to trap spammers. After five months' data collection, we make a deep analysis on how Twitter spammers find their targets. Based on the analysis, we evaluate our new guidelines for building effective social honeypots by implementing "advanced" honeypots. Particularly, within the same time period, using those advanced honeypots can trap spammers around 26 times faster than using "traditional" honeypots. In the second part of our study, we investigate new active collection approaches to complement the fundamentally passive procedure of using honeypots to slowly attract spammers. Our goal is that, given limited resources/time, instead of blindly crawling all possible (or randomly sampling) Twitter accounts at the first place (for later spammer analysis), we need a lightweight strategy to prioritize the active crawling/sampling of more likely spam accounts from the huge Twittersphere. Applying what we have learned about the tastes of spammers, we design two new, active and guided sampling approaches for collecting most likely spammer accounts during the crawling. According to our evaluation, our strategies could efficiently crawl/sample over 17,000 spam accounts within a short time with a considerably high "Hit Ratio", i.e., collecting 6 correct spam accounts in every 10 sampled accounts.</p>
+<p>【Keywords】:
+Twitter; online social network websites; spam</p>
+<h2 id="Systems security    3">Systems security    3</h2>
+<h3 id="11. New models of cache architectures characterizing information leakage from cache side channels.">11. New models of cache architectures characterizing information leakage from cache side channels.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664273">Paper Link</a>】    【Pages】:96-105</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Tianwei">Tianwei Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Ruby_B=">Ruby B. Lee</a></p>
+<p>【Abstract】:
+Side-channel attacks try to breach confidentiality and retrieve critical secrets through the side channels. Cache memories are a potential source of information leakage through side-channel attacks, many of which have been proposed. Meanwhile, different cache architectures have also been proposed to defend against these attacks. However, there are currently no means for comparing and evaluating the effectiveness of different defense solutions against these attacks. In this paper, we propose a novel method to evaluate a system's vulnerability to side-channel attacks. We establish side-channel leakage models based on the non-interference property. Then we define how the security aspects of a cache architecture can be modeled as a finite-state machine (FSM) with state transitions that cause interference. We use mutual information to quantitatively reveal potential side-channel leakage of the architectures, and allow comparison of these architectures for their relative vulnerabilities to side-channel attacks. We use real attacks to validate our results.</p>
+<p>【Keywords】:</p>
+<h3 id="12. ICE: a passive, high-speed, state-continuity scheme.">12. ICE: a passive, high-speed, state-continuity scheme.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664259">Paper Link</a>】    【Pages】:106-115</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Strackx:Raoul">Raoul Strackx</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jacobs_0002:Bart">Bart Jacobs</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Piessens:Frank">Frank Piessens</a></p>
+<p>【Abstract】:
+The amount of trust that can be placed in commodity computing platforms is limited by the likelihood of vulnerabilities in their huge software stacks. Protected-module architectures, such as Intel SGX, provide an interesting alternative by isolating the execution of software modules. To minimize the amount of code that provides support for the protected-module architecture, persistent storage of (confidentiality and integrity protected) states of modules can be delegated to the untrusted operating system. But precautions should be taken to ensure state continuity: an attacker should not be able to cause a module to use stale states (a so-called rollback attack), and while the system is not under attack, a module should always be able to make progress, even when the system could crash or lose power at unexpected, random points in time (i.e., the system should be crash resilient). Providing state-continuity support is non-trivial as many algorithms are vulnerable to attack, require on-chip non-volatile memory, wear-out existing off-chip secure non-volatile memory and/or are too slow for many applications. We present ICE, a system and algorithm providing state-continuity guarantees to protected modules. ICE's novelty lies in the facts that (1) it does not rely on secure non-volatile storage for every state update (e.g., the slow TPM chip). (2) ICE is a passive security measure. An attacker interrupting the main power supply or any other source of power, cannot break state-continuity. (3) Benchmarks show that ICE already enables state-continuous updates almost 5x faster than writing to TPM NVRAM. With dedicated hardware, performance can be increased 2 orders of magnitude. ICE's security properties are guaranteed by means of a machine-checked proof and a prototype implementation is evaluated on commodity hardware.</p>
+<p>【Keywords】:</p>
+<h3 id="13. Interrupt-oriented bugdoor programming: a minimalist approach to bugdooring embedded systems firmware.">13. Interrupt-oriented bugdoor programming: a minimalist approach to bugdooring embedded systems firmware.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664268">Paper Link</a>】    【Pages】:116-125</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Tan:Samuel_Junjie">Samuel Junjie Tan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bratus:Sergey">Sergey Bratus</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Goodspeed:Travis">Travis Goodspeed</a></p>
+<p>【Abstract】:
+We demonstrate a simple set of interrupt-related vulnerability primitives that, despite being apparently innocuous, give attackers full control of a microcontroller platform. We then present a novel, minimalist approach to constructing deniable bugdoors for microcontroller firmware, and contrast this approach with the current focus of exploitation research on demonstrations of maximum computational power that malicious computation can achieve. Since the introduction of Return-oriented programming, an ever-increasing number of targets have been demonstrated to unintentionally yield Turing-complete computation environments to attackers controlling the target's various input channels, under ever more restrictive sets of limitations. Yet although modern OS defensive measures indeed require complex computations to bypass, this focus on maximum expressiveness of exploit programming models leads researchers to overlook other research directions for platforms that lack strong defensive measure but occur in mission-critical systems, namely, microcontrollers. In these systems, common exploiter goals such as sensitive code and data exfiltration or arbitrary code execution do not typically require complex computation; instead, a minimal computation is preferred and a simple set of vulnerability primitives typically suffices. We discuss examples of vulnerabilities and the new kinds of tools needed to avoid them in future firmware.</p>
+<p>【Keywords】:
+ACSAC proceedings; hacking; microprocessor exploitation; security</p>
+<h2 id="Cyber physical systems I    3">Cyber physical systems I    3</h2>
+<h3 id="14. Through the eye of the PLC: semantic security monitoring for industrial processes.">14. Through the eye of the PLC: semantic security monitoring for industrial processes.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664277">Paper Link</a>】    【Pages】:126-135</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hadziosmanovic:Dina">Dina Hadziosmanovic</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sommer:Robin">Robin Sommer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zambon:Emmanuele">Emmanuele Zambon</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hartel:Pieter_H=">Pieter H. Hartel</a></p>
+<p>【Abstract】:
+Off-the-shelf intrusion detection systems prove an ill fit for protecting industrial control systems, as they do not take their process semantics into account. Specifically, current systems fail to detect recent process control attacks that manifest as unauthorized changes to the configuration of a plant's programmable logic controllers (PLCs). In this work we present a detector that continuously tracks updates to corresponding process variables to then derive variable-specific prediction models as the basis for assessing future activity. Taking a specification-agnostic approach, we passively monitor plant activity by extracting variable updates from the devices' network communication. We evaluate the capabilities of our detection approach with traffic recorded at two operational water treatment plants serving a total of about one million people in two urban areas. We show that the proposed approach can detect direct attacks on process control, and we further explore its potential to identify more sophisticated indirect attacks on field device measurements as well.</p>
+<p>【Keywords】:</p>
+<h3 id="15. CPS: market analysis of attacks against demand response in the smart grid.">15. CPS: market analysis of attacks against demand response in the smart grid.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664284">Paper Link</a>】    【Pages】:136-145</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Barreto:Carlos">Carlos Barreto</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/C=aacute=rdenas:Alvaro_A=">Alvaro A. Cárdenas</a> ; <a href="http://dblp.uni-trier.de/pers/hd/q/Quijano:Nicanor">Nicanor Quijano</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mojica=Nava:Eduardo">Eduardo Mojica-Nava</a></p>
+<p>【Abstract】:
+Demand response systems assume an electricity retail-market with strategic electricity consuming agents. The goal in these systems is to design load shaping mechanisms to achieve efficiency of resources and customer satisfaction. Recent research efforts have studied the impact of integrity attacks in simplified versions of the demand response problem, where neither the load consuming agents nor the adversary are strategic. In this paper, we study the impact of integrity attacks considering strategic players (a social planner or a consumer) and a strategic attacker. We identify two types of attackers: (1) a malicious attacker who wants to damage the equipment in the power grid by producing sudden overloads, and (2) a selfish attacker that wants to defraud the system by compromising and then manipulating control (load shaping) signals. We then explore the resiliency of two different demand response systems to these fraudsters and malicious attackers. Our results provide guidelines for system operators deciding which type of demand-response system they want to implement, how to secure them, and directions for detecting these attacks.</p>
+<p>【Keywords】:</p>
+<h3 id="16. CPS: driving cyber-physical systems to unsafe operating conditions by timing DoS attacks on sensor signals.">16. CPS: driving cyber-physical systems to unsafe operating conditions by timing DoS attacks on sensor signals.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664290">Paper Link</a>】    【Pages】:146-155</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Krotofil:Marina">Marina Krotofil</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/C=aacute=rdenas:Alvaro_A=">Alvaro A. Cárdenas</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Manning:Bradley">Bradley Manning</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Larsen:Jason">Jason Larsen</a></p>
+<p>【Abstract】:
+DoS attacks on sensor measurements used for industrial control can cause the controller of the process to use stale data. If the DoS attack is not timed properly, the use of stale data by the controller will have limited impact on the process; however, if the attacker is able to launch the DoS attack at the correct time, the use of stale data can cause the controller to drive the system to an unsafe state. Understanding the timing parameters of the physical processes does not only allow an attacker to construct a successful attack but also to maximize its impact (damage to the system). In this paper we use Tennessee Eastman challenge process to study an attacker that has to identify (in realtime) the optimal timing to launch a DoS attack. The choice of time to begin an attack is forward-looking, requiring the attacker to consider each opportunity against the possibility of a better opportunity in the future, and this lends itself to the theory of optimal stopping problems. In particular we study the applicability of the Best Choice Problem (also known as the Secretary Problem), quickest change detection, and statistical process outliers. Our analysis can be used to identify specific sensor measurements that need to be protected, and the time that security or safety teams required to respond to attacks, before they cause major damage.</p>
+<p>【Keywords】:
+CUSUM; DoS attacks; Tennessee eastman process; cyber-physical systems; optimal stopping problems</p>
+<h2 id="Secure distributed systems    3">Secure distributed systems    3</h2>
+<h3 id="17. Uncovering network tarpits with degreaser.">17. Uncovering network tarpits with degreaser.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664285">Paper Link</a>】    【Pages】:156-165</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Alt:Lance">Lance Alt</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Beverly:Robert">Robert Beverly</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dainotti:Alberto">Alberto Dainotti</a></p>
+<p>【Abstract】:
+Network tarpits, whereby a single host or appliance can masquerade as many fake hosts on a network and slow network scanners, are a form of defensive cyber-deception. In this work, we develop degreaser, an efficient fingerprinting tool to remotely detect tarpits. In addition to validating our tool in a controlled environment, we use degreaser to perform an Internet-wide scan. We discover tarpits of non-trivial size in the wild (prefixes as large as/16), and characterize their distribution and behavior. We then show how tarpits pollute existing network measurement surveys that are tarpit-naïve, e.g. Internet census data, and how degreaser can improve the accuracy of such surveys. Lastly, our findings suggest several ways in which to advance the realism of current network tarpits, thereby raising the bar on tarpits as an operational security mechanism.</p>
+<p>【Keywords】:
+deception; internet census; sticky honeypot; tarpits</p>
+<h3 id="18. Network dialog minimization and network dialog diffing: two novel primitives for network security applications.">18. Network dialog minimization and network dialog diffing: two novel primitives for network security applications.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664261">Paper Link</a>】    【Pages】:166-175</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Rafique:M=_Zubair">M. Zubair Rafique</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Caballero:Juan">Juan Caballero</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Huygens:Christophe">Christophe Huygens</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Joosen:Wouter">Wouter Joosen</a></p>
+<p>【Abstract】:
+In this work, we present two fundamental primitives for network security: network dialog minimization and network dialog diffing. Network dialog minimization (NDM) simplifies an original dialog with respect to a goal, so that the minimized dialog when replayed still achieves the goal, but requires minimal network communication, achieving significant time and bandwidth savings. We present network delta debugging, the first technique to solve NDM. Network dialog diffing compares two dialogs, aligns them, and identifies their common and different parts. We propose a novel dialog diffing technique that aligns two dialogs by finding a mapping that maximizes similarity. We have applied our techniques to 5 applications. We apply our dialog minimization approach for: building drive-by download milkers for 9 exploit kits, integrating them in a infrastructure that has collected over 14,000 malware samples running from a single machine; efficiently measuring the percentage of popular sites that allow cookie replay, finding that 31% do not destroy the server-side state when a user logs out and that 17% provide cookies that live over a month; simplifying a cumbersome user interface, saving our institution 3 hours of time per year and employee; and finding a new vulnerability in a SIP server. We apply our dialog diffing approach for clustering benign (F-Measure = 100%) and malicious (F-Measure = 87.6%) dialogs.</p>
+<p>【Keywords】:
+network delta debugging; network dialog diffing; network dialog minimization; network security</p>
+<h3 id="19. Lightweight authentication of freshness in outsourced key-value stores.">19. Lightweight authentication of freshness in outsourced key-value stores.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664244">Paper Link</a>】    【Pages】:176-185</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Tang:Yuzhe">Yuzhe Tang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Ting">Ting Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Ling">Ling Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Xin">Xin Hu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jang:Jiyong">Jiyong Jang</a></p>
+<p>【Abstract】:
+Data outsourcing offers cost-effective computing power to manage massive data streams and reliable access to data. Data owners can forward their data to clouds, and the clouds provide data mirroring, backup, and online access services to end users. However, outsourcing data to untrusted clouds requires data authenticity and query integrity to remain in the control of the data owners and users. In this paper, we address the authenticated data-outsourcing problem specifically for multi-version key-value data that is subject to continuous updates under the constraints of data integrity, data authenticity, and "freshness" (i.e., ensuring that the value returned for a key is the latest version). We detail this problem and propose IncBM-Tree, a novel construct delivering freshness and authenticity. Compared to existing work, we provide a solution that offers (i) lightweight signing and verification on massive data update streams for data owners and users (e.g., allowing for small memory footprint and CPU usage for a low-budget IT department), (ii) immediate authentication of data freshness, (iii) support of authentication in the presence of both real-time and historical data accesses. Extensive benchmark evaluations demonstrate that IncBM-Tree achieves higher throughput (in an order of magnitude) for data stream authentication than existing work. For data owners and end users that have limited computing power, IncBM-Tree can be a practical solution to authenticate the freshness of outsourced data while reaping the benefits of broadly available cloud services.</p>
+<p>【Keywords】:</p>
+<h2 id="Securing memory and storage    3">Securing memory and storage    3</h2>
+<h3 id="20. SEER: practical memory virus scanning as a service.">20. SEER: practical memory virus scanning as a service.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664271">Paper Link</a>】    【Pages】:186-195</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gionta:Jason">Jason Gionta</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Azab:Ahmed_M=">Ahmed M. Azab</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Enck:William">William Enck</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Ning:Peng">Peng Ning</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Xiaolan">Xiaolan Zhang</a></p>
+<p>【Abstract】:
+Virus Scanning-as-a-Service (VSaaS) has emerged as a popular security solution for virtual cloud environments. However, existing approaches fail to scan guest memory, which can contain an emerging class of Memory-only Malware. While several host-based memory scanners are available, they are computationally less practical for cloud environments. This paper proposes SEER as an architecture for enabling Memory VSaaS for virtualized environments. SEER leverages cloud resources and technologies to consolidate and aggregate virus scanning activities to efficiently detect malware residing in memory. Specifically, SEER combines fast memory snapshotting and computation deduplication to provide practical and efficient off-host memory virus scanning. We evaluate SEER and demonstrate up to an 87% reduction in data size that must be scanned and up to 72% savings in overall scan time, compared to naively applying file-based scanning approaches. Furthermore, SEER provides a 50% reduction in scan time when using a warm cache. In doing so, SEER provides a practical solution for cloud vendors to transparently and periodically scan virtual machine memory for malware.</p>
+<p>【Keywords】:</p>
+<h3 id="21. MACE: high-coverage and robust memory analysis for commodity operating systems.">21. MACE: high-coverage and robust memory analysis for commodity operating systems.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664248">Paper Link</a>】    【Pages】:196-205</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Feng:Qian">Qian Feng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Prakash:Aravind">Aravind Prakash</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yin:Heng">Heng Yin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lin:Zhiqiang">Zhiqiang Lin</a></p>
+<p>【Abstract】:
+Memory forensic analysis collects evidence for digital crimes and malware attacks from the memory of a live system. It is increasingly valuable, especially in cloud computing. However, memory analysis on on commodity operating systems (such as Microsoft Windows) faces the following key challenges: (1) a partial knowledge of kernel data structures; (2) difficulty in handling ambiguous pointers; and (3) lack of robustness by relying on soft constraints that can be easily violated by kernel attacks. To address these challenges, we present MACE, a memory analysis system that can extract a more complete view of the kernel data structures for closed-source operating systems and significantly improve the robustness by only leveraging pointer constraints (which are hard to manipulate) and evaluating these constraint globally (to even tolerate certain amount of pointer attacks). We have evaluated MACE on 100 memory images for Windows XP SP3 and Windows 7 SP0. Overall, MACE can construct a kernel object graph from a memory image in just a few minutes, and achieves over 95% recall and over 96% precision. Our experiments on real-world rootkit samples and synthetic attacks further demonstrate that MACE outperforms other external memory analysis tools with respect to wider coverage and better robustness.</p>
+<p>【Keywords】:
+memory analysis; random surfer; rootkit detection</p>
+<h3 id="22. Assisted deletion of related content.">22. Assisted deletion of related content.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664287">Paper Link</a>】    【Pages】:206-215</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Ritzdorf:Hubert">Hubert Ritzdorf</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Karapanos:Nikolaos">Nikolaos Karapanos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Capkun:Srdjan">Srdjan Capkun</a></p>
+<p>【Abstract】:
+On primary storage systems content is often replicated, converted or modified, and the users quickly lose control over its dispersal on the system. Deleting content related to a particular project from the system therefore becomes a labor-intensive task for the user. In this paper we present IRCUS, a system that assists the user in securely removing project-related content, but does not require changes to the user's behavior or to any of the system components, such as the file system, kernel or applications. IRCUS transparently integrates within the user's system, operates in user-space and stores the resulting metadata alongside the files. We implemented and evaluated our system and show that its overhead and accuracy are acceptable for practical use and deployment.</p>
+<p>【Keywords】:</p>
+<h2 id="Mobile systems security II    3">Mobile systems security II    3</h2>
+<h3 id="23. Morpheus: automatically generating heuristics to detect Android emulators.">23. Morpheus: automatically generating heuristics to detect Android emulators.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664250">Paper Link</a>】    【Pages】:216-225</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jing:Yiming">Yiming Jing</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhao:Ziming">Ziming Zhao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Ahn:Gail=Joon">Gail-Joon Ahn</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Hongxin">Hongxin Hu</a></p>
+<p>【Abstract】:
+Emulator-based dynamic analysis has been widely deployed in Android application stores. While it has been proven effective in vetting applications on a large scale, it can be detected and evaded by recent Android malware strains that carry detection heuristics. Using such heuristics, an application can check the presence or contents of certain artifacts and infer the presence of emulators. However, there exists little work that systematically discovers those heuristics that would be eventually helpful to prevent malicious applications from bypassing emulator-based analysis. To cope with this challenge, we propose a framework called Morpheus that automatically generates such heuristics. Morpheus leverages our insight that an effective detection heuristic must exploit discrepancies observable by an application. To this end, Morpheus analyzes the application sandbox and retrieves observable artifacts from both Android emulators and real devices. Afterwards, Morpheus further analyzes the retrieved artifacts to extract and rank detection heuristics. The evaluation of our proof-of-concept implementation of Morpheus reveals more than 10,000 novel detection heuristics that can be utilized to detect existing emulator-based malware analysis tools. We also discuss the discrepancies in Android emulators and potential countermeasures.</p>
+<p>【Keywords】:
+Android; emulator; malware</p>
+<h3 id="24. Design and implementation of an Android host-based intrusion prevention system.">24. Design and implementation of an Android host-based intrusion prevention system.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664245">Paper Link</a>】    【Pages】:226-235</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sun:Mingshen">Mingshen Sun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zheng:Min">Min Zheng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lui:John_C=_S=">John C. S. Lui</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jiang:Xuxian">Xuxian Jiang</a></p>
+<p>【Abstract】:
+Android has a dominating share in the mobile market and there is a significant rise of mobile malware targeting Android devices. Android malware accounted for 97% of all mobile threats in 2013 [26]. To protect smartphones and prevent privacy leakage, companies have implemented various host-based intrusion prevention systems (HIPS) on their Android devices. In this paper, we first analyze the implementations, strengths and weaknesses of three popular HIPS architectures. We demonstrate a severe loophole and weakness of an existing popular HIPS product in which hackers can readily exploit. Then we present a design and implementation of a secure and extensible HIPS platform---"Patronus." Patronus not only provides intrusion prevention without the need to modify the Android system, it can also dynamically detect existing malware based on runtime information. We propose a two-phase dynamic detection algorithm for detecting running malware. Our experiments show that Patronus can prevent the intrusive behaviors efficiently and detect malware accurately with a very low performance overhead and power consumption.</p>
+<p>【Keywords】:</p>
+<h3 id="25. MoRePriv: mobile OS support for application personalization and privacy.">25. MoRePriv: mobile OS support for application personalization and privacy.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664266">Paper Link</a>】    【Pages】:236-245</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Davidson:Drew">Drew Davidson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fredrikson:Matt">Matt Fredrikson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Livshits:Benjamin">Benjamin Livshits</a></p>
+<p>【Abstract】:
+Privacy and personalization of mobile experiences are inherently in conflict: better personalization demands knowing more about the user, potentially violating user privacy. A promising approach to mitigate this tension is to migrate personalization to the client, an approach dubbed client-side personalization. This paper advocates for operating system support for client-side personalization and describes MoRePriv, an operating system service implemented in the Windows Phone OS. We argue that personalization support should be as ubiquitous as location support, and should be provided by a unified system within the OS, instead of by individual apps. We aim to provide a solution that will stoke innovation around mobile personalization. To enable easy application personalization, MoRePriv approximates users' interests using personae such as technophile or business executive. Using a number of case studies and crowd-sourced user studies, we illustrate how more complex personalization tasks can be achieved using MoRePriv. For privacy protection, MoRePriv distills sensitive user information to a coarse-grained profile, which limits the potential damage from information leaks. We see MoRePriv as a way to increase end-user privacy by enabling client-side computing, thus minimizing the need to share user data with the server. As such, MoRePriv shepherds the ecosystem towards a better privacy stance by nudging developers away from today's privacy-violating practices. Furthermore, MoRePriv can be combined with privacy-enhancing technologies and is complimentary to recent advances in data leak detection.</p>
+<p>【Keywords】:
+personalization; privacy; security</p>
+<h2 id="Secure communications    3">Secure communications    3</h2>
+<h3 id="26. IMSI-catch me if you can: IMSI-catcher-catchers.">26. IMSI-catch me if you can: IMSI-catcher-catchers.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664272">Paper Link</a>】    【Pages】:246-255</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dabrowski:Adrian">Adrian Dabrowski</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pianta:Nicola">Nicola Pianta</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Klepp:Thomas">Thomas Klepp</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mulazzani:Martin">Martin Mulazzani</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Weippl:Edgar_R=">Edgar R. Weippl</a></p>
+<p>【Abstract】:
+IMSI Catchers are used in mobile networks to identify and eavesdrop on phones. When, the number of vendors increased and prices dropped, the device became available to much larger audiences. Self-made devices based on open source software are available for about US$ 1,500. In this paper, we identify and describe multiple methods of detecting artifacts in the mobile network produced by such devices. We present two independent novel implementations of an IMSI Catcher Catcher (ICC) to detect this threat against everyone's privacy. The first one employs a network of stationary (sICC) measurement units installed in a geographical area and constantly scanning all frequency bands for cell announcements and fingerprinting the cell network parameters. These rooftop-mounted devices can cover large areas. The second implementation is an app for standard consumer grade mobile phones (mICC), without the need to root or jailbreak them. Its core principle is based upon geographical network topology correlation, facilitating the ubiquitous built-in GPS receiver in today's phones and a network cell capabilities fingerprinting technique. The latter works for the vicinity of the phone by first learning the cell landscape and than matching it against the learned data. We implemented and evaluated both solutions for digital self-defense and deployed several of the stationary units for a long term field-test. Finally, we describe how to detect recently published denial of service attacks.</p>
+<p>【Keywords】:</p>
+<h3 id="27. Advanced Wi-Fi attacks using commodity hardware.">27. Advanced Wi-Fi attacks using commodity hardware.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664260">Paper Link</a>】    【Pages】:256-265</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/v/Vanhoef:Mathy">Mathy Vanhoef</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Piessens:Frank">Frank Piessens</a></p>
+<p>【Abstract】:
+We show that low-layer attacks against Wi-Fi can be implemented using user-modifiable firmware. Hence cheap off-the-shelf Wi-Fi dongles can be used carry out advanced attacks. We demonstrate this by implementing five low-layer attacks using open source Atheros firmware. The first attack consists of unfair channel usage, giving the user a higher throughput while reducing that of others. The second attack defeats countermeasures designed to prevent unfair channel usage. The third attack performs continuous jamming, making the channel unusable for other devices. For the fourth attack we implemented a selective jammer, allowing one to jam specific frames already in the air. The fifth is a novel channel-based Man-in-the-Middle (MitM) attack, enabling reliable manipulation of encrypted traffic. These low-layer attacks facilitate novel attacks against higher-layer protocols. To demonstrate this we show how our MitM attack facilitates attacks against the Temporal Key Integrity Protocol (TKIP) when used as a group cipher. Since a substantial number of networks still use TKIP as their group cipher, this shows that weaknesses in TKIP have a higher impact than previously thought.</p>
+<p>【Keywords】:</p>
+<h3 id="28. Whitewash: outsourcing garbled circuit generation for mobile devices.">28. Whitewash: outsourcing garbled circuit generation for mobile devices.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664255">Paper Link</a>】    【Pages】:266-275</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Carter:Henry">Henry Carter</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lever:Charles">Charles Lever</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Traynor:Patrick">Patrick Traynor</a></p>
+<p>【Abstract】:
+Garbled circuits offer a powerful primitive for computation on a user's personal data while keeping that data private. Despite recent improvements, constructing and evaluating circuits of any useful size remains expensive on the limited hardware resources of a smartphone, the primary computational device available to most users around the world. In this work, we develop a new technique for securely outsourcing the generation of garbled circuits to a Cloud provider. By outsourcing the circuit generation, we are able to eliminate the most costly operations from the mobile device, including oblivious transfers. Our proofs of security show that this technique provides the best security guarantees of any existing garbled circuit outsourcing protocol. We also experimentally demonstrate that our new protocol, on average, decreases execution time by 75% and reduces network costs by 60% compared to previous outsourcing protocols. In so doing, we demonstrate that the use of garbled circuits on mobile devices can be made nearly as practical as it is becoming for server-class machines.</p>
+<p>【Keywords】:</p>
+<h2 id="Usable security    3">Usable security    3</h2>
+<h3 id="29. Using automatic speech recognition for attacking acoustic CAPTCHAs: the trade-off between usability and security.">29. Using automatic speech recognition for attacking acoustic CAPTCHAs: the trade-off between usability and security.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664262">Paper Link</a>】    【Pages】:276-285</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Meutzner:Hendrik">Hendrik Meutzner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nguyen:Viet=Hung">Viet-Hung Nguyen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Holz:Thorsten">Thorsten Holz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kolossa:Dorothea">Dorothea Kolossa</a></p>
+<p>【Abstract】:
+A common method to prevent automated abuses of Internet services is utilizing challenge-response tests that distinguish human users from machines. These tests are known as CAPTCHAs (Completely Automated Public Turing Tests to Tell Computers and Humans Apart) and should represent a task that is easy to solve for humans, but difficult for fraudulent programs. To enable access for visually impaired people, an acoustic CAPTCHA is typically provided in addition to the better-known visual CAPTCHAs. Recent security studies show that most acoustic CAPTCHAs, albeit difficult to solve for humans, can be broken via machine learning. In this work, we suggest using speech recognition rather than generic classification methods for better analyzing the security of acoustic CAPTCHAs. We show that our attack based on an automatic speech recognition system can successfully defeat reCAPTCHA with a significantly higher success rate than reported in previous studies. A major difficulty in designing CAPTCHAs arises from the trade-off between human usability and robustness against automated attacks. We present and analyze an alternative CAPTCHA design that exploits specific capabilities of the human auditory system, i.e., auditory streaming and tolerance to reverberation. Since state-of-the-art speech recognition technology still does not provide these capabilities, the resulting CAPTCHA is hard to solve automatically. A detailed analysis of the proposed CAPTCHA shows a far better trade-off between usability and security than the current quasi-standard approach of reCAPTCHA.</p>
+<p>【Keywords】:</p>
+<h3 id="30. Understanding visual perceptions of usability and security of Android's graphical password pattern.">30. Understanding visual perceptions of usability and security of Android's graphical password pattern.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664253">Paper Link</a>】    【Pages】:286-295</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Aviv:Adam_J=">Adam J. Aviv</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fichter:Dane">Dane Fichter</a></p>
+<p>【Abstract】:
+This paper reports the results of a user study of the Android graphical password system using an alternative survey methodology, pairwise preferences, that requests participants to select between pairs of patterns indicating either a security or usability preference. By carefully selecting password pairs to isolate a visual feature, a visual perception of usability and security of different features can be measured. We conducted a large IRB-approved survey using pairwise preferences which attracted 384 participants on Amazon Mechanical Turk. Analyzing the results, we find that visual features that can be attributed to complexity indicated a stronger perception of security, while spatial features, such as shifts up/down or left/right are not strong indicators for security or usability. We extended and applied the survey data by building logistic models to predict perception preferences by training on features used in the survey and other features proposed in related work. The logistic model accurately predicted preferences above 70%, twice the rate of random guessing, and the strongest feature in classification is password distance, the total length of all lines in the pattern, a feature not used in the online survey. This result provides insight into the internal visual calculus of users when comparing choices and selecting visual passwords, and the ultimate goal of this work is to leverage the visual calculus to design systems where inherent perceptions for usability coincides with a known metric of security.</p>
+<p>【Keywords】:</p>
+<h3 id="31. It's the psychology stupid: how heuristics explain software vulnerabilities and how priming can illuminate developer's blind spots.">31. It's the psychology stupid: how heuristics explain software vulnerabilities and how priming can illuminate developer's blind spots.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664254">Paper Link</a>】    【Pages】:296-305</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/o/Oliveira:Daniela">Daniela Oliveira</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rosenthal:Marissa">Marissa Rosenthal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Morin:Nicole">Nicole Morin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yeh:Kuo=Chuan">Kuo-Chuan Yeh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cappos:Justin">Justin Cappos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhuang:Yanyan">Yanyan Zhuang</a></p>
+<p>【Abstract】:
+Despite the security community's emphasis on the importance of building secure software, the number of new vulnerabilities found in our systems is increasing. In addition, vulnerabilities that have been studied for years are still commonly reported in vulnerability databases. This paper investigates a new hypothesis that software vulnerabilities are blind spots in developer's heuristic-based decision-making processes. Heuristics are simple computational models to solve problems without considering all the information available. They are an adaptive response to our short working memory because they require less cognitive effort. Our hypothesis is that as software vulnerabilities represent corner cases that exercise unusual information flows, they tend to be left out from the repertoire of heuristics used by developers during their programming tasks. To validate this hypothesis we conducted a study with 47 developers using psychological manipulation. In this study each developer worked for approximately one hour on six vulnerable programming scenarios. The sessions progressed from providing no information about the possibility of vulnerabilities, to priming developers about unexpected results, and explicitly mentioning the existence of vulnerabilities in the code. The results show that (i) security is not a priority in software development environments, (ii) security is not part of developer's mindset while coding, (iii) developers assume common cases for their code, (iv) security thinking requires cognitive effort, (v) security education helps, but developers can have difficulties correlating a particular learned vulnerability or security information with their current working task, and (vi) priming or explicitly cueing about vulnerabilities on-the-spot is a powerful mechanism to make developers aware about potential vulnerabilities.</p>
+<p>【Keywords】:</p>
+<h2 id="Privacy    3">Privacy    3</h2>
+<h3 id="32. Exploring and mitigating privacy threats of HTML5 geolocation API.">32. Exploring and mitigating privacy threats of HTML5 geolocation API.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664247">Paper Link</a>】    【Pages】:306-315</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Hyungsub">Hyungsub Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee_0001:Sangho">Sangho Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kim_0001:Jong">Jong Kim</a></p>
+<p>【Abstract】:
+The HTML5 Geolocation API realizes location-based services via theWeb by granting web sites the geographical location information of user devices. However, the Geolocation API can violate a user's location privacy due to its coarse-grained permission and location models. The API provides either exact location or nothing to web sites even when they only require approximate location. In this paper, we first conduct case studies on numerous web browsers and web sites to explore how they implement and utilize the Geolocation API. We detect 14 vulnerable web browsers and 603 overprivileged web sites that can violate a user's location privacy. To mitigate the privacy threats of the Geolocation API, we propose a novel scheme that (1) supports fine-grained permission and location models, and (2) recommends appropriate privacy settings to each user by inspecting the location sensitivity of each web page. Our scheme can accurately estimate each web page's necessary geolocation degree (estimation accuracy: ~93.5%). We further provide suggestions to improve the Geolocation API.</p>
+<p>【Keywords】:</p>
+<h3 id="33. Differentially private data aggregation with optimal utility.">33. Differentially private data aggregation with optimal utility.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664263">Paper Link</a>】    【Pages】:316-325</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/e/Eigner:Fabienne">Fabienne Eigner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Maffei:Matteo">Matteo Maffei</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pryvalov:Ivan">Ivan Pryvalov</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pampaloni:Francesca">Francesca Pampaloni</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kate:Aniket">Aniket Kate</a></p>
+<p>【Abstract】:
+Computing aggregate statistics about user data is of vital importance for a variety of services and systems, but this practice has been shown to seriously undermine the privacy of users. Differential privacy has proved to be an effective tool to sanitize queries over a database, and various cryptographic protocols have been recently proposed to enforce differential privacy in a distributed setting, e.g., statical queries on sensitive data stored on the user's side. The widespread deployment of differential privacy techniques in real-life settings is, however, undermined by several limitations that existing constructions suffer from: they support only a limited class of queries, they pose a trade-off between privacy and utility of the query result, they are affected by the answer pollution problem, or they are inefficient. This paper presents PrivaDA, a novel design architecture for distributed differential privacy that leverages recent advances in secure multiparty computations on fixed and floating point arithmetics to overcome the previously mentioned limitations. In particular, PrivaDA supports a variety of perturbation mechanisms (e.g., the Laplace, discrete Laplace, and exponential mechanisms) and it constitutes the first generic technique to generate noise in a fully distributed manner while maintaining the optimal utility. Furthermore, PrivaDA does not suffer from the answer pollution problem. We demonstrate the efficiency of PrivaDA with a performance evaluation, and its expressiveness and flexibility by illustrating several application scenarios such as privacy-preserving web analytics.</p>
+<p>【Keywords】:</p>
+<h3 id="34. On the privacy provisions of Bloom filters in lightweight bitcoin clients.">34. On the privacy provisions of Bloom filters in lightweight bitcoin clients.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664267">Paper Link</a>】    【Pages】:326-335</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gervais:Arthur">Arthur Gervais</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Capkun:Srdjan">Srdjan Capkun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Karame:Ghassan_O=">Ghassan O. Karame</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gruber:Damian">Damian Gruber</a></p>
+<p>【Abstract】:
+Lightweight Bitcoin clients are gaining increasing adoption among Bitcoin users, owing to their reduced resource and bandwidth consumption. These clients support a simplified payment verification (SPV) mode as they are only required to download and verify a part of the block chain---thus supporting the usage of Bitcoin on constrained devices, such as smartphones. SPV clients rely on Bloom filters to receive transactions that are relevant to their local wallet. These filters embed all the Bitcoin addresses used by the SPV clients, and are outsourced to more powerful Bitcoin nodes which then only forward to those clients transactions relevant to their outsourced Bloom filters. In this paper, we explore the privacy of existing SPV clients. We show analytically and empirically that the reliance on Bloom filters within existing SPV clients leaks considerable information about the addresses of Bitcoin users. Our results show that an SPV client who uses a modest number of Bitcoin addresses (e.g., &lt; 20) risks revealing almost all of his addresses. We also show that this information leakage is further exacerbated when users restart their SPV clients and/or when the adversary has access to more than one Bloom filter pertaining to the same SPV client. Motivated by these findings, we propose an efficient countermeasure to enhance the privacy of users which rely on SPV clients; our proposal can be directly integrated within existing SPV client implementations.</p>
+<p>【Keywords】:</p>
+<h2 id="Network infrastructure security    3">Network infrastructure security    3</h2>
+<h3 id="35. OSPF vulnerability to persistent poisoning attacks: a systematic analysis.">35. OSPF vulnerability to persistent poisoning attacks: a systematic analysis.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664278">Paper Link</a>】    【Pages】:336-345</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Nakibly:Gabi">Gabi Nakibly</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sosnovich:Adi">Adi Sosnovich</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Menahem:Eitan">Eitan Menahem</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Waizel:Ariel">Ariel Waizel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Elovici:Yuval">Yuval Elovici</a></p>
+<p>【Abstract】:
+Open Shortest Path First (OSPF) is one of the most widely deployed interior gateway routing protocols on the Internet. The most common attack vector against OSPF is spoofing of routing advertisements on behalf of a remote router. OSPF employs a self-defense "fight-back" mechanism that quickly reverts the effects of such attacks. Nonetheless, some attacks that evade the fight-back mechanism have been discovered, making it possible to persistently falsify routing advertisements. This type of attacks are the most serious threat to a routing protocol since they allow an attacker to gain persistent control over how traffic is routed throughout the network. This shows that despite its maturity, the OSPF specification is not without security flaws and may have still-unknown vulnerabilities. In this work we systematically analyze -- manually and by formal verification -- the OSPF specification for additional vulnerabilities in the fight-back mechanism. Our analysis uncovered a fundamental security flaw in OSPF that allows a simple means for an attacker to evade the fight-back mechanism. Most major router vendors acknowledged the existence of this vulnerability in their products. Fortunately, our analysis strongly indicates that no other vulnerabilities in the fight-back mechanism are likely to exist.</p>
+<p>【Keywords】:
+OSPF; formal verification; routing security</p>
+<h3 id="36. Less is more: cipher-suite negotiation for DNSSEC.">36. Less is more: cipher-suite negotiation for DNSSEC.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664283">Paper Link</a>】    【Pages】:346-355</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Herzberg:Amir">Amir Herzberg</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shulman:Haya">Haya Shulman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Crispo:Bruno">Bruno Crispo</a></p>
+<p>【Abstract】:
+We propose a transport layer cipher-suite negotiation mechanism for DNSSEC standard, allowing name-servers to send responses containing only the keys and signatures that correspond to the cipher-suite option negotiated with the resolver, rather than sending all the signatures and keys (as is done currently). As we show, a lack of cipher-suite negotiation, is one of the factors impeding deployment of DNSSEC, and also results in adoption of weak ciphers. Indeed, the vast majority of domains rely on RSA 1024-bit cryptography, which is already considered insecure. Furthermore, domains, that want better security, have to support a number of cryptographic ciphers. As a result, the DNSSEC responses are large and often fragmented, harming the DNS functionality, and causing inefficiency and vulnerabilities. A cipher-suite negotiation mechanism reduces responses' sizes, and hence solves the interoperability problems with DNSSEC-signed responses, and prevents reflection and cache poisoning attacks.</p>
+<p>【Keywords】:
+DNS interoperability; DNS security; DNSSEC; cipher suite negotiation</p>
+<h3 id="37. DNS authentication as a service: preventing amplification attacks.">37. DNS authentication as a service: preventing amplification attacks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664281">Paper Link</a>】    【Pages】:356-365</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Herzberg:Amir">Amir Herzberg</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shulman:Haya">Haya Shulman</a></p>
+<p>【Abstract】:
+We present the first defence against DNS-amplification DoS attacks, which is compatible with the common DNS servers configurations and with the (important standard) DNSSEC. We show that the proposed DNS-authentication system is efficient, and effectively prevents DNS-based amplification DoS attacks abusing DNS name servers. We present a game-theoretic model and analysis, predicting a wide-spread adoption of our design, sufficient to reduce the threat of DNS amplification DoS attacks. To further reduce costs and provide additional defences for DNS servers, we show how to deploy our design as a cloud based service.</p>
+<p>【Keywords】:
+DNS amplification; DNS authentication; DNS reflection; denial of service attacks; source authentication</p>
+<h2 id="Access control and malware    3">Access control and malware    3</h2>
+<h3 id="38. Relation extraction for inferring access control rules from natural language artifacts.">38. Relation extraction for inferring access control rules from natural language artifacts.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664280">Paper Link</a>】    【Pages】:366-375</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Slankas:John">John Slankas</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xiao:Xusheng">Xusheng Xiao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Williams:Laurie_A=">Laurie A. Williams</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xie:Tao">Tao Xie</a></p>
+<p>【Abstract】:
+With over forty years of use and refinement, access control, often in the form of access control rules (ACRs), continues to be a significant control mechanism for information security. However, ACRs are typically either buried within existing natural language (NL) artifacts or elicited from subject matter experts. To address the first situation, our research goal is to aid developers who implement ACRs by inferring ACRs from NL artifacts. To aid in rule inference, we propose an approach that extracts relations (i.e., the relationship among two or more items) from NL artifacts such as requirements documents. Unlike existing approaches, our approach combines techniques from information extraction and machine learning. We develop an iterative algorithm to discover patterns that represent ACRs in sentences. We seed this algorithm with frequently occurring nouns matching a subject--action--resource pattern throughout a document. The algorithm then searches for additional combinations of those nouns to discover additional patterns. We evaluate our approach on documents from three systems in three domains: conference management, education, and healthcare. Our evaluation results show that ACRs exist in 47% of the sentences, and our approach effectively identifies those ACR sentences with a precision of 81% and recall of 65%; our approach extracts ACRs from those identified ACR sentences with an average precision of 76% and an average recall of 49%.</p>
+<p>【Keywords】:
+access control; classification; natural language parsing; security</p>
+<h3 id="39. Centrality metrics of importance in access behaviors and malware detections.">39. Centrality metrics of importance in access behaviors and malware detections.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664286">Paper Link</a>】    【Pages】:376-385</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mao:Weixuan">Weixuan Mao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cai:Zhongmin">Zhongmin Cai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Guan:Xiaohong">Xiaohong Guan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Towsley:Don">Don Towsley</a></p>
+<p>【Abstract】:
+System objects play different roles in a computer system and exhibit different degrees of importance with respect to system security. Identifying importance metrics can help us to develop more effective and efficient security protection methods. However, there is little previous work on evaluating the importance of objects from the perspective of security. In this paper, we propose a novel approach to evaluate the importance of various system objects based on a bipartite dependency network representation of access behaviors observed in a computer system. We introduce centrality metrics from network science to quantitatively measure the relative importance of system objects and reveal their inherent connections to security properties such as integrity and confidentiality. Furthermore, we propose importance-metric based models to characterize process behaviors and identify abnormal access patterns with respect to confidentiality and integrity. Extensive experimental results on one real-world dataset demonstrate that our model is capable of detecting 7,257 malware samples from 27,840 benign processes at 93.94% TPR under 0.1% FPR. Moreover, a selective protection scheme based on a partial behavioral model of important objects achieves comparable or even better results in malware detection when compared with complete behavior models. This demonstrates the feasibility of the devised importance metrics and presents a promising new approach to malware detection.</p>
+<p>【Keywords】:
+access behaviors; centrality; importance metrics; malware detection</p>
+<h3 id="40. Scalability, fidelity and stealth in the DRAKVUF dynamic malware analysis system.">40. Scalability, fidelity and stealth in the DRAKVUF dynamic malware analysis system.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664252">Paper Link</a>】    【Pages】:386-395</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lengyel:Tamas_K=">Tamas K. Lengyel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Maresca:Steve">Steve Maresca</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Payne:Bryan_D=">Bryan D. Payne</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Webster:George_D=">George D. Webster</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vogl:Sebastian">Sebastian Vogl</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kiayias:Aggelos">Aggelos Kiayias</a></p>
+<p>【Abstract】:
+Malware is one of the biggest security threats on the Internet today and deploying effective defensive solutions requires the rapid analysis of a continuously increasing number of malware samples. With the proliferation of metamorphic malware the analysis is further complicated as the efficacy of signature-based static analysis systems is greatly reduced. While dynamic malware analysis is an effective alternative, the approach faces significant challenges as the ever increasing number of samples requiring analysis places a burden on hardware resources. At the same time modern malware can both detect the monitoring environment and hide in unmonitored corners of the system. In this paper we present DRAKVUF, a novel dynamic malware analysis system designed to address these challenges by building on the latest hardware virtualization extensions and the Xen hypervisor. We present a technique for improving stealth by initiating the execution of malware samples without leaving any trace in the analysis machine. We also present novel techniques to eliminate blind-spots created by kernel-mode rootkits by extending the scope of monitoring to include kernel internal functions, and to monitor file-system accesses through the kernel's heap allocations. With extensive tests performed on recent malware samples we show that DRAKVUF achieves significant improvements in conserving hardware resources while providing a stealthy, in-depth view into the behavior of modern malware.</p>
+<p>【Keywords】:
+dynamic malware analysis; virtual machine introspection</p>
+<h2 id="Software security    3">Software security    3</h2>
+<h3 id="41. Towards automated integrity protection of C++ virtual function tables in binary programs.">41. Towards automated integrity protection of C++ virtual function tables in binary programs.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664249">Paper Link</a>】    【Pages】:396-405</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gawlik:Robert">Robert Gawlik</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Holz:Thorsten">Thorsten Holz</a></p>
+<p>【Abstract】:
+Web browsers are one of the most used, complex, and popular software systems nowadays. They are prone to dangling pointers that result in use-after-free vulnerabilites and this is the de-facto way to exploit them. From a technical point of view, an attacker uses a technique called vtable hijacking to exploit such bugs. More specifically, she crafts bogus virtual tables and lets a freed C++ object point to it in order to gain control over the program at virtual function call sites. In this paper, we present a novel approach towards mitigating and detecting such attacks against C++ binary code. We propose a static binary analysis technique to extract virtual function call site information in an automated way. Leveraging this information, we instrument the given binary executable and add runtime policy enforcements to thwart the illegal usage of these call sites. We implemented the proposed techniques in a prototype called T-VIP and successfully hardened three versions of Microsoft's Internet Explorer and Mozilla Firefox. An evaluation with several zero-day exploits demonstrates that our method prevents all of them. Performance benchmarks both on micro and macro level indicate that the overhead is reasonable with about 2.2%, which is only slightly higher compared to recent compiler-based approaches that address this problem.</p>
+<p>【Keywords】:</p>
+<h3 id="42. Leveraging semantic signatures for bug search in binary programs.">42. Leveraging semantic signatures for bug search in binary programs.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664269">Paper Link</a>】    【Pages】:406-415</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Pewny:Jannik">Jannik Pewny</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schuster:Felix">Felix Schuster</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bernhard:Lukas">Lukas Bernhard</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Holz:Thorsten">Thorsten Holz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rossow:Christian">Christian Rossow</a></p>
+<p>【Abstract】:
+Software vulnerabilities still constitute a high security risk and there is an ongoing race to patch known bugs. However, especially in closed-source software, there is no straightforward way (in contrast to source code analysis) to find buggy code parts, even if the bug was publicly disclosed. To tackle this problem, we propose a method called Tree Edit Distance Based Equational Matching (TEDEM) to automatically identify binary code regions that are "similar" to code regions containing a reference bug. We aim to find bugs both in the same binary as the reference bug and in completely unrelated binaries (even compiled for different operating systems). Our method even works on proprietary software systems, which lack source code and symbols. The analysis task is split into two phases. In a preprocessing phase, we condense the semantics of a given binary executable by symbolic simplification to make our approach robust against syntactic changes across different binaries. Second, we use tree edit distances as a basic block-centric metric for code similarity. This allows us to find instances of the same bug in different binaries and even spotting its variants (a concept called vulnerability extrapolation). To demonstrate the practical feasibility of the proposed method, we implemented a prototype of TEDEM that can find real-world security bugs across binaries and even across OS boundaries, such as in MS Word and the popular messengers Pidgin (Linux) and Adium (Mac OS).</p>
+<p>【Keywords】:</p>
+<h3 id="43. IntFlow: improving the accuracy of arithmetic error detection using information flow tracking.">43. IntFlow: improving the accuracy of arithmetic error detection using information flow tracking.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664282">Paper Link</a>】    【Pages】:416-425</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Pomonis:Marios">Marios Pomonis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Petsios:Theofilos">Theofilos Petsios</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jee:Kangkook">Kangkook Jee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Polychronakis:Michalis">Michalis Polychronakis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Keromytis:Angelos_D=">Angelos D. Keromytis</a></p>
+<p>【Abstract】:
+Integer overflow and underflow, signedness conversion, and other types of arithmetic errors in C/C++ programs are among the most common software flaws that result in exploitable vulnerabilities. Despite significant advances in automating the detection of arithmetic errors, existing tools have not seen widespread adoption mainly due to their increased number of false positives. Developers rely on wrap-around counters, bit shifts, and other language constructs for performance optimizations and code compactness, but those same constructs, along with incorrect assumptions and conditions of undefined behavior, are often the main cause of severe vulnerabilities. Accurate differentiation between legitimate and erroneous uses of arithmetic language intricacies thus remains an open problem. As a step towards addressing this issue, we present IntFlow, an accurate arithmetic error detection tool that combines static information flow tracking and dynamic program analysis. By associating sources of untrusted input with the identified arithmetic errors, IntFlow differentiates between non-critical, possibly developer-intended undefined arithmetic operations, and potentially exploitable arithmetic bugs. IntFlow examines a broad set of integer errors, covering almost all cases of C/C++ undefined behaviors, and achieves high error detection coverage. We evaluated IntFlow using the SPEC benchmarks and a series of real-world applications, and measured its effectiveness in detecting arithmetic error vulnerabilities and reducing false positives. IntFlow successfully detected all real-world vulnerabilities for the tested applications and achieved a reduction of 89% in false positives over standalone static code instrumentation.</p>
+<p>【Keywords】:
+arithmetic errors; information flow tracking; static analysis</p>
+<h2 id="Cyber physical systems II    2">Cyber physical systems II    2</h2>
+<h3 id="44. CPS: beyond usability: applying value sensitive design based methods to investigate domain characteristics for security for implantable cardiac devices.">44. CPS: beyond usability: applying value sensitive design based methods to investigate domain characteristics for security for implantable cardiac devices.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664289">Paper Link</a>】    【Pages】:426-435</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Denning:Tamara">Tamara Denning</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kramer:Daniel_B=">Daniel B. Kramer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Friedman:Batya">Batya Friedman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Reynolds:Matthew_R=">Matthew R. Reynolds</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gill:Brian_T=">Brian T. Gill</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kohno:Tadayoshi">Tadayoshi Kohno</a></p>
+<p>【Abstract】:
+Wireless implantable medical devices (IMDs) are cyber-physical systems that deliver life-saving treatments to cardiac patients with dangerous heart conditions. Current access control models for these systems are insufficient; more security is necessary. In response to this problem, the technical security community has investigated new directions for improving security on these resource-constrained devices. Defenses, however, must not only be technically secure; in order to be deployable, defenses must be designed to work within the needs and constraints of their relevant application spaces. Designing for an application space---particularly a specialized one---requires a deep understanding of the stakeholders, their values, and the contexts of technology usage. Grounding our work in value sensitive design (VSD), we collaborated as an interdisciplinary team to conduct three workshops with medical providers for the purpose of gathering their values and perspectives. The structure of our workshop builds on known workshop structures within the human-computer interaction (HCI) community, and the number of participants in our workshops (N=24) is compatible with current practices for inductive, exploratory studies. We present results on: what the participants find important with respect to providing care and performing their jobs; their reactions to potential security system concepts; and their views on what security system properties should be sought or avoided due to side effects within the context of their work practice. We synthesize these results, use the results to articulate design considerations for future technical security systems, and suggest directions for further research. Our research not only provides a contribution to security research for an important class of cyber-physical systems (IMDs); it also provides an example of leveraging techniques from other communities to better explore the landscape of security designs for technologies.</p>
+<p>【Keywords】:
+cyber-physical systems; envisioning workshops; human factors; implantable cardiac devices; implantable cardioverter-defibrillators; implantable medical devices; medical; methods; pacemaker; practical security; privacy; security; stakeholders; value sensitive design</p>
+<h3 id="45. A security evaluation of AIS automated identification system.">45. A security evaluation of AIS automated identification system.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664257">Paper Link</a>】    【Pages】:436-445</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Balduzzi:Marco">Marco Balduzzi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pasta:Alessandro">Alessandro Pasta</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wilhoit:Kyle">Kyle Wilhoit</a></p>
+<p>【Abstract】:
+AIS, Automatic Identification System, is an application of cyber-physical systems (CPS) to smart transportation at sea. Being primarily used for collision avoidance and traffic monitoring by ship captains and maritime authorities, AIS is a mandatory installation for over 300,000 vessels worldwide since 2002. Other promoted benefits are accident investigation, aids to navigation and search and rescue (SAR) operations. In this paper, we present a unique security evaluation of AIS, by introducing threats affecting both the implementation in online providers and the protocol specification. Using a novel software-based AIS transmitter that we designed, we show that our findings affect all transponders deployed globally on vessels and other maritime stations like lighthouses, buoys, AIS gateways, vessel traffic services and aircraft involved in SAR operations. Our concerns have been acknowledged by online providers and international standards organizations, and we are currently and actively working together to improve the overall security.</p>
+<p>【Keywords】:</p>
+<h2 id="Web security    3">Web security    3</h2>
+<h3 id="46. NodeSentry: least-privilege library integration for server-side JavaScript.">46. NodeSentry: least-privilege library integration for server-side JavaScript.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664276">Paper Link</a>】    【Pages】:446-455</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Groef:Willem_De">Willem De Groef</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Massacci:Fabio">Fabio Massacci</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Piessens:Frank">Frank Piessens</a></p>
+<p>【Abstract】:
+Node.js is a popular JavaScript server-side framework with an efficient runtime for cloud-based event-driven architectures. Its strength is the presence of thousands of third-party libraries which allow developers to quickly build and deploy applications. These very libraries are a source of security threats as a vulnerability in one library can (and in some cases did) compromise one's entire server. In order to support the least-privilege integration of libraries, we developed NodeSentry, the first security architecture for server-side JavaScript. Our policy enforcement infrastructure supports an easy deployment of web-hardening techniques and access control policies on interactions between libraries and their environment, including any dependent library. We discuss the implementation of NodeSentry, and present its practical evaluation. For hundreds of concurrent clients, NodeSentry has the same capacity and throughput as plain Node.js. Only on a large scale, when Node.js itself yields to a heavy load, NodeSentry shows a limited overhead.</p>
+<p>【Keywords】:
+JavaScript; web security</p>
+<h3 id="47. TrueClick: automatically distinguishing trick banners from genuine download links.">47. TrueClick: automatically distinguishing trick banners from genuine download links.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664279">Paper Link</a>】    【Pages】:456-465</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Duman:Sevtap">Sevtap Duman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Onarlioglu:Kaan">Kaan Onarlioglu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/u/Ulusoy:Ali_Osman">Ali Osman Ulusoy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Robertson:William_K=">William K. Robertson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kirda:Engin">Engin Kirda</a></p>
+<p>【Abstract】:
+The ubiquity of Internet advertising has made it a popular target for attackers. One well-known instance of these attacks is the widespread use of trick banners that use social engineering techniques to lure victims into clicking on deceptive fake links, potentially leading to a malicious domain or malware. A recent and pervasive trend by attackers is to imitate the "download" or "play" buttons in popular file sharing sites (e.g., one-click hosters, video-streaming sites, bittorrent sites) in an attempt to trick users into clicking on these fake banners instead of the genuine link. In this paper, we explore the problem of automatically assisting Internet users in detecting malicious trick banners and helping them identify the correct link. We present a set of features to characterize trick banners based on their visual properties such as image size, color, placement on the enclosing webpage, whether they contain animation effects, and whether they consistently appear with the same visual properties on consecutive loads of the same webpage. We have implemented a tool called TrueClick, which uses image processing and machine learning techniques to build a classifier based on these features to automatically detect the trick banners on a webpage. Our approach automatically classifies trick banners, and requires no manual effort to compile blacklists as current approaches do. Our experiments show that TrueClick results in a 3.55 factor improvement in correct link selection in the absence of other ad blocking software, and that it can detect trick banners missed by a popular ad detection tool, Adblock Plus.</p>
+<p>【Keywords】:</p>
+<h3 id="48. JShield: towards real-time and vulnerability-based detection of polluted drive-by download attacks.">48. JShield: towards real-time and vulnerability-based detection of polluted drive-by download attacks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2664243.2664256">Paper Link</a>】    【Pages】:466-475</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cao:Yinzhi">Yinzhi Cao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pan:Xiang">Xiang Pan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Yan">Yan Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhuge:Jianwei">Jianwei Zhuge</a></p>
+<p>【Abstract】:
+Drive-by download attacks, which exploit vulnerabilities of web browsers to control client computers, have become a major venue for attackers. To detect such attacks, researchers have proposed many approaches such as anomaly-based [22, 23] and vulnerability-based [44, 50] detections. However, anomaly-based approaches are vulnerable to data pollution, and existing vulnerability-based approaches cannot accurately describe the vulnerability condition of all the drive-by download attacks. In this paper, we propose a vulnerability-based approach, namely JShield, which uses novel opcode vulnerability signature, a deterministic finite automaton (DFA) with a variable pool at opcode level, to match drive-by download vulnerabilities. We investigate all the JavaScript engine vulnerabilities of web browsers from 2009 to 2014, as well as those of portable document files (PDF) readers from 2007 to 2014. JShield is able to match all of those vulnerabilities; furthermore, the overall evaluation shows that JShield is so lightweight that it only adds 2.39 percent of overhead to original execution as the median among top 500 Alexa web sites.</p>
+<p>【Keywords】:</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="https://github.com/huntercmd/ccf"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>

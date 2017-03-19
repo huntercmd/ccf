@@ -1,0 +1,396 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/skin.js"></script>
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/classie.js"></script>
+
+<!-- This is for Mathjax -->
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#20. USENIX Security Symposium 2011:San Francisco, CA, USA">20. USENIX Security Symposium 2011:San Francisco, CA, USA</a><ul>
+<li><a href="#Paper Num: 35 || Session Num: 12">Paper Num: 35 || Session Num: 12</a></li>
+<li><a href="#Web Security    3">Web Security    3</a><ul>
+<li><a href="#1. Fast and Precise Sanitizer Analysis with BEK.">1. Fast and Precise Sanitizer Analysis with BEK.</a></li>
+<li><a href="#2. Toward Secure Embedded Web Interfaces.">2. Toward Secure Embedded Web Interfaces.</a></li>
+<li><a href="#3. ZOZZLE: Fast and Precise In-Browser JavaScript Malware Detection.">3. ZOZZLE: Fast and Precise In-Browser JavaScript Malware Detection.</a></li>
+</ul>
+</li>
+<li><a href="#Analysis of Deployed Systems    3">Analysis of Deployed Systems    3</a><ul>
+<li><a href="#4. Why (Special Agent">4. Why (Special Agent) Johnny (Still) Can't Encrypt: A Security Analysis of the APCO Project 25 Two-Way Radio System.</a> Johnny (Still) Can't Encrypt: A Security Analysis of the APCO Project 25 Two-Way Radio System.)</li>
+<li><a href="#5. Dark Clouds on the Horizon: Using Cloud Storage as Attack Vector and Online Slack Space.">5. Dark Clouds on the Horizon: Using Cloud Storage as Attack Vector and Online Slack Space.</a></li>
+<li><a href="#6. Comprehensive Experimental Analyses of Automotive Attack Surfaces.">6. Comprehensive Experimental Analyses of Automotive Attack Surfaces.</a></li>
+</ul>
+</li>
+<li><a href="#Forensic Analysis    3">Forensic Analysis    3</a><ul>
+<li><a href="#7. Forensic Triage for Mobile Phones with DEC0DE.">7. Forensic Triage for Mobile Phones with DEC0DE.</a></li>
+<li><a href="#8. mCarve: Carving Attributed Dump Sets.">8. mCarve: Carving Attributed Dump Sets.</a></li>
+<li><a href="#9. SHELLOS: Enabling Fast Detection and Forensic Analysis of Code Injection Attacks.">9. SHELLOS: Enabling Fast Detection and Forensic Analysis of Code Injection Attacks.</a></li>
+</ul>
+</li>
+<li><a href="#Static and Dynamic Analysis    3">Static and Dynamic Analysis    3</a><ul>
+<li><a href="#10. MACE: Model-inference-Assisted Concolic Exploration for Protocol and Vulnerability Discovery.">10. MACE: Model-inference-Assisted Concolic Exploration for Protocol and Vulnerability Discovery.</a></li>
+<li><a href="#11. Static Detection of Access Control Vulnerabilities in Web Applications.">11. Static Detection of Access Control Vulnerabilities in Web Applications.</a></li>
+<li><a href="#12. ADsafety: Type-Based Verification of JavaScript Sandboxing.">12. ADsafety: Type-Based Verification of JavaScript Sandboxing.</a></li>
+</ul>
+</li>
+<li><a href="#Understanding the Underground Economy    3">Understanding the Underground Economy    3</a><ul>
+<li><a href="#13. Measuring Pay-per-Install: The Commoditization of Malware Distribution.">13. Measuring Pay-per-Install: The Commoditization of Malware Distribution.</a></li>
+<li><a href="#14. Dirty Jobs: The Role of Freelance Labor in Web Service Abuse.">14. Dirty Jobs: The Role of Freelance Labor in Web Service Abuse.</a></li>
+<li><a href="#15. Show Me the Money: Characterizing Spam-advertised Revenue.">15. Show Me the Money: Characterizing Spam-advertised Revenue.</a></li>
+</ul>
+</li>
+<li><a href="#Defenses and New Directions    3">Defenses and New Directions    3</a><ul>
+<li><a href="#16. Secure In-Band Wireless Pairing.">16. Secure In-Band Wireless Pairing.</a></li>
+<li><a href="#17. TRESOR Runs Encryption Securely Outside RAM.">17. TRESOR Runs Encryption Securely Outside RAM.</a></li>
+<li><a href="#18. Bubble Trouble: Off-Line De-Anonymization of Bubble Forms.">18. Bubble Trouble: Off-Line De-Anonymization of Bubble Forms.</a></li>
+</ul>
+</li>
+<li><a href="#Securing Search    2">Securing Search    2</a><ul>
+<li><a href="#19. Measuring and Analyzing Search-Redirection Attacks in the Illicit Online Prescription Drug Trade.">19. Measuring and Analyzing Search-Redirection Attacks in the Illicit Online Prescription Drug Trade.</a></li>
+<li><a href="#20. deSEO: Combating Search-Result Poisoning.">20. deSEO: Combating Search-Result Poisoning.</a></li>
+</ul>
+</li>
+<li><a href="#Securing Smart Phones    3">Securing Smart Phones    3</a><ul>
+<li><a href="#21. A Study of Android Application Security.">21. A Study of Android Application Security.</a></li>
+<li><a href="#22. Permission Re-Delegation: Attacks and Defenses.">22. Permission Re-Delegation: Attacks and Defenses.</a></li>
+<li><a href="#23. QUIRE: Lightweight Provenance for Smart Phone Operating Systems.">23. QUIRE: Lightweight Provenance for Smart Phone Operating Systems.</a></li>
+</ul>
+</li>
+<li><a href="#Understanding Attacks    3">Understanding Attacks    3</a><ul>
+<li><a href="#24. SMS of Death: From Analyzing to Attacking Mobile Phones on a Large Scale.">24. SMS of Death: From Analyzing to Attacking Mobile Phones on a Large Scale.</a></li>
+<li><a href="#25. Q: Exploit Hardening Made Easy.">25. Q: Exploit Hardening Made Easy.</a></li>
+<li><a href="#26. Cloaking Malware with the Trusted Platform Module.">26. Cloaking Malware with the Trusted Platform Module.</a></li>
+</ul>
+</li>
+<li><a href="#Dealing with Malware and Bots    3">Dealing with Malware and Bots    3</a><ul>
+<li><a href="#27. Detecting Malware Domains at the Upper DNS Hierarchy.">27. Detecting Malware Domains at the Upper DNS Hierarchy.</a></li>
+<li><a href="#28. BOTMAGNIFIER: Locating Spambots on the Internet.">28. BOTMAGNIFIER: Locating Spambots on the Internet.</a></li>
+<li><a href="#29. JACKSTRAWS: Picking Command and Control Connections from Bot Traffic.">29. JACKSTRAWS: Picking Command and Control Connections from Bot Traffic.</a></li>
+</ul>
+</li>
+<li><a href="#Privacy- and Freedom-Enhancing Technologies    3">Privacy- and Freedom-Enhancing Technologies    3</a><ul>
+<li><a href="#30. Telex: Anticensorship in the Network Infrastructure.">30. Telex: Anticensorship in the Network Infrastructure.</a></li>
+<li><a href="#31. PIR-Tor: Scalable Anonymous Communication Using Private Information Retrieval.">31. PIR-Tor: Scalable Anonymous Communication Using Private Information Retrieval.</a></li>
+<li><a href="#32. The Phantom Tollbooth: Privacy-Preserving Electronic Toll Collection in the Presence of Driver Collusion.">32. The Phantom Tollbooth: Privacy-Preserving Electronic Toll Collection in the Presence of Driver Collusion.</a></li>
+</ul>
+</li>
+<li><a href="#Applied Cryptography    3">Applied Cryptography    3</a><ul>
+<li><a href="#33. Differential Privacy Under Fire.">33. Differential Privacy Under Fire.</a></li>
+<li><a href="#34. Outsourcing the Decryption of ABE Ciphertexts.">34. Outsourcing the Decryption of ABE Ciphertexts.</a></li>
+<li><a href="#35. Faster Secure Two-Party Computation Using Garbled Circuits.">35. Faster Secure Two-Party Computation Using Garbled Circuits.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="20. USENIX Security Symposium 2011:San Francisco, CA, USA">20. USENIX Security Symposium 2011:San Francisco, CA, USA</h1>
+<p><a href="https://www.usenix.org/publications/proceedings/?f[0]=im_group_audience%3A277">20th USENIX Security Symposium, San Francisco, CA, USA, August 8-12, 2011, Proceedings.</a> USENIX Association
+【<a href="http://dblp.uni-trier.de/db/conf/uss/uss2011.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 35 || Session Num: 12">Paper Num: 35 || Session Num: 12</h2>
+<ul>
+<li><a href="#Analysis of Deployed Systems    3">Analysis of Deployed Systems    3</a></li>
+<li><a href="#Applied Cryptography    3">Applied Cryptography    3</a></li>
+<li><a href="#Dealing with Malware and Bots    3">Dealing with Malware and Bots    3</a></li>
+<li><a href="#Defenses and New Directions    3">Defenses and New Directions    3</a></li>
+<li><a href="#Forensic Analysis    3">Forensic Analysis    3</a></li>
+<li><a href="#Privacy- and Freedom-Enhancing Technologies    3">Privacy- and Freedom-Enhancing Technologies    3</a></li>
+<li><a href="#Securing Search    2">Securing Search    2</a></li>
+<li><a href="#Securing Smart Phones    3">Securing Smart Phones    3</a></li>
+<li><a href="#Static and Dynamic Analysis    3">Static and Dynamic Analysis    3</a></li>
+<li><a href="#Understanding Attacks    3">Understanding Attacks    3</a></li>
+<li><a href="#Understanding the Underground Economy    3">Understanding the Underground Economy    3</a></li>
+<li><a href="#Web Security    3">Web Security    3</a></li>
+</ul>
+<h2 id="Web Security    3">Web Security    3</h2>
+<h3 id="1. Fast and Precise Sanitizer Analysis with BEK.">1. Fast and Precise Sanitizer Analysis with BEK.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Hooimeijer.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hooimeijer:Pieter">Pieter Hooimeijer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Livshits:Benjamin">Benjamin Livshits</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Molnar:David">David Molnar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Saxena:Prateek">Prateek Saxena</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Veanes:Margus">Margus Veanes</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="2. Toward Secure Embedded Web Interfaces.">2. Toward Secure Embedded Web Interfaces.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Gourdin.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gourdin:Baptiste">Baptiste Gourdin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Soman:Chinmay">Chinmay Soman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bojinov:Hristo">Hristo Bojinov</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bursztein:Elie">Elie Bursztein</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="3. ZOZZLE: Fast and Precise In-Browser JavaScript Malware Detection.">3. ZOZZLE: Fast and Precise In-Browser JavaScript Malware Detection.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Curtsinger.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Curtsinger:Charlie">Charlie Curtsinger</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Livshits:Benjamin">Benjamin Livshits</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zorn:Benjamin_G=">Benjamin G. Zorn</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Seifert:Christian">Christian Seifert</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Analysis of Deployed Systems    3">Analysis of Deployed Systems    3</h2>
+<h3 id="4. Why (Special Agent) Johnny (Still) Can't Encrypt: A Security Analysis of the APCO Project 25 Two-Way Radio System.">4. Why (Special Agent) Johnny (Still) Can't Encrypt: A Security Analysis of the APCO Project 25 Two-Way Radio System.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Clark.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Clark:Sandy">Sandy Clark</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Goodspeed:Travis">Travis Goodspeed</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Metzger:Perry">Perry Metzger</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wasserman:Zachary">Zachary Wasserman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Kevin">Kevin Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Blaze:Matt">Matt Blaze</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="5. Dark Clouds on the Horizon: Using Cloud Storage as Attack Vector and Online Slack Space.">5. Dark Clouds on the Horizon: Using Cloud Storage as Attack Vector and Online Slack Space.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Mulazzani6-24-11.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mulazzani:Martin">Martin Mulazzani</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schrittwieser:Sebastian">Sebastian Schrittwieser</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Leithner:Manuel">Manuel Leithner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Huber:Markus">Markus Huber</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Weippl:Edgar_R=">Edgar R. Weippl</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="6. Comprehensive Experimental Analyses of Automotive Attack Surfaces.">6. Comprehensive Experimental Analyses of Automotive Attack Surfaces.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Checkoway.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Checkoway:Stephen">Stephen Checkoway</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McCoy:Damon">Damon McCoy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kantor:Brian">Brian Kantor</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Anderson:Danny">Danny Anderson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shacham:Hovav">Hovav Shacham</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Savage:Stefan">Stefan Savage</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Koscher:Karl">Karl Koscher</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Czeskis:Alexei">Alexei Czeskis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Roesner:Franziska">Franziska Roesner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kohno:Tadayoshi">Tadayoshi Kohno</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Forensic Analysis    3">Forensic Analysis    3</h2>
+<h3 id="7. Forensic Triage for Mobile Phones with DEC0DE.">7. Forensic Triage for Mobile Phones with DEC0DE.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Walls.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Walls:Robert_J=">Robert J. Walls</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Learned=Miller:Erik_G=">Erik G. Learned-Miller</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Levine:Brian_Neil">Brian Neil Levine</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="8. mCarve: Carving Attributed Dump Sets.">8. mCarve: Carving Attributed Dump Sets.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Deursen.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Deursen:Ton_van">Ton van Deursen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mauw:Sjouke">Sjouke Mauw</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Radomirovic:Sasa">Sasa Radomirovic</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="9. SHELLOS: Enabling Fast Detection and Forensic Analysis of Code Injection Attacks.">9. SHELLOS: Enabling Fast Detection and Forensic Analysis of Code Injection Attacks.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Snow.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Snow:Kevin_Z=">Kevin Z. Snow</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Krishnan:Srinivas">Srinivas Krishnan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Monrose:Fabian">Fabian Monrose</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Provos:Niels">Niels Provos</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Static and Dynamic Analysis    3">Static and Dynamic Analysis    3</h2>
+<h3 id="10. MACE: Model-inference-Assisted Concolic Exploration for Protocol and Vulnerability Discovery.">10. MACE: Model-inference-Assisted Concolic Exploration for Protocol and Vulnerability Discovery.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Cho.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cho:Chia_Yuan">Chia Yuan Cho</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Babic:Domagoj">Domagoj Babic</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Poosankam:Pongsin">Pongsin Poosankam</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Kevin_Zhijie">Kevin Zhijie Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Edward_XueJun">Edward XueJun Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Song:Dawn">Dawn Song</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="11. Static Detection of Access Control Vulnerabilities in Web Applications.">11. Static Detection of Access Control Vulnerabilities in Web Applications.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Sun.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sun:Fangqi">Fangqi Sun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Liang">Liang Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Su:Zhendong">Zhendong Su</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="12. ADsafety: Type-Based Verification of JavaScript Sandboxing.">12. ADsafety: Type-Based Verification of JavaScript Sandboxing.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Politz.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Politz:Joe_Gibbs">Joe Gibbs Politz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Eliopoulos:Spiridon_Aristides">Spiridon Aristides Eliopoulos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Guha:Arjun">Arjun Guha</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Krishnamurthi:Shriram">Shriram Krishnamurthi</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Understanding the Underground Economy    3">Understanding the Underground Economy    3</h2>
+<h3 id="13. Measuring Pay-per-Install: The Commoditization of Malware Distribution.">13. Measuring Pay-per-Install: The Commoditization of Malware Distribution.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Caballero.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Caballero:Juan">Juan Caballero</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Grier:Chris">Chris Grier</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kreibich:Christian">Christian Kreibich</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Paxson:Vern">Vern Paxson</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="14. Dirty Jobs: The Role of Freelance Labor in Web Service Abuse.">14. Dirty Jobs: The Role of Freelance Labor in Web Service Abuse.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Motoyama.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Motoyama:Marti">Marti Motoyama</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McCoy:Damon">Damon McCoy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Levchenko:Kirill">Kirill Levchenko</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Savage:Stefan">Stefan Savage</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Voelker:Geoffrey_M=">Geoffrey M. Voelker</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="15. Show Me the Money: Characterizing Spam-advertised Revenue.">15. Show Me the Money: Characterizing Spam-advertised Revenue.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Kanich.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kanich:Chris">Chris Kanich</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Weaver:Nicholas">Nicholas Weaver</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McCoy:Damon">Damon McCoy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Halvorson:Tristan">Tristan Halvorson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kreibich:Christian">Christian Kreibich</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Levchenko:Kirill">Kirill Levchenko</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Paxson:Vern">Vern Paxson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Voelker:Geoffrey_M=">Geoffrey M. Voelker</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Savage:Stefan">Stefan Savage</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Defenses and New Directions    3">Defenses and New Directions    3</h2>
+<h3 id="16. Secure In-Band Wireless Pairing.">16. Secure In-Band Wireless Pairing.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Gollakota.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gollakota:Shyamnath">Shyamnath Gollakota</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Ahmed:Nabeel">Nabeel Ahmed</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zeldovich:Nickolai">Nickolai Zeldovich</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Katabi:Dina">Dina Katabi</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="17. TRESOR Runs Encryption Securely Outside RAM.">17. TRESOR Runs Encryption Securely Outside RAM.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Muller.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/M=uuml=ller:Tilo">Tilo Müller</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Freiling:Felix_C=">Felix C. Freiling</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dewald:Andreas">Andreas Dewald</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="18. Bubble Trouble: Off-Line De-Anonymization of Bubble Forms.">18. Bubble Trouble: Off-Line De-Anonymization of Bubble Forms.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Calandrino.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Calandrino:Joseph_A=">Joseph A. Calandrino</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Clarkson:William">William Clarkson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Felten:Edward_W=">Edward W. Felten</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Securing Search    2">Securing Search    2</h2>
+<h3 id="19. Measuring and Analyzing Search-Redirection Attacks in the Illicit Online Prescription Drug Trade.">19. Measuring and Analyzing Search-Redirection Attacks in the Illicit Online Prescription Drug Trade.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Leontiadis.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Leontiadis:Nektarios">Nektarios Leontiadis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Moore:Tyler">Tyler Moore</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Christin:Nicolas">Nicolas Christin</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="20. deSEO: Combating Search-Result Poisoning.">20. deSEO: Combating Search-Result Poisoning.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/John.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/John:John_P=">John P. John</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yu:Fang">Fang Yu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xie:Yinglian">Yinglian Xie</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Krishnamurthy:Arvind">Arvind Krishnamurthy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Abadi:Mart=iacute=n">Martín Abadi</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Securing Smart Phones    3">Securing Smart Phones    3</h2>
+<h3 id="21. A Study of Android Application Security.">21. A Study of Android Application Security.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Enck.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/e/Enck:William">William Enck</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Octeau:Damien">Damien Octeau</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McDaniel:Patrick_D=">Patrick D. McDaniel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chaudhuri:Swarat">Swarat Chaudhuri</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="22. Permission Re-Delegation: Attacks and Defenses.">22. Permission Re-Delegation: Attacks and Defenses.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Felt.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Felt:Adrienne_Porter">Adrienne Porter Felt</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Helen_J=">Helen J. Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Moshchuk:Alexander">Alexander Moshchuk</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hanna:Steve">Steve Hanna</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chin:Erika">Erika Chin</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="23. QUIRE: Lightweight Provenance for Smart Phone Operating Systems.">23. QUIRE: Lightweight Provenance for Smart Phone Operating Systems.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Dietz7-26-11.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dietz:Michael">Michael Dietz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shekhar:Shashi">Shashi Shekhar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pisetsky:Yuliy">Yuliy Pisetsky</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shu:Anhei">Anhei Shu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wallach:Dan_S=">Dan S. Wallach</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Understanding Attacks    3">Understanding Attacks    3</h2>
+<h3 id="24. SMS of Death: From Analyzing to Attacking Mobile Phones on a Large Scale.">24. SMS of Death: From Analyzing to Attacking Mobile Phones on a Large Scale.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Mulliner.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mulliner:Collin">Collin Mulliner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Golde:Nico">Nico Golde</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Seifert:Jean=Pierre">Jean-Pierre Seifert</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="25. Q: Exploit Hardening Made Easy.">25. Q: Exploit Hardening Made Easy.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Schwartz.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Schwartz:Edward_J=">Edward J. Schwartz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Avgerinos:Thanassis">Thanassis Avgerinos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Brumley:David">David Brumley</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="26. Cloaking Malware with the Trusted Platform Module.">26. Cloaking Malware with the Trusted Platform Module.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Dunn.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dunn:Alan_M=">Alan M. Dunn</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hofmann:Owen_S=">Owen S. Hofmann</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Waters:Brent">Brent Waters</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Witchel:Emmett">Emmett Witchel</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Dealing with Malware and Bots    3">Dealing with Malware and Bots    3</h2>
+<h3 id="27. Detecting Malware Domains at the Upper DNS Hierarchy.">27. Detecting Malware Domains at the Upper DNS Hierarchy.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Antonakakis.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Antonakakis:Manos">Manos Antonakakis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Perdisci:Roberto">Roberto Perdisci</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Wenke">Wenke Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vasiloglou_II:Nikolaos">Nikolaos Vasiloglou II</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dagon:David">David Dagon</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="28. BOTMAGNIFIER: Locating Spambots on the Internet.">28. BOTMAGNIFIER: Locating Spambots on the Internet.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Stringhini.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Stringhini:Gianluca">Gianluca Stringhini</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Holz:Thorsten">Thorsten Holz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stone=Gross:Brett">Brett Stone-Gross</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kruegel:Christopher">Christopher Kruegel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vigna:Giovanni">Giovanni Vigna</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="29. JACKSTRAWS: Picking Command and Control Connections from Bot Traffic.">29. JACKSTRAWS: Picking Command and Control Connections from Bot Traffic.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Jacob.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jacob:Gr=eacute=goire">Grégoire Jacob</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hund:Ralf">Ralf Hund</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kruegel:Christopher">Christopher Kruegel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Holz:Thorsten">Thorsten Holz</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Privacy- and Freedom-Enhancing Technologies    3">Privacy- and Freedom-Enhancing Technologies    3</h2>
+<h3 id="30. Telex: Anticensorship in the Network Infrastructure.">30. Telex: Anticensorship in the Network Infrastructure.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Wustrow.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wustrow:Eric">Eric Wustrow</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wolchok:Scott">Scott Wolchok</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Goldberg:Ian">Ian Goldberg</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Halderman:J=_Alex">J. Alex Halderman</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="31. PIR-Tor: Scalable Anonymous Communication Using Private Information Retrieval.">31. PIR-Tor: Scalable Anonymous Communication Using Private Information Retrieval.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Mittal.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mittal:Prateek">Prateek Mittal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Olumofin:Femi_G=">Femi G. Olumofin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Troncoso:Carmela">Carmela Troncoso</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Borisov:Nikita">Nikita Borisov</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Goldberg:Ian">Ian Goldberg</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="32. The Phantom Tollbooth: Privacy-Preserving Electronic Toll Collection in the Presence of Driver Collusion.">32. The Phantom Tollbooth: Privacy-Preserving Electronic Toll Collection in the Presence of Driver Collusion.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Meiklejohn.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Meiklejohn:Sarah">Sarah Meiklejohn</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mowery:Keaton">Keaton Mowery</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Checkoway:Stephen">Stephen Checkoway</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shacham:Hovav">Hovav Shacham</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Applied Cryptography    3">Applied Cryptography    3</h2>
+<h3 id="33. Differential Privacy Under Fire.">33. Differential Privacy Under Fire.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Haeberlen.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Haeberlen:Andreas">Andreas Haeberlen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pierce:Benjamin_C=">Benjamin C. Pierce</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Narayan:Arjun">Arjun Narayan</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="34. Outsourcing the Decryption of ABE Ciphertexts.">34. Outsourcing the Decryption of ABE Ciphertexts.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Green.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Green_0001:Matthew">Matthew Green</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hohenberger:Susan">Susan Hohenberger</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Waters:Brent">Brent Waters</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="35. Faster Secure Two-Party Computation Using Garbled Circuits.">35. Faster Secure Two-Party Computation Using Garbled Circuits.</h3>
+<p>【<a href="http://static.usenix.org/events/sec11/tech/full_papers/Huang.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Huang_0001:Yan">Yan Huang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Evans:David">David Evans</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Katz:Jonathan">Jonathan Katz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Malka:Lior">Lior Malka</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="https://github.com/huntercmd/ccf"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>

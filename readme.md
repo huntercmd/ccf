@@ -4,7 +4,8 @@
 
 ### Change Logs
 
-- 2017/3/17 添加 2016 | 2017(AAAI,WSDM) 共18个会议列表
+- 2017/3/19 添加 ICNP | NSDI | USEXNIX Security | ACSAC | NDSS | DSN | CHI  共 7 个会议
+- 2017/3/17 更新 2016 | 2017(AAAI,WSDM) 共18个会议列表
 - 2016/7/17 添加 Best Paper Awards 链接
 - 2016/7/10 添加 Session 目录
 - 2016/7/7 添加下一届会议地点、截稿日期（红色）、开会日期（绿色）

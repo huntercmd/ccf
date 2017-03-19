@@ -1,0 +1,727 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/skin.js"></script>
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/classie.js"></script>
+
+<!-- This is for Mathjax -->
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#46. DSN 2016:Toulouse, France">46. DSN 2016:Toulouse, France</a><ul>
+<li><a href="#Paper Num: 58 || Session Num: 3">Paper Num: 58 || Session Num: 3</a></li>
+<li><a href="#Dependability Sessions">Dependability Sessions</a></li>
+<li><a href="#Best Paper Candidates    3">Best Paper Candidates    3</a><ul>
+<li><a href="#1. A Quantitative Methodology for Security Monitor Deployment.">1. A Quantitative Methodology for Security Monitor Deployment.</a></li>
+<li><a href="#2. Dynamic Scalable State Machine Replication.">2. Dynamic Scalable State Machine Replication.</a></li>
+<li><a href="#3. OSIRIS: Efficient and Consistent Recovery of Compartmentalized Operating Systems.">3. OSIRIS: Efficient and Consistent Recovery of Compartmentalized Operating Systems.</a></li>
+</ul>
+</li>
+<li><a href="#Storage Systems    3">Storage Systems    3</a><ul>
+<li><a href="#4. Towards a Scalable and Write-Free Multi-version Checkpointing Scheme in Solid State Drives.">4. Towards a Scalable and Write-Free Multi-version Checkpointing Scheme in Solid State Drives.</a></li>
+<li><a href="#5. Elastic Parity Logging for SSD RAID Arrays.">5. Elastic Parity Logging for SSD RAID Arrays.</a></li>
+<li><a href="#6. OI-RAID: A Two-Layer RAID Architecture towards Fast Recovery and High Reliability.">6. OI-RAID: A Two-Layer RAID Architecture towards Fast Recovery and High Reliability.</a></li>
+</ul>
+</li>
+<li><a href="#Clouds and Networks    3">Clouds and Networks    3</a><ul>
+<li><a href="#7. StorM: Enabling Tenant-Defined Cloud Storage Middle-Box Services.">7. StorM: Enabling Tenant-Defined Cloud Storage Middle-Box Services.</a></li>
+<li><a href="#8. Process-Oriented Non-intrusive Recovery for Sporadic Operations on Cloud.">8. Process-Oriented Non-intrusive Recovery for Sporadic Operations on Cloud.</a></li>
+<li><a href="#9. Network Recovery After Massive Failures.">9. Network Recovery After Massive Failures.</a></li>
+</ul>
+</li>
+<li><a href="#Software-Defined Networks    3">Software-Defined Networks    3</a><ul>
+<li><a href="#10. JURY: Validating Controller Actions in Software-Defined Networks.">10. JURY: Validating Controller Actions in Software-Defined Networks.</a></li>
+<li><a href="#11. SDNShield: Reconciliating Configurable Application Permissions for SDN App Markets.">11. SDNShield: Reconciliating Configurable Application Permissions for SDN App Markets.</a></li>
+<li><a href="#12. Can't Touch This: Consistent Network Updates for Multiple Policies.">12. Can't Touch This: Consistent Network Updates for Multiple Policies.</a></li>
+</ul>
+</li>
+<li><a href="#Software Dependability    3">Software Dependability    3</a><ul>
+<li><a href="#13. HSFI: Accurate Fault Injection Scalable to Large Code Bases.">13. HSFI: Accurate Fault Injection Scalable to Large Code Bases.</a></li>
+<li><a href="#14. Making Fast Consensus Generally Faster.">14. Making Fast Consensus Generally Faster.</a></li>
+<li><a href="#15. ePVF: An Enhanced Program Vulnerability Factor Methodology for Cross-Layer Resilience Analysis.">15. ePVF: An Enhanced Program Vulnerability Factor Methodology for Cross-Layer Resilience Analysis.</a></li>
+</ul>
+</li>
+<li><a href="#Memory and Caches    3">Memory and Caches    3</a><ul>
+<li><a href="#16. Methuselah Flash: Rewriting Codes for Extra Long Storage Lifetime.">16. Methuselah Flash: Rewriting Codes for Extra Long Storage Lifetime.</a></li>
+<li><a href="#17. Enabling Deep Voltage Scaling in Delay Sensitive L1 Caches.">17. Enabling Deep Voltage Scaling in Delay Sensitive L1 Caches.</a></li>
+<li><a href="#18. ReadDuo: Constructing Reliable MLC Phase Change Memory through Fast and Robust Readout.">18. ReadDuo: Constructing Reliable MLC Phase Change Memory through Fast and Robust Readout.</a></li>
+</ul>
+</li>
+<li><a href="#Hardware Errors Resiliency    3">Hardware Errors Resiliency    3</a><ul>
+<li><a href="#19. Leveraging ECC to Mitigate Read Disturbance, False Reads and Write Faults in STT-RAM.">19. Leveraging ECC to Mitigate Read Disturbance, False Reads and Write Faults in STT-RAM.</a></li>
+<li><a href="#20. SuperGlue: IDL-Based, System-Level Fault Tolerance for Embedded Systems.">20. SuperGlue: IDL-Based, System-Level Fault Tolerance for Embedded Systems.</a></li>
+<li><a href="#21. PARBOR: An Efficient System-Level Technique to Detect Data-Dependent Failures in DRAM.">21. PARBOR: An Efficient System-Level Technique to Detect Data-Dependent Failures in DRAM.</a></li>
+</ul>
+</li>
+<li><a href="#Dependability Applications    3">Dependability Applications    3</a><ul>
+<li><a href="#22. Efficient Algorithm-Based Fault Tolerance for Sparse Matrix Operations.">22. Efficient Algorithm-Based Fault Tolerance for Sparse Matrix Operations.</a></li>
+<li><a href="#23. Formal Analysis for Dependable Supervisory Control and Data Acquisition in Smart Grids.">23. Formal Analysis for Dependable Supervisory Control and Data Acquisition in Smart Grids.</a></li>
+<li><a href="#24. A Model-Based Approach to Support Safety-Related Decisions in the Petroleum Domain.">24. A Model-Based Approach to Support Safety-Related Decisions in the Petroleum Domain.</a></li>
+</ul>
+</li>
+<li><a href="#Models    2">Models    2</a><ul>
+<li><a href="#25. Mean Field Approximation of Uncertain Stochastic Models.">25. Mean Field Approximation of Uncertain Stochastic Models.</a></li>
+<li><a href="#26. Uncovering Dynamic Fault Trees.">26. Uncovering Dynamic Fault Trees.</a></li>
+</ul>
+</li>
+<li><a href="#Data Centers Dependability    3">Data Centers Dependability    3</a><ul>
+<li><a href="#27. Power-Capping Aware Checkpointing: On the Interplay Among Power-Capping, Temperature, Reliability, Performance, and Energy.">27. Power-Capping Aware Checkpointing: On the Interplay Among Power-Capping, Temperature, Reliability, Performance, and Energy.</a></li>
+<li><a href="#28. Reconsidering Single Failure Recovery in Clustered File Systems.">28. Reconsidering Single Failure Recovery in Clustered File Systems.</a></li>
+<li><a href="#29. Managing Data Center Tickets: Prediction and Active Sizing.">29. Managing Data Center Tickets: Prediction and Active Sizing.</a></li>
+</ul>
+</li>
+<li><a href="#Security Sessions">Security Sessions</a></li>
+<li><a href="#Privacy    3">Privacy    3</a><ul>
+<li><a href="#30. A Privacy Analysis of Google and Yandex Safe Browsing.">30. A Privacy Analysis of Google and Yandex Safe Browsing.</a></li>
+<li><a href="#31. PUPPIES: Transformation-Supported Personalized Privacy Preserving Partial Image Sharing.">31. PUPPIES: Transformation-Supported Personalized Privacy Preserving Partial Image Sharing.</a></li>
+<li><a href="#32. Modeling Privacy and Tradeoffs in Multichannel Secret Sharing Protocols.">32. Modeling Privacy and Tradeoffs in Multichannel Secret Sharing Protocols.</a></li>
+</ul>
+</li>
+<li><a href="#Cyber-physical Systems Security    3">Cyber-physical Systems Security    3</a><ul>
+<li><a href="#33. On False Data Injection Attacks Against Railway Traction Power Systems.">33. On False Data Injection Attacks Against Railway Traction Power Systems.</a></li>
+<li><a href="#34. Targeted Attacks on Teleoperated Surgical Robots: Dynamic Model-Based Detection and Mitigation.">34. Targeted Attacks on Teleoperated Surgical Robots: Dynamic Model-Based Detection and Mitigation.</a></li>
+<li><a href="#35. F-DETA: A Framework for Detecting Electricity Theft Attacks in Smart Grids.">35. F-DETA: A Framework for Detecting Electricity Theft Attacks in Smart Grids.</a></li>
+</ul>
+</li>
+<li><a href="#Operating Systems Security and Privacy    3">Operating Systems Security and Privacy    3</a><ul>
+<li><a href="#36. Secure Identification of Actively Executed Code on a Generic Trusted Component.">36. Secure Identification of Actively Executed Code on a Generic Trusted Component.</a></li>
+<li><a href="#37. Secure and Efficient Multi-Variant Execution Using Hardware-Assisted Process Virtualization.">37. Secure and Efficient Multi-Variant Execution Using Hardware-Assisted Process Virtualization.</a></li>
+<li><a href="#38. Overhaul: Input-Driven Access Control for Better Privacy on Traditional Operating Systems.">38. Overhaul: Input-Driven Access Control for Better Privacy on Traditional Operating Systems.</a></li>
+</ul>
+</li>
+<li><a href="#Anomaly Detection and Exploits    3">Anomaly Detection and Exploits    3</a><ul>
+<li><a href="#39. Kizzle: A Signature Compiler for Detecting Exploit Kits.">39. Kizzle: A Signature Compiler for Detecting Exploit Kits.</a></li>
+<li><a href="#40. A Sharper Sense of Self: Probabilistic Reasoning of Program Behaviors for Anomaly Detection with Context Sensitivity.">40. A Sharper Sense of Self: Probabilistic Reasoning of Program Behaviors for Anomaly Detection with Context Sensitivity.</a></li>
+<li><a href="#41. BAYWATCH: Robust Beaconing Detection to Identify Infected Hosts in Large-Scale Enterprise Networks.">41. BAYWATCH: Robust Beaconing Detection to Identify Infected Hosts in Large-Scale Enterprise Networks.</a></li>
+</ul>
+</li>
+<li><a href="#Network Security    2">Network Security    2</a><ul>
+<li><a href="#42. DomainProfiler: Discovering Domain Names Abused in Future.">42. DomainProfiler: Discovering Domain Names Abused in Future.</a></li>
+<li><a href="#43. FTP: The Forgotten Cloud.">43. FTP: The Forgotten Cloud.</a></li>
+</ul>
+</li>
+<li><a href="#Android Security    3">Android Security    3</a><ul>
+<li><a href="#44. Practical, Formal Synthesis and Automatic Enforcement of Security Policies for Android.">44. Practical, Formal Synthesis and Automatic Enforcement of Security Policies for Android.</a></li>
+<li><a href="#45. Don't Just BYOD, Bring-Your-Own-App Too! Protection via Virtual Micro Security Perimeters.">45. Don't Just BYOD, Bring-Your-Own-App Too! Protection via Virtual Micro Security Perimeters.</a></li>
+<li><a href="#46. Can We Trust the Privacy Policies of Android Apps?">46. Can We Trust the Privacy Policies of Android Apps?</a></li>
+</ul>
+</li>
+<li><a href="#Malware    3">Malware    3</a><ul>
+<li><a href="#47. Repackage-Proofing Android Apps.">47. Repackage-Proofing Android Apps.</a></li>
+<li><a href="#48. Measuring the Role of Greylisting and Nolisting in Fighting Spam.">48. Measuring the Role of Greylisting and Nolisting in Fighting Spam.</a></li>
+<li><a href="#49. Malware Slums: Measurement and Analysis of Malware on Traffic Exchanges.">49. Malware Slums: Measurement and Analysis of Malware on Traffic Exchanges.</a></li>
+</ul>
+</li>
+<li><a href="#Passwords    2">Passwords    2</a><ul>
+<li><a href="#50. Secure Point-of-Care Medical Diagnostics via Trusted Sensing and Cyto-Coded Passwords.">50. Secure Point-of-Care Medical Diagnostics via Trusted Sensing and Cyto-Coded Passwords.</a></li>
+<li><a href="#51. fuzzyPSM: A New Password Strength Meter Using Fuzzy Probabilistic Context-Free Grammars.">51. fuzzyPSM: A New Password Strength Meter Using Fuzzy Probabilistic Context-Free Grammars.</a></li>
+</ul>
+</li>
+<li><a href="#Encryption and Security vs. Performance    2">Encryption and Security vs. Performance    2</a><ul>
+<li><a href="#52. Balancing Security and Performance for Agility in Dynamic Threat Environments.">52. Balancing Security and Performance for Agility in Dynamic Threat Environments.</a></li>
+<li><a href="#53. Rekeying for Encrypted Deduplication Storage.">53. Rekeying for Encrypted Deduplication Storage.</a></li>
+</ul>
+</li>
+<li><a href="#PER Sessions">PER Sessions</a></li>
+<li><a href="#Practical Experience Reports I    2">Practical Experience Reports I    2</a><ul>
+<li><a href="#54. Equipping WAP with WEAPONS to Detect Vulnerabilities: Practical Experience Report.">54. Equipping WAP with WEAPONS to Detect Vulnerabilities: Practical Experience Report.</a></li>
+<li><a href="#55. Characterizing the Consistency of Online Services (Practical Experience Report">55. Characterizing the Consistency of Online Services (Practical Experience Report).</a>.)</li>
+</ul>
+</li>
+<li><a href="#Practical Experience Reports II    3">Practical Experience Reports II    3</a><ul>
+<li><a href="#56. ELZAR: Triple Modular Redundancy Using Intel AVX (Practical Experience Report">56. ELZAR: Triple Modular Redundancy Using Intel AVX (Practical Experience Report).</a>.)</li>
+<li><a href="#57. An Evaluation Study on Log Parsing and Its Use in Log Mining.">57. An Evaluation Study on Log Parsing and Its Use in Log Mining.</a></li>
+<li><a href="#58. Reliability-Centered Maintenance of the Electrically Insulated Railway Joint via Fault Tree Analysis: A Practical Experience Report.">58. Reliability-Centered Maintenance of the Electrically Insulated Railway Joint via Fault Tree Analysis: A Practical Experience Report.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="46. DSN 2016:Toulouse, France">46. DSN 2016:Toulouse, France</h1>
+<p><a href="http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=7579391">46th Annual IEEE/IFIP International Conference on Dependable Systems and Networks, DSN 2016, Toulouse, France, June 28 - July 1, 2016.</a> IEEE Computer Society
+【<a href="http://dblp.uni-trier.de/db/conf/dsn/dsn2016.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 58 || Session Num: 3">Paper Num: 58 || Session Num: 3</h2>
+<ul>
+<li><a href="#Android Security    3">Android Security    3</a></li>
+<li><a href="#Anomaly Detection and Exploits    3">Anomaly Detection and Exploits    3</a></li>
+<li><a href="#Best Paper Candidates    3">Best Paper Candidates    3</a></li>
+<li><a href="#Clouds and Networks    3">Clouds and Networks    3</a></li>
+<li><a href="#Cyber-physical Systems Security    3">Cyber-physical Systems Security    3</a></li>
+<li><a href="#Data Centers Dependability    3">Data Centers Dependability    3</a></li>
+<li><a href="#Dependability Applications    3">Dependability Applications    3</a></li>
+<li><a href="#Dependability Sessions">Dependability Sessions</a></li>
+<li><a href="#Encryption and Security vs. Performance    2">Encryption and Security vs. Performance    2</a></li>
+<li><a href="#Hardware Errors Resiliency    3">Hardware Errors Resiliency    3</a></li>
+<li><a href="#Malware    3">Malware    3</a></li>
+<li><a href="#Memory and Caches    3">Memory and Caches    3</a></li>
+<li><a href="#Models    2">Models    2</a></li>
+<li><a href="#Network Security    2">Network Security    2</a></li>
+<li><a href="#Operating Systems Security and Privacy    3">Operating Systems Security and Privacy    3</a></li>
+<li><a href="#PER Sessions">PER Sessions</a></li>
+<li><a href="#Passwords    2">Passwords    2</a></li>
+<li><a href="#Practical Experience Reports I    2">Practical Experience Reports I    2</a></li>
+<li><a href="#Practical Experience Reports II    3">Practical Experience Reports II    3</a></li>
+<li><a href="#Privacy    3">Privacy    3</a></li>
+<li><a href="#Security Sessions">Security Sessions</a></li>
+<li><a href="#Software Dependability    3">Software Dependability    3</a></li>
+<li><a href="#Software-Defined Networks    3">Software-Defined Networks    3</a></li>
+<li><a href="#Storage Systems    3">Storage Systems    3</a></li>
+</ul>
+<h2 id="Dependability Sessions">Dependability Sessions</h2>
+<h2 id="Best Paper Candidates    3">Best Paper Candidates    3</h2>
+<h3 id="1. A Quantitative Methodology for Security Monitor Deployment.">1. A Quantitative Methodology for Security Monitor Deployment.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.10">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Thakore:Uttam">Uttam Thakore</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Weaver:Gabriel_A=">Gabriel A. Weaver</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sanders:William_H=">William H. Sanders</a></p>
+<p>【Abstract】:
+Intrusion detection and forensic analysis techniques depend upon monitors to collect information about possible attacks. Since monitoring can be expensive, however, monitors must be selectively deployed to maximize their overall utility. This paper introduces a methodology both to evaluate monitor deployments quantitatively in terms of security goals and to deploy monitors optimally based on cost constraints. First, we define a model that describes the system assets, deployable monitors, and the relationship between generated data and intrusions. Then, we define a set of metrics that quantify the utility and richness of monitor data with respect to intrusion detection and the cost associated with deployment. Finally, we formulate a method using our model and metrics to determine the cost-optimal, maximum-utility placement of monitors. We present an enterprise Web service use case and illustrate how our metrics can be used to determine optimal monitor deployments for a set of common attacks on Web servers. Our approach is scalable, being able to compute within minutes optimal monitor deployments for systems with hundreds of monitors and attacks.</p>
+<p>【Keywords】:
+resiliency; computer security; monitoring; monitor deployment; security metrics; modeling</p>
+<h3 id="2. Dynamic Scalable State Machine Replication.">2. Dynamic Scalable State Machine Replication.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.11">Paper Link</a>】    【Pages】:13-24</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hoang:Le_Long">Le Long Hoang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bezerra:Carlos_Eduardo_Benevides">Carlos Eduardo Benevides Bezerra</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pedone:Fernando">Fernando Pedone</a></p>
+<p>【Abstract】:
+State machine replication (SMR) is a well-known technique that guarantees strong consistency (i.e., linearizability) to online services. In SMR, client commands are executed in the same order on all server replicas: after executing each command, every replica reaches the same state. However, SMR lacks scalability: every replica executes all commands, so adding servers does not increase the maximum throughput. Scalable SMR (S-SMR) addresses this problem by partitioning the service state, allowing commands to execute only in some replicas, providing scalability while still ensuring linearizability. One problem is that ssmr quickly saturates when executing multi-partition commands, as partitions must communicate. Dynamic S-SMR (DS-SMR) solves this issue by repartitioning the state dynamically, based on the workload. Variables that are usually accessed together are moved to the same partition, which significantly improves scalability. We evaluate the performance of DS-SMR with a scalable social network application.</p>
+<p>【Keywords】:
+dynamic; state machine; state machine replication; scalable</p>
+<h3 id="3. OSIRIS: Efficient and Consistent Recovery of Compartmentalized Operating Systems.">3. OSIRIS: Efficient and Consistent Recovery of Compartmentalized Operating Systems.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.12">Paper Link</a>】    【Pages】:25-36</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bhat:Koustubha">Koustubha Bhat</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vogt:Dirk">Dirk Vogt</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kouwe:Erik_van_der">Erik van der Kouwe</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gras:Ben">Ben Gras</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sambuc:Lionel">Lionel Sambuc</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tanenbaum:Andrew_S=">Andrew S. Tanenbaum</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bos:Herbert">Herbert Bos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Giuffrida:Cristiano">Cristiano Giuffrida</a></p>
+<p>【Abstract】:
+Much research has gone into making operating systems more amenable to recovery and more resilient to crashes. Traditional solutions rely on partitioning the operating system (OS) to contain the effects of crashes within compartments and facilitate modular recovery. However, state dependencies among the compartments hinder recovery that is globally consistent. Such recovery typically requires expensive runtime dependency tracking which results in high performance overhead, highcomplexity and a large Reliable Computing Base (RCB). We propose a lightweight strategy that limits recovery to cases where we can statically and conservatively prove that compartment recovery leads to a globally consistent state - trading recoverable surface for a simpler and smaller RCB with lower performance overhead and maintenance cost. We present OSIRIS, a research OS design prototype that demonstrates efficient and consistent crash recovery. Our evaluation shows that OSIRIS effectively recovers from important classes of real-world software bugs with a modest RCB and low overheads.</p>
+<p>【Keywords】:
+reliability; Crash recovery; operating systems; static analysis; fault tolerance</p>
+<h2 id="Storage Systems    3">Storage Systems    3</h2>
+<h3 id="4. Towards a Scalable and Write-Free Multi-version Checkpointing Scheme in Solid State Drives.">4. Towards a Scalable and Write-Free Multi-version Checkpointing Scheme in Solid State Drives.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.13">Paper Link</a>】    【Pages】:37-48</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Khouzani:Hoda_Aghaei">Hoda Aghaei Khouzani</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Chengmo">Chengmo Yang</a></p>
+<p>【Abstract】:
+Flash memory based solid state drives (SSDs) are widely adopted in mobile devices, PCs and data centers, making their reliability critical. Although periodically creating checkpoints is a well-developed technique for traditional hard disk drives, very few work has exploited the unique properties of SSDs to accelerate checkpoint creation and reduce storage cost. More specifically, the remap-on-write property of SSD creates a trail of multiple versions of data, which can be exploited to create multiple checkpoints without engendering extra writes. However, efficiently managing the metadata to support multiple checkpoints is challenging. In this paper, we propose a low storage cost and high performance scheme to support multiple checkpoints in SSDs. Instead of storing a log-based snapshot of the entire Flash Translation Layer (FTL) per checkpoint, we efficiently keep track of the changes to the FTL across multiple checkpoints, thus accelerating the creation, deletion, and activation of checkpoints within minimum storage overhead and minimum impact on regular SSD operations. Experiments on Microsoft real-world benchmarks confirm the advantage of the proposed scheme over a fully snapshot scheme in terms of storage and performance overhead.</p>
+<p>【Keywords】:
+Remap-on-Write; Flash Controller; Reliability</p>
+<h3 id="5. Elastic Parity Logging for SSD RAID Arrays.">5. Elastic Parity Logging for SSD RAID Arrays.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.14">Paper Link</a>】    【Pages】:49-60</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Yongkun">Yongkun Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chan:Helen_H=_W=">Helen H. W. Chan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Patrick_P=_C=">Patrick P. C. Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Yinlong">Yinlong Xu</a></p>
+<p>【Abstract】:
+Parity-based RAID poses a design trade-off issue for large-scale SSD storage systems: it improves reliability against SSD failures through redundancy, yet its parity updates incur extra I/Os and garbage collection operations, thereby degrading the endurance and performance of SSDs. We propose EPLOG, a storage layer that reduces parity traffic to SSDs, so as to provide endurance, reliability, and performance guarantees for SSD RAID arrays. EPLOG mitigates parity update overhead via elastic parity logging, which redirects parity traffic to separate log devices (to improve endurance and reliability) and eliminates the need of pre-reading data in parity computations (to improve performance). We design EPLOG as a user-level implementation that is fully compatible with commodity hardware and general erasure coding schemes. We evaluate EPLOG through reliability analysis and trace-driven testbed experiments. Compared to the Linux software RAID implementation, our experimental results show that our EPLOG prototype reduces the total write traffic to SSDs, reduces the number of garbage collection operations, and increases the I/O throughput. In addition, EPLOG significantly improves the I/O performance over the original parity logging design, and incurs low metadata overhead.</p>
+<p>【Keywords】:
+Arrays; Performance evaluation; Fault tolerance; Fault tolerant systems; Encoding; Reliability engineering</p>
+<h3 id="6. OI-RAID: A Two-Layer RAID Architecture towards Fast Recovery and High Reliability.">6. OI-RAID: A Two-Layer RAID Architecture towards Fast Recovery and High Reliability.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.15">Paper Link</a>】    【Pages】:61-72</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Neng">Neng Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Yinlong">Yinlong Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Yongkun">Yongkun Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Si">Si Wu</a></p>
+<p>【Abstract】:
+A lot of inexpensive disks in modern storage systems induce frequent disk failures. It takes a long time to recover a failed disk due to its large capacity and limited I/O. This paper proposes a hierarchical architecture of erasure code, OI-RAID. OI-RAID consists of two layers of codes, outer layer code and inner layer code. The outer layer code is based on disk grouping and Balanced Incomplete Block Design (BIBD) with skewed data layout to provide efficient parallel I/O of all disks for failure recovery. Inner layer code is deployed within a group of disks. As an example, we deploy RAID5 in both layers and present detailed performance analysis. With RAID5 in both layers, OI-RAID tolerates at least three disk failures meeting practical data availability, and achieves much higher speed up of disk failure recovery than existing approaches, while keeping optimal data update complexity and practically low storage overhead.</p>
+<p>【Keywords】:
+RAID; Storage Architecture; Fast Recovery; Data Reliability</p>
+<h2 id="Clouds and Networks    3">Clouds and Networks    3</h2>
+<h3 id="7. StorM: Enabling Tenant-Defined Cloud Storage Middle-Box Services.">7. StorM: Enabling Tenant-Defined Cloud Storage Middle-Box Services.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.16">Paper Link</a>】    【Pages】:73-84</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lu:Hui">Hui Lu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Srivastava:Abhinav">Abhinav Srivastava</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Saltaformaggio:Brendan">Brendan Saltaformaggio</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Dongyan">Dongyan Xu</a></p>
+<p>【Abstract】:
+In an Infrastructure-as-a-Service cloud, tenants rely on the cloud provider to provide "value-added" services such as data security and reliability. However, this provider-controlled service model is less flexible and cannot be customized to meet individual tenants' needs. In this paper, we present StorM, a novel middle-box service platform that allows each tenant to deploy tenant-specific security and reliability services -- in virtualized middle-boxes -- for their cloud data. With such middle-boxes, StorM divides the responsibilities of service creation between tenants and the provider by allowing tenants to customize their own cloud data polices and the provider to offer corresponding infrastructural support. In developing StorM, we address key challenges including network splicing, platform efficiency, and semantic gap. We implement a StorM prototype on top of OpenStack and demonstrate three tenant-defined security/reliability middle-box services, with low performance overhead (&lt;; 10%).</p>
+<p>【Keywords】:
+OpenStack; Cloud Computing; Cloud Storage; Middle-box</p>
+<h3 id="8. Process-Oriented Non-intrusive Recovery for Sporadic Operations on Cloud.">8. Process-Oriented Non-intrusive Recovery for Sporadic Operations on Cloud.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.17">Paper Link</a>】    【Pages】:85-96</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Fu:Min">Min Fu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Liming">Liming Zhu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Weber:Ingo">Ingo Weber</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bass:Len">Len Bass</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Anna">Anna Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Xiwei">Xiwei Xu</a></p>
+<p>【Abstract】:
+Cloud-based systems get changed more frequently than traditional systems. These frequent changes involve sporadic operations such as installation and upgrade. Sporadic operations may fail due to the uncertainty of cloud platforms. Each sporadic operation manipulates a number of cloud resources. The accessibility of resources manipulated makes it possible to build an accurate process model of the correct behavior for an operation and its desired effects. This paper proposes a non-intrusive recovery approach for sporadic operations on cloud, called POD-Recovery. POD-Recovery utilizes the above-mentioned process model of the operation. When needed, it triggers recovery actions based on the model through non-intrusive means, i.e., without modifying the code which implements the sporadic operation. POD-Recovery employs an efficient artificial intelligence (AI) planning technique for generating recovery plans. We implement POD-Recovery and evaluate it by recovering from faults injected into 920 runs of five representative sporadic operations.</p>
+<p>【Keywords】:
+DevOps; Software Reliability; Cloud; Non-Intrusive Recovery; Log Analysis</p>
+<h3 id="9. Network Recovery After Massive Failures.">9. Network Recovery After Massive Failures.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.18">Paper Link</a>】    【Pages】:97-108</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bartolini:Novella">Novella Bartolini</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Ciavarella:Stefano">Stefano Ciavarella</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Porta:Thomas_F=_La">Thomas F. La Porta</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Silvestri:Simone">Simone Silvestri</a></p>
+<p>【Abstract】:
+This paper addresses the problem of efficiently restoring sufficient resources in a communications network to support the demand of mission critical services after a large scale disruption. We give a formulation of the problem as an MILP and show that it is NP-hard. We propose a polynomial time heuristic, called Iterative Split and Prune (ISP) that decomposes the original problem recursively into smaller problems, until it determines the set of network components to be restored. We performed extensive simulations by varying the topologies, the demand intensity, the number of critical services, and the disruption model. Compared to several greedy approaches ISP performs better in terms of number of repaired components, and does not result in any demand loss. It performs very close to the optimal when the demand is low with respect to the supply network capacities, thanks to the ability of the algorithm to maximize sharing of repaired resources.</p>
+<p>【Keywords】:
+massive network disruption; Network recovery; flow restoration</p>
+<h2 id="Software-Defined Networks    3">Software-Defined Networks    3</h2>
+<h3 id="10. JURY: Validating Controller Actions in Software-Defined Networks.">10. JURY: Validating Controller Actions in Software-Defined Networks.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.19">Paper Link</a>】    【Pages】:109-120</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mahajan:Kshiteej">Kshiteej Mahajan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Poddar:Rishabh">Rishabh Poddar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dhawan:Mohan">Mohan Dhawan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mann:Vijay">Vijay Mann</a></p>
+<p>【Abstract】:
+Software-defined networks (SDNs) only logically centralize the control plane. In reality, SDN controllers are distributed entities, which may exhibit different behavior on event triggers. We identify several classes of faults that afflict an SDN controller cluster and demonstrate them on two enterprise SDN controllers, ONOS and OpenDaylight. We present JURY, a system to validate controller activities in a clustered SDN deployment, involving topological and forwarding state, without imposing any restrictions on the controller behavior. Our evaluation shows that JURY requires minimal changes to the SDN controllers for deployment, and is capable of validating controller actions in near real time with low performance overheads.</p>
+<p>【Keywords】:
+Validation; Software-Defined Network; Controller Cluster; High Availability</p>
+<h3 id="11. SDNShield: Reconciliating Configurable Application Permissions for SDN App Markets.">11. SDNShield: Reconciliating Configurable Application Permissions for SDN App Markets.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.20">Paper Link</a>】    【Pages】:121-132</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wen:Xitao">Xitao Wen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Bo">Bo Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Yan">Yan Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Chengchen">Chengchen Hu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Yi">Yi Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu_0001:Bin">Bin Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Xiaolin">Xiaolin Chen</a></p>
+<p>【Abstract】:
+The OpenFlow paradigm embraces third-party development efforts, and therefore suffers from potential attacks that usurp the excessive privileges of control plane applications (apps). Such privilege abuse could lead to various attacks impacting the entire administrative domain. In this paper, we present SDNShield, a permission control system that helps network administrators to express and enforce only the minimum required privileges to individual controller apps. SDNShield achieves this goal through (i) fine-grained SDN permission abstractions that allow accurate representation of app behavior boundary, (ii) automatic security policy reconciliation that incorporates security policies specified by administrators into the requested app permissions, and (iii) a lightweight thread-based controller architecture for controller/app isolation and reliable permission enforcement. Through prototype implementation, we verify its effectiveness against proof-of-concept attacks. Performance evaluation shows that SDNShield introduces negligible runtime overhead.</p>
+<p>【Keywords】:
+Access control; Software-defined networks; SDN Security</p>
+<h3 id="12. Can't Touch This: Consistent Network Updates for Multiple Policies.">12. Can't Touch This: Consistent Network Updates for Multiple Policies.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.21">Paper Link</a>】    【Pages】:133-143</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dudycz:Szymon">Szymon Dudycz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Ludwig:Arne">Arne Ludwig</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schmid:Stefan">Stefan Schmid</a></p>
+<p>【Abstract】:
+Computer networks such as the Internet or datacenter networks have become a a crucial infrastructure for many criticial services. Accordingly, it is important that such networks preserve correctness criteria, even during transitions from one correct configuration to a new correct configuration. This paper initiates the study of how to simultaneously update multiple routes in a Software-Defined Network (SDN) in a transiently consistent and efficient manner. In particular, we study the problem of minimizing the number of switch interactions, in this paper also called "touches". Our main result is a negative one: we rigorously prove that jointly optimizing multiple route updates in a consistent and efficient manner is NP-hard, alreadyfor two routing policies. However, we also present an efficient, polynomial-time algorithm that, given correct update schedules for individual policies, computes an optimal global schedule with minimal touches.</p>
+<p>【Keywords】:
+NP-Hardness; Scheduling; Graph Algorithms; Software-Defined Networking</p>
+<h2 id="Software Dependability    3">Software Dependability    3</h2>
+<h3 id="13. HSFI: Accurate Fault Injection Scalable to Large Code Bases.">13. HSFI: Accurate Fault Injection Scalable to Large Code Bases.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.22">Paper Link</a>】    【Pages】:144-155</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kouwe:Erik_van_der">Erik van der Kouwe</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tanenbaum:Andrew_S=">Andrew S. Tanenbaum</a></p>
+<p>【Abstract】:
+When software fault injection is used, faults are typically inserted at the binary or source level. The former is fast but provides poor fault accuracy while the latter cannot scale to large code bases because the program must be rebuilt for each experiment. Alternatives that avoid rebuilding incur large run-time overheads by applying fault injection decisions at run-time. HSFI, our new design, injects faults with all context information from the source level and applies fault injection decisions efficiently on the binary. It places markers in the original code that can be recognized after code generation. We implemented a tool according to the new design and evaluated the time taken per fault injection experiment when using operating systems as targets. We can perform experiments more quickly than other source-based approaches, achieving performance that come close to that of binary-level fault injection while retaining the benefits of source-level fault injection.</p>
+<p>【Keywords】:
+llvm; fault injection; software mutation; reliability</p>
+<h3 id="14. Making Fast Consensus Generally Faster.">14. Making Fast Consensus Generally Faster.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.23">Paper Link</a>】    【Pages】:156-167</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Peluso:Sebastiano">Sebastiano Peluso</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Turcu:Alexandru">Alexandru Turcu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Palmieri:Roberto">Roberto Palmieri</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Losa:Giuliano">Giuliano Losa</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ravindran:Binoy">Binoy Ravindran</a></p>
+<p>【Abstract】:
+New multi-leader consensus protocols leverage the Generalized Consensus specification to enable low latency, even load balancing, and high parallelism. However, these protocols introduce inherent costs with significant performance impact: they need quorums bigger than the minimum required to solve consensus and need to track dependency relations among proposals. In this paper we present M2PAXOS, an implementation of Generalized Consensus that provides fast decisions (i.e., delivery of a command in two communication delays) by leveraging quorums composed of a majority of nodes and by exploiting workload locality. M2PAXOS does not establish command dependencies based on conflicts, instead mapping nodes to accessed objects and enforcing that commands accessing the same objects be ordered by the same node. Our experimental evaluation confirms the effectiveness of M2PAXOS, gaining up to 7X over state-of-the-art Consensus and Generalized Consensus algorithms under partitioned data accesses and up to 5.5&#x00D7; using the TPC-C workload.</p>
+<p>【Keywords】:
+state machine replication; generalized consensus</p>
+<h3 id="15. ePVF: An Enhanced Program Vulnerability Factor Methodology for Cross-Layer Resilience Analysis.">15. ePVF: An Enhanced Program Vulnerability Factor Methodology for Cross-Layer Resilience Analysis.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.24">Paper Link</a>】    【Pages】:168-179</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Fang:Bo">Bo Fang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lu:Qining">Qining Lu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pattabiraman:Karthik">Karthik Pattabiraman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ripeanu:Matei">Matei Ripeanu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gurumurthi:Sudhanva">Sudhanva Gurumurthi</a></p>
+<p>【Abstract】:
+The Program Vulnerability Factor (PVF) has been proposed as a metric to understand the impact of hardware faults on software. The PVF is calculated by identifying the program bits required for architecturally correct execution (ACE bits). PVF, however, is conservative as it assumes that all erroneous executions are a major concern, not just those that result in silent data corruptions, and it also does not account for errorsthat are detected at runtime, i.e., lead to program crashes. A more discriminating metric can inform the choice of the appropriate resilience techniques with acceptable performance and energy overheads. This paper proposes ePVF, an enhancement of the original PVF methodology, which filters out the crash-causing bits from the ACE bits identified by the traditional PVF analysis. The ePVF methodology consists of an error propagation model that reasons about error propagation in the program, and a crash model that encapsulates the platform-specific characteristics for handling hardware exceptions. ePVF reduces the vulnerable bits estimated by the original PVF analysis by between 45% and 67% depending on the benchmark, and has high accuracy (89% recall, 92% precision) in identifying the crash-causing bits. We demonstrate the utility of ePVF by using it to inform selective protection of the most SDC-prone instructions in a program.</p>
+<p>【Keywords】:
+Cross-layer Analysis; PVF; Crash Model</p>
+<h2 id="Memory and Caches    3">Memory and Caches    3</h2>
+<h3 id="16. Methuselah Flash: Rewriting Codes for Extra Long Storage Lifetime.">16. Methuselah Flash: Rewriting Codes for Extra Long Storage Lifetime.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.25">Paper Link</a>】    【Pages】:180-191</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mappouras:Georgios">Georgios Mappouras</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vahid:Alireza">Alireza Vahid</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Calderbank:A=_Robert">A. Robert Calderbank</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sorin:Daniel_J=">Daniel J. Sorin</a></p>
+<p>【Abstract】:
+Motivated by embedded systems and datacenters that require long-life components, we extend the lifetime of Flash memory using rewriting codes that allow for multiple writes to a page before it needs to be erased. Although researchers have previously explored rewriting codes for this purpose, we make two significant contributions beyond prior work. First, we remove the assumption of idealized -- and unrealistically optimistic -- Flash cells used in prior work on endurance codes. Unfortunately, current Flash technology has a non-ideal interface, due to its underlying physical design, and does not, for example, allow all seemingly possible increases in a cell's level. We show how to provide the ideal multi-level cell interface, by developing a virtual Flash cell, and we evaluate its impact on existing endurance codes. Our second contribution is our development of novel endurance codes, called Methuselah Flash Codes (MFC), that provide better cost/lifetime trade-offs than previously studied codes.</p>
+<p>【Keywords】:
+Endurance; Flash memory; Coding; Lifetime</p>
+<h3 id="17. Enabling Deep Voltage Scaling in Delay Sensitive L1 Caches.">17. Enabling Deep Voltage Scaling in Delay Sensitive L1 Caches.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.26">Paper Link</a>】    【Pages】:192-202</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yan:Chao">Chao Yan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Joseph:Russ">Russ Joseph</a></p>
+<p>【Abstract】:
+Voltage scaling is one of the most effective techniques for providing power savings on a chip-wide basis. However, reducing supply voltage in the presence of process variation introduces significant reliability challenges for large SRAM arrays. In this work, we demonstrate that the emergence of SRAM failures in delay sensitive L1 caches presents significant impediments to voltage scaling. We show that increases in the L1 cache latency would have a detrimental impact on a processor's performance and power consumption at aggressively scaled voltages. We propose techniques for L1 instruction/data caches to enable deep voltage scaling without compromising the L1 cache latency. For the data cache, we employ fault-free windows to adaptively hold the likely accessed data using the fault-free words within each cache line. For the instruction cache, we avoid the addresses that map to defective words by relocating basic blocks. During high voltage operation, both L1 caches have full capability to support high-performance. During low voltage operation, our schemes reduce Vccmin below 400mV. Compared to a conventional cache with a Vccmin of 760mV, we reduce the energy per instruction by 64%.</p>
+<p>【Keywords】:
+low power; process variation; reliability; SRAM failures</p>
+<h3 id="18. ReadDuo: Constructing Reliable MLC Phase Change Memory through Fast and Robust Readout.">18. ReadDuo: Constructing Reliable MLC Phase Change Memory through Fast and Robust Readout.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.27">Paper Link</a>】    【Pages】:203-214</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Rujia">Rujia Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Youtao">Youtao Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Jun">Jun Yang</a></p>
+<p>【Abstract】:
+Phase change memory (PCM) has emerged as a promising non-volatile memory technology. Multi-level cell (MLC) PCM, while effectively reducing per bit fabrication cost, suffers from resistance drift based soft errors. It is challenging to construct reliable MLC chips that achieve high performance, high storage density, and low energy consumption simultaneously. In this paper, we propose ReadDuo, a fast and robust readout solution to address resistance drift in MLC PCM. We first integrate fast current sensing and resistance drift resilient voltage sensing, which exposes performance optimization opportunities without sacrificing reliability. We then devise last writes tracking and selective different write schemes to minimize performance and energy consumption overhead in scrubbing. Our experimental results show that ReadDuo achieves 37% improvement on average over existing solutions when considering performance, dynamic energy consumption, and storage density all together.</p>
+<p>【Keywords】:
+Resistance Drift; Phase Change Memories; Multi-level Cell</p>
+<h2 id="Hardware Errors Resiliency    3">Hardware Errors Resiliency    3</h2>
+<h3 id="19. Leveraging ECC to Mitigate Read Disturbance, False Reads and Write Faults in STT-RAM.">19. Leveraging ECC to Mitigate Read Disturbance, False Reads and Write Faults in STT-RAM.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.28">Paper Link</a>】    【Pages】:215-226</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Seyedzadeh:Seyed_Mohammad">Seyed Mohammad Seyedzadeh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Maddah:Rakan">Rakan Maddah</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jones:Alex_K=">Alex K. Jones</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Melhem:Rami_G=">Rami G. Melhem</a></p>
+<p>【Abstract】:
+Designing reliable systems using scaled Spin-Transfer Torque Random Access Memory (STT-RAM) has become a significant challenge as the memory technology feature size is scaled down. The introduction of a more prominent read disturbance is a key contributor in this reliability challenge. However, techniques to address read disturbance are often considered in a vacuum that assumes other concerns like transient read errors (false reads) and write faults do not occur. This paper studies several techniques that leverage ECC to mitigate persistent errors resulting from read disturbance and write faults of STT-RAM while still considering the impact of transient errors of false reads. In particular, we study three policies to enable better-than-conservative read disturbance mitigation. The first policy, write after error (WAE), uses ECC to detect errors and write back data to clear persistent errors. The second policy, write after persistent error (WAP), filters out false reads by reading a second time when an error is detected leading to trade-off between write and read energy. The third policy, write after error threshold (WAT), leaves cells with incorrect data behind (up to a threshold) when the number of errors is less than the ECC capability. To evaluate the effectiveness of the different schemes and compare with the simple previously proposed scheme of writing after every read (WAR), we model these policies using Markov processes. This approach allows the determination of appropriate bit error rates in the context of both persistent and transient errors to accurately estimate the system reliability and the energy consumption of different error correction approaches. Our evaluations show that each of these policies provides benefits for different error scenarios. Moreover some approaches can save energy by an average of 99.5%, while incurring the same reliability as other approaches.</p>
+<p>【Keywords】:
+ECC; STT-RAM; Markov Model; Persistent Error; Reliability</p>
+<h3 id="20. SuperGlue: IDL-Based, System-Level Fault Tolerance for Embedded Systems.">20. SuperGlue: IDL-Based, System-Level Fault Tolerance for Embedded Systems.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.29">Paper Link</a>】    【Pages】:227-238</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Song:Jiguo">Jiguo Song</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bloom:Gedare">Gedare Bloom</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Parmer:Gabriel">Gabriel Parmer</a></p>
+<p>【Abstract】:
+As the processor feature sizes shrink, mitigating faults in low level system services has become a critical aspect of dependable system design. In this paper we introduce SuperGlue, an interface description language (IDL) and compiler for recovery from transient faults in a component-based operating system. SuperGlue generates code for interface-driven recovery that uses commodity hardware isolation, micro-rebooting, and interface-directed fault recovery to provide predictable and efficient recovery from faults that impact low-level system services. SuperGlue decreases the amount of recovery code system designers need to implement by an order of magnitude, and replaces it with declarative specifications. We evaluate SuperGlue with a fault injection campaign in low-level system components (e.g., memory mapping manager and scheduler). Additionally, we evaluate the performance of SuperGlue in a web-server application. Results show that SuperGlue improves system reliability with only a small performance degradation of 11.84%.</p>
+<p>【Keywords】:
+Servers; Fault tolerance; Fault tolerant systems; Embedded systems; Transient analysis; Hardware; Instruction sets</p>
+<h3 id="21. PARBOR: An Efficient System-Level Technique to Detect Data-Dependent Failures in DRAM.">21. PARBOR: An Efficient System-Level Technique to Detect Data-Dependent Failures in DRAM.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.30">Paper Link</a>】    【Pages】:239-250</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Khan:Samira_Manabi">Samira Manabi Khan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Donghyuk">Donghyuk Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mutlu:Onur">Onur Mutlu</a></p>
+<p>【Abstract】:
+System-level detection and mitigation of DRAM failures offer a variety of system enhancements, such as better reliability, scalability, energy, and performance. Unfortunately, system-level detection is challenging for DRAM failures that depend on the data content of neighboring cells (data-dependent failures). DRAM vendors internally scramble/remap the system-level address space. Therefore, testing data-dependent failures using neighboring system-level addresses does not actually test the cells that are physically adjacent. In this work, we argue that one promising way to uncover data-dependent failures in the system is to determine the location of physically neighboring cells in the system address space. Unfortunately, if done naively, such a test takes 49 days to detect neighboring addresses even in a single memory row, making it infeasible in real systems. We develop PARBOR, an efficient system-level technique that determines the locations of the physically neighboring DRAM cells in the system address space and uses this information to detect data-dependent failures. To our knowledge, this is the first work that solves the challenge of detecting data-dependent failures in DRAM in the presence of DRAM-internal scrambling of system-level addresses. We experimentally demonstrate the effectiveness of PARBOR using 144 real DRAM chips from three major vendors. Our experimental evaluation shows that PARBOR 1) detects neighboring cell locations with only 66-90 tests, a 745,654X reduction compared to the naive test, and 2) uncovers 21.9% more failures compared to a random-pattern test that is unaware of the neighbor cell locations. We introduce a new mechanism that utilizes PARBOR to reduce refresh rate based on the data content of memory locations, thereby improving system performance and efficiency. We hope that our fast and efficient system-level detection technique enables other new ideas and mechanisms that improve the reliability, performance, and energy efficiency of DRAM-based memory systems.</p>
+<p>【Keywords】:
+Reliability; Testing; DRAM chips; Interference; Organizations; Capacitors</p>
+<h2 id="Dependability Applications    3">Dependability Applications    3</h2>
+<h3 id="22. Efficient Algorithm-Based Fault Tolerance for Sparse Matrix Operations.">22. Efficient Algorithm-Based Fault Tolerance for Sparse Matrix Operations.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.31">Paper Link</a>】    【Pages】:251-262</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Scholl:Alexander">Alexander Scholl</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Braun:Claus">Claus Braun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kochte:Michael_A=">Michael A. Kochte</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wunderlich:Hans=Joachim">Hans-Joachim Wunderlich</a></p>
+<p>【Abstract】:
+We propose a fault tolerance approach for sparse matrix operations that detects and implicitly locates errors in the results for efficient local correction. This approach reduces the runtime overhead for fault tolerance and provides high error coverage. Existing algorithm-based fault tolerance approaches for sparse matrix operations detect and correct errors, but they often rely on expensive error localization steps. General checkpointing schemes can induce large recovery cost for high error rates. For sparse matrix-vector multiplications, experimental results show an average reduction in runtime overhead of 43.8%, while the error coverage is on average improved by 52.2% compared to related work. The practical applicability is demonstrated in a case study using the iterative Preconditioned Conjugate Gradient solver. When scaling the error rate by four orders of magnitude, the average runtime overhead increases only by 31.3% compared to low error rates.</p>
+<p>【Keywords】:
+Online Error Localization; Fault Tolerance; Sparse Linear Algebra; ABFT</p>
+<h3 id="23. Formal Analysis for Dependable Supervisory Control and Data Acquisition in Smart Grids.">23. Formal Analysis for Dependable Supervisory Control and Data Acquisition in Smart Grids.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.32">Paper Link</a>】    【Pages】:263-274</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Rahman:Mohammad_Ashiqur">Mohammad Ashiqur Rahman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jakaria:A=_H=_M=">A. H. M. Jakaria</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Al=Shaer:Ehab">Ehab Al-Shaer</a></p>
+<p>【Abstract】:
+Smart grids provide innovative and efficient energy management services that offer operational reliability. The Supervisory Control and Data Acquisition (SCADA) system is a core component of a smart grid. Unlike the traditional cyber networks, these components consist of heterogeneous devices, such as intelligent electronic devices, programmable logic controllers, remote terminal units, control servers, routing and security devices, etc. SCADA devices communicate with one another under various communication protocols, physical media, and security properties. Failures or attacks on such networks have the potential of data unavailability and false data injection causing incorrect system estimations and control decisions leading to critical damages including power outages and destruction of equipment. In this work, we develop an automated security and resiliency analysis framework for SCADA in smart grids. This framework takes smart grid configurations and organizational security and resiliency requirements as inputs, formally models configurations and various security constraints, and verifies the dependability of the system under potential contingencies. We demonstrate the execution of this framework on an example problem. We also evaluate the scalability of the framework on synthetic SCADA systems.</p>
+<p>【Keywords】:
+formal verification; Smart grids; SCADA; security; resiliency</p>
+<h3 id="24. A Model-Based Approach to Support Safety-Related Decisions in the Petroleum Domain.">24. A Model-Based Approach to Support Safety-Related Decisions in the Petroleum Domain.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.33">Paper Link</a>】    【Pages】:275-286</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Montecchi:Leonardo">Leonardo Montecchi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Refsdal:Atle">Atle Refsdal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lollini:Paolo">Paolo Lollini</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bondavalli:Andrea">Andrea Bondavalli</a></p>
+<p>【Abstract】:
+Accidents on petroleum installations can have huge consequences, to mitigate the risk, a number of safety barriers are devised. Faults and unexpected events may cause barriers to temporarily deviate from their nominal state. For safety reasons, a work permit process is in place: decision makers accept or reject work permits based on the current state of barriers. However, this is difficult to estimate, as it depends on a multitude of physical, technical and human factors. Information obtained from different sources needs to be aggregated by humans, typically within a limited amount of time. In this paper we propose an approach to provide an automated decision support to the work permit system, which consists in the evaluation of quantitative measures of the risk associated with the execution of work. The approach relies on state-based stochastic models, which can be automatically composed based on the work permit to be examined.</p>
+<p>【Keywords】:
+model-based; safety analysis; barriers; petroleum; risk evaluation</p>
+<h2 id="Models    2">Models    2</h2>
+<h3 id="25. Mean Field Approximation of Uncertain Stochastic Models.">25. Mean Field Approximation of Uncertain Stochastic Models.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.34">Paper Link</a>】    【Pages】:287-298</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bortolussi:Luca">Luca Bortolussi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gast:Nicolas">Nicolas Gast</a></p>
+<p>【Abstract】:
+We consider stochastic models in presence of uncertainty, originating from lack of knowledge of parameters or by unpredictable effects of the environment. We focus on population processes, encompassing a large class of systems, from queueing networks to epidemic spreading. We set up a formal framework for imprecise stochastic processes, where some parameters are allowed to vary in time within a given domain, but with no further constraint. We then consider the limit behaviour of these systems as the population size goes to infinity. We prove that this limit is given by a differential inclusion that can be constructed from the (imprecise) drift. We provide results both for the transient and the steady state behaviour. Finally, we discuss different approaches to compute bounds of the so-obtained differential inclusions, proposing an effective control-theoretic method based on Pontryagin principle for transient bounds. This provides an efficient approach for the analysis and design of large-scale uncertain and imprecise stochastic models. The theoretical results are accompanied by an in-depth analysis of an epidemic model and a queueing network. These examples demonstrate the applicability of the numerical methods and the tightness of the approximation.</p>
+<p>【Keywords】:
+differential inclusions; stochastic models; population; parameter estimation; mean-field approximation</p>
+<h3 id="26. Uncovering Dynamic Fault Trees.">26. Uncovering Dynamic Fault Trees.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.35">Paper Link</a>】    【Pages】:299-310</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Junges:Sebastian">Sebastian Junges</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Guck:Dennis">Dennis Guck</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Katoen:Joost=Pieter">Joost-Pieter Katoen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stoelinga:Mari=euml=lle">Mariëlle Stoelinga</a></p>
+<p>【Abstract】:
+Fault tree analysis is a widespread industry standard for assessing system reliability. Standard (static) fault trees model the failure behaviour of systems in dependence of their component failures. To overcome their limited expressive power, common dependability patterns, such as spare management, functional dependencies, and sequencing are considered. A plethora of such dynamic fault trees (DFTs) have been defined in the literature. They differ in e.g., the types of gates (elements), their meaning, expressive power, the way in which failures propagate, how elements are claimed and activated, and how spare races are resolved. This paper systematically uncovers these differences and categorises existing DFT variants. As these differences may have huge impact on the reliability assessment, awareness of these impacts is important when using DFT modelling and analysis.</p>
+<p>【Keywords】:
+Reliability; Fault tree analysis; Dynamic Fault Trees; Semantics</p>
+<h2 id="Data Centers Dependability    3">Data Centers Dependability    3</h2>
+<h3 id="27. Power-Capping Aware Checkpointing: On the Interplay Among Power-Capping, Temperature, Reliability, Performance, and Energy.">27. Power-Capping Aware Checkpointing: On the Interplay Among Power-Capping, Temperature, Reliability, Performance, and Energy.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.36">Paper Link</a>】    【Pages】:311-322</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Tang:Kun">Kun Tang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tiwari:Devesh">Devesh Tiwari</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gupta:Saurabh">Saurabh Gupta</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Huang:Ping">Ping Huang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lu:Qiqi">Qiqi Lu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Engelmann:Christian">Christian Engelmann</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/He:Xubin">Xubin He</a></p>
+<p>【Abstract】:
+Checkpoint and restart mechanisms have been widely used in large scientific simulation applications to make forward progress in case of failures. However, none of the prior works have considered the interaction of power-constraint with temperature, reliability, performance, and checkpointing interval. It is not clear how power-capping may affect optimal checkpointing interval. What are the involved reliability, performance, and energy trade-offs? In this paper, we develop a deep understanding about the interaction between power-capping and scientific applications using checkpoint/restart as resilience mechanism, and propose a new model for the optimal checkpointing interval (OCI) under power-capping. Our study reveals several interesting, and previously unknown, insights about how power-capping affects the reliability, energy consumption, performance.</p>
+<p>【Keywords】:
+Checkpointing; Benchmark testing; Reliability; Computational modeling; Power demand; Supercomputers; Data models</p>
+<h3 id="28. Reconsidering Single Failure Recovery in Clustered File Systems.">28. Reconsidering Single Failure Recovery in Clustered File Systems.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.37">Paper Link</a>】    【Pages】:323-334</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Shen:Zhirong">Zhirong Shen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shu:Jiwu">Jiwu Shu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Patrick_P=_C=">Patrick P. C. Lee</a></p>
+<p>【Abstract】:
+How to improve the performance of single failure recovery has been an active research topic because of its prevalence in large-scale storage systems. We argue that when erasure coding is deployed in a cluster file system (CFS), existing single failure recovery designs are limited in different aspects: neglecting the bandwidth diversity property in a CFS architecture, targeting specific erasure code constructions, and no special treatment on load balancing during recovery. In this paper, we reconsider the single failure recovery problem in a CFS setting, and propose CAR, a cross-rack-aware recovery algorithm. For each stripe, CAR finds a recovery solution that retrieves data from the minimum number of racks. It also reduces the amount of cross-rack repair traffic by performing intra-rack data aggregation prior to cross-rack transmission. Furthermore, by considering multi-stripe recovery, CAR balances the amount of cross-rack repair traffic across multiple racks. Evaluation results show that CAR can effectively reduce the amount of cross-rack repair traffic and the resulting recovery time.</p>
+<p>【Keywords】:
+Maintenance engineering; Automobiles; Fault tolerance; Fault tolerant systems; Encoding; Bandwidth; File systems</p>
+<h3 id="29. Managing Data Center Tickets: Prediction and Active Sizing.">29. Managing Data Center Tickets: Prediction and Active Sizing.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.38">Paper Link</a>】    【Pages】:335-346</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/x/Xue:Ji">Ji Xue</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Birke:Robert">Robert Birke</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Lydia_Y=">Lydia Y. Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Smirni:Evgenia">Evgenia Smirni</a></p>
+<p>【Abstract】:
+Performance ticket handling is an expensive operation in highly virtualized cloud data centers where physical boxes host multiple virtual machines (VMs). A large body of tickets arise from the resource usage warnings, e.g., CPU and RAM usages that exceed predefined thresholds. The transient nature of CPU and RAM usage as well as their strong correlation across time among co-located VMs drastically increase the complexity in ticket management. Based on a large resource usage data collected from production data centers, amount to 6K physical machines and more than 80K VMs, we first discover patterns of spatial dependency among co-located virtual resources. Leveraging our key findings, we develop an Active Ticket Managing(ATM) system that consists of (i) a novel time series prediction methodology and (ii) a proactive VM resizing policy for CPU and RAM resources for co-located VMs on a physical box that aims to drastically reduce usage tickets. ATM exploits the spatial dependency across multiple resources of co-located VMs for usage prediction and proactive VM resizing. Evaluation results on traces of 6K physical boxes and a prototype of a MediaWiki system show that ATM is able to achieve excellent prediction accuracy of a large number of VM time series and significant usage ticket reduction, i.e., up to 60%, at low computational overhead.</p>
+<p>【Keywords】:
+Random access memory; Time series analysis; Correlation; Production; Predictive models; Computational modeling; Online banking</p>
+<h2 id="Security Sessions">Security Sessions</h2>
+<h2 id="Privacy    3">Privacy    3</h2>
+<h3 id="30. A Privacy Analysis of Google and Yandex Safe Browsing.">30. A Privacy Analysis of Google and Yandex Safe Browsing.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.39">Paper Link</a>】    【Pages】:347-358</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gerbet:Thomas">Thomas Gerbet</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kumar_0001:Amrit">Amrit Kumar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lauradoux:C=eacute=dric">Cédric Lauradoux</a></p>
+<p>【Abstract】:
+Google and Yandex Safe Browsing are popular services included in many web browsers to prevent users from visiting phishing or malware websites. If these services protect their users from losing private information, they also require that their servers receive browsing information on the very same users. In this paper, we analyze Google and Yandex Safe Browsing services from a privacy perspective. We quantify the privacy provided by these services by analyzing the possibility of re-identifying URLs visited by a client. We thereby challenge Google's privacy policy which claims thatGoogle cannot recover URLs visited by its users. Our analysis and experimental results show that Google and Yandex Safe Browsing canpotentially be used as a tool to track specific classes of individuals. Additionally, our investigations on the data currently included in Google and Yandex Safe Browsing provides a concrete set of URLs/domains that can be re-identified without much effort.</p>
+<p>【Keywords】:
+Tracking; Safe Browsing; Privacy</p>
+<h3 id="31. PUPPIES: Transformation-Supported Personalized Privacy Preserving Partial Image Sharing.">31. PUPPIES: Transformation-Supported Personalized Privacy Preserving Partial Image Sharing.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.40">Paper Link</a>】    【Pages】:359-370</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/He:Jianping">Jianping He</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Bin">Bin Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kong:Deguang">Deguang Kong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bao:Xuan">Xuan Bao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Na">Na Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jin:Hongxia">Hongxia Jin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kesidis:George">George Kesidis</a></p>
+<p>【Abstract】:
+Sharing photos through Online Social Networks is an increasingly popular fashion. However, it poses a seriousthreat to end users as private information in the photos maybe inappropriately shared with others without their consent. This paper proposes a design and implementation of a system using a dynamic privacy preserving partial image sharing technique (namely PUPPIES), which allows data owners to stipulate specific private regions (e.g., face, SSN number) in an image and correspondingly set different privacy policies for each user. As a generic technique and system, PUPPIES targets at threats about over-privileged and unauthorized sharing of photos at photo service provider (e.g., Flicker, Facebook, etc) side. To this end, PUPPIES leverages the image perturbation technique to "encrypt" the sensitive areas in the original images, and therefore it can naturally support popular image transformations (such as cropping, rotation) and is well compatible with most image processing libraries. The extensive experiments on 19,000 images demonstrate that PUPPIES is very effective for privacy protection and incurs only a small computational overhead. In addition, PUPPIES offers high flexibility for different privacy settings, and is very robust to different types of privacy attacks.</p>
+<p>【Keywords】:
+Privacy; Cryptography; Discrete cosine transforms; Image processing; Cloud computing; Face; Facebook</p>
+<h3 id="32. Modeling Privacy and Tradeoffs in Multichannel Secret Sharing Protocols.">32. Modeling Privacy and Tradeoffs in Multichannel Secret Sharing Protocols.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.41">Paper Link</a>】    【Pages】:371-382</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Pohly:Devin_J=">Devin J. Pohly</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McDaniel:Patrick_D=">Patrick D. McDaniel</a></p>
+<p>【Abstract】:
+Privacy is an important aspect of network communications, but privacy protocols require an investment of network resources. For any such protocol to be of use, we need to understand quantitatively how much privacy to expect, as well as the tradeoff between privacy and other network properties, for any given configuration of networks and parameters. We develop a practical privacy measure and protocol model for multichannel secret sharing protocols which integrates privacy and measurable network properties, deriving optimality results for the overall privacy and performance of these protocols. After proving these results, we evaluate the effectiveness of our model by providing a reference implementation and comparing its behavior to the optimality results derived from the model. In our benchmarks, the behavior of this proof-of-concept protocol matched that which is predicted by our model, furthermore, our results demonstrate the feasibility of implementing secret sharing protocols which transmit at a rate within 3-4% of optimal. This model and its results allow us to understand quantitatively the tradeoffs between privacy and network performance in secret-sharing based protocols.</p>
+<p>【Keywords】:
+Privacy; Protocols; Delays; Encryption; Throughput; Receivers</p>
+<h2 id="Cyber-physical Systems Security    3">Cyber-physical Systems Security    3</h2>
+<h3 id="33. On False Data Injection Attacks Against Railway Traction Power Systems.">33. On False Data Injection Attacks Against Railway Traction Power Systems.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.42">Paper Link</a>】    【Pages】:383-394</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lakshminarayana:Subhash">Subhash Lakshminarayana</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Teo:Zhan=Teng">Zhan-Teng Teo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tan:Rui">Rui Tan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yau:David_K=_Y=">David K. Y. Yau</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Arboleya:Pablo">Pablo Arboleya</a></p>
+<p>【Abstract】:
+Modern urban railways extensively use computerized-sensing and control technologies to achieve safe, reliable, and well-timed operations. However, the use of these technologies may provide a convenient leverage to cyber-attackers who have bypassed the air gaps and aim at causing safety incidents and service disruptions. In this paper, we study false data injection (FDI) attacks against railways' traction power systems (TPSes). Specifically, we analyze two types of FDI attacks on the train-borne voltage, current, and position sensor measurements -- which we call efficiency attack and safety attack -- that (i) maximize the system's total power consumption and (ii) mislead trains' local voltages to exceed given safety-critical thresholds, respectively. To counteract, we develop a global attack detection system that serializes a bad data detector anda novel secondary attack detector designed based on unique TPS characteristics. With intact position data of trains, our detection system can effectively detect the FDI attacks ontrains' voltage and current measurements even if the attacker has full and accurate knowledge of the TPS, attack detection, and real-time system state. Extensive simulations driven by realistic running profiles of trains verify that a TPS setup isvulnerable to the FDI attacks, but these attacks can be detected effectively by the proposed global monitoring.</p>
+<p>【Keywords】:
+Global Attack Detection; Railway Traction Power Systems; False Data Injection Attacks</p>
+<h3 id="34. Targeted Attacks on Teleoperated Surgical Robots: Dynamic Model-Based Detection and Mitigation.">34. Targeted Attacks on Teleoperated Surgical Robots: Dynamic Model-Based Detection and Mitigation.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.43">Paper Link</a>】    【Pages】:395-406</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Alemzadeh:Homa">Homa Alemzadeh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Daniel">Daniel Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Xiao">Xiao Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kesavadas:Thenkurussi">Thenkurussi Kesavadas</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kalbarczyk:Zbigniew_T=">Zbigniew T. Kalbarczyk</a> ; <a href="http://dblp.uni-trier.de/pers/hd/i/Iyer:Ravishankar_K=">Ravishankar K. Iyer</a></p>
+<p>【Abstract】:
+This paper demonstrates targeted cyber-physical attacks on teleoperated surgical robots. These attacks exploit vulnerabilities in the robot's control system to infer a critical time during surgery to drive injection of malicious control commands to the robot. We show that these attacks can evade the safety checks of the robot, lead to catastrophic consequences in the physical system (e.g., sudden jumps of robotic arms or system's transition to an unwanted halt state), and cause patient injury, robot damage, or system unavailability in the middle of a surgery. We present a model-based analysis framework that can estimate the consequences of control commands through real-time computation of robot's dynamics. Our experiments on the RAVEN II robot demonstrate that this framework can detect and mitigate the malicious commands before they manifest in the physical system with an average accuracy of 90%.</p>
+<p>【Keywords】:
+Cyber-physical systems; Targeted Attacks; Malware; Telerobotics; Robotic Surgery; RAVEN II robot</p>
+<h3 id="35. F-DETA: A Framework for Detecting Electricity Theft Attacks in Smart Grids.">35. F-DETA: A Framework for Detecting Electricity Theft Attacks in Smart Grids.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.44">Paper Link</a>】    【Pages】:407-418</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Krishna:Varun_Badrinath">Varun Badrinath Krishna</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Kiryung">Kiryung Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Weaver:Gabriel_A=">Gabriel A. Weaver</a> ; <a href="http://dblp.uni-trier.de/pers/hd/i/Iyer:Ravishankar_K=">Ravishankar K. Iyer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sanders:William_H=">William H. Sanders</a></p>
+<p>【Abstract】:
+Electricity theft is a major concern for utilities all over the world, and leads to billions of dollars in losses every year. Although improving the communication capabilities between consumer smart meters and utilities can enable many smart grid features, these communications can be compromised in ways that allow an attacker to steal electricity. Such attacks have recently begun to occur, so there is a real and urgent need for a framework to defend against them. In this paper, we make three major contributions. First, we develop what is, to our knowledge, the most comprehensive classification of electricity theft attacks in the literature. These attacks are classified based on whether they can circumvent security measures currently used in industry, and whether they are possible under different electricity pricing schemes. Second, we propose a theft detector based on Kullback-Leibler (KL) divergence to detect cleverly-crafted electricity theft attacks that circumvent detectors proposed in related work. Finally, we evaluate our detector using false data injections based on real smart meter data. For the different attack classes, we show that our detector dramatically mitigates electricity theft in comparison to detectors in prior work.</p>
+<p>【Keywords】:
+Smart meters; Pricing; Smart grids; Detectors; Industries; Security; Electric variables measurement</p>
+<h2 id="Operating Systems Security and Privacy    3">Operating Systems Security and Privacy    3</h2>
+<h3 id="36. Secure Identification of Actively Executed Code on a Generic Trusted Component.">36. Secure Identification of Actively Executed Code on a Generic Trusted Component.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.45">Paper Link</a>】    【Pages】:419-430</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/v/Vavala:Bruno">Bruno Vavala</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Neves:Nuno">Nuno Neves</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Steenkiste:Peter">Peter Steenkiste</a></p>
+<p>【Abstract】:
+Code identity is a fundamental concept for authenticated operations in Trusted Computing. In today's approach, the overhead of assigning an identity to a protected service increases linearly with the service code size. In addition, service code size continues to grow to accommodate richer services. This trend negatively impacts either the security or the efficiency of current protocols for trusted executions. We present an execution protocol that breaks the dependency between the code size of the service and the identification overhead, without affecting security, and that works on different trusted components. This is achieved by computing an identity for each of the code modules that are actually executed, and then building a robust chain of trust that links them together for efficient verification. We implemented and applied our protocol to a widely-deployed database engine, improving query-processing time up to 2&#x00D7; compared to the monolithic execution of the engine.</p>
+<p>【Keywords】:
+generic component; trusted computing; code identity; active code</p>
+<h3 id="37. Secure and Efficient Multi-Variant Execution Using Hardware-Assisted Process Virtualization.">37. Secure and Efficient Multi-Variant Execution Using Hardware-Assisted Process Virtualization.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.46">Paper Link</a>】    【Pages】:431-442</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Koning:Koen">Koen Koning</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bos:Herbert">Herbert Bos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Giuffrida:Cristiano">Cristiano Giuffrida</a></p>
+<p>【Abstract】:
+Memory error exploits rank among the most serious security threats. Of the plethora of memory error containment solutions proposed over the years, most have proven to be too weak in practice. Multi-Variant eXecution (MVX) solutions can potentially detect arbitrary memory error exploits via divergent behavior observed in diversified program variants running in parallel. However, none have found practical applicability in security due to their non-trivial performance limitations. In this paper, we present MvArmor, an MVX system that uses hardware-assisted process virtualization to monitor variants for divergent behavior in an efficient yet secure way. To provide comprehensive protection against memory error exploits, MvArmor relies on a new MVX-aware variant generation strategy. The system supports user-configurable security policies to tune the performance-security trade-off. Our analysis shows that MvArmor can counter many classes of modern attacks at the cost of modest performance overhead, even with conservative detection policies.</p>
+<p>【Keywords】:
+Security; Multi-variant Execution; Virtualization; Randomization; Memory errors; Binary armoring</p>
+<h3 id="38. Overhaul: Input-Driven Access Control for Better Privacy on Traditional Operating Systems.">38. Overhaul: Input-Driven Access Control for Better Privacy on Traditional Operating Systems.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.47">Paper Link</a>】    【Pages】:443-454</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/o/Onarlioglu:Kaan">Kaan Onarlioglu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Robertson_0002:William">William Robertson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kirda:Engin">Engin Kirda</a></p>
+<p>【Abstract】:
+The prevailing security model for OSes focuses on isolating users from each other, however, the changing computing landscape has led to the extension of traditional access control models for single-user devices. Modern OSes for mobile devices such as iOS and Android have taken the opportunity provided by these new platforms to introduce permission systems in which users can manage access to sensitive resources during application installation or runtime. One drawback of similar efforts on desktop environments is that applications must be rewritten with this security model in mind, which hinders traditional OSes from enjoying the benefits of user-driven access control. We present a novel architecture for retrofitting a dynamic, input-driven access control model into traditional OSes. In this model, access to privacy-sensitive resources is mediated based on the temporal proximity of user interactions to access requests, and requests are communicated back to the user via visual alerts. We present a prototype implementation and demonstrate how input-driven access control can be realized for resources such as the microphone, camera, clipboard, and screen contents. Our approach is transparent to applications and users, and incurs no discernible performance overhead.</p>
+<p>【Keywords】:
+Access control; Computational modeling; Kernel; Hardware; Cameras</p>
+<h2 id="Anomaly Detection and Exploits    3">Anomaly Detection and Exploits    3</h2>
+<h3 id="39. Kizzle: A Signature Compiler for Detecting Exploit Kits.">39. Kizzle: A Signature Compiler for Detecting Exploit Kits.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.48">Paper Link</a>】    【Pages】:455-466</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Stock:Ben">Ben Stock</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Livshits:Benjamin">Benjamin Livshits</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zorn:Benjamin_G=">Benjamin G. Zorn</a></p>
+<p>【Abstract】:
+In recent years, the drive-by malware space has undergone significant consolidation. Today, the most common source of drive-by downloads are so-called exploit kits (EKs). This paper presents Kizzle, the first prevention technique specifically designed for finding exploit kits. Our analysis shows that while the JavaScript delivered by kits varies greatly, the unpacked code varies much less, due to the kits authors' code reuse between versions. Ironically, this well-regarded software engineering practice allows us to build a scalable and precise detector that is able to quickly respond to superficial but frequent changes in EKs. Kizzle is able to generate anti-virus signatures for detecting EKs, which compare favorably to manually created ones. Kizzle is highly responsive and can generate new signatures within hours. Our experiments show that Kizzle produces high-accuracy signatures. When evaluated over a four-week period, false-positive rates for Kizzle are under 0.03%, while the false-negative rates are under 5%.</p>
+<p>【Keywords】:
+signature generation; malware; exploit kit</p>
+<h3 id="40. A Sharper Sense of Self: Probabilistic Reasoning of Program Behaviors for Anomaly Detection with Context Sensitivity.">40. A Sharper Sense of Self: Probabilistic Reasoning of Program Behaviors for Anomaly Detection with Context Sensitivity.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.49">Paper Link</a>】    【Pages】:467-478</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Kui">Kui Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tian:Ke">Ke Tian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yao:Danfeng">Danfeng Yao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ryder:Barbara_G=">Barbara G. Ryder</a></p>
+<p>【Abstract】:
+Program anomaly detection models legitimate behaviors of complex software and detects deviations during execution. Behavior deviations may be caused by malicious exploits, design flaws, or operational errors. Probabilistic detection computes the likelihood of occurrences of observed call sequences. However, maintaining context sensitivity in detection incurs high modeling complexity and runtime overhead. We present a new anomaly-based detection technique that is both probabilistic and 1-level calling-context sensitive. We describe a matrix representation and clustering-based solution for model reduction, specifically reducing the number of hidden states in a special hidden Markov model whose parameters are initialized with program analysis. Our extensive experimental evaluation confirms the significantly improved detection accuracy and shows that attacker's ability to conduct code-reuse exploits is substantially limited.</p>
+<p>【Keywords】:
+context sensitivity; Anomaly detection; hidden Markov model; static program analysis</p>
+<h3 id="41. BAYWATCH: Robust Beaconing Detection to Identify Infected Hosts in Large-Scale Enterprise Networks.">41. BAYWATCH: Robust Beaconing Detection to Identify Infected Hosts in Large-Scale Enterprise Networks.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.50">Paper Link</a>】    【Pages】:479-490</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Xin">Xin Hu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jang:Jiyong">Jiyong Jang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stoecklin:Marc_Ph=">Marc Ph. Stoecklin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Ting">Ting Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schales:Douglas_Lee">Douglas Lee Schales</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kirat:Dhilung">Dhilung Kirat</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rao:Josyula_R=">Josyula R. Rao</a></p>
+<p>【Abstract】:
+Sophisticated cyber security threats, such as advanced persistent threats, rely on infecting end points within a targeted security domain and embedding malware. Typically, such malware periodically reaches out to the command and control infrastructures controlled by adversaries. Such callback behavior, called beaconing, is challenging to detect as (a) detection requires long-term temporal analysis of communication patterns at several levels of granularity, (b) malware authors employ various strategies to hide beaconing behavior, and (c) it is also employed by legitimate applications (such as updates checks). In this paper, we develop a comprehensive methodology to identify stealthy beaconing behavior from network traffic observations. We use an 8-step filtering approach to iteratively refine and eliminate legitimate beaconing traffic and pinpoint malicious beaconing cases for in-depth investigation and takedown. We provide a systematic evaluation of our core beaconing detection algorithm and conduct a large-scale evaluation of web proxy data (more than 30 billion events) collected over a 5-month period at a corporate network comprising over 130,000 end-user devices. Our findings indicate that our approach reliably exposes malicious beaconing behavior, which may be overlooked by traditional security mechanisms.</p>
+<p>【Keywords】:
+Signal Processing; Beaconing Detection; Anomaly Detection; Intrusion Detection</p>
+<h2 id="Network Security    2">Network Security    2</h2>
+<h3 id="42. DomainProfiler: Discovering Domain Names Abused in Future.">42. DomainProfiler: Discovering Domain Names Abused in Future.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.51">Paper Link</a>】    【Pages】:491-502</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chiba:Daiki">Daiki Chiba</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yagi:Takeshi">Takeshi Yagi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Akiyama:Mitsuaki">Mitsuaki Akiyama</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shibahara:Toshiki">Toshiki Shibahara</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yada:Takeshi">Takeshi Yada</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mori:Tatsuya">Tatsuya Mori</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Goto:Shigeki">Shigeki Goto</a></p>
+<p>【Abstract】:
+Cyber attackers abuse the domain name system (DNS) to mystify their attack ecosystems, they systematically generate a huge volume of distinct domain names to make it infeasible for blacklisting approaches to keep up with newly generated malicious domain names. As a solution to this problem, we propose a system for discovering malicious domain names that will likely be abused in future. The key idea with our system is to exploit temporal variation patterns (TVPs) of domain names. The TVPs of domain names include information about how and when a domain name has been listed in legitimate/popular and/or malicious domain name lists. On the basis of this idea, our system actively collects DNS logs, analyzes their TVPs, and predicts whether a given domain name will be used for malicious purposes. Our evaluation revealed that our system can predict malicious domain names 220 days beforehand with a true positive rate of 0.985.</p>
+<p>【Keywords】:
+temporal variation pattern; malicious domain name; DNS</p>
+<h3 id="43. FTP: The Forgotten Cloud.">43. FTP: The Forgotten Cloud.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.52">Paper Link</a>】    【Pages】:503-513</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Springall:Drew">Drew Springall</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Durumeric:Zakir">Zakir Durumeric</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Halderman:J=_Alex">J. Alex Halderman</a></p>
+<p>【Abstract】:
+Once pervasive, the File Transfer Protocol (FTP) has been largely supplanted by HTTP, SCP, and BitTorrent for transferring data between hosts. Yet, in a comprehensive analysis of the FTP ecosystem as of 2015, we find that there are still more than 13~million FTP servers in the IPv4 address space, 1.1~million of which allow "anonymous" (public) access. These anonymous FTP servers leak sensitive information, such as tax documents and cryptographic secrets. More than 20,000 FTP servers allow public write access, which has facilitated malicious actors' use of free storage as well as malware deployment and click-fraud attacks. We further investigate real-world attacks by deploying eight FTP honeypots, shedding light on how attackers are abusing and exploiting vulnerable servers. We conclude with lessons and recommendations for securing FTP.</p>
+<p>【Keywords】:
+Servers; Protocols; Security; Ports (Computers); Ecosystems; Robots; Malware</p>
+<h2 id="Android Security    3">Android Security    3</h2>
+<h3 id="44. Practical, Formal Synthesis and Automatic Enforcement of Security Policies for Android.">44. Practical, Formal Synthesis and Automatic Enforcement of Security Policies for Android.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.53">Paper Link</a>】    【Pages】:514-525</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bagheri:Hamid">Hamid Bagheri</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sadeghi:Alireza">Alireza Sadeghi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Behrouz:Reyhaneh_Jabbarvand">Reyhaneh Jabbarvand Behrouz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Malek:Sam">Sam Malek</a></p>
+<p>【Abstract】:
+As the dominant mobile computing platform, Android has become a prime target for cyber-security attacks. Many of these attacks are manifested at the application level, and through the exploitation of vulnerabilities in apps downloaded from the popular app stores. Increasingly, sophisticated attacks exploit the vulnerabilities in multiple installed apps, making it extremely difficult to foresee such attacks, as neither the app developers nor the store operators know a priori which apps will be installed together. This paper presents an approach that allows the end-users to safeguard a given bundle of apps installed on their device from such attacks. The approach, realized in a tool, called SEPAR, combines static analysis with lightweight formal methods to automatically infer security-relevant properties from a bundle of apps. It then uses a constraint solver to synthesize possible security exploits, from which fine-grained security policies are derived and automatically enforced to protect a given device. In our experiments with over 4,000 Android apps, SEPAR has proven to be highly effective at detecting previously unknown vulnerabilities as well as preventing their exploitation.</p>
+<p>【Keywords】:
+Security; Androids; Humanoid robots; Smart phones; Software; Analytical models; Metals</p>
+<h3 id="45. Don't Just BYOD, Bring-Your-Own-App Too! Protection via Virtual Micro Security Perimeters.">45. Don't Just BYOD, Bring-Your-Own-App Too! Protection via Virtual Micro Security Perimeters.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.54">Paper Link</a>】    【Pages】:526-537</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Salles=Loustau:Gabriel">Gabriel Salles-Loustau</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Garcia:Luis">Luis Garcia</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Joshi:Kaustubh_R=">Kaustubh R. Joshi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zonouz:Saman_A=">Saman A. Zonouz</a></p>
+<p>【Abstract】:
+Mobile devices are increasingly becoming a melting pot of different types of data ranging from sensitive corporate documents to commercial media to personal content produced and shared via online social networks. While it is desirable for such diverse content to be accessible from the same device via a unified user experience and through a rich plethora of mobile apps, ensuring that this data remains protected has become challenging. Even though different data types have very different security and privacy needs and accidental instances of data leakage are common, today's mobile operating systems include few, if any, facilities for fine-grained data protection and isolation. In this paper, we present SWIRLS, an Android-based mobile OS that provides a rich policy-based information-flow data protection abstraction for mobile apps to support BYOD (bring-your-own-device) use cases. SWIRLS allows security and privacy policies to be attached to individual pieces of data contained in signed and encrypted capsules, and enforces these policies as the data flows through the device. Unlike current BYOD solutions like VMs and containers that create duplication and cognitive overload, SWIRLS provides a single environment that allows users to access content belonging to different security contexts using the same applications without fear of inadverdant or malicious data leakage. SWIRLS also unburdens app developers from having to worry about security policies, and provides APIs through which they can create seamless multi-security-context user interfaces. To implement it's abstractions, SWIRLS develops a cryptographically protected capsule distribution and installation scheme, enhances Taintdroid-based taint-tracking mechanisms to support efficient kernel and user-space security policy enforcement, implements techniques for persisting security context along with data, and provides transparent security-context switching mechanisms. Using our Android-based prototype (&gt;25K LOC), we show a number of data protection use-cases such as isolation of personal and work data, limiting document sharing and preventing leakage based on document classification, and security policies based on geo-and time-fencing. Our experiments show that SWIRLS imposes a very minimal overhead in both battery consumption and performance.</p>
+<p>【Keywords】:
+Context; Mobile communication; Data protection; Electronic mail; Companies; Cryptography</p>
+<h3 id="46. Can We Trust the Privacy Policies of Android Apps?">46. Can We Trust the Privacy Policies of Android Apps?</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.55">Paper Link</a>】    【Pages】:538-549</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yu:Le">Le Yu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Luo:Xiapu">Xiapu Luo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Xule">Xule Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang_0001:Tao">Tao Zhang</a></p>
+<p>【Abstract】:
+Recent years have witnessed the sharp increase of malicious apps that steal users' personal information. To address users' concerns about privacy risks, more and more apps are accompanied with privacy policies written in natural language because it is difficult for users to infer an app's behaviors according to the required permissions. However, little is known whether these privacy policies are trustworthy or not. It is worth noting that a questionable privacy policy may result from careless preparation by an app developer or intentional deception by an attacker. In this paper, we conduct the first systematic study on privacy policy by proposing a novel approach to automatically identify three kinds of problems in privacy policy. After tackling several challenging issues, we realize our approach in a system, named PPChecker, and evaluate it with real apps and privacy policies. The experimental results show that PPChecker can effectively identify questionable privacy policies with high precision. Moreover, applying PPChecker to 1,197 popular apps, we found that 282 apps (i.e., 23.6%) have at least one kind of problems. This study sheds light on the research of improving and regulating apps' privacy policies.</p>
+<p>【Keywords】:
+Privacy; Data privacy; Androids; Humanoid robots; Mobile communication; Force; Natural languages</p>
+<h2 id="Malware    3">Malware    3</h2>
+<h3 id="47. Repackage-Proofing Android Apps.">47. Repackage-Proofing Android Apps.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.56">Paper Link</a>】    【Pages】:550-561</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Luo:Lannan">Lannan Luo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fu:Yu">Yu Fu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Dinghao">Dinghao Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Sencun">Sencun Zhu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu_0005:Peng">Peng Liu</a></p>
+<p>【Abstract】:
+App repackaging has become a severe threat to theAndroid ecosystem. While various protection techniques, such as watermarking and repackaging detection, have been proposed, a defense that stops repackaged apps from working on user devices, i.e., repackage-proofing, is missing. We propose a technique that builds a reliable and stealthy repackage-proofing capability into Android apps. A large number of detection nodes are inserted into the original app without incurring much overhead, each is woven into the surrounding code to blur itself. Once repackaging is detected, a response node injects a failure in the form of delayed malfunctions, making it difficult to trace back. The response nodes and detection nodes form high-degree connections and communicate through stealthy communication channels, such that upon detection several of the many response nodes are selected stochastically to take actions, which further obfuscates and enhances the protection. We have built a prototype. The evaluation shows that the technique is effective and efficient.</p>
+<p>【Keywords】:
+obfuscation; Android apps; repackaging; tamper-proofing</p>
+<h3 id="48. Measuring the Role of Greylisting and Nolisting in Fighting Spam.">48. Measuring the Role of Greylisting and Nolisting in Fighting Spam.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.57">Paper Link</a>】    【Pages】:562-571</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Pagani:Fabio">Fabio Pagani</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Astis:Matteo_De">Matteo De Astis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Graziano:Mariano">Mariano Graziano</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lanzi:Andrea">Andrea Lanzi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Balzarotti:Davide">Davide Balzarotti</a></p>
+<p>【Abstract】:
+Spam has been largely studied in the past years from different perspectives but, unfortunately, it is still an open problem and a lucrative and active business for criminals and bot herders. While several countermeasures have been proposed and deployed in the past decade, their impact and effectiveness is not always clear. In particular, on top of the most common content-and sender-based anti-spam techniques, two minor approaches are popular among system administrators to cope with this annoying problem: greylisting and nolisting. These techniques exploit known features of the Simple Mail Transfer Protocol (SMTP) protocol that are not often respected by spambots. This assumption makes these two countermeasures really simple to adopt and, at least in theory, quite effective. In this paper we present the first comprehensive study of nolisting and greylisting, in which we analyze these spam countermeasures from different perspectives. First, we measure their world-wide deployment and provide insights from their distribution. Second, we measure their effectiveness against areal dataset of malware samples responsible to generate over 70% of the global spam traffic. Finally, we measure the impact of these two defensive mechanisms on the delivery of normal emails. Our study provides a unique and valuable perspective on two of the most innovative and atypical anti-spam systems. Our findings may guide system administrators and security experts to better assess their anti-spam infrastructure and shed some light on myths about greylisting and nolisting.</p>
+<p>【Keywords】:
+Botnet; Spam; Greylisting; Nolisting</p>
+<h3 id="49. Malware Slums: Measurement and Analysis of Malware on Traffic Exchanges.">49. Malware Slums: Measurement and Analysis of Malware on Traffic Exchanges.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.58">Paper Link</a>】    【Pages】:572-582</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yousaf:Salman">Salman Yousaf</a> ; <a href="http://dblp.uni-trier.de/pers/hd/i/Iqbal:Umar">Umar Iqbal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Farooqi:Shehroze">Shehroze Farooqi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Ahmad:Raza">Raza Ahmad</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shafiq:Muhammad_Zubair">Muhammad Zubair Shafiq</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zaffar:Fareed">Fareed Zaffar</a></p>
+<p>【Abstract】:
+Auto-surf and manual-surf traffic exchanges are an increasingly popular way of artificially generating website traffic. Previous research in this area has focused on the makeup, usage, and monetization of underground traffic exchanges. In this paper, we analyze the role of traffic exchanges as a vector for malware propagation. We conduct a measurement study of nine auto-surf and manual-surf traffic exchanges over several months. We present a first of its kind analysis of the different types of malware that are propagated through these traffic exchanges. We find that more than 26% of the URLs surfed on traffic exchanges contain malicious content. We further analyze different categories of malware encountered on traffic exchanges, including blacklisted domains, malicious JavaScript, malicious Flash, and malicious shortened URLs.</p>
+<p>【Keywords】:
+Traffic Exchanges; Malware</p>
+<h2 id="Passwords    2">Passwords    2</h2>
+<h3 id="50. Secure Point-of-Care Medical Diagnostics via Trusted Sensing and Cyto-Coded Passwords.">50. Secure Point-of-Care Medical Diagnostics via Trusted Sensing and Cyto-Coded Passwords.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.59">Paper Link</a>】    【Pages】:583-594</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Le:Tuan">Tuan Le</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Salles=Loustau:Gabriel">Gabriel Salles-Loustau</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Najafizadeh:Laleh">Laleh Najafizadeh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Javanmard:Mehdi">Mehdi Javanmard</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zonouz:Saman_A=">Saman A. Zonouz</a></p>
+<p>【Abstract】:
+Trustworthy and usable healthcare requires not only effective disease diagnostic procedures to ensure delivery of rapid and accurate outcomes, but also lightweight user privacy-preserving capabilities for resource-limited medical sensing devices. In this paper, we present MedSen, a portable, inexpensive and secure smartphone-based biomarker1 detection sensor to provide users with easy-to-use real-time disease diagnostic capabilities without the need for in-person clinical visits. To minimize the deployment cost and size without sacrificing the diagnostic accuracy, security and time requirement, MedSen operates as a dongle to the user's smartphone and leverages the smartphone's computational capabilities for its real-time data processing. From the security viewpoint, MedSen introduces a new hardware-level trusted sensing framework, built in the sensor, to encrypt measured analog signals related to cell counting in the patient's blood sample, at the data acquisition point. To protect the user privacy, MedSen's in-sensor encryption scheme conceals the user's private information before sending them out for cloud-based medical diagnostics analysis. The analysis outcomes are sent back to Med-Sen for decryption and user notifications. Additionally, MedSen introduces cyto-coded passwords to authenticate the user to the cloud server without the need for explicit screen password entry. Each user's password constitutes a predetermined number of synthetic beads with different dielectric characteristics. MedSen mixes the password beads with the user's blood before submitting the data for diagnostics analysis. The cloud server authenticates the user based on the statistics and characteristics of the beads with the blood sample, and links the user's identity to the encrypted analysis outcomes. We have implemented a real-world working prototype of MedSen through bio-sensor fabrication and smartphone app (Android) implementations. Our results show that MedSen can reliably classify different users based on their cyto-coded passwords with high accuracy. MedSen's built-in analog signal encryption guarantees the user's privacy by considering the smartphone and cloud server possibly untrusted (curious but honest). MedSen's end-to-end time requirement for disease diagnostics is approximately 0.2 seconds on average.</p>
+<p>【Keywords】:
+Electrodes; Medical diagnostic imaging; Diseases; Blood; Encryption; Servers</p>
+<h3 id="51. fuzzyPSM: A New Password Strength Meter Using Fuzzy Probabilistic Context-Free Grammars.">51. fuzzyPSM: A New Password Strength Meter Using Fuzzy Probabilistic Context-Free Grammars.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.60">Paper Link</a>】    【Pages】:595-606</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Ding">Ding Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/He:Debiao">Debiao He</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cheng:Haibo">Haibo Cheng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Ping">Ping Wang</a></p>
+<p>【Abstract】:
+To provide timely feedbacks to users, nearly every respectable Internet service now imposes a password strength meter (PSM) upon user registration or password change. It is a rare bit of good news in password research that well-designed PSMs do help improve the strength of user-chosen passwords. However, leading PSMs in the industrial world (e.g., Zxcvbn, KeePSM and NIST PSM) are mainly composed of simple heuristic rules and found to be highly inaccurate, while state-of-the-art PSMs from academia (e.g., probabilistic context-free grammar based ones and Markov-based ones) are still far from satisfactory, especially incompetent at gauging weak passwords. As preventing weak passwords is the primary goal of any PSM, this means that existing PSMs largely fail to serve their purpose. To fill this gap, in this paper we propose a novel PSM that is grounded on real user behavior. Our user survey reveals that when choosing passwords for a new web service, most users (77.38%) simply retrieve one of their existing passwords from memory and then reuse (or slightly modify) it. This is in vast contrast to the seemingly intuitive yet unrealistic assumption (often implicitly) made in most of the existing PSMs that, when user registers, a whole new password is constructed by mixing segments of letter, digit and/or symbol or by combining n-grams. To model users' realistic behaviors, we use passwords leaked from a less sensitiveservice as our base dictionary and another list of relatively strong passwords leaked from a sensitive service as our training dictionary, and determine how mangling rules are employed by users to construct passwords for new services. This process automatically creates a fuzzy probabilistic context-free grammar (PCFG) and gives rise to our fuzzy-PCFG-based meter, fuzzyPSM. It can react dynamically to changes in how users choose passwords and is evaluated by comparisons with five representative PSMs. Extensive experiments on 11 real-world password lists show that fuzzyPSM, in general, outperforms all its counterparts, especially accurate in telling apart weak passwords and suitable for services where online guessing attacks prevail.</p>
+<p>【Keywords】:
+Probabilistic context-free grammar; Password authentication; Password strength meter; Online guessing</p>
+<h2 id="Encryption and Security vs. Performance    2">Encryption and Security vs. Performance    2</h2>
+<h3 id="52. Balancing Security and Performance for Agility in Dynamic Threat Environments.">52. Balancing Security and Performance for Agility in Dynamic Threat Environments.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.61">Paper Link</a>】    【Pages】:607-617</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Winterrose:Michael_L=">Michael L. Winterrose</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Carter_0001:Kevin_M=">Kevin M. Carter</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wagner:Neal">Neal Wagner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Streilein:William_W=">William W. Streilein</a></p>
+<p>【Abstract】:
+In cyber security, achieving the desired balance between system security and system performance in dynamic threat environments is a long-standing open challenge for cyber defenders. Typically an increase in system security comes at the price of decreased system performance, and vice versa, easily resulting in systems that are misaligned to operator specified requirements for system security and performance as the threat environment evolves. We develop an online, reinforcement learning based methodology to automatically discover and maintain desired operating postures in security-performance space even as the threat environment changes. We demonstrate the utility of our approach and discover parameters enabling an agile response to a dynamic adversary in a simulated security game involving prototype cyber moving target defenses.</p>
+<p>【Keywords】:
+adaptive strategy; cyber security; reinforcement learning; Q-learning; moving target</p>
+<h3 id="53. Rekeying for Encrypted Deduplication Storage.">53. Rekeying for Encrypted Deduplication Storage.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.62">Paper Link</a>】    【Pages】:618-629</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Jingwei">Jingwei Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/q/Qin:Chuan">Chuan Qin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Patrick_P=_C=">Patrick P. C. Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li_0002:Jin">Jin Li</a></p>
+<p>【Abstract】:
+Rekeying refers to an operation of replacing an existing key with a new key for encryption. It renews security protection, so as to protect against key compromise and enable dynamic access control in cryptographic storage. However, it is non-trivial to realize efficient rekeying in encrypted deduplication storage systems, which use deterministic content-derived encryption keys to allow deduplication on ciphertexts. We design and implement REED, a rekeying-aware encrypted deduplication storage system. REED builds on a deterministic version of all-or-nothing transform (AONT), such that it enables secure and lightweight rekeying, while preserving the deduplication capability. We propose two REED encryption schemes that trade between performance and security, and extend REED for dynamic access control. We implement a REED prototype with various performance optimization techniques. Our trace-driven testbed evaluation shows that our REED prototype maintains high performance and storage efficiency.</p>
+<p>【Keywords】:
+Maximum likelihood estimation; Encryption; Cloud computing; Genomics; Bioinformatics</p>
+<h2 id="PER Sessions">PER Sessions</h2>
+<h2 id="Practical Experience Reports I    2">Practical Experience Reports I    2</h2>
+<h3 id="54. Equipping WAP with WEAPONS to Detect Vulnerabilities: Practical Experience Report.">54. Equipping WAP with WEAPONS to Detect Vulnerabilities: Practical Experience Report.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.63">Paper Link</a>】    【Pages】:630-637</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Medeiros:Iberia">Iberia Medeiros</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Neves:Nuno_Ferreira">Nuno Ferreira Neves</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Correia:Miguel">Miguel Correia</a></p>
+<p>【Abstract】:
+Although security starts to be taken into account during software development, the tendency for source code to contain vulnerabilities persists. Open source static analysis tools provide a sensible approach to mitigate this problem. However, these tools are programmed to detect a specific set of vulnerabilities and they are often difficult to extend to detect new ones. WAP is a recent popular open source tool that detects vulnerabilities in the source code of web applications written in PHP. The paper addresses the difficulty of extending these tools by proposing a modular and extensible version of the WAP tool, equipping it with "weapons" to detect (and correct) new vulnerability classes. The new version of the tool was evaluated with seven new vulnerability classes using web applications and plugins of the widely-adopted WordPress content management system. The experimental results show that this extensibility allows WAP to find many new (zero-day) vulnerabilities.</p>
+<p>【Keywords】:
+security; Web applications; software security; input validation vulnerabilities; source code analysis; false positives; automatic protection; data mining; modularity</p>
+<h3 id="55. Characterizing the Consistency of Online Services (Practical Experience Report).">55. Characterizing the Consistency of Online Services (Practical Experience Report).</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.64">Paper Link</a>】    【Pages】:638-645</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Freitas:Filipe">Filipe Freitas</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Leit=atilde=o:Jo=atilde=o">João Leitão</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pregui=ccedil=a:Nuno_M=">Nuno M. Preguiça</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rodrigues:Rodrigo">Rodrigo Rodrigues</a></p>
+<p>【Abstract】:
+While several proposals for the specification and implementation of various consistency models exist, little is known about what is the consistency currently offered by online services with millions of users. Such knowledge is important, not only because it allows for setting the right expectations and justifying the behavior observed by users, but also because it can be used for improving the process of developing applications that use APIs offered by such services. To fill this gap, this paper presents a measurement study of the consistency of the APIs exported by four widely used Internet services, the Facebook Feed, Facebook Groups, Blogger, and Google+. To conduct this study, our work (1) proposes definitions for a set of relevant consistency properties, (2) develops a simple, yet generic methodology comprising a small number of tests, which probe these services from a user perspective, and try to uncover consistency anomalies that are key to our definitions, and (3) reports on the analysis of the data obtained from running these tests for a period of several weeks. Our measurement study shows that some of these services do exhibit consistency anomalies, including some behaviors that may appear counter-intuitive for users, such as the lack of session guarantees for write monotonicity.</p>
+<p>【Keywords】:
+Internet online services; Session guarantees; consistency; measurement study</p>
+<h2 id="Practical Experience Reports II    3">Practical Experience Reports II    3</h2>
+<h3 id="56. ELZAR: Triple Modular Redundancy Using Intel AVX (Practical Experience Report).">56. ELZAR: Triple Modular Redundancy Using Intel AVX (Practical Experience Report).</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.65">Paper Link</a>】    【Pages】:646-653</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kuvaiskii:Dmitrii">Dmitrii Kuvaiskii</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Oleksenko:Oleksii">Oleksii Oleksenko</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bhatotia:Pramod">Pramod Bhatotia</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Felber:Pascal">Pascal Felber</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fetzer:Christof">Christof Fetzer</a></p>
+<p>【Abstract】:
+Instruction-Level Redundancy (ILR) is a well-known approach to tolerate transient CPU faults. It replicates instructions in a program and inserts periodic checks to detect and correct CPU faults using majority voting, which essentially requires three copies of each instruction and leads to high performance overheads. As SIMD technology can operate simultaneously on several copies of the data, it appears to be a good candidate for decreasing these overheads. To verify this hypothesis, we propose ELZAR, a compiler framework that transforms unmodified multithreaded applications to support triple modular redundancy using Intel AVX extensions for vectorization. Our experience with several benchmark suites and real-world case-studies yields mixed results: while SIMD may be beneficial for some workloads, e.g., CPU-intensive ones with many floating-point operations, it exposes higher overhead than ILR in many applications we tested.</p>
+<p>【Keywords】:
+SIMD; Fault Tolerance; Hardware faults</p>
+<h3 id="57. An Evaluation Study on Log Parsing and Its Use in Log Mining.">57. An Evaluation Study on Log Parsing and Its Use in Log Mining.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.66">Paper Link</a>】    【Pages】:654-661</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/He:Pinjia">Pinjia He</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Jieming">Jieming Zhu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/He:Shilin">Shilin He</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Jian">Jian Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lyu:Michael_R=">Michael R. Lyu</a></p>
+<p>【Abstract】:
+Logs, which record runtime information of modern systems, are widely utilized by developers (and operators) in system development and maintenance. Due to the ever-increasing size of logs, data mining models are often adopted to help developers extract system behavior information. However, before feeding logs into data mining models, logs need to be parsed by a log parser because of their unstructured format. Although log parsing has been widely studied in recent years, users are still unaware of the advantages of different log parsers nor the impact of them on subsequent log mining tasks. Thus they often re-implement or even re-design a new log parser, which would be time-consuming yet redundant. To address this issue, in this paper, we study four log parsers and package them into a toolkit to allow their reuse. In addition, we obtain six insightful findings by evaluating the performance of the log parsers on five datasets with over ten million raw log messages, while their effectiveness on a real-world log mining task has been thoroughly examined.</p>
+<p>【Keywords】:
+Data mining; Runtime; Vocabulary; Computer science; Maintenance engineering; Data models; Software systems</p>
+<h3 id="58. Reliability-Centered Maintenance of the Electrically Insulated Railway Joint via Fault Tree Analysis: A Practical Experience Report.">58. Reliability-Centered Maintenance of the Electrically Insulated Railway Joint via Fault Tree Analysis: A Practical Experience Report.</h3>
+<p>【<a href="http://dx.doi.org/10.1109/DSN.2016.67">Paper Link</a>】    【Pages】:662-669</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Ruijters:Enno">Enno Ruijters</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Guck:Dennis">Dennis Guck</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Noort:Martijn_van">Martijn van Noort</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stoelinga:Mari=euml=lle">Mariëlle Stoelinga</a></p>
+<p>【Abstract】:
+Maintenance is an important way to increase system dependability: timely inspections, repairs and renewals can significantly increase a system's reliability, availability and life time. At the same time, maintenance incurs costs and planned downtime. Thus, good maintenance planning has to balance between these factors. In this paper, we study the effect of different maintenance strategies on the electrically insulated railway joint (EI-joint), a critical asset in railroad tracks for train detection, and a relative frequent cause for train disruptions. Together with experts in maintenance engineering, we have modeled the EI-joint as a fault maintenance tree (FMT), i.e. a fault tree augmented with maintenance aspects. We show how complex maintenance concepts, such as condition-based maintenance with periodic inspections, are naturally modeled by FMTs, and how several key performance indicators, such as the system reliability, number of failures, and costs, can be analysed. The faithfulness of quantitative analyses heavily depend on the accuracy of the parameter values in the models. Here, we have been in the unique situation that extensive data could be collected, both from incident registration databases, as well as from interviews with domain experts from several companies. This made that we could construct a model that faithfully predicts the expected number of failures at system level. Our analysis shows that that the current maintenance policy is close to cost-optimal. It is possible to increase joint reliability, e.g. by performing more inspections, but the additional maintenance costs outweigh the reduced cost of failures.</p>
+<p>【Keywords】:
+Maintenance; Reliability; Fault Tree Analysis; Fault Trees</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="https://github.com/huntercmd/ccf"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>

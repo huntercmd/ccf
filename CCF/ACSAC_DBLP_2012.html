@@ -1,0 +1,567 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/skin.js"></script>
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/classie.js"></script>
+
+<!-- This is for Mathjax -->
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#28. ACSAC 2012:Orlando, FL, USA">28. ACSAC 2012:Orlando, FL, USA</a><ul>
+<li><a href="#Paper Num: 46 || Session Num: 17">Paper Num: 46 || Session Num: 17</a></li>
+<li><a href="#Web security    3">Web security    3</a><ul>
+<li><a href="#1. JSand: complete client-side sandboxing of third-party JavaScript without browser modifications.">1. JSand: complete client-side sandboxing of third-party JavaScript without browser modifications.</a></li>
+<li><a href="#2. One year of SSL internet measurement.">2. One year of SSL internet measurement.</a></li>
+<li><a href="#3. Dissecting ghost clicks: ad fraud via misdirected human clicks.">3. Dissecting ghost clicks: ad fraud via misdirected human clicks.</a></li>
+</ul>
+</li>
+<li><a href="#Mobile security    3">Mobile security    3</a><ul>
+<li><a href="#4. Permission evolution in the Android ecosystem.">4. Permission evolution in the Android ecosystem.</a></li>
+<li><a href="#5. Practicality of accelerometer side channels on smartphones.">5. Practicality of accelerometer side channels on smartphones.</a></li>
+<li><a href="#6. Analysis of the communication between colluding applications on modern smartphones.">6. Analysis of the communication between colluding applications on modern smartphones.</a></li>
+</ul>
+</li>
+<li><a href="#Hardware security    3">Hardware security    3</a><ul>
+<li><a href="#7. Enabling trusted scheduling in embedded systems.">7. Enabling trusted scheduling in embedded systems.</a></li>
+<li><a href="#8. TRESOR-HUNT: attacking CPU-bound encryption.">8. TRESOR-HUNT: attacking CPU-bound encryption.</a></li>
+<li><a href="#9. When hardware meets software: a bulletproof solution to forensic memory acquisition.">9. When hardware meets software: a bulletproof solution to forensic memory acquisition.</a></li>
+</ul>
+</li>
+<li><a href="#Passwords    3">Passwords    3</a><ul>
+<li><a href="#10. Tapas: design, implementation, and usability evaluation of a password manager.">10. Tapas: design, implementation, and usability evaluation of a password manager.</a></li>
+<li><a href="#11. On automated image choice for secure and usable graphical passwords.">11. On automated image choice for secure and usable graphical passwords.</a></li>
+<li><a href="#12. Building better passwords using probabilistic techniques.">12. Building better passwords using probabilistic techniques.</a></li>
+</ul>
+</li>
+<li><a href="#Botnets    2">Botnets    2</a><ul>
+<li><a href="#13. Cloud-based push-styled mobile botnets: a case study of exploiting the cloud to device messaging service.">13. Cloud-based push-styled mobile botnets: a case study of exploiting the cloud to device messaging service.</a></li>
+<li><a href="#14. Disclosure: detecting botnet command and control servers through large-scale NetFlow analysis.">14. Disclosure: detecting botnet command and control servers through large-scale NetFlow analysis.</a></li>
+</ul>
+</li>
+<li><a href="#Classic book    1">Classic book    1</a><ul>
+<li><a href="#15. Security economics: a personal perspective.">15. Security economics: a personal perspective.</a></li>
+</ul>
+</li>
+<li><a href="#Invited essayist    1">Invited essayist    1</a><ul>
+<li><a href="#16. Trust engineering: rejecting the tyranny of the weakest link.">16. Trust engineering: rejecting the tyranny of the weakest link.</a></li>
+</ul>
+</li>
+<li><a href="#Authentication    3">Authentication    3</a><ul>
+<li><a href="#17. SensorSift: balancing sensor data privacy and utility in automated face understanding.">17. SensorSift: balancing sensor data privacy and utility in automated face understanding.</a></li>
+<li><a href="#18. Biometric authentication on a mobile device: a study of user effort, error and task disruption.">18. Biometric authentication on a mobile device: a study of user effort, error and task disruption.</a></li>
+<li><a href="#19. BetterAuth: web authentication revisited.">19. BetterAuth: web authentication revisited.</a></li>
+</ul>
+</li>
+<li><a href="#Code analysis techniques    3">Code analysis techniques    3</a><ul>
+<li><a href="#20. Using memory management to detect and extract illegitimate code for malware analysis.">20. Using memory management to detect and extract illegitimate code for malware analysis.</a></li>
+<li><a href="#21. Down to the bare metal: using processor features for binary analysis.">21. Down to the bare metal: using processor features for binary analysis.</a></li>
+<li><a href="#22. Augmenting vulnerability analysis of binary code.">22. Augmenting vulnerability analysis of binary code.</a></li>
+</ul>
+</li>
+<li><a href="#Cloud security    3">Cloud security    3</a><ul>
+<li><a href="#23. ThinAV: truly lightweight mobile cloud-based anti-malware.">23. ThinAV: truly lightweight mobile cloud-based anti-malware.</a></li>
+<li><a href="#24. Abusing cloud-based browsers for fun and profit.">24. Abusing cloud-based browsers for fun and profit.</a></li>
+<li><a href="#25. Iris: a scalable cloud file system with efficient integrity checks.">25. Iris: a scalable cloud file system with efficient integrity checks.</a></li>
+</ul>
+</li>
+<li><a href="#Intrusion detection    3">Intrusion detection    3</a><ul>
+<li><a href="#26. Malicious PDF detection using metadata and structural features.">26. Malicious PDF detection using metadata and structural features.</a></li>
+<li><a href="#27. Jarhead analysis and detection of malicious Java applets.">27. Jarhead analysis and detection of malicious Java applets.</a></li>
+<li><a href="#28. Hi-Fi: collecting high-fidelity whole-system provenance.">28. Hi-Fi: collecting high-fidelity whole-system provenance.</a></li>
+</ul>
+</li>
+<li><a href="#Policy    3">Policy    3</a><ul>
+<li><a href="#29. Transforming commodity security policies to enforce Clark-Wilson integrity.">29. Transforming commodity security policies to enforce Clark-Wilson integrity.</a></li>
+<li><a href="#30. CodeShield: towards personalized application whitelisting.">30. CodeShield: towards personalized application whitelisting.</a></li>
+<li><a href="#31. Using automated model analysis for reasoning about security of web protocols.">31. Using automated model analysis for reasoning about security of web protocols.</a></li>
+</ul>
+</li>
+<li><a href="#Protection mechanisms    3">Protection mechanisms    3</a><ul>
+<li><a href="#32. Securing untrusted code via compiler-agnostic binary rewriting.">32. Securing untrusted code via compiler-agnostic binary rewriting.</a></li>
+<li><a href="#33. Code shredding: byte-granular randomization of program layout for detecting code-reuse attacks.">33. Code shredding: byte-granular randomization of program layout for detecting code-reuse attacks.</a></li>
+<li><a href="#34. Distributed application tamper detection via continuous software updates.">34. Distributed application tamper detection via continuous software updates.</a></li>
+</ul>
+</li>
+<li><a href="#Malware analysis and classification    3">Malware analysis and classification    3</a><ul>
+<li><a href="#35. VAMO: towards a fully automated malware clustering validity analysis.">35. VAMO: towards a fully automated malware clustering validity analysis.</a></li>
+<li><a href="#36. Towards network containment in malware analysis systems.">36. Towards network containment in malware analysis systems.</a></li>
+<li><a href="#37. Lines of malicious code: insights into the malicious software industry.">37. Lines of malicious code: insights into the malicious software industry.</a></li>
+</ul>
+</li>
+<li><a href="#Software security    3">Software security    3</a><ul>
+<li><a href="#38. Generalized vulnerability extrapolation using abstract syntax trees.">38. Generalized vulnerability extrapolation using abstract syntax trees.</a></li>
+<li><a href="#39. XIAO: tuning code clones at hands of engineers in practice.">39. XIAO: tuning code clones at hands of engineers in practice.</a></li>
+<li><a href="#40. Self-healing multitier architectures using cascading rescue points.">40. Self-healing multitier architectures using cascading rescue points.</a></li>
+</ul>
+</li>
+<li><a href="#Social networking security    3">Social networking security    3</a><ul>
+<li><a href="#41. Twitter games: how successful spammers pick targets.">41. Twitter games: how successful spammers pick targets.</a></li>
+<li><a href="#42. All your face are belong to us: breaking Facebook's social authentication.">42. All your face are belong to us: breaking Facebook's social authentication.</a></li>
+<li><a href="#43. Enabling private conversations on Twitter.">43. Enabling private conversations on Twitter.</a></li>
+</ul>
+</li>
+<li><a href="#Systems security    3">Systems security    3</a><ul>
+<li><a href="#44. Separation virtual machine monitors.">44. Separation virtual machine monitors.</a></li>
+<li><a href="#45. Efficient protection of kernel data structures via object partitioning.">45. Efficient protection of kernel data structures via object partitioning.</a></li>
+<li><a href="#46. TrueErase: per-file secure deletion for the storage data path.">46. TrueErase: per-file secure deletion for the storage data path.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="28. ACSAC 2012:Orlando, FL, USA">28. ACSAC 2012:Orlando, FL, USA</h1>
+<p><a href="http://dl.acm.org/citation.cfm?id=2420950">28th Annual Computer Security Applications Conference, ACSAC 2012, Orlando, FL, USA, 3-7 December 2012.</a> ACM
+【<a href="http://dblp.uni-trier.de/db/conf/acsac/acsac2012.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 46 || Session Num: 17">Paper Num: 46 || Session Num: 17</h2>
+<ul>
+<li><a href="#Authentication    3">Authentication    3</a></li>
+<li><a href="#Botnets    2">Botnets    2</a></li>
+<li><a href="#Classic book    1">Classic book    1</a></li>
+<li><a href="#Cloud security    3">Cloud security    3</a></li>
+<li><a href="#Code analysis techniques    3">Code analysis techniques    3</a></li>
+<li><a href="#Hardware security    3">Hardware security    3</a></li>
+<li><a href="#Intrusion detection    3">Intrusion detection    3</a></li>
+<li><a href="#Invited essayist    1">Invited essayist    1</a></li>
+<li><a href="#Malware analysis and classification    3">Malware analysis and classification    3</a></li>
+<li><a href="#Mobile security    3">Mobile security    3</a></li>
+<li><a href="#Passwords    3">Passwords    3</a></li>
+<li><a href="#Policy    3">Policy    3</a></li>
+<li><a href="#Protection mechanisms    3">Protection mechanisms    3</a></li>
+<li><a href="#Social networking security    3">Social networking security    3</a></li>
+<li><a href="#Software security    3">Software security    3</a></li>
+<li><a href="#Systems security    3">Systems security    3</a></li>
+<li><a href="#Web security    3">Web security    3</a></li>
+</ul>
+<h2 id="Web security    3">Web security    3</h2>
+<h3 id="1. JSand: complete client-side sandboxing of third-party JavaScript without browser modifications.">1. JSand: complete client-side sandboxing of third-party JavaScript without browser modifications.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420952">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Agten:Pieter">Pieter Agten</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Acker:Steven_Van">Steven Van Acker</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Brondsema:Yoran">Yoran Brondsema</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Phung:Phu_H=">Phu H. Phung</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Desmet:Lieven">Lieven Desmet</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Piessens:Frank">Frank Piessens</a></p>
+<p>【Abstract】:
+The inclusion of third-party scripts in web pages is a common practice. A recent study has shown that more than half of the Alexa top 10000 sites include scripts from more than 5 different origins. However, such script inclusions carry risks, as the included scripts operate with the privileges of the including website. We propose JSand, a server-driven but client-side JavaScript sandboxing framework. JSand requires no browser modifications: the sandboxing framework is implemented in JavaScript and is delivered to the browser by the websites that use it. Enforcement is done entirely at the client side: JSand enforces a server-specified policy on included scripts without requiring server-side filtering or rewriting of scripts. Most importantly, JSand is complete: access to all resources is mediated by the sandbox. We describe the design and implementation of JSand, and we show that it is secure, backwards compatible, and that it performs sufficiently well.</p>
+<p>【Keywords】:
+sandbox; script inclusion; security architecture; web application security; web mashups</p>
+<h3 id="2. One year of SSL internet measurement.">2. One year of SSL internet measurement.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420953">Paper Link</a>】    【Pages】:11-20</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Levillain:Olivier">Olivier Levillain</a> ; <a href="http://dblp.uni-trier.de/pers/hd/=/=Eacute=balard:Arnaud">Arnaud Ébalard</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Morin:Benjamin">Benjamin Morin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Debar:Herv=eacute=">Hervé Debar</a></p>
+<p>【Abstract】:
+Over the years, SSL/TLS has become an essential part of internet security. As such, it should offer robust and state-of-the-art security, in particular for HTTPS, its first application. Theoretically, the protocol allows for a trade-off between secure algorithms and decent performance. Yet in practice, servers do not always support the latest version of the protocol, nor do they all enforce strong cryptographic algorithms. To assess the quality of HTTPS servers in the wild, we enumerated HTTPS servers on the internet in July 2010 and July 2011. We sent several stimuli to the servers to gather detailed information. We then analysed some parameters of the collected data and looked at how they evolved. We also focused on two subsets of TLS hosts within our measure: the trusted hosts (possessing a valid certificate at the time of the probing) and the EV hosts (presenting a trusted, so-called Extended Validation certificate). Our contributions rely on this methodology: the stimuli we sent, the criteria we studied and the subsets we focused on. Moreover, even if EV servers present a somewhat improved certificate quality over the TLS hosts, we show they do not offer overall high quality sessions, which could and should be improved.</p>
+<p>【Keywords】:
+HTTPS; SSL/TLS; X.509; certificates; internet measure</p>
+<h3 id="3. Dissecting ghost clicks: ad fraud via misdirected human clicks.">3. Dissecting ghost clicks: ad fraud via misdirected human clicks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420954">Paper Link</a>】    【Pages】:21-30</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Alrwais:Sumayah_A=">Sumayah A. Alrwais</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gerber:Alexandre">Alexandre Gerber</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dunn:Christopher_W=">Christopher W. Dunn</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Spatscheck:Oliver">Oliver Spatscheck</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gupta:Minaxi">Minaxi Gupta</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Osterweil:Eric">Eric Osterweil</a></p>
+<p>【Abstract】:
+FBI's Operation Ghost Click, the largest cybercriminal takedown in history, recently took down an ad fraud infrastructure that affected 4 million users and made its owners 14 million USD over a period of four years. The attackers hijacked clicks and ad impressions on victim machines infected by a DNS changer malware to earn ad revenue fraudulently. We experimented with the attack infrastructure when it was in operation and present a detailed account of the attackers' modus operandi. We also study the impact of this attack on real-world users and find that 37 subscriber lines were impacted in our data set. Also, 20 ad networks and 257 legitimate Web content publishers lost ad revenue while the attackers earned revenue convincing a dozen other ad networks that their ads were served on websites with real visitors. Our work expands the understanding of modalities of ad fraud and could help guide appropriate defense strategies.</p>
+<p>【Keywords】:</p>
+<h2 id="Mobile security    3">Mobile security    3</h2>
+<h3 id="4. Permission evolution in the Android ecosystem.">4. Permission evolution in the Android ecosystem.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420956">Paper Link</a>】    【Pages】:31-40</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wei:Xuetao">Xuetao Wei</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gomez:Lorenzo">Lorenzo Gomez</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Neamtiu:Iulian">Iulian Neamtiu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Faloutsos:Michalis">Michalis Faloutsos</a></p>
+<p>【Abstract】:
+Android uses a system of permissions to control how apps access sensitive devices and data stores. Unfortunately, we have little understanding of the evolution of Android permissions since their inception (2008). Is the permission model allowing the Android platform and apps to become more secure? In this paper, we present arguably the first long-term study that is centered around both permission evolution and usage, of the entire Android ecosystem (platform, third-party apps, and pre-installed apps). First, we study the Android platform to see how the set of permissions has evolved; we find that this set tends to grow, and the growth is not aimed towards providing finer-grained permissions but rather towards offering access to new hardware features; a particular concern is that the set of Dangerous permissions is increasing. Second, we study Android third-party and pre-installed apps to examine whether they follow the principle of least privilege. We find that this is not the case, as an increasing percentage of the popular apps we study are overprivileged. In addition, the apps tend to use more permissions over time. Third, we highlight some concerns with pre-installed apps, e.g., apps that vendors distribute with the phone; these apps have access to, and use, a larger set of higher-privileged permissions which pose security and privacy risks. At the risk of oversimplification, we state that the Android ecosystem is not becoming more secure from the user's point of view. Our study derives four recommendations for improving the Android security and suggests the need to revisit the practices and policies of the ecosystem.</p>
+<p>【Keywords】:</p>
+<h3 id="5. Practicality of accelerometer side channels on smartphones.">5. Practicality of accelerometer side channels on smartphones.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420957">Paper Link</a>】    【Pages】:41-50</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Aviv:Adam_J=">Adam J. Aviv</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sapp:Benjamin">Benjamin Sapp</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Blaze:Matt">Matt Blaze</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Smith:Jonathan_M=">Jonathan M. Smith</a></p>
+<p>【Abstract】:
+Modern smartphones are equipped with a plethora of sensors that enable a wide range of interactions, but some of these sensors can be employed as a side channel to surreptitiously learn about user input. In this paper, we show that the accelerometer sensor can also be employed as a high-bandwidth side channel; particularly, we demonstrate how to use the accelerometer sensor to learn user tap- and gesture-based input as required to unlock smartphones using a PIN/password or Android's graphical password pattern. Using data collected from a diverse group of 24 users in controlled (while sitting) and uncontrolled (while walking) settings, we develop sample rate independent features for accelerometer readings based on signal processing and polynomial fitting techniques. In controlled settings, our prediction model can on average classify the PIN entered 43% of the time and pattern 73% of the time within 5 attempts when selecting from a test set of 50 PINs and 50 patterns. In uncontrolled settings, while users are walking, our model can still classify 20% of the PINs and 40% of the patterns within 5 attempts. We additionally explore the possibility of constructing an accelerometer-reading-to-input dictionary and find that such dictionaries would be greatly challenged by movement-noise and cross-user training.</p>
+<p>【Keywords】:
+accelerometer; side channels; smartphone security</p>
+<h3 id="6. Analysis of the communication between colluding applications on modern smartphones.">6. Analysis of the communication between colluding applications on modern smartphones.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420958">Paper Link</a>】    【Pages】:51-60</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Marforio:Claudio">Claudio Marforio</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ritzdorf:Hubert">Hubert Ritzdorf</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Francillon:Aur=eacute=lien">Aurélien Francillon</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Capkun:Srdjan">Srdjan Capkun</a></p>
+<p>【Abstract】:
+Modern smartphones that implement permission-based security mechanisms suffer from attacks by colluding applications. Users are not made aware of possible implications of application collusion attacks---quite the contrary---on existing platforms, users are implicitly led to believe that by approving the installation of each application independently, they can limit the damage that an application can cause. We implement and analyze a number of covert and overt communication channels that enable applications to collude and therefore indirectly escalate their permissions. Furthermore, we present and implement a covert channel between an installed application and a web page loaded in the system browser. We measure the throughput of all these channels as well as their bit-error rate and required synchronization for successful data transmission. The measured throughput of covert channels ranges from 3.7 bps to 3.27 kbps on a Nexus One phone and from 0.47 bps to 4.22 kbps on a Samsung Galaxy S phone; such throughputs are sufficient to efficiently exchange users' sensitive information (e.g., GPS coordinates or contacts). We test two popular research tools that track information flow or detect communication channels on mobile platforms, and confirm that even if they detect some channels, they still do not detect all the channels and therefore fail to fully prevent application collusion. Attacks using covert communication channels remain, therefore, a real threat to smartphone security and an open problem for the research community.</p>
+<p>【Keywords】:</p>
+<h2 id="Hardware security    3">Hardware security    3</h2>
+<h3 id="7. Enabling trusted scheduling in embedded systems.">7. Enabling trusted scheduling in embedded systems.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420960">Paper Link</a>】    【Pages】:61-70</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Masti:Ramya_Jayaram">Ramya Jayaram Masti</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Marforio:Claudio">Claudio Marforio</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ranganathan:Aanjhan">Aanjhan Ranganathan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Francillon:Aur=eacute=lien">Aurélien Francillon</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Capkun:Srdjan">Srdjan Capkun</a></p>
+<p>【Abstract】:
+The growing complexity and increased networking of security and safety-critical systems expose them to the risk of adversarial compromise through remote attacks. These attacks can result in full system compromise, but often the attacker gains control only over some system components (e.g., a peripheral) and over some applications running on the system. We consider the latter scenario and focus on enabling on-schedule execution of critical applications that are running on a partially compromised system --- we call this trusted scheduling. We identify the essential properties needed for the realization of a trusted scheduling system and we design an embedded system that achieves these properties. We show that our system protects not only against misbehaving applications but also against attacks by compromised peripherals. We evaluate the feasibility and performance of our system through a prototype implementation based on the AVR ATmega103 microcontroller.</p>
+<p>【Keywords】:</p>
+<h3 id="8. TRESOR-HUNT: attacking CPU-bound encryption.">8. TRESOR-HUNT: attacking CPU-bound encryption.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420961">Paper Link</a>】    【Pages】:71-78</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Blass:Erik=Oliver">Erik-Oliver Blass</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Robertson_0001:William">William Robertson</a></p>
+<p>【Abstract】:
+Hard disk encryption is known to be vulnerable to a number of attacks that aim to directly extract cryptographic key material from system memory. Several approaches to preventing this class of attacks have been proposed, including Tresor [18] and LoopAmnesia [25]. The common goal of these systems is to confine the encryption key and encryption process itself to the CPU, such that sensitive key material is never released into system memory where it could be accessed by a DMA attack. In this work, we demonstrate that these systems are nevertheless vulnerable to such DMA attacks. Our attack, which we call Tresor-Hunt, relies on the insight that DMA-capable adversaries are not restricted to simply reading physical memory, but can write arbitrary values to memory as well. Tresor-Hunt leverages this insight to inject a ring 0 attack payload that extracts disk encryption keys from the CPU into the target system's memory, from which it can be retrieved using a normal DMA transfer. Our implementation of this attack demonstrates that it can be constructed in a reliable and OS-independent manner that is applicable to any CPU-bound encryption technique, IA32-based system, and DMA-capable peripheral bus. Furthermore, it does not crash the target system or otherwise significantly compromise its integrity. Our evaluation supports the OS-independent nature of the attack, as well as its feasibility in real-world scenarios. Finally, we discuss several countermeasures that might be adopted to mitigate this attack and render CPU-bound encryption systems viable.</p>
+<p>【Keywords】:</p>
+<h3 id="9. When hardware meets software: a bulletproof solution to forensic memory acquisition.">9. When hardware meets software: a bulletproof solution to forensic memory acquisition.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420962">Paper Link</a>】    【Pages】:79-88</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Reina:Alessandro">Alessandro Reina</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fattori:Aristide">Aristide Fattori</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pagani:Fabio">Fabio Pagani</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cavallaro:Lorenzo">Lorenzo Cavallaro</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bruschi:Danilo">Danilo Bruschi</a></p>
+<p>【Abstract】:
+The acquisition of volatile memory of running systems has become a prominent and essential procedure in digital forensic analysis and incident responses. In fact, unencrypted passwords, cryptographic material, text fragments and latest-generation malware may easily be protected as encrypted blobs on persistent storage, while living seamlessly in the volatile memory of a running system. Likewise, systems' run-time information, such as open network connections, open files and running processes, are by definition live entities that can only be observed by examining the volatile memory of a running system. In this context, tampering of volatile data while an acquisition is in progress or during transfer to an external trusted entity is an ongoing issue as it may irremediably invalidate the collected evidence. To overcome such issues, we present SMMDumper, a novel technique to perform atomic acquisitions of volatile memory of running systems. SMMDumper is implemented as an x86 firmware, which leverages the System Management Mode of Intel CPUs to create a complete and reliable snapshot of the state of the system that, with a minimal hardware support, is resilient to malware attacks. To the best of our knowledge, SMMDumper is the first technique that is able to atomically acquire the whole volatile memory, overcoming the SMM-imposed 4GB barrier while providing integrity guarantees and running on commodity systems. Experimental results show that the time SMMDumper requires to acquire and transfer 6GB of physical memory of a running system is reasonable to allow for a real-world adoption in digital forensic analyses and incident responses.</p>
+<p>【Keywords】:
+forensic; live memory acquisition; system management mode</p>
+<h2 id="Passwords    3">Passwords    3</h2>
+<h3 id="10. Tapas: design, implementation, and usability evaluation of a password manager.">10. Tapas: design, implementation, and usability evaluation of a password manager.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420964">Paper Link</a>】    【Pages】:89-98</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/McCarney:Daniel">Daniel McCarney</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Barrera:David">David Barrera</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Clark:Jeremy">Jeremy Clark</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chiasson:Sonia">Sonia Chiasson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Oorschot:Paul_C=_van">Paul C. van Oorschot</a></p>
+<p>【Abstract】:
+Passwords continue to prevail on the web as the primary method for user authentication despite their well-known security and usability drawbacks. Password managers offer some improvement without requiring server-side changes. In this paper, we evaluate the security of dual-possession authentication, an authentication approach offering encrypted storage of passwords and theft-resistance without the use of a master password. We further introduce Tapas, a concrete implementation of dual-possession authentication leveraging a desktop computer and a smartphone. Tapas requires no server-side changes to websites, no master password, and protects all the stored passwords in the event either the primary or secondary device (e.g., computer or phone) is stolen. To evaluate the viability of Tapas as an alternative to traditional password managers, we perform a 30 participant user study comparing Tapas to two configurations of Firefox's built-in password manager. We found users significantly preferred Tapas. We then improve Tapas by incorporating feedback from this study, and reevaluate it with an additional 10 participants.</p>
+<p>【Keywords】:
+password managers; smartphones; usable security</p>
+<h3 id="11. On automated image choice for secure and usable graphical passwords.">11. On automated image choice for secure and usable graphical passwords.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420965">Paper Link</a>】    【Pages】:99-108</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dunphy:Paul">Paul Dunphy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Olivier:Patrick">Patrick Olivier</a></p>
+<p>【Abstract】:
+The usability of graphical passwords based upon recognition of images is widely explored. However, it is likely that their observed high memorability is contingent on certain attributes of the image sets presented to users. Characterizing this relationship remains an open problem; for example, there is no systematic (and empirically verified) method to determine how similarity between the elements of an image set impacts the usability of the login challenge. Strategies to assemble suitable images are usually carried out by hand, which represents a significant barrier to uptake as the process has usability and security implications. In this paper, we explore the role of simple image processing techniques to provide automated assembly of usable login challenges in the context of recognition-based graphical passwords. We firstly carry out a user study to obtain a similarity ranked image set, and use the results to select an optimal per-pixel image similarity metric. Then we conduct a short-term image recall test using Amazon Mechanical Turk with 343 subjects where we manipulated the similarity present in image grids. In the most significant case, we found that our automated methods to choose decoy images could impact the login success rate by 40%, and the median login duration by 35 seconds.</p>
+<p>【Keywords】:
+security; usability; user authentication</p>
+<h3 id="12. Building better passwords using probabilistic techniques.">12. Building better passwords using probabilistic techniques.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420966">Paper Link</a>】    【Pages】:109-118</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Houshmand:Shiva">Shiva Houshmand</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Aggarwal:Sudhir">Sudhir Aggarwal</a></p>
+<p>【Abstract】:
+Password creation policies attempt to help users generate strong passwords but are generally not very effective and tend to frustrate users. The most popular policies are rule based which have been shown to have clear limitations. In this paper we consider a new approach that we term analyze-modify that ensures strong user passwords while maintaining usability. In our approach we develop a software system called AMP that first analyzes whether a user proposed password is weak or strong by estimating the probability of the password being cracked. AMP then modifies the password slightly (to maintain usability) if it is weak to create a strengthened password. We are able to estimate the strength of the password appropriately since we use a probabilistic password cracking system and associated probabilistic context-free grammar to model a realistic distribution of user passwords. In our experiments we were able to distinguish strong passwords from weak ones with an error rate of 1.43%. In one of a series of experiments, our analyze-modify system was able to strengthen a set of weak passwords, of which 53% could be easily cracked to a set of strong passwords of which only 0.27% could be cracked with only a slight modification to the passwords. In our work, we also show how to compute and use various entropy measures from the grammar and show that our system remains effective with continued use through a dynamic updating capability.</p>
+<p>【Keywords】:
+information security; password checking; password creation policies; strong authentication</p>
+<h2 id="Botnets    2">Botnets    2</h2>
+<h3 id="13. Cloud-based push-styled mobile botnets: a case study of exploiting the cloud to device messaging service.">13. Cloud-based push-styled mobile botnets: a case study of exploiting the cloud to device messaging service.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420968">Paper Link</a>】    【Pages】:119-128</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhao:Shuang">Shuang Zhao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Patrick_P=_C=">Patrick P. C. Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lui:John_C=_S=">John C. S. Lui</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Guan:Xiaohong">Xiaohong Guan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Ma:Xiaobo">Xiaobo Ma</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tao:Jing">Jing Tao</a></p>
+<p>【Abstract】:
+Given the popularity of smartphones and mobile devices, mobile botnets are becoming an emerging threat to users and network operators. We propose a new form of cloud-based push-styled mobile botnets that exploits today's push notification services as a means of command dissemination. To motivate its practicality, we present a new command and control (C&C;) channel using Google's Cloud to Device Messaging (C2DM) service, and develop a C2DM botnet specifically for the Android platform. We present strategies to enhance its scalability to large botnet coverage and its resilience against service disruption. We prototype a C2DM botnet, and perform evaluation to show that the C2DM botnet is stealthy in generating heartbeat and command traffic, resource-efficient in bandwidth and power consumptions, and controllable in quickly delivering a command to all bots. We also discuss how one may deploy a C2DM botnet, and demonstrate its feasibility in launching an SMS-Spam-and-Click attack. Lastly, we discuss how to generalize the design to other platforms, such as iOS or Window-based systems, and recommend possible defense methods. Given the wide adoption of push notification services, we believe that this type of mobile botnets requires special attention from our community.</p>
+<p>【Keywords】:</p>
+<h3 id="14. Disclosure: detecting botnet command and control servers through large-scale NetFlow analysis.">14. Disclosure: detecting botnet command and control servers through large-scale NetFlow analysis.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420969">Paper Link</a>】    【Pages】:129-138</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bilge:Leyla">Leyla Bilge</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Balzarotti:Davide">Davide Balzarotti</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Robertson:William_K=">William K. Robertson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kirda:Engin">Engin Kirda</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kruegel:Christopher">Christopher Kruegel</a></p>
+<p>【Abstract】:
+Botnets continue to be a significant problem on the Internet. Accordingly, a great deal of research has focused on methods for detecting and mitigating the effects of botnets. Two of the primary factors preventing the development of effective large-scale, wide-area botnet detection systems are seemingly contradictory. On the one hand, technical and administrative restrictions result in a general unavailability of raw network data that would facilitate botnet detection on a large scale. On the other hand, were this data available, real-time processing at that scale would be a formidable challenge. In contrast to raw network data, NetFlow data is widely available. However, NetFlow data imposes several challenges for performing accurate botnet detection. In this paper, we present Disclosure, a large-scale, wide-area botnet detection system that incorporates a combination of novel techniques to overcome the challenges imposed by the use of NetFlow data. In particular, we identify several groups of features that allow Disclosure to reliably distinguish C&C; channels from benign traffic using NetFlow records (i.e., flow sizes, client access patterns, and temporal behavior). To reduce Disclosure's false positive rate, we incorporate a number of external reputation scores into our system's detection procedure. Finally, we provide an extensive evaluation of Disclosure over two large, real-world networks. Our evaluation demonstrates that Disclosure is able to perform real-time detection of botnet C&C; channels over datasets on the order of billions of flows per day.</p>
+<p>【Keywords】:</p>
+<h2 id="Classic book    1">Classic book    1</h2>
+<h3 id="15. Security economics: a personal perspective.">15. Security economics: a personal perspective.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420971">Paper Link</a>】    【Pages】:139-144</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Anderson:Ross_J=">Ross J. Anderson</a></p>
+<p>【Abstract】:
+This paper describes the origins of security economics. The birth of this thriving new discipline is sometimes credited to a talk I gave at ACSAC in December 2001, but the story is more complex. After sabbatical visits to Berkeley in 2001--2 to work with Hal Varian, we organised the first Workshop on the Economics of Information Security in June 2002. Since then the field has grown to encompass arguments over open versus proprietary systems, the econometrics of online crime, the behavioural economics of security and much else. It has started to have a significant impact on policy, with security-economics studies of cybercrime and infrastructure vulnerability being adopted as policy in the EU, while security economics PhDs have got influential jobs in the White House and elsewhere.</p>
+<p>【Keywords】:
+economics; information security</p>
+<h2 id="Invited essayist    1">Invited essayist    1</h2>
+<h3 id="16. Trust engineering: rejecting the tyranny of the weakest link.">16. Trust engineering: rejecting the tyranny of the weakest link.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420973">Paper Link</a>】    【Pages】:145-148</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Alexander:Susan_D=">Susan D. Alexander</a></p>
+<p>【Abstract】:
+In 2002 [1], the National Security Agency's Information Assurance Research Group coined the term, trust engineering, to describe a methodology for making use of software of uncertain provenance in mission-critical systems. Today, the loss of control that made software so hard to trust then applies to the rest of the supply chain as well. The discipline we described in the internal paper, <u>Trust-engineering: An Assurance Strategy for Software-based Systems</u>, no longer seems heretical today, even at NSA. Ten years later, we revisit the principles of trust engineering, compare the mechanisms available to us today with the practices of the past, and explore the construction of systems that are stronger than their weakest link.</p>
+<p>【Keywords】:
+assurance; composition; containment; defense in depth; isolation; layered; monitoring; moving target defense; provenance; supply chain; trust; trust engineering; virtualization</p>
+<h2 id="Authentication    3">Authentication    3</h2>
+<h3 id="17. SensorSift: balancing sensor data privacy and utility in automated face understanding.">17. SensorSift: balancing sensor data privacy and utility in automated face understanding.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420975">Paper Link</a>】    【Pages】:149-158</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/e/Enev:Miro">Miro Enev</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jung:Jaeyeon">Jaeyeon Jung</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bo:Liefeng">Liefeng Bo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ren:Xiaofeng">Xiaofeng Ren</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kohno:Tadayoshi">Tadayoshi Kohno</a></p>
+<p>【Abstract】:
+We introduce SensorSift, a new theoretical scheme for balancing utility and privacy in smart sensor applications. At the heart of our contribution is an algorithm which transforms raw sensor data into a 'sifted' representation which minimizes exposure of user defined private attributes while maximally exposing application-requested public attributes. We envision multiple applications using the same platform, and requesting access to public attributes explicitly not known at the time of the platform creation. Support for future-defined public attributes, while still preserving the defined privacy of the private attributes, is a central challenge that we tackle. To evaluate our approach, we apply SensorSift to the PubFig dataset of celebrity face images, and study how well we can simultaneously hide and reveal various policy combinations of face attributes using machine classifiers. We find that as long as the public and private attributes are not significantly correlated, it is possible to generate a sifting transformation which reduces private attribute inferences to random guessing while maximally retaining classifier accuracy of public attributes relative to raw data (average PubLoss = .053 and PrivLoss = .075, see Figure 4). In addition, our sifting transformations led to consistent classification performance when evaluated using a set of five modern machine learning methods (linear SVM, kNearest Neighbors, Random Forests, kernel SVM, and Neural Nets).</p>
+<p>【Keywords】:</p>
+<h3 id="18. Biometric authentication on a mobile device: a study of user effort, error and task disruption.">18. Biometric authentication on a mobile device: a study of user effort, error and task disruption.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420976">Paper Link</a>】    【Pages】:159-168</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Trewin:Shari">Shari Trewin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Swart:Calvin">Calvin Swart</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Koved:Larry">Larry Koved</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Martino:Jacquelyn">Jacquelyn Martino</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Singh:Kapil">Kapil Singh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Ben=David:Shay">Shay Ben-David</a></p>
+<p>【Abstract】:
+We examine three biometric authentication modalities -- voice, face and gesture -- as well as password entry, on a mobile device, to explore the relative demands on user time, effort, error and task disruption. Our laboratory study provided observations of user actions, strategies, and reactions to the authentication methods. Face and voice biometrics conditions were faster than password entry. Speaking a PIN was the fastest for biometric sample entry, but short-term memory recall was better in the face verification condition. None of the authentication conditions were considered very usable. In conditions that combined two biometric entry methods, the time to acquire the biometric samples was shorter than if acquired separately but they were very unpopular and had high memory task error rates. These quantitative results demonstrate cognitive and motor differences between biometric authentication modalities, and inform policy decisions in selecting authentication methods.</p>
+<p>【Keywords】:
+authentication; biometric; mobile; usability</p>
+<h3 id="19. BetterAuth: web authentication revisited.">19. BetterAuth: web authentication revisited.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420977">Paper Link</a>】    【Pages】:169-178</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Johns:Martin">Martin Johns</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lekies:Sebastian">Sebastian Lekies</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Braun:Bastian">Bastian Braun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Flesch:Benjamin">Benjamin Flesch</a></p>
+<p>【Abstract】:
+This paper presents "BetterAuth", an authentication protocol for Web applications. Its design is based on the experiences of two decades with the Web. BetterAuth addresses existing attacks on Web authentication, ranging from network attacks to Cross-site Request Forgery up to Phishing. Furthermore, the protocol can be realized completely in standard JavaScript. This allows Web applications an early adoption, even in a situation with limited browser support.</p>
+<p>【Keywords】:</p>
+<h2 id="Code analysis techniques    3">Code analysis techniques    3</h2>
+<h3 id="20. Using memory management to detect and extract illegitimate code for malware analysis.">20. Using memory management to detect and extract illegitimate code for malware analysis.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420979">Paper Link</a>】    【Pages】:179-188</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Willems:Carsten">Carsten Willems</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Freiling:Felix_C=">Felix C. Freiling</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Holz:Thorsten">Thorsten Holz</a></p>
+<p>【Abstract】:
+Exploits that successfully attack computers are typically based on some form of shellcode, i.e., illegitimate code that is injected by the attacker to take control of the system. Detecting and gathering such code is the first step to its detailed analysis. The amount and sophistication of modern malware calls for automated mechanisms that perform such detection and extraction. In this paper, we present a novel generic and fully automatic approach to detect the execution of illegitimate code and extract such code upon detection. The basic idea is to flag certain memory pages as non-executable and utilize a modified page fault handler to react on the attempt to execute code from them. Our modified page fault handler detects if legitimate code is about to be executed or if the code originates from an untrusted location. In such a case, the corresponding memory content is extracted and execution is continued to retrieve more illegitimate code for analysis. We present an implementation of the approach for the Windows platform called CWXDetector, which involved reverse-engineering the proprietary memory management system of this operating system. Evaluation results using a large corpus of malicious PDF documents show that our system produces no false positives and has a very low false negative rate. To further demonstrate the universality of our approach, we also used it to detect shellcode execution in Flash Player, RealVNC client, and VideoLan Client.</p>
+<p>【Keywords】:</p>
+<h3 id="21. Down to the bare metal: using processor features for binary analysis.">21. Down to the bare metal: using processor features for binary analysis.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420980">Paper Link</a>】    【Pages】:189-198</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Willems:Carsten">Carsten Willems</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hund:Ralf">Ralf Hund</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fobian:Andreas">Andreas Fobian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Felsch:Dennis">Dennis Felsch</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Holz:Thorsten">Thorsten Holz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vasudevan:Amit">Amit Vasudevan</a></p>
+<p>【Abstract】:
+A detailed understanding of the behavior of exploits and malicious software is necessary to obtain a comprehensive overview of vulnerabilities in operating systems or client applications, and to develop protection techniques and tools. To this end, a lot of research has been done in the last few years on binary analysis techniques to efficiently and precisely analyze code. Most of the common analysis frameworks are based on software emulators since such tools offer a fine-grained control over the execution of a given program. Naturally, this leads to an arms race where the attackers are constantly searching for new methods to detect such analysis frameworks in order to successfully evade analysis. In this paper, we focus on two aspects. As a first contribution, we introduce several novel mechanisms by which an attacker can delude an emulator. In contrast to existing detection approaches that perform a dedicated test on the environment and combine the test with an explicit conditional branch, our detection mechanisms introduce code sequences that have an implicitly different behavior on a native machine when compared to an emulator. Such differences in behavior are caused by the side-effects of the particular operations and imperfections in the emulation process that cannot be mitigated easily. Motivated by these findings, we introduce a novel approach to generate execution traces. We propose to utilize the processor itself to generate such traces. Mores precisely, we propose to use a hardware feature called branch tracing available on commodity x86 processors in which the log of all branches taken during code execution is generated directly by the processor. Effectively, the logging is thus performed at the lowest level possible. We evaluate the practical viability of this approach.</p>
+<p>【Keywords】:</p>
+<h3 id="22. Augmenting vulnerability analysis of binary code.">22. Augmenting vulnerability analysis of binary code.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420981">Paper Link</a>】    【Pages】:199-208</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Heelan:Sean">Sean Heelan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gianni:Agustin">Agustin Gianni</a></p>
+<p>【Abstract】:
+Discovering and understanding security vulnerabilities in complex, binary code can be a difficult and time consuming problem. While there has been notable progress in the development of automatic solutions for vulnerability detection, manual analysis remains a necessary component of any binary auditing task. In this paper we present an approach based on run time data tracking that works to narrow down the attack surface of an application and prioritize code regions for manual analysis. By supporting arbitrary data sources and sinks we can track the spread of direct and indirect attacker influence throughout a program. Alerts are generated once this influence reaches potentially sensitive code and the results are post-processed, prioritized, and integrated into common reverse engineering tools. The data recorded is used to inform the decisions of users, rather than replace them. By avoiding the processing required for semantic analysis and automated reasoning our approach is sufficiently fast to integrate into the normal work flow of manual vulnerability detection.</p>
+<p>【Keywords】:</p>
+<h2 id="Cloud security    3">Cloud security    3</h2>
+<h3 id="23. ThinAV: truly lightweight mobile cloud-based anti-malware.">23. ThinAV: truly lightweight mobile cloud-based anti-malware.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420983">Paper Link</a>】    【Pages】:209-218</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jarabek:Chris">Chris Jarabek</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Barrera:David">David Barrera</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Aycock:John">John Aycock</a></p>
+<p>【Abstract】:
+This paper introduces ThinAV, an anti-malware system for Android that uses pre-existing web-based file scanning services for malware detection. The goal in developing ThinAV was to assess the feasibility of providing real-time anti-malware scanning over a wide area network where resource limitation is a factor. As a result, our research provides a necessary counterpoint to many of the big-budget, resource-intensive idealized solutions that have been suggested in the area of cloud-based security. The evaluation of ThinAV shows that it functions well over a wide area network, resulting in a system which is highly practical for providing anti-malware security on smartphones.</p>
+<p>【Keywords】:
+Android; anti-virus; cloud computing; malware</p>
+<h3 id="24. Abusing cloud-based browsers for fun and profit.">24. Abusing cloud-based browsers for fun and profit.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420984">Paper Link</a>】    【Pages】:219-228</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Tendulkar:Vasant">Vasant Tendulkar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Snyder:Ryan">Ryan Snyder</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pletcher:Joe">Joe Pletcher</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Butler:Kevin_R=_B=">Kevin R. B. Butler</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shashidharan:Ashwin">Ashwin Shashidharan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Enck:William">William Enck</a></p>
+<p>【Abstract】:
+Cloud services have become a cheap and popular means of computing. They allow users to synchronize data between devices and relieve low-powered devices from heavy computations. In response to the surge of smartphones and mobile devices, several cloud-based Web browsers have become commercially available. These "cloud browsers" assemble and render Web pages within the cloud, executing JavaScript code for the mobile client. This paper explores how the computational abilities of cloud browsers may be exploited through a Browser MapReduce (BMR) architecture for executing large, parallel tasks. We explore the computation and memory limits of four cloud browsers, and demonstrate the viability of BMR by implementing a client based on a reverse engineering of the Puffin cloud browser. We implement and test three canonical MapReduce applications (word count, distributed grep, and distributed sort). While we perform experiments on relatively small amounts of data (100 MB) for ethical considerations, our results strongly suggest that current cloud browsers are a viable source of arbitrary free computing at large scale.</p>
+<p>【Keywords】:
+access control; cloud; computing; web browsers</p>
+<h3 id="25. Iris: a scalable cloud file system with efficient integrity checks.">25. Iris: a scalable cloud file system with efficient integrity checks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420985">Paper Link</a>】    【Pages】:229-238</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Stefanov:Emil">Emil Stefanov</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dijk:Marten_van">Marten van Dijk</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Juels:Ari">Ari Juels</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Oprea:Alina">Alina Oprea</a></p>
+<p>【Abstract】:
+We present Iris, a practical, authenticated file system designed to support workloads from large enterprises storing data in the cloud and be resilient against potentially untrustworthy service providers. As a transparent layer enforcing strong integrity guarantees, Iris lets an enterprise tenant maintain a large file system in the cloud. In Iris, tenants obtain strong assurance not just on data integrity, but also on data freshness, as well as data retrievability in case of accidental or adversarial cloud failures. Iris offers an architecture scalable to many clients (on the order of hundreds or even thousands) issuing operations on the file system in parallel. Iris includes new optimization and enterprise-side caching techniques specifically designed to overcome the high network latency typically experienced when accessing cloud storage. Iris also includes novel erasure coding techniques for the first efficient construction of a dynamic Proofs of Retrievability (PoR) protocol over the entire file system. We describe our architecture and experimental results on a prototype version of Iris. Iris achieves end-to-end throughput of up to 260MB per second for 100 clients issuing simultaneous requests on the file system. (This limit is dictated by the available network bandwidth and maximum hard drive throughput.) We demonstrate that strong integrity protection in the cloud can be achieved with minimal performance degradation.</p>
+<p>【Keywords】:</p>
+<h2 id="Intrusion detection    3">Intrusion detection    3</h2>
+<h3 id="26. Malicious PDF detection using metadata and structural features.">26. Malicious PDF detection using metadata and structural features.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420987">Paper Link</a>】    【Pages】:239-248</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Smutz:Charles">Charles Smutz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stavrou:Angelos">Angelos Stavrou</a></p>
+<p>【Abstract】:
+Owed to their versatile functionality and widespread adoption, PDF documents have become a popular avenue for user exploitation ranging from large-scale phishing attacks to targeted attacks. In this paper, we present a framework for robust detection of malicious documents through machine learning. Our approach is based on features extracted from document metadata and structure. Using real-world datasets, we demonstrate the the adequacy of these document properties for malware detection and the durability of these features across new malware variants. Our analysis shows that the Random Forests classification method, an ensemble classifier that randomly selects features for each individual classification tree, yields the best detection rates, even on previously unseen malware. Indeed, using multiple datasets containing an aggregate of over 5,000 unique malicious documents and over 100,000 benign ones, our classification rates remain well above 99% while maintaining low false positives of 0.2% or less for different classification parameters and experimental scenarios. Moreover, the classifier has the ability to detect documents crafted for targeted attacks and separate them from broadly distributed malicious PDF documents. Remarkably, we also discovered that by artificially reducing the influence of the top features in the classifier, we can still achieve a high rate of detection in an adversarial setting where the attacker is aware of both the top features utilized in the classifier and our normality model. Thus, the classifier is resilient against mimicry attacks even with knowledge of the document features, classification method, and training set.</p>
+<p>【Keywords】:</p>
+<h3 id="27. Jarhead analysis and detection of malicious Java applets.">27. Jarhead analysis and detection of malicious Java applets.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420988">Paper Link</a>】    【Pages】:249-257</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Schlumberger:Johannes">Johannes Schlumberger</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kruegel:Christopher">Christopher Kruegel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vigna:Giovanni">Giovanni Vigna</a></p>
+<p>【Abstract】:
+Java applets have increasingly been used as a vector to deliver drive-by download attacks that bypass the sandboxing mechanisms of the browser's Java Virtual Machine and compromise the user's environment. Unfortunately, the research community has not given to this problem the attention it deserves, and, as a consequence, the state-of-the-art approaches to the detection of malicious Java applets are based either on simple signatures or on the use of honey-clients, which are both easily evaded. Therefore, we propose a novel approach to the detection of malicious Java applets based on static code analysis. Our approach extracts a number of features from Java applets, and then uses supervised machine learning to produce a classifier. We implemented our approach in a tool, called Jarhead, and we tested its effectiveness on a large, real-world dataset. The results of the evaluation show that, given a sufficiently large training dataset, this approach is able to reliably detect both known and previously-unseen real-world malicious applets.</p>
+<p>【Keywords】:</p>
+<h3 id="28. Hi-Fi: collecting high-fidelity whole-system provenance.">28. Hi-Fi: collecting high-fidelity whole-system provenance.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420989">Paper Link</a>】    【Pages】:259-268</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Pohly:Devin_J=">Devin J. Pohly</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McLaughlin:Stephen_E=">Stephen E. McLaughlin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McDaniel:Patrick_D=">Patrick D. McDaniel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Butler:Kevin_R=_B=">Kevin R. B. Butler</a></p>
+<p>【Abstract】:
+Data provenance---a record of the origin and evolution of data in a system---is a useful tool for forensic analysis. However, existing provenance collection mechanisms fail to achieve sufficient breadth or fidelity to provide a holistic view of a system's operation over time. We present Hi-Fi, a kernel-level provenance system which leverages the Linux Security Modules framework to collect high-fidelity whole-system provenance. We demonstrate that Hi-Fi is able to record a variety of malicious behavior within a compromised system. In addition, our benchmarks show the collection overhead from Hi-Fi to be less than 1% for most system calls and 3% in a representative workload, while simultaneously generating a system measurement that fully reflects system evolution. In this way, we show that we can collect broad, high-fidelity provenance data which is capable of supporting detailed forensic analysis.</p>
+<p>【Keywords】:
+data provenance; forensics; malware; reference monitor</p>
+<h2 id="Policy    3">Policy    3</h2>
+<h3 id="29. Transforming commodity security policies to enforce Clark-Wilson integrity.">29. Transforming commodity security policies to enforce Clark-Wilson integrity.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420991">Paper Link</a>】    【Pages】:269-278</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Muthukumaran:Divya">Divya Muthukumaran</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rueda:Sandra">Sandra Rueda</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Talele:Nirupama">Nirupama Talele</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vijayakumar:Hayawardh">Hayawardh Vijayakumar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Teutsch:Jason">Jason Teutsch</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jaeger:Trent">Trent Jaeger</a></p>
+<p>【Abstract】:
+Modern distributed systems are composed from several off-the-shelf components, including operating systems, virtualization infrastructure, and application packages, upon which some custom application software (e.g., web application) is often deployed. While several commodity systems now include mandatory access control (MAC) enforcement to protect the individual components, the complexity of such MAC policies and the myriad of possible interactions among individual hosts in distributed systems makes it difficult to identify the attack paths available to adversaries. As a result, security practitioners react to vulnerabilities as adversaries uncover them, rather than proactively protecting the system's data integrity. In this paper, we develop a mostly-automated method to transform a set of commodity MAC policies into a system-wide policy that proactively protects system integrity, approximating the Clark-Wilson integrity model. The method uses the insights from the Clark-Wilson model, which requires integrity verification of security-critical data and mediation at program entrypoints, to extend existing MAC policies with the proactive mediation necessary to protect system integrity. We demonstrate the practicality of producing Clark-Wilson policies for distributed systems on a web application running on virtualized Ubuntu SELinux hosts, where our method finds: (1) that only 27 additional entrypoint mediators are sufficient to mediate the threats of remote adversaries over the entire distributed system and (2) and only 20 additional local threats require mediation to approximate Clark-Wilson integrity comprehensively. As a result, available security policies can be used as a foundation for proactive integrity protection from both local and remote threats.</p>
+<p>【Keywords】:</p>
+<h3 id="30. CodeShield: towards personalized application whitelisting.">30. CodeShield: towards personalized application whitelisting.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420992">Paper Link</a>】    【Pages】:279-288</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gates:Christopher_S=">Christopher S. Gates</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Ninghui">Ninghui Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Jing">Jing Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Proctor:Robert_W=">Robert W. Proctor</a></p>
+<p>【Abstract】:
+Malware has been a major security problem both in organizations and homes for more than a decade. One common feature of most malware attacks is that at a certain point early in the attack, an executable is dropped on the system which, when executed, enables the attacker to achieve their goals and maintain control of the compromised machine. In this paper we propose the concept of Personalized Application Whitelisting (PAW) to block all unsolicited foreign code from executing on a system. We introduce CodeShield, an approach to implement PAW on Windows hosts. CodeShield uses a simple and novel security model, and a new user interaction approach for obtaining security-critical decisions from users. We have implemented CodeShield, demonstrated its security effectiveness, and conducted a user study, having 38 participants run CodeShield on their laptops for 6 weeks. Results from the data demonstrate the usability and promises of our design.</p>
+<p>【Keywords】:</p>
+<h3 id="31. Using automated model analysis for reasoning about security of web protocols.">31. Using automated model analysis for reasoning about security of web protocols.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420993">Paper Link</a>】    【Pages】:289-298</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kumar:Apurva">Apurva Kumar</a></p>
+<p>【Abstract】:
+Interoperable identity and trust management infrastructure plays an important role in enabling integrations in cloud computing environments. In the past decade or so, several web-based workflows have emerged as de-facto standards for user identity and resource access across enterprises. Establishing correctness of such web protocols is of immense importance to a large number of common business transactions on the web. In this paper, we propose a framework for analyzing security in web protocols. A novel aspect of our proposal is bringing together two contrasting styles used for security protocol analysis. We use the inference construction style, in which the well-known BAN logic has been extended to reason about web protocols, in conjunction with, an attack construction style that performs SAT based model-checking to rule out certain active attacks. The result is an analysis method that shares simplicity and intuitive appeal of belief logics, at the same time covers a wider range of protocols, along with an ability to automatically find attacks. To illustrate effectiveness, case study of a leading web identity and access management protocol is presented, where application of our analysis method results in a previously unreported attack being identified.</p>
+<p>【Keywords】:
+automated security analysis; belief logic; security protocols</p>
+<h2 id="Protection mechanisms    3">Protection mechanisms    3</h2>
+<h3 id="32. Securing untrusted code via compiler-agnostic binary rewriting.">32. Securing untrusted code via compiler-agnostic binary rewriting.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420995">Paper Link</a>】    【Pages】:299-308</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wartell:Richard">Richard Wartell</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mohan:Vishwath">Vishwath Mohan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hamlen:Kevin_W=">Kevin W. Hamlen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lin:Zhiqiang">Zhiqiang Lin</a></p>
+<p>【Abstract】:
+Binary code from untrusted sources remains one of the primary vehicles for malicious software attacks. This paper presents Reins, a new, more general, and lighter-weight binary rewriting and in-lining system to tame and secure untrusted binary programs. Unlike traditional monitors, Reins requires no cooperation from code-producers in the form of source code or debugging symbols, requires no client-side support infrastructure (e.g., a virtual machine or hypervisor), and preserves the behavior of even complex, event-driven, x86 native COTS binaries generated by aggressively optimizing compilers. This makes it exceptionally easy to deploy. The safety of programs rewritten by Reins is independently machine-verifiable, allowing rewriting to be deployed as an untrusted third-party service. An implementation of Reins for Microsoft Windows demonstrates that it is effective and practical for a real-world OS and architecture, introducing only about 2.4% runtime overhead to rewritten binaries.</p>
+<p>【Keywords】:</p>
+<h3 id="33. Code shredding: byte-granular randomization of program layout for detecting code-reuse attacks.">33. Code shredding: byte-granular randomization of program layout for detecting code-reuse attacks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420996">Paper Link</a>】    【Pages】:309-318</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Shioji:Eitaro">Eitaro Shioji</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kawakoya:Yuhei">Yuhei Kawakoya</a> ; <a href="http://dblp.uni-trier.de/pers/hd/i/Iwamura:Makoto">Makoto Iwamura</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hariu:Takeo">Takeo Hariu</a></p>
+<p>【Abstract】:
+Code-reuse attacks by corrupting memory address pointers have been a major threat of software for many years. There have been numerous defenses proposed for countering this threat, but majority of them impose strict restrictions on software deployment such as requiring recompilation with a custom compiler, or causing integrity problems due to program modification. One notable exception is ASLR(address space layout randomization) which is a widespread defense free of such burdens, but is also known to be penetrated by a class of attacks that takes advantage of its coarse randomization granularity. Focusing on minimizing randomization granularity while also possessing these advantages of ASLR to the greatest extent, we propose a novel defensive approach called code shredding: a defensive scheme based on the idea of embedding the checksum value of a memory address as a part of itself. This simple yet effective approach hinders designation of specific address used in code-reuse attacks, by giving attackers an illusion of program code shredded into pieces at byte granularity and dispersed randomly over memory space. We show our design and implementation of a proof-of-concept prototype system for the Windows platform and the results from several experiments conducted to confirm its feasibility and performance overheads.</p>
+<p>【Keywords】:</p>
+<h3 id="34. Distributed application tamper detection via continuous software updates.">34. Distributed application tamper detection via continuous software updates.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420997">Paper Link</a>】    【Pages】:319-328</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Collberg:Christian_S=">Christian S. Collberg</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Martin:Sam">Sam Martin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Myers:Jonathan">Jonathan Myers</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nagra:Jasvir">Jasvir Nagra</a></p>
+<p>【Abstract】:
+We present a new general technique for protecting clients in distributed systems against Remote Man-at-the-end (R-MATE) attacks. Such attacks occur in settings where an adversary has physical access to an untrusted client device and can obtain an advantage from tampering with the hardware itself or the software it contains. In our system, the trusted server overwhelms the analytical abilities of the untrusted client by continuously and automatically generating and pushing to him diverse client code variants. The diversity subsystem employs a set of primitive code transformations that provide an ever-changing attack target for the adversary, making tampering difficult without this being detected by the server.</p>
+<p>【Keywords】:
+defense-in-depth; distributed systems; diversity; obfuscation; renewability; security; software protection; tamperproofing</p>
+<h2 id="Malware analysis and classification    3">Malware analysis and classification    3</h2>
+<h3 id="35. VAMO: towards a fully automated malware clustering validity analysis.">35. VAMO: towards a fully automated malware clustering validity analysis.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2420999">Paper Link</a>】    【Pages】:329-338</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Perdisci:Roberto">Roberto Perdisci</a> ; <a href="http://dblp.uni-trier.de/pers/hd/u/U:ManChon">ManChon U</a></p>
+<p>【Abstract】:
+Malware clustering is commonly applied by malware analysts to cope with the increasingly growing number of distinct malware variants collected every day from the Internet. While malware clustering systems can be useful for a variety of applications, assessing the quality of their results is intrinsically hard. In fact, clustering can be viewed as an unsupervised learning process over a dataset for which the complete ground truth is usually not available. Previous studies propose to evaluate malware clustering results by leveraging the labels assigned to the malware samples by multiple anti-virus scanners (AVs). However, the methods proposed thus far require a (semi-)manual adjustment and mapping between labels generated by different AVs, and are limited to selecting a reference sub-set of samples for which an agreement regarding their labels can be reached across a majority of AVs. This approach may bias the reference set towards "easy to cluster" malware samples, thus potentially resulting in an overoptimistic estimate of the accuracy of the malware clustering results. In this paper we propose VAMO, a system that provides a fully automated quantitative analysis of the validity of malware clustering results. Unlike previous work, VAMO does not seek a majority voting-based consensus across different AV labels, and does not discard the malware samples for which such a consensus cannot be reached. Rather, VAMO explicitly deals with the inconsistencies typical of multiple AV labels to build a more representative reference set, compared to majority voting-based approaches. Furthermore, VAMO avoids the need of a (semi-)manual mapping between AV labels from different scanners that was required in previous work. Through an extensive evaluation in a controlled setting and a real-world application, we show that VAMO outperforms majority voting-based approaches, and provides a better way for malware analysts to automatically assess the quality of their malware clustering results.</p>
+<p>【Keywords】:</p>
+<h3 id="36. Towards network containment in malware analysis systems.">36. Towards network containment in malware analysis systems.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2421000">Paper Link</a>】    【Pages】:339-348</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Graziano:Mariano">Mariano Graziano</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Leita:Corrado">Corrado Leita</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Balzarotti:Davide">Davide Balzarotti</a></p>
+<p>【Abstract】:
+This paper focuses on the containment and control of the network interaction generated by malware samples in dynamic analysis environments. A currently unsolved problem consists in the existing dependency between the execution of a malware sample and a number of external hosts (e.g. C&C; servers). This dependency affects the repeatability of the analysis, since the state of these external hosts influences the malware execution but it is outside the control of the sandbox. This problem is also important from a containment point of view, because the network traffic generated by a malware sample is potentially of malicious nature and, therefore, it should not be allowed to reach external targets. The approach proposed in this paper addresses the repeatability and the containment of malware execution by exploring the use of protocol learning techniques for the emulation of the external network environment required by malware samples. We show that protocol learning techniques, if properly used and configured, can be successfully used to handle the network interaction required by malware. We present our solution, Mozzie, and show its ability to autonomously learn the network interaction associated to recent malware samples without requiring a-priori knowledge of the protocol characteristics. Therefore, our system can be used for the contained and repeatable analysis of unknown samples that rely on custom protocols for their communication with external hosts.</p>
+<p>【Keywords】:
+malware containment; network traffic replay; protocol learning</p>
+<h3 id="37. Lines of malicious code: insights into the malicious software industry.">37. Lines of malicious code: insights into the malicious software industry.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2421001">Paper Link</a>】    【Pages】:349-358</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lindorfer:Martina">Martina Lindorfer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Federico:Alessandro_Di">Alessandro Di Federico</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Maggi:Federico">Federico Maggi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Comparetti:Paolo_Milani">Paolo Milani Comparetti</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zanero:Stefano">Stefano Zanero</a></p>
+<p>【Abstract】:
+Malicious software installed on infected computers is a fundamental component of online crime. Malware development thus plays an essential role in the underground economy of cyber-crime. Malware authors regularly update their software to defeat defenses or to support new or improved criminal business models. A large body of research has focused on detecting malware, defending against it and identifying its functionality. In addition to these goals, however, the analysis of malware can provide a glimpse into the software development industry that develops malicious code. In this work, we present techniques to observe the evolution of a malware family over time. First, we develop techniques to compare versions of malicious code and quantify their differences. Furthermore, we use behavior observed from dynamic analysis to assign semantics to binary code and to identify functional components within a malware binary. By combining these techniques, we are able to monitor the evolution of a malware's functional components. We implement these techniques in a system we call Beagle, and apply it to the observation of 16 malware strains over several months. The results of these experiments provide insight into the effort involved in updating malware code, and show that Beagle can identify changes to individual malware components.</p>
+<p>【Keywords】:
+downloaders; evolution; malware; similarity</p>
+<h2 id="Software security    3">Software security    3</h2>
+<h3 id="38. Generalized vulnerability extrapolation using abstract syntax trees.">38. Generalized vulnerability extrapolation using abstract syntax trees.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2421003">Paper Link</a>】    【Pages】:359-368</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yamaguchi:Fabian">Fabian Yamaguchi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lottmann:Markus">Markus Lottmann</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rieck:Konrad">Konrad Rieck</a></p>
+<p>【Abstract】:
+The discovery of vulnerabilities in source code is a key for securing computer systems. While specific types of security flaws can be identified automatically, in the general case the process of finding vulnerabilities cannot be automated and vulnerabilities are mainly discovered by manual analysis. In this paper, we propose a method for assisting a security analyst during auditing of source code. Our method proceeds by extracting abstract syntax trees from the code and determining structural patterns in these trees, such that each function in the code can be described as a mixture of these patterns. This representation enables us to decompose a known vulnerability and extrapolate it to a code base, such that functions potentially suffering from the same flaw can be suggested to the analyst. We evaluate our method on the source code of four popular open-source projects: LibTIFF, FFmpeg, Pidgin and Asterisk. For three of these projects, we are able to identify zero-day vulnerabilities by inspecting only a small fraction of the code bases.</p>
+<p>【Keywords】:</p>
+<h3 id="39. XIAO: tuning code clones at hands of engineers in practice.">39. XIAO: tuning code clones at hands of engineers in practice.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2421004">Paper Link</a>】    【Pages】:369-378</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dang:Yingnong">Yingnong Dang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Dongmei">Dongmei Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Ge:Song">Song Ge</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chu:Chengyun">Chengyun Chu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/q/Qiu:Yingjun">Yingjun Qiu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xie:Tao">Tao Xie</a></p>
+<p>【Abstract】:
+During software development, engineers often reuse a code fragment via copy-and-paste with or without modifications or adaptations. Such practices lead to a number of the same or similar code fragments spreading within one or many large codebases. Detecting code clones has been shown to be useful towards security such as detection of similar security bugs and, more generally, quality improvement such as refactoring of code clones. A large number of academic research projects have been carried out on empirical studies or tool supports for detecting code clones. In this paper, we report our experiences of carrying out successful technology transfer of our new approach of code-clone detection, called XIAO. XIAO has been integrated into Microsoft Visual Studio 2012, to be benefiting a huge number of developers in industry. The main success factors of XIAO include its high tunability, scalability, compatibility, and explorability. Based on substantial industrial experiences, we present the XIAO approach with emphasis on these success factors of XIAO. We also present empirical results on applying XIAO on real scenarios within Microsoft for the tasks of security-bug detection and refactoring.</p>
+<p>【Keywords】:
+code clone; code duplication; code-clone detection; code-clone search; duplicated security vulnerability</p>
+<h3 id="40. Self-healing multitier architectures using cascading rescue points.">40. Self-healing multitier architectures using cascading rescue points.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2421005">Paper Link</a>】    【Pages】:379-388</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zavou:Angeliki">Angeliki Zavou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Portokalidis:Georgios">Georgios Portokalidis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Keromytis:Angelos_D=">Angelos D. Keromytis</a></p>
+<p>【Abstract】:
+Software bugs and vulnerabilities cause serious problems to both home users and the Internet infrastructure, limiting the availability of Internet services, causing loss of data, and reducing system integrity. Software self-healing using rescue points (RPs) is a known mechanism for recovering from unforeseen errors. However, applying it on multitier architectures can be problematic because certain actions, like transmitting data over the network, cannot be undone. We propose cascading rescue points (CRPs) to address the state inconsistency issues that can arise when using traditional RPs to recover from errors in interconnected applications. With CRPs, when an application executing within a RP transmits data, the remote peer is notified to also perform a checkpoint, so the communicating entities checkpoint in a coordinated, but loosely coupled way. Notifications are also sent when RPs successfully complete execution, and when recovery is initiated, so that the appropriate action is performed by remote parties. We developed a tool that implements CRPs by dynamically instrumenting binaries and transparently injecting notifications in the already established TCP channels between applications. We tested our tool with various applications, including the MySQL and Apache servers, and show that it allows them to successfully recover from errors, while incurring moderate overhead between 4.54% and 71.56%.</p>
+<p>【Keywords】:
+error recovery; multitier applications; reliable software; software self-healing</p>
+<h2 id="Social networking security    3">Social networking security    3</h2>
+<h3 id="41. Twitter games: how successful spammers pick targets.">41. Twitter games: how successful spammers pick targets.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2421007">Paper Link</a>】    【Pages】:389-398</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sridharan:Vasumathi">Vasumathi Sridharan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shankar:Vaibhav">Vaibhav Shankar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gupta:Minaxi">Minaxi Gupta</a></p>
+<p>【Abstract】:
+Online social networks, such as Twitter, have soared in popularity and in turn have become attractive targets of spam. In fact, spammers have evolved their strategies to stay ahead of Twitter's anti-spam measures in this short period of time. In this paper, we investigate the strategies Twitter spammers employ to reach relevant target audiences. Due to their targeted approaches to send spam, we see evidence of a large number of the spam accounts forming relationships with other Twitter users, thereby becoming deeply embedded in the social network. We analyze nearly 20 million tweets from about 7 million Twitter accounts over a period of five days. We identify a set of 14,230 spam accounts that manage to live longer than the other 73% of other spam accounts in our data set. We characterize their behavior, types of tweets they use, and how they target their audience. We find that though spam campaigns changed little from a recent work by Thomas et al., spammer strategies evolved much in the same short time span, causing us to sometimes find contradictory spammer behavior from what was noted in Thomas et al.'s work. Specifically, we identify four major strategies used by 2/3rd of the spammers in our data. The most popular of these was one where spammers targeted their own followers. The availability of various kinds of services that help garner followers only increases the popularity of this strategy. The evolution in spammer strategies we observed in our work suggests that studies like ours should be undertaken frequently to keep up with spammer evolution.</p>
+<p>【Keywords】:
+Twitter; online social networks (OSNs); spam</p>
+<h3 id="42. All your face are belong to us: breaking Facebook's social authentication.">42. All your face are belong to us: breaking Facebook's social authentication.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2421008">Paper Link</a>】    【Pages】:399-408</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Polakis:Iasonas">Iasonas Polakis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lancini:Marco">Marco Lancini</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kontaxis:Georgios">Georgios Kontaxis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Maggi:Federico">Federico Maggi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/i/Ioannidis:Sotiris">Sotiris Ioannidis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Keromytis:Angelos_D=">Angelos D. Keromytis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zanero:Stefano">Stefano Zanero</a></p>
+<p>【Abstract】:
+Two-factor authentication is widely used by high-value services to prevent adversaries from compromising accounts using stolen credentials. Facebook has recently released a two-factor authentication mechanism, referred to as Social Authentication, which requires users to identify some of their friends in randomly selected photos. A recent study has provided a formal analysis of social authentication weaknesses against attackers inside the victim's social circles. In this paper, we extend the threat model and study the attack surface of social authentication in practice, and show how any attacker can obtain the information needed to solve the challenges presented by Facebook. We implement a proof-of-concept system that utilizes widely available face recognition software and cloud services, and evaluate it using real public data collected from Facebook. Under the assumptions of Facebook's threat model, our results show that an attacker can obtain access to (sensitive) information for at least 42% of a user's friends that Facebook uses to generate social authentication challenges. By relying solely on publicly accessible information, a casual attacker can solve 22% of the social authentication tests in an automated fashion, and gain a significant advantage for an additional 56% of the tests, as opposed to just guessing. Additionally, we simulate the scenario of a determined attacker placing himself inside the victim's social circle by employing dummy accounts. In this case, the accuracy of our attack greatly increases and reaches 100% when 120 faces per friend are accessible by the attacker, even though it is very accurate with as little as 10 faces.</p>
+<p>【Keywords】:
+authentication; face recognition; online social networks</p>
+<h3 id="43. Enabling private conversations on Twitter.">43. Enabling private conversations on Twitter.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2421009">Paper Link</a>】    【Pages】:409-418</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Singh:Indrajeet">Indrajeet Singh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Butkiewicz:Michael">Michael Butkiewicz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Madhyastha:Harsha_V=">Harsha V. Madhyastha</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Krishnamurthy:Srikanth_V=">Srikanth V. Krishnamurthy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Addepalli:Sateesh">Sateesh Addepalli</a></p>
+<p>【Abstract】:
+User privacy has been an increasingly growing concern in online social networks (OSNs). While most OSNs today provide some form of privacy controls so that their users can protect their shared content from other users, these controls are typically not sufficiently expressive and/or do not provide fine-grained protection of information. In this paper, we consider the introduction of a new privacy control---group messaging on Twitter, with users having fine-grained control over who can see their messages. Specifically, we demonstrate that such a privacy control can be offered to users of Twitter today without having to wait for Twitter to make changes to its system. We do so by designing and implementing Twitsper, a wrapper around Twitter that enables private group communication among existing Twitter users while preserving Twitter's commercial interests. Our design preserves the privacy of group information (i.e., who communicates with whom) both from the Twitsper server as well as from undesired Twitsper users. Furthermore, our evaluation shows that our implementation of Twitsper imposes minimal server-side bandwidth requirements and incurs low client-side energy consumption. Our Twitsper client for Android-based devices has been downloaded by over 1000 users and its utility has been noted by several media articles.</p>
+<p>【Keywords】:</p>
+<h2 id="Systems security    3">Systems security    3</h2>
+<h3 id="44. Separation virtual machine monitors.">44. Separation virtual machine monitors.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2421011">Paper Link</a>】    【Pages】:419-428</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/McDermott:John_P=">John P. McDermott</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Montrose:Bruce_E=">Bruce E. Montrose</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Margery">Margery Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kirby:James">James Kirby</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kang:Myong_H=">Myong H. Kang</a></p>
+<p>【Abstract】:
+Separation kernels are the strongest known form of separation for virtual machines. We agree with NSA's Information Assurance Directorate that while separation kernels are stronger than any other alternative, their construction on modern commodity hardware is no longer justifiable. This is because of orthogonal feature creep in modern platform hardware. We introduce the separation VMM as a response to this situation and explain how we prototyped one.</p>
+<p>【Keywords】:
+hypervisor; open source; virtual machine monitor (VMM); virtualization</p>
+<h3 id="45. Efficient protection of kernel data structures via object partitioning.">45. Efficient protection of kernel data structures via object partitioning.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2421012">Paper Link</a>】    【Pages】:429-438</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Srivastava:Abhinav">Abhinav Srivastava</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Giffin:Jonathon_T=">Jonathon T. Giffin</a></p>
+<p>【Abstract】:
+Commodity operating system kernels isolate applications via separate memory address spaces provided by virtual memory management hardware. However, kernel memory is unified and mixes core kernel code with driver components of different provenance. Kernel-level malicious software exploits this lack of isolation between the kernel and its modules by illicitly modifying security-critical kernel data structures. In this paper, we design an access control policy and enforcement system that prevents kernel components with low trust from altering security-critical data used by the kernel to manage its own execution. Our policies are at the granularity of kernel variables and structure elements, and they can protect data structures dynamically allocated at runtime. Our hypervisor-based design uses memory page protection bits as part of its policy enforcement. The granularity difference between page-level protection and variable-level policies challenges the system's ability to remain performant. We develop kernel data-layout partitioning and reorganization techniques to maintain kernel performance in the presence of our protections. We show that our system can prevent malicious modifications to security-critical kernel data with small overhead. By offering protection for critical kernel data structures, we can detect unknown kernel-level malware and guarantee that security utilities relying on the integrity of kernel-level state remain accurate.</p>
+<p>【Keywords】:</p>
+<h3 id="46. TrueErase: per-file secure deletion for the storage data path.">46. TrueErase: per-file secure deletion for the storage data path.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2420950.2421013">Paper Link</a>】    【Pages】:439-448</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Diesburg:Sarah_M=">Sarah M. Diesburg</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Meyers:Christopher_R=">Christopher R. Meyers</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stanovich:Mark_J=">Mark J. Stanovich</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mitchell:Michael">Michael Mitchell</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Marshall:Justin">Justin Marshall</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gould:Julia">Julia Gould</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:An=I_Andy">An-I Andy Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kuenning:Geoff">Geoff Kuenning</a></p>
+<p>【Abstract】:
+The ability to securely delete sensitive data from electronic storage is becoming important. However, current per-file deletion solutions tend to be limited to a segment of the operating system's storage data path or specific to particular file systems or storage media. This paper introduces TrueErase, a holistic secure-deletion framework. Through its design, implementation, verification, and evaluation, TrueErase shows that it is possible to build a legacy-compatible full-storage-data-path framework that performs per-file secure deletion and works with common file systems and solid-state storage, while handling common system failures. In addition, this framework can serve as a building block for encryption- and tainting-based secure-deletion systems.</p>
+<p>【Keywords】:
+NAND flash; file systems; secure deletion; security; storage</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="https://github.com/huntercmd/ccf"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>

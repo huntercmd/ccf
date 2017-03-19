@@ -1,0 +1,299 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/skin.js"></script>
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/classie.js"></script>
+
+<!-- This is for Mathjax -->
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#NDSS 2010:San Diego, California, USA">NDSS 2010:San Diego, California, USA</a><ul>
+<li><a href="#Paper Num: 24 || Session Num: 8">Paper Num: 24 || Session Num: 8</a></li>
+<li><a href="#Session 1: Distributed Systems and Networks    3">Session 1: Distributed Systems and Networks    3</a><ul>
+<li><a href="#1. Server-side Verification of Client Behavior in Online Games.">1. Server-side Verification of Client Behavior in Online Games.</a></li>
+<li><a href="#2. Defeating Vanish with Low-Cost Sybil Attacks Against Large DHTs.">2. Defeating Vanish with Low-Cost Sybil Attacks Against Large DHTs.</a></li>
+<li><a href="#3. Stealth DoS Attacks on Secure Channels.">3. Stealth DoS Attacks on Secure Channels.</a></li>
+</ul>
+</li>
+<li><a href="#Session 2: Web Security and Privacy    3">Session 2: Web Security and Privacy    3</a><ul>
+<li><a href="#4. Protecting Browsers from Extension Vulnerabilities.">4. Protecting Browsers from Extension Vulnerabilities.</a></li>
+<li><a href="#5. Adnostic: Privacy Preserving Targeted Advertising.">5. Adnostic: Privacy Preserving Targeted Advertising.</a></li>
+<li><a href="#6. FLAX: Systematic Discovery of Client-side Validation Vulnerabilities in Rich Web Applications.">6. FLAX: Systematic Discovery of Client-side Validation Vulnerabilities in Rich Web Applications.</a></li>
+</ul>
+</li>
+<li><a href="#Session 3: Intrusion Detection and Attack Analysis    3">Session 3: Intrusion Detection and Attack Analysis    3</a><ul>
+<li><a href="#7. Effective Anomaly Detection with Scarce Training Data.">7. Effective Anomaly Detection with Scarce Training Data.</a></li>
+<li><a href="#8. Large-Scale Automatic Classification of Phishing Pages.">8. Large-Scale Automatic Classification of Phishing Pages.</a></li>
+<li><a href="#9. A Systematic Characterization of IM Threats using Honeypots.">9. A Systematic Characterization of IM Threats using Honeypots.</a></li>
+</ul>
+</li>
+<li><a href="#Session 4: Spam    3">Session 4: Spam    3</a><ul>
+<li><a href="#10. On Network-level Clusters for Spam Detection.">10. On Network-level Clusters for Spam Detection.</a></li>
+<li><a href="#11. Improving Spam Blacklisting Through Dynamic Thresholding and Speculative Aggregation.">11. Improving Spam Blacklisting Through Dynamic Thresholding and Speculative Aggregation.</a></li>
+<li><a href="#12. Botnet Judo: Fighting Spam with Itself.">12. Botnet Judo: Fighting Spam with Itself.</a></li>
+</ul>
+</li>
+<li><a href="#Session 5: Anonymity and Cryptographic Systems    3">Session 5: Anonymity and Cryptographic Systems    3</a><ul>
+<li><a href="#13. Contractual Anonymity.">13. Contractual Anonymity.</a></li>
+<li><a href="#14. A3: An Extensible Platform for Application-Aware Anonymity.">14. A3: An Extensible Platform for Application-Aware Anonymity.</a></li>
+<li><a href="#15. When Good Randomness Goes Bad: Virtual Machine Reset Vulnerabilities and Hedging Deployed Cryptography.">15. When Good Randomness Goes Bad: Virtual Machine Reset Vulnerabilities and Hedging Deployed Cryptography.</a></li>
+</ul>
+</li>
+<li><a href="#Session 6: Security Protocols and Policies    3">Session 6: Security Protocols and Policies    3</a><ul>
+<li><a href="#16. InvisiType: Object-Oriented Security Policies.">16. InvisiType: Object-Oriented Security Policies.</a></li>
+<li><a href="#17. A Security Evaluation of DNSSEC with NSEC3.">17. A Security Evaluation of DNSSEC with NSEC3.</a></li>
+<li><a href="#18. On the Safety of Enterprise Policy Deployment.">18. On the Safety of Enterprise Policy Deployment.</a></li>
+</ul>
+</li>
+<li><a href="#Session 7: Languages and Systems Security    3">Session 7: Languages and Systems Security    3</a><ul>
+<li><a href="#19. Where Do You Want to Go Today? Escalating Privileges by Pathname Manipulation.">19. Where Do You Want to Go Today? Escalating Privileges by Pathname Manipulation.</a></li>
+<li><a href="#20. Joe-E: A Security-Oriented Subset of Java.">20. Joe-E: A Security-Oriented Subset of Java.</a></li>
+<li><a href="#21. Preventing Capability Leaks in Secure JavaScript Subsets.">21. Preventing Capability Leaks in Secure JavaScript Subsets.</a></li>
+</ul>
+</li>
+<li><a href="#Session 8: Malware    3">Session 8: Malware    3</a><ul>
+<li><a href="#22. Binary Code Extraction and Interface Identification for Security Applications.">22. Binary Code Extraction and Interface Identification for Security Applications.</a></li>
+<li><a href="#23. Automatic Reverse Engineering of Data Structures from Binary Execution.">23. Automatic Reverse Engineering of Data Structures from Binary Execution.</a></li>
+<li><a href="#24. Efficient Detection of Split Personalities in Malware.">24. Efficient Detection of Split Personalities in Malware.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="NDSS 2010:San Diego, California, USA">NDSS 2010:San Diego, California, USA</h1>
+<p><a href="http://www.isoc.org/isoc/conferences/ndss/10/">Proceedings of the Network and Distributed System Security Symposium, NDSS 2010, San Diego, California, USA, 28th February - 3rd March 2010.</a> The Internet Society
+【<a href="http://dblp.uni-trier.de/db/conf/ndss/ndss2010.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 24 || Session Num: 8">Paper Num: 24 || Session Num: 8</h2>
+<ul>
+<li><a href="#Session 1: Distributed Systems and Networks    3">Session 1: Distributed Systems and Networks    3</a></li>
+<li><a href="#Session 2: Web Security and Privacy    3">Session 2: Web Security and Privacy    3</a></li>
+<li><a href="#Session 3: Intrusion Detection and Attack Analysis    3">Session 3: Intrusion Detection and Attack Analysis    3</a></li>
+<li><a href="#Session 4: Spam    3">Session 4: Spam    3</a></li>
+<li><a href="#Session 5: Anonymity and Cryptographic Systems    3">Session 5: Anonymity and Cryptographic Systems    3</a></li>
+<li><a href="#Session 6: Security Protocols and Policies    3">Session 6: Security Protocols and Policies    3</a></li>
+<li><a href="#Session 7: Languages and Systems Security    3">Session 7: Languages and Systems Security    3</a></li>
+<li><a href="#Session 8: Malware    3">Session 8: Malware    3</a></li>
+</ul>
+<h2 id="Session 1: Distributed Systems and Networks    3">Session 1: Distributed Systems and Networks    3</h2>
+<h3 id="1. Server-side Verification of Client Behavior in Online Games.">1. Server-side Verification of Client Behavior in Online Games.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/10/pdf/01.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bethea:Darrell">Darrell Bethea</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cochran:Robert_A=">Robert A. Cochran</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Reiter:Michael_K=">Michael K. Reiter</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="2. Defeating Vanish with Low-Cost Sybil Attacks Against Large DHTs.">2. Defeating Vanish with Low-Cost Sybil Attacks Against Large DHTs.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/10/pdf/02.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wolchok:Scott">Scott Wolchok</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hofmann:Owen_S=">Owen S. Hofmann</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Heninger:Nadia">Nadia Heninger</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Felten:Edward_W=">Edward W. Felten</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Halderman:J=_Alex">J. Alex Halderman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rossbach:Christopher_J=">Christopher J. Rossbach</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Waters:Brent">Brent Waters</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Witchel:Emmett">Emmett Witchel</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="3. Stealth DoS Attacks on Secure Channels.">3. Stealth DoS Attacks on Secure Channels.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/10/pdf/03.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Herzberg:Amir">Amir Herzberg</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shulman:Haya">Haya Shulman</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Session 2: Web Security and Privacy    3">Session 2: Web Security and Privacy    3</h2>
+<h3 id="4. Protecting Browsers from Extension Vulnerabilities.">4. Protecting Browsers from Extension Vulnerabilities.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/10/pdf/04.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Barth:Adam">Adam Barth</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Felt:Adrienne_Porter">Adrienne Porter Felt</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Saxena:Prateek">Prateek Saxena</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Boodman:Aaron">Aaron Boodman</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="5. Adnostic: Privacy Preserving Targeted Advertising.">5. Adnostic: Privacy Preserving Targeted Advertising.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/10/pdf/05.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/t/Toubiana:Vincent">Vincent Toubiana</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Narayanan:Arvind">Arvind Narayanan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Boneh:Dan">Dan Boneh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nissenbaum:Helen">Helen Nissenbaum</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Barocas:Solon">Solon Barocas</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="6. FLAX: Systematic Discovery of Client-side Validation Vulnerabilities in Rich Web Applications.">6. FLAX: Systematic Discovery of Client-side Validation Vulnerabilities in Rich Web Applications.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/10/pdf/06.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Saxena:Prateek">Prateek Saxena</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hanna:Steve">Steve Hanna</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Poosankam:Pongsin">Pongsin Poosankam</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Song:Dawn">Dawn Song</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Session 3: Intrusion Detection and Attack Analysis    3">Session 3: Intrusion Detection and Attack Analysis    3</h2>
+<h3 id="7. Effective Anomaly Detection with Scarce Training Data.">7. Effective Anomaly Detection with Scarce Training Data.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/10/pdf/07.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Robertson:William_K=">William K. Robertson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Maggi:Federico">Federico Maggi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kruegel:Christopher">Christopher Kruegel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vigna:Giovanni">Giovanni Vigna</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="8. Large-Scale Automatic Classification of Phishing Pages.">8. Large-Scale Automatic Classification of Phishing Pages.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/10/pdf/08.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Whittaker:Colin">Colin Whittaker</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ryner:Brian">Brian Ryner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nazif:Marria">Marria Nazif</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="9. A Systematic Characterization of IM Threats using Honeypots.">9. A Systematic Characterization of IM Threats using Honeypots.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/10/pdf/09.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Polakis:Iasonas">Iasonas Polakis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Petsas:Thanasis">Thanasis Petsas</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Markatos:Evangelos_P=">Evangelos P. Markatos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Antonatos:Spyros">Spyros Antonatos</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Session 4: Spam    3">Session 4: Spam    3</h2>
+<h3 id="10. On Network-level Clusters for Spam Detection.">10. On Network-level Clusters for Spam Detection.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/10/pdf/10.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/q/Qian:Zhiyun">Zhiyun Qian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mao:Zhuoqing_Morley">Zhuoqing Morley Mao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xie:Yinglian">Yinglian Xie</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yu:Fang">Fang Yu</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="11. Improving Spam Blacklisting Through Dynamic Thresholding and Speculative Aggregation.">11. Improving Spam Blacklisting Through Dynamic Thresholding and Speculative Aggregation.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/10/pdf/11.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sinha:Sushant">Sushant Sinha</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bailey:Michael">Michael Bailey</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jahanian:Farnam">Farnam Jahanian</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="12. Botnet Judo: Fighting Spam with Itself.">12. Botnet Judo: Fighting Spam with Itself.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/10/pdf/12.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Pitsillidis:Andreas">Andreas Pitsillidis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Levchenko:Kirill">Kirill Levchenko</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kreibich:Christian">Christian Kreibich</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kanich:Chris">Chris Kanich</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Voelker:Geoffrey_M=">Geoffrey M. Voelker</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Paxson:Vern">Vern Paxson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Weaver:Nicholas">Nicholas Weaver</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Savage:Stefan">Stefan Savage</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Session 5: Anonymity and Cryptographic Systems    3">Session 5: Anonymity and Cryptographic Systems    3</h2>
+<h3 id="13. Contractual Anonymity.">13. Contractual Anonymity.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/10/pdf/13.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Schwartz:Edward_J=">Edward J. Schwartz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Brumley:David">David Brumley</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McCune:Jonathan_M=">Jonathan M. McCune</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="14. A3: An Extensible Platform for Application-Aware Anonymity.">14. A3: An Extensible Platform for Application-Aware Anonymity.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/10/pdf/14.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sherr:Micah">Micah Sherr</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mao:Andrew">Andrew Mao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Marczak:William_R=">William R. Marczak</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Wenchao">Wenchao Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Loo:Boon_Thau">Boon Thau Loo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Blaze:Matt">Matt Blaze</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="15. When Good Randomness Goes Bad: Virtual Machine Reset Vulnerabilities and Hedging Deployed Cryptography.">15. When Good Randomness Goes Bad: Virtual Machine Reset Vulnerabilities and Hedging Deployed Cryptography.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/10/pdf/15.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Ristenpart:Thomas">Thomas Ristenpart</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yilek:Scott">Scott Yilek</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Session 6: Security Protocols and Policies    3">Session 6: Security Protocols and Policies    3</h2>
+<h3 id="16. InvisiType: Object-Oriented Security Policies.">16. InvisiType: Object-Oriented Security Policies.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/10/pdf/16.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Seo:Jiwon">Jiwon Seo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lam:Monica_S=">Monica S. Lam</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="17. A Security Evaluation of DNSSEC with NSEC3.">17. A Security Evaluation of DNSSEC with NSEC3.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/10/pdf/17.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bau:Jason">Jason Bau</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mitchell:John_C=">John C. Mitchell</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="18. On the Safety of Enterprise Policy Deployment.">18. On the Safety of Enterprise Policy Deployment.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/10/pdf/18.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gao:Yudong">Yudong Gao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pan:Ni">Ni Pan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Xu">Xu Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mao:Zhuoqing_Morley">Zhuoqing Morley Mao</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Session 7: Languages and Systems Security    3">Session 7: Languages and Systems Security    3</h2>
+<h3 id="19. Where Do You Want to Go Today? Escalating Privileges by Pathname Manipulation.">19. Where Do You Want to Go Today? Escalating Privileges by Pathname Manipulation.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/10/pdf/19.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chari:Suresh">Suresh Chari</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Halevi:Shai">Shai Halevi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Venema:Wietse">Wietse Venema</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="20. Joe-E: A Security-Oriented Subset of Java.">20. Joe-E: A Security-Oriented Subset of Java.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/10/pdf/20.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mettler:Adrian">Adrian Mettler</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wagner:David">David Wagner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Close:Tyler">Tyler Close</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="21. Preventing Capability Leaks in Secure JavaScript Subsets.">21. Preventing Capability Leaks in Secure JavaScript Subsets.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/10/pdf/21.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Finifter:Matthew">Matthew Finifter</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Weinberger:Joel">Joel Weinberger</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Barth:Adam">Adam Barth</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Session 8: Malware    3">Session 8: Malware    3</h2>
+<h3 id="22. Binary Code Extraction and Interface Identification for Security Applications.">22. Binary Code Extraction and Interface Identification for Security Applications.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/10/pdf/22.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Caballero:Juan">Juan Caballero</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Johnson:Noah_M=">Noah M. Johnson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McCamant:Stephen">Stephen McCamant</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Song:Dawn">Dawn Song</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="23. Automatic Reverse Engineering of Data Structures from Binary Execution.">23. Automatic Reverse Engineering of Data Structures from Binary Execution.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/10/pdf/23.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lin:Zhiqiang">Zhiqiang Lin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Xiangyu">Xiangyu Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Dongyan">Dongyan Xu</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="24. Efficient Detection of Split Personalities in Malware.">24. Efficient Detection of Split Personalities in Malware.</h3>
+<p>【<a href="http://www.isoc.org/isoc/conferences/ndss/10/pdf/24.pdf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Balzarotti:Davide">Davide Balzarotti</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cova:Marco">Marco Cova</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Karlberger:Christoph">Christoph Karlberger</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kirda:Engin">Engin Kirda</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kruegel:Christopher">Christopher Kruegel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vigna:Giovanni">Giovanni Vigna</a></p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="https://github.com/huntercmd/ccf"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>

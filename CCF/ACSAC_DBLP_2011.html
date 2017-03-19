@@ -1,0 +1,527 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/skin.js"></script>
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/classie.js"></script>
+
+<!-- This is for Mathjax -->
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#27. ACSAC 2011:Orlando, FL, USA">27. ACSAC 2011:Orlando, FL, USA</a><ul>
+<li><a href="#Paper Num: 42 || Session Num: 17">Paper Num: 42 || Session Num: 17</a></li>
+<li><a href="#Malware I    3">Malware I    3</a><ul>
+<li><a href="#1. Understanding the prevalence and use of alternative plans in malware with network games.">1. Understanding the prevalence and use of alternative plans in malware with network games.</a></li>
+<li><a href="#2. FORECAST: skimming off the malware cream.">2. FORECAST: skimming off the malware cream.</a></li>
+<li><a href="#3. Detecting malware's failover C&C strategies with squeeze.">3. Detecting malware's failover C&amp;C strategies with squeeze.</a></li>
+</ul>
+</li>
+<li><a href="#Situational awareness I    3">Situational awareness I    3</a><ul>
+<li><a href="#4. Distilling critical attack graph surface iteratively through minimum-cost SAT solving.">4. Distilling critical attack graph surface iteratively through minimum-cost SAT solving.</a></li>
+<li><a href="#5. RIPE: runtime intrusion prevention evaluator.">5. RIPE: runtime intrusion prevention evaluator.</a></li>
+<li><a href="#6. Hit 'em where it hurts: a live security exercise on cyber situational awareness.">6. Hit 'em where it hurts: a live security exercise on cyber situational awareness.</a></li>
+</ul>
+</li>
+<li><a href="#Applied cryptography    3">Applied cryptography    3</a><ul>
+<li><a href="#7. "Mix-in-Place" anonymous networking using secure function evaluation.">7. "Mix-in-Place" anonymous networking using secure function evaluation.</a></li>
+<li><a href="#8. Security through amnesia: a software-based solution to the cold boot attack on disk encryption.">8. Security through amnesia: a software-based solution to the cold boot attack on disk encryption.</a></li>
+<li><a href="#9. Private search in the real world.">9. Private search in the real world.</a></li>
+</ul>
+</li>
+<li><a href="#Social network security    3">Social network security    3</a><ul>
+<li><a href="#10. The socialbot network: when bots socialize for fame and money.">10. The socialbot network: when bots socialize for fame and money.</a></li>
+<li><a href="#11. Detecting and resolving privacy conflicts for collaborative data sharing in online social networks.">11. Detecting and resolving privacy conflicts for collaborative data sharing in online social networks.</a></li>
+<li><a href="#12. Social snapshots: digital forensics for online social networks.">12. Social snapshots: digital forensics for online social networks.</a></li>
+</ul>
+</li>
+<li><a href="#Classic paper I    1">Classic paper I    1</a><ul>
+<li><a href="#13. A peel of onion.">13. A peel of onion.</a></li>
+</ul>
+</li>
+<li><a href="#Invited essayist    1">Invited essayist    1</a><ul>
+<li><a href="#14. The science of cyber security experimentation: the DETER project.">14. The science of cyber security experimentation: the DETER project.</a></li>
+</ul>
+</li>
+<li><a href="#Usable security    3">Usable security    3</a><ul>
+<li><a href="#15. Facing the facts about image type in recognition-based graphical passwords.">15. Facing the facts about image type in recognition-based graphical passwords.</a></li>
+<li><a href="#16. PhorceField: a phish-proof password ceremony.">16. PhorceField: a phish-proof password ceremony.</a></li>
+<li><a href="#17. Dynamic sample size detection in continuous authentication using sequential sampling.">17. Dynamic sample size detection in continuous authentication using sequential sampling.</a></li>
+</ul>
+</li>
+<li><a href="#Secure infrastructure    3">Secure infrastructure    3</a><ul>
+<li><a href="#18. Improving robustness of DNS to software vulnerabilities.">18. Improving robustness of DNS to software vulnerabilities.</a></li>
+<li><a href="#19. Enabling secure VM-vTPM migration in private clouds.">19. Enabling secure VM-vTPM migration in private clouds.</a></li>
+<li><a href="#20. Exposing invisible timing-based traffic watermarks with BACKLIT.">20. Exposing invisible timing-based traffic watermarks with BACKLIT.</a></li>
+</ul>
+</li>
+<li><a href="#Anonymity    3">Anonymity    3</a><ul>
+<li><a href="#21. Exploring the potential benefits of expanded rate limiting in Tor: slow and steady wins the race with Tortoise.">21. Exploring the potential benefits of expanded rate limiting in Tor: slow and steady wins the race with Tortoise.</a></li>
+<li><a href="#22. "Super nodes" in Tor: existence and security implication.">22. "Super nodes" in Tor: existence and security implication.</a></li>
+<li><a href="#23. Smart metering de-pseudonymization.">23. Smart metering de-pseudonymization.</a></li>
+</ul>
+</li>
+<li><a href="#Web security I    3">Web security I    3</a><ul>
+<li><a href="#24. SEMAGE: a new image-based two-factor CAPTCHA.">24. SEMAGE: a new image-based two-factor CAPTCHA.</a></li>
+<li><a href="#25. BLOCK: a black-box approach for detection of state violation attacks towards web applications.">25. BLOCK: a black-box approach for detection of state violation attacks towards web applications.</a></li>
+<li><a href="#26. A server- and browser-transparent CSRF defense for web 2.0 applications.">26. A server- and browser-transparent CSRF defense for web 2.0 applications.</a></li>
+</ul>
+</li>
+<li><a href="#Software security    2">Software security    2</a><ul>
+<li><a href="#27. ASIDE: IDE support for web application security.">27. ASIDE: IDE support for web application security.</a></li>
+<li><a href="#28. Tracking payment card data flow using virtual machine state introspection.">28. Tracking payment card data flow using virtual machine state introspection.</a></li>
+</ul>
+</li>
+<li><a href="#Web security II    3">Web security II    3</a><ul>
+<li><a href="#29. An empirical study of visual security cues to prevent the SSLstripping attack.">29. An empirical study of visual security cues to prevent the SSLstripping attack.</a></li>
+<li><a href="#30. AdSentry: comprehensive and flexible confinement of JavaScript-based advertisements.">30. AdSentry: comprehensive and flexible confinement of JavaScript-based advertisements.</a></li>
+<li><a href="#31. WebJail: least-privilege integration of third-party components in web mashups.">31. WebJail: least-privilege integration of third-party components in web mashups.</a></li>
+</ul>
+</li>
+<li><a href="#Classic paper II    1">Classic paper II    1</a><ul>
+<li><a href="#32. Key escrow from a safe distance: looking back at the Clipper Chip.">32. Key escrow from a safe distance: looking back at the Clipper Chip.</a></li>
+</ul>
+</li>
+<li><a href="#Mobile security    3">Mobile security    3</a><ul>
+<li><a href="#33. Reliable telemetry in white spaces using remote attestation.">33. Reliable telemetry in white spaces using remote attestation.</a></li>
+<li><a href="#34. Don't Bump, Shake on It: the exploitation of a popular accelerometer-based smart phone exchange and its secure replacement.">34. Don't Bump, Shake on It: the exploitation of a popular accelerometer-based smart phone exchange and its secure replacement.</a></li>
+<li><a href="#35. Attacks on WebView in the Android system.">35. Attacks on WebView in the Android system.</a></li>
+</ul>
+</li>
+<li><a href="#Malware II    3">Malware II    3</a><ul>
+<li><a href="#36. Mitigating code-reuse attacks with control-flow locking.">36. Mitigating code-reuse attacks with control-flow locking.</a></li>
+<li><a href="#37. deRop: removing return-oriented programming from malware.">37. deRop: removing return-oriented programming from malware.</a></li>
+<li><a href="#38. Static detection of malicious JavaScript-bearing PDF documents.">38. Static detection of malicious JavaScript-bearing PDF documents.</a></li>
+</ul>
+</li>
+<li><a href="#Situational awareness II    2">Situational awareness II    2</a><ul>
+<li><a href="#39. Nexat: a history-based approach to predict attacker actions.">39. Nexat: a history-based approach to predict attacker actions.</a></li>
+<li><a href="#40. From prey to hunter: transforming legacy embedded devices into exploitation sensor grids.">40. From prey to hunter: transforming legacy embedded devices into exploitation sensor grids.</a></li>
+</ul>
+</li>
+<li><a href="#Malware III    2">Malware III    2</a><ul>
+<li><a href="#41. BareBox: efficient malware analysis on bare-metal.">41. BareBox: efficient malware analysis on bare-metal.</a></li>
+<li><a href="#42. Automated remote repair for mobile malware.">42. Automated remote repair for mobile malware.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="27. ACSAC 2011:Orlando, FL, USA">27. ACSAC 2011:Orlando, FL, USA</h1>
+<p><a href="http://doi.acm.org/10.1145/2076732">Twenty-Seventh Annual Computer Security Applications Conference, ACSAC 2011, Orlando, FL, USA, 5-9 December 2011.</a> ACM
+【<a href="http://dblp.uni-trier.de/db/conf/acsac/acsac2011.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 42 || Session Num: 17">Paper Num: 42 || Session Num: 17</h2>
+<ul>
+<li><a href="#Anonymity    3">Anonymity    3</a></li>
+<li><a href="#Applied cryptography    3">Applied cryptography    3</a></li>
+<li><a href="#Classic paper I    1">Classic paper I    1</a></li>
+<li><a href="#Classic paper II    1">Classic paper II    1</a></li>
+<li><a href="#Invited essayist    1">Invited essayist    1</a></li>
+<li><a href="#Malware I    3">Malware I    3</a></li>
+<li><a href="#Malware II    3">Malware II    3</a></li>
+<li><a href="#Malware III    2">Malware III    2</a></li>
+<li><a href="#Mobile security    3">Mobile security    3</a></li>
+<li><a href="#Secure infrastructure    3">Secure infrastructure    3</a></li>
+<li><a href="#Situational awareness I    3">Situational awareness I    3</a></li>
+<li><a href="#Situational awareness II    2">Situational awareness II    2</a></li>
+<li><a href="#Social network security    3">Social network security    3</a></li>
+<li><a href="#Software security    2">Software security    2</a></li>
+<li><a href="#Usable security    3">Usable security    3</a></li>
+<li><a href="#Web security I    3">Web security I    3</a></li>
+<li><a href="#Web security II    3">Web security II    3</a></li>
+</ul>
+<h2 id="Malware I    3">Malware I    3</h2>
+<h3 id="1. Understanding the prevalence and use of alternative plans in malware with network games.">1. Understanding the prevalence and use of alternative plans in malware with network games.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076734">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Nadji:Yacin">Yacin Nadji</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Antonakakis:Manos">Manos Antonakakis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Perdisci:Roberto">Roberto Perdisci</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Wenke">Wenke Lee</a></p>
+<p>【Abstract】:
+In this paper we describe and evaluate a technique to improve the amount of information gained from dynamic malware analysis systems. By playing network games during analysis, we explore the behavior of malware when it believes its network resources are malfunctioning. This forces the malware to reveal its alternative plan to the analysis system resulting in a more complete understanding of malware behavior. Network games are similar to multipath exploration techniques, but are resistant to conditional code obfuscation. Our experimental results show that network games discover highly useful network information from malware. Of the 161,000 domain names and over three million IP addresses coerced from malware during three weeks, over 95% never appeared on public blacklists. We show that this information is both likely to be malicious and can be used to improve existing domain name and IP address reputation systems, blacklists, and network-based malware clustering systems.</p>
+<p>【Keywords】:</p>
+<h3 id="2. FORECAST: skimming off the malware cream.">2. FORECAST: skimming off the malware cream.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076735">Paper Link</a>】    【Pages】:11-20</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Neugschwandtner:Matthias">Matthias Neugschwandtner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Comparetti:Paolo_Milani">Paolo Milani Comparetti</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jacob:Gr=eacute=goire">Grégoire Jacob</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kruegel:Christopher">Christopher Kruegel</a></p>
+<p>【Abstract】:
+To handle the large number of malware samples appearing in the wild each day, security analysts and vendors employ automated tools to detect, classify and analyze malicious code. Because malware is typically resistant to static analysis, automated dynamic analysis is widely used for this purpose. Executing malicious software in a controlled environment while observing its behavior can provide rich information on a malware's capabilities. However, running each malware sample even for a few minutes is expensive. For this reason, malware analysis efforts need to select a subset of samples for analysis. To date, this selection has been performed either randomly or using techniques focused on avoiding re-analysis of polymorphic malware variants [41, 23]. In this paper, we present a novel approach to sample selection that attempts to maximize the total value of the information obtained from analysis, according to an application-dependent scoring function. To this end, we leverage previous work on behavioral malware clustering [14] and introduce a machine-learning-based system that uses all statically-available information to predict into which behavioral class a sample will fall, before the sample is actually executed. We discuss scoring functions tailored at two practical applications of large-scale dynamic analysis: the compilation of network blacklists of command and control servers and the generation of remediation procedures for malware infections. We implement these techniques in a tool called ForeCast. Large-scale evaluation on over 600,000 malware samples shows that our prototype can increase the amount of potential command and control servers detected by up to 137% over a random selection strategy and 54% over a selection strategy based on sample diversity.</p>
+<p>【Keywords】:</p>
+<h3 id="3. Detecting malware's failover C&C strategies with squeeze.">3. Detecting malware's failover C&amp;C strategies with squeeze.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076736">Paper Link</a>】    【Pages】:21-30</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Neugschwandtner:Matthias">Matthias Neugschwandtner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Comparetti:Paolo_Milani">Paolo Milani Comparetti</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Platzer:Christian">Christian Platzer</a></p>
+<p>【Abstract】:
+The ability to remote-control infected PCs is a fundamental component of modern malware campaigns. At the same time, the command and control (C&C;) infrastructure that provides this capability is an attractive target for mitigation. In recent years, more or less successful takedown operations have been conducted against botnets employing both client-server and peer-to-peer C&C; architectures. To improve their robustness against such disruptions of their illegal business, botnet operators routinely deploy redundant C&C; infrastructure and implement failover C&C; strategies. In this paper, we propose techniques based on multi-path exploration [1] to discover how malware behaves when faced with the simulated take-down of some of the network endpoints it communicates with. We implement these techniques in a tool called Squeeze, and show that it allows us to detect backup C&C; servers, increasing the coverage of an automatically generated C&C; blacklist by 19.7%, and can trigger domain generation algorithms that malware implements for disaster-recovery.</p>
+<p>【Keywords】:</p>
+<h2 id="Situational awareness I    3">Situational awareness I    3</h2>
+<h3 id="4. Distilling critical attack graph surface iteratively through minimum-cost SAT solving.">4. Distilling critical attack graph surface iteratively through minimum-cost SAT solving.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076738">Paper Link</a>】    【Pages】:31-40</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Huang:Heqing">Heqing Huang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Su">Su Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Ou:Xinming">Xinming Ou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Prakash:Atul">Atul Prakash</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sakallah:Karem_A=">Karem A. Sakallah</a></p>
+<p>【Abstract】:
+It has long been recognized that it can be tedious and even infeasible for system administrators to figure out critical security problems residing in full attack graphs, even for small-sized enterprise networks. Therefore a trade-off between analysis accuracy and efficiency needs to be made to achieve a reasonable balance between completeness of the attack graph and its usefulness. In this paper, we provide an approach to attack graph distillation, so that the user can control the amount of information presented by sifting out the most critical portion of the full attack graph. The user can choose to see only the k most critical attack paths, based on specified severity metrics, e.g. the likelihood for an attacker to carry out certain exploit on certain machine and the chance of success. We transform an dependency attack graph into a Boolean formula and assign cost metrics to attack variables in the formula, based on the severity metrics. We then apply Minimum-Cost SAT Solving (MCSS) to find the most critical path in terms of the least cost incurred for the attacker to deploy multi-step attacks leading to certain crucial assets in the network. An iterative process inspired by Counter Example Guided Abstraction and Refinement (CEGAR) is designed to efficiently guide the MCSS to render solutions that contain a controlled number of realistic attack paths, forming a critical attack graph surface. Our method can distill critical attack graph surfaces from the full attack graphs generated for moderate-sized enterprise networks in only several minutes. Experiments on various sized network scenarios show that even for a small-sized critical attack graph surface (around 15% the size of the original full attack graph), the calculated risk metrics are good approximation of the values computed with the full attack graph, meaning the distilled critical attack graph surface is able to capture the crucial security problems in an enterprise network for further in-depth analysis.</p>
+<p>【Keywords】:</p>
+<h3 id="5. RIPE: runtime intrusion prevention evaluator.">5. RIPE: runtime intrusion prevention evaluator.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076739">Paper Link</a>】    【Pages】:41-50</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wilander:John">John Wilander</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nikiforakis:Nick">Nick Nikiforakis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Younan:Yves">Yves Younan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kamkar:Mariam">Mariam Kamkar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Joosen:Wouter">Wouter Joosen</a></p>
+<p>【Abstract】:
+Despite the plethora of research done in code injection countermeasures, buffer overflows still plague modern software. In 2003, Wilander and Kamkar published a comparative evaluation on runtime buffer overflow prevention technologies using a testbed of 20 attack forms and demonstrated that the best prevention tool missed 50% of the attack forms. Since then, many new prevention tools have been presented using that testbed to show that they performed better, not missing any of the attack forms. At the same time though, there have been major developments in the ways of buffer overflow exploitation. In this paper we present RIPE, an extension of Wilander's and Kamkar's testbed which covers 850 attack forms. The main purpose of RIPE is to provide a standard way of testing the coverage of a defense mechanism against buffer overflows. In order to test RIPE we use it to empirically evaluate some of the newer prevention techniques. Our results show that the most popular, publicly available countermeasures cannot prevent all of RIPE's buffer overflow attack forms. ProPolice misses 60%, LibsafePlus+TIED misses 23%, CRED misses 21%, and Ubuntu 9.10 with nonexecutable memory and stack protection misses 11%.</p>
+<p>【Keywords】:</p>
+<h3 id="6. Hit 'em where it hurts: a live security exercise on cyber situational awareness.">6. Hit 'em where it hurts: a live security exercise on cyber situational awareness.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076740">Paper Link</a>】    【Pages】:51-61</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Doup=eacute=:Adam">Adam Doupé</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Egele:Manuel">Manuel Egele</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Caillat:Benjamin">Benjamin Caillat</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stringhini:Gianluca">Gianluca Stringhini</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yakin:Gorkem">Gorkem Yakin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zand:Ali">Ali Zand</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cavedon:Ludovico">Ludovico Cavedon</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vigna:Giovanni">Giovanni Vigna</a></p>
+<p>【Abstract】:
+Live security exercises are a powerful educational tool to motivate students to excel and foster research and development of novel security solutions. Our insight is to design a live security exercise to provide interesting datasets in a specific area of security research. In this paper we validated this insight, and we present the design of a novel kind of live security competition centered on the concept of Cyber Situational Awareness. The competition was carried out in December 2010, and involved 72 teams (900 students) spread across 16 countries, making it the largest educational live security exercise ever performed. We present both the innovative design of this competition and the novel dataset we collected. In addition, we define Cyber Situational Awareness metrics to characterize the toxicity and effectiveness of the attacks performed by the participants with respect to the missions carried out by the targets of the attack.</p>
+<p>【Keywords】:</p>
+<h2 id="Applied cryptography    3">Applied cryptography    3</h2>
+<h3 id="7. "Mix-in-Place" anonymous networking using secure function evaluation.">7. "Mix-in-Place" anonymous networking using secure function evaluation.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076742">Paper Link</a>】    【Pages】:63-72</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Nipane:Nilesh">Nilesh Nipane</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dacosta:Italo">Italo Dacosta</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Traynor:Patrick">Patrick Traynor</a></p>
+<p>【Abstract】:
+Anonymous communications systems generally trade off performance for strong cryptographic guarantees of privacy. However, a number of applications with moderate performance requirements (e.g., chat) may require both properties. In this paper, we develop a new architecture that provides provably unlinkable and efficient communications using a single intermediary node. Nodes participating in these Mix-In-Place Networks (MIPNets) exchange messages through a mailbox in an Oblivious Proxy (OP). Clients leverage Secure Function Evaluation (SFE) to send and receive their messages from the OP while blindly but reversibly modifying the appearance of all other messages (i.e., mixing in place) in the mailbox. While an Oblivious Proxy will know that a client participated in exchanges, it can not be certain which, if any, messages that client transmitted or received. We implement and measure our proposed design using a modified version of Fairplay and note reductions in execution times of greater than 98% over the naïve application of garbled circuits. We then develop a chat application on top of the MIPNet architecture and demonstrate its practical use for as many as 100 concurrent users. Our results demonstrate the potential to use SFE-enabled "mixing" in a single proxy as a means of providing provable deniability for applications with near real-time performance requirements.</p>
+<p>【Keywords】:</p>
+<h3 id="8. Security through amnesia: a software-based solution to the cold boot attack on disk encryption.">8. Security through amnesia: a software-based solution to the cold boot attack on disk encryption.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076743">Paper Link</a>】    【Pages】:73-82</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Simmons:Patrick">Patrick Simmons</a></p>
+<p>【Abstract】:
+Disk encryption has become an important security measure for a multitude of clients, including governments, corporations, activists, security-conscious professionals, and privacy-conscious individuals. Unfortunately, recent research has discovered an effective side channel attack against any disk mounted by a running machine [23]. This attack, known as the cold boot attack, is effective against any mounted volume using state-of-the-art disk encryption, is relatively simple to perform for an attacker with even rudimentary technical knowledge and training, and is applicable to exactly the scenario against which disk encryption is primarily supposed to defend: an adversary with physical access. While there has been some previous work in defending against this attack [27], the only currently available solution suffers from the twin problems of disabling access to the SSE registers and supporting only a single encrypted volume, hindering its usefulness for such common encryption scenarios as data and swap partitions encrypted with different keys (the swap key being a randomly generated throw-away key). We present Loop-Amnesia, a kernel-based disk encryption mechanism implementing a novel technique to eliminate vulnerability to the cold boot attack. We contribute a novel technique for shielding multiple encryption keys from RAM and a mechanism for storing encryption keys inside the CPU that does not interfere with the use of SSE. We offer theoretical justification of Loop-Amnesia's invulnerability to the attack, verify that our implementation is not vulnerable in practice, and present measurements showing our impact on I/O accesses to the encrypted disk is limited to a slowdown of approximately 2x. Loop-Amnesia is written for x86-64, but our technique is applicable to other register-based architectures. We base our work on loop-AES, a state-of-the-art open source disk encryption package for Linux.</p>
+<p>【Keywords】:</p>
+<h3 id="9. Private search in the real world.">9. Private search in the real world.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076744">Paper Link</a>】    【Pages】:83-92</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Pappas:Vasilis">Vasilis Pappas</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Raykova_0001:Mariana">Mariana Raykova</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vo:Binh">Binh Vo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bellovin:Steven_M=">Steven M. Bellovin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Malkin:Tal">Tal Malkin</a></p>
+<p>【Abstract】:
+Encrypted search --- performing queries on protected data --- has been explored in the past; however, its inherent inefficiency has raised questions of practicality. Here, we focus on improving the performance and extending its functionality enough to make it practical. We do this by optimizing the system, and by stepping back from the goal of achieving maximal privacy guarantees in an encrypted search scenario and consider efficiency and functionality as priorities. We design and analyze the privacy implications of two practical extensions applicable to any keyword-based private search system. We evaluate their efficiency by building them on top of a private search system, called SADS. Additionally, we improve SADS' performance, privacy guaranties and functionality. The extended SADS system offers improved efficiency parameters that meet practical usability requirements in a relaxed adversarial model. We present the experimental results and evaluate the performance of the system. We also demonstrate analytically that our scheme can meet the basic needs of a major hospital complex's admissions records. Overall, we achieve performance comparable to a simply configured MySQL database system.</p>
+<p>【Keywords】:</p>
+<h2 id="Social network security    3">Social network security    3</h2>
+<h3 id="10. The socialbot network: when bots socialize for fame and money.">10. The socialbot network: when bots socialize for fame and money.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076746">Paper Link</a>】    【Pages】:93-102</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Boshmaf:Yazan">Yazan Boshmaf</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Muslukhov:Ildar">Ildar Muslukhov</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Beznosov:Konstantin">Konstantin Beznosov</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ripeanu:Matei">Matei Ripeanu</a></p>
+<p>【Abstract】:
+Online Social Networks (OSNs) have become an integral part of today's Web. Politicians, celebrities, revolutionists, and others use OSNs as a podium to deliver their message to millions of active web users. Unfortunately, in the wrong hands, OSNs can be used to run astroturf campaigns to spread misinformation and propaganda. Such campaigns usually start off by infiltrating a targeted OSN on a large scale. In this paper, we evaluate how vulnerable OSNs are to a large-scale infiltration by socialbots: computer programs that control OSN accounts and mimic real users. We adopt a traditional web-based botnet design and built a Socialbot Network (SbN): a group of adaptive socialbots that are orchestrated in a command-and-control fashion. We operated such an SbN on Facebook---a 750 million user OSN---for about 8 weeks. We collected data related to users' behavior in response to a large-scale infiltration where socialbots were used to connect to a large number of Facebook users. Our results show that (1) OSNs, such as Facebook, can be infiltrated with a success rate of up to 80%, (2) depending on users' privacy settings, a successful infiltration can result in privacy breaches where even more users' data are exposed when compared to a purely public access, and (3) in practice, OSN security defenses, such as the Facebook Immune System, are not effective enough in detecting or stopping a large-scale infiltration as it occurs.</p>
+<p>【Keywords】:</p>
+<h3 id="11. Detecting and resolving privacy conflicts for collaborative data sharing in online social networks.">11. Detecting and resolving privacy conflicts for collaborative data sharing in online social networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076747">Paper Link</a>】    【Pages】:103-112</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Hongxin">Hongxin Hu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Ahn:Gail=Joon">Gail-Joon Ahn</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jorgensen:Jan">Jan Jorgensen</a></p>
+<p>【Abstract】:
+We have seen tremendous growth in online social networks (OSNs) in recent years. These OSNs not only offer attractive means for virtual social interactions and information sharing, but also raise a number of security and privacy issues. Although OSNs allow a single user to govern access to her/his data, they currently do not provide any mechanism to enforce privacy concerns over data associated with multiple users, remaining privacy violations largely unresolved and leading to the potential disclosure of information that at least one user intended to keep private. In this paper, we propose an approach to enable collaborative privacy management of shared data in OSNs. In particular, we provide a systematic mechanism to identify and resolve privacy conflicts for collaborative data sharing. Our conflict resolution indicates a tradeoff between privacy protection and data sharing by quantifying privacy risk and sharing loss. We also discuss a proof-of-concept prototype implementation of our approach as part of an application in Facebook and provide system evaluation and usability study of our methodology.</p>
+<p>【Keywords】:
+access control; collaborative; data sharing; privacy conflict; social networks</p>
+<h3 id="12. Social snapshots: digital forensics for online social networks.">12. Social snapshots: digital forensics for online social networks.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076748">Paper Link</a>】    【Pages】:113-122</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Huber:Markus">Markus Huber</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mulazzani:Martin">Martin Mulazzani</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Leithner:Manuel">Manuel Leithner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schrittwieser:Sebastian">Sebastian Schrittwieser</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wondracek:Gilbert">Gilbert Wondracek</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Weippl:Edgar_R=">Edgar R. Weippl</a></p>
+<p>【Abstract】:
+Recently, academia and law enforcement alike have shown a strong demand for data that is collected from online social networks. In this work, we present a novel method for harvesting such data from social networking websites. Our approach uses a hybrid system that is based on a custom add-on for social networks in combination with a web crawling component. The datasets that our tool collects contain profile information (user data, private messages, photos, etc.) and associated meta-data (internal timestamps and unique identifiers). These social snapshots are significant for security research and in the field of digital forensics. We implemented a prototype for Facebook and evaluated our system on a number of human volunteers. We show the feasibility and efficiency of our approach and its advantages in contrast to traditional techniques that rely on application-specific web crawling and parsing. Furthermore, we investigate different use-cases of our tool that include consensual application and the use of sniffed authentication cookies. Finally, we contribute to the research community by publishing our implementation as an open-source project.</p>
+<p>【Keywords】:
+forensics; online social networks; security</p>
+<h2 id="Classic paper I    1">Classic paper I    1</h2>
+<h3 id="13. A peel of onion.">13. A peel of onion.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076750">Paper Link</a>】    【Pages】:123-137</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Syverson:Paul_F=">Paul F. Syverson</a></p>
+<p>【Abstract】:
+Onion routing was invented more than fifteen years ago to separate identification from routing in network communication. Since that time there has been much design, analysis, and deployment of onion routing systems. This has been accompanied by much confusion about what these systems do, what security they provide, how they work, who built them, and even what they are called. Here I give an overview of onion routing from its earliest conception to some of the latest research, including the design and use of Tor, a global onion routing network with about a half million users on any given day.</p>
+<p>【Keywords】:</p>
+<h2 id="Invited essayist    1">Invited essayist    1</h2>
+<h3 id="14. The science of cyber security experimentation: the DETER project.">14. The science of cyber security experimentation: the DETER project.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076752">Paper Link</a>】    【Pages】:137-148</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Benzel:Terry">Terry Benzel</a></p>
+<p>【Abstract】:
+Since 2004, the DETER Cyber-security Project has worked to create an evolving infrastructure - facilities, tools, and processes - to provide a national resource for experimentation in cyber security. Building on our insights into requirements for cyber science and on lessons learned through 8 years of operation, we have made several transformative advances towards creating the next generation of DeterLab. These advances in experiment design and research methodology are yielding progressive improvements not only in experiment scale, complexity, diversity, and repeatability, but also in the ability of researchers to leverage prior experimental efforts of other researchers in the DeterLab user community. This paper describes the advances resulting in a new experimentation science and a transformed facility for cybersecurity research development and evaluation.</p>
+<p>【Keywords】:
+cyber-security; experimental research; testbed</p>
+<h2 id="Usable security    3">Usable security    3</h2>
+<h3 id="15. Facing the facts about image type in recognition-based graphical passwords.">15. Facing the facts about image type in recognition-based graphical passwords.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076754">Paper Link</a>】    【Pages】:149-158</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hlywa:Max">Max Hlywa</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Biddle:Robert">Robert Biddle</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Patrick:Andrew_S=">Andrew S. Patrick</a></p>
+<p>【Abstract】:
+Graphical passwords are a novel method of knowledge-based authentication that shows promise for improved usability and memorability. This paper presents two studies that examined the effect of image type in cognometric, recognition-based graphical passwords. Specifically, the usability of such authentication schemes was explored at security levels equivalent to those acceptable for text passwords. Related psychological theory was drawn upon to consider the relative strength of visual memory, to distinguish recognition from recall, and for face recognition by humans. With image type as the independent variable, login success and login time were observed as the dependent variables. Results from both studies showed that participants in the object images condition performed equal to or better than those in the face images condition. Importantly, there was no evidence to support the claim that the use of face images in the authentication scheme would result in superior user performance.</p>
+<p>【Keywords】:
+authentication; graphical passwords; usable security; visual memory</p>
+<h3 id="16. PhorceField: a phish-proof password ceremony.">16. PhorceField: a phish-proof password ceremony.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076755">Paper Link</a>】    【Pages】:159-168</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hart:Michael">Michael Hart</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Castille:Claude">Claude Castille</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Harpalani:Manoj">Manoj Harpalani</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Toohill:Jonathan">Jonathan Toohill</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Johnson:Rob">Rob Johnson</a></p>
+<p>【Abstract】:
+Many widely deployed phishing defense schemes, such as SiteKey, use client-side secrets to help users confirm that they are visiting the correct website before entering their passwords. Unfortunately, studies have demonstrated that up to 92% of users can be convinced to ignore missing client-side secrets and enter their passwords into phishing pages. However, since client-side secrets have already achieved industry acceptance, they are an attractive building block for creating better phishing defenses. We present PhorceField, a phishing resistant password ceremony that combines client-side secrets and graphical passwords in a novel way that provides phishing resistance that neither achieves on its own. PhorceField enables users to login easily, but forces phishers to present victims with a fundamentally unfamiliar and onerous user interface. Victims that try to use the phisher's interface to enter their password find the task so difficult that they give up without revealing their password. We have evaluated PhorceField's phishing resistance in a user study in which 21 participants used PhorceField for a week and were then subjected to a simulated phishing attack. On average, participants were only able to reveal 20% of the entropy in their password, and none of them revealed their entire password. This is a substantial improvement over previous research that demonstrated that 92% of users would reveal their entire password to a phisher, even if important security indicators were missing[27]. PhorceField is easy to deploy in sites that already use client-side secrets for phishing defense -- it requires no client-side software and can be implemented entirely in javascript. Banks and other high value websites could therefore deploy it as a drop-in replacement for existing defenses, or deploy it on an "opt-in" basis, as Google has done with its phone-based "2-step verification" system.</p>
+<p>【Keywords】:</p>
+<h3 id="17. Dynamic sample size detection in continuous authentication using sequential sampling.">17. Dynamic sample size detection in continuous authentication using sequential sampling.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076756">Paper Link</a>】    【Pages】:169-176</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Ahmed:Ahmed_Awad_E=">Ahmed Awad E. Ahmed</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Traor=eacute=:Issa">Issa Traoré</a></p>
+<p>【Abstract】:
+Continuous Authentication (CA) departs from the traditional static authentication scheme by requiring the authentication process to occur multiple times throughout the entire logon session. One of the main objectives of the CA process is to detect session hijacking. An important requirement about designing or operating a CA system is the need to achieve the quickest detection while maintaining rates of missed and false detections to predetermined levels. We introduce in this paper a new approach for detection based on the sequential sampling theory that allows balancing appropriately between detection promptness and accuracy in CA systems. We study and illustrate the proposed approach using an existing mouse dynamics biometrics recognition model and corresponding sample experimental data.</p>
+<p>【Keywords】:
+biometrics; continuous authentication; mouse dynamics; security monitoring; sequential sampling</p>
+<h2 id="Secure infrastructure    3">Secure infrastructure    3</h2>
+<h3 id="18. Improving robustness of DNS to software vulnerabilities.">18. Improving robustness of DNS to software vulnerabilities.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076758">Paper Link</a>】    【Pages】:177-186</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Khurshid:Ahmed">Ahmed Khurshid</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kiyak:Firat">Firat Kiyak</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Caesar:Matthew">Matthew Caesar</a></p>
+<p>【Abstract】:
+The ability to forward packets on the Internet is highly intertwined with the availability and robustness of the Domain Name System (DNS) infrastructure. Unfortunately, the DNS suffers from a wide variety of problems arising from implementation errors, including vulnerabilities, bogus queries, and proneness to attack. In this work, we present a preliminary design and early prototype implementation of a system that leverages diversified replication to increase tolerance of DNS to implementation errors. Our design leverages software diversity by running multiple redundant copies of software in parallel, and leverages data diversity by sending redundant requests to multiple servers. Using traces of DNS queries, we demonstrate our design can keep up with the loads of a large university's DNS traffic, while improving resilience of DNS.</p>
+<p>【Keywords】:</p>
+<h3 id="19. Enabling secure VM-vTPM migration in private clouds.">19. Enabling secure VM-vTPM migration in private clouds.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076759">Paper Link</a>】    【Pages】:187-196</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Danev:Boris">Boris Danev</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Masti:Ramya_Jayaram">Ramya Jayaram Masti</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Karame:Ghassan">Ghassan Karame</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Capkun:Srdjan">Srdjan Capkun</a></p>
+<p>【Abstract】:
+The integration of Trusted Computing technologies into virtualized computing environments enables the hardware-based protection of private information and the detection of malicious software. Their use in virtual platforms, however, requires appropriate virtualization of their main component, the Trusted Platform Module (TPM) by means of virtual TPMs (vTPM). The challenge here is that the use of TPM virtualization should not impede classical platform processes such as virtual machine (VM) migration. In this work, we consider the problem of enabling secure migration of vTPM-based virtual machines in private clouds. We detail the requirements that a secure VM-vTPM migration solution should satisfy in private virtualized environments and propose a vTPM key structure suitable for VM-vTPM migration. We then leverage on this structure to construct a secure VM-vTPM migration protocol. We show that our protocol provides stronger security guarantees when compared to existing solutions for VM-vTPM migration. We evaluate the feasibility of our scheme via an implementation on the Xen hypervisor and we show that it can be directly integrated within existing hypervisors. Our Xen-based implementation can be downloaded as open-source software. Finally, we discuss how our scheme can be extended to support live-migration of vTPM-based VMs.</p>
+<p>【Keywords】:</p>
+<h3 id="20. Exposing invisible timing-based traffic watermarks with BACKLIT.">20. Exposing invisible timing-based traffic watermarks with BACKLIT.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076760">Paper Link</a>】    【Pages】:197-206</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Luo:Xiapu">Xiapu Luo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Peng">Peng Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Junjie">Junjie Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Perdisci:Roberto">Roberto Perdisci</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Wenke">Wenke Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chang:Rocky_K=_C=">Rocky K. C. Chang</a></p>
+<p>【Abstract】:
+Traffic watermarking is an important element in many network security and privacy applications, such as tracing botnet C&C; communications and deanonymizing peer-to-peer VoIP calls. The state-of-the-art traffic watermarking schemes are usually based on packet timing information and they are notoriously difficult to detect. In this paper, we show for the first time that even the most sophisticated timing-based watermarking schemes (e.g., RAINBOW and SWIRL) are not invisible by proposing a new detection system called BACKLIT. BACKLIT is designed according to the observation that any practical timing-based traffic watermark will cause noticeable alterations in the intrinsic timing features typical of TCP flows. We propose five metrics that are sufficient for detecting four state-of-the-art traffic watermarks for bulk transfer and interactive traffic. BACKLIT can be easily deployed in stepping stones and anonymity networks (e.g., Tor), because it does not rely on strong assumptions and can be realized in an active or passive mode. We have conducted extensive experiments to evaluate BACKLIT's detection performance using the PlanetLab platform. The results show that BACKLIT can detect watermarked network flows with high accuracy and few false positives.</p>
+<p>【Keywords】:</p>
+<h2 id="Anonymity    3">Anonymity    3</h2>
+<h3 id="21. Exploring the potential benefits of expanded rate limiting in Tor: slow and steady wins the race with Tortoise.">21. Exploring the potential benefits of expanded rate limiting in Tor: slow and steady wins the race with Tortoise.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076762">Paper Link</a>】    【Pages】:207-216</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Moore:W=_Brad">W. Brad Moore</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wacek:Chris">Chris Wacek</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sherr:Micah">Micah Sherr</a></p>
+<p>【Abstract】:
+Tor is a volunteer-operated network of application-layer relays that enables users to communicate privately and anonymously. Unfortunately, Tor often exhibits poor performance due to congestion caused by the unbalanced ratio of clients to available relays, as well as a disproportionately high consumption of network capacity by a small fraction of filesharing users. This paper argues the very counterintuitive notion that slowing down traffic on Tor will increase the bandwidth capacity of the network and consequently improve the experience of interactive web users. We introduce Tortoise, a system for rate limiting Tor at its ingress points. We demonstrate that Tortoise incurs little penalty for interactive web users, while significantly decreasing the throughput for filesharers. Our techniques provide incentives to filesharers to configure their Tor clients to also relay traffic, which in turn improves the network's overall performance. We present large-scale emulation results that indicate that interactive users will achieve a significant speedup if even a small fraction of clients opt to run relays.</p>
+<p>【Keywords】:
+Tor; anonymity; performance</p>
+<h3 id="22. "Super nodes" in Tor: existence and security implication.">22. "Super nodes" in Tor: existence and security implication.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076763">Paper Link</a>】    【Pages】:217-226</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Chenglong">Chenglong Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xue:Yibo">Yibo Xue</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dong:Yingfei">Yingfei Dong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Dongsheng">Dongsheng Wang</a></p>
+<p>【Abstract】:
+Tor (the second generation onion routing) is arguably the most popular low-lateney anonymous communication system now. In this paper, we reexamine the anonymity of Tor based on our observation of "super nodes". These nodes are more available and reliable than other nodes and provide high bandwidth for assisting the system in both performance and stability. We first confirm their existence by analyzing the life cycles of node IP addresses and node bandwidth contributions via two correlation approaches, on a set of self-collected data and a set of real data from the Tor official collection. We then analyze the effect of super nodes on the anonymity of Tor, discuss attacks that exploit such knowledge, and verify our analysis with real data to show potential damages. Furthermore, we investigate new attacks that exploit the knowledge of super nodes. Our simulation results show that these attacks can greatly damage the anonymity of Tor.</p>
+<p>【Keywords】:
+Tor; anonymity; anonymous communication</p>
+<h3 id="23. Smart metering de-pseudonymization.">23. Smart metering de-pseudonymization.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076764">Paper Link</a>】    【Pages】:227-236</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jawurek:Marek">Marek Jawurek</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Johns:Martin">Martin Johns</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rieck:Konrad">Konrad Rieck</a></p>
+<p>【Abstract】:
+Consumption traces collected by Smart Meters are highly privacy sensitive data. For this reason, current best practice is to store and process such data in pseudonymized form, separating identity information from the consumption traces. However, even the consumption traces alone may provide many valuable clues to an attacker, if combined with limited external indicators. Based on this observation, we identify two attack vectors using anomaly detection and behavior pattern matching that allow effective depseudonymization. Using a practical evaluation with real-life consumption traces of 53 households, we verify the feasibility of our techniques and show that the attacks are robust against common countermeasures, such as resolution reduction or frequent re-pseudonymization.</p>
+<p>【Keywords】:</p>
+<h2 id="Web security I    3">Web security I    3</h2>
+<h3 id="24. SEMAGE: a new image-based two-factor CAPTCHA.">24. SEMAGE: a new image-based two-factor CAPTCHA.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076766">Paper Link</a>】    【Pages】:237-246</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/v/Vikram:Shardul">Shardul Vikram</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fan:Yinan">Yinan Fan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gu:Guofei">Guofei Gu</a></p>
+<p>【Abstract】:
+We present SEMAGE (SEmantically MAtching imaGEs), a new image-based CAPTCHA that capitalizes on the human ability to define and comprehend image content and to establish semantic relationships between them. A SEMAGE challenge asks a user to select semantically related images from a given image set. SEMAGE has a two-factor design where in order to pass a challenge the user is required to figure out the content of each image and then understand and identify semantic relationship between a subset of them. Most of the current state-of-the-art image-based systems like Assira [20] only require the user to solve the first level, i.e., image recognition. Utilizing the semantic correlation between images to create more secure and user-friendly challenges makes SEMAGE novel. SEMAGE does not suffer from limitations of traditional image-based approaches such as lacking customization and adaptability. SEMAGE unlike the current text-based systems is also very user-friendly with a high fun factor. These features make it very attractive to web service providers. In addition, SEMAGE is language independent and highly flexible for customizations (both in terms of security and usability levels). SEMAGE is also mobile devices friendly as it does not require the user to type anything. We conduct a first-of-its-kind large-scale user study involving 174 users to gauge and compare accuracy and usability of SEMAGE with existing state-of-the-art CAPTCHA systems like reCAPTCHA (text-based) [6] and Asirra (image-based) [20]. The user study further reinstates our points and shows that users achieve high accuracy using our system and consider our system to be fun and easy.</p>
+<p>【Keywords】:
+CAPTCHA; semantic-based interactional proofs; two-factor CAPTCHA</p>
+<h3 id="25. BLOCK: a black-box approach for detection of state violation attacks towards web applications.">25. BLOCK: a black-box approach for detection of state violation attacks towards web applications.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076767">Paper Link</a>】    【Pages】:247-256</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li_0003:Xiaowei">Xiaowei Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xue:Yuan">Yuan Xue</a></p>
+<p>【Abstract】:
+State violation attacks towards web applications exploit logic flaws and allow restrictive functions and sensitive information to be accessed at inappropriate states. Since application logic flaws are specific to the intended functionality of a particular web application, it is difficult to develop a general approach that addresses state violation attacks. To date, existing approaches all require web application source code for analysis or instrumentation in order to detect state violations. In this paper, we present BLOCK, a BLack-bOx approach for detecting state violation attaCKs. We regard the web application as a stateless system and infer the intended web application behavior model by observing the interactions between the clients and the web application. We extract a set of invariants from the web request/response sequences and their associated session variable values during its attack-free execution. The set of invariants is then used for evaluating web requests and responses at runtime. Any web request or response that violates the associated invariants is identified as a potential state violation attack. We develop a system prototype based on the WebScarab proxy and evaluate our detection system using a set of real-world web applications. The experiment results demonstrate that our approach is effective at detecting state violation attacks and incurs acceptable performance overhead. Our approach is valuable in that it is independent of the web application source code and can easily scale up.</p>
+<p>【Keywords】:
+black-box approach; invariant; state violation attack; web application security</p>
+<h3 id="26. A server- and browser-transparent CSRF defense for web 2.0 applications.">26. A server- and browser-transparent CSRF defense for web 2.0 applications.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076768">Paper Link</a>】    【Pages】:257-266</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Pelizzi:Riccardo">Riccardo Pelizzi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sekar:R=">R. Sekar</a></p>
+<p>【Abstract】:
+Cross-Site Request Forgery (CSRF) vulnerabilities constitute one of the most serious web application vulnerabilities, ranking fourth in the CWE/SANS Top 25 Most Dangerous Software Errors. By exploiting this vulnerability, an attacker can submit requests to a web application using a victim user's credentials. A successful attack can lead to compromised accounts, stolen bank funds or information leaks. This paper presents a new server-side defense against CSRF attacks. Our solution, called jCSRF, operates as a serverside proxy, and does not require any server or browser modifications. Thus, it can be deployed by a site administrator without requiring access to web application source code, or the need to understand it. Moreover, protection is achieved without requiring web-site users to make use of a specific browser or a browser plug-in. Unlike previous server-side solutions, jCSRF addresses two key aspects of Web 2.0: extensive use of client-side scripts that can create requests to URLs that do not appear in the HTML page returned to the client; and services provided by two or more collaborating web sites that need to make cross-domain requests.</p>
+<p>【Keywords】:</p>
+<h2 id="Software security    2">Software security    2</h2>
+<h3 id="27. ASIDE: IDE support for web application security.">27. ASIDE: IDE support for web application security.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076770">Paper Link</a>】    【Pages】:267-276</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/x/Xie:Jing">Jing Xie</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chu:Bill">Bill Chu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lipford:Heather_Richter">Heather Richter Lipford</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Melton:John_T=">John T. Melton</a></p>
+<p>【Abstract】:
+Many of today's application security vulnerabilities are introduced by software developers writing insecure code. This may be due to either a lack of understanding of secure programming practices, and/or developers' lapses of attention on security. Much work on software security has focused on detecting software vulnerabilities through automated analysis techniques. While they are effective, we believe they are not sufficient. We propose to increase developer awareness and promote practice of secure programming by interactively reminding programmers of secure programming practices inside Integrated Development Environments (IDEs). We have implemented a proof-of-concept plugin for Eclipse and Java. Initial evaluation results show that this approach can detect and address common web application vulnerabilities and can serve as an effective aid for programmers. Our approach can also effectively complement existing software security best practices and significantly increase developer productivity.</p>
+<p>【Keywords】:
+application security; interactive support; secure programming; secure software development</p>
+<h3 id="28. Tracking payment card data flow using virtual machine state introspection.">28. Tracking payment card data flow using virtual machine state introspection.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076771">Paper Link</a>】    【Pages】:277-285</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hizver:Jennia">Jennia Hizver</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chiueh:Tzi=cker">Tzi-cker Chiueh</a></p>
+<p>【Abstract】:
+Credit and debit card payment processing systems are key elements in financial transactions. Negligence in securing these systems makes them vulnerable to hacking attacks, which may lead to significant monetary losses for both merchants and the financial organizations. To reduce this risk, mandatory security compliance regulations, such as the Payment Card Industry Data Security Standard (PCI DSS), were developed and adopted by the industry. A key pre-requisite of the PCI DSS compliance process is the ability to identify the components of the payment systems directly involved with the card data (i.e. process, transmit, or store). However, existing data flow tracking tools cannot fully automate the process of identifying system components that touch card data, because they either can not examine encrypted communications or they use an instrumentation-based approach and thus require a priori detailed knowledge of the payment card processing systems. We describe the implementation and evaluation of a novel tool to identify the card data flow in commercial payment card processing systems running on virtualized servers. The tool performs realtime monitoring of network communications between virtual machines and inspects the memory of the communicating processes for unencrypted card data. Our implementation does not require instrumentation of application binaries and can accurately identify the system components involved in card data flow even when the communications among system components are encrypted. Effectiveness of this tool is demonstrated through its successful discovery of the card data flow of several open- and closed-source payment card processing applications.</p>
+<p>【Keywords】:</p>
+<h2 id="Web security II    3">Web security II    3</h2>
+<h3 id="29. An empirical study of visual security cues to prevent the SSLstripping attack.">29. An empirical study of visual security cues to prevent the SSLstripping attack.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076773">Paper Link</a>】    【Pages】:287-296</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Shin:Dongwan">Dongwan Shin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lopes:Rodrigo">Rodrigo Lopes</a></p>
+<p>【Abstract】:
+One of the latest attacks on secure socket layer (SSL), called the SSLstripping attack, was reported at the Blackhat conference in 2009. As a type of man-in-the-middle (MITM) attack, it has the potential to affect tens of millions of users of popular online social networking and financial websites protected by SSL. Interestingly, the attack exploits users' browsing habits, rather than a technical flaw in the protocol, to defeat the SSL security. In this paper we present a novel approach to addressing this attack by using visually augmented security. Specifically, motivated by typical traffic lights, we introduce a set of visual cues aimed at thwarting the attack. The visual cues, called security status light (SSLight), can be used to help users make better, more informed decisions when their sensitive information need to be submitted to the websites. A user study was conducted to investigate the effectiveness of our scheme, and its results show that our approach is more promising than the traditional pop-up method adopted by major web browsers.</p>
+<p>【Keywords】:</p>
+<h3 id="30. AdSentry: comprehensive and flexible confinement of JavaScript-based advertisements.">30. AdSentry: comprehensive and flexible confinement of JavaScript-based advertisements.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076774">Paper Link</a>】    【Pages】:297-306</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dong:Xinshu">Xinshu Dong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tran:Minh">Minh Tran</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liang:Zhenkai">Zhenkai Liang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jiang:Xuxian">Xuxian Jiang</a></p>
+<p>【Abstract】:
+Internet advertising is one of the most popular online business models. JavaScript-based advertisements (ads) are often directly embedded in a web publisher's page to display ads relevant to users (e.g., by checking the user's browser environment and page content). However, as third-party code, the ads pose a significant threat to user privacy. Worse, malicious ads can exploit browser vulnerabilities to compromise users' machines and install malware. To protect users from these threats, we propose AdSentry, a comprehensive confinement solution for JavaScript-based advertisements. The crux of our approach is to use a shadow JavaScript engine to sandbox untrusted ads. In addition, AdSentry enables flexible regulation on ad script behaviors by completely mediating its access to the web page (including its DOM) without limiting the JavaScript functionality exposed to the ads. Our solution allows both web publishers and end users to specify access control policies to confine ads' behaviors. We have implemented a proof-of-concept prototype of AdSentry that transparently supports the Mozilla Firefox browser. Our experiments with a number of ads-related attacks successfully demonstrate its practicality and effectiveness. The performance measurement indicates that our system incurs a small performance overhead.</p>
+<p>【Keywords】:</p>
+<h3 id="31. WebJail: least-privilege integration of third-party components in web mashups.">31. WebJail: least-privilege integration of third-party components in web mashups.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076775">Paper Link</a>】    【Pages】:307-316</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Acker:Steven_Van">Steven Van Acker</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ryck:Philippe_De">Philippe De Ryck</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Desmet:Lieven">Lieven Desmet</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Piessens:Frank">Frank Piessens</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Joosen:Wouter">Wouter Joosen</a></p>
+<p>【Abstract】:
+In the last decade, the Internet landscape has transformed from a mostly static world into Web 2.0, where the use of web applications and mashups has become a daily routine for many Internet users. Web mashups are web applications that combine data and functionality from several sources or components. Ideally, these components contain benign code from trusted sources. Unfortunately, the reality is very different. Web mashup components can misbehave and perform unwanted actions on behalf of the web mashup's user. Current mashup integration techniques either impose no restrictions on the execution of a third-party component, or simply rely on the Same-Origin Policy. A least-privilege approach, in which a mashup integrator can restrict the functionality available to each component, can not be implemented using the current integration techniques, without ownership over the component's code. We propose WebJail, a novel client-side security architecture to enable least-privilege integration of components into a web mashup, based on high-level policies that restrict the available functionality in each individual component. The policy language was synthesized from a study and categorization of sensitive operations in the upcoming HTML 5 JavaScript APIs, and full mediation is achieved via the use of deep aspects in the browser. We have implemented a prototype of WebJail in Mozilla Firefox 4.0, and applied it successfully to mainstream platforms such as iGoogle and Facebook. In addition, microbenchmarks registered a negligible performance penalty for page load-time (7ms), and the execution overhead in case of sensitive operations (0.1ms).</p>
+<p>【Keywords】:
+Sandbox; least-privilege integration; web application security; web mashups</p>
+<h2 id="Classic paper II    1">Classic paper II    1</h2>
+<h3 id="32. Key escrow from a safe distance: looking back at the Clipper Chip.">32. Key escrow from a safe distance: looking back at the Clipper Chip.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076777">Paper Link</a>】    【Pages】:317-321</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Blaze:Matt">Matt Blaze</a></p>
+<p>【Abstract】:
+In 1993, the US Government proposed a novel (and highly controversial) approach to cryptography, called key escrow. Key escrow cryptosystems used standard symmetric- and public- key ciphers, key management techniques and protocols, but with one added feature: a copy of the current session key, itself encrypted with a key known to the government, was sent at the beginning of every encrypted communication stream. In this way, if a government wiretapper encountered ciphertext produced under a key escrowed cryptosystem, recovering the plaintext would be a simple matter of decrypting the session key with the government's key, regardless of the strength of the underlying cipher algorithms. Key escrow was intended to strike a "balance" between the needs for effective communications security against bad guys on the one hand and the occasional need for the good guys to be able to recover meaningful content from (presumably) legally-authorized wiretaps. It didn't quite work out that way.</p>
+<p>【Keywords】:</p>
+<h2 id="Mobile security    3">Mobile security    3</h2>
+<h3 id="33. Reliable telemetry in white spaces using remote attestation.">33. Reliable telemetry in white spaces using remote attestation.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076779">Paper Link</a>】    【Pages】:323-332</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Fatemieh:Omid">Omid Fatemieh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/LeMay:Michael">Michael LeMay</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gunter:Carl_A=">Carl A. Gunter</a></p>
+<p>【Abstract】:
+We consider reliable telemetry in white spaces in the form of protecting the integrity of distributed spectrum measurements against coordinated misreporting attacks. Our focus is on the case where a subset of the sensors can be remotely attested. We propose a practical framework for using statistical sequential estimation coupled with machine learning classifiers to deter attacks and achieve quantifiably precise outcome. We provide an application-oriented case study in the context of spectrum measurements in the white spaces. The study includes a cost analysis for remote attestation, as well as an evaluation using real transmitter and terrain data from the FCC and NASA for Southwest Pennsylvania. The results show that with as low as 15% penetration of attestation-capable nodes, more than 94% of the attempts from omniscient attackers can be thwarted.</p>
+<p>【Keywords】:</p>
+<h3 id="34. Don't Bump, Shake on It: the exploitation of a popular accelerometer-based smart phone exchange and its secure replacement.">34. Don't Bump, Shake on It: the exploitation of a popular accelerometer-based smart phone exchange and its secure replacement.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076780">Paper Link</a>】    【Pages】:333-342</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Studer:Ahren">Ahren Studer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Passaro:Timothy">Timothy Passaro</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bauer:Lujo">Lujo Bauer</a></p>
+<p>【Abstract】:
+As the capabilities of smartphones increase, users are beginning to rely on these mobile and ubiquitous platforms to perform more tasks. In addition to traditional computing tasks, people are beginning to use smartphones to interact with people they meet. Often this interaction begins with an exchange, e.g., of cryptographic keys. Hence, a number of protocols have been developed to facilitate this exchange. Unfortunately, those protocols that provide strong security guarantees often suffer from usability problems, and easy-to-use protocols may lack the desired security guarantees. In this work, we highlight the danger of relying on usable-but-perhaps-not-secure protocols by demonstrating an easy-to-carry-out man-in-the-middle attack against Bump, the most popular exchange protocol for smartphones. We then present Shake on It (Shot), a new exchange protocol that is both usable and provides strong security properties. In Shot, the phones use vibrators and accelerometers to exchange information in a fashion that demonstratively identifies to the users that the two phones in physical contact are communicating. The vibrated information allows the phones to authenticate subsequent messages, which are exchanged using a server. Our implementation of Shot on DROID smartphones demonstrates that Shot can provide a secure exchange with a similar level of execution time and user effort as Bump.</p>
+<p>【Keywords】:</p>
+<h3 id="35. Attacks on WebView in the Android system.">35. Attacks on WebView in the Android system.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076781">Paper Link</a>】    【Pages】:343-352</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Luo:Tongbo">Tongbo Luo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hao:Hao">Hao Hao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Du:Wenliang">Wenliang Du</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Yifei">Yifei Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yin:Heng">Heng Yin</a></p>
+<p>【Abstract】:
+WebView is an essential component in both Android and iOS platforms, enabling smartphone and tablet apps to embed a simple but powerful browser inside them. To achieve a better interaction between apps and their embedded "browsers", WebView provides a number of APIs, allowing code in apps to invoke and be invoked by the JavaScript code within the web pages, intercept their events, and modify those events. Using these features, apps can become customized "browsers" for their intended web applications. Currently, in the Android market, 86 percent of the top 20 most downloaded apps in 10 diverse categories use WebView. The design of WebView changes the landscape of the Web, especially from the security perspective. Two essential pieces of the Web's security infrastructure are weakened if WebView and its APIs are used: the Trusted Computing Base (TCB) at the client side, and the sandbox protection implemented by browsers. As results, many attacks can be launched either against apps or by them. The objective of this paper is to present these attacks, analyze their fundamental causes, and discuss potential solutions.</p>
+<p>【Keywords】:</p>
+<h2 id="Malware II    3">Malware II    3</h2>
+<h3 id="36. Mitigating code-reuse attacks with control-flow locking.">36. Mitigating code-reuse attacks with control-flow locking.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076783">Paper Link</a>】    【Pages】:353-362</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bletsch:Tyler_K=">Tyler K. Bletsch</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jiang:Xuxian">Xuxian Jiang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Freeh:Vincent_W=">Vincent W. Freeh</a></p>
+<p>【Abstract】:
+Code-reuse attacks are software exploits in which an attacker directs control flow through existing code with a malicious result. One such technique, return-oriented programming, is based on "gadgets" (short pre-existing sequences of code ending in a ret instruction) being executed in arbitrary order as a result of a stack corruption exploit. Many existing codereuse defenses have relied upon a particular attribute of the attack in question (e.g., the frequency of ret instructions in a return-oriented attack), which leads to an incomplete protection, while a smaller number of efforts in protecting all exploitable control flow transfers suffer from limited deploy-ability due to high performance overhead. In this paper, we present a novel cost-effective defense technique called control flow locking, which allows for effective enforcement of control flow integrity with a small performance overhead. Specifically, instead of immediately determining whether a control flow violation happens before the control flow transfer takes place, control flow locking lazily detects the violation after the transfer. To still restrict attackers' capability, our scheme guarantees that the deviation of the normal control flow graph will only occur at most once. Further, our scheme ensures that this deviation cannot be used to craft a malicious system call, which denies any potential gains an attacker might obtain from what is permitted in the threat model. We have developed a proof-of-concept prototype in Linux and our evaluation demonstrates desirable effectiveness and competitive performance overhead with existing techniques. In several benchmarks, our scheme is able to achieve significant gains.</p>
+<p>【Keywords】:</p>
+<h3 id="37. deRop: removing return-oriented programming from malware.">37. deRop: removing return-oriented programming from malware.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076784">Paper Link</a>】    【Pages】:363-372</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lu:Kangjie">Kangjie Lu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zou:Dabi">Dabi Zou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wen:Weiping">Weiping Wen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gao:Debin">Debin Gao</a></p>
+<p>【Abstract】:
+Over the last few years, malware analysis has been one of the hottest areas in security research. Many techniques and tools have been developed to assist in automatic analysis of malware. This ranges from basic tools like disassemblers and decompilers, to static and dynamic tools that analyze malware behaviors, to automatic malware clustering and classification techniques, to virtualization technologies to assist malware analysis, to signature- and anomaly-based malware detection, and many others. However, most of these techniques and tools would not work on new attacking techniques, e.g., attacks that use return-oriented programming (ROP). In this paper, we look into the possibility of enabling existing defense technologies designed for normal malware to cope with malware using return-oriented programming. We discuss difficulties in removing ROP from malware, and design and implement an automatic converter, called deRop, that converts an ROP exploit into shellcode that is semantically equivalent with the original ROP exploit but does not use ROP, which could then be analyzed by existing malware defense technologies. We apply deRop on four real ROP malwares and demonstrate success in using deRop for the automatic conversion. We further discuss applicability and limitations of deRop.</p>
+<p>【Keywords】:
+malware analysis; return-oriented programming</p>
+<h3 id="38. Static detection of malicious JavaScript-bearing PDF documents.">38. Static detection of malicious JavaScript-bearing PDF documents.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076785">Paper Link</a>】    【Pages】:373-382</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Laskov:Pavel">Pavel Laskov</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Srndic:Nedim">Nedim Srndic</a></p>
+<p>【Abstract】:
+Despite the recent security improvements in Adobe's PDF viewer, its underlying code base remains vulnerable to novel exploits. A steady flow of rapidly evolving PDF malware observed in the wild substantiates the need for novel protection instruments beyond the classical signature-based scanners. In this contribution we present a technique for detection of JavaScript-bearing malicious PDF documents based on static analysis of extracted JavaScript code. Compared to previous work, mostly based on dynamic analysis, our method incurs an order of magnitude lower run-time overhead and does not require special instrumentation. Due to its efficiency we were able to evaluate it on an extremely large real-life dataset obtained from the VirusTotal malware upload portal. Our method has proved to be effective against both known and unknown malware and suitable for large-scale batch processing.</p>
+<p>【Keywords】:
+PDF documents; machine learning; malicious JavaScript; malware detection</p>
+<h2 id="Situational awareness II    2">Situational awareness II    2</h2>
+<h3 id="39. Nexat: a history-based approach to predict attacker actions.">39. Nexat: a history-based approach to predict attacker actions.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076787">Paper Link</a>】    【Pages】:383-392</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cipriano:Casey">Casey Cipriano</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zand:Ali">Ali Zand</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Houmansadr:Amir">Amir Houmansadr</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kruegel:Christopher">Christopher Kruegel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vigna:Giovanni">Giovanni Vigna</a></p>
+<p>【Abstract】:
+Computer networks are constantly being targeted by different attacks. Since not all attacks are created equal, it is of paramount importance for network administrators to be aware of the status of the network infrastructure, the relevance of each attack with respect to the goals of the organization under attack, and also the most likely next steps of the attackers. In particular, the last capability, attack prediction, is of the most importance and value to the network administrators, as it enables them to provision the required actions to stop the attack and/or minimize its damage to the network's assets. Unfortunately, the existing approaches to attack prediction either provide limited useful information or are too complex to scale to the real-world scenarios. In this paper, we present a novel approach to the prediction of the actions of the attackers. Our approach uses machine learning techniques to learn the historical behavior of attackers and then, at the run time, leverages this knowledge in order to produce an estimate of the likely future actions of the attackers. We implemented our approach in a prototype tool, called Nexat, and validated its accuracy leveraging a dataset from a hacking competition. The evaluations show that Nexat is able to predict the next steps of attackers with very high accuracy. In particular, Nexat achieves a 94% accuracy in predicting the next actions of the attackers in our prototype implementation. In addition, Nexat requires little computational resources and can be run in real-time for instant prediction of the attacks.</p>
+<p>【Keywords】:
+attack prediction; machine learning; situation awareness</p>
+<h3 id="40. From prey to hunter: transforming legacy embedded devices into exploitation sensor grids.">40. From prey to hunter: transforming legacy embedded devices into exploitation sensor grids.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076788">Paper Link</a>】    【Pages】:393-402</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cui:Ang">Ang Cui</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kataria:Jatin">Jatin Kataria</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stolfo:Salvatore_J=">Salvatore J. Stolfo</a></p>
+<p>【Abstract】:
+Our global communication infrastructures are powered by large numbers of legacy embedded devices. Recent advances in offensive technologies targeting embedded systems have shown that the stealthy exploitation of high-value embedded devices such as router and firewalls is indeed feasible. However, little to no host-based defensive technology is available to monitor and protect these devices, leaving large numbers of critical devices defenseless against exploitation. We devised a method of augmenting legacy embedded devices, like Cisco routers, with host-based defenses in order to create a stealthy, embedded sensor-grid capable of monitoring and capturing real-world attacks against the devices which constitute the bulk of the Internet substrate. Using a software mechanism which we call the Symbiote, a white-list based code modification detector is automatically injected in situ into Cisco IOS, producing a fully functional router firmware capable of detecting and capturing successful attacks against itself for analysis. Using the Symbiote-protected router as the main component, we designed a sensor system which requires no modification to existing hardware, fully preserves the functionality of the original firmware, and detects unauthorized modification of memory within 450 ms. We believe that it is feasible to use the techniques described in this paper to inject monitoring and defensive capability into existing routers to create an early attack warning system to protect the Internet substrate.</p>
+<p>【Keywords】:</p>
+<h2 id="Malware III    2">Malware III    2</h2>
+<h3 id="41. BareBox: efficient malware analysis on bare-metal.">41. BareBox: efficient malware analysis on bare-metal.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076790">Paper Link</a>】    【Pages】:403-412</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kirat:Dhilung">Dhilung Kirat</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vigna:Giovanni">Giovanni Vigna</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kruegel:Christopher">Christopher Kruegel</a></p>
+<p>【Abstract】:
+Present-day malware analysis techniques use both virtualized and emulated environments to analyze malware. The reason is that such environments provide isolation and system restoring capabilities, which facilitate automated analysis of malware samples. However, there exists a class of malware, called VM-aware malware, which is capable of detecting such environments and then hide its malicious behavior to foil the analysis. Because of the artifacts introduced by virtualization or emulation layers, it has always been and will always be possible for malware to detect virtual environments. The definitive way to observe the actual behavior of VM-aware malware is to execute them in a system running on real hardware, which is called a "bare-metal" system. However, after each analysis, the system must be restored back to the previous clean state. This is because running a malware program can leave the system in an instable/insecure state and/or interfere with the results of a subsequent analysis run. Most of the available state-of-the-art system restore solutions are based on disk restoring and require a system reboot. This results in a significant downtime between each analysis. Because of this limitation, efficient automation of malware analysis in bare-metal systems has been a challenge. This paper presents the design, implementation, and evaluation of a malware analysis framework for bare-metal systems that is based on a fast and rebootless system restore technique. Live system restore is accomplished by restoring the entire physical memory of the analysis operating system from another, small operating system that runs outside of the target OS. By using this technique, we were able to perform a rebootless restore of a live Windows system, running on commodity hardware, within four seconds. We also analyzed 42 malware samples from seven different malware families, that are known to be "silent" in a virtualized or emulated environments, and all of them showed their true malicious behavior within our bare-metal analysis environment.</p>
+<p>【Keywords】:
+VM-aware; bare metal; dynamic malware analysis; system restore</p>
+<h3 id="42. Automated remote repair for mobile malware.">42. Automated remote repair for mobile malware.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/2076732.2076791">Paper Link</a>】    【Pages】:413-422</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Nadji:Yacin">Yacin Nadji</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Giffin:Jonathon_T=">Jonathon T. Giffin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Traynor:Patrick">Patrick Traynor</a></p>
+<p>【Abstract】:
+Mobile application markets currently serve as the main line of defense against malicious applications. While marketplace revocations have successfully removed the few overtly malicious applications installed on mobile devices, the anticipated coming flood of mobile malware mandates the need for mechanisms that can respond faster than manual intervention. In this paper, we propose an infrastructure that automatically identifies and responds to malicious mobile applications based on their network behavior. We design and implement a prototype, Airmid, that uses cooperation between in-network sensors and smart devices to identify the provenance of malicious traffic. We then develop sample malicious mobile applications exceeding the capabilities of malware recently discovered in the wild, demonstrate the ease with which they can evade current detection techniques, and then use Airmid to show a range of automated recovery responses ranging from on-device firewalling to application removal.</p>
+<p>【Keywords】:</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="https://github.com/huntercmd/ccf"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>

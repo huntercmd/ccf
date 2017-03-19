@@ -1,0 +1,450 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/skin.js"></script>
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/classie.js"></script>
+
+<!-- This is for Mathjax -->
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#10. NSDI 2013:Boston, MA, USA">10. NSDI 2013:Boston, MA, USA</a><ul>
+<li><a href="#Paper Num: 38 || Session Num: 11">Paper Num: 38 || Session Num: 11</a></li>
+<li><a href="#Software Defined Networking    3">Software Defined Networking    3</a><ul>
+<li><a href="#1. Composing Software Defined Networks.">1. Composing Software Defined Networks.</a></li>
+<li><a href="#2. VeriFlow: Verifying Network-Wide Invariants in Real Time.">2. VeriFlow: Verifying Network-Wide Invariants in Real Time.</a></li>
+<li><a href="#3. Software Defined Traffic Measurement with OpenSketch.">3. Software Defined Traffic Measurement with OpenSketch.</a></li>
+</ul>
+</li>
+<li><a href="#Pervasive Computing    4">Pervasive Computing    4</a><ul>
+<li><a href="#4. V-edge: Fast Self-constructive Power Modeling of Smartphones Based on Battery Voltage Dynamics.">4. V-edge: Fast Self-constructive Power Modeling of Smartphones Based on Battery Voltage Dynamics.</a></li>
+<li><a href="#5. eDoctor: Automatically Diagnosing Abnormal Battery Drain Issues on Smartphones.">5. eDoctor: Automatically Diagnosing Abnormal Battery Drain Issues on Smartphones.</a></li>
+<li><a href="#6. ArrayTrack: A Fine-Grained Indoor Location System.">6. ArrayTrack: A Fine-Grained Indoor Location System.</a></li>
+<li><a href="#7. Walkie-Markie: Indoor Pathway Mapping Made Easy.">7. Walkie-Markie: Indoor Pathway Mapping Made Easy.</a></li>
+</ul>
+</li>
+<li><a href="#Network Integrity    3">Network Integrity    3</a><ul>
+<li><a href="#8. Real Time Network Policy Checking Using Header Space Analysis.">8. Real Time Network Policy Checking Using Header Space Analysis.</a></li>
+<li><a href="#9. Ensuring Connectivity via Data Plane Mechanisms.">9. Ensuring Connectivity via Data Plane Mechanisms.</a></li>
+<li><a href="#10. Juggling the Jigsaw: Towards Automated Problem Inference from Network Trouble Tickets.">10. Juggling the Jigsaw: Towards Automated Problem Inference from Network Trouble Tickets.</a></li>
+</ul>
+</li>
+<li><a href="#Data Centers    4">Data Centers    4</a><ul>
+<li><a href="#11. Yank: Enabling Green Data Centers to Pull the Plug.">11. Yank: Enabling Green Data Centers to Pull the Plug.</a></li>
+<li><a href="#12. Scalable Rule Management for Data Centers.">12. Scalable Rule Management for Data Centers.</a></li>
+<li><a href="#13. Chatty Tenants and the Cloud Network Sharing Problem.">13. Chatty Tenants and the Cloud Network Sharing Problem.</a></li>
+<li><a href="#14. Effective Straggler Mitigation: Attack of the Clones.">14. Effective Straggler Mitigation: Attack of the Clones.</a></li>
+</ul>
+</li>
+<li><a href="#Substrate    3">Substrate    3</a><ul>
+<li><a href="#15. Wire Speed Name Lookup: A GPU-based Approach.">15. Wire Speed Name Lookup: A GPU-based Approach.</a></li>
+<li><a href="#16. SoNIC: Precise Realtime Software Access and Control of Wired Networks.">16. SoNIC: Precise Realtime Software Access and Control of Wired Networks.</a></li>
+<li><a href="#17. Split/Merge: System Support for Elastic Execution in Virtual Middleboxes.">17. Split/Merge: System Support for Elastic Execution in Virtual Middleboxes.</a></li>
+</ul>
+</li>
+<li><a href="#Wireless    4">Wireless    4</a><ul>
+<li><a href="#18. PinPoint: Localizing Interfering Radios.">18. PinPoint: Localizing Interfering Radios.</a></li>
+<li><a href="#19. SloMo: Downclocking WiFi Communication.">19. SloMo: Downclocking WiFi Communication.</a></li>
+<li><a href="#20. Splash: Fast Data Dissemination with Constructive Interference in Wireless Sensor Networks.">20. Splash: Fast Data Dissemination with Constructive Interference in Wireless Sensor Networks.</a></li>
+<li><a href="#21. Expanding Rural Cellular Networks with Virtual Coverage.">21. Expanding Rural Cellular Networks with Virtual Coverage.</a></li>
+</ul>
+</li>
+<li><a href="#Performance    3">Performance    3</a><ul>
+<li><a href="#22. EyeQ: Practical Network Performance Isolation at the Edge.">22. EyeQ: Practical Network Performance Isolation at the Edge.</a></li>
+<li><a href="#23. Stronger Semantics for Low-Latency Geo-Replicated Storage.">23. Stronger Semantics for Low-Latency Geo-Replicated Storage.</a></li>
+<li><a href="#24. Bobtail: Avoiding Long Tails in the Cloud.">24. Bobtail: Avoiding Long Tails in the Cloud.</a></li>
+</ul>
+</li>
+<li><a href="#Big Data    4">Big Data    4</a><ul>
+<li><a href="#25. Rhea: Automatic Filtering for Unstructured Cloud Storage.">25. Rhea: Automatic Filtering for Unstructured Cloud Storage.</a></li>
+<li><a href="#26. Robustness in the Salus Scalable Block Store.">26. Robustness in the Salus Scalable Block Store.</a></li>
+<li><a href="#27. MemC3: Compact and Concurrent MemCache with Dumber Caching and Smarter Hashing.">27. MemC3: Compact and Concurrent MemCache with Dumber Caching and Smarter Hashing.</a></li>
+<li><a href="#28. Scaling Memcache at Facebook.">28. Scaling Memcache at Facebook.</a></li>
+</ul>
+</li>
+<li><a href="#Reliability    3">Reliability    3</a><ul>
+<li><a href="#29. F10: A Fault-Tolerant Engineered Network.">29. F10: A Fault-Tolerant Engineered Network.</a></li>
+<li><a href="#30. LOUP: The Principles and Practice of Intra-Domain Route Dissemination.">30. LOUP: The Principles and Practice of Intra-Domain Route Dissemination.</a></li>
+<li><a href="#31. Improving Availability in Distributed Systems with Failure Informers.">31. Improving Availability in Distributed Systems with Failure Informers.</a></li>
+</ul>
+</li>
+<li><a href="#Applications    4">Applications    4</a><ul>
+<li><a href="#32. BOSS: Building Operating System Services.">32. BOSS: Building Operating System Services.</a></li>
+<li><a href="#33. Stochastic Forecasts Achieve High Throughput and Low Delay over Cellular Networks.">33. Stochastic Forecasts Achieve High Throughput and Low Delay over Cellular Networks.</a></li>
+<li><a href="#34. Demystifying Page Load Performance with WProf.">34. Demystifying Page Load Performance with WProf.</a></li>
+<li><a href="#35. Dasu: Pushing Experiments to the Internet's Edge.">35. Dasu: Pushing Experiments to the Internet's Edge.</a></li>
+</ul>
+</li>
+<li><a href="#Security and Privacy    3">Security and Privacy    3</a><ul>
+<li><a href="#36. πBox: A Platform for Privacy-Preserving Apps.">36. πBox: A Platform for Privacy-Preserving Apps.</a></li>
+<li><a href="#37. P3: Toward Privacy-Preserving Photo Sharing.">37. P3: Toward Privacy-Preserving Photo Sharing.</a></li>
+<li><a href="#38. Embassies: Radically Refactoring the Web.">38. Embassies: Radically Refactoring the Web.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="10. NSDI 2013:Boston, MA, USA">10. NSDI 2013:Boston, MA, USA</h1>
+<p><a href="https://www.usenix.org/publications/proceedings/?f[0]=im_group_audience%3A365">Proceedings of the 10th USENIX Symposium on Networked Systems Design and Implementation, NSDI 2013, Lombard, IL, USA, April 2-5, 2013.</a> USENIX Association
+【<a href="http://dblp.uni-trier.de/db/conf/nsdi/nsdi2013.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 38 || Session Num: 11">Paper Num: 38 || Session Num: 11</h2>
+<ul>
+<li><a href="#Applications    4">Applications    4</a></li>
+<li><a href="#Big Data    4">Big Data    4</a></li>
+<li><a href="#Data Centers    4">Data Centers    4</a></li>
+<li><a href="#Network Integrity    3">Network Integrity    3</a></li>
+<li><a href="#Performance    3">Performance    3</a></li>
+<li><a href="#Pervasive Computing    4">Pervasive Computing    4</a></li>
+<li><a href="#Reliability    3">Reliability    3</a></li>
+<li><a href="#Security and Privacy    3">Security and Privacy    3</a></li>
+<li><a href="#Software Defined Networking    3">Software Defined Networking    3</a></li>
+<li><a href="#Substrate    3">Substrate    3</a></li>
+<li><a href="#Wireless    4">Wireless    4</a></li>
+</ul>
+<h2 id="Software Defined Networking    3">Software Defined Networking    3</h2>
+<h3 id="1. Composing Software Defined Networks.">1. Composing Software Defined Networks.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/monsanto">Paper Link</a>】    【Pages】:1-13</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Monsanto:Christopher">Christopher Monsanto</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Reich:Joshua">Joshua Reich</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Foster:Nate">Nate Foster</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rexford:Jennifer">Jennifer Rexford</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Walker:David">David Walker</a></p>
+<p>【Abstract】:
+Managing a network requires support for multiple concurrent tasks, from routing and trafﬁc monitoring, to access control and server load balancing. Software-Deﬁned Networking (SDN) allows applications to realize these tasks directly, by installing packet-processing rules on switches. However, today’s SDN platforms provide limited support for creating modular applications. This paper introduces new abstractions for building applications out of multiple, independent modules that jointly manage network trafﬁc. First, we deﬁne composition operators and a library of policies for forwarding and querying trafﬁc. Our parallel composition operator allows multiple policies to operate on the same set of packets, while a novel sequential composition operator allows one policy to process packets after another. Second, we enable each policy to operate on an abstract topology that implicitly constrains what the module can see and do. Finally, we deﬁne a new abstract packet model that allows programmers to extend packets with virtual ﬁelds that maybe used to associate packets with high-level meta-data. We realize these abstractions in Pyretic, an imperative, domain-speciﬁc language embedded in Python.</p>
+<p>【Keywords】:</p>
+<h3 id="2. VeriFlow: Verifying Network-Wide Invariants in Real Time.">2. VeriFlow: Verifying Network-Wide Invariants in Real Time.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/khurshid">Paper Link</a>】    【Pages】:15-27</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Khurshid:Ahmed">Ahmed Khurshid</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zou:Xuan">Xuan Zou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Wenxuan">Wenxuan Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Caesar:Matthew">Matthew Caesar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Godfrey:Philip_Brighten">Philip Brighten Godfrey</a></p>
+<p>【Abstract】:
+Networks are complex and prone to bugs. Existing tools that check network conﬁguration ﬁles and the data-plane state operate ofﬂine at timescales of seconds to hours, and cannot detect or prevent bugs as they arise. Is it possible to check network-wide invariants in real time, as the network state evolves? The key challenge here is to achieve extremely low latency during the checks so that network performance is not affected. In this paper, we present a design, VeriFlow, which achieves this goal. VeriFlow is a layer between a software-deﬁned networking controller and network devices that checks for network-wide invariant violations dynamically as each forwarding rule is inserted, modiﬁed or deleted. VeriFlow supports analysis over multiple header ﬁelds, and an API for checking custom invariants. Based on a prototype implementation integrated with the NOX OpenFlow controller, and driven by a Mininet OpenFlow network and Route Views trace data, we ﬁnd that VeriFlow can perform rigorous checking within hundreds of microseconds per rule insertion or deletion.</p>
+<p>【Keywords】:</p>
+<h3 id="3. Software Defined Traffic Measurement with OpenSketch.">3. Software Defined Traffic Measurement with OpenSketch.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/yu">Paper Link</a>】    【Pages】:29-42</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yu:Minlan">Minlan Yu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jose:Lavanya">Lavanya Jose</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Miao:Rui">Rui Miao</a></p>
+<p>【Abstract】:
+Most network management tasks in software-deﬁned networks (SDN) involve two stages: measurement and control. While many efforts have been focused on network control APIs for SDN, little attention goes into measurement. The key challenge of designing a new measurement API is to strike a careful balance between generality (supporting a wide variety of measurement tasks) and efﬁciency (enabling high link speed and low cost). We propose a software deﬁned trafﬁc measurement architecture OpenSketch, which separates the measurement data plane from the control plane. In the data plane, OpenSketch provides a simple three-stage pipeline (hashing, ﬁltering, and counting), which can be implemented with commodity switch components and support many measurement tasks. In the control plane, OpenSketch provides a measurement library that automatically conﬁgures the pipeline and allocates resources for different measurement tasks. Our evaluations of real world packet traces, our prototype on NetFPGA, and the implementation of ﬁve measurement tasks on top of OpenSketch, demonstrate that OpenSketch is general, efﬁcient and easily programmable.</p>
+<p>【Keywords】:</p>
+<h2 id="Pervasive Computing    4">Pervasive Computing    4</h2>
+<h3 id="4. V-edge: Fast Self-constructive Power Modeling of Smartphones Based on Battery Voltage Dynamics.">4. V-edge: Fast Self-constructive Power Modeling of Smartphones Based on Battery Voltage Dynamics.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/xu_fengyuan">Paper Link</a>】    【Pages】:43-55</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Fengyuan">Fengyuan Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Yunxin">Yunxin Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Qun">Qun Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Yongguang">Yongguang Zhang</a></p>
+<p>【Abstract】:
+System power models are important for power management and optimization on smartphones. However, existing approaches for power modeling have several limitations. Some require external power meters, which is not convenient for people to use. Other approaches either rely on the battery current sensing capability, which is not available on many smartphones, or take a long time to generate the power model. To overcome these limitations, we propose a new way of generating power models from battery voltage dynamics, called V-edge. V-edge is self-constructive and does not require current-sensing. Most importantly, it is fast in model building. Our implementation supports both component level power models and per-application energy accounting. Evaluation results using various benchmarks and applications show that the V-edge approach achieves high power modeling accuracy, and is two orders of magnitude faster than existing self-modeling approaches requiring no current-sensing.</p>
+<p>【Keywords】:</p>
+<h3 id="5. eDoctor: Automatically Diagnosing Abnormal Battery Drain Issues on Smartphones.">5. eDoctor: Automatically Diagnosing Abnormal Battery Drain Issues on Smartphones.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/ma">Paper Link</a>】    【Pages】:57-70</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Ma:Xiao">Xiao Ma</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Huang:Peng">Peng Huang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jin:Xinxin">Xinxin Jin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Pei">Pei Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Park:Soyeon">Soyeon Park</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shen:Dongcai">Dongcai Shen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Yuanyuan">Yuanyuan Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Saul:Lawrence_K=">Lawrence K. Saul</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Voelker:Geoffrey_M=">Geoffrey M. Voelker</a></p>
+<p>【Abstract】:
+The past few years have witnessed an evolutionary change in the smartphone ecosystem. Smartphones have gone from closed platforms containing only pre-installed applications to open platforms hosting a variety of third-party applications. Unfortunately, this change has also led to a rapid increase in Abnormal Battery Drain (ABD) problems that can be caused by software defects or misconﬁguration. Such issues can drain a fully-charged battery within a couple of hours, and can potentially affect a signiﬁcant number of users. This paper presents eDoctor, a practical tool that helps regular users troubleshoot abnormal battery drain issues on smartphones. eDoctor leverages the concept of execution phases to capture an app’s time-varying behavior, which can then be used to identify an abnormal app. Based on the result of a diagnosis, eDoctor suggests the most appropriate repair solution to users. To evaluate eDoctor’s effectiveness, we conducted both in-lab experiments and a controlled user study with 31 participants and 17 real-world ABD issues together with 4 injected issues in 19 apps. The experimental results show that eDoctor can successfully diagnose 47 out of the 50 use cases while imposing no more than 1.5% of power overhead.</p>
+<p>【Keywords】:</p>
+<h3 id="6. ArrayTrack: A Fine-Grained Indoor Location System.">6. ArrayTrack: A Fine-Grained Indoor Location System.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/xiong">Paper Link</a>】    【Pages】:71-84</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/x/Xiong:Jie">Jie Xiong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jamieson:Kyle">Kyle Jamieson</a></p>
+<p>【Abstract】:
+With myriad augmented reality, social networking, and retail shopping applications all on the horizon for the mobile handheld, a fast and accurate location technology will become key to a rich user experience. When roaming outdoors, users can usually count on a clear GPS signal for accurate location, but indoors, GPS often fades, and so up until recently, mobiles have had to rely mainly on rather coarse-grained signal strength readings. What has changed this status quo is the recent trend of dramatically increasing numbers of antennas at the indoor access point, mainly to bolster capacity and coverage with multiple-input, multiple-output (MIMO) techniques. We thus observe an opportunity to revisit the important problem of localization with a fresh perspective. This paper presents the design and experimental evaluation of ArrayTrack, an indoor location system that uses MIMO-based techniques to track wireless clients at a very ﬁne granularity in real time, as they roam about a building. With a combination of FPGA and general purpose computing, we have built a prototype of the ArrayTrack system. Our results show that the techniques we propose can pinpoint 41 clients spread out over an indoor ofﬁce environment to within 23 centimeters median accuracy, with the system incurring just 100 milliseconds latency, making for the ﬁrst time ubiquitous real-time, ﬁne-grained location available on the mobile handset.</p>
+<p>【Keywords】:</p>
+<h3 id="7. Walkie-Markie: Indoor Pathway Mapping Made Easy.">7. Walkie-Markie: Indoor Pathway Mapping Made Easy.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/shen">Paper Link</a>】    【Pages】:85-98</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Shen:Guobin">Guobin Shen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Zhuo">Zhuo Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Peichao">Peichao Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Moscibroda:Thomas">Thomas Moscibroda</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Yongguang">Yongguang Zhang</a></p>
+<p>【Abstract】:
+We present Walkie-Markie — an indoor pathway mapping system that can automatically reconstruct internal pathway maps of buildings without any a-priori knowledge about the building, such as the ﬂoor plan or access point locations. Central to Walkie-Markie is a novel exploitation of the WiFi infrastructure to deﬁne landmarks (WiFi-Marks) to fuse crowdsourced user trajectories obtained from inertial sensors on users’ mobile phones. WiFi-Marks are special pathway locations at which the trend of the received WiFi signal strength changes from increasing to decreasing when moving along the pathway. By embedding these WiFi-Marks in a 2D plane using a newly devised algorithm and connecting them with calibrated user trajectories, Walkie-Markie is able to infer pathway maps with high accuracy. Our experiments demonstrate that Walkie-Markie is able to reconstruct a high-quality pathway map for a real ofﬁce-building ﬂoor after only 5-6 rounds of walks, with accuracy gradually improving as more user data becomes available.The maximum discrepancy between the inferred pathway map and the real one is within 3m and 2.8m for the anchor nodes and path segments, respectively.</p>
+<p>【Keywords】:</p>
+<h2 id="Network Integrity    3">Network Integrity    3</h2>
+<h3 id="8. Real Time Network Policy Checking Using Header Space Analysis.">8. Real Time Network Policy Checking Using Header Space Analysis.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/kazemian">Paper Link</a>】    【Pages】:99-111</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kazemian:Peyman">Peyman Kazemian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chan:Michael">Michael Chan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zeng:Hongyi">Hongyi Zeng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Varghese:George">George Varghese</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McKeown:Nick">Nick McKeown</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Whyte:Scott">Scott Whyte</a></p>
+<p>【Abstract】:
+Network state may change rapidly in response to customer demands, load conditions or conﬁguration changes. But the network must also ensure correctness conditions such as isolating tenants from each other and from critical services. Existing policy checkers cannot verify compliance in real time because of the need to collect “state” from the entire network and the time it takes to analyze this state. SDNs provide an opportunity in thisrespect as they provide a logically centralized view from which every proposed change can be checked for compliance with policy. But there remains the need for a fast compliance checker. Our paper introduces a real time policy checking tool called NetPlumber based on Header Space Analysis (HSA). Unlike HSA, however, NetPlumber incrementally checks for compliance of state changes, using a novel set of conceptual tools that maintain a dependency graph between rules. While NetPlumber is a natural ﬁt for SDNs, its abstract intermediate form is conceptually applicable to conventional networks as well. We have tested NetPlumber on Google’s SDN, the Stanford backbone and Internet 2. With NetPlumber, checking the compliance of a typical rule update against a single policy on these networks takes 50-500s on average.</p>
+<p>【Keywords】:</p>
+<h3 id="9. Ensuring Connectivity via Data Plane Mechanisms.">9. Ensuring Connectivity via Data Plane Mechanisms.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/liu_junda">Paper Link</a>】    【Pages】:113-126</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Junda">Junda Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Panda:Aurojit">Aurojit Panda</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Singla:Ankit">Ankit Singla</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Godfrey:Brighten">Brighten Godfrey</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schapira:Michael">Michael Schapira</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shenker:Scott">Scott Shenker</a></p>
+<p>【Abstract】:
+We typically think of network architectures as having two basic components: a data plane responsible for forwarding packets at line-speed, and a control plane that instantiates the forwarding state the data plane needs. With this separation of concerns, ensuring connectivity is the responsibility of the control plane. However, the control plane typically operates at timescales several orders of magnitude slower than the data plane, which means that failure recovery will always be slow compared to dataplane forwarding rates. In this paper we propose moving the responsibility for connectivity to the data plane. Our design, called Data-Driven Connectivity (DDC) ensures routing connectivity via data plane mechanisms. We believe this new separation of concerns — basic connectivity on the data plane, optimal paths on the control plane — will allow networks to provide a much higher degree of availability, while still providing ﬂexible routing control.</p>
+<p>【Keywords】:</p>
+<h3 id="10. Juggling the Jigsaw: Towards Automated Problem Inference from Network Trouble Tickets.">10. Juggling the Jigsaw: Towards Automated Problem Inference from Network Trouble Tickets.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/potharaju">Paper Link</a>】    【Pages】:127-141</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Potharaju:Rahul">Rahul Potharaju</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jain:Navendu">Navendu Jain</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nita=Rotaru:Cristina">Cristina Nita-Rotaru</a></p>
+<p>【Abstract】:
+This paper presents NetSieve, a system that aims to do automated problem inference from network trouble tickets. Network trouble tickets are diaries comprising fixed fields and free-form text written by operators to document the steps while troubleshooting a problem. Unfortunately, while tickets carry valuable information for network management, analyzing them to do problem inference is extremely difficult—fixed fields are often inaccurate or incomplete, and the free-form text is mostly written in natural language. This paper takes a practical step towards automatically analyzing natural language text in network tickets to infer the problem symptoms, troubleshooting activities and resolution actions. Our system, NetSieve, combines statistical natural language processing (NLP), knowledge representation, and ontology modeling to achieve these goals. To cope with ambiguity in free-form text, NetSieve leverages learning from human guidance to improve its inference accuracy. We evaluate NetSieve on 10K+ tickets from a large cloud provider, and compare its accuracy using (a) an expert review, (b) a study with operators, and (c) vendor data that tracks device replacement and repairs. Our results show that NetSieve achieves 89%-100% accuracy and its inference output is useful to learn global problem trends. We have used NetSieve in several key network operations: analyzing device failure trends, understanding why network redundancy fails, and identifying device problem symptoms.</p>
+<p>【Keywords】:</p>
+<h2 id="Data Centers    4">Data Centers    4</h2>
+<h3 id="11. Yank: Enabling Green Data Centers to Pull the Plug.">11. Yank: Enabling Green Data Centers to Pull the Plug.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/singh">Paper Link</a>】    【Pages】:143-155</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Singh:Rahul">Rahul Singh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/i/Irwin:David_E=">David E. Irwin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shenoy:Prashant_J=">Prashant J. Shenoy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ramakrishnan:Kadangode_K=">Kadangode K. Ramakrishnan</a></p>
+<p>【Abstract】:
+Balancing a data center’s reliability, cost, and carbon emissions is challenging. For instance, data centers designed for high availability require a continuous ﬂow of power to keep servers powered on, and must limit their use of clean, but intermittent, renewable energy sources. In this paper, we present Yank, which uses a transient server abstraction to maintain server availability, while allowing data centers to “pull the plug” if power becomes unavailable. A transient server’s deﬁning characteristic is that it may terminate anytime after a brief advance warning period. Yank exploits the advance warning—on the order of a few seconds—to provide high availability cheaply and efﬁciently at large scales by enabling each backup server to maintain “live” memory and disk snapshots for many transient VMs. We implement Yank inside of Xen. Our experiments show that a backup server can concurrently support up to 15 transient VMs with minimal performance degradation with advance warnings as small as 10 seconds, even when VMs run memory-intensive interactive web applications.</p>
+<p>【Keywords】:</p>
+<h3 id="12. Scalable Rule Management for Data Centers.">12. Scalable Rule Management for Data Centers.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/moshref">Paper Link</a>】    【Pages】:157-170</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Moshref:Masoud">Masoud Moshref</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yu:Minlan">Minlan Yu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sharma:Abhishek_B=">Abhishek B. Sharma</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Govindan:Ramesh">Ramesh Govindan</a></p>
+<p>【Abstract】:
+Cloud operators increasingly need more and more ﬁne-grained rules to better control individual network ﬂows for various trafﬁc management policies. In this paper, we explore automated rule management in the context of a system called vCRIB (a virtual Cloud Rule Information Base), which provides the abstraction of a centralized rule repository. The challenge in our approach is the design of algorithms that automatically off-load rule processing to overcome resource constraints on hypervisors and/or switches, while minimizing redirection trafﬁc overhead and responding to system dynamics. vCRIB contains novel algorithms for ﬁnding feasible rule placements and adapting trafﬁc overhead induced by rule placement in the face of trafﬁc changes and VM migration. We demonstrate that vCRIB can ﬁnd feasible rule placements with less than 10% trafﬁc overhead even in cases where the trafﬁc-optimal rule placement may be infeasible with respect to hypervisor CPU or memory constraints.</p>
+<p>【Keywords】:</p>
+<h3 id="13. Chatty Tenants and the Cloud Network Sharing Problem.">13. Chatty Tenants and the Cloud Network Sharing Problem.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/ballani">Paper Link</a>】    【Pages】:171-184</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Ballani:Hitesh">Hitesh Ballani</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jang:Keon">Keon Jang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Karagiannis:Thomas">Thomas Karagiannis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Changhoon">Changhoon Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gunawardena:Dinan">Dinan Gunawardena</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/O=Shea:Greg">Greg O'Shea</a></p>
+<p>【Abstract】:
+The emerging ecosystem of cloud applications leads to signiﬁcant inter-tenant communication across a datacenter’s internal network. This poses new challenges for cloud network sharing. Richer inter-tenant trafﬁc patterns make it hard to offer minimum bandwidth guarantees to tenants. Further, for communication between economically distinct entities, it is not clear whose payment should dictate the network allocation. Motivated by this, we study how a cloud network that carries both intra- and inter-tenant trafﬁc should be shared. We argue for network allocations to be dictated by the least-paying of communication partners. This, when combined with careful VM placement, achieves the complementary goals of providing tenants with minimum bandwidth guarantees while bounding their maximum network impact. Through a prototype deployment and large-scale simulations, we show that minimum bandwidth guarantees, apart from helping tenants achieve predictable performance, also improve overall datacenter throughput. Further, bounding a tenant’s maximum impact mitigates malicious behavior.</p>
+<p>【Keywords】:</p>
+<h3 id="14. Effective Straggler Mitigation: Attack of the Clones.">14. Effective Straggler Mitigation: Attack of the Clones.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/ananthanarayanan">Paper Link</a>】    【Pages】:185-198</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Ananthanarayanan:Ganesh">Ganesh Ananthanarayanan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Ghodsi:Ali">Ali Ghodsi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shenker:Scott">Scott Shenker</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stoica:Ion">Ion Stoica</a></p>
+<p>【Abstract】:
+Small jobs, that are typically run for interactive data analyses in datacenters, continue to be plagued by disproportionately long-running tasks called stragglers. In the production clusters at Facebook and Microsoft Bing, even after applying state-of-the-art straggler mitigation techniques, these latency sensitive jobs have stragglers that are on average 8 times slower than the median task in that job. Such stragglers increase the average job duration by 47%. This is because current mitigation techniques all involve an element of waiting and speculation. We instead propose full cloning of small jobs, avoiding waiting and speculation altogether. Cloning of small jobs only marginally increases utilization because workloads show that while the majority of jobs are small, they only consume a small fraction of the resources. The main challenge of cloning is, however, that extra clones can cause contention for intermediate data. We use a technique, delay assignment, which efﬁciently avoids such contention. Evaluation of our system, Dolly, using production workloads shows that the small jobs speedup by 34% to 46% after state-of-the-art mitigation techniques have been applied, using just 5% extra resources for cloning.</p>
+<p>【Keywords】:</p>
+<h2 id="Substrate    3">Substrate    3</h2>
+<h3 id="15. Wire Speed Name Lookup: A GPU-based Approach.">15. Wire Speed Name Lookup: A GPU-based Approach.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/wang_yi">Paper Link</a>】    【Pages】:199-212</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang_0004:Yi">Yi Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zu:Yuan">Yuan Zu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Ting">Ting Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Peng:Kunyang">Kunyang Peng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dong:Qunfeng">Qunfeng Dong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu_0001:Bin">Bin Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Meng:Wei">Wei Meng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dai:Huichen">Huichen Dai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tian_0007:Xin">Xin Tian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Zhonghu">Zhonghu Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Hao">Hao Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Di">Di Yang</a></p>
+<p>【Abstract】:
+This paper studies the name lookup issue with longest preﬁx matching, which is widely used in URL ﬁltering, content routing/switching, etc. Recently Content-Centric Networking (CCN) has been proposed as a clean slate future Internet architecture to naturally ﬁt the content centric property of today’s Internet usage: instead of addressing end hosts, the Internet should operate based on the identity/name of contents. A core challenge and enabling technique in implementing CCN is exactly to perform name lookup for packet forwarding at wirespeed. In CCN, routing tables can be orders of magnitude larger than current IP routing tables, and content names are much longer and more complex than IP addresses. In pursuit of conquering this challenge, we conduct an implementation-based case study on wire speed name lookup, exploiting GPU’s massive parallel processing power. Extensive experiments demonstrate that our GPU-based name lookup engine can achieve 63.52M searches per second lookup throughput on large-scale name tables containing millions of name entries with a strict constraint of no more than the telecommunication level 100μs per-packet lookup latency. Our solution can be applied to contexts beyond CCN, such as search engines, content ﬁltering, and intrusion prevention/detection.</p>
+<p>【Keywords】:</p>
+<h3 id="16. SoNIC: Precise Realtime Software Access and Control of Wired Networks.">16. SoNIC: Precise Realtime Software Access and Control of Wired Networks.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/lee_ki">Paper Link</a>】    【Pages】:213-225</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Ki=Suh">Ki-Suh Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Han">Han Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Weatherspoon:Hakim">Hakim Weatherspoon</a></p>
+<p>【Abstract】:
+The physical and data link layers of the network stack contain valuable information. Unfortunately, a systems programmer would never know. These two layers are often inaccessible in software and much of their potential goes untapped. In this paper we introduce SoNIC, Software-deﬁned Network Interface Card, which provides access to the physical and data link layers in software by implementing them in software. In other words, by implementing the creation of the physical layer bitstream in software and the transmission of this bitstream in hardware, SoNIC provides complete control over the entire network stack in realtime. SoNIC utilizes commodity off-the-shelf multi-core processors to implement parts of the physical layer in software, and employs an FPGA board to transmit optical signal over the wire. Our evaluations demonstrate that SoNIC can communicate with other network components while providing realtime access to the entire network stack in software. As an example of SoNIC’s ﬁne-granularity control, it can perform precise network measurements, accurately characterizing network components such as routers, switches, and network interface cards. Further, SoNIC enables timing channels with nanosecond modulations that are undetectable in software.</p>
+<p>【Keywords】:</p>
+<h3 id="17. Split/Merge: System Support for Elastic Execution in Virtual Middleboxes.">17. Split/Merge: System Support for Elastic Execution in Virtual Middleboxes.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/rajagopalan">Paper Link</a>】    【Pages】:227-240</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Rajagopalan:Shriram">Shriram Rajagopalan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Williams:Dan">Dan Williams</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jamjoom:Hani">Hani Jamjoom</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Warfield:Andrew">Andrew Warfield</a></p>
+<p>【Abstract】:
+Developing elastic applications should be easy. This paper takes a step toward the goal of generalizing elasticity by observing that a broadly deployed class of software—the network middlebox—is particularly well suited to dynamic scale. Middleboxes tend to achieve a clean separation between a small amount of per-ﬂow network state and a large amount of complex application logic. We present a state-centric, systems-level abstraction for elastic middleboxes called Split/Merge. A virtual middlebox that has appropriately classiﬁed its state (e.g., per-ﬂow state) can be dynamically scaled out (or in) by a Split/Merge system, but remains ignorant of the number of replicas in the system. Per-ﬂow state may be transparently split between many replicas or merged back into one, while the network ensures ﬂows are routed to the correct replica. As a result, Split/Merge enables load balanced elasticity. We have implemented a Split/Merge system, called FreeFlow, and ported Bro, an open-source intrusion detection system, to run on it. In controlled experiments, FreeFlow enables a 25% reduction in maximum latency while eliminating hotspots during scale-out and a 50% quicker scale-in than standard approaches</p>
+<p>【Keywords】:</p>
+<h2 id="Wireless    4">Wireless    4</h2>
+<h3 id="18. PinPoint: Localizing Interfering Radios.">18. PinPoint: Localizing Interfering Radios.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/joshi">Paper Link</a>】    【Pages】:241-253</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Joshi:Kiran_Raj">Kiran Raj Joshi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hong:Steven_Siying">Steven Siying Hong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Katti:Sachin">Sachin Katti</a></p>
+<p>【Abstract】:
+This paper presents PinPoint, a technique for localizing rogue interfering radios that adhere to standard protocols in the in hospitable ISM band without any cooperation from the interfering radio. PinPoint is designed to be incrementally deployed on top of existing 802.11 WLAN infrastructure, and used by network administrators to identify and troubleshoot sources of interference which may be disrupting the network. PinPoint’s key contribution is a novel algorithm that accurately computes the line of sight angle of arrival (AoA) and cyclic signal strength indicator (CSSI) of the target interfering signal at all APs, even when the line of sight (LoS) component is buried by stronger multipath components, interference and noise. PinPoint leverages this algorithm to design an optimization technique, which can localize interfering radios and simultaneously identify the type of interference. Unlike several localization techniques which require extensive pre-deployment calibration (e.g. RFFingerprinting), PinPoint requires very little calibration by the network administrator, and uses a novel algorithm to self-initialize its bearings, even if the locations of some AP are initially unknown and are oriented randomly. We implement PinPoint on WARP software radios and deploy in an indoor testbed spanning an entire ﬂoor of our department. We compare PinPoint with the best known prior RSSI and MUSIC-AoA based approaches and show that PinPoint achieves a median localization error of 0:97 meters, which is around three times lower compared to the RSSI and MUSIC-AoA based approaches.</p>
+<p>【Keywords】:</p>
+<h3 id="19. SloMo: Downclocking WiFi Communication.">19. SloMo: Downclocking WiFi Communication.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/lu">Paper Link</a>】    【Pages】:255-268</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lu:Feng">Feng Lu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Voelker:Geoffrey_M=">Geoffrey M. Voelker</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Snoeren:Alex_C=">Alex C. Snoeren</a></p>
+<p>【Abstract】:
+As manufacturers continue to improve the energy efﬁciency of battery-powered wireless devices, WiFi has become one of—if not the—most signiﬁcant power draws. Hence, modern devices fastidiously manage their radios, shifting into low-power listening or sleep states whenever possible. The fundamental limitation with this approach, however, is that the radio is incapable of transmitting or receiving unless it is fully powered. Unfortunately, applications found on today’s wireless devices often require frequent access to the channel. We observe, however, that many of these same applications have relatively low bandwidth requirements. Leveraging the inherent sparsity in Direct Sequence Spread Spectrum (DSSS) modulation, we propose a transceiver design based on compressive sensing that allows WiFi devices to operate their radios at lower clock rates when receiving and transmitting at low bit rates, thus consuming less power. We have implemented our 802.11b-based design in a software radio platform, and show that it seamlessly interacts with existing WiFi deployments. Our prototype remains fully functional when the clock rate is reduced by a factor of ﬁve, potentially reducing power consumption by over 30%.</p>
+<p>【Keywords】:</p>
+<h3 id="20. Splash: Fast Data Dissemination with Constructive Interference in Wireless Sensor Networks.">20. Splash: Fast Data Dissemination with Constructive Interference in Wireless Sensor Networks.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/doddavenkatappa">Paper Link</a>】    【Pages】:269-282</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Doddavenkatappa:Manjunath">Manjunath Doddavenkatappa</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chan:Mun_Choon">Mun Choon Chan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Leong:Ben">Ben Leong</a></p>
+<p>【Abstract】:
+It is well-known that the time taken for disseminating a large data object over a wireless sensor network is dominated by the overhead of resolving the contention for the underlying wireless channel. In this paper, we propose a new dissemination protocol called Splash, that eliminates the need for contention resolution by exploiting constructive interference and channel diversity to effectively create fast and parallel pipelines over multiple paths that cover all the nodes in a network. We call this tree pipelining. In order to ensure high reliability, Splash also incorporates several techniques, including exploiting transmission density diversity, opportunistic overhearing, channel-cycling and XOR coding. Our evaluation results on two large-scale testbeds show that Splash is more than an order of magnitude faster than state-of-the-art dissemination protocols and achieves a reduction in data dissemination time by a factor of more than 20 compared to DelugeT2.</p>
+<p>【Keywords】:</p>
+<h3 id="21. Expanding Rural Cellular Networks with Virtual Coverage.">21. Expanding Rural Cellular Networks with Virtual Coverage.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/heimurl">Paper Link</a>】    【Pages】:283-296</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Heimerl:Kurtis">Kurtis Heimerl</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Ali:Kashif">Kashif Ali</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Blumenstock:Joshua_Evan">Joshua Evan Blumenstock</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gawalt:Brian">Brian Gawalt</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Brewer:Eric_A=">Eric A. Brewer</a></p>
+<p>【Abstract】:
+The cellular system is the world’s largest network, providing service to over ﬁve billion people. Operators of these networks face fundamental trade-offs in coverage, capacity and operating power. These trade-offs, when coupled with the reality of infrastructure in poorer areas, mean that upwards of a billion people lack access to this fundamental service. Limited power infrastructure, in particular, hampers the economic viability of wide-area rural coverage. In this work, we present an alternative system for implementing large-scale rural cellular networks. Rather than providing constant coverage, we instead provide virtual coverage: coverage that is only present when requested. Virtual coverage powers the network on demand, which reduces overall power draw, lowers the cost of rural connectivity, and enables new markets. We built a prototype cellular system utilizing virtual coverage by modifying a GSM base station and a set of Motorola phones to support making and receiving calls under virtual coverage. To support the billions of already-deployed devices, we also implemented a small radio capable of adding backwards-compatible support for virtual coverage to existing GSM handsets. We demonstrate a maximum of 84% power and cost savings from using virtual coverage. We also evaluated virtual coverage by simulating the potential power savings on real-world cellular networks in two representative developing counties: one in sub-Saharan Africa and one in South Asia. Simulating power use based on real-world call records obtained from local mobile operators, we ﬁnd our system saves 21-34% of power draw at night, and 7-21% during the day. We expect evenmore savings in areas currently off the grid. These results demonstrate the feasibility of implementing such a system, particularly in areas with solar or otherwise intermittent power sources.</p>
+<p>【Keywords】:</p>
+<h2 id="Performance    3">Performance    3</h2>
+<h3 id="22. EyeQ: Practical Network Performance Isolation at the Edge.">22. EyeQ: Practical Network Performance Isolation at the Edge.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/jeyakumar">Paper Link</a>】    【Pages】:297-311</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jeyakumar:Vimalkumar">Vimalkumar Jeyakumar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Alizadeh:Mohammad">Mohammad Alizadeh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mazi=egrave=res:David">David Mazières</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Prabhakar:Balaji">Balaji Prabhakar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Greenberg:Albert_G=">Albert G. Greenberg</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Changhoon">Changhoon Kim</a></p>
+<p>【Abstract】:
+The datacenter network is shared among untrusted tenants in a public cloud, and hundreds of services in a private cloud. Today we lack ﬁne-grained control over network bandwidth partitioning across tenants. In this paper we present EyeQ, a simple and practical system that provides tenants with bandwidth guarantees as if their endpoints were connected to a dedicated switch. To realize this goal, EyeQ leverages the high bisection bandwidth in a datacenter fabric and enforces admission control on trafﬁc, regardless of the tenant transport protocol. We show that this pushes bandwidth contentionto the network’s edge, enabling EyeQ to support end-to-end minimum bandwidth guarantees to tenant endpoints in a simple and scalable manner at the servers. EyeQ requires no changes to applications and is deployable with support from the network available today. We evaluate EyeQ with an efﬁcient software implementation at 10Gb/s speeds using unmodiﬁed applications and adversarial trafﬁc patterns. Our evaluation demonstrates EyeQ’s promise of predictable network performance isolation. For instance, even with an adversarial tenant with bursty UDP trafﬁc, EyeQ is able to maintain the 99.9th percentile latency for a collocated memcached application close to that of a dedicated deployment.</p>
+<p>【Keywords】:</p>
+<h3 id="23. Stronger Semantics for Low-Latency Geo-Replicated Storage.">23. Stronger Semantics for Low-Latency Geo-Replicated Storage.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/lloyd">Paper Link</a>】    【Pages】:313-328</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lloyd:Wyatt">Wyatt Lloyd</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Freedman:Michael_J=">Michael J. Freedman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kaminsky:Michael">Michael Kaminsky</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Andersen:David_G=">David G. Andersen</a></p>
+<p>【Abstract】:
+We present the ﬁrst scalable, geo-replicated storage system that guarantees low latency, offers a rich data model, and provides “stronger” semantics. Namely, all client requests are satisﬁed in the local datacenter in which they arise; the system efﬁciently supports useful data model abstractions such as column families and counter columns; and clients can access data in a causally consistent fashion with read-only and write-only transactional support, even for keys spread across many servers. The primary contributions of this work are enabling scalable causal consistency for the complex column family data model, as well as novel, non-blocking algorithms for both read-only and write-only transactions. Our evaluation shows that our system, Eiger, achieves low latency (single-ms), has throughput competitive with eventually-consistent and non-transactional Cassandra (less than 7% overhead for one of Facebook’s real-world workloads), and scales out to large clusters almost linearly (averaging 96% increases up to 128 server clusters).</p>
+<p>【Keywords】:</p>
+<h3 id="24. Bobtail: Avoiding Long Tails in the Cloud.">24. Bobtail: Avoiding Long Tails in the Cloud.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/xu_yunjing">Paper Link</a>】    【Pages】:329-341</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Yunjing">Yunjing Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Musgrave:Zachary">Zachary Musgrave</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Noble:Brian">Brian Noble</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bailey:Michael">Michael Bailey</a></p>
+<p>【Abstract】:
+Highly modular data center applications such as Bing, Facebook, and Amazon’s retail platform are known to be susceptible to long tails in response times. Services such as Amazon’s EC2 have proven attractive platforms for building similar applications. Unfortunately, virtualization used in such platforms exacerbates the long tail problem by factors of two to four. Surprisingly, we ﬁnd that poor response times in EC2 are a property of nodes rather than the network, and that this property of nodes is both pervasive throughout EC2 and persistent over time. The root cause of this problem is co-scheduling of CPU-bound and latency-sensitive tasks. We leverage these observations in Bobtail, a system that proactively detects and avoids these bad neighboring VMs without significantly penalizing node instantiation. With Bobtail, common communication patterns beneﬁt from reductions of up to 40% in 99.9th percentile response times.</p>
+<p>【Keywords】:</p>
+<h2 id="Big Data    4">Big Data    4</h2>
+<h3 id="25. Rhea: Automatic Filtering for Unstructured Cloud Storage.">25. Rhea: Automatic Filtering for Unstructured Cloud Storage.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/gkantsidis">Paper Link</a>】    【Pages】:343-355</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gkantsidis:Christos">Christos Gkantsidis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vytiniotis:Dimitrios">Dimitrios Vytiniotis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hodson:Orion">Orion Hodson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Narayanan:Dushyanth">Dushyanth Narayanan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dinu:Florin">Florin Dinu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rowstron:Antony_I=_T=">Antony I. T. Rowstron</a></p>
+<p>【Abstract】:
+Unstructured storage and data processing using platforms such as MapReduce are increasingly popular for their simplicity, scalability, and ﬂexibility. Using elastic cloud storage and computation makes them even more attractive. However cloud providers such as Amazon and Windows Azure separate their storage and compute resources even within the same data center. Transferring data from storage to compute thus uses core data center network bandwidth, which is scarce and oversubscribed. As the data is unstructured, the infrastructure cannot automatically apply selection, projection, or other ﬁltering predicates at the storage layer. The problem is even worse if customers want to use compute resources on one provider but use data stored with other provider(s). The bottleneck is now the WAN link which impacts performance but also incurs egress bandwidth charges. This paper presents Rhea, a system to automatically generate and run storage-side data ﬁlters for unstructured and semi-structured data. It uses static analysis of application code to generate ﬁlters that are safe, stateless, side effect free, best effort, and transparent to both storage and compute layers. Filters never remove data that is used by the computation. Our evaluation shows that Rhea ﬁlters achieve a reduction in data transfer of 2x–20,000x, which reduces job run times by up to 5x and dollar costs for cross-cloud computations by up to 13x.</p>
+<p>【Keywords】:</p>
+<h3 id="26. Robustness in the Salus Scalable Block Store.">26. Robustness in the Salus Scalable Block Store.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/wang_yang">Paper Link</a>】    【Pages】:357-370</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang_0009:Yang">Yang Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kapritsos:Manos">Manos Kapritsos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ren:Zuocheng">Zuocheng Ren</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mahajan:Prince">Prince Mahajan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kirubanandam:Jeevitha">Jeevitha Kirubanandam</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Alvisi:Lorenzo">Lorenzo Alvisi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dahlin:Mike">Mike Dahlin</a></p>
+<p>【Abstract】:
+This paper describes Salus, a block store that seeks to maximize simultaneously both scalability and robustness. Salus provides strong end-to-end correctnessguarantees for read operations, strict ordering guarantees for write operations, and strong durability and availability guarantees despite a wide range of server failures (including memory corruptions, disk corruptions, ﬁrmware bugs, etc.). Such increased protection does not come at the cost of scalability or performance: indeed, Salus often actually outperforms HBase (the codebase from which Salus descends). For example, Salus’ active replication allows it to halve network bandwidth while increasing aggregate write throughput by a factor of 1.74 compared to HBase in a well-provisioned system.</p>
+<p>【Keywords】:</p>
+<h3 id="27. MemC3: Compact and Concurrent MemCache with Dumber Caching and Smarter Hashing.">27. MemC3: Compact and Concurrent MemCache with Dumber Caching and Smarter Hashing.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/fan">Paper Link</a>】    【Pages】:371-384</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Fan:Bin">Bin Fan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Andersen:David_G=">David G. Andersen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kaminsky:Michael">Michael Kaminsky</a></p>
+<p>【Abstract】:
+This paper presents a set of architecturally and workload inspired algorithmic and engineering improvements to the popular Memcached system that substantially improve both its memory efficiency and throughput. These techniques—optimistic cuckoo hashing, a compact LRU-approximating eviction algorithm based uponCLOCK, and comprehensive implementation of optimistic locking—enable the resulting system to use 30% less memory for small key-value pairs, and serve up to 3x as many queries per second over the network. We have implemented these modiﬁcations in a system we call MemC3—Memcached with CLOCK and Concurrent Cuckoo hashing—but believe that they also apply more generally to many of today’s read-intensive, highly concurrent networked storage and caching systems.</p>
+<p>【Keywords】:</p>
+<h3 id="28. Scaling Memcache at Facebook.">28. Scaling Memcache at Facebook.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/nishtala">Paper Link</a>】    【Pages】:385-398</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Nishtala:Rajesh">Rajesh Nishtala</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fugal:Hans">Hans Fugal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Grimm:Steven">Steven Grimm</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kwiatkowski:Marc">Marc Kwiatkowski</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Herman">Herman Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Harry_C=">Harry C. Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McElroy:Ryan">Ryan McElroy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Paleczny:Mike">Mike Paleczny</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Peek:Daniel">Daniel Peek</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Saab:Paul">Paul Saab</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stafford:David">David Stafford</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tung:Tony">Tony Tung</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Venkataramani:Venkateshwaran">Venkateshwaran Venkataramani</a></p>
+<p>【Abstract】:
+Memcached is a well known, simple, in memory caching solution. This paper describes how Facebook leverages memcached as a building block to construct and scale a distributed key-value store that supports the world’s largest social network. Our system handles billions of requests per second and holds trillions of items to deliver a rich experience for over a billion users around the world.</p>
+<p>【Keywords】:</p>
+<h2 id="Reliability    3">Reliability    3</h2>
+<h3 id="29. F10: A Fault-Tolerant Engineered Network.">29. F10: A Fault-Tolerant Engineered Network.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/liu_vincent">Paper Link</a>】    【Pages】:399-412</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Vincent">Vincent Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Halperin:Daniel">Daniel Halperin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Krishnamurthy:Arvind">Arvind Krishnamurthy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Anderson:Thomas_E=">Thomas E. Anderson</a></p>
+<p>【Abstract】:
+The data center network is increasingly a cost, reliability and performance bottleneck for cloud computing. Although multi-tree topologies can provide scalable bandwidth and traditional routing algorithms can provide eventual fault tolerance, we argue that recovery speed can be dramatically improved through the co-design of the network topology, routing algorithm and failure detector. We create an engineered network and routing protocol that directly address the failure characteristics observed in data centers. At the core of our proposal is a novel network topology that has many of the same desirable properties as FatTrees, but with much better fault recovery properties. We then create a series of failover protocols that beneﬁt from this topology and are designed to cascade and complement each other. The resulting system, F10, can almost instantaneously reestablish connectivity and load balance, even in the presence of multiple failures. Our results show that following network link and switch failures, F10 has less than 1/7th the packet loss of current schemes. A trace-driven evaluation of MapReduce performance shows that F10’s lower packet loss yields a median application-level 30% speedup.</p>
+<p>【Keywords】:</p>
+<h3 id="30. LOUP: The Principles and Practice of Intra-Domain Route Dissemination.">30. LOUP: The Principles and Practice of Intra-Domain Route Dissemination.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/gvozdiev">Paper Link</a>】    【Pages】:413-426</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gvozdiev:Nikola">Nikola Gvozdiev</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Karp:Brad">Brad Karp</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Handley:Mark">Mark Handley</a></p>
+<p>【Abstract】:
+Under misconﬁguration or topology changes, iBGP with route reﬂectors exhibits a variety of ills, including routing instability, transient loops, and routing failures. In this paper, we consider the intra-domain route dissemination problem from ﬁrst principles, and show that these pathologies are not fundamental–rather, they are artifacts of iBGP. We propose the Simple Ordered Update Protocol (SOUP) and Link-Ordered Update Protocol (LOUP), clean-slate dissemination protocols for external routes that do not create transient loops, make stable route choices in the presence of failures, and achieve policy compliant routing without any conﬁguration. We prove SOUP cannot loop, and demonstrate both protocols’ scalability and correctness in simulation and through measurements of a Quagga-based implementation.</p>
+<p>【Keywords】:</p>
+<h3 id="31. Improving Availability in Distributed Systems with Failure Informers.">31. Improving Availability in Distributed Systems with Failure Informers.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/leners">Paper Link</a>】    【Pages】:427-441</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gupta:Trinabh">Trinabh Gupta</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Leners:Joshua_B=">Joshua B. Leners</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Aguilera:Marcos_K=">Marcos K. Aguilera</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Walfish:Michael">Michael Walfish</a></p>
+<p>【Abstract】:
+This paper addresses a core question in distributed systems: how should applications be notiﬁed of failures? When a distributed system acts on failure reports, the system’s correctness and availability depend on the granularity and semantics of those reports. The system’s availability also depends on coverage (failures are reported), accuracy (reports are justiﬁed), and timeliness (reports come quickly). This paper describes Pigeon, a failure reporting service designed to enable high availability in the applications that use it. Pigeon exposes a new abstraction, called a failure informer, which allows applications to take informed, application-speciﬁc recovery actions, and which encapsulates uncertainty, allowing applications to proceed safely in the presence of doubt. Pigeon also signiﬁcantly improves over the previous state of the art in the three-way trade-off among coverage, accuracy, and timeliness.</p>
+<p>【Keywords】:</p>
+<h2 id="Applications    4">Applications    4</h2>
+<h3 id="32. BOSS: Building Operating System Services.">32. BOSS: Building Operating System Services.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/dawson-haggerty">Paper Link</a>】    【Pages】:443-457</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dawson=Haggerty:Stephen">Stephen Dawson-Haggerty</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Krioukov:Andrew">Andrew Krioukov</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Taneja:Jay">Jay Taneja</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Karandikar:Sagar">Sagar Karandikar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fierro:Gabe">Gabe Fierro</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kitaev:Nikita">Nikita Kitaev</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Culler:David_E=">David E. Culler</a></p>
+<p>【Abstract】:
+Commercial buildings are attractive targets for introducing innovative cyber-physical control systems, because they are already highly instrumented distributed systems which consume large quantities of energy. However, they are not currently programmable in a meaningful sense because each building is constructed with vertically integrated, closed subsystems and without uniform abstractions to write applications against. We develop a set of operating system services called BOSS, which supports multiple portable, fault-tolerant applications on top of the distributed physical resources present in large commercial buildings. We evaluate our system based on lessons learned from deployments of many novel applications in our test building, a four-year-old, 140,000sf building with modern digital controls, as well as partial deployments at other sites.</p>
+<p>【Keywords】:</p>
+<h3 id="33. Stochastic Forecasts Achieve High Throughput and Low Delay over Cellular Networks.">33. Stochastic Forecasts Achieve High Throughput and Low Delay over Cellular Networks.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/winstein">Paper Link</a>】    【Pages】:459-471</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Winstein:Keith">Keith Winstein</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sivaraman:Anirudh">Anirudh Sivaraman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Balakrishnan:Hari">Hari Balakrishnan</a></p>
+<p>【Abstract】:
+Sprout is an end-to-end transport protocol for interactive applications that desire high throughput and low delay. Sprout works well over cellular wireless networks, where link speeds change dramatically with time, and current protocols build up multi-second queues in network gateways. Sprout does not use TCP-style reactive congestion control; instead the receiver observes the packet arrival times to infer the uncertain dynamics of the network path. This inference is used to forecast how many bytes may be sent by the sender, while bounding the risk that packets will be delayed inside the network for too long. In evaluations on traces from four commercial LTE and 3G networks, Sprout, compared with Skype, reduced self-inﬂicted end-to-end delay by a factor of 7.9 and achieved 2.2 the transmitted bit rate on average. Compared with Google’s Hangout, Sprout reduced delay by a factor of 7.2 while achieving 4.4 the bit rate, and compared with Apple’s Facetime, Sprout reduced delay by a factor of 8.7 with 1.9 the bit rate. Although it is end-to-end, Sprout matched or outperformed TCP Cubic running over the CoDel active queue management algorithm, which requires changes to cellular carrier equipment to deploy. We also tested Sprout as a tunnel to carry competing interactive and bulk trafﬁc (Skype and TCP Cubic), and found that Sprout was able to isolate client application ﬂows from one another.</p>
+<p>【Keywords】:</p>
+<h3 id="34. Demystifying Page Load Performance with WProf.">34. Demystifying Page Load Performance with WProf.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/wang_xiao">Paper Link</a>】    【Pages】:473-485</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Xiao_Sophia">Xiao Sophia Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Balasubramanian:Aruna">Aruna Balasubramanian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Krishnamurthy:Arvind">Arvind Krishnamurthy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wetherall:David">David Wetherall</a></p>
+<p>【Abstract】:
+Web page load time is a key performance metric that many techniques aim to reduce. Unfortunately, the complexity of modern Web pages makes it difﬁcult to identify performance bottlenecks. We present WProf, a lightweight in-browser proﬁler that produces a detailed dependency graph of the activities that make up a pageload. WProf is based on a model we developed to capture the constraints between network load, page parsing, JavaScript/CSS evaluation, and rendering activity in popular browsers. We combine WProf reports with critical path analysis to study the page load time of 350 Web pages under a variety of settings including the use of end-host caching, SPDY instead of HTTP, and the mod pagespeed server extension. We ﬁnd that computation is a signiﬁcant factor that makes up as much as 35% of the critical path, and that synchronous JavaScript plays a signiﬁcant role in page load time by blocking HTML parsing. Caching reduces page load time, but the reduction is not proportional to the number of cached objects, because most object loads are not on the critical path. SPDY reduces page load time only for networks with high RTTs and mod_pagespeed helps little on an average page.</p>
+<p>【Keywords】:</p>
+<h3 id="35. Dasu: Pushing Experiments to the Internet's Edge.">35. Dasu: Pushing Experiments to the Internet's Edge.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/sanchez">Paper Link</a>】    【Pages】:487-499</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/S=aacute=nchez:Mario_A=">Mario A. Sánchez</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Otto:John_S=">John S. Otto</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bischof:Zachary_S=">Zachary S. Bischof</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Choffnes:David_R=">David R. Choffnes</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bustamante:Fabi=aacute=n_E=">Fabián E. Bustamante</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Krishnamurthy:Balachander">Balachander Krishnamurthy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Willinger:Walter">Walter Willinger</a></p>
+<p>【Abstract】:
+We present Dasu, a measurement experimentation platform for the Internet’s edge. Dasu supports both controlled network experimentation and broadband characterization, building on public interest on the latter to gain the adoption necessary for the former. We discuss some of the challenges we faced building a platform for the Internet’s edge, describe our current design and implementation, and illustrate the unique perspective it brings to Internet measurement. Dasu has been publicly available since July 2010 and has been installed by over 90,000 users with a heterogeneous set of connections spreading across 1,802 networks and 147 countries.</p>
+<p>【Keywords】:</p>
+<h2 id="Security and Privacy    3">Security and Privacy    3</h2>
+<h3 id="36. πBox: A Platform for Privacy-Preserving Apps.">36. πBox: A Platform for Privacy-Preserving Apps.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/lee_sangmin">Paper Link</a>】    【Pages】:501-514</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Sangmin">Sangmin Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wong:Edmund_L=">Edmund L. Wong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Goel:Deepak">Deepak Goel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dahlin:Mike">Mike Dahlin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shmatikov:Vitaly">Vitaly Shmatikov</a></p>
+<p>【Abstract】:
+We present πBox, a new application platform that prevents apps from misusing information about their users. To strike a useful balance between users’ privacy and apps’ functional needs, πBox shifts much of the responsibility for protecting privacy from the app and its users to the platform itself. To achieve this, πBox deploys (1) a sandbox that spans the user’s device and the cloud, (2) specialized storage and communication channels that enable common app functionalities, and (3) an adaptation of recent theoretical algorithms for differential privacyunder continual observation. We describe a prototype implementation of πBox and show how it enables a wide range of useful apps with minimal performance overhead and without sacriﬁcing user privacy.</p>
+<p>【Keywords】:</p>
+<h3 id="37. P3: Toward Privacy-Preserving Photo Sharing.">37. P3: Toward Privacy-Preserving Photo Sharing.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/ra">Paper Link</a>】    【Pages】:515-528</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Ra:Moo=Ryong">Moo-Ryong Ra</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Govindan:Ramesh">Ramesh Govindan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/Ortega:Antonio">Antonio Ortega</a></p>
+<p>【Abstract】:
+With increasing use of mobile devices, photo sharing services are experiencing greater popularity. Aside from providing storage, photo sharing services enable bandwidth-efﬁcient downloads to mobile devices by performing server-side image transformations (resizing, cropping). On the ﬂip side, photo sharing services have raised privacy concerns such as leakage of photos to unauthorized viewers and the use of algorithmic recognition technologies by providers. To address these concerns, we propose a privacy-preserving photo encoding algorithm that extracts and encrypts a small, but significant, component of the photo, while preserving the remainder in a public, standards-compatible, part. These two components can be separately stored. This technique signiﬁcantly reduces the accuracy of automated detection and recognition on the public part, while preserving the ability of the provider to perform server-side transformations to conserve download bandwidth usage. Our prototype privacy-preserving photo sharing system, P3, works with Facebook, and can be extended to other services as well. P3 requires no changes to existing services or mobile application software, and adds minimal photo storage overhead.</p>
+<p>【Keywords】:</p>
+<h3 id="38. Embassies: Radically Refactoring the Web.">38. Embassies: Radically Refactoring the Web.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/howell">Paper Link</a>】    【Pages】:529-545</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Howell:Jon">Jon Howell</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Parno:Bryan">Bryan Parno</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Douceur:John_R=">John R. Douceur</a></p>
+<p>【Abstract】:
+Web browsers ostensibly provide strong isolation for the client-side components of web applications. Unfortunately, this isolation is weak in practice; as browsers add increasingly rich APIs to please developers, these complex interfaces bloat the trusted computing base and erode cross-app isolation boundaries. We reenvision the web interface based on the notion of a pico-datacenter, the client-side version of a shared server datacenter. Mutually untrusting vendors run their code on the user’s computer in low-level native code containers that communicate with the outside world only via IP. Just as in the cloud datacenter, the simple semantics makes isolation tractable, yet native code gives vendors the freedom to run any software stack. Since the datacenter model is designed to be robust to malicious tenants, it is never dangerous for the user to click a link and invite a possibly-hostile party onto the client.</p>
+<p>【Keywords】:</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="https://github.com/huntercmd/ccf"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>

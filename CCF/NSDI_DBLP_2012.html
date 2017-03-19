@@ -1,0 +1,386 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/skin.js"></script>
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/classie.js"></script>
+
+<!-- This is for Mathjax -->
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#9. NSDI 2012:San Jose, CA, USA">9. NSDI 2012:San Jose, CA, USA</a><ul>
+<li><a href="#Paper Num: 30 || Session Num: 11">Paper Num: 30 || Session Num: 11</a></li>
+<li><a href="#Big Data    3">Big Data    3</a><ul>
+<li><a href="#1. CORFU: A Shared Log Design for Flash Clusters.">1. CORFU: A Shared Log Design for Flash Clusters.</a></li>
+<li><a href="#2. Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing.">2. Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing.</a></li>
+<li><a href="#3. Camdoop: Exploiting In-network Aggregation for Big Data Applications.">3. Camdoop: Exploiting In-network Aggregation for Big Data Applications.</a></li>
+</ul>
+</li>
+<li><a href="#Wireless    2">Wireless    2</a><ul>
+<li><a href="#4. WiFi-NC : WiFi Over Narrow Channels.">4. WiFi-NC : WiFi Over Narrow Channels.</a></li>
+<li><a href="#5. Catching Whales and Minnows Using WiFiNet: Deconstructing Non-WiFi Interference Using WiFi Hardware.">5. Catching Whales and Minnows Using WiFiNet: Deconstructing Non-WiFi Interference Using WiFi Hardware.</a></li>
+</ul>
+</li>
+<li><a href="#Content and Service-Oriented Networking    3">Content and Service-Oriented Networking    3</a><ul>
+<li><a href="#6. RPT: Re-architecting Loss Protection for Content-Aware Networks.">6. RPT: Re-architecting Loss Protection for Content-Aware Networks.</a></li>
+<li><a href="#7. Serval: An End-Host Stack for Service-Centric Networking.">7. Serval: An End-Host Stack for Service-Centric Networking.</a></li>
+<li><a href="#8. Reliable Client Accounting for P2P-Infrastructure Hybrids.">8. Reliable Client Accounting for P2P-Infrastructure Hybrids.</a></li>
+</ul>
+</li>
+<li><a href="#Network Robustness    3">Network Robustness    3</a><ul>
+<li><a href="#9. Header Space Analysis: Static Checking for Networks.">9. Header Space Analysis: Static Checking for Networks.</a></li>
+<li><a href="#10. A NICE Way to Test OpenFlow Applications.">10. A NICE Way to Test OpenFlow Applications.</a></li>
+<li><a href="#11. Toward Predictable Performance in Software Packet-Processing Platforms.">11. Toward Predictable Performance in Software Packet-Processing Platforms.</a></li>
+</ul>
+</li>
+<li><a href="#Privacy    3">Privacy    3</a><ul>
+<li><a href="#12. Detecting and Defending Against Third-Party Tracking on the Web.">12. Detecting and Defending Against Third-Party Tracking on the Web.</a></li>
+<li><a href="#13. Towards Statistical Queries over Distributed Private User Data.">13. Towards Statistical Queries over Distributed Private User Data.</a></li>
+<li><a href="#14. Koi: A Location-Privacy Platform for Smartphone Apps.">14. Koi: A Location-Privacy Platform for Smartphone Apps.</a></li>
+</ul>
+</li>
+<li><a href="#Security and Availability    2">Security and Availability    2</a><ul>
+<li><a href="#15. Aiding the Detection of Fake Accounts in Large Scale Social Online Services.">15. Aiding the Detection of Fake Accounts in Large Scale Social Online Services.</a></li>
+<li><a href="#16. Don't Lose Sleep Over Availability: The GreenUp Decentralized Wakeup Service.">16. Don't Lose Sleep Over Availability: The GreenUp Decentralized Wakeup Service.</a></li>
+</ul>
+</li>
+<li><a href="#Data Center Networking    3">Data Center Networking    3</a><ul>
+<li><a href="#17. Jellyfish: Networking Data Centers Randomly.">17. Jellyfish: Networking Data Centers Randomly.</a></li>
+<li><a href="#18. OSA: An Optical Switching Architecture for Data Center Networks with Unprecedented Flexibility.">18. OSA: An Optical Switching Architecture for Data Center Networks with Unprecedented Flexibility.</a></li>
+<li><a href="#19. Less Is More: Trading a Little Bandwidth for Ultra-Low Latency in the Data Center.">19. Less Is More: Trading a Little Bandwidth for Ultra-Low Latency in the Data Center.</a></li>
+</ul>
+</li>
+<li><a href="#Big Data (2">Big Data (2)    3</a>    3)<ul>
+<li><a href="#20. PACMan: Coordinated Memory Caching for Parallel Jobs.">20. PACMan: Coordinated Memory Caching for Parallel Jobs.</a></li>
+<li><a href="#21. Reoptimizing Data Parallel Computing.">21. Reoptimizing Data Parallel Computing.</a></li>
+<li><a href="#22. Optimizing Data Shuffling in Data-Parallel Computation by Understanding User-Defined Functions.">22. Optimizing Data Shuffling in Data-Parallel Computation by Understanding User-Defined Functions.</a></li>
+</ul>
+</li>
+<li><a href="#New Architectures and Platforms    3">New Architectures and Platforms    3</a><ul>
+<li><a href="#23. XIA: Efficient Support for Evolvable Internetworking.">23. XIA: Efficient Support for Evolvable Internetworking.</a></li>
+<li><a href="#24. Design and Implementation of a Consolidated Middlebox Architecture.">24. Design and Implementation of a Consolidated Middlebox Architecture.</a></li>
+<li><a href="#25. An Operating System for the Home.">25. An Operating System for the Home.</a></li>
+</ul>
+</li>
+<li><a href="#Cloud Performance    2">Cloud Performance    2</a><ul>
+<li><a href="#26. Structured Comparative Analysis of Systems Logs to Diagnose Performance Problems.">26. Structured Comparative Analysis of Systems Logs to Diagnose Performance Problems.</a></li>
+<li><a href="#27. Orchestrating the Deployment of Computations in the Cloud with Conductor.">27. Orchestrating the Deployment of Computations in the Cloud with Conductor.</a></li>
+</ul>
+</li>
+<li><a href="#Transport    3">Transport    3</a><ul>
+<li><a href="#28. Fitting Square Pegs Through Round Pipes: Unordered Delivery Wire-Compatible with TCP and TLS.">28. Fitting Square Pegs Through Round Pipes: Unordered Delivery Wire-Compatible with TCP and TLS.</a></li>
+<li><a href="#29. How Hard Can It Be? Designing and Implementing a Deployable Multipath TCP.">29. How Hard Can It Be? Designing and Implementing a Deployable Multipath TCP.</a></li>
+<li><a href="#30. The TCP Outcast Problem: Exposing Unfairness in Data Center Networks.">30. The TCP Outcast Problem: Exposing Unfairness in Data Center Networks.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="9. NSDI 2012:San Jose, CA, USA">9. NSDI 2012:San Jose, CA, USA</h1>
+<p><a href="https://www.usenix.org/publications/proceedings/?f[0]=im_group_audience%3A279">Proceedings of the 9th USENIX Symposium on Networked Systems Design and Implementation, NSDI 2012, San Jose, CA, USA, April 25-27, 2012.</a> USENIX Association
+【<a href="http://dblp.uni-trier.de/db/conf/nsdi/nsdi2012.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 30 || Session Num: 11">Paper Num: 30 || Session Num: 11</h2>
+<ul>
+<li><a href="#Big Data    3">Big Data    3</a></li>
+<li><a href="#Big Data (2">Big Data (2)    3</a>    3)</li>
+<li><a href="#Cloud Performance    2">Cloud Performance    2</a></li>
+<li><a href="#Content and Service-Oriented Networking    3">Content and Service-Oriented Networking    3</a></li>
+<li><a href="#Data Center Networking    3">Data Center Networking    3</a></li>
+<li><a href="#Network Robustness    3">Network Robustness    3</a></li>
+<li><a href="#New Architectures and Platforms    3">New Architectures and Platforms    3</a></li>
+<li><a href="#Privacy    3">Privacy    3</a></li>
+<li><a href="#Security and Availability    2">Security and Availability    2</a></li>
+<li><a href="#Transport    3">Transport    3</a></li>
+<li><a href="#Wireless    2">Wireless    2</a></li>
+</ul>
+<h2 id="Big Data    3">Big Data    3</h2>
+<h3 id="1. CORFU: A Shared Log Design for Flash Clusters.">1. CORFU: A Shared Log Design for Flash Clusters.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/balakrishnan">Paper Link</a>】    【Pages】:1-14</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Balakrishnan:Mahesh">Mahesh Balakrishnan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Malkhi:Dahlia">Dahlia Malkhi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Prabhakaran:Vijayan">Vijayan Prabhakaran</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wobber:Ted">Ted Wobber</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wei:Michael">Michael Wei</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Davis:John_D=">John D. Davis</a></p>
+<p>【Abstract】:
+CORFU organizes a cluster of flash devices as a single, shared log that can be accessed concurrently by multiple clients over the network. The CORFU shared log makes it easy to build distributed applications that require strong consistency at high speeds, such as databases, transactional key-value stores, replicated state machines, and metadata services. CORFU can be viewed as a distributed SSD, providing advantages over conventional SSDs such as distributed wear-leveling, network locality, fault tolerance, incremental scalability and geodistribution. A single CORFU instance can support up to 200K appends/sec, while reads scale linearly with cluster size. Importantly, CORFU is designed to work directly over network-attached flash devices, slashing cost, power consumption and latency by eliminating storage servers.</p>
+<p>【Keywords】:</p>
+<h3 id="2. Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing.">2. Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/zaharia">Paper Link</a>】    【Pages】:15-28</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zaharia:Matei">Matei Zaharia</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chowdhury:Mosharaf">Mosharaf Chowdhury</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Das:Tathagata">Tathagata Das</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dave:Ankur">Ankur Dave</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Ma:Justin">Justin Ma</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McCauly:Murphy">Murphy McCauly</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Franklin:Michael_J=">Michael J. Franklin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shenker:Scott">Scott Shenker</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stoica:Ion">Ion Stoica</a></p>
+<p>【Abstract】:
+We present Resilient Distributed Datasets (RDDs), a distributed memory abstraction that lets programmers perform in-memory computations on large clusters in a fault-tolerant manner. RDDs are motivated by two types of applications that current computing frameworks handle inefficiently: iterative algorithms and interactive data mining tools. In both cases, keeping data in memory can improve performance by an order of magnitude. To achieve fault tolerance efficiently, RDDs provide a restricted form of shared memory, based on coarse-grained transformations rather than fine-grained updates to shared state. However, we show that RDDs are expressive enough to capture a wide class of computations, including recent specialized programming models for iterative jobs, such as Pregel, and new applications that these models do not capture. We have implemented RDDs in a system called Spark, which we evaluate through a variety of user applications and benchmarks.</p>
+<p>【Keywords】:</p>
+<h3 id="3. Camdoop: Exploiting In-network Aggregation for Big Data Applications.">3. Camdoop: Exploiting In-network Aggregation for Big Data Applications.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/costa">Paper Link</a>】    【Pages】:29-42</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Costa:Paolo">Paolo Costa</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Donnelly:Austin">Austin Donnelly</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rowstron:Antony_I=_T=">Antony I. T. Rowstron</a> ; <a href="http://dblp.uni-trier.de/pers/hd/o/O=Shea:Greg">Greg O'Shea</a></p>
+<p>【Abstract】:
+Large companies like Facebook, Google, and Microsoft as well as a number of small and medium enterprises daily process massive amounts of data in batch jobs and in real time applications. This generates high network traffic, which is hard to support using traditional, oversubscribed, network infrastructures. To address this issue, several alternative network topologies have been proposed, aiming to increase the bandwidth available in enterprise clusters. We observe that in many of the commonly used workloads, data is aggregated during the process and the output size is a fraction of the input size. This motivated us to explore a different point in the design space. Instead of increasing the bandwidth, we focus on decreasing the traffic by pushing aggregation from the edge into the network. We built Camdoop, a MapReduce-like system running on CamCube, a cluster design that uses a direct-connect network topology with servers directly linked to other servers. Camdoop exploits the property that CamCube servers forward traffic, to perform in-network aggregation of data during the shuffle phase. Camdoop supports the same functions used in MapReduce and is compatible with existing MapReduce applications. We demonstrate that, in common cases, Camdoop significantly reduces the network traffic and provides high performance increase over a version of Camdoop running over a switch and against two production systems, Hadoop and Dryad/DryadLINQ.</p>
+<p>【Keywords】:</p>
+<h2 id="Wireless    2">Wireless    2</h2>
+<h3 id="4. WiFi-NC : WiFi Over Narrow Channels.">4. WiFi-NC : WiFi Over Narrow Channels.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/chintalapudi">Paper Link</a>】    【Pages】:43-56</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chintalapudi:Krishna">Krishna Chintalapudi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Radunovic:Bozidar">Bozidar Radunovic</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Balan:Horia_Vlad">Horia Vlad Balan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Buettener:Michael">Michael Buettener</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yerramalli:Srinivas">Srinivas Yerramalli</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Navda:Vishnu">Vishnu Navda</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ramjee:Ramachandran">Ramachandran Ramjee</a></p>
+<p>【Abstract】:
+The quest for higher data rates in WiFi is leading to the development of standards that make use of wide channels (e.g., 40MHz in 802.11n and 80MHz in 802.11ac). In this paper, we argue against this trend of using wider channels, and instead advocate that radios should communicate over multiple narrow channels for efficient and fair spectrum utilization. We propose WiFi-NC, a novel PHY-MAC design that allows radios to use WiFi over multiple narrow channels simultaneously. To enable WiFi-NC, we have developed the compound radio, a single wideband radio that exposes the abstraction of multiple narrow channel radios, each with independent transmission, reception and carrier sensing capabilities. The architecture of WiFi-NC makes it especially suitable for use in white spaces where free spectrum may be fragmented. Thus, we also develop a frequency band selection algorithm for WiFi-NC making it suitable for use in white spaces. WiFi-NC has been implemented on an FPGA-based software defined radio platform. Through real experiments and simulations, we demonstrate that WiFi-NC provides better efficiency and fairness in both common WiFi as well as future white space scenarios.</p>
+<p>【Keywords】:</p>
+<h3 id="5. Catching Whales and Minnows Using WiFiNet: Deconstructing Non-WiFi Interference Using WiFi Hardware.">5. Catching Whales and Minnows Using WiFiNet: Deconstructing Non-WiFi Interference Using WiFi Hardware.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/rayanchu">Paper Link</a>】    【Pages】:57-70</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Rayanchu:Shravan_K=">Shravan K. Rayanchu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Patro:Ashish">Ashish Patro</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Banerjee:Suman">Suman Banerjee</a></p>
+<p>【Abstract】:
+We present WiFiNet — a system to detect, localize, and quantify the interference impact of various non-WiFi interference sources on WiFi traffic using commodity WiFi hardware alone. While there are numerous specialized solutions today that can detect the presence of non-WiFi devices in the unlicensed spectrum, the unique aspects of WiFiNet are four-fold: First, WiFiNet quantifies the actual interference impact of each non-WiFi device on specific WLAN traffic in real-time, which can vary from being a whale — a device that currently causes a significant reduction in WiFi throughput — to being a minnow — a device that currently has minimal impact. WiFiNet continuously monitors changes in a device’s impact that depend on many spatio-temporal factors. Second, it can accurately discern an individual device’s impact in presence of multiple and simultaneously operating non-WiFi devices, even if the devices are of the exact same type. Third, it can pin-point the location of these non-WiFi in- terference sources in the physical space. Finally, and most importantly, WiFiNet meets all these objectives not by using sophisticated and high resolution spectrum sensors, but by using emerging off-the-shelf WiFi cards that provide coarse-grained energy samples per sub-carrier. Our deployment and evaluation of WiFiNet demonstrates its high accuracy — interference estimates are within ±10% of the ground truth and the median localization error is ≤ 4 meters. We believe a system such as WiFiNet can empower existing WiFi clients and APs to adapt against non-WiFi interference in ways that have not been possible before.</p>
+<p>【Keywords】:</p>
+<h2 id="Content and Service-Oriented Networking    3">Content and Service-Oriented Networking    3</h2>
+<h3 id="6. RPT: Re-architecting Loss Protection for Content-Aware Networks.">6. RPT: Re-architecting Loss Protection for Content-Aware Networks.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/han">Paper Link</a>】    【Pages】:71-84</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Han:Dongsu">Dongsu Han</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Anand:Ashok">Ashok Anand</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Akella:Aditya">Aditya Akella</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Seshan:Srinivasan">Srinivasan Seshan</a></p>
+<p>【Abstract】:
+We revisit the design of redundancy-based loss protection schemes in light of recent advances in content-aware networking. Content-aware networks minimizes the overhead of redundancy, if the redundancy is introduced in a way that the network can understand. With this insight, we propose a new loss protection scheme called redundant packet transmission (RPT). Using redundant video streaming as an example, we show that our approach, unlike FEC in traditional networks, provides low latency with high robustness and is insensitive to parameter selection. We tackle practical issues such as minimizing the impact on other traffic and the network. We show that RPT provides a simple and general mechanism for application-specific control and flow prioritization.</p>
+<p>【Keywords】:</p>
+<h3 id="7. Serval: An End-Host Stack for Service-Centric Networking.">7. Serval: An End-Host Stack for Service-Centric Networking.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/nordstrom">Paper Link</a>】    【Pages】:85-98</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Nordstr=ouml=m:Erik">Erik Nordström</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shue:David">David Shue</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gopalan:Prem">Prem Gopalan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kiefer:Robert">Robert Kiefer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Arye:Matvey">Matvey Arye</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Ko:Steven">Steven Ko</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rexford:Jennifer">Jennifer Rexford</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Freedman:Michael_J=">Michael J. Freedman</a></p>
+<p>【Abstract】:
+Internet services run on multiple servers in different locations, serving clients that are often mobile and multi-homed. This does not match well with today’s network stack, designed for communication between fixed hosts with topology-dependent addresses. As a result, on-line service providers resort to clumsy and management-intensive work-arounds—forfeiting the scalability of hierarchical addressing to support virtual server migration, directing all client traffic through dedicated load balancers, restarting connections when hosts move, and so on. In this paper, we revisit the design of the network stack to meet the needs of online services. The centerpiece of our Serval architecture is a new Service Access Layer (SAL) that sits above an unmodified network layer, and enables applications to communicate directly on service names. The SAL provides a clean service-level control/data plane split, enabling policy, control, and in-stack name-based routing that connects clients to services via diverse discovery techniques. By tying active sockets to the control plane, applications trigger updates to service routing state upon invoking socket calls, ensuring up-to-date service resolution. With Serval, end-points can seamlessly change network addresses, migrate flows across interfaces, or establish additional flows for efficient and uninterrupted service access. Experiments with our high-performance in-kernel prototype, and several example applications, demonstrate the value of a unified networking solution for online services.</p>
+<p>【Keywords】:</p>
+<h3 id="8. Reliable Client Accounting for P2P-Infrastructure Hybrids.">8. Reliable Client Accounting for P2P-Infrastructure Hybrids.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/aditya">Paper Link</a>】    【Pages】:99-112</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Aditya:Paarijaat">Paarijaat Aditya</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhao:Mingchen">Mingchen Zhao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lin:Yin">Yin Lin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Haeberlen:Andreas">Andreas Haeberlen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Druschel:Peter">Peter Druschel</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Maggs:Bruce_M=">Bruce M. Maggs</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wishon:Bill">Bill Wishon</a></p>
+<p>【Abstract】:
+Content distribution networks (CDNs) have started to adopt hybrid designs, which employ both dedicated edge servers and resources contributed by clients. Hybrid designs combine many of the advantages of infrastructure- based and peer-to-peer systems, but they also present new challenges. This paper identifies reliable client accounting as one such challenge. Operators of hybrid CDNs are accountable to their customers (i.e., content providers) for the CDN’s performance. Therefore, they need to offer reliable quality of service and a detailed account of content served. Service quality and accurate accounting, however, depend in part on interactions among untrusted clients. Using the Akamai NetSession client network in a case study, we demonstrate that a small number of malicious clients used in a clever attack could cause significant accounting inaccuracies. We present a method for providing reliable accounting of client interactions in hybrid CDNs. The proposed method leverages the unique characteristics of hybrid systems to limit the loss of accounting accuracy and service quality caused by faulty or compromised clients. We also describe RCA, a system that applies this method to a commercial hybrid content-distribution network. Using trace-driven simulations, we show that RCA can detect and mitigate a variety of attacks, at the expense of a moderate increase in logging overhead.</p>
+<p>【Keywords】:</p>
+<h2 id="Network Robustness    3">Network Robustness    3</h2>
+<h3 id="9. Header Space Analysis: Static Checking for Networks.">9. Header Space Analysis: Static Checking for Networks.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/kazemian">Paper Link</a>】    【Pages】:113-126</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kazemian:Peyman">Peyman Kazemian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Varghese:George">George Varghese</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/McKeown:Nick">Nick McKeown</a></p>
+<p>【Abstract】:
+Today’s networks typically carry or deploy dozens of protocols and mechanisms simultaneously such as MPLS, NAT, ACLs and route redistribution. Even when individual protocols function correctly, failures can arise from the complex interactions of their aggregate, requiring network administrators to be masters of detail. Our goal is to automatically find an important class of failures, regardless of the protocols running, for both operational and experimental networks. To this end we developed a general and protocol-agnostic framework, called Header Space Analysis (HSA). Our formalism allows us to statically check network specifications and configurations to identify an important class of failures such as Reachability Failures, Forwarding Loops and Traffic Isolation and Leakage problems. In HSA, protocol header fields are not first class entities; instead we look at the entire packet header as a concatenation of bits without any associated meaning. Each packet is a point in the {0, 1}^L space where L is the maximum length of a packet header, and networking boxes transform packets from one point in the space to another point or set of points (multicast). We created a library of tools, called Hassel, to implement our framework, and used it to analyze a variety of networks and protocols. Hassel was used to analyze the Stanford University backbone network, and found all the forwarding loops in less than 10 minutes, and verified reachability constraints between two subnets in 13 seconds. It also found a large and complex loop in an experimental loose source routing protocol in 4 minutes.</p>
+<p>【Keywords】:</p>
+<h3 id="10. A NICE Way to Test OpenFlow Applications.">10. A NICE Way to Test OpenFlow Applications.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/canini">Paper Link</a>】    【Pages】:127-140</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Canini:Marco">Marco Canini</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Venzano:Daniele">Daniele Venzano</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Peres=iacute=ni:Peter">Peter Peresíni</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kostic:Dejan">Dejan Kostic</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rexford:Jennifer">Jennifer Rexford</a></p>
+<p>【Abstract】:
+The emergence of OpenFlow-capable switches enables exciting new network functionality, at the risk of programming errors that make communication less reliable. The centralized programming model, where a single controller program manages the network, seems to reduce the likelihood of bugs. However, the system is inherently distributed and asynchronous, with events happening at different switches and end hosts, and inevitable delays affecting communication with the controller. In this paper, we present efficient, systematic techniques for testing unmodified controller programs. Our NICE tool applies model checking to explore the state space of the entire system—the controller, the switches, and the hosts. Scalability is the main challenge, given the diversity of data packets, the large system state, and the many possible event orderings. To address this, we propose a novel way to augment model checking with symbolic execution of event handlers (to identify representative packets that exercise code paths on the controller). We also present a simplified OpenFlow switch model (to reduce the state space), and effective strategies for generating event interleavings likely to uncover bugs. Our prototype tests Python applications on the popular NOX platform. In testing three real applications—a MAC-learning switch, in-network server load balancing, and energy-efficient traffic engineering—we uncover eleven bugs.</p>
+<p>【Keywords】:</p>
+<h3 id="11. Toward Predictable Performance in Software Packet-Processing Platforms.">11. Toward Predictable Performance in Software Packet-Processing Platforms.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/dobrescu">Paper Link</a>】    【Pages】:141-154</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dobrescu:Mihai">Mihai Dobrescu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Argyraki:Katerina_J=">Katerina J. Argyraki</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ratnasamy:Sylvia">Sylvia Ratnasamy</a></p>
+<p>【Abstract】:
+To become a credible alternative to specialized hardware, general-purpose networking needs to offer not only flexibility, but also predictable performance. Recent projects have demonstrated that general-purpose multicore hardware is capable of high-performance packet processing, but under a crucial simplifying assumption of uniformity: all processing cores see the same type/amount of traffic and run identical code, while all packets incur the same type of conventional processing (e.g., IP forwarding). Instead, we present a general-purpose packet-processing system that combines ease of programmability with predictable performance, while running a diverse set of applications and serving multiple clients with different needs. Offering predictability in this context is considered a hard problem, because software processes contend for shared hardware resources—caches, memory controllers, buses—in unpredictable ways. Still, we show that, in our system, (a) the way in which resource contention affects performance is predictable and (b) the overall performance depends little on how different processes are scheduled on different cores. To the best of our knowledge, our results constitute the first evidence that, when designing software network equipment, flexibility and predictability are not mutually exclusive goals.</p>
+<p>【Keywords】:</p>
+<h2 id="Privacy    3">Privacy    3</h2>
+<h3 id="12. Detecting and Defending Against Third-Party Tracking on the Web.">12. Detecting and Defending Against Third-Party Tracking on the Web.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/roesner">Paper Link</a>】    【Pages】:155-168</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Roesner:Franziska">Franziska Roesner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kohno:Tadayoshi">Tadayoshi Kohno</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wetherall:David">David Wetherall</a></p>
+<p>【Abstract】:
+While third-party tracking on the web has garnered much attention, its workings remain poorly understood. Our goal is to dissect how mainstream web tracking occurs in the wild. We develop a client-side method for detecting and classifying five kinds of third-party trackers based on how they manipulate browser state. We run our detection system while browsing the web and observe a rich ecosystem, with over 500 unique trackers in our measurements alone. We find that most commercial pages are tracked by multiple parties, trackers vary widely in their coverage with a small number being widely deployed, and many trackers exhibit a combination of tracking behaviors. Based on web search traces taken from AOL data, we estimate that several trackers can each capture more than 20% of a user’s browsing behavior. We further assess the impact of defenses on tracking and find that no existing browser mechanisms prevent tracking by social media sites via widgets while still allowing those widgets to achieve their utility goals, which leads us to develop a new defense. To the best of our knowledge, our work is the most complete study of web tracking to date.</p>
+<p>【Keywords】:</p>
+<h3 id="13. Towards Statistical Queries over Distributed Private User Data.">13. Towards Statistical Queries over Distributed Private User Data.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/chen_ruichuan">Paper Link</a>】    【Pages】:169-182</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Ruichuan">Ruichuan Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Reznichenko:Alexey">Alexey Reznichenko</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Francis:Paul">Paul Francis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gehrke:Johannes">Johannes Gehrke</a></p>
+<p>【Abstract】:
+To maintain the privacy of individual users’ personal data, a growing number of researchers propose storing user data in client computers or personal data stores in the cloud, and allowing users to tightly control the release of that data. While this allows specific applications to use certain approved user data, it precludes broad statistical analysis of user data. Distributed differential privacy is one approach to enabling this analysis, but previous proposals are not practical in that they scale poorly, or that they require trusted clients. This paper proposes a design that overcomes these limitations. It places tight bounds on the extent to which malicious clients can distort answers, scales well, and tolerates churn among clients. This paper presents a detailed design and analysis, and gives performance results of a complete implementation based on the deployment of over 600 clients.</p>
+<p>【Keywords】:</p>
+<h3 id="14. Koi: A Location-Privacy Platform for Smartphone Apps.">14. Koi: A Location-Privacy Platform for Smartphone Apps.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/guha">Paper Link</a>】    【Pages】:183-196</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Guha:Saikat">Saikat Guha</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jain:Mudit">Mudit Jain</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Padmanabhan:Venkata_N=">Venkata N. Padmanabhan</a></p>
+<p>【Abstract】:
+With mobile phones becoming first-class citizens in the online world, the rich location data they bring to the table is set to revolutionize all aspects of online life including content delivery, recommendation systems, and advertising. However, user-tracking is a concern with such location-based services, not only because location data can be linked uniquely to individuals, but because the low-level nature of current location APIs and the resulting dependence on the cloud to synthesize useful representations virtually guarantees such tracking. In this paper, we propose privacy-preserving location-based matching as a fundamental platform primitive and as an alternative to exposing low-level, latitude-longitude (lat-long) coordinates to applications. Applications set rich location-based triggers and have these be fired based on location updates either from the local device or from a remote device (e.g., a friend’s phone). Our Koi platform, comprising a privacy-preserving matching service in the cloud and a phone-based agent, realizes this primitive across multiple phone and browser platforms. By mask-ing low-level lat-long information from applications, Koi not only avoids leaking privacy-sensitive information, it also eases the task of programmers by providing a higher-level abstraction that is easier for applications to build upon. Koi’s privacy-preserving protocol prevents the cloud service from tracking users. We verify the non-tracking properties of Koi using a theorem prover, illustrate how privacy guarantees can easily be added to a wide range of location-based applications, and show that our public deployment is performant, being able to perform 12K matches per second on a single core.</p>
+<p>【Keywords】:</p>
+<h2 id="Security and Availability    2">Security and Availability    2</h2>
+<h3 id="15. Aiding the Detection of Fake Accounts in Large Scale Social Online Services.">15. Aiding the Detection of Fake Accounts in Large Scale Social Online Services.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/cao">Paper Link</a>】    【Pages】:197-210</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cao:Qiang">Qiang Cao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sirivianos:Michael">Michael Sirivianos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Xiaowei">Xiaowei Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pregueiro:Tiago">Tiago Pregueiro</a></p>
+<p>【Abstract】:
+Users increasingly rely on the trustworthiness of the information exposed on Online Social Networks (OSNs). In addition, OSN providers base their business models on the marketability of this information. However, OSNs suffer from abuse in the form of the creation of fake accounts, which do not correspond to real humans. Fakes can introduce spam, manipulate online rating, or exploit knowledge extracted from the network. OSN operators currently expend significant resources to detect, manually verify, and shut down fake accounts. Tuenti, the largest OSN in Spain, dedicates 14 full-time employees in that task alone, incurring a significant monetary cost. Such a task has yet to be successfully automated because of the difficulty in reliably capturing the diverse behavior of fake and real OSN profiles. We introduce a new tool in the hands of OSN operators, which we call SybilRank. It relies on social graph properties to rank users according to their perceived likelihood of being fake (Sybils). SybilRank is computationally efficient and can scale to graphs with hundreds of millions of nodes, as demonstrated by our Hadoop prototype. We deployed SybilRank in Tuenti’s operation center. We found that ∼90% of the 200K accounts that SybilRank designated as most likely to be fake, actually warranted suspension. On the other hand, with Tuenti’s current user-report-based approach only ∼5% of the inspected accounts are indeed fake.</p>
+<p>【Keywords】:</p>
+<h3 id="16. Don't Lose Sleep Over Availability: The GreenUp Decentralized Wakeup Service.">16. Don't Lose Sleep Over Availability: The GreenUp Decentralized Wakeup Service.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/sen">Paper Link</a>】    【Pages】:211-224</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sen:Siddhartha">Siddhartha Sen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lorch:Jacob_R=">Jacob R. Lorch</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hughes:Richard">Richard Hughes</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Suarez:Carlos_Garcia_Jurado">Carlos Garcia Jurado Suarez</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zill:Brian">Brian Zill</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cordeiro:Weverton">Weverton Cordeiro</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Padhye:Jitendra">Jitendra Padhye</a></p>
+<p>【Abstract】:
+Large enterprises can save significant energy and money by putting idle desktop machines to sleep. Many systems that let desktops sleep and wake them on demand have been proposed, but enterprise IT departments refuse to deploy them because they require special hardware, disruptive virtualization technology, or dedicated per-subnet proxies, none of which are cost-effective. In response, we devised GreenUp, a minimal software-only system that allows any machine to act as a proxy for other sleeping machines in its subnet. To achieve this, GreenUp uses novel distributed techniques that spread load through randomization, efficiently synchronize state within a subnet, and maintain a minimum number of proxies despite the potential for correlated sleep times. In this paper, we present the details of GreenUp’s design as well as a theoretical analysis demonstrating its correctness and efficiency, using empirically-derived models where appropriate. We also present results and lessons from a seven-month live deployment on over 100 machines; a larger deployment on ~1,100 machines is currently ongoing.</p>
+<p>【Keywords】:</p>
+<h2 id="Data Center Networking    3">Data Center Networking    3</h2>
+<h3 id="17. Jellyfish: Networking Data Centers Randomly.">17. Jellyfish: Networking Data Centers Randomly.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/singla">Paper Link</a>】    【Pages】:225-238</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Singla:Ankit">Ankit Singla</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hong:Chi=Yao">Chi-Yao Hong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Popa:Lucian">Lucian Popa</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Godfrey:Philip_Brighten">Philip Brighten Godfrey</a></p>
+<p>【Abstract】:
+Industry experience indicates that the ability to incrementally expand data centers is essential. However, existing high-bandwidth network designs have rigid structure that interferes with incremental expansion. We present Jellyfish, a high-capacity network interconnect which, by adopting a random graph topology, yields itself naturally to incremental expansion. Somewhat surprisingly, Jellyfish is more cost-efficient than a fat-tree, supporting as many as 25% more servers at full capacity using the same equipment at the scale of a few thousand nodes, and this advantage improves with scale. Jellyfish also allows great flexibility in building networks with different degrees of oversubscription. However, Jellyfish’s unstructured design brings new challenges in routing, physical layout, and wiring. We describe approaches to resolve these challenges, and our evaluation suggests that Jellyfish could be deployed in today’s data centers.</p>
+<p>【Keywords】:</p>
+<h3 id="18. OSA: An Optical Switching Architecture for Data Center Networks with Unprecedented Flexibility.">18. OSA: An Optical Switching Architecture for Data Center Networks with Unprecedented Flexibility.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/chen_kai">Paper Link</a>】    【Pages】:239-252</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Singla:Ankit">Ankit Singla</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Singh:Atul">Atul Singh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Yan">Yan Chen</a></p>
+<p>【Abstract】:
+Data center networks (DCNs) form the backbone infrastructure of many large-scale enterprise applications as well as emerging cloud computing providers. This paper describes the design, implementation and evaluation of OSA, a novel Optical Switching Architecture for DCNs. Leveraging runtime reconfigurable optical devices, OSA dynamically changes its topology and link capacities, thereby achieving unprecedented flexibility to adapt to dynamic traffic patterns. Extensive analytical simulations using both real and synthetic traffic patterns demonstrate that OSA can deliver high bisection bandwidth (60%-100% of the non-blocking architecture). Implementation and evaluation of a small-scale functional prototype further demonstrate the feasibility of OSA.</p>
+<p>【Keywords】:</p>
+<h3 id="19. Less Is More: Trading a Little Bandwidth for Ultra-Low Latency in the Data Center.">19. Less Is More: Trading a Little Bandwidth for Ultra-Low Latency in the Data Center.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/alizadeh">Paper Link</a>】    【Pages】:253-266</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Alizadeh:Mohammad">Mohammad Alizadeh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kabbani:Abdul">Abdul Kabbani</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Edsall:Tom">Tom Edsall</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Prabhakar:Balaji">Balaji Prabhakar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vahdat:Amin">Amin Vahdat</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yasuda:Masato">Masato Yasuda</a></p>
+<p>【Abstract】:
+Traditional measures of network goodness—goodput, quality of service, fairness—are expressed in terms of bandwidth. Network latency has rarely been a primary concern because delivering the highest level of bandwidth essentially entails driving up latency—at the mean and, especially, at the tail. Recently, however, there has been renewed interest in latency as a primary metric for mainstream applications. In this paper, we present the HULL (High-bandwidth Ultra-Low Latency) architecture to balance two seemingly contradictory goals: near baseline fabric latency and high bandwidth utilization. HULL leaves ‘bandwidth headroom’ using Phantom Queues that deliver congestion signals before network links are fully utilized and queues form at switches. By capping utilization at less than link capacity, we leave room for latency sensitive traffic to avoid buffering and the associated large delays. At the same time, we use DCTCP, a recently proposed congestion control algorithm, to adaptively respond to congestion and to mitigate the bandwidth penalties which arise from operating in a bufferless fashion. HULL further employs packet pacing to counter burstiness caused by Interrupt Coalescing and Large Send Offloading. Our implementation and simulation results show that by sacrificing a small amount (e.g., 10%) of bandwidth, HULL can dramatically reduce average and tail latencies in the data center.</p>
+<p>【Keywords】:</p>
+<h2 id="Big Data (2)    3">Big Data (2)    3</h2>
+<h3 id="20. PACMan: Coordinated Memory Caching for Parallel Jobs.">20. PACMan: Coordinated Memory Caching for Parallel Jobs.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/ananthanarayanan">Paper Link</a>】    【Pages】:267-280</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Ananthanarayanan:Ganesh">Ganesh Ananthanarayanan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Ghodsi:Ali">Ali Ghodsi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Warfield:Andrew">Andrew Warfield</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Borthakur:Dhruba">Dhruba Borthakur</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kandula:Srikanth">Srikanth Kandula</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shenker:Scott">Scott Shenker</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stoica:Ion">Ion Stoica</a></p>
+<p>【Abstract】:
+Data-intensive analytics on large clusters is important for modern Internet services. As machines in these clusters have large memories, in-memory caching of inputs is an effective way to speed up these analytics jobs. The key challenge, however, is that these jobs run multiple tasks in parallel and a job is sped up only when inputs of all such parallel tasks are cached. Indeed, a single task whose input is not cached can slow down the entire job. To meet this “all-or-nothing” property, we have built PACMan, a caching service that coordinates access to the distributed caches. This coordination is essential to improve job completion times and cluster efficiency. To this end, we have implemented two cache replacement policies on top of PACMan’s coordinated infrastructure — LIFE that minimizes average completion time by evicting large incomplete inputs, and LFU-F that maximizes cluster efficiency by evicting less frequently accessed inputs. Evaluations on production workloads from Facebook and Microsoft Bing show that PACMan reduces average completion time of jobs by 53% and 51% (small interactive jobs improve by 77%), and improves efficiency of the cluster by 47% and 54%, respectively.</p>
+<p>【Keywords】:</p>
+<h3 id="21. Reoptimizing Data Parallel Computing.">21. Reoptimizing Data Parallel Computing.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/agarwal">Paper Link</a>】    【Pages】:281-294</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Agarwal:Sameer">Sameer Agarwal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kandula:Srikanth">Srikanth Kandula</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bruno:Nicolas">Nicolas Bruno</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Ming=Chuan">Ming-Chuan Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stoica:Ion">Ion Stoica</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Jingren">Jingren Zhou</a></p>
+<p>【Abstract】:
+Performant execution of data-parallel jobs needs good execution plans. Certain properties of the code, the data, and the interaction between them are crucial to generate these plans. Yet, these properties are difficult to estimate due to the highly distributed nature of these frameworks, the freedom that allows users to specify arbitrary code as operations on the data, and since jobs in modern clusters have evolved beyond single map and reduce phases to logical graphs of operations. Using fixed apriori estimates of these properties to choose execution plans, as modern systems do, leads to poor performance in several instances. We present RoPE, a first step towards re-optimizing data-parallel jobs. RoPE collects certain code and data properties by piggybacking on job execution. It adapts execution plans by feeding these properties to a query optimizer. We show how this improves the future invocations of the same (and similar) jobs and characterize the scenarios of benefit. Experiments on Bing’s production clusters show up to 2× improvement across response time for production jobs at the 75th percentile while using 1.5× fewer resources.</p>
+<p>【Keywords】:</p>
+<h3 id="22. Optimizing Data Shuffling in Data-Parallel Computation by Understanding User-Defined Functions.">22. Optimizing Data Shuffling in Data-Parallel Computation by Understanding User-Defined Functions.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/zhang">Paper Link</a>】    【Pages】:295-308</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Jiaxing">Jiaxing Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Hucheng">Hucheng Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Rishan">Rishan Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fan:Xuepeng">Xuepeng Fan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Guo:Zhenyu">Zhenyu Guo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lin:Haoxiang">Haoxiang Lin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Jack_Y=">Jack Y. Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lin:Wei">Wei Lin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Jingren">Jingren Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Lidong">Lidong Zhou</a></p>
+<p>【Abstract】:
+Map/Reduce style data-parallel computation is characterized by the extensive use of user-defined functions for data processing and relies on data-shuffling stages to prepare data partitions for parallel computation. Instead of treating user-defined functions as “black boxes”, we propose to analyze those functions to turn them into “gray boxes” that expose opportunities to optimize data shuffling. We identify useful functional properties for user-defined functions, and propose SUDO, an optimization framework that reasons about data-partition properties, functional properties, and data shuffling. We have assessed this optimization opportunity on over 10,000 data-parallel programs used in production SCOPE clusters, and designed a framework that is incorporated it into the production system. Experiments with real SCOPE programs on real production data have shown that this optimization can save up to 47% in terms of disk and network I/O for shuffling, and up to 48% in terms of cross-pod network traffic.</p>
+<p>【Keywords】:</p>
+<h2 id="New Architectures and Platforms    3">New Architectures and Platforms    3</h2>
+<h3 id="23. XIA: Efficient Support for Evolvable Internetworking.">23. XIA: Efficient Support for Evolvable Internetworking.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/han_dongsu_xia">Paper Link</a>】    【Pages】:309-322</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Han:Dongsu">Dongsu Han</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Anand:Ashok">Ashok Anand</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dogar:Fahad_R=">Fahad R. Dogar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Boyan">Boyan Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lim:Hyeontaek">Hyeontaek Lim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Machado:Michel">Michel Machado</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mukundan:Arvind">Arvind Mukundan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Wenfei">Wenfei Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Akella:Aditya">Aditya Akella</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Andersen:David_G=">David G. Andersen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Byers:John_W=">John W. Byers</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Seshan:Srinivasan">Srinivasan Seshan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Steenkiste:Peter">Peter Steenkiste</a></p>
+<p>【Abstract】:
+Motivated by limitations in today’s host-centric IP network, recent studies have proposed clean-slate network architectures centered around alternate first-class principals, such as content, services, or users. However, much like the host-centric IP design, elevating one principal type above others hinders communication between other principals and inhibits the network’s capability to evolve. This paper presents the eXpressive Internet Architecture (XIA), an architecture with native support for multiple principals and the ability to evolve its functionality to accommodate new, as yet unforeseen, principals over time. We describe key design requirements, and demonstrate how XIA’s rich addressing and forwarding semantics facilitate flexibility and evolvability, while keeping core network functions simple and efficient. We describe case studies that demonstrate key functionality XIA enables.</p>
+<p>【Keywords】:</p>
+<h3 id="24. Design and Implementation of a Consolidated Middlebox Architecture.">24. Design and Implementation of a Consolidated Middlebox Architecture.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/sekar">Paper Link</a>】    【Pages】:323-336</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sekar:Vyas">Vyas Sekar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Egi:Norbert">Norbert Egi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ratnasamy:Sylvia">Sylvia Ratnasamy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Reiter:Michael_K=">Michael K. Reiter</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shi:Guangyu">Guangyu Shi</a></p>
+<p>【Abstract】:
+Network deployments handle changing application, workload, and policy requirements via the deployment of specialized network appliances or “middleboxes”. Today, however, middlebox platforms are expensive and closed systems, with little or no hooks for extensibility. Furthermore, they are acquired from independent vendors and deployed as standalone devices with little cohesiveness in how the ensemble of middleboxes is managed. As network requirements continue to grow in both scale and variety, this bottom-up approach puts middlebox deployments on a trajectory of growing device sprawl with corresponding escalation in capital and management costs. To address this challenge, we present CoMb, a new architecture for middlebox deployments that systematically explores opportunities for consolidation, both at the level of building individual middleboxes and in managing a network of middleboxes. This paper addresses key resource management and implementation challenges that arise in exploiting the benefits of consolidation in middlebox deployments. Using a prototype implementation in Click, we show that CoMb reduces the network provisioning cost 1.8–2.5× and reduces the load imbalance in a network by 2–25×.</p>
+<p>【Keywords】:</p>
+<h3 id="25. An Operating System for the Home.">25. An Operating System for the Home.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/dixon">Paper Link</a>】    【Pages】:337-352</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dixon:Colin">Colin Dixon</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mahajan:Ratul">Ratul Mahajan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Agarwal:Sharad">Sharad Agarwal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Brush:A=_J=_Bernheim">A. J. Bernheim Brush</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Bongshin">Bongshin Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Saroiu:Stefan">Stefan Saroiu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bahl:Paramvir">Paramvir Bahl</a></p>
+<p>【Abstract】:
+Network devices for the home such as remotely controllable locks, lights, thermostats, cameras, and motion sensors are now readily available and inexpensive. In theory, this enables scenarios like remotely monitoring cameras from a smartphone or customizing climate control based on occupancy patterns. However, in practice today, such smarthome scenarios are limited to expert hobbyists and the rich because of the high overhead of managing and extending current technology. We present HomeOS, a platform that bridges this gap by presenting users and developers with a PC-like abstraction for technology in the home. It presents network devices as peripherals with abstract interfaces, enables cross-device tasks via applications written against these interfaces, and gives users a management interface designed for the home environment. HomeOS already has tens of applications and supports a wide range of devices. It has been running in 12 real homes for 4–8 months, and 42 students have built new applications and added support for additional devices independent of our efforts.</p>
+<p>【Keywords】:</p>
+<h2 id="Cloud Performance    2">Cloud Performance    2</h2>
+<h3 id="26. Structured Comparative Analysis of Systems Logs to Diagnose Performance Problems.">26. Structured Comparative Analysis of Systems Logs to Diagnose Performance Problems.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/nagaraj">Paper Link</a>】    【Pages】:353-366</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Nagaraj:Karthik">Karthik Nagaraj</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Killian:Charles_Edwin">Charles Edwin Killian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Neville:Jennifer">Jennifer Neville</a></p>
+<p>【Abstract】:
+Diagnosis and correction of performance issues in modern, large-scale distributed systems can be a daunting task, since a single developer is unlikely to be familiar with the entire system and it is hard to characterize the behavior of a software system without completely understanding its internal components. This paper describes DISTALYZER, an automated tool to support developer investigation of performance issues in distributed systems. We aim to leverage the vast log data available from large scale systems, while reducing the level of knowledge required for a developer to use our tool. Specifically, given two sets of logs, one with good and one with bad performance, DISTALYZER uses machine learning techniques to compare system behaviors extracted from the logs and automatically infer the strongest associations between system components and performance. The tool outputs a set of inter-related event occurrences and variable values that exhibit the largest divergence across the logs sets and most directly affect the overall performance of the system. These patterns are presented to the developer for inspection, to help them understand which system component(s) likely contain the root cause of the observed performance issue, thus alleviating the need for many human hours of manual inspection. We demonstrate the generality and effectiveness of DISTALYZER on three real distributed systems by showing how it discovers and highlights the root cause of six performance issues across the systems. DISTALYZER has broad applicability to other systems since it is dependent only on the logs for input, and not on the source code.</p>
+<p>【Keywords】:</p>
+<h3 id="27. Orchestrating the Deployment of Computations in the Cloud with Conductor.">27. Orchestrating the Deployment of Computations in the Cloud with Conductor.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/wieder">Paper Link</a>】    【Pages】:367-381</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wieder:Alexander">Alexander Wieder</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bhatotia:Pramod">Pramod Bhatotia</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Post:Ansley">Ansley Post</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rodrigues:Rodrigo">Rodrigo Rodrigues</a></p>
+<p>【Abstract】:
+When organizations move computation to the cloud, they must choose from a myriad of cloud services that can be used to outsource these jobs. The impact of this choice on price and performance is unclear, even for technical users. To further complicate this choice, factors like price fluctuations due to spot markets, or the cost of recovering from faults must also be factored in. In this paper, we present Conductor, a system that frees cloud customers from the burden of deciding which services to use when deploying MapReduce computations in the cloud. With Conductor, customers only specify goals, e.g., minimizing monetary cost or completion time, and the system automatically selects the best cloud services to use, deploys the computation according to that selection, and adapts to changing conditions at deployment time. The design of Conductor includes several novel features, such as a system to manage the deployment of cloud computations across different services, and a resource abstraction layer that provides a unified interface to these services, therefore hiding their low-level differences and simplifying the planning and deployment of the computation. We implemented Conductor and integrated it with the Hadoop framework. Our evaluation using Amazon Web Services shows that Conductor can find very subtle opportunities for cost savings while meeting deadline requirements, and that Conductor incurs a modest overhead due to planning computations and the resource abstraction layer.</p>
+<p>【Keywords】:</p>
+<h2 id="Transport    3">Transport    3</h2>
+<h3 id="28. Fitting Square Pegs Through Round Pipes: Unordered Delivery Wire-Compatible with TCP and TLS.">28. Fitting Square Pegs Through Round Pipes: Unordered Delivery Wire-Compatible with TCP and TLS.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/nowlan">Paper Link</a>】    【Pages】:383-398</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Nowlan:Michael_F=">Michael F. Nowlan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tiwari:Nabin">Nabin Tiwari</a> ; <a href="http://dblp.uni-trier.de/pers/hd/i/Iyengar:Janardhan_R=">Janardhan R. Iyengar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Amin:Syed_Obaid">Syed Obaid Amin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Ford:Bryan">Bryan Ford</a></p>
+<p>【Abstract】:
+Internet applications increasingly employ TCP not as a stream abstraction, but as a substrate for application-level transports, a use that converts TCP’s in-order semantics from a convenience blessing to a performance curse. As Internet evolution makes TCP’s use as a substrate likely to grow, we offer Minion, an architecture for backward-compatible out-of-order delivery atop TCP and TLS. Small OS API extensions allow applications to manage TCP’s send buffer and to receive TCP segments out-of-order. Atop these extensions, Minion builds application-level protocols offering true unordered datagram delivery, within streams preserving strict wire-compatibility with unsecured or TLS-secured TCP connections. Minion’s protocols can run on unmodified TCP stacks, but benefit incrementally when either endpoint is upgraded, for a backward-compatible deployment path. Experiments suggest that Minion can noticeably improve performance of applications such as conferencing, virtual private networking, and web browsing, while incurring minimal CPU or bandwidth costs.</p>
+<p>【Keywords】:</p>
+<h3 id="29. How Hard Can It Be? Designing and Implementing a Deployable Multipath TCP.">29. How Hard Can It Be? Designing and Implementing a Deployable Multipath TCP.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/raiciu">Paper Link</a>】    【Pages】:399-412</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Raiciu:Costin">Costin Raiciu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Paasch:Christoph">Christoph Paasch</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Barr=eacute=:S=eacute=bastien">Sébastien Barré</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Ford:Alan">Alan Ford</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Honda:Michio">Michio Honda</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Duchene:Fabien">Fabien Duchene</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bonaventure:Olivier">Olivier Bonaventure</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Handley:Mark">Mark Handley</a></p>
+<p>【Abstract】:
+Networks have become multipath: mobile devices have multiple radio interfaces, datacenters have redundant paths and multihoming is the norm for big server farms. Mean- while, TCP is still only single-path. Is it possible to extend TCP to enable it to support multiple paths for current applications on today’s Internet? The answer is positive. We carefully review the constraints—partly due to various types of middleboxes— that influenced the design of Multipath TCP and show how we handled them to achieve its deployability goals. We report our experience in implementing Multipath TCP in the Linux kernel and we evaluate its performance. Our measurements focus on the algorithms needed to efficiently use paths with different characteristics, notably send and receive buffer tuning and segment reordering. We also compare the performance of our implementation with regular TCP on web servers. Finally, we discuss the lessons learned from designing MPTCP.</p>
+<p>【Keywords】:</p>
+<h3 id="30. The TCP Outcast Problem: Exposing Unfairness in Data Center Networks.">30. The TCP Outcast Problem: Exposing Unfairness in Data Center Networks.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/prakash">Paper Link</a>】    【Pages】:413-426</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Prakash:Pawan">Pawan Prakash</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dixit:Advait_Abhay">Advait Abhay Dixit</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Y=_Charlie">Y. Charlie Hu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kompella:Ramana_Rao">Ramana Rao Kompella</a></p>
+<p>【Abstract】:
+In this paper, we observe that bandwidth sharing via TCP in commodity data center networks organized in multi-rooted tree topologies can lead to severe unfairness, which we term as the TCP Outcast problem, under many common traffic patterns. When many flows and a few flows arrive at two ports of a switch destined to one common output port, the small set of flows lose out on their throughput share significantly (almost by an order of magnitude sometimes). The Outcast problem occurs mainly in taildrop queues that commodity switches use. Using careful analysis, we discover that taildrop queues exhibit a phenomenon known as port blackout, where a series of packets from one port are dropped. Port blackout affects the fewer flows more significantly, as they lose more consecutive packets leading to TCP timeouts. In this paper, we show the existence of this TCP Outcast problem using a data center network testbed using real hardware under different scenarios. We then evaluate different solutions such as RED, SFQ, TCP pacing, and a new solution called equal-length routing to mitigate the Outcast problem.</p>
+<p>【Keywords】:</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="https://github.com/huntercmd/ccf"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>
