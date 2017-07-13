@@ -1,0 +1,524 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/skin.js"></script>
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/classie.js"></script>
+
+<!-- This is for Mathjax -->
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#14. NSDI 2017:Boston, MA, USA">14. NSDI 2017:Boston, MA, USA</a><ul>
+<li><a href="#Paper Num: 46 || Session Num: 13">Paper Num: 46 || Session Num: 13</a></li>
+<li><a href="#Storage Systems    4">Storage Systems    4</a><ul>
+<li><a href="#1. The Design, Implementation, and Deployment of a System to Transparently Compress Hundreds of Petabytes of Image Files for a File-Storage Service.">1. The Design, Implementation, and Deployment of a System to Transparently Compress Hundreds of Petabytes of Image Files for a File-Storage Service.</a></li>
+<li><a href="#2. Decibel: Isolation and Sharing in Disaggregated Rack-Scale Storage.">2. Decibel: Isolation and Sharing in Disaggregated Rack-Scale Storage.</a></li>
+<li><a href="#3. vCorfu: A Cloud-Scale Object Store on a Shared Log.">3. vCorfu: A Cloud-Scale Object Store on a Shared Log.</a></li>
+<li><a href="#4. Curator: Self-Managing Storage for Enterprise Clusters.">4. Curator: Self-Managing Storage for Enterprise Clusters.</a></li>
+</ul>
+</li>
+<li><a href="#Packet Processing    4">Packet Processing    4</a><ul>
+<li><a href="#5. Evaluating the Power of Flexible Packet Processing for Network Resource Allocation.">5. Evaluating the Power of Flexible Packet Processing for Network Resource Allocation.</a></li>
+<li><a href="#6. APUNet: Revitalizing GPU as Packet Processing Accelerator.">6. APUNet: Revitalizing GPU as Packet Processing Accelerator.</a></li>
+<li><a href="#7. Stateless Network Functions: Breaking the Tight Coupling of State and Processing.">7. Stateless Network Functions: Breaking the Tight Coupling of State and Processing.</a></li>
+<li><a href="#8. mOS: A Reusable Networking Stack for Flow Monitoring Middleboxes.">8. mOS: A Reusable Networking Stack for Flow Monitoring Middleboxes.</a></li>
+</ul>
+</li>
+<li><a href="#Security and Privacy    4">Security and Privacy    4</a><ul>
+<li><a href="#9. One Key to Sign Them All Considered Vulnerable: Evaluation of DNSSEC in the Internet.">9. One Key to Sign Them All Considered Vulnerable: Evaluation of DNSSEC in the Internet.</a></li>
+<li><a href="#10. Enhancing Security and Privacy of Tor's Ecosystem by Using Trusted Execution Environments.">10. Enhancing Security and Privacy of Tor's Ecosystem by Using Trusted Execution Environments.</a></li>
+<li><a href="#11. ViewMap: Sharing Private In-Vehicle Dashcam Videos.">11. ViewMap: Sharing Private In-Vehicle Dashcam Videos.</a></li>
+<li><a href="#12. A System to Verify Network Behavior of Known Cryptographic Clients.">12. A System to Verify Network Behavior of Known Cryptographic Clients.</a></li>
+</ul>
+</li>
+<li><a href="#Wireless Networking    4">Wireless Networking    4</a><ul>
+<li><a href="#13. FlexCore: Massively Parallel and Flexible Processing for Large MIMO Access Points.">13. FlexCore: Massively Parallel and Flexible Processing for Large MIMO Access Points.</a></li>
+<li><a href="#14. Facilitating Robust 60 GHz Network Deployment By Sensing Ambient Reflectors.">14. Facilitating Robust 60 GHz Network Deployment By Sensing Ambient Reflectors.</a></li>
+<li><a href="#15. Skip-Correlation for Multi-Power Wireless Carrier Sensing.">15. Skip-Correlation for Multi-Power Wireless Carrier Sensing.</a></li>
+<li><a href="#16. FM Backscatter: Enabling Connected Cities and Smart Fabrics.">16. FM Backscatter: Enabling Connected Cities and Smart Fabrics.</a></li>
+</ul>
+</li>
+<li><a href="#Privacy and Security    3">Privacy and Security    3</a><ul>
+<li><a href="#17. Prio: Private, Robust, and Scalable Computation of Aggregate Statistics.">17. Prio: Private, Robust, and Scalable Computation of Aggregate Statistics.</a></li>
+<li><a href="#18. Opaque: An Oblivious and Encrypted Distributed Analytics Platform.">18. Opaque: An Oblivious and Encrypted Distributed Analytics Platform.</a></li>
+<li><a href="#19. Splinter: Practical Private Queries on Public Data.">19. Splinter: Practical Private Queries on Public Data.</a></li>
+</ul>
+</li>
+<li><a href="#SDN and Network Design    3">SDN and Network Design    3</a><ul>
+<li><a href="#20. VFP: A Virtual Switch Platform for Host SDN in the Public Cloud.">20. VFP: A Virtual Switch Platform for Host SDN in the Public Cloud.</a></li>
+<li><a href="#21. SCL: Simplifying Distributed SDN Control Planes.">21. SCL: Simplifying Distributed SDN Control Planes.</a></li>
+<li><a href="#22. Robust Validation of Network Designs under Uncertain Demands and Failures.">22. Robust Validation of Network Designs under Uncertain Demands and Failures.</a></li>
+</ul>
+</li>
+<li><a href="#Data-Driven Systems    3">Data-Driven Systems    3</a><ul>
+<li><a href="#23. Encoding, Fast and Slow: Low-Latency Video Processing Using Thousands of Tiny Threads.">23. Encoding, Fast and Slow: Low-Latency Video Processing Using Thousands of Tiny Threads.</a></li>
+<li><a href="#24. Live Video Analytics at Scale with Approximation and Delay-Tolerance.">24. Live Video Analytics at Scale with Approximation and Delay-Tolerance.</a></li>
+<li><a href="#25. Pytheas: Enabling Data-Driven Quality of Experience Optimization Using Group-Based Exploration-Exploitation.">25. Pytheas: Enabling Data-Driven Quality of Experience Optimization Using Group-Based Exploration-Exploitation.</a></li>
+</ul>
+</li>
+<li><a href="#Datacenter Networking    3">Datacenter Networking    3</a><ul>
+<li><a href="#26. Let It Flow: Resilient Asymmetric Load Balancing with Flowlet Switching.">26. Let It Flow: Resilient Asymmetric Load Balancing with Flowlet Switching.</a></li>
+<li><a href="#27. Flowtune: Flowlet Control for Datacenter Networks.">27. Flowtune: Flowlet Control for Datacenter Networks.</a></li>
+<li><a href="#28. Flexplane: An Experimentation Platform for Resource Management in Datacenters.">28. Flexplane: An Experimentation Platform for Resource Management in Datacenters.</a></li>
+</ul>
+</li>
+<li><a href="#Cloud and Distributed Systems    3">Cloud and Distributed Systems    3</a><ul>
+<li><a href="#29. I Can't Believe It's Not Causal! Scalable Causal Consistency with No Slowdown Cascades.">29. I Can't Believe It's Not Causal! Scalable Causal Consistency with No Slowdown Cascades.</a></li>
+<li><a href="#30. CherryPick: Adaptively Unearthing the Best Cloud Configurations for Big Data Analytics.">30. CherryPick: Adaptively Unearthing the Best Cloud Configurations for Big Data Analytics.</a></li>
+<li><a href="#31. AdaptSize: Orchestrating the Hot Object Memory Cache in a Content Delivery Network.">31. AdaptSize: Orchestrating the Hot Object Memory Cache in a Content Delivery Network.</a></li>
+</ul>
+</li>
+<li><a href="#Mobile Systems and IoT    4">Mobile Systems and IoT    4</a><ul>
+<li><a href="#32. Bringing IoT to Sports Analytics.">32. Bringing IoT to Sports Analytics.</a></li>
+<li><a href="#33. FarmBeats: An IoT Platform for Data-Driven Agriculture.">33. FarmBeats: An IoT Platform for Data-Driven Agriculture.</a></li>
+<li><a href="#34. Enabling High-Quality Untethered Virtual Reality.">34. Enabling High-Quality Untethered Virtual Reality.</a></li>
+<li><a href="#35. Improving User Perceived Page Load Times Using Gaze.">35. Improving User Perceived Page Load Times Using Gaze.</a></li>
+</ul>
+</li>
+<li><a href="#Networking in the Datacenter    3">Networking in the Datacenter    3</a><ul>
+<li><a href="#36. RAIL: A Case for Redundant Arrays of Inexpensive Links in Data Center Networks.">36. RAIL: A Case for Redundant Arrays of Inexpensive Links in Data Center Networks.</a></li>
+<li><a href="#37. Enabling Wide-Spread Communications on Optical Fabric with MegaSwitch.">37. Enabling Wide-Spread Communications on Optical Fabric with MegaSwitch.</a></li>
+<li><a href="#38. Passive Realtime Datacenter Fault Detection and Localization.">38. Passive Realtime Datacenter Fault Detection and Localization.</a></li>
+</ul>
+</li>
+<li><a href="#Big Data Systems    4">Big Data Systems    4</a><ul>
+<li><a href="#39. Clipper: A Low-Latency Online Prediction Serving System.">39. Clipper: A Low-Latency Online Prediction Serving System.</a></li>
+<li><a href="#40. Gaia: Geo-Distributed Machine Learning Approaching LAN Speeds.">40. Gaia: Geo-Distributed Machine Learning Approaching LAN Speeds.</a></li>
+<li><a href="#41. Efficient Memory Disaggregation with Infiniswap.">41. Efficient Memory Disaggregation with Infiniswap.</a></li>
+<li><a href="#42. Tux2: Distributed Graph Computation for Machine Learning.">42. Tux2: Distributed Graph Computation for Machine Learning.</a></li>
+</ul>
+</li>
+<li><a href="#Network Verification and Debugging    4">Network Verification and Debugging    4</a><ul>
+<li><a href="#43. Correct by Construction Networks Using Stepwise Refinement.">43. Correct by Construction Networks Using Stepwise Refinement.</a></li>
+<li><a href="#44. Verifying Reachability in Networks with Mutable Datapaths.">44. Verifying Reachability in Networks with Mutable Datapaths.</a></li>
+<li><a href="#45. Automated Bug Removal for Software-Defined Networks.">45. Automated Bug Removal for Software-Defined Networks.</a></li>
+<li><a href="#46. Delta-net: Real-time Network Verification Using Atoms.">46. Delta-net: Real-time Network Verification Using Atoms.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="14. NSDI 2017:Boston, MA, USA">14. NSDI 2017:Boston, MA, USA</h1>
+<p><a href="https://www.usenix.org/conference/nsdi17">14th USENIX Symposium on Networked Systems Design and Implementation, NSDI 2017, Boston, MA, USA, March 27-29, 2017.</a> USENIX Association
+【<a href="http://dblp.uni-trier.de/db/conf/nsdi/nsdi2017.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 46 || Session Num: 13">Paper Num: 46 || Session Num: 13</h2>
+<ul>
+<li><a href="#Big Data Systems    4">Big Data Systems    4</a></li>
+<li><a href="#Cloud and Distributed Systems    3">Cloud and Distributed Systems    3</a></li>
+<li><a href="#Data-Driven Systems    3">Data-Driven Systems    3</a></li>
+<li><a href="#Datacenter Networking    3">Datacenter Networking    3</a></li>
+<li><a href="#Mobile Systems and IoT    4">Mobile Systems and IoT    4</a></li>
+<li><a href="#Network Verification and Debugging    4">Network Verification and Debugging    4</a></li>
+<li><a href="#Networking in the Datacenter    3">Networking in the Datacenter    3</a></li>
+<li><a href="#Packet Processing    4">Packet Processing    4</a></li>
+<li><a href="#Privacy and Security    3">Privacy and Security    3</a></li>
+<li><a href="#SDN and Network Design    3">SDN and Network Design    3</a></li>
+<li><a href="#Security and Privacy    4">Security and Privacy    4</a></li>
+<li><a href="#Storage Systems    4">Storage Systems    4</a></li>
+<li><a href="#Wireless Networking    4">Wireless Networking    4</a></li>
+</ul>
+<h2 id="Storage Systems    4">Storage Systems    4</h2>
+<h3 id="1. The Design, Implementation, and Deployment of a System to Transparently Compress Hundreds of Petabytes of Image Files for a File-Storage Service.">1. The Design, Implementation, and Deployment of a System to Transparently Compress Hundreds of Petabytes of Image Files for a File-Storage Service.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/horn">Paper Link</a>】    【Pages】:1-15</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Horn:Daniel_Reiter">Daniel Reiter Horn</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Elkabany:Ken">Ken Elkabany</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lesniewski=Laas:Chris">Chris Lesniewski-Laas</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Winstein:Keith">Keith Winstein</a></p>
+<p>【Abstract】:
+We report the design, implementation, and deployment of Lepton, a fault-tolerant system that losslessly compresses JPEG images to 77% of their original size on average. Lepton replaces the lowest layer of baseline JPEG compression—a Huffman code—with a parallelized arithmetic code, so that the exact bytes of the original JPEG file can be recovered quickly. Lepton matches the compression efficiency of the best prior work, while decoding more than nine times faster and in a streaming manner. Lepton has been released as open-source software and has been deployed for a year on the Dropbox file-storage backend. As of February 2017, it had compressed more than 203 PiB of user JPEG files, saving more than 46 PiB.</p>
+<p>【Keywords】:</p>
+<h3 id="2. Decibel: Isolation and Sharing in Disaggregated Rack-Scale Storage.">2. Decibel: Isolation and Sharing in Disaggregated Rack-Scale Storage.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/nanavati">Paper Link</a>】    【Pages】:17-33</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Nanavati:Mihir">Mihir Nanavati</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wires:Jake">Jake Wires</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Warfield:Andrew">Andrew Warfield</a></p>
+<p>【Abstract】:
+The performance characteristics of modern non-volatile storage devices have led to storage becoming a shared, rack-scale resource. System designers have an imperative to rethink existing storage abstractions in light of this development. This paper proposes a lightweight storage abstraction that encapsulates full-system hardware resources and focuses only on isolating and sharing storage devices across multiple, remote tenants. In support of this, it prototypes a shared-nothing runtime capable of managing hardware and scheduling this abstraction in a manner that avoids performance interference and preserves the performance of the storage devices for tenants.</p>
+<p>【Keywords】:</p>
+<h3 id="3. vCorfu: A Cloud-Scale Object Store on a Shared Log.">3. vCorfu: A Cloud-Scale Object Store on a Shared Log.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/wei-michael">Paper Link</a>】    【Pages】:35-49</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wei:Michael">Michael Wei</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tai:Amy">Amy Tai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rossbach:Christopher_J=">Christopher J. Rossbach</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Abraham:Ittai">Ittai Abraham</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Munshed:Maithem">Maithem Munshed</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dhawan:Medhavi">Medhavi Dhawan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stabile:Jim">Jim Stabile</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wieder:Udi">Udi Wieder</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fritchie:Scott">Scott Fritchie</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Swanson:Steven">Steven Swanson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Freedman:Michael_J=">Michael J. Freedman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Malkhi:Dahlia">Dahlia Malkhi</a></p>
+<p>【Abstract】:
+This paper presents vCorfu, a strongly consistent cloudscale object store built over a shared log. vCorfu augments the traditional replication scheme of a shared log to provide fast reads and leverages a new technique, composable state machine replication, to compose large state machines from smaller ones, enabling the use of state machine replication to be used to efficiently in huge data stores. We show that vCorfu outperforms Cassandra, a popular state-of-the art NOSQL stores while providing strong consistency (opacity, read-own-writes), efficient transactions, and global snapshots at cloud scale.</p>
+<p>【Keywords】:</p>
+<h3 id="4. Curator: Self-Managing Storage for Enterprise Clusters.">4. Curator: Self-Managing Storage for Enterprise Clusters.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/cano">Paper Link</a>】    【Pages】:51-66</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cano:Ignacio">Ignacio Cano</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Aiyar:Srinivas">Srinivas Aiyar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Arora:Varun">Varun Arora</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bhattacharyya:Manosiz">Manosiz Bhattacharyya</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chaganti:Akhilesh">Akhilesh Chaganti</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cheah:Chern">Chern Cheah</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chun:Brent_N=">Brent N. Chun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gupta:Karan">Karan Gupta</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Khot:Vinayak">Vinayak Khot</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Krishnamurthy:Arvind">Arvind Krishnamurthy</a></p>
+<p>【Abstract】:
+Modern cluster storage systems perform a variety of background tasks to improve the performance, availability, durability, and cost-efficiency of stored data. For example, cleaners compact fragmented data to generate long sequential runs, tiering services automatically migrate data between solid-state and hard disk drives based on usage, recovery mechanisms replicate data to improve availability and durability in the face of failures, cost saving techniques perform data transformations to reduce the storage costs, and so on. In this work, we present Curator, a background MapReduce-style execution framework for cluster management tasks, in the context of a distributed storage system used in enterprise clusters. We describe Curator’s design and implementation, and evaluate its performance using a handful of relevant metrics. We further report experiences and lessons learned from its five-year construction period, as well as thousands of customer deployments. Finally, we propose a machine learning-based model to identify an efficient execution policy for Curator’s management tasks that can adapt to varying workload characteristics.</p>
+<p>【Keywords】:</p>
+<h2 id="Packet Processing    4">Packet Processing    4</h2>
+<h3 id="5. Evaluating the Power of Flexible Packet Processing for Network Resource Allocation.">5. Evaluating the Power of Flexible Packet Processing for Network Resource Allocation.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/sharma">Paper Link</a>】    【Pages】:67-82</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sharma:Naveen_Kr=">Naveen Kr. Sharma</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kaufmann:Antoine">Antoine Kaufmann</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Anderson:Thomas_E=">Thomas E. Anderson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Krishnamurthy:Arvind">Arvind Krishnamurthy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nelson:Jacob">Jacob Nelson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Peter:Simon">Simon Peter</a></p>
+<p>【Abstract】:
+Recent hardware switch architectures make it feasible to perform flexible packet processing inside the network. This allows operators to configure switches to parse and process custom packet headers using flexible match+action tables in order to exercise control over how packets are processed and routed. However, flexible switches have limited state, support limited types of operations, and limit per-packet computation in order to be able to operate at line rate. Our work addresses these limitations by providing a set of general building blocks that mask these limitations using approximation techniques and thereby enabling the implementation of realistic network protocols. In particular, we use these building blocks to tackle the network resource allocation problem within datacenters and realize approximate variants of congestion control and load balancing protocols, such as XCP, RCP, and CONGA, that require explicit support from the network. Our evaluations show that these approximations are accurate and that they do not exceed the hardware resource limits associated with these flexible switches. We demonstrate their feasibility by implementing RCP with the production Cavium CNX880xx switch. This implementation provides significantly faster and lower-variance flow completion times compared with TCP.</p>
+<p>【Keywords】:</p>
+<h3 id="6. APUNet: Revitalizing GPU as Packet Processing Accelerator.">6. APUNet: Revitalizing GPU as Packet Processing Accelerator.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/go">Paper Link</a>】    【Pages】:83-96</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Go:Younghwan">Younghwan Go</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jamshed:Muhammad_Asim">Muhammad Asim Jamshed</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Moon:YoungGyoun">YoungGyoun Moon</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hwang:Changho">Changho Hwang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Park:KyoungSoo">KyoungSoo Park</a></p>
+<p>【Abstract】:
+Many research works have recently experimented with GPU to accelerate packet processing in network applications. Most works have shown that GPU brings a significant performance boost when it is compared to the CPUonly approach, thanks to its highly-parallel computation capacity and large memory bandwidth. However, a recent work argues that for many applications, the key enabler for high performance is the inherent feature of GPU that automatically hides memory access latency rather than its parallel computation power. It also claims that CPU can outperform or achieve a similar performance as GPU if its code is re-arranged to run concurrently with memory access, employing optimization techniques such as group prefetching and software pipelining. In this paper, we revisit the claim of the work and see if it can be generalized to a large class of network applications. Our findings with eight popular algorithms widely used in network applications show that (a) there are many compute-bound algorithms that do benefit from the parallel computation capacity of GPU while CPU-based optimizations fail to help, and (b) the relative performance advantage of CPU over GPU in most applications is due to data transfer bottleneck in PCIe communication of discrete GPU rather than lack of capacity of GPU itself. To avoid the PCIe bottleneck, we suggest employing integrated GPU in recent APU platforms as a cost-effective packet processing accelerator. We address a number of practical issues in fully exploiting the capacity of APU and show that network applications based on APU achieve multi-10 Gbps performance for many compute/memory-intensive algorithms.</p>
+<p>【Keywords】:</p>
+<h3 id="7. Stateless Network Functions: Breaking the Tight Coupling of State and Processing.">7. Stateless Network Functions: Breaking the Tight Coupling of State and Processing.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/kablan">Paper Link</a>】    【Pages】:97-112</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kablan:Murad">Murad Kablan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Alsudais:Azzam">Azzam Alsudais</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Keller:Eric">Eric Keller</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Le:Franck">Franck Le</a></p>
+<p>【Abstract】:
+In this paper we present Stateless Network Functions, a new architecture for network functions virtualization, where we decouple the existing design of network functions into a stateless processing component along with a data store layer. In breaking the tight coupling, we enable a more elastic and resilient network function infrastructure. Our StatelessNF processing instances are architected around efficient pipelines utilizing DPDK for high performance network I/O, packaged as Docker containers for easy deployment, and a data store interface optimized based on the expected request patterns to efficiently access a RAMCloud-based data store. A network-wide orchestrator monitors the instances for load and failure, manages instances to scale and provide resilience, and leverages an OpenFlow-based network to direct traffic to instances. We implemented three example network functions (network address translator, firewall, and load balancer). Our evaluation shows (i) we are able to reach a throughput of 10Gbit/sec, with an added latency overhead of between 100μs and 500μs, (ii) we are able to have a failover which does not disrupt ongoing traffic, and (iii) when scaling out and scaling in we are able to match the ideal performance.</p>
+<p>【Keywords】:</p>
+<h3 id="8. mOS: A Reusable Networking Stack for Flow Monitoring Middleboxes.">8. mOS: A Reusable Networking Stack for Flow Monitoring Middleboxes.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/jamshed">Paper Link</a>】    【Pages】:113-129</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jamshed:Muhammad_Asim">Muhammad Asim Jamshed</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Moon:YoungGyoun">YoungGyoun Moon</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Donghwi">Donghwi Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Han:Dongsu">Dongsu Han</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Park:KyoungSoo">KyoungSoo Park</a></p>
+<p>【Abstract】:
+Stateful middleboxes, such as intrusion detection systems and application-level firewalls, have provided key functionalities in operating modern IP networks. However, designing an efficient middlebox is challenging due to the lack of networking stack abstraction for TCP flow processing. Thus, middlebox developers often write the complex flow management logic from scratch, which is not only prone to errors, but also wastes efforts for similar functionalities across applications. This paper presents the design and implementation of mOS, a reusable networking stack for stateful flow processing in middlebox applications. Our API allows developers to focus on the core application logic instead of dealing with low-level packet/flow processing themselves. Under the hood, it implements an efficient event system that scales to monitoring millions of concurrent flow events. Our evaluation demonstrates that mOS enables modular development of stateful middleboxes, often significantly reducing development efforts represented by the source lines of code, while introducing little performance overhead in multi-10Gbps network environments.</p>
+<p>【Keywords】:</p>
+<h2 id="Security and Privacy    4">Security and Privacy    4</h2>
+<h3 id="9. One Key to Sign Them All Considered Vulnerable: Evaluation of DNSSEC in the Internet.">9. One Key to Sign Them All Considered Vulnerable: Evaluation of DNSSEC in the Internet.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/shulman">Paper Link</a>】    【Pages】:131-144</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Shulman:Haya">Haya Shulman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Waidner:Michael">Michael Waidner</a></p>
+<p>【Abstract】:
+We perform the first Internet study of the cryptographic security of DNSSEC-signed domains. To that end, we collected 2.1M DNSSEC keys for popular signed domains out of these 1.9M are RSA keys. We analyse the RSA keys and show that a large fraction of signed domains are using vulnerable keys: 35% are signed with RSA keys that share their moduli with some other domain and 66% use keys that are too short (1024 bit or less) or keys which modulus has a GCD &gt; 1 with the modulus of some other domain. As we show, to a large extent the vulnerabilities are due to poor key generation practices, but also due to potential faulty hardware or software bugs. The DNSSEC keys collection and analysis is performed on a daily basis with the DNSSEC Keys Validation Engine which we developed. The statistics as well as the DNSSEC Keys Validation Engine are made available online, as a service for Internet users.</p>
+<p>【Keywords】:</p>
+<h3 id="10. Enhancing Security and Privacy of Tor's Ecosystem by Using Trusted Execution Environments.">10. Enhancing Security and Privacy of Tor's Ecosystem by Using Trusted Execution Environments.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/kim-seongmin">Paper Link</a>】    【Pages】:145-161</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Seong_Min">Seong Min Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Han:Juhyeng">Juhyeng Han</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Ha:Jaehyeong">Jaehyeong Ha</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Taesoo">Taesoo Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Han:Dongsu">Dongsu Han</a></p>
+<p>【Abstract】:
+With Tor being a popular anonymity network, many attacks have been proposed to break its anonymity or leak information of a private communication on Tor. However, guaranteeing complete privacy in the face of an adversary on Tor is especially difficult because Tor relays are under complete control of world-wide volunteers. Currently, one can gain private information, such as circuit identifiers and hidden service identifiers, by running Tor relays and can even modify their behaviors with malicious intent. This paper presents a practical approach to effectively enhancing the security and privacy of Tor by utilizing Intel SGX, a commodity trusted execution environment. We present a design and implementation of Tor, called SGX-Tor, that prevents code modification and limits the information exposed to untrusted parties. We demonstrate that our approach is practical and effectively reduces the power of an adversary to a traditional network-level adversary. Finally, SGX-Tor incurs moderate performance overhead; the end-to-end latency and throughput overheads for HTTP connections are 3.9% and 11.9%, respectively.</p>
+<p>【Keywords】:</p>
+<h3 id="11. ViewMap: Sharing Private In-Vehicle Dashcam Videos.">11. ViewMap: Sharing Private In-Vehicle Dashcam Videos.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/kim-minho">Paper Link</a>】    【Pages】:163-176</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Minho">Minho Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lim:Jaemin">Jaemin Lim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yu:Hyunwoo">Hyunwoo Yu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Kiyeon">Kiyeon Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Younghoon">Younghoon Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Suk=Bok">Suk-Bok Lee</a></p>
+<p>【Abstract】:
+Today, search for dashcam video evidences is conducted manually and its procedure does not guarantee privacy. In this paper, we motivate, design, and implement ViewMap, an automated public service system that enables sharing of private dashcam videos under anonymity. ViewMap takes a profile-based approach where each video is represented in a compact form called a view profile (VP), and the anonymized VPs are treated as entities for search, verification, and reward instead of their owners. ViewMap exploits the line-of-sight (LOS) properties of dedicated short-range communications (DSRC) such that each vehicle makes VP links with nearby ones that share the same sight while driving. ViewMap uses such LOS-based VP links to build a map of visibility around a given incident, and identifies VPs whose videos are worth reviewing. Original videos are never transmitted unless they are verified to be taken near the incident and anonymously solicited. ViewMap offers untraceable rewards for the provision of videos whose owners remain anonymous. We demonstrate the feasibility of ViewMap via field experiments on real roads using our DSRC testbeds and trace-driven simulations.</p>
+<p>【Keywords】:</p>
+<h3 id="12. A System to Verify Network Behavior of Known Cryptographic Clients.">12. A System to Verify Network Behavior of Known Cryptographic Clients.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/chi">Paper Link</a>】    【Pages】:177-195</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chi:Andrew">Andrew Chi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cochran:Robert_A=">Robert A. Cochran</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nesfield:Marie">Marie Nesfield</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Reiter:Michael_K=">Michael K. Reiter</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sturton:Cynthia">Cynthia Sturton</a></p>
+<p>【Abstract】:
+Numerous exploits of client-server protocols and applications involve modifying clients to behave in ways that untampered clients would not, such as crafting malicious packets. In this paper, we develop a system for verifying in near real-time that a cryptographic client’s message sequence is consistent with its known implementation. Moreover, we accomplish this without knowing all of the client-side inputs driving its behavior. Our toolchain for verifying a client’s messages explores multiple candidate execution paths in the client concurrently, an innovation useful for aspects of certain cryptographic protocols such as message padding (which will be permitted in TLS 1.3). In addition, our toolchain includes a novel approach to symbolically executing the client software in multiple passes that defers expensive functions until their inputs can be inferred and concretized. We demonstrate client verification on OpenSSL and BoringSSL to show that, e.g., Heartbleed exploits can be detected without Heartbleed-specific filtering and within seconds of the first malicious packet. On legitimate traffic our verification keeps pace with Gmail-shaped workloads, with a median lag of 0.85s.</p>
+<p>【Keywords】:</p>
+<h2 id="Wireless Networking    4">Wireless Networking    4</h2>
+<h3 id="13. FlexCore: Massively Parallel and Flexible Processing for Large MIMO Access Points.">13. FlexCore: Massively Parallel and Flexible Processing for Large MIMO Access Points.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/husmann">Paper Link</a>】    【Pages】:197-211</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Husmann:Christopher">Christopher Husmann</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Georgis:Georgios">Georgios Georgis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nikitopoulos:Konstantinos">Konstantinos Nikitopoulos</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jamieson:Kyle">Kyle Jamieson</a></p>
+<p>【Abstract】:
+Large MIMO base stations remain among wireless network designers’ best tools for increasing wireless throughput while serving many clients, but current system designs, sacrifice throughput with simple linear MIMO detection algorithms. Higher-performance detection techniques are known, but remain off the table because these systems parallelize their computation at the level of a whole OFDM subcarrier, sufficing only for the less demanding linear detection approaches they opt for. This paper presents FlexCore, the first computational architecture capable of parallelizing the detection of large numbers of mutually-interfering information streams at a granularity below individual OFDM subcarriers, in a nearly-embarrassingly parallel manner while utilizing any number of available processing elements. For 12 clients sending 64-QAM symbols to a 12-antenna base station, our WARP testbed evaluation shows similar network throughput to the state-of-the-art while using an order of magnitude fewer processing elements. For the same scenario, our combined WARP-GPU testbed evaluation demonstrates a 19x computational speedup, with 97% increased energy efficiency when compared with the state of the art. Finally, for the same scenario, an FPGA-based comparison between FlexCore and the state of the art shows that FlexCore can achieve up to 96% better energy efficiency, and can offer up to 32x the processing throughput.</p>
+<p>【Keywords】:</p>
+<h3 id="14. Facilitating Robust 60 GHz Network Deployment By Sensing Ambient Reflectors.">14. Facilitating Robust 60 GHz Network Deployment By Sensing Ambient Reflectors.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/wei-teng">Paper Link</a>】    【Pages】:213-226</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wei:Teng">Teng Wei</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Anfu">Anfu Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Xinyu">Xinyu Zhang</a></p>
+<p>【Abstract】:
+60 GHz millimeter-wave networks represent the next frontier in high-speed wireless access technologies. Due to the use of highly directional and electronically steerable beams, the performance of 60 GHz networks becomes a sensitive function of environment structure and reflectivity, which cannot be handled by existing networking paradigms. In this paper, we propose E-Mi, a framework that harnesses 60 GHz radios’ sensing capabilities to boost network performance. E-Mi uses a single pair of 60 GHz transmitter and receiver to sense the environment. It can resolve all dominant reflection paths between the two nodes, from which it reconstructs a coarse outline of major reflectors in the environment. It then feeds the reflector information into a ray-tracer to predict the channel and network performance of arbitrarily located links. Our experiments on a custom-built 60 GHz testbed verify that E-Mi can accurately sense a given environment, and predict the channel quality of different links with 2.8 dB median error. The prediction is then used to optimize the deployment of 60 GHz access points, with 2:2x to 4:5x capacity gain over empirical approaches.</p>
+<p>【Keywords】:</p>
+<h3 id="15. Skip-Correlation for Multi-Power Wireless Carrier Sensing.">15. Skip-Correlation for Multi-Power Wireless Carrier Sensing.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/bhardwaj">Paper Link</a>】    【Pages】:227-242</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bhardwaj:Romil">Romil Bhardwaj</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chintalapudi:Krishna">Krishna Chintalapudi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ramjee:Ramachandran">Ramachandran Ramjee</a></p>
+<p>【Abstract】:
+Carrier sensing is a key mechanism that enables decentralized sharing of unlicensed spectrum. However, carrier sensing in its current form is fundamentally unsuitable when devices transmit at different power levels, a scenario increasingly common given the diversity of Wi-Fi APs in the market and the need for Wi- Fi’s co-existence with new upcoming standards such as LAA/LWA. The primary contribution of this paper is a novel carrier sensing mechanism – skip correlation – that extends carrier sensing to accommodate multiple transmit power levels. Through an FPGA based implementation on the WARP platform, we demonstrate the effectiveness of our technique in a variety of scenarios including support for backward compatibility.</p>
+<p>【Keywords】:</p>
+<h3 id="16. FM Backscatter: Enabling Connected Cities and Smart Fabrics.">16. FM Backscatter: Enabling Connected Cities and Smart Fabrics.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/wang-anran">Paper Link</a>】    【Pages】:243-258</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Anran">Anran Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/i/Iyer:Vikram">Vikram Iyer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Talla:Vamsi">Vamsi Talla</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Smith:Joshua_R=">Joshua R. Smith</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gollakota:Shyamnath">Shyamnath Gollakota</a></p>
+<p>【Abstract】:
+This paper enables connectivity on everyday objects by transforming them into FM radio stations. To do this, we show for the first time that ambient FM radio signals can be used as a signal source for backscatter communication. Our design creates backscatter transmissions that can be decoded on any FM receiver including those in cars and smartphones. This enables us to achieve a previously infeasible capability: backscattering information to cars and smartphones in outdoor environments. Our key innovation is a modulation technique that transforms backscatter, which is a multiplication operation on RF signals, into an addition operation on the audio signals output by FM receivers. This enables us to embed both digital data as well as arbitrary audio into ambient analog FM radio signals. We build prototype hardware of our design and successfully embed audio transmissions over ambient FM signals. Further, we achieve data rates of up to 3.2 kbps and ranges of 5–60 feet, while consuming as little as 11.07 μW of power. To demonstrate the potential of our design, we also fabricate our prototype on a cotton t-shirt by machine sewing patterns of a conductive thread to create a smart fabric that can transmit data to a smartphone. We also embed FM antennas into posters and billboards and show that they can communicate with FM receivers in cars and smartphones.</p>
+<p>【Keywords】:</p>
+<h2 id="Privacy and Security    3">Privacy and Security    3</h2>
+<h3 id="17. Prio: Private, Robust, and Scalable Computation of Aggregate Statistics.">17. Prio: Private, Robust, and Scalable Computation of Aggregate Statistics.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/corrigan-gibbs">Paper Link</a>】    【Pages】:259-282</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Corrigan=Gibbs:Henry">Henry Corrigan-Gibbs</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Boneh:Dan">Dan Boneh</a></p>
+<p>【Abstract】:
+This paper presents Prio, a privacy-preserving system for the collection of aggregate statistics. Each Prio client holds a private data value (e.g., its current location), and a small set of servers compute statistical functions over the values of all clients (e.g., the most popular location). As long as at least one server is honest, the Prio servers learn nearly nothing about the clients’ private data, except what they can infer from the aggregate statistics that the system computes. To protect functionality in the face of faulty or malicious clients, Prio uses secret-shared non-interactive proofs (SNIPs), a new cryptographic technique that yields a hundred-fold performance improvement over conventional zero-knowledge approaches. Prio extends classic private aggregation techniques to enable the collection of a large class of useful statistics. For example, Prio can perform a least-squares regression on high-dimensional client-provided data without ever seeing the data in the clear.</p>
+<p>【Keywords】:</p>
+<h3 id="18. Opaque: An Oblivious and Encrypted Distributed Analytics Platform.">18. Opaque: An Oblivious and Encrypted Distributed Analytics Platform.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/zheng">Paper Link</a>】    【Pages】:283-298</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zheng:Wenting">Wenting Zheng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dave:Ankur">Ankur Dave</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Beekman:Jethro_G=">Jethro G. Beekman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Popa:Raluca_Ada">Raluca Ada Popa</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gonzalez:Joseph_E=">Joseph E. Gonzalez</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stoica:Ion">Ion Stoica</a></p>
+<p>【Abstract】:
+Many systems run rich analytics on sensitive data in the cloud, but are prone to data breaches. Hardware enclaves promise data confidentiality and secure execution of arbitrary computation, yet still suffer from access pattern leakage. We propose Opaque, a distributed data analytics platform supporting a wide range of queries while providing strong security guarantees. Opaque introduces new distributed oblivious relational operators that hide access patterns, and new query planning techniques to optimize these new operators. Opaque is implemented on Spark SQL with few changes to the underlying system. Opaque provides data encryption, authentication and computation verification with a performance ranging from 52% faster to 3.3x slower as compared to vanilla Spark SQL; obliviousness comes with a 1.6–46x overhead. Opaque provides an improvement of three orders of magnitude over state-of-the-art oblivious protocols, and our query optimization techniques improve performance by 2–5x.</p>
+<p>【Keywords】:</p>
+<h3 id="19. Splinter: Practical Private Queries on Public Data.">19. Splinter: Practical Private Queries on Public Data.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/wang-frank">Paper Link</a>】    【Pages】:299-313</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Frank">Frank Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yun:Catherine">Catherine Yun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Goldwasser:Shafi">Shafi Goldwasser</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vaikuntanathan:Vinod">Vinod Vaikuntanathan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zaharia:Matei">Matei Zaharia</a></p>
+<p>【Abstract】:
+Many online services let users query public datasets such as maps, flight prices, or restaurant reviews. Unfortunately, the queries to these services reveal highly sensitive information that can compromise users’ privacy. This paper presents Splinter, a system that protects users’ queries on public data and scales to realistic applications. A user splits her query into multiple parts and sends each part to a different provider that holds a copy of the data. As long as any one of the providers is honest and does not collude with the others, the providers cannot determine the query. Splinter uses and extends a new cryptographic primitive called Function Secret Sharing (FSS) that makes it up to an order of magnitude more efficient than prior systems based on Private Information Retrieval and garbled circuits. We develop protocols extending FSS to new types of queries, such as MAX and TOPK queries. We also provide an optimized implementation of FSS using AES-NI instructions and multicores. Splinter achieves end-to-end latencies below 1.6 seconds for realistic workloads including a Yelp clone, flight search, and map routing.</p>
+<p>【Keywords】:</p>
+<h2 id="SDN and Network Design    3">SDN and Network Design    3</h2>
+<h3 id="20. VFP: A Virtual Switch Platform for Host SDN in the Public Cloud.">20. VFP: A Virtual Switch Platform for Host SDN in the Public Cloud.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/firestone">Paper Link</a>】    【Pages】:315-328</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Firestone:Daniel">Daniel Firestone</a></p>
+<p>【Abstract】:
+Many modern scalable cloud networking architectures rely on host networking for implementing VM network policy - e.g. tunneling for virtual networks, NAT for load balancing, stateful ACLs, QoS, and more. We present the Virtual Filtering Platform (VFP) - a programmable virtual switch that powers Microsoft Azure, a large public cloud, and provides this policy. We define several major goals for a programmable virtual switch based on our operational experiences, including support for multiple independent network controllers, policy based on connections rather than only on packets, efficient caching and classification algorithms for performance, and efficient offload of flow policy to programmable NICs, and demonstrate how VFP achieves these goals. VFP has been deployed on &gt;1M hosts running IaaS and PaaS workloads for over 4 years. We present the design of VFP and its API, its flow language and compiler used for flow processing, performance results, and experiences deploying and using VFP in Azure over several years.</p>
+<p>【Keywords】:</p>
+<h3 id="21. SCL: Simplifying Distributed SDN Control Planes.">21. SCL: Simplifying Distributed SDN Control Planes.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/panda-aurojit-scl">Paper Link</a>】    【Pages】:329-345</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Panda:Aurojit">Aurojit Panda</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zheng:Wenting">Wenting Zheng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Xiaohe">Xiaohe Hu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Krishnamurthy:Arvind">Arvind Krishnamurthy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shenker:Scott">Scott Shenker</a></p>
+<p>【Abstract】:
+We consider the following question: what consistency model is appropriate for coordinating the actions of a replicated set of SDN controllers? We first argue that the conventional requirement of strong consistency, typically achieved through the use of Paxos or other consensus algorithms, is conceptually unnecessary to handle unplanned network updates. We present an alternate approach, based on the weaker notion of eventual correctness, and describe the design of a simple coordination layer (SCL) that can seamlessly turn a set of single-image SDN controllers (that obey certain properties) into a distributed SDN system that achieves this goal (whereas traditional consensus mechanisms do not). We then show through analysis and simulation that our approach provides faster responses to network events. While our primary focus is on handling unplanned network updates, our coordination layer also handles policy updates and other situations where consistency is warranted. Thus, contrary to the prevailing wisdom, we argue that distributed SDN control planes need only be slightly more complicated than single-image controllers.</p>
+<p>【Keywords】:</p>
+<h3 id="22. Robust Validation of Network Designs under Uncertain Demands and Failures.">22. Robust Validation of Network Designs under Uncertain Demands and Failures.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/chang">Paper Link</a>】    【Pages】:347-362</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chang:Yiyang">Yiyang Chang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rao:Sanjay_G=">Sanjay G. Rao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tawarmalani:Mohit">Mohit Tawarmalani</a></p>
+<p>【Abstract】:
+A key challenge confronting wide-area network architects is validating that their network designs provide assurable performance in the face of variable traffic demands and failures. Validation is hard because of the exponential, and possibly non-enumerable, set of scenarios that must be considered. Current theoretical tools provide overly conservative bounds on network performance since to remain tractable, they do not adequately model the flexible routing strategies that networks employ in practice to adapt to failures and changing traffic demands. In this paper, we develop an optimization-theoretic framework to derive the worst-case network performance across scenarios of interest by modeling flexible routing adaptation strategies. We present an approach to tackling the resulting intractable problems, which can achieve tighter bounds on network performance than current techniques. While our framework is general, we focus on bounding worst-case link utilizations, and case studies involving topology design, and MPLS tunnels, chosen both for their practical importance and to illustrate key aspects of our framework. Evaluations over real network topologies and traffic data show the promise of the approach.</p>
+<p>【Keywords】:</p>
+<h2 id="Data-Driven Systems    3">Data-Driven Systems    3</h2>
+<h3 id="23. Encoding, Fast and Slow: Low-Latency Video Processing Using Thousands of Tiny Threads.">23. Encoding, Fast and Slow: Low-Latency Video Processing Using Thousands of Tiny Threads.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/fouladi">Paper Link</a>】    【Pages】:363-376</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/f/Fouladi:Sadjad">Sadjad Fouladi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wahby:Riad_S=">Riad S. Wahby</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shacklett:Brennan">Brennan Shacklett</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Balasubramaniam:Karthikeyan">Karthikeyan Balasubramaniam</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zeng:William">William Zeng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bhalerao:Rahul">Rahul Bhalerao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sivaraman:Anirudh">Anirudh Sivaraman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Porter:George">George Porter</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Winstein:Keith">Keith Winstein</a></p>
+<p>【Abstract】:
+We describe ExCamera, a system that can edit, transform, and encode a video, including 4K and VR material, with low latency. The system makes two major contributions. First, we designed a framework to run general-purpose parallel computations on a commercial “cloud function” service. The system starts up thousands of threads in seconds and manages inter-thread communication. Second, we implemented a video encoder intended for fine-grained parallelism, using a functional-programming style that allows computation to be split into thousands of tiny tasks without harming compression efficiency. Our design reflects a key insight: the work of video encoding can be divided into fast and slow parts, with the “slow” work done in parallel, and only “fast” work done serially.</p>
+<p>【Keywords】:</p>
+<h3 id="24. Live Video Analytics at Scale with Approximation and Delay-Tolerance.">24. Live Video Analytics at Scale with Approximation and Delay-Tolerance.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/zhang">Paper Link</a>】    【Pages】:377-392</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Haoyu">Haoyu Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Ananthanarayanan:Ganesh">Ganesh Ananthanarayanan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bod=iacute=k:Peter">Peter Bodík</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Philipose:Matthai">Matthai Philipose</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bahl:Paramvir">Paramvir Bahl</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Freedman:Michael_J=">Michael J. Freedman</a></p>
+<p>【Abstract】:
+Video cameras are pervasively deployed for security and smart city scenarios, with millions of them in large cities worldwide. Achieving the potential of these cameras requires efficiently analyzing the live videos in realtime. We describe VideoStorm, a video analytics system that processes thousands of video analytics queries on live video streams over large clusters. Given the high costs of vision processing, resource management is crucial. We consider two key characteristics of video analytics: resource-quality tradeoff with multi-dimensional configurations, and variety in quality and lag goals. VideoStorm’s offline profiler generates query resourcequality profile, while its online scheduler allocates resources to queries to maximize performance on quality and lag, in contrast to the commonly used fair sharing of resources in clusters. Deployment on an Azure cluster of 101 machines shows improvement by as much as 80% in quality of real-world queries and 7x better lag, processing video from operational traffic cameras.</p>
+<p>【Keywords】:</p>
+<h3 id="25. Pytheas: Enabling Data-Driven Quality of Experience Optimization Using Group-Based Exploration-Exploitation.">25. Pytheas: Enabling Data-Driven Quality of Experience Optimization Using Group-Based Exploration-Exploitation.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/jiang">Paper Link</a>】    【Pages】:393-406</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/j/Jiang:Junchen">Junchen Jiang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sun:Shijie">Shijie Sun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sekar:Vyas">Vyas Sekar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang_0001:Hui">Hui Zhang</a></p>
+<p>【Abstract】:
+Content providers are increasingly using data-driven mechanisms to optimize quality of experience (QoE). Many existing approaches formulate this process as a prediction problem of learning optimal decisions (e.g., server, bitrate, relay) based on observed QoE of recent sessions. While prediction-based mechanisms have shown promising QoE improvements, they are necessarily incomplete as they: (1) suffer from many known biases (e.g., incomplete visibility) and (2) cannot respond to sudden changes (e.g., load changes). Drawing a parallel from machine learning, we argue that data-driven QoE optimization should instead be cast as a real-time exploration and exploitation (E2) process rather than as a prediction problem. Adopting E2 in network applications, however, introduces key architectural (e.g., how to update decisions in real time with fresh data) and algorithmic (e.g., capturing complex interactions between session features vs. QoE) challenges. We present Pytheas, a framework which addresses these challenges using a group-based E2 mechanism. The insight is that application sessions sharing the same features (e.g., IP prefix, location) can be grouped so that we can run E2 algorithms at a per-group granularity. This naturally captures the complex interactions and is amenable to realtime control with fresh measurements. Using an endto- end implementation and a proof-of-concept deployment in CloudLab, we show that Pytheas improves video QoE over a state-of-the-art prediction-based system by up to 31% on average and 78% on 90th percentile of persession QoE.</p>
+<p>【Keywords】:</p>
+<h2 id="Datacenter Networking    3">Datacenter Networking    3</h2>
+<h3 id="26. Let It Flow: Resilient Asymmetric Load Balancing with Flowlet Switching.">26. Let It Flow: Resilient Asymmetric Load Balancing with Flowlet Switching.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/vanini">Paper Link</a>】    【Pages】:407-420</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/v/Vanini:Erico">Erico Vanini</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pan:Rong">Rong Pan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Alizadeh:Mohammad">Mohammad Alizadeh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Taheri:Parvin">Parvin Taheri</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Edsall:Tom">Tom Edsall</a></p>
+<p>【Abstract】:
+Datacenter networks require efficient multi-path load balancing to achieve high bisection bandwidth. Despite much progress in recent years towards addressing this challenge, a load balancing design that is both simple to implement and resilient to network asymmetry has remained elusive. In this paper, we show that flowlet switching, an idea first proposed more than a decade ago, is a powerful technique for resilient load balancing with asymmetry. Flowlets have a remarkable elasticity property: their size changes automatically based on traffic conditions on their path. We use this insight to develop LetFlow, a very simple load balancing scheme that is resilient to asymmetry. LetFlow simply picks paths at random for flowlets and lets their elasticity naturally balance the traffic on different paths. Our extensive evaluation with real hardware and packet-level simulations shows that LetFlow is very effective. Despite being much simpler, it performs significantly better than other traffic oblivious schemes like WCMP and Presto in asymmetric scenarios, while achieving average flow completions time within 10-20% of CONGA in testbed experiments and 2x of CONGA in simulated topologies with large asymmetry and heavy traffic load.</p>
+<p>【Keywords】:</p>
+<h3 id="27. Flowtune: Flowlet Control for Datacenter Networks.">27. Flowtune: Flowlet Control for Datacenter Networks.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/perry">Paper Link</a>】    【Pages】:421-435</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Perry:Jonathan">Jonathan Perry</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Balakrishnan:Hari">Hari Balakrishnan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shah:Devavrat">Devavrat Shah</a></p>
+<p>【Abstract】:
+Rapid convergence to a desired allocation of network resources to endpoint traffic is a difficult problem. The reason is that congestion control decisions are distributed across the endpoints, which vary their offered load in response to changes in application demand and network feedback on a packet-by-packet basis. We propose a different approach for datacenter networks, flowlet control, in which congestion control decisions are made at the granularity of a flowlet, not a packet. With flowlet control, allocations have to change only when flowlets arrive or leave. We have implemented this idea in a system called Flowtune using a centralized allocator that receives flowlet start and end notifications from endpoints. The allocator computes optimal rates using a new, fast method for network utility maximization, and updates endpoint congestion-control parameters. Experiments show that Flowtune outperforms DCTCP, pFabric, sfqCoDel, and XCP on tail packet delays in various settings, converging to optimal rates within a few packets rather than over several RTTs. Benchmarks on an EC2 deployment show a fairer rate allocation than Linux’s Cubic. A data aggregation benchmark shows 1.61x lower p95 coflow completion time.</p>
+<p>【Keywords】:</p>
+<h3 id="28. Flexplane: An Experimentation Platform for Resource Management in Datacenters.">28. Flexplane: An Experimentation Platform for Resource Management in Datacenters.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/ousterhout">Paper Link</a>】    【Pages】:438-451</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/o/Ousterhout:Amy">Amy Ousterhout</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Perry:Jonathan">Jonathan Perry</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Balakrishnan:Hari">Hari Balakrishnan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lapukhov:Petr">Petr Lapukhov</a></p>
+<p>【Abstract】:
+Flexplane enables users to program data plane algorithms and conduct experiments that run real application traffic over them at hardware line rates. Flexplane explores an intermediate point in the design space between past work on software routers and emerging work on programmable hardware chipsets. Like software routers, Flexplane enables users to express resource management schemes in a high-level language (C++), but unlike software routers, Flexplane runs at close to hardware line rates. To achieve these two goals, a centralized emulator faithfully emulates, in real-time on a multi-core machine, the desired data plane algorithms with very succinct representations of the original packets. Real packets traverse the network when notified by the emulator, sharing the same fate and relative delays as their emulated counterparts. Flexplane accurately predicts the behavior of several network schemes such as RED and DCTCP, sustains aggregate throughput of up to 760 Gbits/s on a 10-core machine (≈ 20x faster than software routers), and enables experiments with real-world operating systems and applications (e.g., Spark) running on diverse network schemes at line rate, including those such as HULL and pFabric that are not available in hardware today.</p>
+<p>【Keywords】:</p>
+<h2 id="Cloud and Distributed Systems    3">Cloud and Distributed Systems    3</h2>
+<h3 id="29. I Can't Believe It's Not Causal! Scalable Causal Consistency with No Slowdown Cascades.">29. I Can't Believe It's Not Causal! Scalable Causal Consistency with No Slowdown Cascades.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/mehdi">Paper Link</a>】    【Pages】:453-468</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Mehdi:Syed_Akbar">Syed Akbar Mehdi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Littley:Cody">Cody Littley</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Crooks:Natacha">Natacha Crooks</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Alvisi:Lorenzo">Lorenzo Alvisi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bronson:Nathan">Nathan Bronson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lloyd:Wyatt">Wyatt Lloyd</a></p>
+<p>【Abstract】:
+We describe the design, implementation, and evaluation of Occult (Observable Causal Consistency Using Lossy Timestamps), the first scalable, geo-replicated data store that provides causal consistency to its clients without exposing the system to the possibility of slowdown cascades, a key obstacle to the deployment of causal consistency at scale. Occult supports read/write transactions under PC-PSI, a variant of Parallel Snapshot Isolation that contributes to Occult’s immunity to slowdown cascades by weakening how PSI replicates transactions committed at the same replica. While PSI insists that they all be totally ordered, PC-PSI simply requires total order Per Client session. Nonetheless, Occult guarantees that all transactions read from a causally consistent snapshot of the datastore without requiring any coordination in how transactions are asynchronously replicated.</p>
+<p>【Keywords】:</p>
+<h3 id="30. CherryPick: Adaptively Unearthing the Best Cloud Configurations for Big Data Analytics.">30. CherryPick: Adaptively Unearthing the Best Cloud Configurations for Big Data Analytics.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/alipourfard">Paper Link</a>】    【Pages】:469-482</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Alipourfard:Omid">Omid Alipourfard</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Hongqiang_Harry">Hongqiang Harry Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Jianshu">Jianshu Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Venkataraman:Shivaram">Shivaram Venkataraman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yu:Minlan">Minlan Yu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Ming">Ming Zhang</a></p>
+<p>【Abstract】:
+Picking the right cloud configuration for recurring big data analytics jobs running in clouds is hard, because there can be tens of possible VM instance types and even more cluster sizes to pick from. Choosing poorly can significantly degrade performance and increase the cost to run a job by 2-3x on average, and as much as 12x in the worst-case. However, it is challenging to automatically identify the best configuration for a broad spectrum of applications and cloud configurations with low search cost. CherryPick is a system that leverages Bayesian Optimization to build performance models for various applications, and the models are just accurate enough to distinguish the best or close-to-the-best configuration from the rest with only a few test runs. Our experiments on five analytic applications in AWS EC2 show that CherryPick has a 45-90% chance to find optimal configurations, otherwise near-optimal, saving up to 75% search cost compared to existing solutions.</p>
+<p>【Keywords】:</p>
+<h3 id="31. AdaptSize: Orchestrating the Hot Object Memory Cache in a Content Delivery Network.">31. AdaptSize: Orchestrating the Hot Object Memory Cache in a Content Delivery Network.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/berger">Paper Link</a>】    【Pages】:483-498</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Berger:Daniel_S=">Daniel S. Berger</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sitaraman:Ramesh_K=">Ramesh K. Sitaraman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Harchol=Balter:Mor">Mor Harchol-Balter</a></p>
+<p>【Abstract】:
+Most major content providers use content delivery networks (CDNs) to serve web and video content to their users. A CDN is a large distributed system of servers that caches and delivers content to users. The first-level cache in a CDN server is the memory-resident Hot Object Cache (HOC). A major goal of a CDN is to maximize the object hit ratio (OHR) of its HOCs. But, the small size of the HOC, the huge variance in the requested object sizes, and the diversity of request patterns make this goal challenging. We propose AdaptSize, the first adaptive, size-aware cache admission policy for HOCs that achieves a high OHR, even when object size distributions and request characteristics vary significantly over time. At the core of AdaptSize is a novel Markov cache model that seamlessly adapts the caching parameters to the changing request patterns. Using request traces from one of the largest CDNs in the world, we show that our implementation of AdaptSize achieves significantly higher OHR than widelyused production systems: 30-48% and 47-91% higher OHR than Nginx and Varnish, respectively. AdaptSize also achieves 33-46% higher OHR than state-of-the-art research systems. Further, AdaptSize is more robust to changing request patterns than the traditional tuning approach of hill climbing and shadow queues studied in other contexts.</p>
+<p>【Keywords】:</p>
+<h2 id="Mobile Systems and IoT    4">Mobile Systems and IoT    4</h2>
+<h3 id="32. Bringing IoT to Sports Analytics.">32. Bringing IoT to Sports Analytics.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/gowda">Paper Link</a>】    【Pages】:499-513</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gowda:Mahanth">Mahanth Gowda</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dhekne:Ashutosh">Ashutosh Dhekne</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shen:Sheng">Sheng Shen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Choudhury:Romit_Roy">Romit Roy Choudhury</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang:Lei">Lei Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Golwalkar:Suresh">Suresh Golwalkar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Essanian:Alexander">Alexander Essanian</a></p>
+<p>【Abstract】:
+This paper explores the possibility of bringing IoT to sports analytics, particularly to the game of Cricket. We develop solutions to track a ball’s 3D trajectory and spin with inexpensive sensors and radios embedded in the ball. Unique challenges arise rendering existing localization and motion tracking solutions inadequate. Our system, iBall, mitigates these problems by fusing disparate sources of partial information – wireless, inertial sensing, and motion models – into a non-linear error minimization framework. Measured against a mm-level ground truth, the median ball location error is at 8cm while rotational error remains below 12 even at the end of the flight. The results do not rely on any calibration or training, hence we expect the core techniques to extend to other sports like baseball, with some domain-specific modifications.</p>
+<p>【Keywords】:</p>
+<h3 id="33. FarmBeats: An IoT Platform for Data-Driven Agriculture.">33. FarmBeats: An IoT Platform for Data-Driven Agriculture.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/vasisht">Paper Link</a>】    【Pages】:515-529</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/v/Vasisht:Deepak">Deepak Vasisht</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kapetanovic:Zerina">Zerina Kapetanovic</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Won:Jongho">Jongho Won</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jin:Xinxin">Xinxin Jin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chandra:Ranveer">Ranveer Chandra</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sinha:Sudipta_N=">Sudipta N. Sinha</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kapoor:Ashish">Ashish Kapoor</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sudarshan:Madhusudhan">Madhusudhan Sudarshan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stratman:Sean">Sean Stratman</a></p>
+<p>【Abstract】:
+Data-driven techniques help boost agricultural productivity by increasing yields, reducing losses and cutting down input costs. However, these techniques have seen sparse adoption owing to high costs of manual data collection and limited connectivity solutions. In this paper, we present FarmBeats, an end-to-end IoT platform for agriculture that enables seamless data collection from various sensors, cameras and drones. FarmBeats’s system design that explicitly accounts for weather-related power and Internet outages has enabled six month long deployments in two US farms.</p>
+<p>【Keywords】:</p>
+<h3 id="34. Enabling High-Quality Untethered Virtual Reality.">34. Enabling High-Quality Untethered Virtual Reality.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/abari">Paper Link</a>】    【Pages】:531-544</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Abari:Omid">Omid Abari</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bharadia:Dinesh">Dinesh Bharadia</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Duffield:Austin">Austin Duffield</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Katabi:Dina">Dina Katabi</a></p>
+<p>【Abstract】:
+Today’s virtual reality (VR) headsets require a cable connection to a PC or game console. This cable significantly limits the player’s mobility and, hence, her VR experience. The high data rate requirement of this link (multiple Gbps) precludes its replacement by WiFi. Thus, in this paper, we focus on using mmWave technology to deliver multi-Gbps wireless communication between VR headsets and their game consoles. We address the two key problems that prevent existing mmWave links from being used in VR systems. First, mmWave signals suffer from a blockage problem, i.e., they operate mainly in line-of-sight and can be blocked by simple obstacles such as the player lifting her hand in front of the headset. Second, mmWave radios use highly directional antennas with very narrow beams; they work only when the transmitter’s beam is aligned with the receiver’s beam. Any small movement of the headset can break the alignment and stall the data stream. We present MoVR, a novel system that allows mmWave links to sustain high data rates even in the presence of a blockage and mobility. MoVR does this by introducing a smart mmWave mirror and leveraging VR headset tracking information. We implement MoVR and empirically demonstrate its performance using an HTC VR headset.</p>
+<p>【Keywords】:</p>
+<h3 id="35. Improving User Perceived Page Load Times Using Gaze.">35. Improving User Perceived Page Load Times Using Gaze.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/kelton">Paper Link</a>】    【Pages】:545-559</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kelton:Conor">Conor Kelton</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ryoo:Jihoon">Jihoon Ryoo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Balasubramanian:Aruna">Aruna Balasubramanian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Das:Samir_R=">Samir R. Das</a></p>
+<p>【Abstract】:
+We take a fresh look at Web page load performance from the point of view of user experience. Our user study shows that perceptual performance, defined as user-perceived page load time (uPLT) poorly correlates with traditional page load time (PLT) metrics. However, most page load optimizations are designed to improve the traditional PLT metrics, rendering their impact on user experience uncertain. Instead, we present WebGaze, a system that specifically optimizes for the uPLT metric. The key insight in WebGaze is that user attention and interest can be captured using a user’s eye gaze and can in-turn be used to improve uPLT. We collect eye gaze data from 50 users across 45 Web pages and find that there is commonality in user attention across users. Specifically, users are drawn to certain regions on the page, that we call regions of high collective fixation. WebGaze prioritizes loading objects that exhibit a high degree of collective fixation to improve user-perceived latencies. We compare WebGaze with three alternate strategies, one of which is the state-of-the-art system that also uses prioritization to improve user experience. Our evaluation based on a user study shows that WebGaze improves median uPLT for 73% of the Web pages compared to all three alternate strategies.</p>
+<p>【Keywords】:</p>
+<h2 id="Networking in the Datacenter    3">Networking in the Datacenter    3</h2>
+<h3 id="36. RAIL: A Case for Redundant Arrays of Inexpensive Links in Data Center Networks.">36. RAIL: A Case for Redundant Arrays of Inexpensive Links in Data Center Networks.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/zhuo">Paper Link</a>】    【Pages】:561-576</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhuo:Danyang">Danyang Zhuo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Ghobadi:Monia">Monia Ghobadi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mahajan:Ratul">Ratul Mahajan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Phanishayee:Amar">Amar Phanishayee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zou:Xuan_Kelvin">Xuan Kelvin Zou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Guan:Hang">Hang Guan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Krishnamurthy:Arvind">Arvind Krishnamurthy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Anderson:Thomas_E=">Thomas E. Anderson</a></p>
+<p>【Abstract】:
+While there are many proposals to reduce the cost of data center networks (DCN), little attention has been paid to the role played by the physical links that carry packets. By studying over 300K optical links across many production DCNs, we show that these links are operating quite conservatively relative to the requirements in the IEEE standards. Motivated by this observation, to reduce DCN costs, we propose using transceivers—a key contributor to DCN cost—beyond their currently specified limit. Our experiments with multiple commodity transceivers show that their reach can be “stretched” 1.6 to 4 times their specification. However, with stretching, the performance of 1–5% of the DCN paths can fall below the IEEE standard. We develop RAIL, a system to ensure that in such a network, applications only use paths that meet their performance needs. Our proposal can reduce the network cost by up to 10% for 10Gbps networks and 44% for 40Gbps networks, without affecting the applications’ performance.</p>
+<p>【Keywords】:</p>
+<h3 id="37. Enabling Wide-Spread Communications on Optical Fabric with MegaSwitch.">37. Enabling Wide-Spread Communications on Optical Fabric with MegaSwitch.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/chen">Paper Link</a>】    【Pages】:577-593</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Li">Li Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen_0005:Kai">Kai Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Zhonghua">Zhonghua Zhu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yu:Minlan">Minlan Yu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Porter:George">George Porter</a> ; <a href="http://dblp.uni-trier.de/pers/hd/q/Qiao:Chunming">Chunming Qiao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhong:Shan">Shan Zhong</a></p>
+<p>【Abstract】:
+Existing wired optical interconnects face a challenge of supporting wide-spread communications in production clusters. Initial proposals are constrained, as they only support connections among a small number of racks (e.g., 2 or 4) at a time, with switching time of milliseconds. Recent efforts on reducing optical circuit reconfiguration time to microseconds partially mitigate this problem by rapidly time-sharing optical circuits across more nodes, but are still limited by the total number of parallel circuits available simultaneously. In this paper, we seek an optical interconnect that can enable unconstrained communications within a computing cluster of thousands of servers. We present Mega- Switch, a multi-fiber ring optical fabric that exploits space division multiplexing across multiple fibers to deliver rearrangeably non-blocking communications to 30+ racks and 6000+ servers. We have implemented a 5-rack 40-server MegaSwitch prototype with commercial optical devices, and used testbed experiments as well as large-scale simulations to explore MegaSwitch’s architectural benefits and tradeoffs.</p>
+<p>【Keywords】:</p>
+<h3 id="38. Passive Realtime Datacenter Fault Detection and Localization.">38. Passive Realtime Datacenter Fault Detection and Localization.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/roy">Paper Link</a>】    【Pages】:595-612</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Roy:Arjun">Arjun Roy</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zeng:Hongyi">Hongyi Zeng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bagga:Jasmeet">Jasmeet Bagga</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Snoeren:Alex_C=">Alex C. Snoeren</a></p>
+<p>【Abstract】:
+Datacenters are characterized by their large scale, stringent reliability requirements, and significant application diversity. However, the realities of employing hardware with small but non-zero failure rates mean that datacenters are subject to significant numbers of failures, impacting the performance of the services that rely on them. To make matters worse, these failures are not always obvious; network switches and links can fail partially, dropping or delaying various subsets of packets without necessarily delivering a clear signal that they are faulty. Thus, traditional fault detection techniques involving end-host or router-based statistics can fall short in their ability to identify these errors. We describe how to expedite the process of detecting and localizing partial datacenter faults using an end-host method generalizable to most datacenter applications. In particular, we correlate transport-layer flow metrics and network-I/O system call delay at end hosts with the path that traffic takes through the datacenter and apply statistical analysis techniques to identify outliers and localize the faulty link and/or switch(es). We evaluate our approach in a production Facebook front-end datacenter.</p>
+<p>【Keywords】:</p>
+<h2 id="Big Data Systems    4">Big Data Systems    4</h2>
+<h3 id="39. Clipper: A Low-Latency Online Prediction Serving System.">39. Clipper: A Low-Latency Online Prediction Serving System.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/crankshaw">Paper Link</a>】    【Pages】:613-627</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Crankshaw:Daniel">Daniel Crankshaw</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Xin">Xin Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Guilio">Guilio Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Franklin:Michael_J=">Michael J. Franklin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gonzalez:Joseph_E=">Joseph E. Gonzalez</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Stoica:Ion">Ion Stoica</a></p>
+<p>【Abstract】:
+Machine learning is being deployed in a growing number of applications which demand real-time, accurate, and robust predictions under heavy query load. However, most machine learning frameworks and systems only address model training and not deployment. In this paper, we introduce Clipper, a general-purpose low-latency prediction serving system. Interposing between end-user applications and a wide range of machine learning frameworks, Clipper introduces a modular architecture to simplify model deployment across frameworks and applications. Furthermore, by introducing caching, batching, and adaptive model selection techniques, Clipper reduces prediction latency and improves prediction throughput, accuracy, and robustness without modifying the underlying machine learning frameworks. We evaluate Clipper on four common machine learning benchmark datasets and demonstrate its ability to meet the latency, accuracy, and throughput demands of online serving applications. Finally, we compare Clipper to the Tensorflow Serving system and demonstrate that we are able to achieve comparable throughput and latency while enabling model composition and online learning to improve accuracy and render more robust predictions.</p>
+<p>【Keywords】:</p>
+<h3 id="40. Gaia: Geo-Distributed Machine Learning Approaching LAN Speeds.">40. Gaia: Geo-Distributed Machine Learning Approaching LAN Speeds.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/hsieh">Paper Link</a>】    【Pages】:629-647</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hsieh:Kevin">Kevin Hsieh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Harlap:Aaron">Aaron Harlap</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Vijaykumar:Nandita">Nandita Vijaykumar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Konomis:Dimitris">Dimitris Konomis</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Ganger:Gregory_R=">Gregory R. Ganger</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gibbons:Phillip_B=">Phillip B. Gibbons</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mutlu:Onur">Onur Mutlu</a></p>
+<p>【Abstract】:
+Machine learning (ML) is widely used to derive useful information from large-scale data (such as user activities, pictures, and videos) generated at increasingly rapid rates, all over the world. Unfortunately, it is infeasible to move all this globally-generated data to a centralized data center before running an ML algorithm over it—moving large amounts of raw data over wide-area networks (WANs) can be extremely slow, and is also subject to the constraints of privacy and data sovereignty laws. This motivates the need for a geo-distributed ML system spanning multiple data centers. Unfortunately, communicating over WANs can significantly degrade ML system performance (by as much as 53.7x in our study) because the communication overwhelms the limited WAN bandwidth. Our goal in this work is to develop a geo-distributed ML system that (1) employs an intelligent communication mechanism over WANs to efficiently utilize the scarce WAN bandwidth, while retaining the accuracy and correctness guarantees of an ML algorithm; and (2) is generic and flexible enough to run a wide range of ML algorithms, without requiring any changes to the algorithms. To this end, we introduce a new, general geo-distributed ML system, Gaia, that decouples the communication within a data center from the communication between data centers, enabling different communication and consistency models for each. We present a new ML synchronization model, Approximate Synchronous Parallel (ASP), whose key idea is to dynamically eliminate insignificant communication between data centers while still guaranteeing the correctness of ML algorithms. Our experiments on our prototypes of Gaia running across 11 Amazon EC2 global regions and on a cluster that emulates EC2 WAN bandwidth show that Gaia provides 1.8–53.5x speedup over two state-of-the-art distributed ML systems, and is within 0.94–1.40x of the speed of running the same ML algorithm on machines on a local area network (LAN).</p>
+<p>【Keywords】:</p>
+<h3 id="41. Efficient Memory Disaggregation with Infiniswap.">41. Efficient Memory Disaggregation with Infiniswap.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/gu">Paper Link</a>】    【Pages】:649-667</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gu:Juncheng">Juncheng Gu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Youngmoon">Youngmoon Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Yiwen">Yiwen Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chowdhury:Mosharaf">Mosharaf Chowdhury</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shin:Kang_G=">Kang G. Shin</a></p>
+<p>【Abstract】:
+Memory-intensive applications suffer large performance loss when their working sets do not fully fit in memory. Yet, they cannot leverage otherwise unused remote memory when paging out to disks even in the presence of large imbalance in memory utilizations across a cluster. Existing proposals for memory disaggregation call for new architectures, new hardware designs, and/or new programming models, making them infeasible. This paper describes the design and implementation of INFINISWAP, a remote memory paging system designed specifically for an RDMA network. INFINISWAP opportunistically harvests and transparently exposes unused memory to unmodified applications by dividing the swap space of each machine into many slabs and distributing them across many machines’ remote memory. Because one-sided RDMA operations bypass remote CPUs, INFINISWAP leverages the power of many choices to perform decentralized slab placements and evictions. We have implemented and deployed INFINISWAP on an RDMA cluster without any modifications to user applications or the OS and evaluated its effectiveness using multiple workloads running on unmodified VoltDB, Memcached, PowerGraph, GraphX, and Apache Spark. Using INFINISWAP, throughputs of these applications improve between 4x (0:94x) to 15:4x (7:8x) over disk (Mellanox nbdX), and median and tail latencies between 5:4x (2x) and 6x (2:3x). INFINISWAP achieves these with negligible remote CPU usage, whereas nbdX becomes CPU-bound. INFINISWAP increases the overall memory utilization of a cluster and works well at scale.</p>
+<p>【Keywords】:</p>
+<h3 id="42. Tux2: Distributed Graph Computation for Machine Learning.">42. Tux2: Distributed Graph Computation for Machine Learning.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/xiao">Paper Link</a>】    【Pages】:669-682</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/x/Xiao:Wencong">Wencong Xiao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xue:Jilong">Jilong Xue</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Miao:Youshan">Youshan Miao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Zhen">Zhen Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Cheng">Cheng Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Ming">Ming Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Wei">Wei Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Lidong">Lidong Zhou</a></p>
+<p>【Abstract】:
+TUX2 is a new distributed graph engine that bridges graph computation and distributed machine learning. TUX2 inherits the benefits of an elegant graph computation model, efficient graph layout, and balanced parallelism to scale to billion-edge graphs; we extend and optimize it for distributed machine learning to support heterogeneity, a Stale Synchronous Parallel model, and a new MEGA (Mini-batch, Exchange, GlobalSync, and Apply) model. We have developed a set of representative distributed machine learning algorithms in TUX2, covering both supervised and unsupervised learning. Compared to implementations on distributed machine learning platforms, writing these algorithms in TUX2 takes only about 25% of the code: Our graph computation model hides the detailed management of data layout, partitioning, and parallelism from developers. Our extensive evaluation of TUX2, using large data sets with up to 64 billion edges, shows that TUX2 outperforms state-of-the-art distributed graph engines PowerGraph and PowerLyra by an order of magnitude, while beating two state-of-the-art distributed machine learning systems by at least 48%.</p>
+<p>【Keywords】:</p>
+<h2 id="Network Verification and Debugging    4">Network Verification and Debugging    4</h2>
+<h3 id="43. Correct by Construction Networks Using Stepwise Refinement.">43. Correct by Construction Networks Using Stepwise Refinement.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/ryzhyk">Paper Link</a>】    【Pages】:683-698</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Ryzhyk:Leonid">Leonid Ryzhyk</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bj=oslash=rner:Nikolaj">Nikolaj Bjørner</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Canini:Marco">Marco Canini</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jeannin:Jean=Baptiste">Jean-Baptiste Jeannin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schlesinger:Cole">Cole Schlesinger</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Terry:Douglas_B=">Douglas B. Terry</a> ; <a href="http://dblp.uni-trier.de/pers/hd/v/Varghese:George">George Varghese</a></p>
+<p>【Abstract】:
+Building software-defined network controllers is an exercise in software development and, as such, likely to introduce bugs. We present Cocoon, a framework for SDN development that facilitates both the design and verification of complex networks using stepwise refinement to move from a high-level specification to the final network implementation. A Cocoon user specifies intermediate design levels in a hierarchical design process that delineates the modularity in complicated network forwarding and makes verification extremely efficient. For example, an enterprise network, equipped with VLANs, ACLs, and Level 2 and Level 3 Routing, can be decomposed cleanly into abstractions for each mechanism, and the resulting stepwise verification is over 200x faster than verifying the final implementation. Cocoon further separates static network design from its dynamically changing configuration. The former is verified at design time, while the latter is checked at run time using statically defined invariants. We present six different SDN use cases including B4 and F10. Our performance evaluation demonstrates that Cocoon is not only faster than existing verification tools but can also find many bugs statically before the network design has been fully specified.</p>
+<p>【Keywords】:</p>
+<h3 id="44. Verifying Reachability in Networks with Mutable Datapaths.">44. Verifying Reachability in Networks with Mutable Datapaths.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/panda-mutable-datapaths">Paper Link</a>】    【Pages】:699-718</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Panda:Aurojit">Aurojit Panda</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lahav:Ori">Ori Lahav</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Argyraki:Katerina_J=">Katerina J. Argyraki</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sagiv:Mooly">Mooly Sagiv</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shenker:Scott">Scott Shenker</a></p>
+<p>【Abstract】:
+Recent work has made great progress in verifying the forwarding correctness of networks [26–28, 35]. However, these approaches cannot be used to verify networks containing middleboxes, such as caches and firewalls, whose forwarding behavior depends on previously observed traffic. We explore how to verify reachability properties for networks that include such “mutable datapath” elements, both for the original network and in the presence of failures. The main challenge lies in handling large and complicated networks. We achieve scaling by developing and leveraging the concept of slices, which allow network-wide verification to only require analyzing small portions of the network. We show that with slices the time required to verify an invariant on many production networks is independent of the size of the network itself.</p>
+<p>【Keywords】:</p>
+<h3 id="45. Automated Bug Removal for Software-Defined Networks.">45. Automated Bug Removal for Software-Defined Networks.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/wu">Paper Link</a>】    【Pages】:719-733</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Yang">Yang Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Ang">Ang Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Haeberlen:Andreas">Andreas Haeberlen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Wenchao">Wenchao Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Loo:Boon_Thau">Boon Thau Loo</a></p>
+<p>【Abstract】:
+When debugging an SDN application, diagnosing the problem is merely the first step: the operator must still find a fix that solves the problem, without causing new problems elsewhere. However, most existing debuggers focus exclusively on diagnosis and offer the network operator little or no help with finding an effective fix. Finding a suitable fix is difficult because the number of candidates can be enormous. In this paper, we propose a step towards automated repair for SDN applications. Our approach consists of two elements. The first is a data structure that we call meta provenance, which can be used to efficiently find good candidate repairs. Meta provenance is inspired by the provenance concept from the database community; however, whereas standard provenance can only reason about changes to data, meta provenance can also reason about changes to programs. The second element is a system that can efficiently backtest a set of candidate repairs using historical data from the network. This is used to eliminate candidate repairs that do not work well, or that cause other problems. We have implemented a system that maintains meta provenance for SDNs, as well as a prototype debugger that uses the meta provenance to automatically suggest repairs. Results from several case studies show that, for problems of moderate complexity, our debugger can find high-quality repairs within one minute.</p>
+<p>【Keywords】:</p>
+<h3 id="46. Delta-net: Real-time Network Verification Using Atoms.">46. Delta-net: Real-time Network Verification Using Atoms.</h3>
+<p>【<a href="https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/horn-alex">Paper Link</a>】    【Pages】:735-749</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Horn:Alex">Alex Horn</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kheradmand:Ali">Ali Kheradmand</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Prasad:Mukul_R=">Mukul R. Prasad</a></p>
+<p>【Abstract】:
+Real-time network verification promises to automatically detect violations of network-wide reachability invariants on the data plane. To be useful in practice, these violations need to be detected in the order of milliseconds, without raising false alarms. To date, most real-time data plane checkers address this problem by exploiting at least one of the following two observations: (i) only small parts of the network tend to be affected by typical changes to the data plane, and (ii) many different packets tend to share the same forwarding behaviour in the entire network. This paper shows how to effectively exploit a third characteristic of the problem, namely: similarity among forwarding behaviour of packets through parts of the network, rather than its entirety. We propose the first provably amortized quasi-linear algorithm to do so. We implement our algorithm in a new real-time data plane checker, Delta-net. Our experiments with SDN-IP, a globally deployed ONOS software-defined networking application, and several hundred million IP prefix rules generated using topologies and BGP updates from real-world deployed networks, show that Delta-net checks a rule insertion or removal in approximately 40 microseconds on average, a more than 10x improvement over the state-of-the-art. We also show that Delta-net eliminates an inherent bottleneck in the state-of-the-art that restricts its use in answering Datalog-style “what if” queries.</p>
+<p>【Keywords】:</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="https://github.com/huntercmd/ccf"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>
