@@ -1,0 +1,703 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/skin.js"></script>
+<script src="https://cdn.rawgit.com/huntercmd/blog/master/config/css/classie.js"></script>
+
+<!-- This is for Mathjax -->
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [ ['$','$'], ["$","$"] ],
+			displayMath: [ ['$$','$$'], ["$$","$$"] ],
+			processEscapes: true
+			},
+		TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+		"HTML-CSS": {linebreaks: {automatic: true}},
+		SVG: {linebreaks: {automatic: true}}
+	});
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#25. ICNP 2017:Toronto, ON, Canada">25. ICNP 2017:Toronto, ON, Canada</a><ul>
+<li><a href="#Paper Num: 68 || Session Num: 0">Paper Num: 68 || Session Num: 0</a><ul>
+<li><a href="#1. Comparing OpenFlow and NETCONF when interconnecting data centers.">1. Comparing OpenFlow and NETCONF when interconnecting data centers.</a></li>
+<li><a href="#2. Cost of not arbitrarily splitting in routing.">2. Cost of not arbitrarily splitting in routing.</a></li>
+<li><a href="#3. Performance enhancement of multipath TCP in mobile Ad Hoc networks.">3. Performance enhancement of multipath TCP in mobile Ad Hoc networks.</a></li>
+<li><a href="#4. Algorithm-data driven optimization of adaptive communication networks.">4. Algorithm-data driven optimization of adaptive communication networks.</a></li>
+<li><a href="#5. MDP modeling of resource provisioning in virtualized content-delivery networks.">5. MDP modeling of resource provisioning in virtualized content-delivery networks.</a></li>
+<li><a href="#6. Preferential link tomography in dynamic networks.">6. Preferential link tomography in dynamic networks.</a></li>
+<li><a href="#7. A programmable buffer management platform.">7. A programmable buffer management platform.</a></li>
+<li><a href="#8. Making multipath TCP friendlier to load balancers and anycast.">8. Making multipath TCP friendlier to load balancers and anycast.</a></li>
+<li><a href="#9. SoftRing: Taming the reactive model for software defined networks.">9. SoftRing: Taming the reactive model for software defined networks.</a></li>
+<li><a href="#10. General ternary bit strings on commodity longest-prefix-match infrastructures.">10. General ternary bit strings on commodity longest-prefix-match infrastructures.</a></li>
+<li><a href="#11. P4DB: On-the-fly debugging of the programmable data plane.">11. P4DB: On-the-fly debugging of the programmable data plane.</a></li>
+<li><a href="#12. Peering vs. transit: Performance comparison of peering and transit interconnections.">12. Peering vs. transit: Performance comparison of peering and transit interconnections.</a></li>
+<li><a href="#13. Experimental evaluation of BBR congestion control.">13. Experimental evaluation of BBR congestion control.</a></li>
+<li><a href="#14. Distributed Mininet placement algorithm for fat-tree topologies.">14. Distributed Mininet placement algorithm for fat-tree topologies.</a></li>
+<li><a href="#15. A concise forwarding information base for scalable and fast name lookups.">15. A concise forwarding information base for scalable and fast name lookups.</a></li>
+<li><a href="#16. A multiple vehicle sensing approach for collision avoidance in progressively deployed vehicle networks.">16. A multiple vehicle sensing approach for collision avoidance in progressively deployed vehicle networks.</a></li>
+<li><a href="#17. GeneWave: Fast authentication and key agreement on commodity mobile devices.">17. GeneWave: Fast authentication and key agreement on commodity mobile devices.</a></li>
+<li><a href="#18. Fast testing network data plane with RuleChecker.">18. Fast testing network data plane with RuleChecker.</a></li>
+<li><a href="#19. Secure crowdsourced radio environment map construction.">19. Secure crowdsourced radio environment map construction.</a></li>
+<li><a href="#20. BoLTE: Efficient network-wide LTE broadcasting.">20. BoLTE: Efficient network-wide LTE broadcasting.</a></li>
+<li><a href="#21. Mrs. Z: Improving ZigBee throughput via multi-rate transmission.">21. Mrs. Z: Improving ZigBee throughput via multi-rate transmission.</a></li>
+<li><a href="#22. Spatio-temporal analysis and prediction of cellular traffic in metropolis.">22. Spatio-temporal analysis and prediction of cellular traffic in metropolis.</a></li>
+<li><a href="#23. Multipath TCP traffic diversion attacks and countermeasures.">23. Multipath TCP traffic diversion attacks and countermeasures.</a></li>
+<li><a href="#24. Selective HTTPS traffic manipulation at middleboxes for BYOD devices.">24. Selective HTTPS traffic manipulation at middleboxes for BYOD devices.</a></li>
+<li><a href="#25. iMUTE: Energy-optimal update policy for perishable mobile contents.">25. iMUTE: Energy-optimal update policy for perishable mobile contents.</a></li>
+<li><a href="#26. vPROM: VSwitch enhanced programmable measurement in SDN.">26. vPROM: VSwitch enhanced programmable measurement in SDN.</a></li>
+<li><a href="#27. A network-centric TCP for interactive video delivery networks (VDN">27. A network-centric TCP for interactive video delivery networks (VDN).</a>.)</li>
+<li><a href="#28. A framework for anonymous routing in delay tolerant networks.">28. A framework for anonymous routing in delay tolerant networks.</a></li>
+<li><a href="#29. Toward a programmable FIB caching architecture.">29. Toward a programmable FIB caching architecture.</a></li>
+<li><a href="#30. When deep learning meets edge computing.">30. When deep learning meets edge computing.</a></li>
+<li><a href="#31. MSAID: Automated interference detection for multiple SDN applications.">31. MSAID: Automated interference detection for multiple SDN applications.</a></li>
+<li><a href="#32. The first experimental SDR platform for inband D2D communications in 5G.">32. The first experimental SDR platform for inband D2D communications in 5G.</a></li>
+<li><a href="#33. VMS: Traffic balancing based on virtual switches in datacenter networks.">33. VMS: Traffic balancing based on virtual switches in datacenter networks.</a></li>
+<li><a href="#34. Enabling seamless WiGig/WiFi handovers in tri-band wireless systems.">34. Enabling seamless WiGig/WiFi handovers in tri-band wireless systems.</a></li>
+<li><a href="#35. SocialGate: Managing large-scale social data on home gateways.">35. SocialGate: Managing large-scale social data on home gateways.</a></li>
+<li><a href="#36. Adaptively adjusting ECN marking thresholds for datacenter networks.">36. Adaptively adjusting ECN marking thresholds for datacenter networks.</a></li>
+<li><a href="#37. PMC: Parallel multi-protocol communication to heterogeneous IoT radios within a single WiFi channel.">37. PMC: Parallel multi-protocol communication to heterogeneous IoT radios within a single WiFi channel.</a></li>
+<li><a href="#38. Machine learning at the network edge for automated home intrusion monitoring.">38. Machine learning at the network edge for automated home intrusion monitoring.</a></li>
+<li><a href="#39. Towards higher throughput rate adaptation for backscatter networks.">39. Towards higher throughput rate adaptation for backscatter networks.</a></li>
+<li><a href="#40. Experimental evaluation of two OpenFlow controllers.">40. Experimental evaluation of two OpenFlow controllers.</a></li>
+<li><a href="#41. Cotask scheduling in cloud computing.">41. Cotask scheduling in cloud computing.</a></li>
+<li><a href="#42. Deploying default paths by joint optimization of flow table and group table in SDNs.">42. Deploying default paths by joint optimization of flow table and group table in SDNs.</a></li>
+<li><a href="#43. Analyzing public transportation mobility data for networking purposes.">43. Analyzing public transportation mobility data for networking purposes.</a></li>
+<li><a href="#44. Rethinking LTE network functions virtualization.">44. Rethinking LTE network functions virtualization.</a></li>
+<li><a href="#45. Coordinating rolling software upgrades for cellular networks.">45. Coordinating rolling software upgrades for cellular networks.</a></li>
+<li><a href="#46. SICS: Secure and dynamic middlebox outsourcing.">46. SICS: Secure and dynamic middlebox outsourcing.</a></li>
+<li><a href="#47. GSC: Greedy shard caching algorithm for improved I/O efficiency in GraphChi.">47. GSC: Greedy shard caching algorithm for improved I/O efficiency in GraphChi.</a></li>
+<li><a href="#48. When creek meets river: Exploiting high-bandwidth circuit switch in scheduling multicast data.">48. When creek meets river: Exploiting high-bandwidth circuit switch in scheduling multicast data.</a></li>
+<li><a href="#49. The dynamic cuckoo filter.">49. The dynamic cuckoo filter.</a></li>
+<li><a href="#50. SyncCoding: A compression technique exploiting references for data synchronization services.">50. SyncCoding: A compression technique exploiting references for data synchronization services.</a></li>
+<li><a href="#51. BlueCoDE: Bluetooth coordination in dense environment for better coexistence.">51. BlueCoDE: Bluetooth coordination in dense environment for better coexistence.</a></li>
+<li><a href="#52. Popularity-aware differentiated distributed stream processing on skewed streams.">52. Popularity-aware differentiated distributed stream processing on skewed streams.</a></li>
+<li><a href="#53. Wireless network instabilities in the wild: Prevalence, App (non">53. Wireless network instabilities in the wild: Prevalence, App (non)resilience, and OS remedy.</a>resilience, and OS remedy.)</li>
+<li><a href="#54. TorPolice: Towards enforcing service-defined access policies for anonymous communication in the Tor network.">54. TorPolice: Towards enforcing service-defined access policies for anonymous communication in the Tor network.</a></li>
+<li><a href="#55. Stabilizing BGP through distributed elimination of recurrent routing loops.">55. Stabilizing BGP through distributed elimination of recurrent routing loops.</a></li>
+<li><a href="#56. A customized and cost-efficient backup scheme in software-defined networks.">56. A customized and cost-efficient backup scheme in software-defined networks.</a></li>
+<li><a href="#57. An empirical model of packet processing delay of the Open vSwitch.">57. An empirical model of packet processing delay of the Open vSwitch.</a></li>
+<li><a href="#58. Investigating the impact of cache pollution attacks in heterogeneous cellular networks.">58. Investigating the impact of cache pollution attacks in heterogeneous cellular networks.</a></li>
+<li><a href="#59. Yosemite: Efficient scheduling of weighted coflows in data centers.">59. Yosemite: Efficient scheduling of weighted coflows in data centers.</a></li>
+<li><a href="#60. NF-switch: VNFs-enabled SDN switches for high performance service function chaining.">60. NF-switch: VNFs-enabled SDN switches for high performance service function chaining.</a></li>
+<li><a href="#61. Suffering from buffering? Detecting QoE impairments in live video streams.">61. Suffering from buffering? Detecting QoE impairments in live video streams.</a></li>
+<li><a href="#62. Impacts of task placement and bandwidth allocation on stream analytics.">62. Impacts of task placement and bandwidth allocation on stream analytics.</a></li>
+<li><a href="#63. Reflection: Automated test location selection for cellular network upgrades.">63. Reflection: Automated test location selection for cellular network upgrades.</a></li>
+<li><a href="#64. On an impact of large content on packet-level caching of information centric networking.">64. On an impact of large content on packet-level caching of information centric networking.</a></li>
+<li><a href="#65. Characterizing and optimizing background data transfers on smartwatches.">65. Characterizing and optimizing background data transfers on smartwatches.</a></li>
+<li><a href="#66. Planning in compute-aggregate problems as optimization problems on graphs.">66. Planning in compute-aggregate problems as optimization problems on graphs.</a></li>
+<li><a href="#67. SDN-based service automation for IoT.">67. SDN-based service automation for IoT.</a></li>
+<li><a href="#68. The implementation of improved MPTCP in MANETs.">68. The implementation of improved MPTCP in MANETs.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="25. ICNP 2017:Toronto, ON, Canada">25. ICNP 2017:Toronto, ON, Canada</h1>
+<p><a href="http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=8107606">25th IEEE International Conference on Network Protocols, ICNP 2017, Toronto, ON, Canada, October 10-13, 2017.</a> IEEE Computer Society
+【<a href="http://dblp.uni-trier.de/db/conf/icnp/icnp2017.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 68 || Session Num: 0">Paper Num: 68 || Session Num: 0</h2>
+<h3 id="1. Comparing OpenFlow and NETCONF when interconnecting data centers.">1. Comparing OpenFlow and NETCONF when interconnecting data centers.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117598">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kunz:Thomas">Thomas Kunz</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Muthukumar:Karpakamurthy">Karpakamurthy Muthukumar</a></p>
+<p>【Abstract】:
+SDN technology has been applied to a range of different networks, ranging from Ethernet services to large cloud environments. More recently, interest has turned towards extending programmability of Optical Transport Networks (OTN). In the SDN architecture, SBIs are used to communicate between the SDN controller and the switches or routers in the network. In this paper, we deploy OpenFlow and NETCONF as SBIs in managing BoD across interconnected data centers over OTN. More specifically, we use these protocols to communicate between an OpenDayLight controller and two BTI7800 network elements that interconnect the data centers. We present experimental results for both BTI's YANG-based NETCONF implementation and our port of OpenFlow for a number of use cases. Our results show that NETCONF is faster and requires fewer control message. However, OpenFlow offers better bandwidth utilization over the interconnecting link.</p>
+<p>【Keywords】:
+SDN; SBI; OpenFlow; NETCONF; data centers; Bandwidth-on-Demand</p>
+<h3 id="2. Cost of not arbitrarily splitting in routing.">2. Cost of not arbitrarily splitting in routing.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117538">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/b/Bi:Yingjie">Yingjie Bi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tang:Ao">Ao Tang</a></p>
+<p>【Abstract】:
+This paper studies routing performance loss due to traffic split ratio granularity constraints. For any given fineness of traffic splitting capability, we provide upper bounds on the loss of performance. Based on tight convex relaxation, we further develop an efficient approximation algorithm to compute a good routing solution that satisfies given constraints on traffic splitting. The results can be useful for network operators to trade-off between attainable performance and implementation overhead. Some of the mathematical techniques developed here can be of independent interest for studying other similar nonconvex optimization problems.</p>
+<p>【Keywords】:
+Routing; Optimization; Upper bound; Throughput; Aggregates; Approximation algorithms; Computer networks</p>
+<h3 id="3. Performance enhancement of multipath TCP in mobile Ad Hoc networks.">3. Performance enhancement of multipath TCP in mobile Ad Hoc networks.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117578">Paper Link</a>】    【Pages】:1-2</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Tongguang">Tongguang Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhao:Shuai">Shuai Zhao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ren:Bingfei">Bingfei Ren</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shi:Yulong">Yulong Shi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cheng_0001:Bo">Bo Cheng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Junliang">Junliang Chen</a></p>
+<p>【Abstract】:
+In some special circumstances, e.g. tsunamis, floods, battlefields, earthquakes, etc., communication infrastructures are damaged or non-existent, as well as unmanned aerial vehicle (UAV) cluster. For the communication between people or UAVs, UAVs or mobile smart devices (MSDs) can be used to construct Mobile Ad Hoc Networks (MANETs), and Multipath TCP (MPTCP) can be used to simultaneously transmit in one TCP connection via multiple interfaces of MSDs. However the original MPTCP subpaths creating algorithm can establish multiple subpaths between two adjacent nodes, thus cannot achieve true concurrent data transmission. To solve this issue, we research and improve both the algorithm of adding routing table entries and the algorithm of establishing subpaths to offer more efficient use of multiple subpaths and better network traffic load balancing. The main works are as follows: (1) improve multi-hop routing protocol; (2) run MPTCP on UAVs or MSDs; (3) improve MPTCP subpaths establishment algorithm. The results show that our algorithms have better performance than the original MPTCP in achieving higher data throughput.</p>
+<p>【Keywords】:
+Routing; Mobile computing; Ad hoc networks; Androids; Humanoid robots; Algorithm design and analysis; Routing protocols</p>
+<h3 id="4. Algorithm-data driven optimization of adaptive communication networks.">4. Algorithm-data driven optimization of adaptive communication networks.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117592">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/He:Mu">Mu He</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kalmbach:Patrick">Patrick Kalmbach</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Blenk:Andreas">Andreas Blenk</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kellerer:Wolfgang">Wolfgang Kellerer</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Schmid:Stefan">Stefan Schmid</a></p>
+<p>【Abstract】:
+This paper is motivated by the emerging vision of an automated and data-driven optimization of communication networks, making it possible to fully exploit the flexibilities offered by modern network technologies and heralding an era of fast and self-adjusting networks. We build upon our recent study of machine-learning approaches to (statically) optimize resource allocations based on the data produced by network algorithms in the past. We take our study a crucial step further by considering dynamic scenarios: scenarios where communication patterns can change over time. In particular, we investigate network algorithms which learn from the traffic distribution (the feature vector), in order to predict global network allocations (a multi-label problem). As a case study, we consider a well-studied fc-median problem arising in Software-Defined Networks, and aim to imitate and speedup existing heuristics as well as to predict good initial solutions for local search algorithms. We compare different machine learning algorithms by simulation and find that neural network can provide the best abstraction, saving up to two-thirds of the algorithm runtime.</p>
+<p>【Keywords】:
+Heuristic algorithms; Machine learning algorithms; Communication networks; Prediction algorithms; Control systems; Resource management; Optimization</p>
+<h3 id="5. MDP modeling of resource provisioning in virtualized content-delivery networks.">5. MDP modeling of resource provisioning in virtualized content-delivery networks.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117600">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Haghighi:Ali_A=">Ali A. Haghighi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shah=Heydari:Shahram">Shahram Shah-Heydari</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/ShahbazPanahi:Shahram">Shahram ShahbazPanahi</a></p>
+<p>【Abstract】:
+In this paper a Markov decision process (MDP) model for virtualized content delivery networks is proposed. We use stochastic optimization to assign cloud site resources to each user group. We propose how quality of experience (QoE) can be included in the modeling and optimization. We then present an optimal solution for a constraint-free version of the problem, and show the improvement in accumulated revenue when our optimization model is used. A sub-optimal algorithm is proposed that would reduce the complexity of the problem. Simulation results are presented to support merits of the proposed algorithm.</p>
+<p>【Keywords】:
+Optimization; Cloud computing; Bandwidth; Stochastic processes; Indexes; Complexity theory</p>
+<h3 id="6. Preferential link tomography in dynamic networks.">6. Preferential link tomography in dynamic networks.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117552">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Huikang">Huikang Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gao:Yi">Yi Gao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dong_0001:Wei">Wei Dong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Chun">Chun Chen</a></p>
+<p>【Abstract】:
+Inferring fine-grained link metrics by using aggregated path measurements, known as network tomography, is essential for various network operations, such as network monitoring, load balancing, and failure diagnosis. Given a set of interesting links and the changing topologies of a dynamic network, we study the problem of calculating the link metrics of these links by end-to-end cycle-free path measurements among selected monitors, i.e., preferential link tomography. We propose MAPLink, an algorithm that assigns a number of nodes as monitors to solve this tomography problem. As the first algorithm to solve the preferential link tomography problem in dynamic networks, MAPLink guarantees that the assigned monitors can calculate the link metrics of all interesting links for all topologies of the dynamic network. We formally prove the above property of MAPLink based on graph theory. We implement MAPLink and evaluate its performance using two real-world dynamic networks, including a vehicular network and a sensor network, both with changing topologies due to node mobility or wireless dynamics. Results show that MAPLink achieves significant better performance compared with three baseline methods in both of the two dynamic networks.</p>
+<p>【Keywords】:
+Monitoring; Measurement; Network topology; Tomography; Heuristic algorithms; Topology; Vehicle dynamics</p>
+<h3 id="7. A programmable buffer management platform.">7. A programmable buffer management platform.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117533">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Kogan:Kirill">Kirill Kogan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Menikkumbura:Danushka">Danushka Menikkumbura</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Petri:Gustavo">Gustavo Petri</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Noh:Yangtae">Yangtae Noh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nikolenko:Sergey_I=">Sergey I. Nikolenko</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sirotkin:Alexander">Alexander Sirotkin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/e/Eugster:Patrick">Patrick Eugster</a></p>
+<p>【Abstract】:
+Buffering architectures and policies for their efficient management constitute one of the core ingredients of a network architecture. However, despite strong incentives to experiment with, and deploy, new policies, the opportunities for alterating anything beyond minor elements of such policies are limited. In this work we introduce a new specification language, OpenQueue, that allows users to specify entire buffering architectures and policies conveniently through several comparators and simple functions. We show examples of buffer management policies in OpenQueue and empirically demonstrate its direct impact on performance in various settings.</p>
+<p>【Keywords】:
+Admission control; Process control; Optimized production technology; Ports (Computers); Boundary conditions; Data structures</p>
+<h3 id="8. Making multipath TCP friendlier to load balancers and anycast.">8. Making multipath TCP friendlier to load balancers and anycast.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117545">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Duchene:Fabien">Fabien Duchene</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bonaventure:Olivier">Olivier Bonaventure</a></p>
+<p>【Abstract】:
+Multipath TCP is a recent TCP extension that enables the utilization of different paths for a single connection. This provides various benefits including bandwidth aggregation and fast handovers on mobiles. A Multipath TCP connection starts with a single TCP connection called subflow and other subflows are added later to increase bandwidth or support failover. One drawback of Multipath TCP is that it is not currently compatible with stateless load balancers which rely on the five-tuple for their forwarding decision. This hinders the deployment of Multipath TCP. We show that this limitation can be circumvented with a small change to the handling of the initial subflow. Clients use this subflow to discover the load-balanced server and the additional Multipath TCP subflows are terminated at a unique address associated to each physical server. With this small change, Multipath TCP becomes compatible with existing stateless load balancers. Furthermore, we show that the same approach enables anycast Multipath TCP services, a major benefit given the difficulty of deploying anycast TCP services. We implement this modification in the Linux kernel and demonstrate its benefits with several micro benchmarks.</p>
+<p>【Keywords】:
+Servers; Smart phones; Load management; Bandwidth; Wireless fidelity; Kernel; IP networks</p>
+<h3 id="9. SoftRing: Taming the reactive model for software defined networks.">9. SoftRing: Taming the reactive model for software defined networks.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117558">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Chengchen">Chengchen Hu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hou:Kaiyu">Kaiyu Hou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Hao">Hao Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Ruilong">Ruilong Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zheng:Peng">Peng Zheng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang_0011:Peng">Peng Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Huanzhao">Huanzhao Wang</a></p>
+<p>【Abstract】:
+The reactive model of Software Defined Networking (SDN) invokes controller to dynamically determine the behaviors of a new flow without any pre-knowledge in the data plane. However, the reactive events raised by such flexible model meanwhile consume lots of the bottleneck resources of the fast memory in switch and bandwidth between controller and switches. To address this problem, we propose SoftRing with the motivation to mitigate the overhead to handle a reactive event. In fact, the reactive packets are not necessarily stored in the switch or sent to the controller; instead, they are forwarded to traverse a pre-defined loop path. The packets will finally leave the loop path after the switch rules related to the packet flow being updated to switches in the loop with fewer flow entries. We have implemented a SoftRing system that integrates the controller and software/hardware SDN switches. The results show that SoftRing can eliminate the fast memory requirement for reactive packets and reduce the control channel bandwidth consumption up to 80%, with the cost of less than 5% data plane bandwidth, an average of three extra flow entries in each switch, and minor extra latency for the flow forwarding.</p>
+<p>【Keywords】:
+Switches; Iron; Bandwidth; Random access memory; Process control; Data models</p>
+<h3 id="10. General ternary bit strings on commodity longest-prefix-match infrastructures.">10. General ternary bit strings on commodity longest-prefix-match infrastructures.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117542">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chuprikov:Pavel">Pavel Chuprikov</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kogan:Kirill">Kirill Kogan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nikolenko:Sergey_I=">Sergey I. Nikolenko</a></p>
+<p>【Abstract】:
+Ternary Content-Addressable Memory (TCAM) is a powerful tool to represent network services with line-rate lookup time. There are various software-based approaches to represent multi-field packet classifiers. Unfortunately, all of them either require exponential memory or apply additional constraints on field representations (e.g, prefixes or exact values) to have line-rate lookup time. In this work, we propose alternatives to tcam and introduce a novel approach to represent packet classifiers based on ternary bit strings (without constraining field representation) on commodity longest-prefix-match (LPM) infrastructures. These representations are built on a novel property, prefix reorderability, that defines how to transform an ordered set of ternary bit strings to prefixes with lpm priorities in linear memory. Our results are supported by evaluations on large-scale packet classifiers with real parameters from ClassBench; moreover, we have developed a prototype in P4 to support these types of transformations.</p>
+<p>【Keywords】:
+Transforms; Art; Sorting; Tools; Prototypes; Communication networks</p>
+<h3 id="11. P4DB: On-the-fly debugging of the programmable data plane.">11. P4DB: On-the-fly debugging of the programmable data plane.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117548">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Cheng">Cheng Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bi:Jun">Jun Bi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Yu">Yu Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Jianping">Jianping Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Bingyang">Bingyang Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Zhaogeng">Zhaogeng Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dogar:Abdul_Basit">Abdul Basit Dogar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Yangyang">Yangyang Wang</a></p>
+<p>【Abstract】:
+While extending network programmability to a larger degree, P4 also raises the risks of incurring runtime bugs after the deployment of P4 programs. These runtime bugs, if not handled promptly and properly, can ruin the functionality and performance of networks. Unfortunately, the absence of runtime debuggers makes troubleshooting of P4 program bugs challenging and intricate for operators. This paper is devoted to the on-the-fly debugging of runtime bugs in P4-enabled networks. We propose P4DB, a general debugging platform that empowers operators to debug P4 programs in three levels of visibility by provisioning operator-friendly primitives. By P4DB, operators can use the watch primitive to quickly narrow the debugging scope from network level or device level to table level, then use the break and next primitives to decompose the match-action table into three steps and troubleshoot the runtime bugs step by step. We implemented a prototype of P4DB and evaluated the performance in terms of the data plane, control plane and control channel. On P4-specific programmable data plane, P4DB merely introduces a small throughput penalty (1.3%~13.8%) and imposes a little-increased delay (0.6%~11.9%).</p>
+<p>【Keywords】:
+Debugging; Runtime; Computer bugs; Tools; Switches; Protocols</p>
+<h3 id="12. Peering vs. transit: Performance comparison of peering and transit interconnections.">12. Peering vs. transit: Performance comparison of peering and transit interconnections.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117549">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Ahmed:Adnan">Adnan Ahmed</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shafiq:Zubair">Zubair Shafiq</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bedi:Harkeerat">Harkeerat Bedi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Khakpour:Amir_R=">Amir R. Khakpour</a></p>
+<p>【Abstract】:
+The economic aspects of peering and transit interconnections between ISPs have been extensively studied in prior literature. Prior research primarily focuses on the economic issues associated with establishing peering and transit connectivity among ISPs to model interconnection strategies. Performance analysis, on the other hand, while understood intuitively, has not been empirically quantified and incorporated in such models. To fill this gap, we conduct a large scale measurement based performance comparison of peering and transit interconnection strategies. We use JavaScript to conduct application layer latency measurements between 510K clients in 900 access ISPs and multi-homed CDN servers located at 33 IXPs around the world. Overall, we find that peering paths outperformed transit paths for 91% Autonomous Systems (ASes) in our data. Peering paths have smaller propagation delays as compared to transit paths for more than 95% ASes. Peering paths outperform transit paths in terms of propagation delay due to shorter path lengths. Peering paths also have smaller queueing delays as compared to transit paths for more than 50% ASes.</p>
+<p>【Keywords】:
+Servers; Internet; IP networks; Propagation delay; Economics; Delays; Browsers</p>
+<h3 id="13. Experimental evaluation of BBR congestion control.">13. Experimental evaluation of BBR congestion control.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117540">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hock:Mario">Mario Hock</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bless:Roland">Roland Bless</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zitterbart:Martina">Martina Zitterbart</a></p>
+<p>【Abstract】:
+BBR is a recently proposed congestion control. Instead of using packet loss as congestion signal, like many currently used congestion controls, it uses an estimate of the available bottleneck link bandwidth to determine its sending rate. BBR tries to provide high link utilization while avoiding to create queues in bottleneck buffers. The original publication of BBR shows that it can deliver superior performance compared to Cubic TCP in some environments. This paper provides an independent and extensive experimental evaluation of BBR at higher speeds. The experimental setup uses BBR's Linux kernel 4.9 implementation and typical data rates of 10Gbit/s and 1 Gbit/s at the bottleneck link. The experiments vary the flows' round-trip times, the number of flows, and buffer sizes at the bottleneck. The evaluation considers throughput, queuing delay, packet loss, and fairness. On the one hand, the intended behavior of BBR could be observed with our experiments. On the other hand, some severe inherent issues such as increased queuing delays, unfairness, and massive packet loss were also detected. The paper provides an in-depth discussion of BBR's behavior in different experiment setups.</p>
+<p>【Keywords】:
+Delays; Bandwidth; Packet loss; Linux; Throughput; Internet</p>
+<h3 id="14. Distributed Mininet placement algorithm for fat-tree topologies.">14. Distributed Mininet placement algorithm for fat-tree topologies.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117599">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/i/Isaia:Philippos">Philippos Isaia</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Guan:Lin">Lin Guan</a></p>
+<p>【Abstract】:
+Distributed Mininet implementations have been extensively used in order to overcome Mininet's scalability issues. Even though they have achieved a high level of success, they still have problems and can face bottlenecks due to the insufficient placement techniques. This paper proposes a new placement algorithm for distributed Mininet emulations with optimisation for Fat-Tree topologies. The proposed algorithm overcomes possible bottlenecks that can appear in emulations due to uneven distribution of computing resources or physical links. In order to distribute the emulation experiment evenly, the proposed algorithm assigns weights to each available machine as well as the communication links depending on their capabilities. Also, it performs a code analysis and assigns weights to the emulated topology and then places them accordingly. Some noticeable results of the proposed algorithm are the decrease in packet losses and jitter by up to 86% and 68% respectively. Finally, it has achieved up to 87% reduction in the standard deviation between CPU usage readings of experimental workers.</p>
+<p>【Keywords】:
+Topology; Emulation; Algorithm design and analysis; Switches; Network topology; Scalability; Clustering algorithms</p>
+<h3 id="15. A concise forwarding information base for scalable and fast name lookups.">15. A concise forwarding information base for scalable and fast name lookups.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117530">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yu:Ye">Ye Yu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Belazzougui:Djamal">Djamal Belazzougui</a> ; <a href="http://dblp.uni-trier.de/pers/hd/q/Qian_0001:Chen">Chen Qian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang_0001:Qin">Qin Zhang</a></p>
+<p>【Abstract】:
+Forwarding information base (FIB) scalability and its lookup speed are fundamental problems of numerous network technologies that uses location-independent network names. In this paper we present a new network algorithm, Othello Hashing, and its application of a FIB design called Concise, which uses very little memory to support ultra-fast lookups of network names. Othello Hashing and Concise make use of minimal perfect hashing and relies on the programmable network framework to support dynamic updates. Our conceptual contribution of Concise is to optimize the memory efficiency and query speed in the data plane and move the relatively complex construction and update components to the resource-rich control plane. We implemented Concise on three platforms. Experimental results show that Concise uses significantly smaller memory to achieve much faster query speed compared to existing solutions of network name lookups.</p>
+<p>【Keywords】:
+query processing; telecommunication network management</p>
+<h3 id="16. A multiple vehicle sensing approach for collision avoidance in progressively deployed vehicle networks.">16. A multiple vehicle sensing approach for collision avoidance in progressively deployed vehicle networks.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117532">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gao:Yi">Yi Gao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu_0001:Xue">Xue Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dong_0001:Wei">Wei Dong</a></p>
+<p>【Abstract】:
+Dedicated Short Range Communications (DSRC), a promising vehicle-to-vehicle communication technology, has been under active research and large scale DSRC deployment is expected to start shortly. However, before all vehicles are deployed with DSRC, there will be a relatively long partial DSRC deployment period where DSRC-equipped vehicles and non-DSRC-equipped vehicles both exist on roads. More importantly, it is reported that the probability a DSRC-equipped vehicle will benefit from a safety application is only of 1% during the initial DSRC deployment. Therefore, we propose MVS, a Multiple Vehicle Sensing approach to improve the collision avoidance effectiveness under partial DSRC deployment. The design of MVS is based on the observation that vehicles are able to sense the kinematic states of its adjacent vehicles by using existing computer vision technologies and/or on-board radar technologies. Therefore, we focus on improving the efficiency of sharing these sensed kinematic states among DSRC-equipped vehicles. By using the sensed data from multiple adjacent vehicles, the kinematic states of a non-DSRC-equipped vehicle can be accurately estimated. MVS is implemented and evaluated through a trace-driven study based on two realistic vehicle mobility traces. Results show that MVS reduces the collision probability by 61.5% and 60.1% in the two traces.</p>
+<p>【Keywords】:
+Kinematics; Sensors; Estimation; Safety; Collision avoidance; Broadcasting; Standards</p>
+<h3 id="17. GeneWave: Fast authentication and key agreement on commodity mobile devices.">17. GeneWave: Fast authentication and key agreement on commodity mobile devices.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117543">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/x/Xie:Pengjin">Pengjin Xie</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Feng:Jingchao">Jingchao Feng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cao:Zhichao">Zhichao Cao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Jiliang">Jiliang Wang</a></p>
+<p>【Abstract】:
+Device-to-device (D2D) communication is widely used for mobile devices and Internet of Things (IoT). Authentication and key agreement are critical to build a secure channel between two devices. However, existing approaches often rely on a pre-built fingerprint database and suffer from low key generation rate. We present GeneWave, a fast device authentication and key agreement protocol for commodity mobile devices. GeneWave first achieves bidirectional initial authentication based on the physical response interval between two devices. To keep the accuracy of interval estimation, we eliminate time uncertainty on commodity devices through fast signal detection and redundancy time cancellation. Then we derive the initial acoustic channel response (ACR) for device authentication. We design a novel coding scheme for efficient key agreement while ensuring security. Therefore, two devices can authenticate each other and securely agree on a symmetric key. GeneWave requires neither special hardware nor pre-built fingerprint database, and thus it is easy-to-use on commercial mobile devices. We implement GeneWave on mobile devices (i.e., Nexus 5X and Nexus 6P) and evaluate its performance through extensive experiments. Experimental results show that GeneWave efficiently accomplish secure key agreement on commodity smartphones with a key generation rate 10x faster than the state-of-the-art approach.</p>
+<p>【Keywords】:
+Authentication; Mobile handsets; Acoustics; Frequency-domain analysis; Hardware; Device-to-device communication; Encoding</p>
+<h3 id="18. Fast testing network data plane with RuleChecker.">18. Fast testing network data plane with RuleChecker.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117541">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang_0011:Peng">Peng Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Cheng">Cheng Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Chengchen">Chengchen Hu</a></p>
+<p>【Abstract】:
+A key feature of Software Defined Network is the decoupling of control pane and data plane. Although delivering huge benefits, such a decoupling also brings a new risk: the data plane states (i.e., flow tables) may deviate from the control plane policies. Existing data plane testing tools like Monocle check the correctness of flow tables by injecting probes. However, they are limited in four aspects: (1) slow in generating probes due to solving SAT problems, (2) may raise false negatives when there are multiple missing rules, (3) do not support incremental probe update to work in dynamic networks, and (4) cannot test cascaded flow tables used by OpenFlow switches. To overcome these limitations, we present RuleChecker, a fast and complete data plane testing tool. In contrast to previous tools that generate each probe by solving an SAT problem, RuleChecker takes the flow table as whole and generates all probes through an iteration of simple set operations. By lever-aging Binary Decision Diagram (BDD) to encode sets, we make RuleChecker extremely fast: around 5 &#x03C7; faster than Monocle (when detecting rule missing faults), and nearly 20 &#x03C7; faster than RuleScope (when detecting both rule missing and priority faults), and can update probes in less than 2 ms for 90% of cases, based on the Stanford backbone rule set.</p>
+<p>【Keywords】:
+Software Defined Network; Data plane faults; Probe generation; Binary Decision Diagram</p>
+<h3 id="19. Secure crowdsourced radio environment map construction.">19. Secure crowdsourced radio environment map construction.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117556">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Yidan">Yidan Hu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Rui">Rui Zhang</a></p>
+<p>【Abstract】:
+Database-driven Dynamic Spectrum Sharing (DSS) is the de-facto technical paradigm adopted by Federal Communications Commission (FCC) for increasing spectrum efficiency. In such a system, a geo-location database administrator (DBA) maintains spectrum availability information over its service region whereby to determines whether a secondary user can access a licensed spectrum band at his desired location and time. To maintain spectrum availability in its service region, it is desirable for the DBA to periodically collect spectrum measurements whereby to construct and maintain a Radio Environment Map (REM), where the received signal strength at every location of interest is either directly measured or estimated via proper statistical spatial interpolation techniques. Crowdsourcing-based spectrum sensing is a promising approach for periodically collecting spectrum measurements over a large geographic area, which is, unfortunately, vulnerable to false spectrum measurements. How to construct an accurate REM in the presence of false measurements remains an open challenge. This paper introduces SecREM, a novel scheme for securely constructing a REM in the presence of false spectrum measurements. SecREM relies on a small number of trusted spectrum measurements whereby to evaluate the trustworthiness of the measurements from mobile users and gradually incorporate the most trustworthy ones to construct an accurate REM. Extensive simulation studies based on a real spectrum measurement dataset confirm the efficacy and efficiency of SecREM.</p>
+<p>【Keywords】:
+Sensors; Interpolation; Mobile communication; Atmospheric measurements; Particle measurements; Databases; Distortion measurement</p>
+<h3 id="20. BoLTE: Efficient network-wide LTE broadcasting.">20. BoLTE: Efficient network-wide LTE broadcasting.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117535">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sivaraj:Rajarajan">Rajarajan Sivaraj</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Arslan:Mustafa_Y=">Mustafa Y. Arslan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sundaresan:Karthikeyan">Karthikeyan Sundaresan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Rangarajan:Sampath">Sampath Rangarajan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mohapatra:Prasant">Prasant Mohapatra</a></p>
+<p>【Abstract】:
+Evolved-Multimedia Broadcast Multicast Services (eMBMS) is a set of features in LTE networks to deliver bandwidth-intensive multimedia content on a point-to-multipoint basis to subscribers. The notion of a Single Frequency Network (SFN) in eMBMS allows base stations to synchronize and transmit signals in a coordinated fashion across the same frequency-time radio resources using a common modulation rate. While SFN boosts the channel quality of users via transmit diversity gain, the use of a common rate across base stations results in reduced utilization for those that can individually support much higher data rates for their users, even without the notion of an SFN. Excluding such base stations from the SFN helps them utilize their resources better by not being constrained by the common rate, but creates additional inter-cell interference from their independent transmissions. Striking a balance between SFN cooperation and resource utilization is crucial for efficiently delivering broadcast content as well as other unicast flows. We design BoLTE, which carefully addresses this tradeoff and evaluate it using a prototype implementation over an SFN testbed, realized over a cloud-based radio access network system, as well as large-scale NS3 simulations. We show that BoLTE improves overall system throughput by around 40%.</p>
+<p>【Keywords】:
+Long Term Evolution; Unicast; Diversity methods; Streaming media; Interference; Multiplexing; Resource management</p>
+<h3 id="21. Mrs. Z: Improving ZigBee throughput via multi-rate transmission.">21. Mrs. Z: Improving ZigBee throughput via multi-rate transmission.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117546">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Cao:Yifeng">Yifeng Cao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kong:Linghe">Linghe Kong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/He:Liang">Liang He</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Guihai">Guihai Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Min=You">Min-You Wu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/He:Tian">Tian He</a></p>
+<p>【Abstract】:
+ZigBee is a widely used wireless technology in low-power and short-range scenarios such as Internet of Things (IoT), sensor networks, and industrial wireless networks. However, the standard ZigBee supports only one data rate, 250Kbps, which thoroughly limits ZigBee's efficiency in dynamic wireless channels. In this paper, we propose Mrs.Z, a novel physical layer design to enable multi-rate selection in ZigBee. The key idea is to change the single spectrum spreading length to multiple ones. Correspondingly, to gracefully adapt to the channel variations, we propose a BER-based rate selection scheme, dividing bit errors into two categories: errors caused by the exceeding despreading threshold, which can be discovered in the physical layer, and caused by incorrect despreading, which is not visible until cyclic redundancy check (CRC) in the media access control (MAC) layer. Then, the receiver selects the rate based on the underlying negative impacts incurred by them and feedbacks to the transceiver. We implement Mrs.Z on USRPs and evaluate its performance in different scenarios. Results demonstrate that Mrs.Z achieves an improvement of 20% and 80% compared to the classic SoftRate and the standard ZigBee.</p>
+<p>【Keywords】:
+ZigBee; Throughput; Spread spectrum communication; Receivers; Physical layer; Transceivers; Standards</p>
+<h3 id="22. Spatio-temporal analysis and prediction of cellular traffic in metropolis.">22. Spatio-temporal analysis and prediction of cellular traffic in metropolis.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117559">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Xu">Xu Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhou:Zimu">Zimu Zhou</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yang_0002:Zheng">Zheng Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Yunhao">Yunhao Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Peng:Chunyi">Chunyi Peng</a></p>
+<p>【Abstract】:
+Understanding and predicting cellular traffic at large-scale and fine-granularity is beneficial and valuable to mobile users, wireless carriers and city authorities. Predicting cellular traffic in modern metropolis is particularly challenging because of the tremendous temporal and spatial dynamics introduced by diverse user Internet behaviours and frequent user mobility citywide. In this paper, we characterize and investigate the root causes of such dynamics in cellular traffic through a big cellular usage dataset covering 1.5 million users and 5,929 cell towers in a major city of China. We reveal intensive spatio-temporal dependency even among distant cell towers, which is largely overlooked in previous works. To explicitly characterize and effectively model the spatio-temporal dependency of urban cellular traffic, we propose a novel decomposition of in-cell and inter-cell data traffic, and apply a graph-based deep learning approach to accurate cellular traffic prediction. Experimental results demonstrate that our method consistently outperforms the state-of-the-art time-series based approaches and we also show through an example study how the decomposition of cellular traffic can be used for event inference.</p>
+<p>【Keywords】:
+Poles and towers; Mobile communication; Urban areas; Computer architecture; Monitoring; Predictive models; Mobile handsets</p>
+<h3 id="23. Multipath TCP traffic diversion attacks and countermeasures.">23. Multipath TCP traffic diversion attacks and countermeasures.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117547">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/m/Munir:Ali">Ali Munir</a> ; <a href="http://dblp.uni-trier.de/pers/hd/q/Qian:Zhiyun">Zhiyun Qian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shafiq:Zubair">Zubair Shafiq</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Alex">Alex Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Le:Franck">Franck Le</a></p>
+<p>【Abstract】:
+Multipath TCP (MPTCP) is an IETF standardized suite of TCP extensions that allow two endpoints to simultaneously use multiple paths between them. In this paper, we report vulnerabilities in MPTCP that arise because of cross-path interactions between MPTCP subflows. First, an attacker eavesdropping one MPTCP subflow can infer throughput of other subflows. Second, an attacker can inject forged MPTCP packets to change priorities of any MPTCP subflow. We present two attacks to exploit these vulnerabilities. In the connection hijack attack, an attacker takes full control of the MPTCP connection by suspending the subflows he has no access to. In the traffic diversion attack, an attacker diverts traffic from one path to other paths. Proposed vulnerabilities fixes, changes to MPTCP specification, provide the guarantees that MPTCP is at least as secure as TCP and the original MPTCP. We validate attacks and prevention mechanism, using MPTCP Linux implementation (v0.91), on a real-network testbed.</p>
+<p>【Keywords】:
+Throughput; Data transfer; Linux; Reliability; Wireless fidelity</p>
+<h3 id="24. Selective HTTPS traffic manipulation at middleboxes for BYOD devices.">24. Selective HTTPS traffic manipulation at middleboxes for BYOD devices.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117557">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Xing">Xing Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/q/Qian_0001:Feng">Feng Qian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/q/Qian:Zhiyun">Zhiyun Qian</a></p>
+<p>【Abstract】:
+HTTPS has become a vital component of the WWW ecosystem. However, today's application-layer middleboxes in the cloud are largely &#x201C;blind&#x201D; to HTTPS traffic. We propose a novel system infrastructural solution, called CloudEye, that allows middleboxes to selectively manipulate HTTPS traffic. A key design philosophy of CloudEye is to hide all the complexity from client and server applications (thus being transparent to them) and to have middlebox-related functions managed by a dedicated OS service. CloudEye provides control of what information the middlebox can access through new techniques such as HTTPS tags and shadow connections, without changing the TLS/SSL or HTTP protocol. CloudEye is secure and easy to use. We implemented its prototype on Linux/Android, and demonstrated its low overhead and rich use cases on off-the-shelf mobile devices and cloud servers.</p>
+<p>【Keywords】:
+Middleboxes; Servers; Protocols; Access control; Cloud computing; Encryption</p>
+<h3 id="25. iMUTE: Energy-optimal update policy for perishable mobile contents.">25. iMUTE: Energy-optimal update policy for perishable mobile contents.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117544">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Joohyun">Joohyun Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Fang">Fang Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Kyunghan">Kyunghan Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shroff:Ness_B=">Ness B. Shroff</a></p>
+<p>【Abstract】:
+Mobile applications that provide ever-changing information such as social media and news feeds applications are designed to consistently update their contents in the background. This operation, often called &#x201C;prefetching&#x201D;, provides the users with immediate access to up-to-date contents. However, such updates often result in the unwanted side-effect of draining the battery of mobile devices. It is considered as pure waste when updated contents are not accessed before being renewed. In this paper, we develop an optimal strategy to update the contents in the background under a given energy constraint. The key challenge is to predict when the user will access the contents in a probabilistic manner from the statistics of the accessed patterns in the past. We model our problem as a constrained Markov decision process (C-MDP) and propose to tackle its high complexity with a two-step solution that combines: (1) a threshold-based backward induction algorithm for the Lagrangian relaxation of our C-MDP, and (2) an iterative root finding algorithm, iMUTE (iterative Method for optimal UpdaTe policy with Energy constraint). We prove that iMUTE converges superlinearly to the optimal solution of the original C-MDP under a mild condition. We also experimentally verify that iMUTE outperforms the periodic policy as well as the additive and multiplicative increase policies that are adopted in the Doze mode of Android systems and HUSH, in terms of user experience and energy saving.</p>
+<p>【Keywords】:
+Inspection; Batteries; Iterative methods; Facebook; Feeds; Markov processes; Androids</p>
+<h3 id="26. vPROM: VSwitch enhanced programmable measurement in SDN.">26. vPROM: VSwitch enhanced programmable measurement in SDN.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117567">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:An">An Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Guo:Yang">Yang Guo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Songqing">Songqing Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hao:Fang">Fang Hao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lakshman:T=_V=">T. V. Lakshman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Montgomery:Doug">Doug Montgomery</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sriram:Kotikalapudi">Kotikalapudi Sriram</a></p>
+<p>【Abstract】:
+While being critical to the network management, the current state of the art in network measurement is inadequate, providing surprisingly little visibility into detailed network behaviors and often requiring high level of manual intervention to operate. Such a practice becomes increasingly ineffective as the networks grow both in size and complexity. In this paper, we propose vPROM, a vSwitch enhanced SDN programmable measurement framework that automates the measurement process, minimizes the measurement resource usage, and addresses several significant technical challenges faced by early works. vPROM leverages the SDN programmability and extends the Pyretic runtime system and OpenFlow network interface to achieve the measurement automation. The required measurement resources are minimized by only acquiring the necessary statistics, made possible with instrumented Open vSwitches<sup>1</sup> with user defined monitoring capability. By decoupling monitoring from routing, vPROM reduces the interference between the measurement applications and other applications, and eliminates the frequent involvement of the controller. A vPROM prototype is implemented with DDoS and port-scan detection applications. The performance of vPROM is evaluated and the comparison results with other existing programmable measurement approaches are also presented.</p>
+<p>【Keywords】:
+Monitoring; Instruments; Control systems; Computer languages; Current measurement; Pipelines; Instruction sets</p>
+<h3 id="27. A network-centric TCP for interactive video delivery networks (VDN).">27. A network-centric TCP for interactive video delivery networks (VDN).</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117596">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/i/Islam:Md_Iftakharul">Md Iftakharul Islam</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Khan:Javed_I=">Javed I. Khan</a></p>
+<p>【Abstract】:
+Interactive video streaming requires very low latency and high throughput. Traditional latency based congestion control algorithm performs poorly in fairness. This results in very poor video quality to adaptive video streaming. Software defined networks (SDN) enables us to solve the problem by designing a network controller in the routers. This paper presents a SDN-centric TCP where sending rate of the network is calculated from the network rather than the host. Routers along the path uses a proportional integral (PI) controller to calculate the sending rate in order to reduce the queuing delay. The routers also divide the available throughput fairly among the flows. The network based controller is found more effective than the sender/receiver based controller in reducing latency and providing fairness. NC-TCP has been designed for interactive video delivery network (VDN) where the interactive video flows compete among themselves. Such differentiated service obviates the need for TCP-friendliness. We have implemented NC-TCP in Linux kernel. We have evaluated NC-TCP in Mininet for an interactive video streaming application. Our experimental results shows that NC-TCP outperforms delay-based congestion control in an interactive VDN.</p>
+<p>【Keywords】:
+Router-centric Congestion Control; SDN; Interactive Video Streaming; XCP; Linux Kernel Networking</p>
+<h3 id="28. A framework for anonymous routing in delay tolerant networks.">28. A framework for anonymous routing in delay tolerant networks.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117531">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sakai:Kazuya">Kazuya Sakai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sun:Min=Te">Min-Te Sun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Ku:Wei=Shinn">Wei-Shinn Ku</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Jie">Jie Wu</a></p>
+<p>【Abstract】:
+Security and privacy issues are considered to be two of the most significant concerns to organizations and individuals using mobile applications. In this paper, we seek to address anonymous communications in delay tolerant networks (DTNs). While many different anonymous routing protocols have been proposed for ad hoc networks, to the best of our knowledge, only variants of onion-based routing have been tailored for DTNs. Since each type of anonymous routing protocol has its advantages and drawbacks, there is no single anonymous routing protocol for DTNs that can adapt to the different levels of security requirements. In this paper, we first design a set of anonymous routing protocols for DTNs, called anonymous Epidemic and zone-based anonymous routing, based on the original anonymous routing protocols for ad hoc networks. Then, we propose a framework of anonymous routing (FAR) for DTNs, which subsumes all the aforementioned protocols. By tuning its parameters, the proposed FAR is able to outperform onion-based, anonymous Epidemic, and zone-based routing. In addition, numerical analyses for the traceable rate and node anonymity models are built. Extensive simulations using randomly generated graphs as well as real traces are conducted to demonstrate that given appropriate parameter settings, our FAR outperforms all the existing anonymous routing protocols for DTNs.</p>
+<p>【Keywords】:
+Delay tolerant networks; DTNs; anonymous routing</p>
+<h3 id="29. Toward a programmable FIB caching architecture.">29. Toward a programmable FIB caching architecture.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117584">Paper Link</a>】    【Pages】:1-2</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Grigoryan:Garegin">Garegin Grigoryan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Yaoqing">Yaoqing Liu</a></p>
+<p>【Abstract】:
+The current Internet routing ecosystem is neither sustainable nor economical. More than 711K IPv4 routes and more than 41K IPv6 routes exist in current global Forwarding Information Base (FIBs) with growth rates increasing. This rapid growth has serious consequences, such as creating the need for costly FIB memory upgrades and increased potential for Internet service outages. And while FIB memories are power-hungry and prohibitively expensive, more than 70% of the routes in FIBs carry no traffic for long time periods, a wasteful use of these expensive resources. Taking advantage of the emerging concept of programmable data plane, we design a programmable FIB caching architecture to address the existing concerns. Our preliminary evaluation results show that the architecture can significantly mitigate the global routing scalability and poor FIB utilization issues.</p>
+<p>【Keywords】:
+Random access memory; Routing; Hardware; Ecosystems; Web and internet services; Pipelines</p>
+<h3 id="30. When deep learning meets edge computing.">30. When deep learning meets edge computing.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117585">Paper Link</a>】    【Pages】:1-2</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Huang:Yutao">Yutao Huang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Ma:Xiaoqiang">Xiaoqiang Ma</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fan:Xiaoyi">Xiaoyi Fan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Jiangchuan">Jiangchuan Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gong:Wei">Wei Gong</a></p>
+<p>【Abstract】:
+The state-of-the-art cloud computing platforms are facing challenges, such as the high volume of crowdsourced data traffic and highly computational demands, involved in typical deep learning applications. More recently, Edge Computing has been recently proposed as an effective way to reduce the resource consumption. In this paper, we propose an edge learning framework by introducing the concept of edge computing and demonstrate the superiority of our framework on reducing the network traffic and running time.</p>
+<p>【Keywords】:
+Servers; Cloud computing; Machine learning; Training data; Principal component analysis; Edge computing; Feature extraction</p>
+<h3 id="31. MSAID: Automated interference detection for multiple SDN applications.">31. MSAID: Automated interference detection for multiple SDN applications.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117575">Paper Link</a>】    【Pages】:1-2</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Yahui">Yahui Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Zhiliang">Zhiliang Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yao:Jiangyuan">Jiangyuan Yao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yin:Xia">Xia Yin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shi:Xingang">Xingang Shi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Jianping">Jianping Wu</a></p>
+<p>【Abstract】:
+Multiple SDN applications can make several harmful interferences unintentionally, although each individual application may be properly developed. This paper proposes a Multiple SDN Applications Interference Detector (MSAID). To bridge the gap between the source code of applications and the actual interferences, we leverage symbolic execution and constraint solving to obtain how the event handler handles the input messages. We then analyze the complex interaction of multiple applications and present novel methods to identify the interferences. Finally, we evaluate its correctness and prove its usefulness with a series of SDN applications.</p>
+<p>【Keywords】:
+Interference; Switches; Concrete; Guidelines; Reliability; Testing; Servers</p>
+<h3 id="32. The first experimental SDR platform for inband D2D communications in 5G.">32. The first experimental SDR platform for inband D2D communications in 5G.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117580">Paper Link</a>】    【Pages】:1-2</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/e/Engelhardt:Max">Max Engelhardt</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Asadi:Arash">Arash Asadi</a></p>
+<p>【Abstract】:
+Experimental setups for cellular communications have always been a rare commodity in academia. The advent of software-defined radios (SDRs) paved the way for researchers to prototype their ideas on real hardware. However, existing SDR platforms and their associated reference design codes mostly provide basic cellular functionality with limitations such as low numbers of users and computational capacity. In this demo, we demonstrate the first SDR-based testbed for inband D2D communications using LabVIEW Communications and the USRP hardware platform. Furthermore, we implement a light-weight quality-aware scheduler which adaptively switches communication links from D2D to cellular and vice versa.</p>
+<p>【Keywords】:
+Device-to-device communication; Long Term Evolution; Computer architecture; Downlink; Uplink; 5G mobile communication; Hardware</p>
+<h3 id="33. VMS: Traffic balancing based on virtual switches in datacenter networks.">33. VMS: Traffic balancing based on virtual switches in datacenter networks.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117566">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Zhaogeng">Zhaogeng Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bi:Jun">Jun Bi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Yiran">Yiran Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dogar:Abdul_Basit">Abdul Basit Dogar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/q/Qin:Chengwei">Chengwei Qin</a></p>
+<p>【Abstract】:
+There have been many traffic balancing solutions for datacenter networks. All of them require modifications to the network fabric or/and virtual machines. In this paper, we propose Virtual Multi-channel Scatter (VMS), a new traffic balancing solution in datacenter networks. VMS works in the virtual switches between the network fabric and virtual machines. It can be deployed by datacenter operators at a relatively low cost without extra restrictions to virtual machine users. VMS scatters packets in one TCP flow to several different forwarding paths. It employs an adaptive path selection based on the virtual window size of different paths. We implemented VMS based on OVS. Our evaluation demonstrates that VMS improves traffic balancing very well, and the performance of VMS is approximate to MPTCP in almost all the cases, while only modifies virtual switches. Further, the overhead of VMS is tolerable.</p>
+<p>【Keywords】:
+Datacenter Network; Traffic Balancing; ECMP; MPTCP; VMS</p>
+<h3 id="34. Enabling seamless WiGig/WiFi handovers in tri-band wireless systems.">34. Enabling seamless WiGig/WiFi handovers in tri-band wireless systems.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117571">Paper Link</a>】    【Pages】:1-2</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Yao=Yu">Yao-Yu Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Chi=Yu">Chi-Yu Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Wei=Han">Wei-Han Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yeh:Chia=Jui">Chia-Jui Yeh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Kuochen">Kuochen Wang</a></p>
+<p>【Abstract】:
+WiGig enables wireless multi-gigabit communication over 60GHz band. However, its usage scenarios may be constrained by two major limitations: line-of-sight propagation and very short transmission range. We seek to boost the WiGig's usability by using WiFi to complement its limitations in tri-band (2.4/5/60GHz) wireless systems. Our goal is to let a tri-band client have multimedia services at the WiGig's very high speed without any hassle. When the WiGig link is down or performs bad, not only can the client temporarily handover to WiFi without service interruption, but its ongoing multimedia services can also adapt to the WiFi's slower link. Though the IEEE 802.11ad standard has proposed an FST (Fast Session Transfer) mechanism to support handover operations at the link layer, it does not satisfy our goal due to two reasons. First, it does not specify when to perform WiGig/WiFi handovers. Second, it is not application-aware to achieve the service adaptation. To this end, we design and implement an application-aware, seamless WiGig/WiFi handover solution above the network layer. It ensures timely handover trigger for the WiGig's abrupt link interruption, keeps service continuity during handovers, and adapts multimedia service qualities to different WiGig/WiFi links. Our demo confirms its viability. We show that a video streaming service at the client is not interrupted during WiGig/WiFi handovers, which are triggered by mobility or the WiGig's signal blockage, but smoothly switches between different resolutions according to different links.</p>
+<p>【Keywords】:
+Handover; Wireless fidelity; Streaming media; Wireless communication; Multimedia communication; Throughput</p>
+<h3 id="35. SocialGate: Managing large-scale social data on home gateways.">35. SocialGate: Managing large-scale social data on home gateways.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117590">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/k/Koll:David">David Koll</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lechler:Dieter">Dieter Lechler</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fu_0001:Xiaoming">Xiaoming Fu</a></p>
+<p>【Abstract】:
+Today, Online Social Networks (OSNs) are ubiquitous means of communication. In order to prevent the misuse of personal user data by OSN providers, various research efforts have produced a multitude of approaches to decentralize OSNs in the past decade. The most critical challenge for these systems is to replace the infrastructure of centralized OSNs. That is, they need to handle the large amounts of data uploaded by users on one end, and requests towards that data on the other end. Typically, existing approaches instrumentalize cloud facilities or user devices for this task. Unfortunately, they introduce either a monetary cost for users or have limited success in making data highly available. In this work we propose SocialGate, the first prototype that makes use of home routers of users as the infrastructure backbone of the OSN to avoid these shortcomings. Measurements and experiments based on real-world data support the feasibility and practicability of our approach.</p>
+<p>【Keywords】:
+Logic gates; Mirrors; Cryptography; Memory; Social network services; Servers; Time measurement</p>
+<h3 id="36. Adaptively adjusting ECN marking thresholds for datacenter networks.">36. Adaptively adjusting ECN marking thresholds for datacenter networks.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117569">Paper Link</a>】    【Pages】:1-2</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Shuo">Shuo Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Jiao">Jiao Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Huang_0005:Tao">Tao Huang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Pan:Tian">Tian Pan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu_0010:Jiang">Jiang Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Yunjie">Yunjie Liu</a></p>
+<p>【Abstract】:
+ECN thresholds have limited operational range and very strict scope. Lower thresholds exacerbate the queue underflow while higher thresholds increase the queueing delays. In this paper, an Adaptive ECN (A-ECN) marking scheme is proposed to enhance the performance of ECN. A-ECN can adaptively adjust ECN marking thresholds in different scenarios to achieve good generality. Therefore, network operators can directly deploy A-ECN in various environments regardless of underlying queue types and bandwidth.</p>
+<p>【Keywords】:
+Datacenter network; DCTCP; ECN; Congestion control</p>
+<h3 id="37. PMC: Parallel multi-protocol communication to heterogeneous IoT radios within a single WiFi channel.">37. PMC: Parallel multi-protocol communication to heterogeneous IoT radios within a single WiFi channel.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117550">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chi:Zicheng">Zicheng Chi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Yan">Yan Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yao:Yao">Yao Yao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Ting">Ting Zhu</a></p>
+<p>【Abstract】:
+The exponentially increasing number of Internet of things (IoT) devices introduces spectrum crisis to the widely used industrial, scientific, and medical (ISM) frequency band. Since IoT devices use heterogeneous radios with different bandwidths (e.g., 20 MHz for WiFi and 2 MHz for ZigBee), traditional interference avoidance methods, such as time-division multiple access (TDMA) and carrier-sense multiple access (CSMA), have very low spectrum utilization. This is because TDMA and CSMA allocate the packets at time domain, without considering the bandwidth difference of different IoT radios. To address this issue, we propose PMC, a novel communication system that enables parallel multi-protocol communication to heterogeneous IoT radios (i.e., WiFi and ZigBee) within a single WiFi channel. Our extensive evaluations show that PMC achieves the throughput of up to 121.02 kbit/s and 319.76 Mbit/s for parallel communication to ZigBee and WiFi, respectively. Compared with TDMA and CSMA, the spectrum utilization of PMC is increased by 2.3 and 1.8 times, respectively.</p>
+<p>【Keywords】:
+ZigBee; Wireless fidelity; Quadrature amplitude modulation; Table lookup; Receivers; Spread spectrum communication</p>
+<h3 id="38. Machine learning at the network edge for automated home intrusion monitoring.">38. Machine learning at the network edge for automated home intrusion monitoring.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117594">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Dhakal:Aditya">Aditya Dhakal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ramakrishnan:K=_K=">K. K. Ramakrishnan</a></p>
+<p>【Abstract】:
+Monitoring of residences and businesses can be effectively performed using machine learning algorithms. As sensors and devices used for monitoring become more complex, having humans process the information to detect intrusions would be expensive and difficult to scale. We propose an automated home/business monitoring system which resides on edge servers performing online learning on streaming data coming from homes and businesses in the neighborhood. The edge servers run Open-NetVM, a Network Function Virtualization (NFV) platform, and host multiple machine learning applications instantiated on demand. This enables us to serve a set of customers in the neighborhood on a timely basis, permitting customization and learning of the behavior of each home. We combine the results of the multiple classifiers, with each classifier examining a distinct feature related to a distinct sensor, to finally infer whether the entry is a normal one or an intrusion. Our results show that our system is able to classify intrusions better than basing the decision on a single classifier, thus reducing false alarms. We have also shown that our system can effectively scale and monitor thousands of homes.</p>
+<p>【Keywords】:
+Sensors; Monitoring; Cameras; Servers; Business; Noise measurement; Image edge detection</p>
+<h3 id="39. Towards higher throughput rate adaptation for backscatter networks.">39. Towards higher throughput rate adaptation for backscatter networks.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117565">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/g/Gong:Wei">Wei Gong</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Si">Si Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Jiangchuan">Jiangchuan Liu</a></p>
+<p>【Abstract】:
+Recently backscatter networks have received booming interest because, they offer a battery-free communication paradigm using propagation radio waves as opposed to active radios in traditional sensor networks while providing comparable sensing functionalities, ranging from light and temperature sensors to recent microphones and cameras. While sensing data on backscatter nodes has been seen on a clear path to increase in both volume and variety, backscatter communication is not well prepared and optimized for transferring such continuous and high-volume data. To bridge this gap, we propose a high-throughput rate adaptation scheme for backscatter networks by exploring the unique characteristics of backscatter links and the design space of the ISO 18000-6C (C1G2) protocol. Our key insight is that while prior work has left the downlink unattended, we observe that the quality of downlink is affected significantly by multipath fading and thus can degrade the uplink and overall throughput considerably. Therefore, we introduce a novel rate mapping algorithm that chooses the best rate for both the downlink and uplink. Also, we design an efficient channel estimation method fully compatible with the C1G2 protocol and a reliable probing trigger, substantially saving probing overhead. Our scheme is prototyped using a COTS RFID reader and tags. The results show that we achieve up to 2.5x throughput gain over state-of-the-art approaches across various mobility, channel, and network-size conditions.</p>
+<p>【Keywords】:
+Backscatter; Downlink; Uplink; Throughput; Protocols; Channel estimation; Sensors</p>
+<h3 id="40. Experimental evaluation of two OpenFlow controllers.">40. Experimental evaluation of two OpenFlow controllers.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117602">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/d/Darianian:Mohamad">Mohamad Darianian</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Williamson:Carey">Carey Williamson</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Haque:Israat">Israat Haque</a></p>
+<p>【Abstract】:
+Software-Defined Networking (SDN) can help simplify the management of today's complex networks and data centers. SDN provides a comprehensive view of the network, offering flexibility and easing automation. In SDN, traffic management functionality requires a high-performance and responsive controller. In this paper, we conduct an experimental evaluation of two open-source distributed OpenFlow controllers, namely ONOS and OpenDaylight. Specifically, we construct a testbed and use a standard benchmarking tool called Cbench to evaluate their performance. We benchmark the throughput, latency, and thread scalability of these two controllers in both physical and virtualized (OpenStack) environments. The experimental results show that ONOS provides higher throughput and lower latency than OpenDaylight, which suffers from performance problems on larger network models. Additional experiments demonstrate the effects of thread placement on the performance of these two controllers.</p>
+<p>【Keywords】:
+Throughput; Instruction sets; Sockets; Servers; Message systems; Control systems; Market research</p>
+<h3 id="41. Cotask scheduling in cloud computing.">41. Cotask scheduling in cloud computing.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117587">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhao:Yangming">Yangming Zhao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Luo:Shouxi">Shouxi Luo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Yi">Yi Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Sheng">Sheng Wang</a></p>
+<p>【Abstract】:
+Computing frameworks have been widely deployed to support global-scale services. A job typically has multiple sequential stages, where each stage is further divided into multiple parallel tasks. We call the set of all the tasks in a stage of a job a cotask. In this paper, we aim to minimize the average Cotask Completion Time (CCT) in cotask scheduling. To the best of our knowledge, there is no prior work on cotask scheduling for cloud computing. We propose the Cotask Scheduling Scheme (CSS), and take MapReduce as a representative of computing frameworks. CSS schedules cotasks following the Minimum Completion Time First (MCTF) policy, and we prove this problem is NP-hard. We formulate the model using the Integer Linear Programming (ILP), and solve it through an efficient heuristics based on ILP relaxation. Through real trace based simulations, we show that CSS is able to reduce the average CCT by up to 62.20% and 69.93% with traces from our testbed and from a large production cluster respectively.</p>
+<p>【Keywords】:
+Cascading style sheets; Processor scheduling; Schedules; Computational modeling; Servers; Heuristic algorithms</p>
+<h3 id="42. Deploying default paths by joint optimization of flow table and group table in SDNs.">42. Deploying default paths by joint optimization of flow table and group table in SDNs.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117539">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhao:Gongming">Gongming Zhao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Hongli">Hongli Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Shigang">Shigang Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Huang:Liusheng">Liusheng Huang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Pengzhan">Pengzhan Wang</a></p>
+<p>【Abstract】:
+Software Defined Networking (SDN) separates the control plane from the data plane to ease network management and provide flexibility in packet routing. The control plane interacts with the data plane through the forwarding tables, usually including a flow table and a group table, at each switch. Due to high cost and power consumption of Ternary Content Addressable Memory (TCAM), commodity switches can only support flow/group tables of limited size, which presents serious challenge for SDN to scale to large networks. One promising approach to address the scalability problem is to deploy aggregate default paths specified by wildcard forwarding rules. However, the multi-dimensional interaction among numerous system parameters and performance/scalability considerations makes the problem of setting up the flow/group tables at all switches for optimal overall layout of default paths very challenging. This paper studies the joint optimization of flow/group tables in the complex setting of large-scale SDNs. We formulate this problem as an integer linear program, and prove its NP-Hardness. An efficient algorithm with bounded approximation factors is proposed to solve the problem. The properties of our algorithm are formally analyzed. We implement the proposed algorithm on an SDN testbed for experimental studies and use simulations for large-scale investigation. The experimental results and simulation results demonstrate high efficiency of our proposed algorithm.</p>
+<p>【Keywords】:
+Software Defined Networks; Default Paths; Load Balancing; Flow Table; Group Table</p>
+<h3 id="43. Analyzing public transportation mobility data for networking purposes.">43. Analyzing public transportation mobility data for networking purposes.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117593">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Suleiman:Kais_Elmurtadi">Kais Elmurtadi Suleiman</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Basir:Otman">Otman Basir</a></p>
+<p>【Abstract】:
+Utilizing vehicles for networking purposes has always been a challenge. This is mainly due to the minimum density of connected-vehicles required. The locations of these vehicles should be shareable and reasonably predictable for efficient position-based routing protocols to be implemented. Their Vehicle-to-Vehicle (V2V) communication cooperation should be well-incentivized for efficient networking to be realized. Regular vehicles struggle to have all of these properties. Public transportation vehicles, on the other hand, are well-positioned in this regard; their number is proportional to the number of city residents while being uniformly distributed throughout the day, their locations have no privacy concerns while being highly predictable and their V2V communication cooperation is easily enforceable by the single administration authority they usually have. With efficient networking, public transportation vehicles can become the reliable communication backbone for other vehicle categories. In order to investigate their networking potential, we present for the firs time, in this paper, a data analysis study of realistic public transportation mobility datasets representing the Grand River Transit bus service offered throughout the Region of Waterloo, Ontario, Canada. We show both the data preprocessing and processing phases. The processing phase is mainly based on discovering bus groups using hierarchical clustering. This is done while varying the minimum degree of intra-cluster connectivity and the maximum intra-cluster communication range. Based on this data analysis approach, we show the promising networking potential of public transportation vehicles and provide design guidelines for future networking solutions utilizing them.</p>
+<p>【Keywords】:
+Public transportation; Mobility; Data analysis; Hierarchical clustering; Vehicular Networking</p>
+<h3 id="44. Rethinking LTE network functions virtualization.">44. Rethinking LTE network functions virtualization.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117554">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/r/Raza:Muhammad_Taqi">Muhammad Taqi Raza</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Dongho">Dongho Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kim:Kyu=Han">Kyu-Han Kim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lu:Songwu">Songwu Lu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Gerla:Mario">Mario Gerla</a></p>
+<p>【Abstract】:
+LTE Network Function Virtualization (LTE-NFV) scales user services in a low cost fashion by transforming the centralized legacy LTE Core architecture to a distributed architecture. This distributed architecture makes multiple instances of LTE Network Functions (NFs) and virtualizes them on commodity data-center network. The functionality of LTE-NFV architecture breaks however, since the distributed NF instances connected via unreliable IP links delay the execution of critical events. The failure of time-critical events results in users' quality of service degradation and temporary service unavailability. In this paper, we propose a new way to virtualize LTE core network. We argue that logic-based NFs segregation should be done for NFV, instead of instance-based NFs segregation done in current NFV implementation. Our approach of `logic-based NFs segregation' combines the logic of an event into a single NF, thus localizing the execution of critical events to one virtual machine. This way, only the localized entities exchange signalling messages, and the events do not experience large delays. We further reduce the delays by exploiting the parallelism in LTE network protocols; and partition these protocols such that their signalling messages run in parallel. In addition, we eliminate unnecessary messages to reduce the signalling overhead. We build our system prototype over OpenEPC LTE core network in virtualized platform. Our results show that we can reduce event execution time and signalling overhead up to 50% and 40%, respectively.</p>
+<p>【Keywords】:
+computer centres; computer network reliability; computer networks; IP networks; Long Term Evolution; mobility management (mobile radio); virtual machines; virtualisation</p>
+<h3 id="45. Coordinating rolling software upgrades for cellular networks.">45. Coordinating rolling software upgrades for cellular networks.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117537">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/q/Qureshi:Mubashir_Adnan">Mubashir Adnan Qureshi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mahimkar:Ajay">Ajay Mahimkar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/q/Qiu:Lili">Lili Qiu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Ge:Zihui">Zihui Ge</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Max">Max Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Broustis:Ioannis">Ioannis Broustis</a></p>
+<p>【Abstract】:
+Cellular service providers continuously upgrade their network software on base stations to introduce new service features, fix software bugs, enhance quality of experience to users, or patch security vulnerabilities. A software upgrade typically requires the network element to be taken out of service, which can potentially degrade the service to users. Thus, the new software is deployed across the network using a rolling upgrade model such that the service impact during the roll-out is minimized. A sequential roll-out guarantees minimal impact but increases the deployment time thereby incurring a significant human cost and time in monitoring the upgrade. A network-wide concurrent roll-out guarantees minimal deployment time but can result in a significant service impact. The goal is to strike a balance between deployment time and service impact during the upgrade. In this paper, we first present our findings from analyzing upgrades in operational networks and discussions with network operators and exposing the challenges in rolling software upgrades. We propose a new framework Concord to effectively coordinate software upgrades across the network that balances the deployment time and service impact. We evaluate Concord using real-world data collected from a large operational cellular network and demonstrate the benefits and tradeoffs. We also present a prototype deployment of Concord using a small-scale LTE testbed deployed indoors in a corporate building.</p>
+<p>【Keywords】:
+Base stations; Software; Cellular networks; Schedules; Long Term Evolution; Monitoring; Urban areas</p>
+<h3 id="46. SICS: Secure and dynamic middlebox outsourcing.">46. SICS: Secure and dynamic middlebox outsourcing.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117581">Paper Link</a>】    【Pages】:1-2</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Huazhe">Huazhe Wang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li:Xin">Xin Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/q/Qian_0001:Chen">Chen Qian</a></p>
+<p>【Abstract】:
+Outsourcing middleboxes brings threats to the enterprise's private information including the trafflc and rules of middleboxes. We present a secure and dynamic middlebox outsourcing framework SICS, short for Secure In-Cloud Service. SICS encrypts each packet header and uses a label for in-cloud rule matching, which enables the cloud to perform its functionalities correctly with minimum header information leakage.</p>
+<p>【Keywords】:
+Middleboxes; Silicon carbide; Cloud computing; Logic gates; Switches; Outsourcing; Cryptography</p>
+<h3 id="47. GSC: Greedy shard caching algorithm for improved I/O efficiency in GraphChi.">47. GSC: Greedy shard caching algorithm for improved I/O efficiency in GraphChi.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117588">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Li:Dagang">Dagang Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zheng:Zehua">Zehua Zheng</a></p>
+<p>【Abstract】:
+Disk-based large scale graph computation on a single machine has been attracting much attention, with GraphChi as one of the most well-accepted solutions. However, we find out that the performance of GraphChi becomes I/O-constrained when memory is moderately abundant, and from some point adding more memory does not help with the performance any more. In this work, a greedy caching algorithm GSC is proposed for GraphChi to make better use of the memory. It alleviates the I/O constraint by caching and delaying the write-backs of GraphChi shards that have already been loaded into the memory. Experimental results show that by minimizing unnecessary I/Os, GSC can be up to 4x faster during computation than standard GraphChi under memory constraint, and achieve about 3x performance gain when sufficient memory is available.</p>
+<p>【Keywords】:
+Graph computaion; GraphChi; GSC</p>
+<h3 id="48. When creek meets river: Exploiting high-bandwidth circuit switch in scheduling multicast data.">48. When creek meets river: Exploiting high-bandwidth circuit switch in scheduling multicast data.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117591">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sun:Xiaoye_Steven">Xiaoye Steven Sun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Ng:T=_S=_Eugene">T. S. Eugene Ng</a></p>
+<p>【Abstract】:
+Data multicast is an important data traffic pattern in today's data center running big data oriented applications. The physical layer multicast capability enabled by the emerging technologies used to build circuit switches exhibits huge benefit in transferring multicast data. This paper tackles the problem of scheduling multicast data transfer in high-bandwidth circuit switch. The scheduler aims at minimizing the average demand completion time to deliver the most benefit to the applications. Our algorithm exhibits up to 13.4&#x00D7; improvement comparing with the state-of-the-art solution.</p>
+<p>【Keywords】:
+Switching circuits; Bandwidth; Servers; Ports (Computers); Scheduling algorithms; Receivers</p>
+<h3 id="49. The dynamic cuckoo filter.">49. The dynamic cuckoo filter.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117563">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Hanhua">Hanhua Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liao:Liangyi">Liangyi Liao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jin:Hai">Hai Jin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wu:Jie">Jie Wu</a></p>
+<p>【Abstract】:
+The emergence of large-scale dynamic sets in real applications creates stringent requirements for approximate set representation structures: 1) the capacity of the set representation structures should support flexibly extending or reducing to cope with dynamically changing of set size; 2) the set representation structures should support reliable delete operation. Existing techniques for approximate set representation, e.g., the cuckoo filter, the Bloom filter and its variants cannot meet both the requirements of a dynamic set. To solve the problem, in this paper we propose the dynamic cuckoo filter (DCF) to support reliable delete operation and elastic capacity for dynamic set representation and membership testing. Two factors contribute to the efficiency of the DCF design. First, the data structure of a DCF is extendable, making the representation of a dynamic set space efficient. Second, a DCF utilizes a monopolistic fingerprint for representing an item and guarantees reliable delete operation. Experiment results show that compared to the existing state-of-the-art designs, DCF achieves 75% reduction in memory cost, 50% improvement in construction speed, and 80% improvement in speed of membership query. We implement a prototype file backup system and use DCF for data deduplication. Comprehensive experiment results demonstrate the efficiency of our DCF design compared to existing schemes.</p>
+<p>【Keywords】:
+Dynamic set representation; set membership testing; cuckoo filter</p>
+<h3 id="50. SyncCoding: A compression technique exploiting references for data synchronization services.">50. SyncCoding: A compression technique exploiting references for data synchronization services.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117562">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/n/Nam:Wooseung">Wooseung Nam</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Joohyun">Joohyun Lee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lee:Kyunghan">Kyunghan Lee</a></p>
+<p>【Abstract】:
+In this work, we raise a question on why the abundant information previously shared between a server and its client is not effectively utilized in the exchange of a new data which may be highly correlated with the shared data. We formulate this question as an encoding problem that is applicable to general data synchronization services including a wide range of Internet services such as cloud data synchronization, web browsing, messaging, and even data streaming. To this problem, we propose a new encoding technique, SyncCoding that maximally replaces subsets of the data to be transmitted with the coordinates pointing to the matching subsets included in the set of relevant shared data, called references. SyncCoding can be easily integrated into a transport layer protocol such as HTTP and enables significant reduction of network traffic. Our experimental evaluations of SyncCoding implemented in Linux shows that it outperforms existing popular encoding techniques, Brotli, LZMA, Deflate, and Deduplication in two practical use networking applications: cloud data sharing and web browsing. The gains of SyncCoding over Brotli, LZMA, Deflate, and Deduplication in the encoded size to be transmitted are shown to be about 12.4%, 20.1%, 29.9%, and 61.2% in the cloud data sharing and about 78.3%, 79.6%, 86.1%, and 92.9% in the web browsing, respectively. The gains of SyncCoding over Brotli, LZMA, and Deflate when Deduplication is applied in advance are about 7.4%, 10.6%, and 17.4% in the cloud data sharing and about 79.4%, 82.0%, and 83.2% in the web browsing, respectively.</p>
+<p>【Keywords】:
+Synchronization; Cloud computing; Channel coding; Distributed databases; Indexes; Redundancy</p>
+<h3 id="51. BlueCoDE: Bluetooth coordination in dense environment for better coexistence.">51. BlueCoDE: Bluetooth coordination in dense environment for better coexistence.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117534">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sun:Weiping">Weiping Sun</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Koo:Jonghoe">Jonghoe Koo</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Byeon:Seongho">Seongho Byeon</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Park:Woojin">Woojin Park</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lim:Sangsoon">Sangsoon Lim</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Ban:Daehyun">Daehyun Ban</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Choi:Sunghyun">Sunghyun Choi</a></p>
+<p>【Abstract】:
+Dense Wi-Fi and Bluetooth (BT) environments become increasingly common so that the coexistence issue between Wi-Fi and BT is imperative to solve. In this paper, we propose BlueCoDE, a coordination scheme for multiple neighboring BT piconets, to make them collision-free and less harmful to Wi-Fi. BlueCoDE reuses BT's existing PHY and MAC design, thus making it practically feasible. We implement a prototype of BlueCoDE on Ubertooth One platform and corroborate the performance gain via analysis, NS-3 simulations, and prototype-based experiments. Our experimental results show that with merely 10 legacy BT piconets, neighboring Wi-Fi network becomes useless achieving under 1 Mb/s throughput, while BlueCoDE enables the Wi-Fi throughput always remain above 12 Mb/s. We expect BlueCoDE to be a breakthrough solution for coexistence in dense Wi-Fi and BT environments.</p>
+<p>【Keywords】:
+Wireless fidelity; Interference; Kernel; Bluetooth; Wireless communication; Synchronization</p>
+<h3 id="52. Popularity-aware differentiated distributed stream processing on skewed streams.">52. Popularity-aware differentiated distributed stream processing on skewed streams.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117551">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Hanhua">Hanhua Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Fan">Fan Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jin:Hai">Hai Jin</a></p>
+<p>【Abstract】:
+Real-world stream data with skewed distribution raises unique challenges to distributed stream processing systems. Existing stream workload partitioning schemes usually use a &#x201C;one size fits all&#x201D; design, which leverage either a shuffle grouping or a key grouping strategy for partitioning the stream workloads among multiple processing units, leading to notable problems of unsatisfied system throughput and processing latency. In this paper, we show that the key grouping based schemes result in serious load imbalance and low computation efficiency in the presence of data skewness while the shuffle grouping schemes are not scalable in terms of memory space. We argue that the key to efficient stream scheduling is the popularity of the stream data. We propose and implement a differentiated distributed stream processing system, call DStream, which assigns the popular keys using shuffle grouping while assigns unpopular ones using key grouping. We design a novel efficient and light-weighted probabilistic counting scheme for identifying the current hot keys in dynamic real-time streams. Two factors contribute to the power of this design: 1) the probabilistic counting scheme is extremely computation and memory efficient, so that it can be well integrated in processing instances in the system; 2) the scheme can adapt to the popularity changes in the dynamic stream processing environment. We implement the DStream system on top of Apache Storm. Experiment results using large-scale traces from real-world systems show that DStream achieves a 2.3&#x00D7; improvement in terms of processing throughput and reduces the processing latency by 64% compared to state-of-the-art designs.</p>
+<p>【Keywords】:
+distributed stream processing system; skewness; load balance</p>
+<h3 id="53. Wireless network instabilities in the wild: Prevalence, App (non)resilience, and OS remedy.">53. Wireless network instabilities in the wild: Prevalence, App (non)resilience, and OS remedy.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117568">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Lai:Zeqi">Zeqi Lai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cui_0001:Yong">Yong Cui</a> ; <a href="http://dblp.uni-trier.de/pers/hd/j/Jiang:Yimin">Yimin Jiang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Xiaomeng">Xiaomeng Chen</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Y=_Charlie">Y. Charlie Hu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Tan:Kun">Kun Tan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Dai:Minglong">Minglong Dai</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zheng_0003:Kai">Kai Zheng</a></p>
+<p>【Abstract】:
+While the bandwidth and latency improvement of both WiFi and cellular data networks in the past decade are plenty evident, the extent of signal strength fluctuation and network disruptions (unexpected switching or disconnections) experienced by mobile users in today's network deployment remains less clear. This paper makes three contributions. First, we conduct the first extensive measurement of network disruptions and signal strength fluctuations (together denoted as instabilities) experienced by 2000 smartphones in the wild. Our results show that network disruptions and signal strength fluctuations remain prevalent as we moved into the 4G era. Second, we study how well popular mobile apps today handle such network instabilities. Our results show that even some of the most popular mobile apps do not implement any disruption-tolerant mechanisms. Third, we present JANUS, an intelligent interface management framework that exploits the multiple interfaces on a handset to transparently handle network disruptions and improve apps' QoE. We have implemented JANUS on Android and our evaluation using a set of popular apps shows that Janus can (1) transparently and efficiently handle network disruptions, (2) reduce video stalls by 2.9 times and increase 31% of the time of good voice quality compared to naive solutions.</p>
+<p>【Keywords】:
+Wireless fidelity; Mobile communication; Mobile computing; Switches; Smart phones; Bandwidth</p>
+<h3 id="54. TorPolice: Towards enforcing service-defined access policies for anonymous communication in the Tor network.">54. TorPolice: Towards enforcing service-defined access policies for anonymous communication in the Tor network.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117564">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Zhuotao">Zhuotao Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Liu:Yushan">Yushan Liu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Winter:Philipp">Philipp Winter</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mittal:Prateek">Prateek Mittal</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Yih=Chun">Yih-Chun Hu</a></p>
+<p>【Abstract】:
+Tor is the most widely used anonymity network, currently serving millions of users each day. However, there is no access control in place for all these users, leaving the network vulnerable to botnet abuse and attacks. For example, criminals frequently use exit relays as stepping stones for attacks, causing service providers to serve CAPTCHAs to exit relay IP addresses or blacklisting them altogether, which leads to severe usability issues for legitimate Tor users. To address this problem, we propose TorPolice, the first privacy-preserving access control framework for Tor. TorPolice enables abuse-plagued service providers such as Yelp to enforce access rules to police and throttle malicious requests coming from Tor while still providing service to legitimate Tor users. Further, TorPolice equips Tor with global access control for relays, enhancing Tor's resilience to botnet abuse. We show that TorPolice preserves the privacy of Tor users, implement a prototype of TorPolice, and perform extensive evaluations to validate our design goals.</p>
+<p>【Keywords】:
+Relays; Access control; CAPTCHAs; IP networks; Privacy; Servers</p>
+<h3 id="55. Stabilizing BGP through distributed elimination of recurrent routing loops.">55. Stabilizing BGP through distributed elimination of recurrent routing loops.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117560">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sobrinho:Jo=atilde=o_Luis">João Luis Sobrinho</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fialho:David">David Fialho</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mateus:Paulo">Paulo Mateus</a></p>
+<p>【Abstract】:
+Despite years of research, the Internet still lacks a routing protocol with guaranteed termination. As is well-known, decentralization of routing decisions among the Autonomous Systems (ASes) that comprise the Internet may result in permanent oscillations of the state of its routing protocol - the Border Gateway Protocol (BGP). Some permanent oscillations are made from routing loops - the propagation of routing messages around the cycles of a network - that come back time and again. We discovered that the routing loop detection capability of BGP can be sharpened to predict which routing loops potentially recur and that the import policies can be adjusted to prevent the recurrence. The resulting protocol, named Self-Stable BGP (SS-BGP), is more stable than BGP. For the broad and common class of isotone routing policies, all permament oscillations are made from recurrent routing loops. For this class of routing policies, SS-BGP terminates. Our simulations with realistic Internet topologies and realistic variations of the Gao-Rexford (GR) inter-AS routing policies show that SS-BGP arrives at stable states at the expense of alterations in the import policies of only a handful of ASes.</p>
+<p>【Keywords】:
+Routing; Peer-to-peer computing; Routing protocols; Oscillators; Business; Internet</p>
+<h3 id="56. A customized and cost-efficient backup scheme in software-defined networks.">56. A customized and cost-efficient backup scheme in software-defined networks.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117595">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhu:Zhijie">Zhijie Zhu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Li_0006:Qing">Qing Li</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xu:Mingwei">Mingwei Xu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Song:Ziyan">Ziyan Song</a> ; <a href="http://dblp.uni-trier.de/pers/hd/x/Xia:Shu=Tao">Shu-Tao Xia</a></p>
+<p>【Abstract】:
+Among the schemes proposed for failure recovery in software-defined networks, installing backup paths in advance is considered to be an effective approach to reduce the recovery latency. However, the pre-installation poses undue storage overheads on flow tables. In this paper, we propose a customized and cost-efficient backup scheme, which achieves fast recovery from any single-link failure. We introduce an improved breadth first search algorithm to construct the customized backup paths of flows to accommodate their diverse routing demands. By analyzing the path characteristics carefully, we observe that non-conflicted backup paths can be aggregated with each other to reduce the number of backup rules. We formulate this backup path aggregation as an optimization problem. The challenge is how to aggregate the backup paths without causing routing ambiguity. To this end, we design a two-stage aggregation (2SA) algorithm. At its core, 2SA leverages conflict matrixes to guarantee the correctness of aggregation. We evaluate our scheme comprehensively with both the real-world topologies and generated topologies. Simulation results show that our scheme can pre-install the customized backup paths with much fewer, typically one order of magnitude, backup rules compared to the traditional flow-based protection without aggregation.</p>
+<p>【Keywords】:
+Routing; Algorithm design and analysis; Aggregates; Optimization; Topology; Network topology; Delays</p>
+<h3 id="57. An empirical model of packet processing delay of the Open vSwitch.">57. An empirical model of packet processing delay of the Open vSwitch.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117597">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/s/Sattar:Danish">Danish Sattar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Matrawy:Ashraf">Ashraf Matrawy</a></p>
+<p>【Abstract】:
+Network virtualization offers flexibility by decoupling virtual network from the underlying physical network. Software-Defined Network (SDN) could utilize the virtual network. For example, in Software-Defined Networks, the entire network can be run on commodity hardware and operating systems that use virtual elements. However, this could present new challenges of data plane performance. In this paper, we present an empirical model of the packet processing delay of a widely used OpenFlow virtual switch, the Open vSwitch. In the empirical model, we analyze the effect of varying Random Access Memory (RAM) and network parameters on the performance of the Open vSwitch. Our empirical model captures the non-network processing delays, which could be used in enhancing the network modeling and simulation.</p>
+<p>【Keywords】:
+Delays; Random access memory; Switches; Analytical models; Kernel; Hardware; Queueing analysis</p>
+<h3 id="58. Investigating the impact of cache pollution attacks in heterogeneous cellular networks.">58. Investigating the impact of cache pollution attacks in heterogeneous cellular networks.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117572">Paper Link</a>】    【Pages】:1-2</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/p/Paul:Sibendu">Sibendu Paul</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Seetharam:Anand">Anand Seetharam</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mukherjee:Amitava">Amitava Mukherjee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Naskar:Mrinal_Kanti">Mrinal Kanti Naskar</a></p>
+<p>【Abstract】:
+With the growth of Internet-of-Things, mobile data traffic is expected to increase exponentially. To support this rapid growth, heterogeneous cellular networks comprising of femtocells with storage capabilities along with macrocell base stations have been proposed. In this paper, we first investigate the performance impact of a simple randomized cache pollution attack, where the attacker pollutes the cache at the femtocell by requesting unpopular content. We then adopt a principled approach based on the characteristic time of a content in a cache to design an optimized attack strategy. Our experiments show that the proposed attack strategy outperforms the randomized attack with the same attack rate.</p>
+<p>【Keywords】:
+Pollution; Femtocells; Macrocell networks; Delays</p>
+<h3 id="59. Yosemite: Efficient scheduling of weighted coflows in data centers.">59. Yosemite: Efficient scheduling of weighted coflows in data centers.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117586">Paper Link</a>】    【Pages】:1-2</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Han">Han Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shi:Xingang">Xingang Shi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/y/Yin:Xia">Xia Yin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Wang:Zhiliang">Zhiliang Wang</a></p>
+<p>【Abstract】:
+Recently, coflow has been proposed as a new abstraction to capture the communication patterns in a rich set of data parallel applications in data centers. Coflows effectively model the application-level semantics of network resource usage, so high-level optimization goals, such as reducing the transfer latency of applications, can be better achieved by taking coflows as the basic elements in network resource allocation or scheduling. Although efficient coflow scheduling methods have been studied, in this paper, we propose to schedule weighted coflows as a further step in this direction, where weights are used to express the emergences or priorities of different coflows or their corresponding applications. We design an information-agnostic online algorithm to dynamically schedule coflows according to their weights and the instantaneous network condition. Then We implement the algorithm in a scheduling system named Yosemite. Our evaluation results show that, compared to the latest information-agnostic coflow scheduling algorithms, Yosemite can reduce more than 40% of the WCCT (Weighted Coflow Completion Time), and more than 30% of the completion time for coflows with above-the-average level of emergence. It even outperforms the most efficient clairvoyant coflow scheduling method by reducing around 30% WCCT, and 25%~30% of the completion time for coflows with above-the-average emergence, respectively.</p>
+<p>【Keywords】:
+Schedules; Processor scheduling; Heuristic algorithms; Bandwidth; Ports (Computers); Semantics</p>
+<h3 id="60. NF-switch: VNFs-enabled SDN switches for high performance service function chaining.">60. NF-switch: VNFs-enabled SDN switches for high performance service function chaining.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117601">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/h/Hsieh:Cheng=Liang">Cheng-Liang Hsieh</a> ; <a href="http://dblp.uni-trier.de/pers/hd/w/Weng:Ning">Ning Weng</a></p>
+<p>【Abstract】:
+Current Software-Defined Networking (SDN) switch examines many packet headers to support the flow-based packet forwarding. To support the application-based forwarding for a service function chaining (SFC), SDN switch requires packet header modifications to identify the processing status and multiple packet matchings to steer the network traffics to different VMs in a specific order. Both challenges require significant computation resources in a system and result in severe system performance degradation. To improve the system performance and keep the flexibility, this paper proposes NF-Switch to eliminate the requirement of packet modifications and to reduce the number of matchings for the application-based forwarding. Compared to the native implementation, our experimental results show that NF-Switch reduces the system processing latency to one quarter and increases the system throughput about 3 times for a SFC with 10 network functions (NFs). Moreover, the proposed solution maintains the content switching time to update the implemented SFC for a better system scalability regarding to the number of NFs in a SFC.</p>
+<p>【Keywords】:
+System performance; Servers; Control systems; Middleboxes; Software; Noise measurement; Scalability</p>
+<h3 id="61. Suffering from buffering? Detecting QoE impairments in live video streams.">61. Suffering from buffering? Detecting QoE impairments in live video streams.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117561">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Ahmed:Adnan">Adnan Ahmed</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shafiq:Zubair">Zubair Shafiq</a> ; <a href="http://dblp.uni-trier.de/pers/hd/b/Bedi:Harkeerat">Harkeerat Bedi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Khakpour:Amir_R=">Amir R. Khakpour</a></p>
+<p>【Abstract】:
+Fueled by increasing network bandwidth and decreasing costs, the popularity of over-the-top large-scale live video streaming has dramatically increased over the last few years. In this paper, we present a measurement study of adaptive bitrate video streaming for a large-scale live event. Using server-side logs from a commercial content delivery network, we study live video delivery for the annual Academy Awards event that was streamed by hundreds of thousands of viewers in the United States. We analyze the relationship between Quality-of-Experience (QoE) and user engagement. We first study the impact of buffering, average bitrate, and bitrate fluctuations on user engagement. To account for interdependencies among QoE metrics and other confounding factors, we use quasi-experiments to quantify the causal impact of different QoE metrics on user engagement. We further design and implement a Principal Component Analysis (PCA) based technique to detect live video QoE impairments in real-time. We then use Hampel filters to detect QoE impairments and report 92% accuracy with 20% improvement in true positive rate as compared to baselines. Our approach allows content providers to detect and mitigate QoE impairments on the fly instead of relying on post-hoc analysis.</p>
+<p>【Keywords】:
+Streaming media; Bit rate; Internet; Servers; Bandwidth</p>
+<h3 id="62. Impacts of task placement and bandwidth allocation on stream analytics.">62. Impacts of task placement and bandwidth allocation on stream analytics.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117589">Paper Link</a>】    【Pages】:1-6</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/a/Aljoby:Walid_A=_Y=">Walid A. Y. Aljoby</a> ; <a href="http://dblp.uni-trier.de/pers/hd/f/Fu:Tom_Z=_J=">Tom Z. J. Fu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Ma:Richard_T=_B=">Richard T. B. Ma</a></p>
+<p>【Abstract】:
+We consider data intensive cloud-based stream analytics where data transmission through the underlying communication network is the cause of the performance bottleneck. Two key inter-related problems are investigated: task placement and bandwidth allocation. We seek to answer the following questions. How does task placement make impact on the application-level throughput? Does a careful bandwidth allocation among data flows traversing a bottleneck link results in better performance? In this paper, we address these questions by conducting measurement-driven analysis in a SDN-enabled computer cluster running stream processing applications on top of Apache Storm. The results reveal (i) how tasks are assigned to computing nodes make large difference in application level performance; (ii) under certain task placement, a proper bandwidth allocation helps further improve the performance as compared to the default TCP mechanism; and (iii) task placement and bandwidth allocation are collaboratively making effects in overall performance.</p>
+<p>【Keywords】:
+Channel allocation; Topology; Bandwidth; Storms; Data communication; Throughput</p>
+<h3 id="63. Reflection: Automated test location selection for cellular network upgrades.">63. Reflection: Automated test location selection for cellular network upgrades.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117553">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/q/Qureshi:Mubashir_Adnan">Mubashir Adnan Qureshi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mahimkar:Ajay">Ajay Mahimkar</a> ; <a href="http://dblp.uni-trier.de/pers/hd/q/Qiu:Lili">Lili Qiu</a> ; <a href="http://dblp.uni-trier.de/pers/hd/g/Ge:Zihui">Zihui Ge</a> ; <a href="http://dblp.uni-trier.de/pers/hd/p/Puthenpura:Sarat_C=">Sarat C. Puthenpura</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mir:Nabeel">Nabeel Mir</a> ; <a href="http://dblp.uni-trier.de/pers/hd/a/Ahuja:Sanjeev">Sanjeev Ahuja</a></p>
+<p>【Abstract】:
+Cellular networks are constantly evolving due to frequent changes in radio access and end user equipment technologies, dynamic applications and associated trafflc mixes. Network upgrades should be performed with extreme caution since millions of users heavily depend on the cellular networks for a wide range of day to day tasks, including emergency and alert notifications. Before upgrading the entire network, it is important to conduct field evaluation of upgrades. Field evaluations are typically cumbersome and can be time consuming; however if done correctly they can help alleviate a lot of the deployment issues in terms of service quality degradation. The choice and number of field test locations have significant impacts on the time-to-market as well as confidence in how well various network upgrades will work out in the rest of the network. In this paper, we propose a novel approach - Reflection to automatically determine where to conduct the upgrade field tests in order to accurately identify important features that affect the upgrade. We demonstrate the effectiveness of Reflection using extensive evaluation based on real traces collected from a major US cellular network as well as synthetic traces.</p>
+<p>【Keywords】:
+Planning; Cellular networks; Testing; Long Term Evolution; Degradation; Software; Feature extraction</p>
+<h3 id="64. On an impact of large content on packet-level caching of information centric networking.">64. On an impact of large content on packet-level caching of information centric networking.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117577">Paper Link</a>】    【Pages】:1-2</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yamamoto:Yoji">Yoji Yamamoto</a> ; <a href="http://dblp.uni-trier.de/pers/hd/t/Takemasa:Junji">Junji Takemasa</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Koizumi:Yuki">Yuki Koizumi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/h/Hasegawa:Toru">Toru Hasegawa</a></p>
+<p>【Abstract】:
+On the one hand packet-level caching of Information-Centric Networking (ICN) is a key to accommodating Video on Demand (VoD) movies thanks to its fine granularity caching, but on the other hand it would cause degradation in cache hit probability because each of packets constituting a content object is dealt individually. This paper analytically reveals that caching large content objects by using packet-level caching degrades caching hit probability.</p>
+<p>【Keywords】:
+Streaming media; Bit rate; Degradation; Motion pictures; Analytical models; TV; Object oriented modeling</p>
+<h3 id="65. Characterizing and optimizing background data transfers on smartwatches.">65. Characterizing and optimizing background data transfers on smartwatches.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117536">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/y/Yang_0005:Yi">Yi Yang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cao:Guohong">Guohong Cao</a></p>
+<p>【Abstract】:
+Smartwatches are quickly gaining popularity, but their limited battery life remains an important factor that adversely affects user satisfaction. To provide full functionality, smartwatches are usually connected to phones via Bluetooth. However, the Bluetooth power characteristics and the energy impact of Bluetooth data traffic have been rarely studied. To address this issue, we first establish the Bluetooth power model based on extensive measurements and a thorough examination of the Bluetooth implementation on Android smartwatches. Then we perform the first in-depth investigation of the background data transfers on smartwatches, and find that they are prevalent and consume a large amount of energy. For example, our experiments show that the smartwatch's battery life can be reduced to one third (or even worse) due to background data transfers. Such high energy cost is caused by many unnecessary data transfers and the energy inefficiency attributed to the adverse interaction between the data transfer pattern (i.e., frequently transferring small data) and the Bluetooth energy characteristics (i.e., the tail effect). Based on the identified causes, we propose four energy optimization techniques, which are fast dormancy, phone-initiated polling, two-stage sensor processing, and context-aware pushing. The first one aims to reduce tail energy for delay-tolerant data transfers. The latter three are designed for specific applications which are responsible for most background data transfers. Evaluation results show that jointly using these techniques can save 70.6% of the Bluetooth energy.</p>
+<p>【Keywords】:
+Bluetooth; Data transfer; Smart phones; Protocols; Batteries; Energy consumption; Trade agreements</p>
+<h3 id="66. Planning in compute-aggregate problems as optimization problems on graphs.">66. Planning in compute-aggregate problems as optimization problems on graphs.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117579">Paper Link</a>】    【Pages】:1-2</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/c/Chuprikov:Pavel">Pavel Chuprikov</a> ; <a href="http://dblp.uni-trier.de/pers/hd/d/Davydow:Alex">Alex Davydow</a> ; <a href="http://dblp.uni-trier.de/pers/hd/k/Kogan:Kirill">Kirill Kogan</a> ; <a href="http://dblp.uni-trier.de/pers/hd/n/Nikolenko:Sergey_I=">Sergey I. Nikolenko</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Sirotkin:Alexander_V=">Alexander V. Sirotkin</a></p>
+<p>【Abstract】:
+Efficient representation of data aggregations is a fundamental problem in modern big data applications. We present a formalization of compute-aggregate planning parameterized by the aggregation function.</p>
+<p>【Keywords】:
+Optimization; Data communication; Planning; Economics; Data aggregation; Big Data applications</p>
+<h3 id="67. SDN-based service automation for IoT.">67. SDN-based service automation for IoT.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117555">Paper Link</a>】    【Pages】:1-10</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/u/Uddin:Mostafa">Mostafa Uddin</a> ; <a href="http://dblp.uni-trier.de/pers/hd/m/Mukherjee:Sarit">Sarit Mukherjee</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chang:Hyunseok">Hyunseok Chang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/l/Lakshman:T=_V=">T. V. Lakshman</a></p>
+<p>【Abstract】:
+Bluetooth Low Energy (BLE) is a personal area wireless network technology that is of increasing importance for emerging Internet of Things (IoT) deployments. By design, BLE supports short-range, single-hop communication between a pair of BLE devices. As such, native BLE does not allow network-based policy control or in-network functions for service enhancement. These limitations are impediments to any large-scale BLE based IoT deployment (e.g., in hospital environments), where such sophisticated network-based visibility and control may be required. Relying on cloud-based solutions to meet these requirements has many known shortcomings. This paper proposes an SDN-based architecture for enabling wide area IoT deployments using BLE devices at the edge. We introduce a programmable BLE service switch (BLESS) that is transparently inserted between two communicating BLE devices. BLESS can be programmed at the service layer by a central controller to enable flexible, policy-based switching, as well as various in-network operations in BLE networks. We describe the design of BLESS, its implementation using P4 and OVS, and illustrate its utility through practical use cases.</p>
+<p>【Keywords】:
+Medical services; Protocols; Monitoring; Biomedical monitoring; Cloud computing; Switches; Heart rate</p>
+<h3 id="68. The implementation of improved MPTCP in MANETs.">68. The implementation of improved MPTCP in MANETs.</h3>
+<p>【<a href="https://doi.org/10.1109/ICNP.2017.8117583">Paper Link</a>】    【Pages】:1-2</p>
+<p>【Authors】:
+<a href="http://dblp.uni-trier.de/pers/hd/z/Zhang:Tongguang">Tongguang Zhang</a> ; <a href="http://dblp.uni-trier.de/pers/hd/z/Zhao:Shuai">Shuai Zhao</a> ; <a href="http://dblp.uni-trier.de/pers/hd/s/Shi:Yulong">Yulong Shi</a> ; <a href="http://dblp.uni-trier.de/pers/hd/r/Ren:Bingfei">Bingfei Ren</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Cheng_0001:Bo">Bo Cheng</a> ; <a href="http://dblp.uni-trier.de/pers/hd/c/Chen:Junliang">Junliang Chen</a></p>
+<p>【Abstract】:
+In some special circumstances, e.g. tsunamis, floods, battlefields, earthquakes, etc., communication infrastructures are damaged or non-existent, as well as unmanned aerial vehicle (UAV) cluster. For the communication between people or UAVs, UAVs or mobile smart devices (MSDs) can be used to construct Mobile Ad Hoc Networks (MANETs), and Multipath TCP (MPTCP) can be used to simultaneously transmit in one TCP connection via multiple interfaces of MSDs. However the original MPTCP subpaths creating algorithm can establish multiple subpaths between two adjacent nodes, thus cannot achieve true concurrent data transmission. To solve this issue, we research and improve both the algorithm of adding routing table entries and the algorithm of establishing subpaths to offer more efficient use of multiple subpaths and better network traffic load balancing. The main works are as follows: (1) improve multi-hop routing protocol; (2) run MPTCP on UAVs or MSDs; (3) improve MPTCP subpaths establishment algorithm. The results show that our algorithms have better performance than the original MPTCP in achieving higher data throughput.</p>
+<p>【Keywords】:
+Routing; Mobile computing; Ad hoc networks; Algorithm design and analysis; Routing protocols; Androids; Humanoid robots</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="https://github.com/huntercmd/ccf"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>
