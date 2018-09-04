@@ -4,6 +4,7 @@
 
 ### Change Logs
 
+- 2018/9/9  CDN 由 rawgit.com 变更为 rawcdn.githack.com
 - 2018/5/2  添加 WWW18 | ACL17 | KDD17 等共 24 个会议列表
 - 2017/7/13 添加 WWW17 | NSDI16,17 | Sigmod17 | ICDE17 | CHI17  共 6 个会议
 - 2017/3/19 添加 ICNP | NSDI | USEXNIX Security | ACSAC | NDSS | DSN | CHI  共 7 个会议
