@@ -1,0 +1,787 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://rawcdn.githack.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://rawcdn.githack.com/huntercmd/blog/d9beff1/config/css/skin.js"></script>
+<script src="https://rawcdn.githack.com/huntercmd/blog/master/config/css/classie.js"></script>
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#ICLR 2014:Banff, Canada">ICLR 2014:Banff, Canada</a><ul>
+<li><a href="#Paper Num: 88 || Session Num: 2">Paper Num: 88 || Session Num: 2</a></li>
+<li><a href="#ICLR 2014 Conference Track Submitted Papers  69">ICLR 2014 Conference Track Submitted Papers  69</a><ul>
+<li><a href="#1. Zero-Shot Learning and Clustering for Semantic Utterance Classification">1. Zero-Shot Learning and Clustering for Semantic Utterance Classification</a></li>
+<li><a href="#2. Correlation-based construction of neighborhood and edge features">2. Correlation-based construction of neighborhood and edge features</a></li>
+<li><a href="#3. Rate-Distortion Auto-Encoders">3. Rate-Distortion Auto-Encoders</a></li>
+<li><a href="#4. Learning Human Pose Estimation Features with Convolutional Networks">4. Learning Human Pose Estimation Features with Convolutional Networks</a></li>
+<li><a href="#5. An empirical analysis of dropout in piecewise linear networks">5. An empirical analysis of dropout in piecewise linear networks</a></li>
+<li><a href="#6. The return of AdaBoost.MH: multi-class Hamming trees">6. The return of AdaBoost.MH: multi-class Hamming trees</a></li>
+<li><a href="#7. Efficient Visual Coding: From Retina To V2">7. Efficient Visual Coding: From Retina To V2</a></li>
+<li><a href="#8. Deep Belief Networks for Image Denoising">8. Deep Belief Networks for Image Denoising</a></li>
+<li><a href="#9. Distinction between features extracted using deep belief networks">9. Distinction between features extracted using deep belief networks</a></li>
+<li><a href="#10. Learning Paired-associate Images with An Unsupervised Deep Learning Architecture">10. Learning Paired-associate Images with An Unsupervised Deep Learning Architecture</a></li>
+<li><a href="#11. A Simple Model for Learning Multilingual Compositional Semantics">11. A Simple Model for Learning Multilingual Compositional Semantics</a></li>
+<li><a href="#12. Exact solutions to the nonlinear dynamics of learning in deep linear neural networks">12. Exact solutions to the nonlinear dynamics of learning in deep linear neural networks</a></li>
+<li><a href="#13. Spectral Networks and Locally Connected Networks on Graphs">13. Spectral Networks and Locally Connected Networks on Graphs</a></li>
+<li><a href="#14. Group-sparse Embeddings in Collective Matrix Factorization">14. Group-sparse Embeddings in Collective Matrix Factorization</a></li>
+<li><a href="#15. Sequentially Generated Instance-Dependent Image Representations for Classification">15. Sequentially Generated Instance-Dependent Image Representations for Classification</a></li>
+<li><a href="#16. Semistochastic Quadratic Bound Methods">16. Semistochastic Quadratic Bound Methods</a></li>
+<li><a href="#17. Adaptive Feature Ranking for Unsupervised Transfer Learning">17. Adaptive Feature Ranking for Unsupervised Transfer Learning</a></li>
+<li><a href="#18. Learning generative models with visual attention">18. Learning generative models with visual attention</a></li>
+<li><a href="#19. Intriguing properties of neural networks">19. Intriguing properties of neural networks</a></li>
+<li><a href="#20. Zero-Shot Learning by Convex Combination of Semantic Embeddings">20. Zero-Shot Learning by Convex Combination of Semantic Embeddings</a></li>
+<li><a href="#21. One-Shot Adaptation of Supervised Deep Convolutional Models">21. One-Shot Adaptation of Supervised Deep Convolutional Models</a></li>
+<li><a href="#22. Nonparametric Weight Initialization of Neural Networks via Integral Representation">22. Nonparametric Weight Initialization of Neural Networks via Integral Representation</a></li>
+<li><a href="#23. OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks">23. OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks</a></li>
+<li><a href="#24. Learned versus Hand-Designed Feature Representations for 3d Agglomeration">24. Learned versus Hand-Designed Feature Representations for 3d Agglomeration</a></li>
+<li><a href="#25. An Empirical Investigation of Catastrophic Forgeting in Gradient-Based Neural Networks">25. An Empirical Investigation of Catastrophic Forgeting in Gradient-Based Neural Networks</a></li>
+<li><a href="#26. Can recursive neural tensor networks learn logical reasoning?">26. Can recursive neural tensor networks learn logical reasoning?</a></li>
+<li><a href="#27. Factorial Hidden Markov Models for Learning Representations of Natural Language">27. Factorial Hidden Markov Models for Learning Representations of Natural Language</a></li>
+<li><a href="#28. Fast Training of Convolutional Networks through FFTs">28. Fast Training of Convolutional Networks through FFTs</a></li>
+<li><a href="#29. Multi-digit Number Recognition from Street View Imagery using Deep Convolutional Neural Networks">29. Multi-digit Number Recognition from Street View Imagery using Deep Convolutional Neural Networks</a></li>
+<li><a href="#30. Neuronal Synchrony in Complex-Valued Deep Networks">30. Neuronal Synchrony in Complex-Valued Deep Networks</a></li>
+<li><a href="#31. Auto-Encoding Variational Bayes">31. Auto-Encoding Variational Bayes</a></li>
+<li><a href="#32. Improving Deep Neural Networks with Probabilistic Maxout Units">32. Improving Deep Neural Networks with Probabilistic Maxout Units</a></li>
+<li><a href="#33. Learning Type-Driven Tensor-Based Meaning Representations">33. Learning Type-Driven Tensor-Based Meaning Representations</a></li>
+<li><a href="#34. Stopping Criteria in Contrastive Divergence: Alternatives to the Reconstruction Error">34. Stopping Criteria in Contrastive Divergence: Alternatives to the Reconstruction Error</a></li>
+<li><a href="#35. Unit Tests for Stochastic Optimization">35. Unit Tests for Stochastic Optimization</a></li>
+<li><a href="#36. Multi-View Priors for Learning Detectors from Sparse Viewpoint Data">36. Multi-View Priors for Learning Detectors from Sparse Viewpoint Data</a></li>
+<li><a href="#37. Deep learning for neuroimaging: a validation study">37. Deep learning for neuroimaging: a validation study</a></li>
+<li><a href="#38. Large-scale Multi-label Text Classification - Revisiting Neural Networks">38. Large-scale Multi-label Text Classification - Revisiting Neural Networks</a></li>
+<li><a href="#39. Learning Non-Linear Feature Maps, With An Application To Representation Learning">39. Learning Non-Linear Feature Maps, With An Application To Representation Learning</a></li>
+<li><a href="#40. EXMOVES: Classifier-based Features for Scalable Action Recognition">40. EXMOVES: Classifier-based Features for Scalable Action Recognition</a></li>
+<li><a href="#41. How to Construct Deep Recurrent Neural Networks">41. How to Construct Deep Recurrent Neural Networks</a></li>
+<li><a href="#42. On the number of inference regions of deep feed forward networks with piece-wise linear activations">42. On the number of inference regions of deep feed forward networks with piece-wise linear activations</a></li>
+<li><a href="#43. Modeling correlations in spontaneous activity of visual cortex with centered Gaussian-binary deep Boltzmann machines">43. Modeling correlations in spontaneous activity of visual cortex with centered Gaussian-binary deep Boltzmann machines</a></li>
+<li><a href="#44. Why does the unsupervised pretraining encourage moderate-sparseness?">44. Why does the unsupervised pretraining encourage moderate-sparseness?</a></li>
+<li><a href="#45. A Generative Product-of-Filters Model of Audio">45. A Generative Product-of-Filters Model of Audio</a></li>
+<li><a href="#46. Multimodal Transitions for Generative Stochastic Networks">46. Multimodal Transitions for Generative Stochastic Networks</a></li>
+<li><a href="#47. Revisiting Natural Gradient for Deep Networks">47. Revisiting Natural Gradient for Deep Networks</a></li>
+<li><a href="#48. Learning High-level Image Representation for Image Retrieval via Multi-Task DNN using Clickthrough Data">48. Learning High-level Image Representation for Image Retrieval via Multi-Task DNN using Clickthrough Data</a></li>
+<li><a href="#49. Generative NeuroEvolution for Deep Learning">49. Generative NeuroEvolution for Deep Learning</a></li>
+<li><a href="#50. k-Sparse Autoencoders">50. k-Sparse Autoencoders</a></li>
+<li><a href="#51. An Architecture for Distinguishing between Predictors and Inhibitors in Reinforcement Learning">51. An Architecture for Distinguishing between Predictors and Inhibitors in Reinforcement Learning</a></li>
+<li><a href="#52. Sparse similarity-preserving hashing">52. Sparse similarity-preserving hashing</a></li>
+<li><a href="#53. A Primal-Dual Method for Training Recurrent Neural Networks Constrained by the Echo-State Property">53. A Primal-Dual Method for Training Recurrent Neural Networks Constrained by the Echo-State Property</a></li>
+<li><a href="#54. Approximated Infomax Early Stopping: Revisiting Gaussian RBMs on Natural Images">54. Approximated Infomax Early Stopping: Revisiting Gaussian RBMs on Natural Images</a></li>
+<li><a href="#55. Some Improvements on Deep Convolutional Neural Network Based Image Classification">55. Some Improvements on Deep Convolutional Neural Network Based Image Classification</a></li>
+<li><a href="#56. Learning Transformations for Classification Forests">56. Learning Transformations for Classification Forests</a></li>
+<li><a href="#57. Continuous Learning: Engineering Super Features With Feature Algebras">57. Continuous Learning: Engineering Super Features With Feature Algebras</a></li>
+<li><a href="#58. Network In Network">58. Network In Network</a></li>
+<li><a href="#59. Low-Rank Approximations for Conditional Feedforward Computation in Deep Neural Networks">59. Low-Rank Approximations for Conditional Feedforward Computation in Deep Neural Networks</a></li>
+<li><a href="#60. Bounding the Test Log-Likelihood of Generative Models">60. Bounding the Test Log-Likelihood of Generative Models</a></li>
+<li><a href="#61. Reference Distance Estimator">61. Reference Distance Estimator</a></li>
+<li><a href="#62. On Fast Dropout and its Applicability to Recurrent Networks">62. On Fast Dropout and its Applicability to Recurrent Networks</a></li>
+<li><a href="#63. Sparse, complex-valued representations of natural sounds learned with phase and amplitude continuity priors">63. Sparse, complex-valued representations of natural sounds learned with phase and amplitude continuity priors</a></li>
+<li><a href="#64. Learning to encode motion using spatio-temporal synchrony">64. Learning to encode motion using spatio-temporal synchrony</a></li>
+<li><a href="#65. Image Representation Learning Using Graph Regularized Auto-Encoders">65. Image Representation Learning Using Graph Regularized Auto-Encoders</a></li>
+<li><a href="#66. Deep Convolutional Ranking for Multilabel Image Annotation">66. Deep Convolutional Ranking for Multilabel Image Annotation</a></li>
+<li><a href="#67. Understanding Deep Architectures using a Recursive Convolutional Network">67. Understanding Deep Architectures using a Recursive Convolutional Network</a></li>
+<li><a href="#68. Feature Graph Architectures">68. Feature Graph Architectures</a></li>
+<li><a href="#69. Deep and Wide Multiscale Recursive Networks for Robust Image Labeling">69. Deep and Wide Multiscale Recursive Networks for Robust Image Labeling</a></li>
+</ul>
+</li>
+<li><a href="#ICLR 2014 Workshop Track Submitted Papers  19">ICLR 2014 Workshop Track Submitted Papers  19</a><ul>
+<li><a href="#70. Do Deep Nets Really Need to be Deep?">70. Do Deep Nets Really Need to be Deep?</a></li>
+<li><a href="#71. Multi-GPU Training of ConvNets">71. Multi-GPU Training of ConvNets</a></li>
+<li><a href="#72. Deep learning for class-generic object detection">72. Deep learning for class-generic object detection</a></li>
+<li><a href="#73. GPU Asynchronous Stochastic Gradient Descent to Speed Up Neural Network Training">73. GPU Asynchronous Stochastic Gradient Descent to Speed Up Neural Network Training</a></li>
+<li><a href="#74. Relaxations for inference in restricted Boltzmann machines">74. Relaxations for inference in restricted Boltzmann machines</a></li>
+<li><a href="#75. Occupancy Detection in Vehicles Using Fisher Vector Image Representation">75. Occupancy Detection in Vehicles Using Fisher Vector Image Representation</a></li>
+<li><a href="#76. Learning Information Spread in Content Networks">76. Learning Information Spread in Content Networks</a></li>
+<li><a href="#77. Stochastic Gradient Estimate Variance in Contrastive Divergence and Persistent Contrastive Divergence">77. Stochastic Gradient Estimate Variance in Contrastive Divergence and Persistent Contrastive Divergence</a></li>
+<li><a href="#78. Generic Deep Networks with Wavelet Scattering">78. Generic Deep Networks with Wavelet Scattering</a></li>
+<li><a href="#79. Learning States Representations in POMDP">79. Learning States Representations in POMDP</a></li>
+<li><a href="#80. Competitive Learning with Feedforward Supervisory Signal for Pre-trained Multilayered Networks">80. Competitive Learning with Feedforward Supervisory Signal for Pre-trained Multilayered Networks</a></li>
+<li><a href="#81. Unsupervised Feature Learning by Deep Sparse Coding">81. Unsupervised Feature Learning by Deep Sparse Coding</a></li>
+<li><a href="#82. Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps">82. Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps</a></li>
+<li><a href="#83. Distributional Models and Deep Learning Embeddings: Combining the Best of Both Worlds">83. Distributional Models and Deep Learning Embeddings: Combining the Best of Both Worlds</a></li>
+<li><a href="#84. End-to-End Text Recognition with Hybrid HMM Maxout Models">84. End-to-End Text Recognition with Hybrid HMM Maxout Models</a></li>
+<li><a href="#85. Learning Factored Representations in a Deep Mixture of Experts">85. Learning Factored Representations in a Deep Mixture of Experts</a></li>
+<li><a href="#86. Learning Semantic Script Knowledge with Event Embeddings">86. Learning Semantic Script Knowledge with Event Embeddings</a></li>
+<li><a href="#87. Unsupervised feature learning by augmenting single images">87. Unsupervised feature learning by augmenting single images</a></li>
+<li><a href="#88. Deep Learning Embeddings for Discontinuous Linguistic Units">88. Deep Learning Embeddings for Discontinuous Linguistic Units</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="ICLR 2014:Banff, Canada">ICLR 2014:Banff, Canada</h1>
+<p><a href="https://openreview.net/group?id=ICLR.cc/2014">International Conference on Learning Representations, Apr 14 - 16, 2014, Banff, Canada</a></p>
+<h2 id="Paper Num: 88 || Session Num: 2">Paper Num: 88 || Session Num: 2</h2>
+<ul>
+<li><a href="#ICLR 2014 Conference Track Submitted Papers  69">ICLR 2014 Conference Track Submitted Papers  69</a></li>
+<li><a href="#ICLR 2014 Workshop Track Submitted Papers  19">ICLR 2014 Workshop Track Submitted Papers  19</a></li>
+</ul>
+<h2 id="ICLR 2014 Conference Track Submitted Papers  69">ICLR 2014 Conference Track Submitted Papers  69</h2>
+<h3 id="1. Zero-Shot Learning and Clustering for Semantic Utterance Classification">1. Zero-Shot Learning and Clustering for Semantic Utterance Classification</h3>
+<p>【<a href="https://openreview.net/forum?id=nny0nGJmvYs2b">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="dhaemon@gmail.com">Yann N. Dauphin</a> ; <a href="gokhan.tur@microsoft.com">Gokhan Tur</a> ; <a href="dilek.hakkani-tur@microsoft.com">Dilek Hakkani-Tur</a> ; <a href="larry.heck@microsoft.com">Larry Heck</a></p>
+<p>【Abstract】:
+We propose two novel zero-shot learning methods for semantic utterance classification (SUC) using deep learning. Both approaches rely on learning deep semantic embeddings from a large amount of Query Click Log data obtained from a search engine. Traditional semantic utterance classification systems require large amounts of labelled data, whereas our proposed methods make use of the structure of the task to allow classification without labeled data. We also develop a zero-shot semantic clustering algorithm for extracting discriminative features for supervised semantic utterance classification systems. We demonstrate the effectiveness of the zero-shot semantic learning algorithm on the SUC dataset collected by cite{DCN}. Furthermore, we show that extracting features using zero-shot semantic clustering for a linear SVM reaches state-of-the-art result on that dataset.</p>
+<p>【Keywords】:</p>
+<h3 id="2. Correlation-based construction of neighborhood and edge features">2. Correlation-based construction of neighborhood and edge features</h3>
+<p>【<a href="https://openreview.net/forum?id=srkxraD5zAMCX">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="balazs.kegl@gmail.com">Balázs Kégl</a></p>
+<p>【Abstract】:
+Motivated by an abstract notion of low-level edge detector filters, we propose a simple method of unsupervised feature construction based on pairwise statistics of features. In the first step, we construct neighborhoods of features by regrouping features that correlate. Then we use these subsets as filters to produce new neighborhood features. Next, we connect neighborhood features that correlate, and construct edge features by subtracting the correlated neighborhood features of each other. To validate the usefulness of the constructed features, we ran AdaBoost.MH on four multi-class classification problems. Our most significant result is a test error of 0.94% on MNIST with an algorithm which is essentially free of any image-specific priors. On CIFAR-10 our method is suboptimal compared to today's best deep learning techniques, nevertheless, we show that the proposed method outperforms not only boosting on the raw pixels, but also boosting on Haar filters.</p>
+<p>【Keywords】:</p>
+<h3 id="3. Rate-Distortion Auto-Encoders">3. Rate-Distortion Auto-Encoders</h3>
+<p>【<a href="https://openreview.net/forum?id=MMSzYHL_g1V83">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="sanchez@cnel.ufl.edu">Luis G. Sanchez Giraldo</a> ; <a href="principe@cnel.ufl.edu">Jose C. Principe</a></p>
+<p>【Abstract】:
+We propose a learning algorithm for auto-encoders based on a rate-distortion objective. Our goal is to minimize the mutual information between the inputs and the outputs of an auto-encoder subject to a fidelity constraint. Minimizing the mutual information acts as a regularization term whereas the fidelity constraint can be understood as a risk functional in the conventional statistical learning setting. The proposed algorithm uses a recently introduced measure of entropy based on infinitely divisible matrices that avoids the plug in estimation of densities. Experiments using over-complete bases show that the auto-encoder learns a regularized input-output map without explicit regularization terms or add-hoc constraints such as tied weights.</p>
+<p>【Keywords】:</p>
+<h3 id="4. Learning Human Pose Estimation Features with Convolutional Networks">4. Learning Human Pose Estimation Features with Convolutional Networks</h3>
+<p>【<a href="https://openreview.net/forum?id=kziQtP-nGqzDb">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="ajain@nyu.edu">Ajrun Jain</a> ; <a href="jonathantompson@gmail.com">Jonathan Tompson</a> ; <a href="andriluka@mpi-inf.mpg.de">Mykhaylo Andriluka</a> ; <a href="gwtaylor@gmail.com">Graham Taylor</a> ; <a href="chris.bregler@gmail.com">Christoph Bregler</a></p>
+<p>【Abstract】:
+This paper introduces a new architecture for human pose estimation using a multi- layer convolutional network architecture and a modified learning technique that learns low-level features and higher-level weak spatial models. Unconstrained human pose estimation is one of the hardest problems in computer vision, and our new architecture and learning schema shows significant improvement over the current state-of-the-art results. The main contribution of this paper is showing, for the first time, that a specific variation of deep learning is able to outperform all existing traditional architectures on this task. The paper also discusses several lessons learned while researching alternatives, most notably, that it is possible to learn strong low-level feature detectors on features that might even just cover a few pixels in the image. Higher-level spatial models improve somewhat the overall result, but to a much lesser extent then expected. Many researchers previously argued that the kinematic structure and top-down information is crucial for this domain, but with our purely bottom up, and weak spatial model, we could improve other more complicated architectures that currently produce the best results. This mirrors what many other researchers, like those in the speech recognition, object recognition, and other domains have experienced.</p>
+<p>【Keywords】:</p>
+<h3 id="5. An empirical analysis of dropout in piecewise linear networks">5. An empirical analysis of dropout in piecewise linear networks</h3>
+<p>【<a href="https://openreview.net/forum?id=ZZ7T6hXbaEcAQ">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="d.warde.farley@gmail.com">David Warde-Farley</a> ; <a href="goodfellow.ian@gmail.com">Ian Goodfellow</a> ; <a href="aaron.courville@gmail.com">Aaron Courville</a> ; <a href="yoshua.bengio@gmail.com">Yoshua Bengio</a></p>
+<p>【Abstract】:
+The recently introduced dropout training criterion for neural networks has been the subject of much attention due to its simplicity and remarkable effectiveness as a regularizer, as well as its interpretation as a training procedure for an exponentially large ensemble of networks that share parameters. In this work we empirically investigate several questions related to the efficacy of dropout, specifically as it concerns networks employing the popular rectified linear activation function. We investigate the quality of the test time weight-scaling inference procedure by evaluating the geometric average exactly in small models, as well as compare the performance of the geometric mean to the arithmetic mean more commonly employed by ensemble techniques. We explore the effect of tied weights on the ensemble interpretation by training ensembles of masked networks without tied weights. Finally, we investigate an alternative criterion based on a biased estimator of the maximum likelihood ensemble gradient.</p>
+<p>【Keywords】:</p>
+<h3 id="6. The return of AdaBoost.MH: multi-class Hamming trees">6. The return of AdaBoost.MH: multi-class Hamming trees</h3>
+<p>【<a href="https://openreview.net/forum?id=-_FVMKvxVCQo1">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="balazs.kegl@gmail.com">Balázs Kégl</a></p>
+<p>【Abstract】:
+Within the framework of AdaBoost.MH, we propose to train vector-valued decision trees to optimize the multi-class edge without reducing the multi-class problem to $K$ binary one-against-all classifications. The key element of the method is a vector-valued decision stump, factorized into an input-independent vector of length $K$ and label-independent scalar classifier. At inner tree nodes, the label-dependent vector is discarded and the binary classifier can be used for partitioning the input space into two regions. The algorithm retains the conceptual elegance, power, and computational efficiency of binary AdaBoost. In experiments it is on par with support vector machines and with the best existing multi-class boosting algorithm AOSOLogitBoost, and it is significantly better than other known implementations of AdaBoost.MH.</p>
+<p>【Keywords】:</p>
+<h3 id="7. Efficient Visual Coding: From Retina To V2">7. Efficient Visual Coding: From Retina To V2</h3>
+<p>【<a href="https://openreview.net/forum?id=CRge-EDLedRUr">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="shanhonghao@gmail.com">Honghao Shan</a> ; <a href="gary@eng.ucsd.edu">Garrison Cottrell</a></p>
+<p>【Abstract】:
+The human visual system has a hierarchical structure consisting of layers of processing, such as the retina, V1, V2, etc. Understanding the functional roles of these visual processing layers would help to integrate the psychophysiological and neurophysiological models into a consistent theory of human vision, and would also provide insights to computer vision research. One classical theory of the early visual pathway hypothesizes that it serves to capture the statistical structure of the visual inputs by efficiently coding the visual information in its outputs. Until recently, most computational models following this theory have focused upon explaining the receptive field properties of one or two visual layers. Recent work in deep networks has eliminated this concern, however, there is till the retinal layer to consider. Here we improve on a previously-described hierarchical model Recursive ICA (RICA) [1] which starts with PCA, followed by a layer of sparse coding or ICA, followed by a component-wise nonlinearity derived from considerations of the variable distributions expected by ICA. This process is then repeated. In this work, we improve on this model by using a new version of sparse PCA (sPCA), which results in biologically-plausible receptive fields for both the sPCA and ICA/sparse coding. When applied to natural image patches, our model learns visual features exhibiting the receptive field properties of retinal ganglion cells/lateral geniculate nucleus (LGN) cells, V1 simple cells, V1 complex cells, and V2 cells. Our work provides predictions for experimental neuroscience studies. For example, our result suggests that a previous neurophysiological study improperly discarded some of their recorded neurons; we predict that their discarded neurons capture the shape contour of objects.</p>
+<p>【Keywords】:</p>
+<h3 id="8. Deep Belief Networks for Image Denoising">8. Deep Belief Networks for Image Denoising</h3>
+<p>【<a href="https://openreview.net/forum?id=AY3Hz-ujSEXUl">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="keyvanrad@aut.ac.ir">Mohammad Ali Keyvanrad</a> ; <a href="mohammadpz@gmail.com">mohammad pezeshki</a> ; <a href="homayoun@aut.ac.ir">Mohammad Mehdi Homayounpour</a></p>
+<p>【Abstract】:
+Deep Belief Networks which are hierarchical generative models are effective tools for feature representation and extraction. Furthermore, DBNs can be used in numerous aspects of Machine Learning such as image denoising. In this paper, we propose a novel method for image denoising which relies on the DBNs' ability in feature representation. This work is based upon learning of the noise behavior. Generally, features which are extracted using DBNs are presented as the values of the last layer nodes. We train a DBN a way that the network totally distinguishes between nodes presenting noise and nodes presenting image content in the last later of DBN, i.e. the nodes in the last layer of trained DBN are divided into two distinct groups of nodes. After detecting the nodes which are presenting the noise, we are able to make the noise nodes inactive and reconstruct a noiseless image. In section 4 we explore the results of applying this method on the MNIST dataset of handwritten digits which is corrupted with additive white Gaussian noise (AWGN). A reduction of 65.9% in average mean square error (MSE) was achieved when the proposed method was used for the reconstruction of the noisy images.</p>
+<p>【Keywords】:</p>
+<h3 id="9. Distinction between features extracted using deep belief networks">9. Distinction between features extracted using deep belief networks</h3>
+<p>【<a href="https://openreview.net/forum?id=PiMICQ7tbB-Aa">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="mohammadpz@gmail.com">mohammad pezeshki</a> ; <a href="s.gholami@aut.ac.ir">Sajjad Gholami</a> ; <a href="nickabadi@aut.ac.ir">Ahmad Nickabadi</a></p>
+<p>【Abstract】:
+Data representation is an important pre-processing step in many machine learning algorithms. There are a number of methods used for this task such as Deep Belief Networks (DBNs) and Discrete Fourier Transforms (DFTs). Since some of the features extracted using automated feature extraction methods may not always be related to a specific machine learning task, in this paper we propose two methods in order to make a distinction between extracted features based on their relevancy to the task. We applied these two methods to a Deep Belief Network trained for a face recognition task.</p>
+<p>【Keywords】:</p>
+<h3 id="10. Learning Paired-associate Images with An Unsupervised Deep Learning Architecture">10. Learning Paired-associate Images with An Unsupervised Deep Learning Architecture</h3>
+<p>【<a href="https://openreview.net/forum?id=kkUZ1FHlLaPAf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="108787w@acadiau.ca">Ti Wang</a> ; <a href="danny.silver@acadiau.ca">Daniel L. Silver</a></p>
+<p>【Abstract】:
+This paper presents an unsupervised multi-modal learning system that learns associative representation from two input modalities (channels) such that input on one channel will correctly generate the associated response at the other channel and vice versa. In this way, the system develops a kind of supervised classification model meant to simulate aspects of human associative memory. The system uses a deep learning architecture (DLA) composed of two input/output channels formed from stacked Restricted Boltzmann Machines (RBM) and an associative memory network that combines the two channels. The DLA is trained on pairs of MNIST handwritten digit images to develop hierarchical features and associative representations that are able to reconstruct one image given its paired-associate. Experiments show that the multi-modal learning system generates models that are as accurate as back-propagation networks but with the advantage of unsupervised learning from either paired or non-paired training examples.</p>
+<p>【Keywords】:</p>
+<h3 id="11. A Simple Model for Learning Multilingual Compositional Semantics">11. A Simple Model for Learning Multilingual Compositional Semantics</h3>
+<p>【<a href="https://openreview.net/forum?id=MMG-yUjRFZqpn">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="mail@karlmoritz.com">Karl Moritz Hermann</a> ; <a href="phil.blunsom@cs.ox.ac.uk">Phil Blunsom</a></p>
+<p>【Abstract】:
+Distributed representations of meaning are a natural way to encode covariance relationships between words and phrases in NLP. By overcoming data sparsity problems, as well as providing information about semantic relatedness which is not available in discrete representations, distributed representations have proven useful in many NLP tasks. In particular, recent work has shown how compositional semantic representations can successfully be applied to a number of monolingual applications such as sentiment analysis. At the same time, there has been some initial success in work on learning shared word-level representations across languages. We combine these two approaches by proposing a method for learning compositional representations in a multilingual setup. Our model learns to assign similar embeddings to aligned sentences and dissimilar ones to sentence which are not aligned while not requiring word alignments. We show that our representations are semantically informative and apply them to a cross-lingual document classification task where we outperform the previous state of the art. Further, by employing parallel corpora of multiple language pairs we find that our model learns representations that capture semantic relationships across languages for which no parallel data was used.</p>
+<p>【Keywords】:</p>
+<h3 id="12. Exact solutions to the nonlinear dynamics of learning in deep linear neural networks">12. Exact solutions to the nonlinear dynamics of learning in deep linear neural networks</h3>
+<p>【<a href="https://openreview.net/forum?id=_wzZwKpTDF_9C">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="asaximus@gmail.com">Andrew Saxe</a> ; <a href="mcclelland@stanford.edu">James L. McClelland</a> ; <a href="sganguli@stanford.edu">Surya Ganguli</a></p>
+<p>【Abstract】:
+Despite the widespread practical success of deep learning methods, our theoretical understanding of the dynamics of learning in deep neural networks remains quite sparse. We attempt to bridge the gap between the theory and practice of deep learning by systematically analyzing learning dynamics for the restricted case of deep linear neural networks. Despite the linearity of their input-output map, such networks have nonlinear gradient descent dynamics on weights that change with the addition of each new hidden layer. We show that deep linear networks exhibit nonlinear learning phenomena similar to those seen in simulations of nonlinear networks, including long plateaus followed by rapid transitions to lower error solutions, and faster convergence from greedy unsupervised pretraining initial conditions than from random initial conditions. We provide an analytical description of these phenomena by finding new exact solutions to the nonlinear dynamics of deep learning. Our theoretical analysis also reveals the surprising finding that as the depth of a network approaches infinity, learning speed remains finite: for a special class of initial conditions on the weights, very deep networks incur only a finite delay in learning speed relative to shallow networks. We further show that, under certain conditions on the training data, unsupervised pretraining can find this special class of initial conditions, thereby providing analytical insight into the success of unsupervised pretraining in deep supervised learning tasks.</p>
+<p>【Keywords】:</p>
+<h3 id="13. Spectral Networks and Locally Connected Networks on Graphs">13. Spectral Networks and Locally Connected Networks on Graphs</h3>
+<p>【<a href="https://openreview.net/forum?id=DQNsQf-UsoDBa">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="joan.bruna@gmail.com">Joan Bruna</a> ; <a href="woj.zaremba@gmail.com">Wojciech Zaremba</a> ; <a href="aszlam@ccny.cuny.edu">Arthur Szlam</a> ; <a href="ylecun@gmail.com">Yann LeCun</a></p>
+<p>【Abstract】:
+Convolutional Neural Networks are extremely efficient architectures in image and audio recognition tasks, thanks to their ability to exploit the local translational invariance of signal classes over their domain. In this paper we consider possible generalizations of CNNs to signals defined on more general domains without the action of a translation group. In particular, we propose two constructions, one based upon a hierarchical clustering of the domain, and another based on the spectrum of the graph Laplacian. We show through experiments that for low-dimensional graphs it is possible to learn convolutional layers with $O(1)$ parameters, resulting in efficient deep architectures.</p>
+<p>【Keywords】:</p>
+<h3 id="14. Group-sparse Embeddings in Collective Matrix Factorization">14. Group-sparse Embeddings in Collective Matrix Factorization</h3>
+<p>【<a href="https://openreview.net/forum?id=wxobw18IYOxu4">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="arto.klami@gmail.com">Arto Klami</a> ; <a href="guillaume.bouchard.free.fr@gmail.com">Guillaume Bouchard</a> ; <a href="abhishektripathi.at@gmail.com">Abhishek Tripathi</a></p>
+<p>【Abstract】:
+CMF is a technique for simultaneously learning low-rank representations based on a collection of matrices with shared entities. A typical example is the joint modeling of user-item, item-property, and user-feature matrices in a recommender system. The key idea in CMF is that the embeddings are shared across the matrices, which enables transferring information between them. The existing solutions, however, break down when the individual matrices have low-rank structure not shared with others. In this work we present a novel CMF solution that allows each of the matrices to have a separate low-rank structure that is independent of the other matrices, as well as structures that are shared only by a subset of them. We compare MAP and variational Bayesian solutions based on alternating optimization algorithms and show that the model automatically infers the nature of each factor using group-wise sparsity. Our approach supports in a principled way continuous, binary and count observations and is efficient for sparse matrices involving missing data. We illustrate the solution on a number of examples, focusing in particular on an interesting use-case of augmented multi-view learning.</p>
+<p>【Keywords】:</p>
+<h3 id="15. Sequentially Generated Instance-Dependent Image Representations for Classification">15. Sequentially Generated Instance-Dependent Image Representations for Classification</h3>
+<p>【<a href="https://openreview.net/forum?id=nF5CFb0ZQBFDr">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="matthieu.cord@lip6.fr">Matthieu Cord</a> ; <a href="patrick.gallinari@gmail.com">patrick gallinari</a> ; <a href="nicolas.thome@lip6.fr">Nicolas Thome</a> ; <a href="ludovic.denoyer@lip6.fr">Ludovic Denoyer</a> ; <a href="gabriel.dulac-arnold@lip6.fr">Gabriel Dulac-Arnold</a></p>
+<p>【Abstract】:
+In this paper, we investigate a new framework for image classification that adaptively generates spatial representations. Our strategy is based on a sequential process that learns to explore the different regions of any image in order to infer its category. In particular, the choice of regions is specific to each image, directed by the actual content of previously selected regions.The capacity of the system to handle incomplete image information as well as its adaptive region selection allow the system to perform well in budgeted classification tasks by exploiting a dynamicly generated representation of each image. We demonstrate the system's abilities in a series of image-based exploration and classification tasks that highlight its learned exploration and inference abilities.</p>
+<p>【Keywords】:</p>
+<h3 id="16. Semistochastic Quadratic Bound Methods">16. Semistochastic Quadratic Bound Methods</h3>
+<p>【<a href="https://openreview.net/forum?id=DETu4zMyQH4kV">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="sasha.aravkin@gmail.com">Aleksandr Y. Aravkin</a> ; <a href="aec2163@columbia.edu">Anna Choromanska</a> ; <a href="jebara@cs.columbia.edu">Tony Jebara</a> ; <a href="dimitri.kanevsky@gmail.com">Dimitri Kanevsky</a></p>
+<p>【Abstract】:
+Partition functions arise in a variety of settings, including conditional random fields, logistic regression, and latent gaussian models. In this paper, we consider semistochastic quadratic bound (SQB) methods for maximum likelihood inference based on partition function optimization. Batch methods based on the quadratic bound were recently proposed for this class of problems, and performed favorably in comparison to state-of-the-art techniques. Semistochastic methods fall in between batch algorithms, which use all the data, and stochastic gradient type methods, which use small random selections at each iteration. We build semistochastic quadratic bound-based methods, and prove both global convergence (to a stationary point) under very weak assumptions, and linear convergence rate under stronger assumptions on the objective. To make the proposed methods faster and more stable, we consider inexact subproblem minimization and batch-size selection schemes. The efficacy of SQB methods is demonstrated via comparison with several state-of-the-art techniques on commonly used datasets.</p>
+<p>【Keywords】:</p>
+<h3 id="17. Adaptive Feature Ranking for Unsupervised Transfer Learning">17. Adaptive Feature Ranking for Unsupervised Transfer Learning</h3>
+<p>【<a href="https://openreview.net/forum?id=00Rp6XTNJq0GY">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="son.tran.1@city.ac.uk">Son N. Tran</a> ; <a href="aag@soi.city.ac.uk">Artur d'Avila Garcez</a></p>
+<p>【Abstract】:
+Transfer Learning is concerned with the application of knowledge gained from solving a problem to a different but related problem domain. In this paper, we propose a method and efficient algorithm for ranking and selecting representations from a Restricted Boltzmann Machine trained on a source domain to be transferred onto a target domain. Experiments carried out using the MNIST, ICDAR and TiCC image datasets show that the proposed adaptive feature ranking and transfer learning method offers statistically significant improvements on the training of RBMs. Our method is general in that the knowledge chosen by the ranking function does not depend on its relation to any specific target domain, and it works with unsupervised learning and knowledge-based transfer.</p>
+<p>【Keywords】:</p>
+<h3 id="18. Learning generative models with visual attention">18. Learning generative models with visual attention</h3>
+<p>【<a href="https://openreview.net/forum?id=8KokDTctkA8e4">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="clarecorp@gmail.com">Charlie Tang</a> ; <a href="nitish.sri89@gmail.com">Nitish Srivastava</a> ; <a href="rsalakhu@cs.toronto.edu">Ruslan Salakhutdinov</a></p>
+<p>【Abstract】:
+Attention has long been proposed by psychologists as important for effectively dealing with the enormous sensory stimulus available in the neocortex. Inspired by visual attention models in computational neuroscience and by the need for deep generative models to learn on object-centric data, we describe a framework for generative learning using attentional mechanisms. Attentional mechanism propagate signals from region-of-interest in a scene to higher layer areas of canonical representation, where generative modeling takes place. By ignoring background clutter, generative model can concentrate its resources to model objects of interest. Our model is a proper graphical model where the 2D similarity transformation from computer vision is part of the top-down process. A ConvNet is used to initialize good guesses during posterior inference, which is based on Hamiltonian Monte Carlo. Upon learning on face images, we demonstrate that our model can robustly attend to face regions of novel test subjects. Most importantly, our model can learn generative models of new faces from a novel dataset of large images where the location of the face is not known.</p>
+<p>【Keywords】:</p>
+<h3 id="19. Intriguing properties of neural networks">19. Intriguing properties of neural networks</h3>
+<p>【<a href="https://openreview.net/forum?id=kklr_MTHMRQjG">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="joan.bruna@gmail.com">Joan Bruna</a> ; <a href="szegedy@google.com">Christian Szegedy</a> ; <a href="ilya.at.cs@gmail.com">Ilya Sutskever</a> ; <a href="goodfellow.ian@gmail.com">Ian Goodfellow</a> ; <a href="woj.zaremba@gmail.com">Wojciech Zaremba</a> ; <a href="robfergus@gmail.com">Rob Fergus</a> ; <a href="dumitru.erhan@gmail.com">Dumitru Erhan</a></p>
+<p>【Abstract】:
+Deep neural networks are highly expressive models that have recently achieved state of the art performance on speech and visual recognition tasks. While their expressiveness is the reason they succeed, it also causes them to learn uninterpretable solutions that could have counter-intuitive properties. In this paper we report two such properties. First, we find that there is no distinction between individual high level units and random linear combinations of high level units, according to various methods of unit analysis. It suggests that it is the space, rather than the individual units, that contains of the semantic information in the high layers of neural networks. Second, we find that deep neural networks learn input-output mappings that are fairly discontinuous to a significant extend. Specifically, we find that we can cause the network to misclassify an image by applying a certain imperceptible perturbation, which is found by maximizing the network's prediction error. In addition, the specific nature of these perturbations is not a random artifact of learning: the same perturbation can cause a different network, that was trained on a different subset of the dataset, to misclassify the same input.</p>
+<p>【Keywords】:</p>
+<h3 id="20. Zero-Shot Learning by Convex Combination of Semantic Embeddings">20. Zero-Shot Learning by Convex Combination of Semantic Embeddings</h3>
+<p>【<a href="https://openreview.net/forum?id=7Y52YHDS2X7ae">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="tmikolov@google.com">Tomas Mikolov</a> ; <a href="afrome@google.com">Andrea Frome</a> ; <a href="bengio@gmail.com">Samy Bengio</a> ; <a href="shlens@google.com">Jonathon Shlens</a> ; <a href="singer@google.com">Yoram Singer</a> ; <a href="gcorrado@google.com">Greg S. Corrado</a> ; <a href="jeff@google.com">Jeffrey Dean</a> ; <a href="mohammad.n@gmail.com">Mohammad Norouzi</a></p>
+<p>【Abstract】:
+Several recent publications have proposed methods for mapping images into continuous semantic embedding spaces. In some cases the semantic embedding space is trained jointly with the image transformation, while in other cases the semantic embedding space is established independently by a separate natural language processing task, and then the image transformation into that space is learned in a second stage. Proponents of these image embedding systems have stressed their advantages over the traditional n-way classification framing of image understanding, particularly in terms of the promise of zero-shot learning -- the ability to correctly annotate images of previously unseen object categories. Here we propose a simple method for constructing an image embedding system from any existing n-way image classifier and any semantic word embedding model, which contains the n class labels in its vocabulary. Our method maps images into the semantic embedding space via convex combination of the class label embedding vectors, and requires no additional learning. We show that this simple and direct method confers many of the advantages associated with more complex image embedding schemes, and indeed outperforms state of the art methods on the ImageNet zero-shot learning task.</p>
+<p>【Keywords】:</p>
+<h3 id="21. One-Shot Adaptation of Supervised Deep Convolutional Models">21. One-Shot Adaptation of Supervised Deep Convolutional Models</h3>
+<p>【<a href="https://openreview.net/forum?id=tPCrkaLa9Y5ld">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="trevordarrell@gmail.com">Trevor Darrell</a> ; <a href="etzeng@eecs.berkeley.edu">Eric Tzeng</a> ; <a href="jiayq84@gmail.com">Yangqing Jia</a> ; <a href="jhoffman@eecs.berkeley.edu">Judy Hoffman</a> ; <a href="saenko@cs.uml.edu">Kate Saenko</a> ; <a href="jdonahue@eecs.berkeley.edu">Jeff Donahue</a></p>
+<p>【Abstract】:
+Dataset bias remains a significant barrier towards solving real world computer vision tasks. Though deep convolutional networks have proven to be a competitive approach for image classification, a question remains: have these models have solved the dataset bias problem? In general, training or fine-tuning a state-of-the-art deep model on a new domain requires a significant amount of data, which for many applications is simply not available. Transfer of models directly to new domains without adaptation has historically led to poor recognition performance. In this paper, we pose the following question: is a single image dataset, much larger than previously explored for adaptation, comprehensive enough to learn general deep models that may be effectively applied to new image domains? In other words, are deep CNNs trained on large amounts of labeled data as susceptible to dataset bias as previous methods have been shown to be? We show that a generic supervised deep CNN model trained on a large dataset reduces, but does not remove, dataset bias. Furthermore, we propose several methods for adaptation with deep models that are able to operate with little (one example per category) or no labeled domain specific data. Our experiments show that adaptation of deep models on benchmark visual domain adaptation datasets can provide a significant performance boost.</p>
+<p>【Keywords】:</p>
+<h3 id="22. Nonparametric Weight Initialization of Neural Networks via Integral Representation">22. Nonparametric Weight Initialization of Neural Networks via Integral Representation</h3>
+<p>【<a href="https://openreview.net/forum?id=pAi8PkmKuJPvU">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="s.sonoda0110@toki.waseda.jp">Sho Sonoda</a> ; <a href="noboru.murata@eb.waseda.ac.jp">Noboru Murata</a></p>
+<p>【Abstract】:
+A new initialization method for hidden parameters in a neural network is proposed. Derived from the integral representation of the neural network, a nonparametric probability distribution of hidden parameters is introduced. In this proposal, hidden parameters are initialized by samples drawn from this distribution, and output parameters are fitted by ordinary linear regression. Numerical experiments show that backpropagation with proposed initialization converges faster than uniformly random initialization. Also it is shown that the proposed method achieves enough accuracy by itself without backpropagation in some cases.</p>
+<p>【Keywords】:</p>
+<h3 id="23. OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks">23. OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks</h3>
+<p>【<a href="https://openreview.net/forum?id=Hq5MgBFOP62-X">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="mathieu@cs.nyu.edu">Michael Mathieu</a> ; <a href="ylecun@gmail.com">Yann LeCun</a> ; <a href="robfergus@gmail.com">Rob Fergus</a> ; <a href="deigen@cs.nyu.edu">David Eigen</a> ; <a href="pierre.sermanet@gmail.com">Pierre Sermanet</a> ; <a href="xiang@cs.nyu.edu">Xiang Zhang</a></p>
+<p>【Abstract】:
+We present an integrated framework for using Convolutional Networks for classification, localization and detection. We show how a multiscale and sliding window approach can be efficiently implemented within a ConvNet. We also introduce a novel deep learning approach to localization by learning to predict object boundaries. Bounding boxes are then accumulated rather than suppressed in order to increase detection confidence. We show that different tasks can be learnt simultaneously using a single shared network. This integrated framework is the winner of the localization task of the ImageNet Large Scale Visual Recognition Challenge 2013 (ILSVRC2013), and produced near state of the art results for the detection and classifications tasks. Finally, we release a feature extractor from our best model called OverFeat.</p>
+<p>【Keywords】:</p>
+<h3 id="24. Learned versus Hand-Designed Feature Representations for 3d Agglomeration">24. Learned versus Hand-Designed Feature Representations for 3d Agglomeration</h3>
+<p>【<a href="https://openreview.net/forum?id=mQPhQwYHsGQ31">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="bogovicj@janelia.hhmi.org">John A. Bogovic</a> ; <a href="huangg@janelia.hhmi.org">Gary B. Huang</a> ; <a href="jainv@janelia.hhmi.org">Viren Jain</a></p>
+<p>【Abstract】:
+For image recognition and labeling tasks, recent results suggest that machine learning methods that rely on manually specified feature representations may be outperformed by methods that automatically derive feature representations based on the data. Yet for problems that involve analysis of 3d objects, such as mesh segmentation, shape retrieval, or neuron fragment agglomeration, there remains a strong reliance on hand-designed feature descriptors. In this paper, we evaluate a large set of hand-designed 3d feature descriptors alongside features learned from the raw data using both end-to-end and unsupervised learning techniques, in the context of agglomeration of 3d neuron fragments. By combining unsupervised learning techniques with a novel dynamic pooling scheme, we show how pure learning-based methods are for the first time competitive with hand-designed 3d shape descriptors. We investigate data augmentation strategies for dramatically increasing the size of the training set, and show how combining both learned and hand-designed features leads to the highest accuracy.</p>
+<p>【Keywords】:</p>
+<h3 id="25. An Empirical Investigation of Catastrophic Forgeting in Gradient-Based Neural Networks">25. An Empirical Investigation of Catastrophic Forgeting in Gradient-Based Neural Networks</h3>
+<p>【<a href="https://openreview.net/forum?id=oXSw7laxwUpln">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="yoshua.bengio@gmail.com">Yoshua Bengio</a> ; <a href="mirzamom@iro.umontreal.ca">Mehdi Mirza</a> ; <a href="goodfellow.ian@gmail.com">Ian Goodfellow</a> ; <a href="aaron.courville@gmail.com">Aaron Courville</a> ; <a href="xiada99@gmail.com">Xia Da</a></p>
+<p>【Abstract】:
+Catastrophic forgetting is a problem faced by many machine learning models and algorithms. When trained on one task, then trained on a second task, many machine learning models 'forget'' how to perform the first task. This is widely believed to be a serious problem for neural networks. Here, we investigate the extent to which the catastrophic forgetting problem occurs for modern neural networks, comparing both established and recent gradient-based training algorithms and activation functions. We also examine the effect of the relationship between the first task and the second task on catastrophic forgetting.</p>
+<p>【Keywords】:</p>
+<h3 id="26. Can recursive neural tensor networks learn logical reasoning?">26. Can recursive neural tensor networks learn logical reasoning?</h3>
+<p>【<a href="https://openreview.net/forum?id=4diyarNwq84_Q">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="sbowman@stanford.edu">Samuel R. Bowman</a></p>
+<p>【Abstract】:
+Recursive neural network models and their accompanying vector representations for words have seen success in an array of increasingly semantically sophisticated tasks, but almost nothing is known about their ability to accurately capture the aspects of linguistic meaning that are necessary for interpretation or reasoning. To evaluate this, I train a recursive model on a new corpus of constructed examples of logical reasoning in short sentences, like the inference of 'some animal walks' from 'some dog walks' or 'some cat walks,' given that dogs and cats are animals. The results are promising for the ability of these models to capture logical reasoning, but the model tested here appears to learn representations that are quite specific to the templatic structures of the problems seen in training, and that generalize beyond them only to a limited degree.</p>
+<p>【Keywords】:</p>
+<h3 id="27. Factorial Hidden Markov Models for Learning Representations of Natural Language">27. Factorial Hidden Markov Models for Learning Representations of Natural Language</h3>
+<p>【<a href="https://openreview.net/forum?id=YHGzHsybzQU0l">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="rockanjan@gmail.com">Anjan Nepal</a> ; <a href="ayates@gmail.com">Alexander Yates</a></p>
+<p>【Abstract】:
+Most representation learning algorithms for language and image processing are local, in that they identify features for a data point based on surrounding points. Yet in language processing, the correct meaning of a word often depends on its global context. As a step toward incorporating global context into representation learning, we develop a representation learning algorithm that incorporates joint prediction into its technique for producing features for a word. We develop efficient variational methods for learning Factorial Hidden Markov Models from large texts, and use variational distributions to produce features for each word that are sensitive to the entire input sequence, not just to a local context window. Experiments on part-of-speech tagging and chunking indicate that the features are competitive with or better than existing state-of-the-art representation learning methods.</p>
+<p>【Keywords】:</p>
+<h3 id="28. Fast Training of Convolutional Networks through FFTs">28. Fast Training of Convolutional Networks through FFTs</h3>
+<p>【<a href="https://openreview.net/forum?id=3RMnfrH_Fi8eU">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="mathieu@cs.nyu.edu">Michael Mathieu</a> ; <a href="mikael314@gmail.com">Mikael Henaff</a> ; <a href="ylecun@gmail.com">Yann LeCun</a></p>
+<p>【Abstract】:
+Convolutional networks are one of the most widely employed architectures in computer vision and machine learning. In order to leverage their ability to learn complex functions, large amounts of data are required for training. Training a large convolutional network to produce state-of-the-art results can take weeks, even when using modern GPUs. Producing labels using a trained network can also be costly when dealing with web-scale datasets. In this work, we present a simple algorithm which accelerates training and inference by a significant factor, and can yield improvements of over an order of magnitude compared to existing state-of-the-art implementations. This is done by computing convolutions as pointwise products in the Fourier domain while reusing the same transformed feature map many times. The algorithm is implemented on a GPU architecture and addresses a number of related challenges.</p>
+<p>【Keywords】:</p>
+<h3 id="29. Multi-digit Number Recognition from Street View Imagery using Deep Convolutional Neural Networks">29. Multi-digit Number Recognition from Street View Imagery using Deep Convolutional Neural Networks</h3>
+<p>【<a href="https://openreview.net/forum?id=BBxkB2w0I_OjZ">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="julianibarz@google.com">Julian Ibarz</a> ; <a href="goodfellow.ian@gmail.com">Ian Goodfellow</a> ; <a href="sacha@google.com">Sacha Arnoud</a> ; <a href="vinayshet@google.com">Vinay Shet</a> ; <a href="yaroslavvb@gmail.com">Yaroslav Bulatov</a></p>
+<p>【Abstract】:
+Recognizing arbitrary multi-character text in unconstrained natural photographs is a hard problem. In this paper, we address an equally hard sub-problem in this domain viz. recognizing arbitrary multi-digit numbers from Street View imagery. Traditional approaches to solve this problem typically separate out the localization, segmentation, and recognition steps. In this paper we propose a unified approach that integrates these three steps via the use of a deep convolutional neural-network that operates directly off of the image pixels. This model is configured with 11 hidden layers all with feedforward connections. We employ the DistBelief implementation of deep neural networks to scale our computations over this network. We have evaluated this approach on the publicly available SVHN dataset and achieve over 96% accuracy in recognizing street numbers. We show that on a per-digit recognition task, we improve upon the state-of-the-art and achieve 97.84% accuracy. We also evaluated this approach on an even more challenging dataset generated from Street View imagery containing several 10s of millions of street number annotations and achieve over 90% accuracy. Our evaluations further indicate that at specific operating thresholds, the performance of the proposed system is comparable to that of human operators and has to date helped us extract close to 100 million street numbers from Street View imagery worldwide.</p>
+<p>【Keywords】:</p>
+<h3 id="30. Neuronal Synchrony in Complex-Valued Deep Networks">30. Neuronal Synchrony in Complex-Valued Deep Networks</h3>
+<p>【<a href="https://openreview.net/forum?id=O_cyOSWv8TrlS">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="david_reichert@brown.edu">David Reichert</a> ; <a href="thomas_serre@brown.edu">Thomas Serre</a></p>
+<p>【Abstract】:
+Deep learning has recently lead to great successes in tasks such as image recognition (e.g Krizhevsky et al., 2012). However, deep networks are still outmatched by the power and versatility of the brain, perhaps in part due to the richer neuronal computations available to real cortical circuits. The challenge is to identify which neural mechanisms are relevant, and to find suitable abstractions to model them. Here, we show how aspects of spike timing, long hypothesized to play a crucial role in cortical information processing, could be incorporated into deep networks to build richer, versatile deep representations. 
+We introduce a neural network formulation based on complex-valued neuronal units that is not only biologically meaningful but also amenable to a variety of deep learning frameworks. Here, units are attributed both a firing rate and a phase, the latter indicating properties of spike timing. We show how this formulation qualitatively captures several aspects thought to be related to neuronal synchrony, including gating of information processing and dynamic binding of distributed object representations. Focusing on the latter aspect, we demonstrate the potential of the approach in several simple experiments. Thus, synchrony could implement a flexible mechanism that fulfills multiple functional roles in deep networks.</p>
+<p>【Keywords】:</p>
+<h3 id="31. Auto-Encoding Variational Bayes">31. Auto-Encoding Variational Bayes</h3>
+<p>【<a href="https://openreview.net/forum?id=33X9fd2-9FyZd">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="dpkingma@gmail.com">Diederik P. Kingma</a> ; <a href="jingf@cs.ubc.ca">Max Welling</a></p>
+<p>【Abstract】:
+Can we efficiently learn the parameters of directed probabilistic models, in the presence of continuous latent variables with intractable posterior distributions? We introduce an unsupervised on-line learning method that efficiently optimizes the variational lower bound on the marginal likelihood and that, under some mild conditions, even works in the intractable case. The method optimizes a probabilistic encoder (also called a recognition network) to approximate the intractable posterior distribution of the latent variables. The crucial element is a reparameterization of the variational bound with an independent noise variable, yielding a stochastic objective function which can be jointly optimized w.r.t. variational and generative parameters using standard gradient-based stochastic optimization methods. Theoretical advantages are reflected in experimental results.</p>
+<p>【Keywords】:</p>
+<h3 id="32. Improving Deep Neural Networks with Probabilistic Maxout Units">32. Improving Deep Neural Networks with Probabilistic Maxout Units</h3>
+<p>【<a href="https://openreview.net/forum?id=NR4KjDE0w9RXD">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="springj@informatik.uni-freiburg.de">Jost Tobias Springenberg</a> ; <a href="martin.riedmiller@deepmind.com">Martin Riedmiller</a></p>
+<p>【Abstract】:
+We present a probabilistic variant of the recently introduced maxout unit. The success of deep neural networks utilizing maxout can partly be attributed to favorable performance under dropout, when compared to rectified linear units. It however also depends on the fact that each maxout unit performs a pooling operation over a group of linear transformations and is thus partially invariant to changes in its input. Starting from this observation we ask the question: Can the desirable properties of maxout units be preserved while improving their invariance properties ? We argue that our probabilistic maxout (probout) units successfully achieve this balance. We quantitatively verify this claim and report classification performance matching or exceeding the current state of the art on three challenging image classification benchmarks (CIFAR-10, CIFAR-100 and SVHN).</p>
+<p>【Keywords】:</p>
+<h3 id="33. Learning Type-Driven Tensor-Based Meaning Representations">33. Learning Type-Driven Tensor-Based Meaning Representations</h3>
+<p>【<a href="https://openreview.net/forum?id=26CF62DAFs2-K">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="tamara.polajnar@gmail.com">Tamara Polajnar</a> ; <a href="luana.fagarasan@cl.cam.ac.uk">Luana Fagarasan</a> ; <a href="stephen.clark@cl.cam.ac.uk">Stephen Clark</a></p>
+<p>【Abstract】:
+This paper investigates the learning of 3rd-order tensors representing the semantics of transitive verbs. The meaning representations are part of a type-driven tensor-based semantic framework, from the newly emerging field of compositional distributional semantics. Standard techniques from the neural networks literature are used to learn the tensors, which are tested on a selectional preference-style task with a simple 2-dimensional sentence space. Promising results are obtained against a competitive corpus-based baseline. We argue that extending this work beyond transitive verbs, and to higher-dimensional sentence spaces, is an interesting and challenging problem for the machine learning community to consider.</p>
+<p>【Keywords】:</p>
+<h3 id="34. Stopping Criteria in Contrastive Divergence: Alternatives to the Reconstruction Error">34. Stopping Criteria in Contrastive Divergence: Alternatives to the Reconstruction Error</h3>
+<p>【<a href="https://openreview.net/forum?id=II-mIcAshLID0">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="davidbuchaca@gmail.com">David Buchaca</a> ; <a href="eromero@lsi.upc.edu">Enrique Romero</a> ; <a href="ferran.mazzanti@upc.edu">Ferran Mazzanti</a> ; <a href="jdelgado.pin@gmail.com">Jordi Delgado</a></p>
+<p>【Abstract】:
+Restricted Boltzmann Machines (RBMs) are general unsupervised learning devices to ascertain generative models of data distributions. RBMs are often trained using the Contrastive Divergence learning algorithm (CD), an approximation to the gradient of the data log-likelihood. A simple reconstruction error is often used to decide whether the approximation provided by the CD algorithm is good enough, though several authors (Schulz et al., 2010; Fischer &amp; Igel, 2010) have raised doubts concerning the feasibility of this procedure. However, not many alternatives to the reconstruction error have been used in the literature. In this manuscript we investigate simple alternatives to the reconstruction error in order to detect as soon as possible the decrease in the log-likelihood during learning.</p>
+<p>【Keywords】:</p>
+<h3 id="35. Unit Tests for Stochastic Optimization">35. Unit Tests for Stochastic Optimization</h3>
+<p>【<a href="https://openreview.net/forum?id=LwyBkw8Nh6Y1J">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="schaul@cims.nyu.edu">Tom Schaul</a> ; <a href="ioannis@deepmind.com">Ioannis Antonoglou</a> ; <a href="david@deepmind.com">David Silver</a></p>
+<p>【Abstract】:
+Optimization by stochastic gradient descent is an important component of many large-scale machine learning algorithms. A wide variety of such optimization algorithms have been devised; however, it is unclear whether these algorithms are robust and widely applicable across many different optimization landscapes. In this paper we develop a collection of unit tests for stochastic optimization. Each unit test rapidly evaluates an optimization algorithm on a small-scale, isolated, and well-understood difficulty, rather than in real-world scenarios where many such issues are entangled. Passing these unit tests is not sufficient, but absolutely necessary for any algorithms with claims to generality or robustness. We give initial quantitative and qualitative results on a dozen established algorithms. The testing framework is open-source, extensible, and easy to apply to new algorithms.</p>
+<p>【Keywords】:</p>
+<h3 id="36. Multi-View Priors for Learning Detectors from Sparse Viewpoint Data">36. Multi-View Priors for Learning Detectors from Sparse Viewpoint Data</h3>
+<p>【<a href="https://openreview.net/forum?id=BId1QQRE1gQLZ">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="bojan@mpi-inf.mpg.de">Bojan Pepik</a> ; <a href="mst@stanford.edu">Michael Stark</a> ; <a href="schiele@mpi-inf.mpg.de">Peter Gehler</a> ; <a href="pgehler@tuebingen.mpg.de">Bernt Schiele</a></p>
+<p>【Abstract】:
+While the majority of today's object class models provide only 2D bounding boxes, far richer output hypotheses are desirable including viewpoint, fine-grained category, and 3D geometry estimate. However, models trained to provide richer output require larger amounts of training data, preferably well covering the relevant aspects such as viewpoint and fine-grained categories. In this paper, we address this issue from the perspective of transfer learning, and design an object class model that explicitly leverages correlations between visual features. Specifically, our model represents prior distributions over permissible multi-view detectors in a parametric way -- the priors are learned once from training data of a source object class, and can later be used to facilitate the learning of a detector for a target class. As we show in our experiments, this transfer is not only beneficial for detectors based on basic-level category representations, but also enables the robust learning of detectors that represent classes at finer levels of granularity, where training data is typically even scarcer and more unbalanced. As a result, we report largely improved performance in simultaneous 2D object localization and viewpoint estimation on a recent dataset of challenging street scenes.</p>
+<p>【Keywords】:</p>
+<h3 id="37. Deep learning for neuroimaging: a validation study">37. Deep learning for neuroimaging: a validation study</h3>
+<p>【<a href="https://openreview.net/forum?id=UVH3Ucewd-IXZ">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="splis@mrn.org">Sergey M. Plis</a> ; <a href="dhjelm@mrn.org">Devon R. Hjelm</a> ; <a href="rsalakhu@cs.toronto.edu">Ruslan Salakhutdinov</a> ; <a href="vcalhoun@mrn.org">Vince D. Calhoun</a></p>
+<p>【Abstract】:
+Deep learning methods have recently enjoyed a number of successes in the tasks of classification and representation learning. These tasks are very important for brain imaging and neuroscience discovery, making the methods attractive candidates for porting to a neuroimager's toolbox. Successes are, in part, explained by a great flexibility of deep learning models. This flexibility makes the process of porting to new areas a difficult parameter optimization problem. In this work we demonstrate our results (and feasible parameter ranges) in application of deep learning methods to structural and functional brain imaging data. We also describe a novel constraint-based approach to visualizing high dimensional data. We use it to analyze the effect of parameter choices on data transformations. Our results show that deep learning methods are able to learn physiologically important representations and detect latent relations in neuroimaging data.</p>
+<p>【Keywords】:</p>
+<h3 id="38. Large-scale Multi-label Text Classification - Revisiting Neural Networks">38. Large-scale Multi-label Text Classification - Revisiting Neural Networks</h3>
+<p>【<a href="https://openreview.net/forum?id=YDXrDdbom9YCi">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="jinseok.n@gmail.com">Jinseok Nam</a> ; <a href="kim@ukp.informatik.tu-darmstadt.de">Jungi Kim</a> ; <a href="gurevych@ukp.informatik.tu-darmstadt.de">Iryna Gurevych</a> ; <a href="juffi@ke.informatik.tu-darmstadt.de">Johannes Fürnkranz</a></p>
+<p>【Abstract】:
+Large-scale datasets with multi-labels are becoming readily available, and the demand for large-scale multi-label classification algorithm is also increasing. In this work, we propose to utilize a single-layer Neural Networks approach in large-scale multi-label text classification tasks with recently proposed learning techniques. We carried out experiments on six textual datasets with varying characteristics and size, and show that a simple Neural Networks model equipped with recent advanced techniques for Neural Networks components such as an activation layer, optimization, and generalization techniques performs as well as or even outperforms the previous state-of-the-art approaches on large-scale datasets with diverse characteristics.</p>
+<p>【Keywords】:</p>
+<h3 id="39. Learning Non-Linear Feature Maps, With An Application To Representation Learning">39. Learning Non-Linear Feature Maps, With An Application To Representation Learning</h3>
+<p>【<a href="https://openreview.net/forum?id=mugzy2nI-Ayi1">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="dathanasakis@gmail.com">Dimitrios Athanasakis</a> ; <a href="jst@cs.ucl.ac.uk">John Shawe-Taylor</a> ; <a href="dfernan@nimr.mrc.ac.uk">Delmiro Fernandez-Reyes</a></p>
+<p>【Abstract】:
+Recent non-linear feature selection approaches employing greedy optimisation of Centred Kernel Target Alignment(KTA) exhibit strong results in terms of generalisation accuracy and sparsity. However, they are computationally prohibitive for large datasets. We propose randSel, a randomised feature selection algorithm, with attractive scaling properties. Our theoretical analysis of randSel provides strong probabilistic guarantees for correct identification of relevant features. RandSel's characteristics make it an ideal candidate for identifying informative learned representations. We've conducted experimentation to establish the performance of this approach, and present encouraging results, including a 3rd position result in the recent ICML black box learning challenge as well as competitive results for signal peptide prediction, an important problem in bioinformatics.</p>
+<p>【Keywords】:</p>
+<h3 id="40. EXMOVES: Classifier-based Features for Scalable Action Recognition">40. EXMOVES: Classifier-based Features for Scalable Action Recognition</h3>
+<p>【<a href="https://openreview.net/forum?id=kkgljR8O6hjHA">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="trandu@gmail.com">Du Tran</a> ; <a href="lorenzo@cs.dartmouth.edu">Lorenzo Torresani</a></p>
+<p>【Abstract】:
+This paper introduces EXMOVES, learned exemplar-based features for efficient recognition of actions in videos. The entries in our descriptor are produced by evaluating a set of movement classifiers over spatial-temporal volumes of the input sequence. Each movement classifier is a simple exemplar-SVM trained on low-level features, i.e., an SVM learned using a single annotated positive space-time volume and a large number of unannotated videos. Our representation offers two main advantages. First, since our mid-level features are learned from individual video exemplars, they require minimal amount of supervision. Second, we show that simple linear classification models trained on our global video descriptor yield action recognition accuracy approaching the state-of-the-art but at orders of magnitude lower cost, since at test-time no sliding window is necessary and linear models are efficient to train and test. This enables scalable action recognition, i.e., efficient classification of a large number of different actions even in large video databases. We show the generality of our approach by building our mid-level descriptors from two different low-level feature representations. The accuracy and efficiency of the approach are demonstrated on several large-scale action recognition benchmarks.</p>
+<p>【Keywords】:</p>
+<h3 id="41. How to Construct Deep Recurrent Neural Networks">41. How to Construct Deep Recurrent Neural Networks</h3>
+<p>【<a href="https://openreview.net/forum?id=L80PLIixPIXTH">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="r.pascanu@gmail.com">Razvan Pascanu</a> ; <a href="gulcehrc@iro.umontreal.ca">Caglar Gulcehre</a> ; <a href="kyunghyun.cho@aalto.fi">KyungHyun Cho</a> ; <a href="yoshua.bengio@gmail.com">Yoshua Bengio</a></p>
+<p>【Abstract】:
+In this paper, we propose a novel way to extend a recurrent neural network (RNN) to a deep RNN. We start by arguing that the concept of the depth in an RNN is not as clear as it is in feedforward neural networks. By carefully analyzing and understanding the architecture of an RNN, we define three points which may be made deeper; (1) input-to-hidden function, (2) hidden-to-hidden transition and (3) hidden-to-output function. This can be considered in addition to stacking multiple recurrent layers proposed earlier by Schmidhuber (1992). Based on this observation, we propose two novel architectures of a deep RNN and provide an alternative interpretation of these deep RNN's using a novel framework based on neural operators. The proposed deep RNN's are empirically evaluated on the tasks of polyphonic music prediction and language modeling. The experimental result supports our claim that the proposed deep RNN's benefit from the depth and outperform the conventional, shallow RNN.</p>
+<p>【Keywords】:</p>
+<h3 id="42. On the number of inference regions of deep feed forward networks with piece-wise linear activations">42. On the number of inference regions of deep feed forward networks with piece-wise linear activations</h3>
+<p>【<a href="https://openreview.net/forum?id=bSaT4mmQt84Lx">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="r.pascanu@gmail.com">Razvan Pascanu</a> ; <a href="guidomontufar@googlemail.com">Guido F. Montufar</a> ; <a href="yoshua.bengio@gmail.com">Yoshua Bengio</a></p>
+<p>【Abstract】:
+This paper explores the complexity of deep feed forward networks with linear presynaptic couplings and rectified linear activations. This is a contribution to the growing body of work contrasting the representational power of deep and shallow network architectures. In particular, we offer a framework for comparing deep and shallow models that belong to the family of piece-wise linear functions based on computational geometry. We look at a deep (two hidden layers) rectifier multilayer perceptron (MLP) with linear outputs units and compare it with a single layer version of the model. In the asymptotic regime as the number of units goes to infinity, if the shallow model has $2n$ hidden units and $n_0$ inputs, then the number of linear regions is $O(n^{n_0})$. A two layer model with $n$ number of hidden units on each layer has $Omega(n^{n_0})$. We consider this as a first step towards understanding the complexity of these models and argue that better constructions in this framework might provide more accurate comparisons (especially for the interesting case of when the number of hidden layers goes to infinity).</p>
+<p>【Keywords】:</p>
+<h3 id="43. Modeling correlations in spontaneous activity of visual cortex with centered Gaussian-binary deep Boltzmann machines">43. Modeling correlations in spontaneous activity of visual cortex with centered Gaussian-binary deep Boltzmann machines</h3>
+<p>【<a href="https://openreview.net/forum?id=z6PozRtCowzLe">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="nan.wang.28@googlemail.com">nan wang</a> ; <a href="laurenz.wiskott@rub.de">Laurenz Wiskott</a> ; <a href="jancke@neurobiologie.rub.de">Dirk Jancke</a></p>
+<p>【Abstract】:
+Spontaneous cortical activity -- the ongoing cortical activities in absence of sensory input -- are considered to play a vital role in many aspects of both normal brain functions and mental dysfunctions. We present a centered Gaussian-binary deep Boltzmann machine (GDBM) for modeling the activity in visual cortex and relate the random sampling in DBMs to the spontaneous cortical activity. After training on natural image patches, the proposed model is able to learn the filters similar to the receptive fields of simple cells in V1. Furthermore, we show that the samples collected from random sampling in the centered GDBMs encompass similar activity patterns as found in the spontaneous cortical activity of the visual cortex. Specifically, filters having the same orientation preference tend to be active together during random sampling. Our work demonstrates the homeostasis learned by the centered GDBM and its potential for modeling visual cortical activity. Besides, the results support the hypothesis that the homeostatic mechanism exists in the cortex.</p>
+<p>【Keywords】:</p>
+<h3 id="44. Why does the unsupervised pretraining encourage moderate-sparseness?">44. Why does the unsupervised pretraining encourage moderate-sparseness?</h3>
+<p>【<a href="https://openreview.net/forum?id=R5x4IjeY4351N">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="junl.njust@gmail.com">Jun Li</a> ; <a href="lw860123@gmail.com">Wei Luo</a> ; <a href="csjyang@njust.edu.cn">Jian Yang</a> ; <a href="xtyuan1980@gmail.com">Xiaotong Yuan</a></p>
+<p>【Abstract】:
+It is well known that direct training of deep multi-layer neural networks (DNNs) will generally lead to poor results. A major progress in recent years is the invention of various unsupervised pretraining methods to initialize network parameters and it was shown that such methods lead to good prediction performance. However, the reason for the success of the pretraining has not been fully understood, although it was argued that regularization and better optimization play certain roles. This paper provides another explanation for the effectiveness of the pretraining, where we empirically show the pretraining leads to a higher level of sparseness of hidden unit activation in the resulting neural networks, and the higher sparseness is positively correlated to faster training speed and better prediction accuracy. Moreover, we also show that rectified linear units (ReLU) can capture the sparseness benefits of the pretraining. Our implementation of DNNs with ReLU does not require the pretraining, but achieves comparable or better prediction performance than traditional DNNs with pretraining on standard benchmark datasets.</p>
+<p>【Keywords】:</p>
+<h3 id="45. A Generative Product-of-Filters Model of Audio">45. A Generative Product-of-Filters Model of Audio</h3>
+<p>【<a href="https://openreview.net/forum?id=NPFdalK3djNuI">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="dliang@ee.columbia.edu">Dawen Liang</a> ; <a href="mathoffm@adobe.com">Mathew D. Hoffman</a> ; <a href="gmysore@adobe.com">Gautham Mysore</a></p>
+<p>【Abstract】:
+We propose the product-of-filters (PoF) model, a generative model that decomposes audio spectra as sparse linear combinations of 'filters' in the log-spectral domain. PoF makes similar assumptions to those used in the classic homomorphic filtering approach to signal processing, but replaces hand-designed decompositions built of basic signal processing operations with a learned decomposition based on statistical inference. This paper formulates the PoF model and derives a mean-field method for posterior inference and a variational EM algorithm to estimate the model's free parameters. We demonstrate PoF's potential for audio processing on a bandwidth expansion task, and show that PoF can serve as an effective unsupervised feature extractor for a speaker identification task.</p>
+<p>【Keywords】:</p>
+<h3 id="46. Multimodal Transitions for Generative Stochastic Networks">46. Multimodal Transitions for Generative Stochastic Networks</h3>
+<p>【<a href="https://openreview.net/forum?id=YvgSX22hONWpI">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="sherjilozair@gmail.com">Sherjil Ozair</a> ; <a href="yaoli.email@gmail.com">Li Yao</a> ; <a href="yoshua.bengio@gmail.com">Yoshua Bengio</a></p>
+<p>【Abstract】:
+Generative Stochastic Networks (GSNs) have been recently introduced as an alternative to traditional probabilistic modeling: instead of parametrizing the data distribution directly, one parametrizes a transition operator for a Markov chain whose stationary distribution is an estimator of the data generating distribution. The result of training is therefore a machine that generates samples through this Markov chain. However, the previously introduced GSN consistency theorems suggest that in order to capture a wide class of distributions, the transition operator in general should be multimodal, something that has not been done before this paper. We introduce for the first time multimodal transition distributions for GSNs, in particular using models in the NADE family (Neural Autoregressive Density Estimator) as output distributions of the transition operator. A NADE model is related to an RBM (and can thus model multimodal distributions) but its likelihood (and likelihood gradient) can be computed easily. The parameters of the NADE are obtained as a learned function of the previous state of the learned Markov chain. Experiments clearly illustrate the advantage of such multimodal transition distributions over unimodal GSNs.</p>
+<p>【Keywords】:</p>
+<h3 id="47. Revisiting Natural Gradient for Deep Networks">47. Revisiting Natural Gradient for Deep Networks</h3>
+<p>【<a href="https://openreview.net/forum?id=vz8AumxkAfz5U">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="r.pascanu@gmail.com">Razvan Pascanu</a> ; <a href="yoshua.bengio@gmail.com">Yoshua Bengio</a></p>
+<p>【Abstract】:
+The aim of this paper is three-fold. First we show that Hessian-Free (Martens, 2010) and Krylov Subspace Descent (Vinyals and Povey, 2012) can be described as implementations of natural gradient descent due to their use of the extended Gauss-Newton approximation of the Hessian. Secondly we re-derive natural gradient from basic principles, contrasting the difference between two versions of the algorithm found in the neural network literature, as well as highlighting a few differences between natural gradient and typical second order methods. Lastly we show empirically that natural gradient can be robust to overfitting and particularly it can be robust to the order in which the training data is presented to the model.</p>
+<p>【Keywords】:</p>
+<h3 id="48. Learning High-level Image Representation for Image Retrieval via Multi-Task DNN using Clickthrough Data">48. Learning High-level Image Representation for Image Retrieval via Multi-Task DNN using Clickthrough Data</h3>
+<p>【<a href="https://openreview.net/forum?id=DnsBnbl6TQD6t">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="wyma@microsoft.com">Wei-Ying Ma</a> ; <a href="tjzhao@hit.edu.cn">Tiejun Zhao</a> ; <a href="kuyang@microsoft.com">Kuiyuan Yang</a> ; <a href="w.yu@hit.edu.cn">Wei Yu</a> ; <a href="ylbai@mtlab.hit.edu.cn">Yalong Bai</a></p>
+<p>【Abstract】:
+Image retrieval refers to finding relevant images from an image database for a query, which is considered difficult for the gap between low-level representation of images and high-level representation of queries. Recently further developed Deep Neural Network sheds light on automatically learning high-level image representation from raw pixels. In this paper, we proposed a multi-task DNN for image retrieval, which contains two parts, i.e., query-sharing layers for image representation computation and query-specific layers for relevance estimation. The weights of multi-task DNN are learned on clickthrough data by Ring Training. Experimental results on both simulated and real dataset show the effectiveness of the proposed method.</p>
+<p>【Keywords】:</p>
+<h3 id="49. Generative NeuroEvolution for Deep Learning">49. Generative NeuroEvolution for Deep Learning</h3>
+<p>【<a href="https://openreview.net/forum?id=l-BU-GGdtAlmX">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="verbancsics@gmail.com">Phillip Verbancsics</a> ; <a href="joshua.harguess@navy.mil">Josh Harguess</a></p>
+<p>【Abstract】:
+An important goal for the machine learning (ML) community is to create approaches that can learn solutions with human-level capability. One domain where humans have held a significant advantage is visual processing. A significant approach to addressing this gap has been machine learning approaches that are inspired from the natural systems, such as artificial neural networks (ANNs), evolutionary computation (EC), and generative and developmental systems (GDS). Research into deep learning has demonstrated that such architectures can achieve performance competitive with humans on some visual tasks; however, these systems have been primarily trained through supervised and unsupervised learning algorithms. Alternatively, research is showing that evolution may have a significant role in the development of visual systems. Thus this paper investigates the role neuro-evolution (NE) can take in deep learning. In particular, the Hypercube-based NeuroEvolution of Augmenting Topologies is a NE approach that can effectively learn large neural structures by training an indirect encoding that compresses the ANN weight pattern as a function of geometry. The results show that HyperNEAT struggles with performing image classification by itself, but can be effective in training a feature extractor that other ML approaches can learn from. Thus NeuroEvolution combined with other ML methods provides an intriguing area of research that can replicate the processes in nature.</p>
+<p>【Keywords】:</p>
+<h3 id="50. k-Sparse Autoencoders">50. k-Sparse Autoencoders</h3>
+<p>【<a href="https://openreview.net/forum?id=QDm4QXNOsuQVE">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="a.makhzani@gmail.com">Alireza Makhzani</a> ; <a href="frey@psi.utoronto.ca">Brendan Frey</a></p>
+<p>【Abstract】:
+Recently, it has been observed that when representations are learnt in a way that encourages sparsity, improved performance is obtained on classification tasks. These methods involve combinations of activation functions, sampling steps and different kinds of penalties. To investigate the effectiveness of sparsity by itself, we propose the k-sparse autoencoder, which is a linear model, but where in hidden layers only the k highest activities are kept. When applied to the MNIST and NORB datasets, we find that this method achieves better classification results than denoising autoencoders, networks trained with dropout, and restricted Boltzmann machines. k-sparse autoencoders are simple to train and the encoding stage is very fast, making them well-suited to large problem sizes, where conventional sparse coding algorithms cannot be applied.</p>
+<p>【Keywords】:</p>
+<h3 id="51. An Architecture for Distinguishing between Predictors and Inhibitors in Reinforcement Learning">51. An Architecture for Distinguishing between Predictors and Inhibitors in Reinforcement Learning</h3>
+<p>【<a href="https://openreview.net/forum?id=NNP_NfOK_ENK4">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="patrick.connor@dal.ca">Patrick C. Connor</a> ; <a href="tt@cs.dal.ca">Thomas P. Trappenberg</a></p>
+<p>【Abstract】:
+Reinforcement learning treats each input, feature, or stimulus as having a positive or negative reward value. Some stimuli, however, negate or inhibit the values of certain other predictors (excitors) when presented with them, but are otherwise neutral. We show that both linear and non-linear value-function approximators assign inhibitory features a strong value with the opposite valence of the predictor it inhibits (i.e., inhibitor= -excitor). In one circumstance, this gives a correct prediction (i.e., excitor + inhibitor = neutral outcome). Importantly, however, value-function approximators incorrectly predict that when the inhibitor is presented alone, a negative or oppositely valenced outcome will follow whereas the inhibitor alone is actually followed by a neutral outcome. Essentially, we show that having reward value as a direct predictive target can make inhibitors indistinguishable from excitors that predict the oppositely valenced outcome. We show that this problem can be easily avoided if the reinforcement learning problem is broken into 1) a supervised learning module that predicts the positive appearance of primary reinforcements and 2) a reinforcement learning module which sums their agent-defined values.</p>
+<p>【Keywords】:</p>
+<h3 id="52. Sparse similarity-preserving hashing">52. Sparse similarity-preserving hashing</h3>
+<p>【<a href="https://openreview.net/forum?id=u-IAYCzRsK-vN">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="alexbronst@gmail.com">Alex M. Bronstein</a> ; <a href="guillermo.sapiro@gmail.com">Guillermo Sapiro</a> ; <a href="pablo.sprechmann@duke.edu">Pablo Sprechmann</a> ; <a href="jonathan.masci@gmail.com">Jonathan Masci</a> ; <a href="michael.bronstein@usi.ch">Michael M. Bronstein</a></p>
+<p>【Abstract】:
+In recent years, a lot of attention has been devoted to efficient nearest neighbor search by means of similarity-preserving hashing. One of the plights of existing hashing techniques is the intrinsic trade-off between performance and computational complexity: while longer hash codes allow for lower false positive rates, it is very difficult to increase the embedding dimensionality without incurring in very high false negatives rates or prohibiting computational costs. In this paper, we propose a way to overcome this limitation by enforcing the hash codes to be sparse. Sparse high-dimensional codes enjoy from the low false positive rates typical of long hashes, while keeping the false negative rates similar to those of a shorter dense hashing scheme with equal number of degrees of freedom. We use a tailored feed-forward neural network for the hashing function. Extensive experimental evaluation involving visual and multi-modal data shows the benefits of the proposed method.</p>
+<p>【Keywords】:</p>
+<h3 id="53. A Primal-Dual Method for Training Recurrent Neural Networks Constrained by the Echo-State Property">53. A Primal-Dual Method for Training Recurrent Neural Networks Constrained by the Echo-State Property</h3>
+<p>【<a href="https://openreview.net/forum?id=plS31K743MGWn">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="chenjianshu@gmail.com">Jianshu Chen</a> ; <a href="deng629@gmail.com">Li Deng</a></p>
+<p>【Abstract】:
+We present an architecture of a recurrent neural network (RNN) with a fully-connected deep neural network (DNN) as its feature extractor. The RNN is equipped with both causal temporal prediction and non-causal look-ahead, via auto-regression (AR) and moving-average (MA), respectively. The focus of this paper is a primal-dual training method that formulates the learning of the RNN as a formal optimization problem with an inequality constraint that guarantees stability of the network dynamics. Experimental results demonstrate the effectiveness of this new method, which achieves 18.86% phone recognition error on the TIMIT benchmark for the core test set. The results also show that the proposed primal-dual training method produces lower recognition errors than the popular RNN methods developed earlier based on the carefully tuned threshold parameter that heuristically prevents the gradient from exploding.</p>
+<p>【Keywords】:</p>
+<h3 id="54. Approximated Infomax Early Stopping: Revisiting Gaussian RBMs on Natural Images">54. Approximated Infomax Early Stopping: Revisiting Gaussian RBMs on Natural Images</h3>
+<p>【<a href="https://openreview.net/forum?id=bb7SwHahSUpiq">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="qqm377p9k@gmail.com">Taichi Kiwaki</a> ; <a href="mak@sat.t.u-tokyo.ac.jp">Takaki Makino</a> ; <a href="aihara@sat.t.u-tokyo.ac.jp">Kazuyuki Aihara</a></p>
+<p>【Abstract】:
+We pursue early stopping that helps Gaussian Restricted Boltzmann Machines (GRBMs) to gain good natural image representations in terms of overcompleteness and data fitting. GRBMs are widely considered as an unsuitable model for natural images because they gain non-overcomplete representations which include uniform filters that do not represent sharp edges. We have recently found that GRBMs once gain and subsequently lose sharp edge filters during their training, contrary to this common perspective. We attribute this phenomenon to a tradeoff between overcompleteness of GRBM representations and data fitting. To gain GRBM representations that are overcomplete and fit data well, we propose approximated infomax early stopping for GRBMs. The proposed method enables huge performance boosts of classifiers trained on GRBM representations.</p>
+<p>【Keywords】:</p>
+<h3 id="55. Some Improvements on Deep Convolutional Neural Network Based Image Classification">55. Some Improvements on Deep Convolutional Neural Network Based Image Classification</h3>
+<p>【<a href="https://openreview.net/forum?id=uuFh8Ny0WPw0B">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="andrewgeraldhoward@gmail.com">Andrew Howard</a></p>
+<p>【Abstract】:
+We investigate multiple techniques to improve upon the current state of the art deep convolutional neural network based image classification pipeline. The techiques include adding more image transformations to training data, adding more transformations to generate additional predictions at test time and using complementary models applied to higher resolution images. This paper summarizes our entry in the Imagenet Large Scale Visual Recognition Challenge 2013. Our system achieved a top 5 classification error rate of 13.55% using no external data which is over a 20% relative improvement on the previous year's winner.</p>
+<p>【Keywords】:</p>
+<h3 id="56. Learning Transformations for Classification Forests">56. Learning Transformations for Classification Forests</h3>
+<p>【<a href="https://openreview.net/forum?id=8G-o3Hm_Z43Cf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="qiang.qiu@duke.edu">Qiang Qiu</a> ; <a href="guillermo.sapiro@gmail.com">Guillermo Sapiro</a></p>
+<p>【Abstract】:
+This work introduces a transformation-based learner model for classification forests. The weak learner at each split node plays a crucial role in a classification tree. We propose to optimize the splitting objective by learning a linear transformation on subspaces using nuclear norm as the optimization criteria. The learned linear transformation restores a low-rank structure for data from the same class, and, at the same time, maximizes the separation between different classes, thereby improving the performance of the split function. Theoretical and experimental results support the proposed framework.</p>
+<p>【Keywords】:</p>
+<h3 id="57. Continuous Learning: Engineering Super Features With Feature Algebras">57. Continuous Learning: Engineering Super Features With Feature Algebras</h3>
+<p>【<a href="https://openreview.net/forum?id=EXqiEZhNias13">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="michael.tetelman@gmail.com">Michael Tetelman</a></p>
+<p>【Abstract】:
+In this paper we consider a problem of searching a space of predictive models for a given training data set. We propose an iterative procedure for deriving a sequence of improving models and a corresponding sequence of sets of non-linear features on original input space. After finite number of iterations $N$ the non-linear features become $2^N$-degree polynomials on original space. We show that in a limit of infinite number of iterations derived non-linear features must form an algebra, so for any given input point a product of two features is a linear combination of features from same feature space. Due to convexity of each iteration and its ability to fall back to solutions found in previous iteration the models in the sequence have always increasing likelihood with each iteration while dimensionality of each model parameter space is set to a limited controlled value.</p>
+<p>【Keywords】:</p>
+<h3 id="58. Network In Network">58. Network In Network</h3>
+<p>【<a href="https://openreview.net/forum?id=ylE6yojDR5yqX">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="mavenlin@gmail.com">Min Lin</a> ; <a href="chenqiang@nus.edu.sg">Qiang Chen</a> ; <a href="eleyans@nus.edu.sg">Shuicheng Yan</a></p>
+<p>【Abstract】:
+We propose a novel network structure called 'Network In Network' (NIN) to enhance the model discriminability for local receptive fields. The conventional convolutional layer uses linear filters followed by a nonlinear activation function to scan the input. Instead, we build micro neural networks with more complex structures to handle the variance of the local receptive fields. We instantiate the micro neural network with a nonlinear multiple layer structure which is a potent function approximator. The feature maps are obtained by sliding the micro networks over the input in a similar manner of CNN and then fed into the next layer. The deep NIN is thus implemented as stacking of multiple sliding micro neural networks. With the enhanced local modeling via micro network, we are able to utilize global average pooling over feature maps in the classification layer, which is more interpretable and less prone to overfitting than traditional fully connected layers. We demonstrated state-of-the-art classification performances with NIN on CIFAR-10, CIFAR-100 and SVHN datasets.</p>
+<p>【Keywords】:</p>
+<h3 id="59. Low-Rank Approximations for Conditional Feedforward Computation in Deep Neural Networks">59. Low-Rank Approximations for Conditional Feedforward Computation in Deep Neural Networks</h3>
+<p>【<a href="https://openreview.net/forum?id=6rEnMF1okeiBO">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="ndrw.dvvs@gmail.com">Andrew Davis</a> ; <a href="itamar@ieee.org">Itamar Arel</a></p>
+<p>【Abstract】:
+Scalability properties of deep neural networks raise key research questions, particularly as the problems considered become larger and more challenging. This paper expands on the idea of conditional computation introduced by Bengio, et. al., where the nodes of a deep network are augmented by a set of gating units that determine when a node should be calculated. By factorizing the weight matrix into a low-rank approximation, an estimation of the sign of the pre-nonlinearity activation can be efficiently obtained. For networks using rectified-linear hidden units, this implies that the computation of a hidden unit with an estimated negative pre-nonlinearity can be ommitted altogether, as its value will become zero when nonlinearity is applied. For sparse neural networks, this can result in considerable speed gains. Experimental results using the MNIST and SVHN data sets with a fully-connected deep neural network demonstrate the performance robustness of the proposed scheme with respect to the error introduced by the conditional computation process.</p>
+<p>【Keywords】:</p>
+<h3 id="60. Bounding the Test Log-Likelihood of Generative Models">60. Bounding the Test Log-Likelihood of Generative Models</h3>
+<p>【<a href="https://openreview.net/forum?id=gg4nKrblw0gkf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="yoshua.bengio@gmail.com">Yoshua Bengio</a> ; <a href="yaoli.email@gmail.com">Li Yao</a> ; <a href="kyunghyun.cho@aalto.fi">KyungHyun Cho</a></p>
+<p>【Abstract】:
+Several interesting generative learning algorithms involve a complex probability distribution over many random variables, involving intractable normalization constants or latent variable normalization. Some of them may even not have an analytic expression for the unnormalized probability function and no tractable approximation. This makes it difficult to estimate the quality of these models, once they have been trained, or to monitor their quality (e.g. for early stopping) while training. A previously proposed method is based on constructing a non-parametric density estimator of the model's probability function from samples generated by the model. We revisit this idea, propose a more efficient estimator, and prove that it provides a lower bound on the true test log-likelihood, and an unbiased estimator as the number of generated samples goes to infinity, although one that incorporates the effect of poor mixing (making the estimated likelihood worse, i.e., more conservative).</p>
+<p>【Keywords】:</p>
+<h3 id="61. Reference Distance Estimator">61. Reference Distance Estimator</h3>
+<p>【<a href="https://openreview.net/forum?id=IrVvIL2BaXrg4">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="liyanpeng.lyp@gmail.com">Yanpeng Li</a></p>
+<p>【Abstract】:
+A theoretical study is presented for a simple linear classifier called reference distance estimator (RDE), which assigns the weight of each feature j as P(r|j)-P(r), where r is a reference feature relevant to the target class y. The analysis shows that if r performs better than random guess in predicting y and is conditionally independent with each feature j, the RDE will have the same classification performance as that from P(y|j)-P(y), a classifier trained with the gold standard y. Since the estimation of P(r|j)-P(r) does not require labeled data, under the assumption above, RDE trained with a large number of unlabeled examples would be close to that trained with infinite labeled examples. For the case the assumption does not hold, we theoretically analyze the factors that influence the closeness of the RDE to the perfect one under the assumption, and present an algorithm to select reference features and combine multiple RDEs from different reference features using both labeled and unlabeled data. The experimental results on 10 text classification tasks show that the semi-supervised learning method improves supervised methods using 5,000 labeled examples and 13 million unlabeled ones, and in many tasks, its performance is even close to a classifier trained with 13 million labeled examples. In addition, the bounds in the theorems provide good estimation of the classification performance and can be useful for new algorithm design.</p>
+<p>【Keywords】:</p>
+<h3 id="62. On Fast Dropout and its Applicability to Recurrent Networks">62. On Fast Dropout and its Applicability to Recurrent Networks</h3>
+<p>【<a href="https://openreview.net/forum?id=OP4ePyQXNu-da">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="bayer.justin@googlemail.com">Justin Bayer</a> ; <a href="osendorf@gmail.com">Christian Osendorfer</a> ; <a href="surban@tum.de">Sebastian Urban</a> ; <a href="ntchen86@gmail.com">Nutan Chen</a> ; <a href="korhammd@in.tum.de">Daniela Korhammer</a> ; <a href="smagt@tum.de">Patrick van der Smagt</a></p>
+<p>【Abstract】:
+Recurrent Neural Networks (RNNs) are rich models for the processing of sequential data. Recent work on advancing the state of the art has been focused on the optimization or modelling of RNNs, mostly motivated by adressing the problems of the vanishing and exploding gradients.
+The control of overfitting has seen considerably less attention.
+This paper contributes to that by analyzing fast dropout, a recent regularization method for generalized linear models and neural networks from a back-propagation inspired perspective. We show that fast dropout implements a quadratic form of an adaptive, per-parameter regularizer, which rewards large weights in the light of underfitting, penalizes them for overconfident predictions and vanishes at minima of an unregularized training loss. One consequence of this is the absense of a global weight attractor, which is particularly appealing for RNNs, since the dynamics are not biased towards a certain regime. We positively test the hypothesis that this improves the performance of RNNs on four musical data sets and a natural language processing (NLP) task, on which we achieve state of the art results.</p>
+<p>【Keywords】:</p>
+<h3 id="63. Sparse, complex-valued representations of natural sounds learned with phase and amplitude continuity priors">63. Sparse, complex-valued representations of natural sounds learned with phase and amplitude continuity priors</h3>
+<p>【<a href="https://openreview.net/forum?id=PtRd6ZOVAm7Lv">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="mlynar@mis.mpg.de">Wiktor Mlynarski</a></p>
+<p>【Abstract】:
+Complex-valued sparse coding is a data representation which employs a dictionary of two-dimensional subspaces, while imposing a sparse, factorial prior on complex amplitudes. When trained on a dataset of natural image patches, it learns phase invariant features which closely resemble receptive fields of complex cells in the visual cortex. Features trained on natural sounds however, rarely reveal phase invariance and capture other aspects of the data. This observation is a starting point of the present work. As its first contribution, it provides an analysis of natural sound statistics by means of learning sparse, complex representations of short speech intervals. Secondly, it proposes priors over the basis function set, which bias them towards phase-invariant solutions. In this way, a dictionary of complex basis functions can be learned from the data statistics, while preserving the phase invariance property. Finally, representations trained on speech sounds with and without priors are compared. Prior-based basis functions reveal performance comparable to unconstrained sparse coding, while explicitly representing phase as a temporal shift. Such representations can find applications in many perceptual and machine learning tasks.</p>
+<p>【Keywords】:</p>
+<h3 id="64. Learning to encode motion using spatio-temporal synchrony">64. Learning to encode motion using spatio-temporal synchrony</h3>
+<p>【<a href="https://openreview.net/forum?id=__Jk_HAdtfK5W">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="konda@informatik.uni-frankfurt.de">Kishore Reddy Konda</a> ; <a href="roland.memisevic@gmail.com">Roland Memisevic</a> ; <a href="vmichals@rz.uni-frankfurt.de">Vincent Michalski</a></p>
+<p>【Abstract】:
+We consider the task of learning to extract motion from videos. To this end, we show that the detection of spatial transformations can be viewed as the detection of synchrony between the image sequence and a sequence of features undergoing the motion we wish to detect. We show that learning about synchrony is possible using very fast, local learning rules, by introducing multiplicative 'gating' interactions between hidden units across frames. This makes it possible to achieve competitive performance in a wide variety of motion estimation tasks, using a small fraction of the time required to learn features, and to outperform hand-crafted spatio-temporal features by a large margin. We also show how learning about synchrony can be viewed as performing greedy parameter estimation in the well-known motion energy model.</p>
+<p>【Keywords】:</p>
+<h3 id="65. Image Representation Learning Using Graph Regularized Auto-Encoders">65. Image Representation Learning Using Graph Regularized Auto-Encoders</h3>
+<p>【<a href="https://openreview.net/forum?id=M7uvMK0-IZCh9">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="yyliao@iipc.zju.edu.cn">Yiyi Liao</a> ; <a href="wangyue@iipc.zju.edu.cn">Yue Wang</a> ; <a href="cckaffe@gmail.com">Yong Liu</a></p>
+<p>【Abstract】:
+We consider the problem of image representation for the tasks of unsupervised learning and semi-supervised learning. In those learning tasks, the raw image vectors may not provide enough representation for their intrinsic structures due to their highly dense feature space. To overcome this problem, the raw image vectors should be mapped to a proper representation space which can capture the latent structure of the original data and represent the data explicitly for further learning tasks such as clustering. Inspired by the recent research works on deep neural network and representation learning, in this paper, we introduce the multiple-layer auto-encoder into image representation, we also apply the locally invariant ideal to our image representation with auto-encoders and propose a novel method, called Graph regularized Auto-Encoder (GAE). GAE can provide a compact representation which uncovers the hidden semantics and simultaneously respects the intrinsic geometric structure. Extensive experiments on image clustering show encouraging results of the proposed algorithm in comparison to the state-of-the-art algorithms on real-word cases.</p>
+<p>【Keywords】:</p>
+<h3 id="66. Deep Convolutional Ranking for Multilabel Image Annotation">66. Deep Convolutional Ranking for Multilabel Image Annotation</h3>
+<p>【<a href="https://openreview.net/forum?id=qqUMpzcNswxen">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="leungt@google.com">Sergey Ioffe</a> ; <a href="toshev@google.com">Alexander Toshev</a> ; <a href="jiayq84@gmail.com">Yangqing Jia</a> ; <a href="sioffe@google.com">Thomas Leung</a> ; <a href="yunchao@cs.unc.edu">Yunchao Gong</a></p>
+<p>【Abstract】:
+Multilabel image annotation is one of the most important challenges in computer vision with many real-world applications. While existing work usually use conventional visual features for multilabel annotation, the recent deep convolutional feature shows potentials to significantly boost performance. In this work, we propose to leverage the advantage of such features and analyze key components that lead to better performances. Specifically, we show that a significant performance gain could be obtained by combining convolutional architectures with an approximate top-$k$ ranking objective function, as such objectives naturally fit the multilabel tagging problem. Our experiments on the publicly available NUS-WIDE dataset outperforms the conventional visual features by about $10%$, obtaining the best reported performance in the literature.</p>
+<p>【Keywords】:</p>
+<h3 id="67. Understanding Deep Architectures using a Recursive Convolutional Network">67. Understanding Deep Architectures using a Recursive Convolutional Network</h3>
+<p>【<a href="https://openreview.net/forum?id=Wi9tWlxh4Jwu6">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="deigen@cs.nyu.edu">David Eigen</a> ; <a href="rolfe22@gmail.com">Jason Rolfe</a> ; <a href="robfergus@gmail.com">Rob Fergus</a> ; <a href="ylecun@gmail.com">Yann LeCun</a></p>
+<p>【Abstract】:
+Convolutional neural network models have recently been shown to achieve excellent performance on challenging recognition benchmarks. However, like many deep models, there is little guidance on how the architecture of the model should be selected. Important hyper-parameters such as the degree of parameter sharing, number of layers, units per layer, and overall number of parameters must be selected manually through trial-and-error. To address this, we introduce a novel type of recursive neural network that is convolutional in nature. Its similarity to standard convolutional models allows us to tease apart the important architectural factors that influence performance. We find that for a given parameter budget, deeper models are preferred over shallow ones, and models with more parameters are preferred to those with fewer. Surprisingly and perhaps counterintuitively, we find that performance is independent of the number of units, so long as the network depth and number of parameters is held constant. This suggests that, computational efficiency considerations aside, parameter sharing within deep networks may not be so beneficial as previously supposed.</p>
+<p>【Keywords】:</p>
+<h3 id="68. Feature Graph Architectures">68. Feature Graph Architectures</h3>
+<p>【<a href="https://openreview.net/forum?id=UYmwU4C1wZi16">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="davisconsulting@gmail.com">Richard Davis</a> ; <a href="sanjay.chawla@sydney.edu.au">Sanjay Chawla</a> ; <a href="philip.leong@sydney.edu.au">Philip Leong</a></p>
+<p>【Abstract】:
+In this article we propose feature graph architectures (FGA), which are deep learning systems employing a structured initialisation and training method based on a feature graph which facilitates improved generalisation performance compared with a standard shallow architecture. The goal is to explore alternative perspectives on the problem of deep network training. We evaluate FGA performance for deep SVMs on some experimental datasets, and show how generalisation and stability results may be derived for these models. We describe the effect of permutations on the model accuracy, and give a criterion for the optimal permutation in terms of feature correlations. The experimental results show that the algorithm produces robust and significant test set improvements over a standard shallow SVM training method for a range of datasets. These gains are achieved with a moderate increase in time complexity.</p>
+<p>【Keywords】:</p>
+<h3 id="69. Deep and Wide Multiscale Recursive Networks for Robust Image Labeling">69. Deep and Wide Multiscale Recursive Networks for Robust Image Labeling</h3>
+<p>【<a href="https://openreview.net/forum?id=HH-uZ8U2O1aWf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="huangg@janelia.hhmi.org">Gary B. Huang</a> ; <a href="jainv@janelia.hhmi.org">Viren Jain</a></p>
+<p>【Abstract】:
+Feedforward multilayer networks trained by supervised learning have recently demonstrated state of the art performance on image labeling problems such as boundary prediction and scene parsing. As even very low error rates can limit practical usage of such systems, methods that perform closer to human accuracy remain desirable. In this work, we propose a new type of network with the following properties that address what we hypothesize to be limiting aspects of existing methods: (1) a `wide' structure with thousands of features, (2) a large field of view, (3) recursive iterations that exploit statistical dependencies in label space, and (4) a parallelizable architecture that can be trained in a fraction of the time compared to benchmark multilayer convolutional networks. For the specific image labeling problem of boundary prediction, we also introduce a novel example weighting algorithm that improves segmentation accuracy. Experiments in the challenging domain of connectomic reconstruction of neural circuity from 3d electron microscopy data show that these 'Deep And Wide Multiscale Recursive' (DAWMR) networks lead to new levels of image labeling performance. The highest performing architecture has twelve layers, interwoven supervised and unsupervised stages, and uses an input field of view of 157,464 voxels ($54^3$) to make a prediction at each image location. We present an associated open source software package that enables the simple and flexible creation of DAWMR networks.</p>
+<p>【Keywords】:</p>
+<h2 id="ICLR 2014 Workshop Track Submitted Papers  19">ICLR 2014 Workshop Track Submitted Papers  19</h2>
+<h3 id="70. Do Deep Nets Really Need to be Deep?">70. Do Deep Nets Really Need to be Deep?</h3>
+<p>【<a href="https://openreview.net/forum?id=Fav_FXoOhRFOQ">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="jimmy@psi.utoronto.ca">Jimmy Lei Ba</a> ; <a href="rcaruana@microsoft.com">Rich Caurana</a></p>
+<p>【Abstract】:
+Currently, deep neural networks are the state of the art on problems such as speech recognition and computer vision. In this extended abstract, we show that shallow feed-forward networks can learn the complex functions previously learned by deep nets and achieve accuracies previously only achievable with deep models. Moreover, the shallow neural nets can learn these deep functions using a total number of parameters similar to the original deep model. We evaluate our method on TIMIT phoneme recognition task and are able to train shallow fully-connected nets that perform similarly to complex, well-engineered, deep convolutional architectures. Our success in training shallow neural nets to mimic deeper models suggests that there probably exist better algorithms for training shallow feed-forward nets than those currently available.</p>
+<p>【Keywords】:</p>
+<h3 id="71. Multi-GPU Training of ConvNets">71. Multi-GPU Training of ConvNets</h3>
+<p>【<a href="https://openreview.net/forum?id=zze5zJIRq7lRt">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="omry@fb.com">Omry Yadan</a> ; <a href="kma@fb.com">Keith Adams</a> ; <a href="yaniv@fb.com">Yaniv Taigman</a> ; <a href="ranzato@google.com">Marc'Aurelio Ranzato</a></p>
+<p>【Abstract】:
+In this work we evaluate different approaches to parallelize computation of convolutional neural networks across several GPUs.</p>
+<p>【Keywords】:</p>
+<h3 id="72. Deep learning for class-generic object detection">72. Deep learning for class-generic object detection</h3>
+<p>【<a href="https://openreview.net/forum?id=8yYIVxPr6xHht">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="brodyh@stanford.edu">Brody Huval</a> ; <a href="acoates@cs.stanford.edu">Adam Coates</a> ; <a href="ang@cs.stanford.edu">Andrew Ng</a></p>
+<p>【Abstract】:
+We investigate the use of deep neural networks for the task of class-generic object detection. We show that neural networks originally designed for image recognition can be trained to detect objects within images, regardless of their class, including objects for which no bounding box labels have been provided. In addition, we show that bounding box labels yield a 1% performance increase on the ImageNet recognition challenge.</p>
+<p>【Keywords】:</p>
+<h3 id="73. GPU Asynchronous Stochastic Gradient Descent to Speed Up Neural Network Training">73. GPU Asynchronous Stochastic Gradient Descent to Speed Up Neural Network Training</h3>
+<p>【<a href="https://openreview.net/forum?id=kSHxSr1TPt8XB">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="hljin@adobe.com">Hailin Jin</a> ; <a href="huang@ifp.uiuc.edu">Thomas Huang</a> ; <a href="zlin@adobe.com">Zhe Lin</a> ; <a href="jiayang@adobe.com">Jianchao Yang</a> ; <a href="tom.le.paine@gmail.com">Thomas Paine</a></p>
+<p>【Abstract】:
+The ability to train large-scale neural networks has resulted in state-of-the-art performance in many areas of computer vision. These results have largely come from computational break throughs of two forms: model parallelism, e.g. GPU accelerated training, which has seen quick adoption in computer vision circles, and data parallelism, e.g. A-SGD, whose large scale has been used mostly in industry. We report early experiments with a system that makes use of both model parallelism and data parallelism, we call GPU A-SGD. We show using GPU A-SGD it is possible to speed up training of large convolutional neural networks useful for computer vision. We believe GPU A-SGD will make it possible to train larger networks on larger training sets in a reasonable amount of time.</p>
+<p>【Keywords】:</p>
+<h3 id="74. Relaxations for inference in restricted Boltzmann machines">74. Relaxations for inference in restricted Boltzmann machines</h3>
+<p>【<a href="https://openreview.net/forum?id=Hy_7-edzrEHx9">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="sidaw@cs.stanford.edu">Sida I. Wang</a> ; <a href="rf@cs.stanford.edu">Roy Frostig</a> ; <a href="pliang@cs.stanford.edu">Percy Liang</a> ; <a href="manning@cs.stanford.edu">Christopher D. Manning</a></p>
+<p>【Abstract】:
+We propose a relaxation-based approximate inference algorithm that samples near-MAP configurations of a binary pairwise Markov random field. We experiment on MAP inference tasks in several restricted Boltzmann machines. We also use our underlying sampler to estimate the log-partition function of restricted Boltzmann machines and compare against other sampling-based methods.</p>
+<p>【Keywords】:</p>
+<h3 id="75. Occupancy Detection in Vehicles Using Fisher Vector Image Representation">75. Occupancy Detection in Vehicles Using Fisher Vector Image Representation</h3>
+<p>【<a href="https://openreview.net/forum?id=VNYDEas7tlE75">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="yusuf.artan@xerox.com">Yusuf Artan</a> ; <a href="peter.paul@xerox.com">Peter Paul</a></p>
+<p>【Abstract】:
+Due to the high volume of traffic on modern roadways, transportation agencies have proposed High Occupancy Vehicle (HOV) lanes and High Occupancy Tolling (HOT) lanes to promote car pooling. However, enforcement of the rules of these lanes is currently performed by roadside enforcement officers using visual observation. Manual roadside enforcement is known to be inefficient, costly, potentially dangerous, and ultimately ineffective. Violation rates up to 50%-80% have been reported, while manual enforcement rates of less than 10% are typical. Therefore, there is a need for automated vehicle occupancy detection to support HOV/HOT lane enforcement. A key component of determining vehicle occupancy is to determine whether or not the vehicle's front passenger seat is occupied. In this paper, we examine two methods of determining vehicle front seat occupancy using a near infrared (NIR) camera system pointed at the vehicle's front windshield. The first method examines a state-of-the-art deformable part model (DPM) based face detection system that is robust to facial pose. The second method examines state-of- the-art local aggregation based image classification using bag-of-visual-words (BOW) and Fisher vectors (FV). A dataset of 3000 images was collected on a public roadway and is used to perform the comparison. From these experiments it is clear that the image classification approach is superior for this problem.</p>
+<p>【Keywords】:</p>
+<h3 id="76. Learning Information Spread in Content Networks">76. Learning Information Spread in Content Networks</h3>
+<p>【<a href="https://openreview.net/forum?id=Bg3GB1suG0qx6">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="cedric.lagnier@lip6.fr">Cédric Lagnier</a> ; <a href="ludovic.denoyer@lip6.fr">Ludovic Denoyer</a> ; <a href="sylvain.lamprier@lip6.fr">Sylvain Lamprier</a> ; <a href="simon.bourigault@lip6.fr">Simon Bourigault</a> ; <a href="patrick.gallinari@gmail.com">patrick gallinari</a></p>
+<p>【Abstract】:
+We introduce a model for predicting the diffusion of content information on social media. When propagation is usually modeled on discrete graph structures, we introduce here a continuous diffusion model, where nodes in a diffusion cascade are projected onto a latent space with the property that their proximity in this space reflects the temporal diffusion process. We focus on the task of predicting contaminated users for an initial initial information source and provide preliminary results on differents datasets.</p>
+<p>【Keywords】:</p>
+<h3 id="77. Stochastic Gradient Estimate Variance in Contrastive Divergence and Persistent Contrastive Divergence">77. Stochastic Gradient Estimate Variance in Contrastive Divergence and Persistent Contrastive Divergence</h3>
+<p>【<a href="https://openreview.net/forum?id=zzM42D6twOztS">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="m.p.e.berglund@gmail.com">Mathias Berglund</a> ; <a href="tapani.raiko@gmail.com">Tapani Raiko</a></p>
+<p>【Abstract】:
+Contrastive Divergence (CD) and Persistent Contrastive Divergence (PCD) are popular methods for training the weights of Restricted Boltzmann Machines. However, both methods use an approximate method for sampling from the model distribution. As a side effect, these approximations yield significantly different variances for stochastic gradient estimates of individual samples. In this paper we show empirically that CD has a lower stochastic gradient estimate variance than exact sampling, while the sum of subsequent PCD estimates has a higher variance than exact sampling. The results give one explanation to the finding that CD can be used with smaller minibatches or higher learning rates than PCD.</p>
+<p>【Keywords】:</p>
+<h3 id="78. Generic Deep Networks with Wavelet Scattering">78. Generic Deep Networks with Wavelet Scattering</h3>
+<p>【<a href="https://openreview.net/forum?id=-j1Hj5YWwrj_f">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="edouard.oyallon@gmail.com">Edouard Oyallon</a> ; <a href="stephane.mallat@ens.fr">Stéphane Mallat</a> ; <a href="laurent.sifre@polytechnique.edu">Laurent Sifre</a></p>
+<p>【Abstract】:
+We introduce a two-layer wavelet scattering network, which involves no learning, for object classification. This scattering transform computes a spatial wavelet transform on the first layer and a joint wavelet transform along spatial, angular and scale variables in the second layer. Image classification results are given on Caltech databases.</p>
+<p>【Keywords】:</p>
+<h3 id="79. Learning States Representations in POMDP">79. Learning States Representations in POMDP</h3>
+<p>【<a href="https://openreview.net/forum?id=6dukdvBcxn6cR">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="gabriella.contardo@lip6.fr">Gabriella Contardo</a> ; <a href="ludovic.denoyer@lip6.fr">Ludovic Denoyer</a> ; <a href="thierry.artieres@lip6.fr">Thierry Artieres</a> ; <a href="patrick.gallinari@gmail.com">patrick gallinari</a></p>
+<p>【Abstract】:
+We propose to deal with sequential processes where only partial observations are available by learning a latent representation space on which policies may be accurately learned.</p>
+<p>【Keywords】:</p>
+<h3 id="80. Competitive Learning with Feedforward Supervisory Signal for Pre-trained Multilayered Networks">80. Competitive Learning with Feedforward Supervisory Signal for Pre-trained Multilayered Networks</h3>
+<p>【<a href="https://openreview.net/forum?id=0yNguO_G2aycf">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="tshino@nict.go.jp">Takashi Shinozaki</a> ; <a href="y_naruse@nict.go.jp">Yasushi Naruse</a></p>
+<p>【Abstract】:
+We propose a novel learning method for multilayered neural networks which uses feedforward supervisory signal and associates classification of a new input with that of pre-trained input. The proposed method effectively uses rich input information in the earlier layer and enables robust and simultaneous leaning on multilayer neural network.</p>
+<p>【Keywords】:</p>
+<h3 id="81. Unsupervised Feature Learning by Deep Sparse Coding">81. Unsupervised Feature Learning by Deep Sparse Coding</h3>
+<p>【<a href="https://openreview.net/forum?id=X4tT4azdE1XkU">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="he.yunlong@gmail.com">Yunlong He</a> ; <a href="aszlam@ccny.cuny.edu">Arthur Szlam</a> ; <a href="yanjun@virginia.edu">Yanjun Qi</a> ; <a href="yunwang@princeton.edu">Yun Wang</a> ; <a href="koray@kavukcuoglu.org">Koray Kavukcuoglu</a></p>
+<p>【Abstract】:
+In this paper, we propose a new unsupervised feature learning framework, namely Deep Sparse Coding (DeepSC), that extends sparse coding to a multi-layer architecture for visual object recognition tasks. The main innovation of the framework is that it connects the sparse-encoders from different layers by a sparse-to-dense module. The sparse-to-dense module is a composition of a local spatial pooling step and a low-dimensional embedding process, which takes advantage of the spatial smoothness information in the image. As a result, the new method is able to learn several levels of sparse representation of the image which capture features at a variety of abstraction levels and simultaneously preserve the spatial smoothness between the neighboring image patches. Combining the feature representations from multiple layers, DeepSC achieves the state-of-the-art performance on multiple object recognition tasks.</p>
+<p>【Keywords】:</p>
+<h3 id="82. Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps">82. Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps</h3>
+<p>【<a href="https://openreview.net/forum?id=cO4ycnpqxKcS9">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="karen@robots.ox.ac.uk">Karen Simonyan</a> ; <a href="vedaldi@robots.ox.ac.uk">Andrea Vedaldi</a> ; <a href="az@robots.ox.ac.uk">Andrew Zisserman</a></p>
+<p>【Abstract】:
+This paper addresses the visualisation of image classification models, learnt using deep Convolutional Networks (ConvNets). We consider two visualisation techniques, based on computing the gradient of the class score with respect to the input image. The first one generates an image, which maximises the class score [Erhan et al., 2009], thus visualising the notion of the class, captured by a ConvNet. The second technique computes a class saliency map, specific to a given image and class. We show that such maps can be employed for weakly supervised object segmentation using classification ConvNets. Finally, we establish the connection between the gradient-based ConvNet visualisation methods and deconvolutional networks [Zeiler et al., 2013].</p>
+<p>【Keywords】:</p>
+<h3 id="83. Distributional Models and Deep Learning Embeddings: Combining the Best of Both Worlds">83. Distributional Models and Deep Learning Embeddings: Combining the Best of Both Worlds</h3>
+<p>【<a href="https://openreview.net/forum?id=IgLmlBsymQnyP">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="sergienya@gmail.com">Irina Sergienya</a> ; <a href="inquiries@cislmu.org">Hinrich Schütze</a></p>
+<p>【Abstract】:
+There are two main approaches to the distributed representation of words: low-dimensional deep learning embeddings and high-dimensional distributional models, in which each dimension corresponds to a context word. In this paper, we combine these two approaches by learning embeddings based on distributional-model vectors - as opposed to one-hot vectors as is standardly done in deep learning. We show that the combined approach has better performance on a word relatedness judgment task.</p>
+<p>【Keywords】:</p>
+<h3 id="84. End-to-End Text Recognition with Hybrid HMM Maxout Models">84. End-to-End Text Recognition with Hybrid HMM Maxout Models</h3>
+<p>【<a href="https://openreview.net/forum?id=AKIW-22FWrKkR">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="ouais.alsharif@gmail.com">Ouais Alsharif</a> ; <a href="jpineau@cs.mcgill.ca">Joelle Pineau</a></p>
+<p>【Abstract】:
+The problem of detecting and recognizing text in natural scenes has proved to be more challenging than its counterpart in documents, with most of the previous work focusing on a single part of the problem. In this work, we propose new solutions to the character and word recognition problems and then show how to combine these solutions in an end-to-end text-recognition system. We do so by leveraging the recently introduced Maxout networks along with hybrid HMM models that have proven useful for voice recognition. Using these elements, we build a tunable and highly accurate recognition system that beats state-of-the-art results on all the sub-problems for both the ICDAR 2003 and SVT benchmark datasets.</p>
+<p>【Keywords】:</p>
+<h3 id="85. Learning Factored Representations in a Deep Mixture of Experts">85. Learning Factored Representations in a Deep Mixture of Experts</h3>
+<p>【<a href="https://openreview.net/forum?id=eOP7egJ1wveRW">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="deigen@cs.nyu.edu">David Eigen</a> ; <a href="ranzato@google.com">Marc'Aurelio Ranzato</a> ; <a href="ilya.at.cs@gmail.com">Ilya Sutskever</a></p>
+<p>【Abstract】:
+Mixtures of Experts combine the outputs of several 'expert' networks, each of which specializes in a different part of the input space. This is achieved by training a 'gating' network that maps each input to a distribution over the experts. Such models show promise for building larger networks that are still cheap to compute at test time, and more parallelizable at training time. In this this work, we extend the Mixture of Experts to a stacked model, the Deep Mixture of Experts, with multiple sets of gating and experts. This exponentially increases the number of effective experts by associating each input with a combination of experts at each layer, yet maintains a modest model size. On a randomly translated version of the MNIST dataset, we find that the Deep Mixture of Experts automatically learns to develop location-dependent ('where') experts at the first layer, and class-specific ('what') experts at the second layer. In addition, we see that the different combinations are in use when the model is applied to a dataset of speech monophones. These demonstrate effective use of all expert combinations.</p>
+<p>【Keywords】:</p>
+<h3 id="86. Learning Semantic Script Knowledge with Event Embeddings">86. Learning Semantic Script Knowledge with Event Embeddings</h3>
+<p>【<a href="https://openreview.net/forum?id=ssDPnHvkedao6">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="modiashutosh@gmail.com">Ashutosh Modi</a> ; <a href="titov@mmci.uni-saarland.de">ivan titov</a></p>
+<p>【Abstract】:
+Induction of common sense knowledge about prototypical sequences of events has recently received much attention. Instead of inducing this knowledge in the form of graphs, as in much of the previous work, in our method, distributed representations of event realizations are computed based on distributed representations of predicates and their arguments, and then these representations are used to predict prototypical event orderings. The parameters of the compositional process for computing the event representations and the ranking component of the model are jointly estimated from unlabeled texts. We show that this approach results in a substantial boost in ordering performance with respect to previous methods.</p>
+<p>【Keywords】:</p>
+<h3 id="87. Unsupervised feature learning by augmenting single images">87. Unsupervised feature learning by augmenting single images</h3>
+<p>【<a href="https://openreview.net/forum?id=wJuDwQ-d3XJMj">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="adosovitskiy@gmail.com">Alexey Dosovitskiy</a> ; <a href="springj@informatik.uni-freiburg.de">Jost Tobias Springenberg</a> ; <a href="brox@cs.uni-freiburg.de">Thomas Brox</a></p>
+<p>【Abstract】:
+When deep learning is applied to visual object recognition, data augmentation is often used to generate additional training data without extra labeling cost. It helps to reduce overfitting and increase the performance of the algorithm. In this paper we investigate if it is possible to use data augmentation as the main component of an unsupervised feature learning architecture. To that end we sample a set of random image patches and declare each of them to be a separate single-image surrogate class. We then extend these trivial one-element classes by applying a variety of transformations to the initial 'seed' patches. Finally we train a convolutional neural network to discriminate between these surrogate classes. The feature representation learned by the network can then be used in various vision tasks. We find that this simple feature learning algorithm is surprisingly successful, achieving competitive classification results on several popular vision datasets (STL-10, CIFAR-10, Caltech-101).</p>
+<p>【Keywords】:</p>
+<h3 id="88. Deep Learning Embeddings for Discontinuous Linguistic Units">88. Deep Learning Embeddings for Discontinuous Linguistic Units</h3>
+<p>【<a href="https://openreview.net/forum?id=iiu7beeAJGnAl">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+<a href="mr.yinwenpeng@gmail.com">Wenpeng Yin</a> ; <a href="inquiries@cislmu.org">Hinrich Schütze</a></p>
+<p>【Abstract】:
+Deep learning embeddings have been successfully used for many natural language processing (NLP) problems. Embeddings are mostly computed for word forms although a number of recent papers have extended this to other linguistic units like morphemes and phrases. In this paper, we argue that learning embeddings for discontinuous linguistic units should also be considered. In an experimental evaluation on coreference resolution, we show that such embeddings perform better than word form embeddings.</p>
+<p>【Keywords】:</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="https://github.com/huntercmd/ccf"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>

@@ -1,0 +1,640 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://rawcdn.githack.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://rawcdn.githack.com/huntercmd/blog/d9beff1/config/css/skin.js"></script>
+<script src="https://rawcdn.githack.com/huntercmd/blog/master/config/css/classie.js"></script>
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#ICLR 2016:San Juan, Puerto Rico">ICLR 2016:San Juan, Puerto Rico</a><ul>
+<li><a href="#Paper Num: 80 || Session Num: 2">Paper Num: 80 || Session Num: 2</a></li>
+<li><a href="#Oral Presentations  15">Oral Presentations  15</a><ul>
+<li><a href="#1. Neural Programmer-Interpreters">1. Neural Programmer-Interpreters</a></li>
+<li><a href="#2. Regularizing RNNs by Stabilizing Activations">2. Regularizing RNNs by Stabilizing Activations</a></li>
+<li><a href="#3. BlackOut: Speeding up Recurrent Neural Network Language Models With Very Large Vocabularies">3. BlackOut: Speeding up Recurrent Neural Network Language Models With Very Large Vocabularies</a></li>
+<li><a href="#4. The Goldilocks Principle: Reading Children's Books with Explicit Memory Representations">4. The Goldilocks Principle: Reading Children's Books with Explicit Memory Representations</a></li>
+<li><a href="#5. Towards Universal Paraphrastic Sentence Embeddings">5. Towards Universal Paraphrastic Sentence Embeddings</a></li>
+<li><a href="#6. Convergent Learning: Do different neural networks learn the same representations?">6. Convergent Learning: Do different neural networks learn the same representations?</a></li>
+<li><a href="#7. Net2Net: Accelerating Learning via Knowledge Transfer">7. Net2Net: Accelerating Learning via Knowledge Transfer</a></li>
+<li><a href="#8. Variational Gaussian Process">8. Variational Gaussian Process</a></li>
+<li><a href="#9. The Variational Fair Autoencoder">9. The Variational Fair Autoencoder</a></li>
+<li><a href="#10. A note on the evaluation of generative models">10. A note on the evaluation of generative models</a></li>
+<li><a href="#11. Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding">11. Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding</a></li>
+<li><a href="#12. Neural Networks with Few Multiplications">12. Neural Networks with Few Multiplications</a></li>
+<li><a href="#13. Order-Embeddings of Images and Language">13. Order-Embeddings of Images and Language</a></li>
+<li><a href="#14. Generating Images from Captions with Attention">14. Generating Images from Captions with Attention</a></li>
+<li><a href="#15. Density Modeling of Images using a Generalized Normalization Transformation">15. Density Modeling of Images using a Generalized Normalization Transformation</a></li>
+</ul>
+</li>
+<li><a href="#Poster Presentations  65">Poster Presentations  65</a><ul>
+<li><a href="#16. Multi-Scale Context Aggregation by Dilated Convolutions">16. Multi-Scale Context Aggregation by Dilated Convolutions</a></li>
+<li><a href="#17. Learning to Diagnose with LSTM Recurrent Neural Networks">17. Learning to Diagnose with LSTM Recurrent Neural Networks</a></li>
+<li><a href="#18. Prioritized Experience Replay">18. Prioritized Experience Replay</a></li>
+<li><a href="#19. Importance Weighted Autoencoders">19. Importance Weighted Autoencoders</a></li>
+<li><a href="#20. Variationally Auto-Encoded Deep Gaussian Processes">20. Variationally Auto-Encoded Deep Gaussian Processes</a></li>
+<li><a href="#21. Training Convolutional Neural Networks with Low-rank Filters for Efficient Image Classification">21. Training Convolutional Neural Networks with Low-rank Filters for Efficient Image Classification</a></li>
+<li><a href="#22. Reducing Overfitting in Deep Networks by Decorrelating Representations">22. Reducing Overfitting in Deep Networks by Decorrelating Representations</a></li>
+<li><a href="#23. Pushing the Boundaries of Boundary Detection using Deep Learning">23. Pushing the Boundaries of Boundary Detection using Deep Learning</a></li>
+<li><a href="#24. Reasoning about Entailment with Neural Attention">24. Reasoning about Entailment with Neural Attention</a></li>
+<li><a href="#25. Convolutional Neural Networks With Low-rank Regularization">25. Convolutional Neural Networks With Low-rank Regularization</a></li>
+<li><a href="#26. Unifying distillation and privileged information">26. Unifying distillation and privileged information</a></li>
+<li><a href="#27. Particular object retrieval with integral max-pooling of CNN activations">27. Particular object retrieval with integral max-pooling of CNN activations</a></li>
+<li><a href="#28. All you need is a good init">28. All you need is a good init</a></li>
+<li><a href="#29. Bayesian Representation Learning with Oracle Constraints">29. Bayesian Representation Learning with Oracle Constraints</a></li>
+<li><a href="#30. Neural Programmer: Inducing Latent Programs with Gradient Descent">30. Neural Programmer: Inducing Latent Programs with Gradient Descent</a></li>
+<li><a href="#31. SparkNet: Training Deep Networks in Spark">31. SparkNet: Training Deep Networks in Spark</a></li>
+<li><a href="#32. Unsupervised and Semi-supervised Learning with Categorical Generative Adversarial Networks">32. Unsupervised and Semi-supervised Learning with Categorical Generative Adversarial Networks</a></li>
+<li><a href="#33. MuProp: Unbiased Backpropagation For Stochastic Neural Networks">33. MuProp: Unbiased Backpropagation For Stochastic Neural Networks</a></li>
+<li><a href="#34. Data Representation and Compression Using Linear-Programming Approximations">34. Data Representation and Compression Using Linear-Programming Approximations</a></li>
+<li><a href="#35. Diversity Networks">35. Diversity Networks</a></li>
+<li><a href="#36. Deep Reinforcement Learning in Parameterized Action Space">36. Deep Reinforcement Learning in Parameterized Action Space</a></li>
+<li><a href="#37. Learning VIsual Predictive  Models of Physics for Playing Billiards">37. Learning VIsual Predictive  Models of Physics for Playing Billiards</a></li>
+<li><a href="#38. Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks">38. Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks</a></li>
+<li><a href="#39. Evaluating Prerequisite Qualities for Learning End-to-end Dialog Systems">39. Evaluating Prerequisite Qualities for Learning End-to-end Dialog Systems</a></li>
+<li><a href="#40. Better Computer Go Player with Neural Network and Long-term Prediction">40. Better Computer Go Player with Neural Network and Long-term Prediction</a></li>
+<li><a href="#41. Distributional Smoothing with Virtual Adversarial Training">41. Distributional Smoothing with Virtual Adversarial Training</a></li>
+<li><a href="#42. Multi-task Sequence to Sequence Learning">42. Multi-task Sequence to Sequence Learning</a></li>
+<li><a href="#43. A Test of Relative Similarity for Model Selection in Generative Models">43. A Test of Relative Similarity for Model Selection in Generative Models</a></li>
+<li><a href="#44. Compression of Deep Convolutional Neural Networks for Fast and Low Power Mobile Applications">44. Compression of Deep Convolutional Neural Networks for Fast and Low Power Mobile Applications</a></li>
+<li><a href="#45. Session-based recommendations with recurrent neural networks">45. Session-based recommendations with recurrent neural networks</a></li>
+<li><a href="#46. Continuous control with deep reinforcement learning">46. Continuous control with deep reinforcement learning</a></li>
+<li><a href="#47. Recurrent Gaussian Processes">47. Recurrent Gaussian Processes</a></li>
+<li><a href="#48. Modeling Visual Representations:Defining Properties and Deep Approximations">48. Modeling Visual Representations:Defining Properties and Deep Approximations</a></li>
+<li><a href="#49. Auxiliary Image Regularization for Deep CNNs with Noisy Labels">49. Auxiliary Image Regularization for Deep CNNs with Noisy Labels</a></li>
+<li><a href="#50. Policy Distillation">50. Policy Distillation</a></li>
+<li><a href="#51. Neural Random-Access Machines">51. Neural Random-Access Machines</a></li>
+<li><a href="#52. Gated Graph Sequence Neural Networks">52. Gated Graph Sequence Neural Networks</a></li>
+<li><a href="#53. Metric Learning with Adaptive Density Discrimination">53. Metric Learning with Adaptive Density Discrimination</a></li>
+<li><a href="#54. Censoring Representations with an Adversary">54. Censoring Representations with an Adversary</a></li>
+<li><a href="#55. Variable Rate Image Compression with Recurrent Neural Networks">55. Variable Rate Image Compression with Recurrent Neural Networks</a></li>
+<li><a href="#56. Delving Deeper into Convolutional Networks for Learning Video Representations">56. Delving Deeper into Convolutional Networks for Learning Video Representations</a></li>
+<li><a href="#57. 8-Bit Approximations for Parallelism in Deep Learning">57. 8-Bit Approximations for Parallelism in Deep Learning</a></li>
+<li><a href="#58. Data-dependent initializations of Convolutional Neural Networks">58. Data-dependent initializations of Convolutional Neural Networks</a></li>
+<li><a href="#59. Order Matters: Sequence to sequence for sets">59. Order Matters: Sequence to sequence for sets</a></li>
+<li><a href="#60. High-Dimensional Continuous Control Using Generalized Advantage Estimation">60. High-Dimensional Continuous Control Using Generalized Advantage Estimation</a></li>
+<li><a href="#61. Deep Multi Scale Video Prediction Beyond Mean Square Error">61. Deep Multi Scale Video Prediction Beyond Mean Square Error</a></li>
+<li><a href="#62. Grid Long Short-Term Memory">62. Grid Long Short-Term Memory</a></li>
+<li><a href="#63. Predicting distributions with Linearizing Belief Networks">63. Predicting distributions with Linearizing Belief Networks</a></li>
+<li><a href="#64. Fast and Accurate Deep Network Learning by Exponential Linear Units (ELUs">64. Fast and Accurate Deep Network Learning by Exponential Linear Units (ELUs)</a>)</li>
+<li><a href="#65. Actor-Mimic: Deep Multitask and Transfer Reinforcement Learning">65. Actor-Mimic: Deep Multitask and Transfer Reinforcement Learning</a></li>
+<li><a href="#66. Segmental Recurrent Neural Networks">66. Segmental Recurrent Neural Networks</a></li>
+<li><a href="#67. Deep Linear Discriminant Analysis">67. Deep Linear Discriminant Analysis</a></li>
+<li><a href="#68. Large-Scale Approximate Kernel Canonical Correlation Analysis">68. Large-Scale Approximate Kernel Canonical Correlation Analysis</a></li>
+<li><a href="#69. Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks">69. Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks</a></li>
+<li><a href="#70. Learning Representations from EEG with Deep Recurrent-Convolutional Neural Networks">70. Learning Representations from EEG with Deep Recurrent-Convolutional Neural Networks</a></li>
+<li><a href="#71. Digging Deep into the layers of CNNs: In Search of How CNNs Achieve View Invariance">71. Digging Deep into the layers of CNNs: In Search of How CNNs Achieve View Invariance</a></li>
+<li><a href="#72. An Exploration of Softmax Alternatives Belonging to the Spherical Loss Family">72. An Exploration of Softmax Alternatives Belonging to the Spherical Loss Family</a></li>
+<li><a href="#73. Data-Dependent Path Normalization in Neural Networks">73. Data-Dependent Path Normalization in Neural Networks</a></li>
+<li><a href="#74. Reasoning in Vector Space: An Exploratory Study of Question Answering">74. Reasoning in Vector Space: An Exploratory Study of Question Answering</a></li>
+<li><a href="#75. Neural GPUs Learn Algorithms">75. Neural GPUs Learn Algorithms</a></li>
+<li><a href="#76. ACDC: A Structured Efficient Linear Layer">76. ACDC: A Structured Efficient Linear Layer</a></li>
+<li><a href="#77. Adversarial Manipulation of Deep Representations">77. Adversarial Manipulation of Deep Representations</a></li>
+<li><a href="#78. Geodesics of learned representations">78. Geodesics of learned representations</a></li>
+<li><a href="#79. Sequence Level Training with Recurrent Neural Networks">79. Sequence Level Training with Recurrent Neural Networks</a></li>
+<li><a href="#80. Super-resolution with deep convolutional sufficient statistics">80. Super-resolution with deep convolutional sufficient statistics</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="ICLR 2016:San Juan, Puerto Rico">ICLR 2016:San Juan, Puerto Rico</h1>
+<p><a href="https://iclr.cc/archive/www/doku.php%3Fid=iclr2016:accepted-main.html">International Conference on Learning Representations, May 2 - 4, 2016, Caribe Hilton, San Juan, Puerto Rico</a></p>
+<h2 id="Paper Num: 80 || Session Num: 2">Paper Num: 80 || Session Num: 2</h2>
+<ul>
+<li><a href="#Oral Presentations  15">Oral Presentations  15</a></li>
+<li><a href="#Poster Presentations  65">Poster Presentations  65</a></li>
+</ul>
+<h2 id="Oral Presentations  15">Oral Presentations  15</h2>
+<h3 id="1. Neural Programmer-Interpreters">1. Neural Programmer-Interpreters</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06279">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Scott Reed,  Nando de Freitas</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="2. Regularizing RNNs by Stabilizing Activations">2. Regularizing RNNs by Stabilizing Activations</h3>
+<p>【<a href="http://arxiv.org/abs/1511.08400">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+David Krueger,  Roland Memisevic</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="3. BlackOut: Speeding up Recurrent Neural Network Language Models With Very Large Vocabularies">3. BlackOut: Speeding up Recurrent Neural Network Language Models With Very Large Vocabularies</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06909">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Shihao Ji,  Swaminathan Vishwanathan,  Nadathur Satish,  Michael Anderson,  Pradeep Dubey</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="4. The Goldilocks Principle: Reading Children's Books with Explicit Memory Representations">4. The Goldilocks Principle: Reading Children's Books with Explicit Memory Representations</h3>
+<p>【<a href="http://arxiv.org/abs/1511.02301">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Felix Hill,  Antoine Bordes,  Sumit Chopra,  Jason Weston</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="5. Towards Universal Paraphrastic Sentence Embeddings">5. Towards Universal Paraphrastic Sentence Embeddings</h3>
+<p>【<a href="http://arxiv.org/abs/1511.08198">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+John Wieting,  Mohit Bansal,  Kevin Gimpel,  Karen Livescu</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="6. Convergent Learning: Do different neural networks learn the same representations?">6. Convergent Learning: Do different neural networks learn the same representations?</h3>
+<p>【<a href="http://arxiv.org/abs/1511.07543">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Yixuan Li,  Jason Yosinski,  Jeff Clune,  Hod Lipson,  John Hopcroft</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="7. Net2Net: Accelerating Learning via Knowledge Transfer">7. Net2Net: Accelerating Learning via Knowledge Transfer</h3>
+<p>【<a href="http://arxiv.org/abs/1511.05641">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Tianqi Chen,  Ian Goodfellow,  Jon Shlens</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="8. Variational Gaussian Process">8. Variational Gaussian Process</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06499">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Dustin Tran,  Rajesh Ranganath,  David Blei</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="9. The Variational Fair Autoencoder">9. The Variational Fair Autoencoder</h3>
+<p>【<a href="http://arxiv.org/abs/1511.00830">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Christos Louizos,  Kevin Swersky,  Yujia Li,  Max Welling,  Richard Zemel</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="10. A note on the evaluation of generative models">10. A note on the evaluation of generative models</h3>
+<p>【<a href="http://arxiv.org/abs/1511.01844">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Lucas Theis,  Aäron van den Oord,  Matthias Bethge</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="11. Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding">11. Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding</h3>
+<p>【<a href="http://arxiv.org/abs/1510.00149">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Song Han,  Huizi Mao,  Bill Dally</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="12. Neural Networks with Few Multiplications">12. Neural Networks with Few Multiplications</h3>
+<p>【<a href="http://arxiv.org/abs/1510.03009">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Zhouhan Lin,  Matthieu Courbariaux,  Roland Memisevic,  Yoshua Bengio</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="13. Order-Embeddings of Images and Language">13. Order-Embeddings of Images and Language</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06361">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Ivan Vendrov,  Ryan Kiros,  Sanja Fidler,  Raquel Urtasun</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="14. Generating Images from Captions with Attention">14. Generating Images from Captions with Attention</h3>
+<p>【<a href="http://arxiv.org/abs/1511.02793">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Elman Mansimov,  Emilio Parisotto,  Jimmy Ba,  Ruslan Salakhutdinov</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="15. Density Modeling of Images using a Generalized Normalization Transformation">15. Density Modeling of Images using a Generalized Normalization Transformation</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06281">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Johannes Ballé,  Valero Laparra,  Eero Simoncelli</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h2 id="Poster Presentations  65">Poster Presentations  65</h2>
+<h3 id="16. Multi-Scale Context Aggregation by Dilated Convolutions">16. Multi-Scale Context Aggregation by Dilated Convolutions</h3>
+<p>【<a href="http://arxiv.org/abs/1511.07122">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Fisher Yu,  Vladlen Koltun</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="17. Learning to Diagnose with LSTM Recurrent Neural Networks">17. Learning to Diagnose with LSTM Recurrent Neural Networks</h3>
+<p>【<a href="http://arxiv.org/abs/1511.03677">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Zachary Lipton,  David Kale,  Charles Elkan,  Randall Wetzel</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="18. Prioritized Experience Replay">18. Prioritized Experience Replay</h3>
+<p>【<a href="http://arxiv.org/abs/1511.05952">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Tom Schaul,  John Quan,  Ioannis Antonoglou,  David Silver</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="19. Importance Weighted Autoencoders">19. Importance Weighted Autoencoders</h3>
+<p>【<a href="http://arxiv.org/abs/1509.00519">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Yuri Burda,  Ruslan Salakhutdinov,  Roger Grosse</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="20. Variationally Auto-Encoded Deep Gaussian Processes">20. Variationally Auto-Encoded Deep Gaussian Processes</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06455">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Zhenwen Dai,  Andreas Damianou,  Javier Gonzalez,  Neil Lawrence</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="21. Training Convolutional Neural Networks with Low-rank Filters for Efficient Image Classification">21. Training Convolutional Neural Networks with Low-rank Filters for Efficient Image Classification</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06744">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Yani Ioannou,  Duncan Robertson,  Jamie Shotton,  roberto Cipolla,  Antonio Criminisi,  Jamie Shotton</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="22. Reducing Overfitting in Deep Networks by Decorrelating Representations">22. Reducing Overfitting in Deep Networks by Decorrelating Representations</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06068">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Michael Cogswell,  Faruk Ahmed,  Ross Girshick,  Larry Zitnick,  Dhruv Batra</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="23. Pushing the Boundaries of Boundary Detection using Deep Learning">23. Pushing the Boundaries of Boundary Detection using Deep Learning</h3>
+<p>【<a href="http://arxiv.org/abs/1511.07386">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Iasonas Kokkinos</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="24. Reasoning about Entailment with Neural Attention">24. Reasoning about Entailment with Neural Attention</h3>
+<p>【<a href="http://arxiv.org/abs/1509.06664">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Tim Rocktäschel,  Edward Grefenstette,  Karl Moritz Hermann,  Tomáš Kočiský,  Phil Blunsom</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="25. Convolutional Neural Networks With Low-rank Regularization">25. Convolutional Neural Networks With Low-rank Regularization</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06067">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Cheng Tai,  Tong Xiao,  Yi Zhang,  Xiaogang Wang,  Weinan E</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="26. Unifying distillation and privileged information">26. Unifying distillation and privileged information</h3>
+<p>【<a href="http://arxiv.org/abs/1511.03643">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+David Lopez-Paz,  Leon Bottou,  Bernhard Schölkopf,  Vladimir Vapnik</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="27. Particular object retrieval with integral max-pooling of CNN activations">27. Particular object retrieval with integral max-pooling of CNN activations</h3>
+<p>【<a href="http://arxiv.org/abs/1511.05879">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Giorgos Tolias,  Ronan Sicre,  Hervé Jégou</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="28. All you need is a good init">28. All you need is a good init</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06422">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Dmytro Mishkin,  Jiri Matas</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="29. Bayesian Representation Learning with Oracle Constraints">29. Bayesian Representation Learning with Oracle Constraints</h3>
+<p>【<a href="http://arxiv.org/abs/1506.05011">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Theofanis Karaletsos,  Serge Belongie,  Gunnar Rätsch</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="30. Neural Programmer: Inducing Latent Programs with Gradient Descent">30. Neural Programmer: Inducing Latent Programs with Gradient Descent</h3>
+<p>【<a href="http://arxiv.org/abs/1511.04834">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Arvind Neelakantan,  Quoc Le,  Ilya Sutskever</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="31. SparkNet: Training Deep Networks in Spark">31. SparkNet: Training Deep Networks in Spark</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06051">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Philipp Moritz,  Robert Nishihara,  Ion Stoica,  Michael Jordan</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="32. Unsupervised and Semi-supervised Learning with Categorical Generative Adversarial Networks">32. Unsupervised and Semi-supervised Learning with Categorical Generative Adversarial Networks</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06390">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Jost Tobias Springenberg</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="33. MuProp: Unbiased Backpropagation For Stochastic Neural Networks">33. MuProp: Unbiased Backpropagation For Stochastic Neural Networks</h3>
+<p>【<a href="http://arxiv.org/abs/1511.05176">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Shixiang Gu,  Sergey Levine,  Ilya Sutskever,  Andriy Mnih</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="34. Data Representation and Compression Using Linear-Programming Approximations">34. Data Representation and Compression Using Linear-Programming Approximations</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06606">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Hristo Paskov,  John Mitchell,  Trevor Hastie</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="35. Diversity Networks">35. Diversity Networks</h3>
+<p>【<a href="http://arxiv.org/abs/1511.05077">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Zelda Mariet,  Suvrit Sra</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="36. Deep Reinforcement Learning in Parameterized Action Space">36. Deep Reinforcement Learning in Parameterized Action Space</h3>
+<p>【<a href="http://arxiv.org/abs/1511.04143">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Matthew Hausknecht,  Peter Stone</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="37. Learning VIsual Predictive  Models of Physics for Playing Billiards">37. Learning VIsual Predictive  Models of Physics for Playing Billiards</h3>
+<p>【<a href="http://arxiv.org/abs/1511.07404">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Katerina Fragkiadaki,  Pulkit Agrawal,  Sergey Levine,  Jitendra Malik</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="38. Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks">38. Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks</h3>
+<p>【<a href="http://arxiv.org/abs/1502.05698">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Jason Weston,  Antoine Bordes,  Sumit Chopra,  Sasha Rush,  Bart van Merrienboer,  Armand Joulin,  Tomas Mikolov</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="39. Evaluating Prerequisite Qualities for Learning End-to-end Dialog Systems">39. Evaluating Prerequisite Qualities for Learning End-to-end Dialog Systems</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06931">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Jesse Dodge,  Andreea Gane,  Xiang Zhang,  Antoine Bordes,  Sumit Chopra,  Alexander Miller,  Arthur Szlam,  Jason Weston</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="40. Better Computer Go Player with Neural Network and Long-term Prediction">40. Better Computer Go Player with Neural Network and Long-term Prediction</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06410">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Yuandong Tian,  Yan Zhu</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="41. Distributional Smoothing with Virtual Adversarial Training">41. Distributional Smoothing with Virtual Adversarial Training</h3>
+<p>【<a href="http://arxiv.org/abs/1507.00677">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Takeru Miyato,  Shin-ichi Maeda,  Masanori Koyama,  Ken Nakae,  Shin Ishii</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="42. Multi-task Sequence to Sequence Learning">42. Multi-task Sequence to Sequence Learning</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06114">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Minh-Thang Luong,  Quoc Le,  Ilya Sutskever,  Oriol Vinyals,  Lukasz Kaiser</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="43. A Test of Relative Similarity for Model Selection in Generative Models">43. A Test of Relative Similarity for Model Selection in Generative Models</h3>
+<p>【<a href="http://arxiv.org/abs/1511.04581">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Eugene Belilovsky,  Wacha Bounliphone,  Matthew Blaschko,  Ioannis Antonoglou,  Arthur Gretton</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="44. Compression of Deep Convolutional Neural Networks for Fast and Low Power Mobile Applications">44. Compression of Deep Convolutional Neural Networks for Fast and Low Power Mobile Applications</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06530">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Yong-Deok Kim,  Eunhyeok Park,  Sungjoo Yoo,  Taelim Choi,  Lu Yang,  Dongjun Shin</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="45. Session-based recommendations with recurrent neural networks">45. Session-based recommendations with recurrent neural networks</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06939">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Balázs Hidasi,  Alexandros Karatzoglou,  Linas Baltrunas,  Domonkos Tikk</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="46. Continuous control with deep reinforcement learning">46. Continuous control with deep reinforcement learning</h3>
+<p>【<a href="http://arxiv.org/abs/1509.02971">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Timothy Lillicrap,  Jonathan Hunt,  Alexander Pritzel,  Nicolas Heess,  Tom Erez,  Yuval Tassa,  David Silver,  Daan Wierstra</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="47. Recurrent Gaussian Processes">47. Recurrent Gaussian Processes</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06644">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+César Lincoln Mattos,  Zhenwen Dai,  Andreas Damianou,  Jeremy Forth,  Guilherme Barreto,  Neil Lawrence</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="48. Modeling Visual Representations:Defining Properties and Deep Approximations">48. Modeling Visual Representations:Defining Properties and Deep Approximations</h3>
+<p>【<a href="http://arxiv.org/abs/1411.7676">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Stefano Soatto,  Alessandro Chiuso</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="49. Auxiliary Image Regularization for Deep CNNs with Noisy Labels">49. Auxiliary Image Regularization for Deep CNNs with Noisy Labels</h3>
+<p>【<a href="http://arxiv.org/abs/1511.07069">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Samaneh Azadi,  Jiashi Feng,  Stefanie Jegelka,  Trevor Darrell</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="50. Policy Distillation">50. Policy Distillation</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06295">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Andrei Rusu,  Sergio Gomez,  Caglar Gulcehre,  Guillaume Desjardins,  James Kirkpatrick,  Razvan Pascanu,  Volodymyr Mnih,  Koray Kavukcuoglu,  Raia Hadsell</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="51. Neural Random-Access Machines">51. Neural Random-Access Machines</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06392">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Karol Kurach,  Marcin Andrychowicz,  Ilya Sutskever</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="52. Gated Graph Sequence Neural Networks">52. Gated Graph Sequence Neural Networks</h3>
+<p>【<a href="http://arxiv.org/abs/1511.05493">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Yujia Li,  Daniel Tarlow,  Marc Brockschmidt,  Richard Zemel,  CIFAR</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="53. Metric Learning with Adaptive Density Discrimination">53. Metric Learning with Adaptive Density Discrimination</h3>
+<p>【<a href="http://arxiv.org/abs/1511.05939">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Oren Rippel,  Manohar Paluri,  Piotr Dollar,  Lubomir Bourdev</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="54. Censoring Representations with an Adversary">54. Censoring Representations with an Adversary</h3>
+<p>【<a href="http://arxiv.org/abs/1511.05897">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Harrison Edwards,  Amos Storkey</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="55. Variable Rate Image Compression with Recurrent Neural Networks">55. Variable Rate Image Compression with Recurrent Neural Networks</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06085">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+George Toderici,  Sean O'Malley,  Damien Vincent,  Sung Jin Hwang,  Michele Covell,  Shumeet Baluja,  Rahul Sukthankar,  David Minnen</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="56. Delving Deeper into Convolutional Networks for Learning Video Representations">56. Delving Deeper into Convolutional Networks for Learning Video Representations</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06432">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Nicolas Ballas,  Li Yao,  Pal Chris,  Aaron Courville</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="57. 8-Bit Approximations for Parallelism in Deep Learning">57. 8-Bit Approximations for Parallelism in Deep Learning</h3>
+<p>【<a href="http://arxiv.org/abs/1511.04561">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Tim Dettmers</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="58. Data-dependent initializations of Convolutional Neural Networks">58. Data-dependent initializations of Convolutional Neural Networks</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06856">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Philipp Kraehenbuehl,  Carl Doersch,  Jeff Donahue,  Trevor Darrell</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="59. Order Matters: Sequence to sequence for sets">59. Order Matters: Sequence to sequence for sets</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06391">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Oriol Vinyals,  Samy Bengio,  Manjunath Kudlur</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="60. High-Dimensional Continuous Control Using Generalized Advantage Estimation">60. High-Dimensional Continuous Control Using Generalized Advantage Estimation</h3>
+<p>【<a href="http://arxiv.org/abs/1506.02438">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+John Schulman,  Philipp Moritz,  Sergey Levine,  Michael Jordan,  Pieter Abbeel</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="61. Deep Multi Scale Video Prediction Beyond Mean Square Error">61. Deep Multi Scale Video Prediction Beyond Mean Square Error</h3>
+<p>【<a href="http://arxiv.org/abs/1511.05440">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Michael Mathieu,  camille couprie,  Yann Lecun</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="62. Grid Long Short-Term Memory">62. Grid Long Short-Term Memory</h3>
+<p>【<a href="http://arxiv.org/abs/1507.01526">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Nal Kalchbrenner,  Alex Graves,  Ivo Danihelka</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="63. Predicting distributions with Linearizing Belief Networks">63. Predicting distributions with Linearizing Belief Networks</h3>
+<p>【<a href="http://arxiv.org/abs/1511.05622">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Yann Dauphin,  David Grangier</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="64. Fast and Accurate Deep Network Learning by Exponential Linear Units (ELUs)">64. Fast and Accurate Deep Network Learning by Exponential Linear Units (ELUs)</h3>
+<p>【<a href="http://arxiv.org/abs/1511.07289">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Djork-Arné  Clevert,  Thomas Unterthiner,  Sepp Hochreiter</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="65. Actor-Mimic: Deep Multitask and Transfer Reinforcement Learning">65. Actor-Mimic: Deep Multitask and Transfer Reinforcement Learning</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06342">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Emilio Parisotto,  Jimmy Ba,  Ruslan Salakhutdinov</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="66. Segmental Recurrent Neural Networks">66. Segmental Recurrent Neural Networks</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06018">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Lingpeng Kong,  Chris Dyer,  Noah Smith</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="67. Deep Linear Discriminant Analysis">67. Deep Linear Discriminant Analysis</h3>
+<p>【<a href="http://arxiv.org/abs/1511.04707">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Matthias Dorfer,  Rainer Kelz,  Gerhard Widmer</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="68. Large-Scale Approximate Kernel Canonical Correlation Analysis">68. Large-Scale Approximate Kernel Canonical Correlation Analysis</h3>
+<p>【<a href="http://arxiv.org/abs/1511.04773">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Weiran Wang,  Karen Livescu</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="69. Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks">69. Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06434">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Alec Radford,  Luke Metz,  Soumith Chintala</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="70. Learning Representations from EEG with Deep Recurrent-Convolutional Neural Networks">70. Learning Representations from EEG with Deep Recurrent-Convolutional Neural Networks</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06448">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Pouya Bashivan,  Irina Rish,  Mohammed Yeasin,  Noel Codella</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="71. Digging Deep into the layers of CNNs: In Search of How CNNs Achieve View Invariance">71. Digging Deep into the layers of CNNs: In Search of How CNNs Achieve View Invariance</h3>
+<p>【<a href="http://arxiv.org/abs/1508.01983">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Amr Bakry,  Mohamed Elhoseiny,  Tarek El-Gaaly,  Ahmed Elgammal</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="72. An Exploration of Softmax Alternatives Belonging to the Spherical Loss Family">72. An Exploration of Softmax Alternatives Belonging to the Spherical Loss Family</h3>
+<p>【<a href="http://arxiv.org/abs/1511.05042">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Alexandre De Brébisson,  Pascal Vincent</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="73. Data-Dependent Path Normalization in Neural Networks">73. Data-Dependent Path Normalization in Neural Networks</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06747">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Behnam Neyshabur,  Ryota Tomioka,  Ruslan Salakhutdinov,  Nathan Srebro</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="74. Reasoning in Vector Space: An Exploratory Study of Question Answering">74. Reasoning in Vector Space: An Exploratory Study of Question Answering</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06426">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Moontae Lee,  Xiaodong He,  Wen-tau Yih,  Jianfeng Gao,  Li Deng,  Paul Smolensky</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="75. Neural GPUs Learn Algorithms">75. Neural GPUs Learn Algorithms</h3>
+<p>【<a href="http://arxiv.org/abs/1511.08228">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Lukasz Kaiser,  Ilya Sutskever</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="76. ACDC: A Structured Efficient Linear Layer">76. ACDC: A Structured Efficient Linear Layer</h3>
+<p>【<a href="http://arxiv.org/abs/1511.05946">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Marcin Moczulski,  Misha Denil,  Jeremy Appleyard,  Nando de Freitas</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="77. Adversarial Manipulation of Deep Representations">77. Adversarial Manipulation of Deep Representations</h3>
+<p>【<a href="http://arxiv.org/abs/1511.05122">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Sara Sabour,  Yanshuai Cao,  Fartash Faghri,  David Fleet</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="78. Geodesics of learned representations">78. Geodesics of learned representations</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06394">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Olivier Hénaff,  Eero Simoncelli</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="79. Sequence Level Training with Recurrent Neural Networks">79. Sequence Level Training with Recurrent Neural Networks</h3>
+<p>【<a href="http://arxiv.org/abs/1511.06732">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Marc'Aurelio Ranzato,  Sumit Chopra,  Michael Auli,  Wojciech Zaremba</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+<h3 id="80. Super-resolution with deep convolutional sufficient statistics">80. Super-resolution with deep convolutional sufficient statistics</h3>
+<p>【<a href="http://arxiv.org/abs/1511.05666">Paper Link</a>】    【Pages】:</p>
+<p>【Authors】:
+Joan Bruna,  Pablo Sprechmann,  Yann Lecun</p>
+<p>【Abstract】:</p>
+<p>【Keywords】:</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="https://github.com/huntercmd/ccf"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>
