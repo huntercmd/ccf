@@ -4,7 +4,7 @@
 
 ### Change Logs
 
-- 2018/9/12  添加 AAAI18, ACL18, COLING18
+- 2018/9/12  添加 AAAI18, ACL18, COLING18 等 15 个会议列表
 - 2018/9/11  添加 ICLR 2013~2018
 - 2018/9/9  CDN 由 rawgit.com 变更为 rawcdn.githack.com
 - 2018/5/2  添加 WWW18 | ACL17 | KDD17 等共 24 个会议列表

@@ -1,0 +1,717 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://rawcdn.githack.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://rawcdn.githack.com/huntercmd/blog/d9beff1/config/css/skin.js"></script>
+<script src="https://rawcdn.githack.com/huntercmd/blog/master/config/css/classie.js"></script>
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#48th DSN 2018:Luxembourg City, Luxembourg">48th DSN 2018:Luxembourg City, Luxembourg</a><ul>
+<li><a href="#Paper Num: 62 || Session Num: 16">Paper Num: 62 || Session Num: 16</a></li>
+<li><a href="#Best Paper Candidates - Pick Your Best Paper    3">Best Paper Candidates - Pick Your Best Paper    3</a><ul>
+<li><a href="#1. Wren: Nonblocking Reads in a Partitioned Transactional Causally Consistent Data Store.">1. Wren: Nonblocking Reads in a Partitioned Transactional Causally Consistent Data Store.</a></li>
+<li><a href="#2. Code-Dependent and Architecture-Dependent Reliability Behaviors.">2. Code-Dependent and Architecture-Dependent Reliability Behaviors.</a></li>
+<li><a href="#3. Modeling Soft-Error Propagation in Programs.">3. Modeling Soft-Error Propagation in Programs.</a></li>
+</ul>
+</li>
+<li><a href="#Session 1 : Byzantine and Multicast (Many Many Generals">Session 1 : Byzantine and Multicast (Many Many Generals)    4</a>    4)<ul>
+<li><a href="#4. Byzantine Fault-Tolerant Atomic Multicast.">4. Byzantine Fault-Tolerant Atomic Multicast.</a></li>
+<li><a href="#5. A Byzantine Fault-Tolerant Ordering Service for the Hyperledger Fabric Blockchain Platform.">5. A Byzantine Fault-Tolerant Ordering Service for the Hyperledger Fabric Blockchain Platform.</a></li>
+<li><a href="#6. Troxy: Transparent Access to Byzantine Fault-Tolerant Systems.">6. Troxy: Transparent Access to Byzantine Fault-Tolerant Systems.</a></li>
+<li><a href="#7. RDMC: A Reliable RDMA Multicast for Large Objects.">7. RDMC: A Reliable RDMA Multicast for Large Objects.</a></li>
+</ul>
+</li>
+<li><a href="#Session 2 : HPC or Not    4">Session 2 : HPC or Not    4</a><ul>
+<li><a href="#8. Shiraz: Exploiting System Reliability and Application Resilience Characteristics to Improve Large Scale System Throughput.">8. Shiraz: Exploiting System Reliability and Application Resilience Characteristics to Improve Large Scale System Throughput.</a></li>
+<li><a href="#9. Machine Learning Models for GPU Error Prediction in a Large Scale HPC System.">9. Machine Learning Models for GPU Error Prediction in a Large Scale HPC System.</a></li>
+<li><a href="#10. Understanding and Analyzing Interconnect Errors and Network Congestion on a Large Scale HPC System.">10. Understanding and Analyzing Interconnect Errors and Network Congestion on a Large Scale HPC System.</a></li>
+<li><a href="#11. Fast Hypervisor Recovery Without Reboot.">11. Fast Hypervisor Recovery Without Reboot.</a></li>
+</ul>
+</li>
+<li><a href="#Session 3: Critical Infrastructures    4">Session 3: Critical Infrastructures    4</a><ul>
+<li><a href="#12. ZOE: Content-Based Anomaly Detection for Industrial Control Systems.">12. ZOE: Content-Based Anomaly Detection for Industrial Control Systems.</a></li>
+<li><a href="#13. Cost-Benefit Analysis of Moving-Target Defense in Power Grids.">13. Cost-Benefit Analysis of Moving-Target Defense in Power Grids.</a></li>
+<li><a href="#14. Algorithmic Attack Synthesis Using Hybrid Dynamics of Power Grid Critical Infrastructures.">14. Algorithmic Attack Synthesis Using Hybrid Dynamics of Power Grid Critical Infrastructures.</a></li>
+<li><a href="#15. On the Challenges of Building a BFT SCADA.">15. On the Challenges of Building a BFT SCADA.</a></li>
+</ul>
+</li>
+<li><a href="#Session 4 : Storage and Redundancy    4">Session 4 : Storage and Redundancy    4</a><ul>
+<li><a href="#16. RECAST: Random Entanglement for Censorship-Resistant Archival STorage.">16. RECAST: Random Entanglement for Censorship-Resistant Archival STorage.</a></li>
+<li><a href="#17. Alpha Entanglement Codes: Practical Erasure Codes to Archive Data in Unreliable Environments.">17. Alpha Entanglement Codes: Practical Erasure Codes to Archive Data in Unreliable Environments.</a></li>
+<li><a href="#18. Migrating SGX Enclaves with Persistent State.">18. Migrating SGX Enclaves with Persistent State.</a></li>
+<li><a href="#19. IBBE-SGX: Cryptographic Group Access Control Using Trusted Execution Environments.">19. IBBE-SGX: Cryptographic Group Access Control Using Trusted Execution Environments.</a></li>
+</ul>
+</li>
+<li><a href="#Session 5 : Attacks and Intrusion Detection    4">Session 5 : Attacks and Intrusion Detection    4</a><ul>
+<li><a href="#20. OWL: Understanding and Detecting Concurrency Attacks.">20. OWL: Understanding and Detecting Concurrency Attacks.</a></li>
+<li><a href="#21. FAROS: Illuminating In-memory Injection Attacks via Provenance-Based Whole-System Dynamic Information Flow Tracking.">21. FAROS: Illuminating In-memory Injection Attacks via Provenance-Based Whole-System Dynamic Information Flow Tracking.</a></li>
+<li><a href="#22. To Detect Stack Buffer Overflow with Polymorphic Canaries.">22. To Detect Stack Buffer Overflow with Polymorphic Canaries.</a></li>
+<li><a href="#23. Network-Attack-Resilient Intrusion-Tolerant SCADA for the Power Grid.">23. Network-Attack-Resilient Intrusion-Tolerant SCADA for the Power Grid.</a></li>
+</ul>
+</li>
+<li><a href="#Session 6 : Modelling and Verification    4">Session 6 : Modelling and Verification    4</a><ul>
+<li><a href="#24. Branching Bisimulation and Concurrent Object Verification.">24. Branching Bisimulation and Concurrent Object Verification.</a></li>
+<li><a href="#25. Modeling Input-Dependent Error Propagation in Programs.">25. Modeling Input-Dependent Error Propagation in Programs.</a></li>
+<li><a href="#26. Efficient Transient Analysis of a Class of Compositional Fluid Stochastic Petri Nets.">26. Efficient Transient Analysis of a Class of Compositional Fluid Stochastic Petri Nets.</a></li>
+<li><a href="#27. Importance Sampling of Interval Markov Chains.">27. Importance Sampling of Interval Markov Chains.</a></li>
+</ul>
+</li>
+<li><a href="#Session 7 : Architectures Reliability    4">Session 7 : Architectures Reliability    4</a><ul>
+<li><a href="#28. Low Overhead Tag Error Mitigation for GPU Architectures.">28. Low Overhead Tag Error Mitigation for GPU Architectures.</a></li>
+<li><a href="#29. DAVOS: EDA Toolkit for Dependability Assessment, Verification, Optimisation and Selection of Hardware Models.">29. DAVOS: EDA Toolkit for Dependability Assessment, Verification, Optimisation and Selection of Hardware Models.</a></li>
+<li><a href="#30. A Framework for Evaluating Software on Reduced Margins Hardware.">30. A Framework for Evaluating Software on Reduced Margins Hardware.</a></li>
+<li><a href="#31. Parallel Error Detection Using Heterogeneous Cores.">31. Parallel Error Detection Using Heterogeneous Cores.</a></li>
+</ul>
+</li>
+<li><a href="#Session 8 : Networks Security    4">Session 8 : Networks Security    4</a><ul>
+<li><a href="#32. Measuring IPv6 DNS Reconnaissance Attacks and Preventing Them Using DNS Guard.">32. Measuring IPv6 DNS Reconnaissance Attacks and Preventing Them Using DNS Guard.</a></li>
+<li><a href="#33. Your Remnant Tells Secret: Residual Resolution in DDoS Protection Services.">33. Your Remnant Tells Secret: Residual Resolution in DDoS Protection Services.</a></li>
+<li><a href="#34. Effective Topology Tampering Attacks and Defenses in Software-Defined Networks.">34. Effective Topology Tampering Attacks and Defenses in Software-Defined Networks.</a></li>
+<li><a href="#35. EndBox: Scalable Middlebox Functions Using Client-Side Trusted Execution.">35. EndBox: Scalable Middlebox Functions Using Client-Side Trusted Execution.</a></li>
+</ul>
+</li>
+<li><a href="#Session 9 : Mobile Devices    4">Session 9 : Mobile Devices    4</a><ul>
+<li><a href="#36. FragDroid: Automated User Interface Interaction with Activity and Fragment Analysis in Android Applications.">36. FragDroid: Automated User Interface Interaction with Activity and Fragment Analysis in Android Applications.</a></li>
+<li><a href="#37. How Reliable is My Wearable: A Fuzz Testing-Based Study.">37. How Reliable is My Wearable: A Fuzz Testing-Based Study.</a></li>
+<li><a href="#38. Localizing Function Errors in Mobile Apps with User Reviews.">38. Localizing Function Errors in Mobile Apps with User Reviews.</a></li>
+<li><a href="#39. DTaint: Detecting the Taint-Style Vulnerability in Embedded Device Firmware.">39. DTaint: Detecting the Taint-Style Vulnerability in Embedded Device Firmware.</a></li>
+</ul>
+</li>
+<li><a href="#Session 10 : Confidentiality and Privacy    4">Session 10 : Confidentiality and Privacy    4</a><ul>
+<li><a href="#40. Deceptive Secret Sharing.">40. Deceptive Secret Sharing.</a></li>
+<li><a href="#41. MobiCeal: Towards Secure and Practical Plausibly Deniable Encryption on Mobile Devices.">41. MobiCeal: Towards Secure and Practical Plausibly Deniable Encryption on Mobile Devices.</a></li>
+<li><a href="#42. Collaborative Filtering Under a Sybil Attack: Similarity Metrics do Matter!">42. Collaborative Filtering Under a Sybil Attack: Similarity Metrics do Matter!</a></li>
+<li><a href="#43. Specification-Based Protocol Obfuscation.">43. Specification-Based Protocol Obfuscation.</a></li>
+</ul>
+</li>
+<li><a href="#Session 11 : Security    4">Session 11 : Security    4</a><ul>
+<li><a href="#44. Obfuscated VBA Macro Detection Using Machine Learning.">44. Obfuscated VBA Macro Detection Using Machine Learning.</a></li>
+<li><a href="#45. Evaluating Self-Adaptive Authorisation Infrastructures Through Gamification.">45. Evaluating Self-Adaptive Authorisation Infrastructures Through Gamification.</a></li>
+<li><a href="#46. POWERALERT: Integrity Checking Using Power Measurement and a Game-Theoretic Strategy.">46. POWERALERT: Integrity Checking Using Power Measurement and a Game-Theoretic Strategy.</a></li>
+<li><a href="#47. Generating Cloud Monitors from Models to Secure Clouds.">47. Generating Cloud Monitors from Models to Secure Clouds.</a></li>
+</ul>
+</li>
+<li><a href="#Session 12 : Distributed systems    4">Session 12 : Distributed systems    4</a><ul>
+<li><a href="#48. Falcon: A Practical Log-Based Analysis Tool for Distributed Systems.">48. Falcon: A Practical Log-Based Analysis Tool for Distributed Systems.</a></li>
+<li><a href="#49. Pleiades: Distributed Structural Invariants at Scale.">49. Pleiades: Distributed Structural Invariants at Scale.</a></li>
+<li><a href="#50. The Tortoise and the Hare: Characterizing Synchrony in Distributed Environments (Practical Experience Report">50. The Tortoise and the Hare: Characterizing Synchrony in Distributed Environments (Practical Experience Report).</a>.)</li>
+<li><a href="#51. Inferring, Characterizing, and Investigating Internet-Scale Malicious IoT Device Activities: A Network Telescope Perspective.">51. Inferring, Characterizing, and Investigating Internet-Scale Malicious IoT Device Activities: A Network Telescope Perspective.</a></li>
+</ul>
+</li>
+<li><a href="#Session 13 : The Future of Things    4">Session 13 : The Future of Things    4</a><ul>
+<li><a href="#52. RoboADS: Anomaly Detection Against Sensor and Actuator Misbehaviors in Mobile Robots.">52. RoboADS: Anomaly Detection Against Sensor and Actuator Misbehaviors in Mobile Robots.</a></li>
+<li><a href="#53. Hands Off the Wheel in Autonomous Vehicles?: A Systems Perspective on over a Million Miles of Field Data.">53. Hands Off the Wheel in Autonomous Vehicles?: A Systems Perspective on over a Million Miles of Field Data.</a></li>
+<li><a href="#54. Impact of Software Approximations on the Resiliency of a Video Summarization System.">54. Impact of Software Approximations on the Resiliency of a Video Summarization System.</a></li>
+<li><a href="#55. Detecting and Identifying Faulty IoT Devices in Smart Home with Context Extraction.">55. Detecting and Identifying Faulty IoT Devices in Smart Home with Context Extraction.</a></li>
+</ul>
+</li>
+<li><a href="#Session 14 : Routing in Networks    4">Session 14 : Routing in Networks    4</a><ul>
+<li><a href="#56. Divide and Conquer for Fast SRLG Disjoint Routing.">56. Divide and Conquer for Fast SRLG Disjoint Routing.</a></li>
+<li><a href="#57. Practical Experience: Methodologies for Measuring Route Origin Validation.">57. Practical Experience: Methodologies for Measuring Route Origin Validation.</a></li>
+<li><a href="#58. In Production Performance Testing of SDN Control Plane for Telecom Operators.">58. In Production Performance Testing of SDN Control Plane for Telecom Operators.</a></li>
+<li><a href="#59. A Reexamination of Internationalized Domain Names: The Good, the Bad and the Ugly.">59. A Reexamination of Internationalized Domain Names: The Good, the Bad and the Ugly.</a></li>
+</ul>
+</li>
+<li><a href="#Session 15 : Symbolic Execution & Static Analysis    3">Session 15 : Symbolic Execution &amp; Static Analysis    3</a><ul>
+<li><a href="#60. Manufacturing Resilient Bi-Opaque Predicates Against Symbolic Execution.">60. Manufacturing Resilient Bi-Opaque Predicates Against Symbolic Execution.</a></li>
+<li><a href="#61. PreInfer: Automatic Inference of Preconditions via Symbolic Analysis.">61. PreInfer: Automatic Inference of Preconditions via Symbolic Analysis.</a></li>
+<li><a href="#62. DexLego: Reassembleable Bytecode Extraction for Aiding Static Analysis.">62. DexLego: Reassembleable Bytecode Extraction for Aiding Static Analysis.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="48th DSN 2018:Luxembourg City, Luxembourg">48th DSN 2018:Luxembourg City, Luxembourg</h1>
+<p><a href="http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=8415926">48th Annual IEEE/IFIP International Conference on Dependable Systems and Networks, DSN 2018, Luxembourg City, Luxembourg, June 25-28, 2018.</a> IEEE Computer Society
+【<a href="https://dblp.uni-trier.de/db/conf/dsn/dsn2018.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 62 || Session Num: 16">Paper Num: 62 || Session Num: 16</h2>
+<ul>
+<li><a href="#Best Paper Candidates - Pick Your Best Paper    3">Best Paper Candidates - Pick Your Best Paper    3</a></li>
+<li><a href="#Session 1 : Byzantine and Multicast (Many Many Generals">Session 1 : Byzantine and Multicast (Many Many Generals)    4</a>    4)</li>
+<li><a href="#Session 10 : Confidentiality and Privacy    4">Session 10 : Confidentiality and Privacy    4</a></li>
+<li><a href="#Session 11 : Security    4">Session 11 : Security    4</a></li>
+<li><a href="#Session 12 : Distributed systems    4">Session 12 : Distributed systems    4</a></li>
+<li><a href="#Session 13 : The Future of Things    4">Session 13 : The Future of Things    4</a></li>
+<li><a href="#Session 14 : Routing in Networks    4">Session 14 : Routing in Networks    4</a></li>
+<li><a href="#Session 15 : Symbolic Execution & Static Analysis    3">Session 15 : Symbolic Execution &amp; Static Analysis    3</a></li>
+<li><a href="#Session 2 : HPC or Not    4">Session 2 : HPC or Not    4</a></li>
+<li><a href="#Session 3: Critical Infrastructures    4">Session 3: Critical Infrastructures    4</a></li>
+<li><a href="#Session 4 : Storage and Redundancy    4">Session 4 : Storage and Redundancy    4</a></li>
+<li><a href="#Session 5 : Attacks and Intrusion Detection    4">Session 5 : Attacks and Intrusion Detection    4</a></li>
+<li><a href="#Session 6 : Modelling and Verification    4">Session 6 : Modelling and Verification    4</a></li>
+<li><a href="#Session 7 : Architectures Reliability    4">Session 7 : Architectures Reliability    4</a></li>
+<li><a href="#Session 8 : Networks Security    4">Session 8 : Networks Security    4</a></li>
+<li><a href="#Session 9 : Mobile Devices    4">Session 9 : Mobile Devices    4</a></li>
+</ul>
+<h2 id="Best Paper Candidates - Pick Your Best Paper    3">Best Paper Candidates - Pick Your Best Paper    3</h2>
+<h3 id="1. Wren: Nonblocking Reads in a Partitioned Transactional Causally Consistent Data Store.">1. Wren: Nonblocking Reads in a Partitioned Transactional Causally Consistent Data Store.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00014">Paper Link</a>】    【Pages】:1-12</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/s/Spirovska:Kristina">Kristina Spirovska</a> ; <a href="https://dblp.uni-trier.de/pers/hd/d/Didona:Diego">Diego Didona</a> ; <a href="https://dblp.uni-trier.de/pers/hd/z/Zwaenepoel:Willy">Willy Zwaenepoel</a></p>
+<p>【Abstract】:
+Transactional Causal Consistency (TCC) extends causal consistency, the strongest consistency model compatible with availability, with interactive read-write transactions, and is therefore particularly appealing for geo-replicated platforms. This paper presents Wren, the first TCC system that at the same time i) implements nonblocking read operations, thereby achieving low latency, and ii) allows an application to efficiently scale out within a replication site by sharding. Wren introduces new protocols for transaction execution, dependency tracking and stabilization. The transaction protocol supports nonblocking reads by providing a transaction with a snapshot that is the union of a fresh causal snapshot S installed by every partition in the local data center and a client-side cache for writes that are not yet included in S. The dependency tracking and stabilization protocols require only two scalar timestamps, resulting in efficient resource utilization and providing scalability in terms of replication sites. In return for these benefits, Wren slightly increases the visibility latency of updates. We evaluate Wren on an AWS deployment using up to 5 replication sites and 16 partitions per site. We show that Wren delivers up to 1.4x higher throughput and up to 3.6x lower latency when compared to the state-of-the-art design. The choice of an older snapshot increases local update visibility latency by a few milliseconds. The use of only two timestamps to track causality increases remote update visibility latency by less than 15%.</p>
+<p>【Keywords】:
+Causal consistency; Transactional causal consistency; Geo replication</p>
+<h3 id="2. Code-Dependent and Architecture-Dependent Reliability Behaviors.">2. Code-Dependent and Architecture-Dependent Reliability Behaviors.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00015">Paper Link</a>】    【Pages】:13-26</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/f/Fratin:Vinicius">Vinicius Fratin</a> ; <a href="https://dblp.uni-trier.de/pers/hd/o/Oliveira:Daniel_A=_G=_de">Daniel A. G. de Oliveira</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Lunardi:Caio_B=">Caio B. Lunardi</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Santos:Fernando">Fernando Santos</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/Rodrigues:Gennaro">Gennaro Rodrigues</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/Rech:Paolo">Paolo Rech</a></p>
+<p>【Abstract】:
+The increased need for computing capabilities and higher efficiency have stimulated industries to make available in the market novel architectures with increased complexity. The variety of codes that need to be executed combined with the complexity of novel architectures introduces challenges in the reliability evaluation of computing systems and applications. This paper compares the reliability behaviors of six different architectures (an Intel co-processor, three NVIDIA GPUs, an AMD APU, an embedded ARM) executing eight different codes. To support our evaluation, we present and discuss experimental beam data that covers a total of more than 352,000 years of natural exposure and fault-injection analysis based on a total of more than 120,000 injections. We first quantify both the Silent Data Corruptions and the Detected Unrecoverable Errors rates. Then, we qualify observed errors considering the difference between the corrupted and expected values as well as the portion of the output that has been corrupted. From these analyses, we identify the reliability characteristics which are related to the underlying hardware and the intrinsic behaviors of the executed code. Finally, we discuss the implications of the device- and code-dependent reliability behaviors for approximate computing. We analyze the benefits, in term of reduced error rate, of a relaxed output correctness.</p>
+<p>【Keywords】:
+Fault Tolerance; radiation experiments; fault injection; reliability; architecture; algorithm; approximate computing</p>
+<h3 id="3. Modeling Soft-Error Propagation in Programs.">3. Modeling Soft-Error Propagation in Programs.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00016">Paper Link</a>】    【Pages】:27-38</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/l/Li:Guanpeng">Guanpeng Li</a> ; <a href="https://dblp.uni-trier.de/pers/hd/p/Pattabiraman:Karthik">Karthik Pattabiraman</a> ; <a href="https://dblp.uni-trier.de/pers/hd/h/Hari:Siva_Kumar_Sastry">Siva Kumar Sastry Hari</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Sullivan:Michael_B=">Michael B. Sullivan</a> ; <a href="https://dblp.uni-trier.de/pers/hd/t/Tsai:Timothy">Timothy Tsai</a></p>
+<p>【Abstract】:
+As technology scales to lower feature sizes, devices become more susceptible to soft errors. Soft errors can lead to silent data corruptions (SDCs), seriously compromising the reliability of a system. Traditional hardware-only techniques to avoid SDCs are energy hungry, and hence not suitable for commodity systems. Researchers have proposed selective software-based protection techniques to tolerate hardware faults at lower costs. However, these techniques either use expensive fault injection or inaccurate analytical models to determine which parts of a program must be protected for preventing SDCs. In this work, we construct a three-level model, TRIDENT, that captures error propagation at the static data dependency, control-flow and memory levels, based on empirical observations of error propagations in programs. TRIDENT is implemented as a compiler module, and it can predict both the overall SDC probability of a given program and the SDC probabilities of individual instructions, without fault injection. We find that TRIDENT is nearly as accurate as fault injection and it is much faster and more scalable. We also demonstrate the use of TRIDENT to guide selective instruction duplication to efficiently mitigate SDCs under a given performance overhead bound.</p>
+<p>【Keywords】:
+Error Propagation; Soft Error; Silent Data Corruption; Error Resilience; Program Analysis</p>
+<h2 id="Session 1 : Byzantine and Multicast (Many Many Generals)    4">Session 1 : Byzantine and Multicast (Many Many Generals)    4</h2>
+<h3 id="4. Byzantine Fault-Tolerant Atomic Multicast.">4. Byzantine Fault-Tolerant Atomic Multicast.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00017">Paper Link</a>】    【Pages】:39-50</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/c/Coelho:Paulo_R=">Paulo R. Coelho</a> ; <a href="https://dblp.uni-trier.de/pers/hd/j/Junior:Tarcisio_Ceolin">Tarcisio Ceolin Junior</a> ; <a href="https://dblp.uni-trier.de/pers/hd/b/Bessani:Alysson">Alysson Bessani</a> ; <a href="https://dblp.uni-trier.de/pers/hd/d/Dotti:Fernando_Lu=iacute=s">Fernando Luís Dotti</a> ; <a href="https://dblp.uni-trier.de/pers/hd/p/Pedone:Fernando">Fernando Pedone</a></p>
+<p>【Abstract】:
+Atomic multicast is an important building block in the architecture of scalable and highly available services. Atomic multicast reliably propagates and orders messages addressed to one or more groups of processes. Despite the large body of literature on atomic multicast, existing protocols target benign failures. This paper presents ByzCast, the first Byzantine Fault-Tolerant atomic multicast. Byzantine Fault Tolerance has become increasingly appealing as services can be deployed in inexpensive hardware (e.g., cloud environments) and new applications (e.g., blockchain) become more sensitive to malicious behavior. ByzCast has two important characteristics: it was designed to use existing BFT abstractions and it scales with the number of groups, for messages addressed to a single group. We discuss the design of ByzCast and how it can be optimized for particular workloads. Besides proposing a novel atomic multicast protocol, we extensively assess its performance experimentally.</p>
+<p>【Keywords】:
+Byzantine Fault Tolerance; Atomic Multicast; Group Communication; State Machine Replication</p>
+<h3 id="5. A Byzantine Fault-Tolerant Ordering Service for the Hyperledger Fabric Blockchain Platform.">5. A Byzantine Fault-Tolerant Ordering Service for the Hyperledger Fabric Blockchain Platform.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00018">Paper Link</a>】    【Pages】:51-58</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/s/Sousa:Jo=atilde=o">João Sousa</a> ; <a href="https://dblp.uni-trier.de/pers/hd/b/Bessani:Alysson">Alysson Bessani</a> ; <a href="https://dblp.uni-trier.de/pers/hd/v/Vukolic:Marko">Marko Vukolic</a></p>
+<p>【Abstract】:
+Hyperledger Fabric is a flexible operating system for permissioned blockchains designed for business applications beyond the basic digital coin addressed by Bitcoin and other existing networks. A key property of this system is its extensibility, and in particular the support for multiple ordering services for building the blockchain. However, version 1 was launched in 2017 without an implementation of a Byzantine fault-tolerant (BFT) ordering service. To overcome this limitation, we designed, implemented, and evaluated a BFT ordering service for this system on top of the BFT-SMART state machine replication/consensus library, with optimizations for wide-area deployment. Our results show that our ordering service can process up to ten thousand transactions per second and write a transaction irrevocably in the blockchain in half a second, even with peers spread across different continents.</p>
+<p>【Keywords】:
+state machine replication; consensus; Byzantine fault tolerance; blockchain</p>
+<h3 id="6. Troxy: Transparent Access to Byzantine Fault-Tolerant Systems.">6. Troxy: Transparent Access to Byzantine Fault-Tolerant Systems.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00019">Paper Link</a>】    【Pages】:59-70</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/l/Li:Bijun">Bijun Li</a> ; <a href="https://dblp.uni-trier.de/pers/hd/w/Weichbrodt:Nico">Nico Weichbrodt</a> ; <a href="https://dblp.uni-trier.de/pers/hd/b/Behl:Johannes">Johannes Behl</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Aublin:Pierre=Louis">Pierre-Louis Aublin</a> ; <a href="https://dblp.uni-trier.de/pers/hd/d/Distler:Tobias">Tobias Distler</a> ; <a href="https://dblp.uni-trier.de/pers/hd/k/Kapitza:R=uuml=diger">Rüdiger Kapitza</a></p>
+<p>【Abstract】:
+Various protocols and architectures have been proposed to make Byzantine fault tolerance (BFT) increasingly practical. However, the deployment of such systems requires dedicated client-side functionality. This is necessary as clients have to connect to multiple replicas and perform majority voting over the received replies to outvote faulty responses. Deploying custom client-side code is cumbersome, and often not an option, especially in open heterogeneous systems and for well-established protocols (e.g., HTTP and IMAP) where diverse client-side implementations co-exist. We propose Troxy, a system which relocates the BFT-specific client-side functionality to the server side, thereby making BFT transparent to legacy clients. To achieve this, Troxy relies on a trusted subsystem built upon hardware protection enabled by Intel SGX. Additionally, Troxy reduces the replication cost of BFT for read-heavy workloads by offering an actively maintained cache that supports trustworthy read operations while preserving the consistency guarantees offered by the underlying BFT protocol. A prototype of Troxy has been built and evaluated, and results indicate that using Troxy (1) leads to at most 43% performance loss with small ordered messages in a local network environment, while (2) improves throughput by 130% with read-heavy workloads in a simulated wide-area network.</p>
+<p>【Keywords】:
+Byzantine fault tolerance; Hybrid fault model; Trusted execution environment; Intel SGX</p>
+<h3 id="7. RDMC: A Reliable RDMA Multicast for Large Objects.">7. RDMC: A Reliable RDMA Multicast for Large Objects.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00020">Paper Link</a>】    【Pages】:71-82</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/b/Behrens:Jonathan">Jonathan Behrens</a> ; <a href="https://dblp.uni-trier.de/pers/hd/j/Jha:Sagar">Sagar Jha</a> ; <a href="https://dblp.uni-trier.de/pers/hd/b/Birman:Ken">Ken Birman</a> ; <a href="https://dblp.uni-trier.de/pers/hd/t/Tremel:Edward">Edward Tremel</a></p>
+<p>【Abstract】:
+Multicast patterns are common in cloud computing and datacenter settings. Applications and infrastructure tools such as Spark frequently move large objects around, update files replicated to multiple nodes, or push new versions of programs to compute nodes. Some applications use replication directly, for example to increase fault-tolerance or achieve parallelism. Implementations of Paxos, block chains and other libraries often employ a hand-built reliable multicast as a primitive. Yet operating systems continue to be focused on point-to-point communication solutions such as TCP or RDMA, a hardware layer with TCP-like semantics that offers zero copy transfers, but lacks a reliable multi-destination transfer capability. Our system, RDMC (RDMA Multicast), offers reliable multicast functionality constructed from RDMA unicast. We discuss design choices, present a theoretical analysis of RDMC's robustness to delays and slow network links, and report on experiments that evaluate RDMC over Mellanox RDMA.</p>
+<p>【Keywords】:
+RDMA; replication; overlay networks; multicast protocols</p>
+<h2 id="Session 2 : HPC or Not    4">Session 2 : HPC or Not    4</h2>
+<h3 id="8. Shiraz: Exploiting System Reliability and Application Resilience Characteristics to Improve Large Scale System Throughput.">8. Shiraz: Exploiting System Reliability and Application Resilience Characteristics to Improve Large Scale System Throughput.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00021">Paper Link</a>】    【Pages】:83-94</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/g/Garg:Rohan">Rohan Garg</a> ; <a href="https://dblp.uni-trier.de/pers/hd/p/Patel:Tirthak">Tirthak Patel</a> ; <a href="https://dblp.uni-trier.de/pers/hd/c/Cooperman:Gene">Gene Cooperman</a> ; <a href="https://dblp.uni-trier.de/pers/hd/t/Tiwari:Devesh">Devesh Tiwari</a></p>
+<p>【Abstract】:
+Large-scale applications rely on resilience mechanisms such as checkpoint-restart to make forward progress in the presence of failures. Unfortunately, this incurs huge I/O overhead and impedes productivity. To mitigate this challenge, this paper introduces a new technique, Shiraz, which demonstrates how to exploit differences in the checkpointing overhead among applications and knowledge of temporal characteristics of failures to improve both the overall system throughput and performance of individual applications.</p>
+<p>【Keywords】:
+checkpointing; HPC; reliability; storage; large scale systems; system failures</p>
+<h3 id="9. Machine Learning Models for GPU Error Prediction in a Large Scale HPC System.">9. Machine Learning Models for GPU Error Prediction in a Large Scale HPC System.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00022">Paper Link</a>】    【Pages】:95-106</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/n/Nie:Bin">Bin Nie</a> ; <a href="https://dblp.uni-trier.de/pers/hd/x/Xue:Ji">Ji Xue</a> ; <a href="https://dblp.uni-trier.de/pers/hd/g/Gupta:Saurabh">Saurabh Gupta</a> ; <a href="https://dblp.uni-trier.de/pers/hd/p/Patel:Tirthak">Tirthak Patel</a> ; <a href="https://dblp.uni-trier.de/pers/hd/e/Engelmann:Christian">Christian Engelmann</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Smirni:Evgenia">Evgenia Smirni</a> ; <a href="https://dblp.uni-trier.de/pers/hd/t/Tiwari:Devesh">Devesh Tiwari</a></p>
+<p>【Abstract】:
+GPUs are widely deployed on large-scale HPC systems to provide powerful computational capability for scientific applications from various domains. As those applications are normally long-running, investigating the characteristics of GPU errors becomes imperative for reliability. In this paper, we first study the system conditions that trigger GPU errors using six-month trace data collected from a large-scale, operational HPC system. Then, we use machine learning to predict the occurrence of GPU errors, by taking advantage of temporal and spatial dependencies of the trace data. The resulting machine learning prediction framework is robust and accurate under different workloads.</p>
+<p>【Keywords】:
+GPU Reliability; System Reliability; HPC; Error Prediction; Machine Learning</p>
+<h3 id="10. Understanding and Analyzing Interconnect Errors and Network Congestion on a Large Scale HPC System.">10. Understanding and Analyzing Interconnect Errors and Network Congestion on a Large Scale HPC System.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00023">Paper Link</a>】    【Pages】:107-114</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/k/Kumar:Mohit">Mohit Kumar</a> ; <a href="https://dblp.uni-trier.de/pers/hd/g/Gupta:Saurabh">Saurabh Gupta</a> ; <a href="https://dblp.uni-trier.de/pers/hd/p/Patel:Tirthak">Tirthak Patel</a> ; <a href="https://dblp.uni-trier.de/pers/hd/w/Wilder:Michael">Michael Wilder</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Shi:Weisong">Weisong Shi</a> ; <a href="https://dblp.uni-trier.de/pers/hd/f/Fu:Song">Song Fu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/e/Engelmann:Christian">Christian Engelmann</a> ; <a href="https://dblp.uni-trier.de/pers/hd/t/Tiwari:Devesh">Devesh Tiwari</a></p>
+<p>【Abstract】:
+Today's High Performance Computing (HPC) systems are capable of delivering performance in the order of petaflops due to the fast computing devices, network interconnect, and back-end storage systems. In particular, interconnect resilience and congestion resolution methods have a major impact on the overall interconnect and application performance. This is especially true for scientific applications running multiple processes on different compute nodes as they rely on fast network messages to communicate and synchronize frequently. Unfortunately, the HPC community lacks state-of-practice experience reports that detail how different interconnect errors and congestion events occur on large-scale HPC systems. Therefore, in this paper, we process and analyze interconnect data of the Titan supercomputer to develop a thorough understanding of interconnects faults, errors and congestion events. We also study the interaction between interconnect, errors, network congestion and application characteristics.</p>
+<p>【Keywords】:
+Cray; Gemini; Interconnect; Titan; Errors</p>
+<h3 id="11. Fast Hypervisor Recovery Without Reboot.">11. Fast Hypervisor Recovery Without Reboot.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00024">Paper Link</a>】    【Pages】:115-126</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/z/Zhou:Diyu">Diyu Zhou</a> ; <a href="https://dblp.uni-trier.de/pers/hd/t/Tamir:Yuval">Yuval Tamir</a></p>
+<p>【Abstract】:
+System recovery latency is decreased by using microreboot to reboot only the failed component instead of the entire system. For large, complex components, such as hypervisors, even the latency of microreboot is unacceptably high in important deployment scenarios. We investigate an alternative component-level recovery mechanism, which we call microreset, that can achieve dramatically lower recovery latency for some such components. Instead of component reboot, microreset quickly resets the component to a quiescent state that is highly likely to be valid and where the component is ready to handle new or retried interactions with the rest of the system. We present a recovery mechanism for the Xen hypervisor, called NiLiHype, based on microreset. We show that, compared to microreboot-based hypervisor recovery, NiLiHype achieves nearly the same recovery success rate but with a recovery latency that is shorter by a factor of over 30.</p>
+<p>【Keywords】:
+recovery; virtualization; hypervisor; fault injection</p>
+<h2 id="Session 3: Critical Infrastructures    4">Session 3: Critical Infrastructures    4</h2>
+<h3 id="12. ZOE: Content-Based Anomaly Detection for Industrial Control Systems.">12. ZOE: Content-Based Anomaly Detection for Industrial Control Systems.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00025">Paper Link</a>】    【Pages】:127-138</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/w/Wressnegger:Christian">Christian Wressnegger</a> ; <a href="https://dblp.uni-trier.de/pers/hd/k/Kellner:Ansgar">Ansgar Kellner</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/Rieck:Konrad">Konrad Rieck</a></p>
+<p>【Abstract】:
+Due its complexity and a multitude of proprietary components, industrial control systems are an immanently difficult field of application for intrusion detection. Proprietary binary protocols and the lack of public specifications have forced the research community to move away from content-based detection to more abstract concepts. In this paper, we show that in contrast to prior belief the content of unknown binary protocols can very well be modeled. ZOE derives prototype models that are specific to individual types of messages in order to capture the characteristics of arbitrary binary protocols and enable detecting different forms of attacks as anomalies. In an evaluation based on 6 days of network traffic recorded at a large power plant (1,900 MW) with over 92,000 unique devices, we demonstrate that ZOE improves upon related approaches by up to an order of magnitude in detection performance, but also significantly decreases false positives.</p>
+<p>【Keywords】:
+Industrial networks; SCADA; Anomaly Detection</p>
+<h3 id="13. Cost-Benefit Analysis of Moving-Target Defense in Power Grids.">13. Cost-Benefit Analysis of Moving-Target Defense in Power Grids.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00026">Paper Link</a>】    【Pages】:139-150</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/l/Lakshminarayana:Subhash">Subhash Lakshminarayana</a> ; <a href="https://dblp.uni-trier.de/pers/hd/y/Yau:David_K=_Y=">David K. Y. Yau</a></p>
+<p>【Abstract】:
+We study moving-target defense (MTD) that actively perturbs transmission line reactances to thwart stealthy false data injection (FDI) attacks against state estimation in a power grid. Prior work on this topic has proposed MTD based on randomly selected reactance perturbations, but these perturbations cannot guarantee effective attack detection. To address the issue, we present formal design criteria to select MTD reactance perturbations that are truly effective. However, based on a key optimal power flow (OPF) formulation, we find that the effective MTD may incur a non-trivial operational cost that has not hitherto received attention. Accordingly, we characterize important tradeoffs between the MTD's detection capability and its associated required cost. Extensive simulations, using the MATPOWER simulator and benchmark IEEE bus systems, verify and illustrate the proposed design approach that for the first time addresses both key aspects of cost and effectiveness of the MTD.</p>
+<p>【Keywords】:
+Moving target defense; false data injection attacks; power grids; effectiveness; operational cost</p>
+<h3 id="14. Algorithmic Attack Synthesis Using Hybrid Dynamics of Power Grid Critical Infrastructures.">14. Algorithmic Attack Synthesis Using Hybrid Dynamics of Power Grid Critical Infrastructures.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00027">Paper Link</a>】    【Pages】:151-162</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/h/Huang:Zhenqi">Zhenqi Huang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/e/Etigowni:Sriharsha">Sriharsha Etigowni</a> ; <a href="https://dblp.uni-trier.de/pers/hd/g/Garcia:Luis">Luis Garcia</a> ; <a href="https://dblp.uni-trier.de/pers/hd/m/Mitra:Sayan">Sayan Mitra</a> ; <a href="https://dblp.uni-trier.de/pers/hd/z/Zonouz:Saman_A=">Saman A. Zonouz</a></p>
+<p>【Abstract】:
+Automated vulnerability assessment and exploit generation for computing systems have been explored for decades. However, these approaches are incomplete in assessing industrial control systems, where networks of computing devices and physical processes interact for safety-critical missions. We present an attack synthesis algorithm against such cyber-physical electricity grids. The algorithm explores both discrete network configurations and continuous dynamics of the plant's embedded control system to search for attack strategies that evade detection with conventional monitors. The algorithm enabling this exploration is rooted in recent developments in the hybrid system verification research: it effectively approximates the behavior of the system for a set of possible attacks by computing sensitivity of the system's response to variations in the attack parameters. For parts of the attack space, the proposed algorithm can infer whether or not there exists a feasible attack that avoids triggering protection measures such as relays and steady-state monitors. The algorithm can take into account constraints on the attack space such as the power system topology and the set of controllers across the plant that can be compromised without detection. With a proof-of-concept prototype, we demonstrate the synthesis of transient attacks in several typical electricity grids and analyze the robustness of the synthesized attacks to perturbations in the network parameters.</p>
+<p>【Keywords】:
+attack synthesis; transient attack; hybrid system verification</p>
+<h3 id="15. On the Challenges of Building a BFT SCADA.">15. On the Challenges of Building a BFT SCADA.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00028">Paper Link</a>】    【Pages】:163-170</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/n/Nogueira:Andr=eacute=">André Nogueira</a> ; <a href="https://dblp.uni-trier.de/pers/hd/g/Garcia:Miguel">Miguel Garcia</a> ; <a href="https://dblp.uni-trier.de/pers/hd/b/Bessani:Alysson">Alysson Bessani</a> ; <a href="https://dblp.uni-trier.de/pers/hd/n/Neves_0001:Nuno">Nuno Neves</a></p>
+<p>【Abstract】:
+In the last decade, Industrial Control Systems have been a frequent target of cyber attacks. As the current defenses sometimes fail to prevent more sophisticated threats, it is necessary to add advanced protection mechanisms to guarantee that correct operation is (always) maintained. In this work, we describe a Supervisory Control and Data Acquisition (SCADA) system enhanced with Byzantine fault-tolerant (BFT) techniques. We document the challenges of building such system from a "traditional" non-BFT solution. This effort resulted in a prototype that integrates the Eclipse NeoSCADA and the BFT-SMaRt open-source projects. We also present an evaluation comparing Eclipse NeoSCADA with our BFT solution. Although the results show a decrease in performance, our solution is still more than enough to accommodate realistic workloads.</p>
+<p>【Keywords】:
+Byzantine fault tolerance; SCADA systems; State Machine Replication; Eclipse NeoSCADA</p>
+<h2 id="Session 4 : Storage and Redundancy    4">Session 4 : Storage and Redundancy    4</h2>
+<h3 id="16. RECAST: Random Entanglement for Censorship-Resistant Archival STorage.">16. RECAST: Random Entanglement for Censorship-Resistant Archival STorage.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00029">Paper Link</a>】    【Pages】:171-182</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/b/Barbi:Roberta">Roberta Barbi</a> ; <a href="https://dblp.uni-trier.de/pers/hd/b/Burihabwa:Dorian">Dorian Burihabwa</a> ; <a href="https://dblp.uni-trier.de/pers/hd/f/Felber:Pascal">Pascal Felber</a> ; <a href="https://dblp.uni-trier.de/pers/hd/m/Mercier:Hugues">Hugues Mercier</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Schiavoni:Valerio">Valerio Schiavoni</a></p>
+<p>【Abstract】:
+Users entrust an increasing amount of data to online cloud systems for archival purposes. Existing storage systems designed to preserve user data unaltered for decades do not, however, provide strong security guarantees - at least at a reasonable cost. This paper introduces RECAST, an anti-censorship data archival system based on random data entanglement. Documents are mixed together using an entanglement scheme that exploits erasure codes for secure and tamper-proof long-term archival. Data is intertwined in such a way that it becomes virtually impossible to delete a specific document that has been stored long enough in the system, without also erasing a substantial fraction of the whole archive, which requires a very powerful adversary and openly exposes the attack. We validate RECAST entanglement approach via simulations and we present and evaluate a full-fledged prototype deployed in a local cluster. In one of our settings, we show that RECAST, configured with the same storage overhead as triple replication, can withstand 10% of storage node failures without any data loss. Furthermore, we estimate that the effort required from a powerful censor to delete a specific target document is two orders of magnitude larger than for triple replication.</p>
+<p>【Keywords】:
+storage; anti censorship; erasure-coding; entanglement</p>
+<h3 id="17. Alpha Entanglement Codes: Practical Erasure Codes to Archive Data in Unreliable Environments.">17. Alpha Entanglement Codes: Practical Erasure Codes to Archive Data in Unreliable Environments.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00030">Paper Link</a>】    【Pages】:183-194</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/e/Estrada=Gali=ntilde=anes:Vero">Vero Estrada-Galiñanes</a> ; <a href="https://dblp.uni-trier.de/pers/hd/m/Miller:Ethan_L=">Ethan L. Miller</a> ; <a href="https://dblp.uni-trier.de/pers/hd/f/Felber:Pascal">Pascal Felber</a> ; <a href="https://dblp.uni-trier.de/pers/hd/p/P=acirc=ris:Jehan=Fran=ccedil=ois">Jehan-François Pâris</a></p>
+<p>【Abstract】:
+Data centres that use consumer-grade disks drives and distributed peer-to-peer systems are unreliable environments to archive data without enough redundancy. Most redundancy schemes are not completely effective for providing high availability, durability and integrity in the long-term. We propose alpha entanglement codes, a mechanism that creates a virtual layer of highly interconnected storage devices to propagate redundant information across a large scale storage system. Our motivation is to design flexible and practical erasure codes with high fault-tolerance to improve data durability and availability even in catastrophic scenarios. By "flexible and practical", we mean code settings that can be adapted to future requirements and practical implementations with reasonable trade-offs between security, resource usage and performance. The codes have three parameters. Alpha increases storage overhead linearly but increases the possible paths to recover data exponentially. Two other parameters increase fault-tolerance even further without the need of additional storage. As a result, an entangled storage system can provide high availability, durability and offer additional integrity: it is more difficult to modify data undetectably. We evaluate how several redundancy schemes perform in unreliable environments and show that alpha entanglement codes are flexible and practical codes. Remarkably, they excel at code locality, hence, they reduce repair costs and become less dependent on storage locations with poor availability. Our solution outperforms Reed-Solomon codes in many disaster recovery scenarios.</p>
+<p>【Keywords】:
+availability; fault tolerance; Reed Solomon codes; data storage systems; redundancy; peer to peer computing; encoding; decoding; data integrity; disk drives; computer errrors</p>
+<h3 id="18. Migrating SGX Enclaves with Persistent State.">18. Migrating SGX Enclaves with Persistent State.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00031">Paper Link</a>】    【Pages】:195-206</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/a/Alder:Fritz">Fritz Alder</a> ; <a href="https://dblp.uni-trier.de/pers/hd/k/Kurnikov:Arseny">Arseny Kurnikov</a> ; <a href="https://dblp.uni-trier.de/pers/hd/p/Paverd:Andrew">Andrew Paverd</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Asokan:N=">N. Asokan</a></p>
+<p>【Abstract】:
+Hardware-supported security mechanisms like Intel Software Guard Extensions (SGX) provide strong security guarantees, which are particularly relevant in cloud settings. However, their reliance on physical hardware conflicts with cloud practices, like migration of VMs between physical platforms. For instance, the SGX trusted execution environment (enclave) is bound to a single physical CPU. Although prior work has proposed an effective mechanism to migrate an enclave's data memory, it overlooks the migration of persistent state, including sealed data and monotonic counters; the former risks data loss whilst the latter undermines the SGX security guarantees. We show how this can be exploited to mount attacks, and then propose an improved enclave migration approach guaranteeing the consistency of persistent state. Our software-only approach enables migratable sealed data and monotonic counters, maintains all SGX security guarantees, minimizes developer effort, and incurs negligible performance overhead.</p>
+<p>【Keywords】:
+Counters; Intel SGX; Sealing; VM Migration</p>
+<h3 id="19. IBBE-SGX: Cryptographic Group Access Control Using Trusted Execution Environments.">19. IBBE-SGX: Cryptographic Group Access Control Using Trusted Execution Environments.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00032">Paper Link</a>】    【Pages】:207-218</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/c/Contiu:Stefan">Stefan Contiu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/p/Pires:Rafael">Rafael Pires</a> ; <a href="https://dblp.uni-trier.de/pers/hd/v/Vaucher:S=eacute=bastien">Sébastien Vaucher</a> ; <a href="https://dblp.uni-trier.de/pers/hd/p/Pasin:Marcelo">Marcelo Pasin</a> ; <a href="https://dblp.uni-trier.de/pers/hd/f/Felber:Pascal">Pascal Felber</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/R=eacute=veill=egrave=re:Laurent">Laurent Réveillère</a></p>
+<p>【Abstract】:
+While many cloud storage systems allow users to protect their data by making use of encryption, only few support collaborative editing on that data. A major challenge for enabling such collaboration is the need to enforce cryptographic access control policies in a secure and efficient manner. In this paper, we introduce IBBE-SGX, a new cryptographic access control extension that is efficient both in terms of computation and storage even when processing large and dynamic workloads of membership operations, while at the same time offering zero knowledge guarantees. IBBE-SGX builds upon Identity-Based Broadcasting Encryption (IBBE). We address IBBE's impracticality for cloud deployments by exploiting Intel Software Guard Extensions (SGX) to derive cuts in the computational complexity. Moreover, we propose a group partitioning mechanism such that the computational cost of membership update is bound to a fixed constant partition size rather than the size of the whole group. We have implemented and evaluated our new access control extension. Results highlight that IBBE-SGX performs membership changes 1.2 orders of magnitude faster than the traditional approach of Hybrid Encryption (HE), producing group metadata that are 6 orders of magnitude smaller than HE, while at the same time offering zero knowledge guarantees.</p>
+<p>【Keywords】:
+Access Control; TEE; SGX</p>
+<h2 id="Session 5 : Attacks and Intrusion Detection    4">Session 5 : Attacks and Intrusion Detection    4</h2>
+<h3 id="20. OWL: Understanding and Detecting Concurrency Attacks.">20. OWL: Understanding and Detecting Concurrency Attacks.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00033">Paper Link</a>】    【Pages】:219-230</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/z/Zhao:Shixiong">Shixiong Zhao</a> ; <a href="https://dblp.uni-trier.de/pers/hd/g/Gu:Rui">Rui Gu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/q/Qiu:Haoran">Haoran Qiu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Li:Tsz_On">Tsz On Li</a> ; <a href="https://dblp.uni-trier.de/pers/hd/w/Wang:Yuexuan">Yuexuan Wang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/c/Cui:Heming">Heming Cui</a> ; <a href="https://dblp.uni-trier.de/pers/hd/y/Yang:Junfeng">Junfeng Yang</a></p>
+<p>【Abstract】:
+Just like bugs in single-threaded programs can lead to vulnerabilities, bugs in multithreaded programs can also lead to concurrency attacks. We studied 31 real-world concurrency attacks, including privilege escalations, hijacking code executions, and bypassing security checks. We found that compared to concurrency bugs' traditional consequences (e.g., program crashes), concurrency attacks' consequences are often implicit, extremely hard to be observed and diagnosed by program developers. Moreover, in addition to bug-inducing inputs, extra subtle inputs are often needed to trigger the attacks. These subtle features make existing tools ineffective to detect concurrency attacks. To tackle this problem, we present OWL, the first practical tool that models general concurrency attacks' implicit consequences and automatically detects them. We implemented OWL in Linux and successfully detected five new concurrency attacks, including three confirmed and fixed by developers, and two exploited from previously known and well-studied concurrency bugs. OWL has also detected seven known concurrency attacks. Our evaluation shows that OWL eliminates 94.1% of the reports generated by existing concurrency bug detectors as false positive, greatly reducing developers' efforts on diagnosis. All OWL source code, concurrency attack exploit scripts, and results are available on github.com/hku-systems/owl.</p>
+<p>【Keywords】:
+Software Testing; Concurrency Attack</p>
+<h3 id="21. FAROS: Illuminating In-memory Injection Attacks via Provenance-Based Whole-System Dynamic Information Flow Tracking.">21. FAROS: Illuminating In-memory Injection Attacks via Provenance-Based Whole-System Dynamic Information Flow Tracking.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00034">Paper Link</a>】    【Pages】:231-242</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/a/Arefi:Meisam_Navaki">Meisam Navaki Arefi</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Alexander:Geoffrey">Geoffrey Alexander</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/Rokham:Hooman">Hooman Rokham</a> ; <a href="https://dblp.uni-trier.de/pers/hd/c/Chen:Aokun">Aokun Chen</a> ; <a href="https://dblp.uni-trier.de/pers/hd/f/Faloutsos:Michalis">Michalis Faloutsos</a> ; <a href="https://dblp.uni-trier.de/pers/hd/w/Wei:Xuetao">Xuetao Wei</a> ; <a href="https://dblp.uni-trier.de/pers/hd/o/Oliveira:Daniela_Seabra">Daniela Seabra Oliveira</a> ; <a href="https://dblp.uni-trier.de/pers/hd/c/Crandall:Jedidiah_R=">Jedidiah R. Crandall</a></p>
+<p>【Abstract】:
+In-memory injection attacks are extremely challenging to reverse engineer because they operate stealthily without leaving artifacts in the system or in any easily observable events from outside of a virtual machine. Because these attacks perform their actions in memory only, current malware analysis solutions cannot expose their behavior. This paper introduces FAROS^1 a reverse engineering tool for Windows malware analysis based on dynamic information flow tracking (DIFT), which can flag stealthy in-memory-only malware injection attacks by leveraging the synergy of: (i) whole-system taint analysis; (ii) per security policy-based handling of the challenge of indirect flows via the application of tags of different types, and (iii) the use of tags with fine-grained provenance information. We evaluated FAROS with six advanced in-memory-injecting malware and it flagged the attacks for all samples. We also analyzed FAROS' false positive rate with 90 non-injecting malware samples and 14 benign software from various categories. FAROS presented a very low false positive rate of 2%, which shows its potential towards practical solutions against advanced in-memory-only anti-reverse-engineering attacks.</p>
+<p>【Keywords】:
+Dynamic Information Flow Tracking; In memory Injection; Malware Analysis</p>
+<h3 id="22. To Detect Stack Buffer Overflow with Polymorphic Canaries.">22. To Detect Stack Buffer Overflow with Polymorphic Canaries.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00035">Paper Link</a>】    【Pages】:243-254</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/w/Wang:Zhilong">Zhilong Wang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/d/Ding:Xuhua">Xuhua Ding</a> ; <a href="https://dblp.uni-trier.de/pers/hd/p/Pang:Chengbin">Chengbin Pang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/g/Guo:Jian">Jian Guo</a> ; <a href="https://dblp.uni-trier.de/pers/hd/z/Zhu:Jun">Jun Zhu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/m/Mao:Bing">Bing Mao</a></p>
+<p>【Abstract】:
+Stack Smashing Protection (SSP) is a simple and highly efficient technique widely used in practice as the front line defense against stack buffer overflow attacks. Unfortunately, SSP is known to be vulnerable to the so-called byte-by-byte attack. Although several remedy schemes are proposed in the recent literature, their security is achieved at the price of practicality, because their complex logics ruin SSP's simplicity and high-efficiency. In this paper, we present an elegant solution named as Polymorphic SSP (P-SSP) that attains the same security without sacrificing SSP's strengths. We also propose three extensions of the basic scheme for better compatibility, stronger security, and local variable protection, respectively. We have implemented both a compiler plugin and a binary instrumentation tool for deploying P-SSP. Their respective runtime overheads are only 0.24% and 1.01%. We have also experimented with our extensions and compared their pros and cons with the basic scheme.</p>
+<p>【Keywords】:
+Stack buffer overflow; brute force attack; canary</p>
+<h3 id="23. Network-Attack-Resilient Intrusion-Tolerant SCADA for the Power Grid.">23. Network-Attack-Resilient Intrusion-Tolerant SCADA for the Power Grid.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00036">Paper Link</a>】    【Pages】:255-266</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/b/Babay:Amy">Amy Babay</a> ; <a href="https://dblp.uni-trier.de/pers/hd/t/Tantillo:Thomas">Thomas Tantillo</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Aron:Trevor">Trevor Aron</a> ; <a href="https://dblp.uni-trier.de/pers/hd/p/Platania:Marco">Marco Platania</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Amir:Yair">Yair Amir</a></p>
+<p>【Abstract】:
+As key components of the power grid infrastructure, Supervisory Control and Data Acquisition (SCADA) systems are likely to be targeted by nation-state-level attackers willing to invest considerable resources to disrupt the power grid. We present Spire, the first intrusion-tolerant SCADA system that is resilient to both system-level compromises and sophisticated network-level attacks and compromises. We develop a novel architecture that distributes the SCADA system management across three or more active sites to ensure continuous availability in the presence of simultaneous intrusions and network attacks. A wide-area deployment of Spire, using two control centers and two data centers spanning 250 miles, delivered nearly 99.999% of all SCADA updates initiated over a 30-hour period within 100ms. This demonstrates that Spire can meet the latency requirements of SCADA for the power grid.</p>
+<p>【Keywords】:
+intrusion tolerance; SCADA; network attack; power grid</p>
+<h2 id="Session 6 : Modelling and Verification    4">Session 6 : Modelling and Verification    4</h2>
+<h3 id="24. Branching Bisimulation and Concurrent Object Verification.">24. Branching Bisimulation and Concurrent Object Verification.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00037">Paper Link</a>】    【Pages】:267-278</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/y/Yang:Xiaoxiao">Xiaoxiao Yang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/k/Katoen:Joost=Pieter">Joost-Pieter Katoen</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Lin:Huimin">Huimin Lin</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Liu:Gaoang">Gaoang Liu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/w/Wu_0013:Hao">Hao Wu</a></p>
+<p>【Abstract】:
+Linearizability and progress properties are key correctness notions for concurrent objects. This paper presents novel verification techniques for both property classes. The key of our techniques is based on the branching bisimulation equivalence. We first show that it suffices to check linearizability on the quotient object program under branching bisimulation. This is appealing, as it does not rely on linearization points. Further, by exploiting divergence-sensitive branching bisimilarity, our approach proves progress properties (e.g., lock-, wait-freedom) by comparing the concurrent to-be-verified object program against an abstract program consisting of atomic blocks. Our work thus enables the usage of well-known proof techniques for branching bisimulation to check the correctness of concurrent objects. The potential of our approach is illustrated by verifying linearizability and lock-freedom of 14 benchmark algorithms from the literature. Our experiments confirm one known bug and reveals one new bug.</p>
+<p>【Keywords】:
+concurrent data structure; verification; branching bisimulation; lock-free; linearizability</p>
+<h3 id="25. Modeling Input-Dependent Error Propagation in Programs.">25. Modeling Input-Dependent Error Propagation in Programs.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00038">Paper Link</a>】    【Pages】:279-290</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/l/Li:Guanpeng">Guanpeng Li</a> ; <a href="https://dblp.uni-trier.de/pers/hd/p/Pattabiraman:Karthik">Karthik Pattabiraman</a></p>
+<p>【Abstract】:
+Transient hardware faults are increasing in computer systems due to shrinking feature sizes. Traditional methods to mitigate such faults are through hardware duplication, which incurs huge overhead in performance and energy consumption. Therefore, researchers have explored software solutions such as selective instruction duplication, which require fine-grained analysis of instruction vulnerabilities to Silent Data Corruptions (SDCs). These are typically evaluated via Fault Injection (FI), which is often highly time-consuming. Hence, most studies confine their evaluations to a single input for each program. However, there is often significant variation in the SDC probabilities of both the overall program and individual instructions across inputs, which compromises the correctness of results with a single input. In this work, we study the variation of SDC probabilities across different inputs of a program, and identify the reasons for the variations. Based on the observations, we propose a model, VTRIDENT, which predicts the variations in programs' SDC probabilities without any FIs, for a given set of inputs. We find that VTRIDENT is nearly as accurate as FI in identifying the variations in SDC probabilities across inputs. We demonstrate the use of VTRIDENT to bound overall SDC probability of a program under multiple inputs, while performing FI on only a single input.</p>
+<p>【Keywords】:
+Error Propagation; Soft Error; Silent Data Corruption; Error Resilience; Program Analysis; Multiple Inputs</p>
+<h3 id="26. Efficient Transient Analysis of a Class of Compositional Fluid Stochastic Petri Nets.">26. Efficient Transient Analysis of a Class of Compositional Fluid Stochastic Petri Nets.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00039">Paper Link</a>】    【Pages】:291-302</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/b/Buchholz:Peter">Peter Buchholz</a> ; <a href="https://dblp.uni-trier.de/pers/hd/d/Dayar:Tugrul">Tugrul Dayar</a></p>
+<p>【Abstract】:
+Fluid Stochastic Petri Nets (FSPNs) which have discrete and continuous places are an established model class to describe and analyze several dependability problems for computer systems, software architectures or critical infrastructures. Unfortunately, their analysis is faced with the curse of dimensionality resulting in very large systems of differential equations for a sufficiently accurate analysis. This contribution introduces a class of FSPNs with a compositional structure and shows how the underlying stochastic process can be described by a set of coupled partial differential equations. Using semi discretization, a set of linear ordinary differential equations is generated which can be described by a (hierarchical) sum of Kronecker products. Based on this compact representation of the transition matrix, a numerical solution approach is applied which also represents transient solution vectors in compact form using the recently developed concept of a Hierarchical Tucker Decomposition. The applicability of the approach is presented in a case study analyzing a degrading software system with rejuvenation, restart, and replication.</p>
+<p>【Keywords】:
+Performance and Dependability Analysis; Hybrid Stochastic Models; Flui Stochastic Petri Nets; Numerical Algorithms; Data Structures</p>
+<h3 id="27. Importance Sampling of Interval Markov Chains.">27. Importance Sampling of Interval Markov Chains.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00040">Paper Link</a>】    【Pages】:303-313</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/j/J=eacute=gourel:Cyrille">Cyrille Jégourel</a> ; <a href="https://dblp.uni-trier.de/pers/hd/w/Wang:Jingyi">Jingyi Wang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Sun_0001:Jun">Jun Sun</a></p>
+<p>【Abstract】:
+In real-world systems, rare events often characterize critical situations like the probability that a system fails within some time bound and they are used to model some potentially harmful scenarios in dependability of safety-critical systems. Probabilistic Model Checking has been used to verify dependability properties in various types of systems but is limited by the state space explosion problem. An alternative is the recourse to Statistical Model Checking (SMC) that relies on Monte Carlo simulations and provides estimates within predefined error and confidence bounds. However, rare properties require a large number of simulations before occurring at least once. To tackle the problem, Importance Sampling, a rare event simulation technique, has been proposed in SMC for different types of probabilistic systems. Importance Sampling requires the full knowledge of probabilistic measure of the system, e.g. Markov chains. In practice, however, we often have models with some uncertainty, e.g., Interval Markov Chains. In this work, we propose a method to apply importance sampling to Interval Markov Chains. We show promising results in applying our method to multiple case studies.</p>
+<p>【Keywords】:
+Rare Events; Importance Sampling; Markov Chains; Interval Markov Chains; Dependability; Statistical Model Checking</p>
+<h2 id="Session 7 : Architectures Reliability    4">Session 7 : Architectures Reliability    4</h2>
+<h3 id="28. Low Overhead Tag Error Mitigation for GPU Architectures.">28. Low Overhead Tag Error Mitigation for GPU Architectures.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00041">Paper Link</a>】    【Pages】:314-321</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/l/Lotfi:Atieh">Atieh Lotfi</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Saxena:Nirmal_R=">Nirmal R. Saxena</a> ; <a href="https://dblp.uni-trier.de/pers/hd/b/Bramley:Richard">Richard Bramley</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/Racunas:Paul">Paul Racunas</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Shirvani:Philip_P=">Philip P. Shirvani</a></p>
+<p>【Abstract】:
+Cache structures on modern GPUs or CPUs occupy a large area and are frequently accessed. This increases their vulnerability to transient errors. With some area and energy overhead, these structures are often protected by ECC or parity checking. However, in deference to the energy efficiency and scalability challenges in high-performance computing, it is crucial to minimize any unnecessary overhead while maintaining the desired reliability. This paper evaluates the reliability of unprotected tag SRAM structures in modern GPUs, and studies the use of a low-overhead tag error mitigation mechanism. The proposed mechanism exploits Galois-based hash functions for set-index calculation to mitigate some pathological address strides that cause false hit events. Extensive analysis on a modern GPU indicates that the hash-based mechanism yields 10x reduction in false hit probability (with 2% improvement in hit rate) for write-through data caches when compared to a baseline cache indexing scheme.</p>
+<p>【Keywords】:
+GPU resiliency; Tag error mitigation</p>
+<h3 id="29. DAVOS: EDA Toolkit for Dependability Assessment, Verification, Optimisation and Selection of Hardware Models.">29. DAVOS: EDA Toolkit for Dependability Assessment, Verification, Optimisation and Selection of Hardware Models.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00042">Paper Link</a>】    【Pages】:322-329</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/t/Tuzov:Ilya">Ilya Tuzov</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Andr=eacute=s:David_de">David de Andrés</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/Ruiz:Juan_Carlos">Juan Carlos Ruiz</a></p>
+<p>【Abstract】:
+The high complexity of new designs and time-to-market pressure have caused design reuse to be at the heart of the common semi-custom hardware design flow. Accordingly, current Electronic Design Automation (EDA) toolchains are developed to support a wide range of hardware description languages, third-party EDA tools, intellectual property cores, and implementation technologies and goals. However, the seamless integration of dependability requirements into such toolchains remains today an open challenge. This paper presents DAVOS, an EDA toolkit supporting assessment, verification, optimisation (design space exploration), and selection (benchmarking) processes for dependability-aware hardware implementations. This toolkit fully automates these processes with efficiency and flexibility in mind, so underlying implementation and analysis phases can be customized to consider alternative off-the-self languages, tools, components and technologies from a dependability perspective. Three different embedded processor models exemplify the design scenarios supported by DAVOS.</p>
+<p>【Keywords】:
+Electronic Design Automation; Dependability assessment; Verification; Optimisation; Dependability benchmarking; Design Space Exploration</p>
+<h3 id="30. A Framework for Evaluating Software on Reduced Margins Hardware.">30. A Framework for Evaluating Software on Reduced Margins Hardware.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00043">Paper Link</a>】    【Pages】:330-337</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/p/Parasyris:Konstantinos">Konstantinos Parasyris</a> ; <a href="https://dblp.uni-trier.de/pers/hd/k/Koutsovasilis:Panos_K=">Panos K. Koutsovasilis</a> ; <a href="https://dblp.uni-trier.de/pers/hd/v/Vassiliadis:Vassilis">Vassilis Vassiliadis</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Antonopoulos:Christos_D=">Christos D. Antonopoulos</a> ; <a href="https://dblp.uni-trier.de/pers/hd/b/Bellas:Nikolaos">Nikolaos Bellas</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Lalis:Spyros">Spyros Lalis</a></p>
+<p>【Abstract】:
+To improve power efficiency, researchers are experimenting with dynamically adjusting the voltage and frequency margins of systems to just above the minimum required for reliable operation. Traditionally, manufacturers did not allow reducing these margins. Consequently, existing studies use system simulators, or software fault-injection methodologies, which are slow, inaccurate and cannot be applied on realistic workloads. However recent CPUs allow the operation outside the nominal voltage/frequency envelope. We present eXtended Margins eXperiment Manager (XM
+<sup xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">2</sup>
+) which enables the evaluation of software on systems operating outside their nominal margins. It supports both bare-metal and OS-controlled execution using an API to control the fault injection procedure and provides automatic management of experimental campaigns. XM
+<sup xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">2</sup>
+requires, on average, 5.6% extra lines of code and increases the application execution time by 2.5%. To demonstrate the flexibility of XM
+<sup xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">2</sup>
+, we perform three case studies: two employing bare-metal execution on a raspberry PI, and one featuring a full-fledged software stack (including OS) on an Intel Skylake Xeon processor.</p>
+<p>【Keywords】:
+fault injection; voltage margins</p>
+<h3 id="31. Parallel Error Detection Using Heterogeneous Cores.">31. Parallel Error Detection Using Heterogeneous Cores.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00044">Paper Link</a>】    【Pages】:338-349</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/a/Ainsworth:Sam">Sam Ainsworth</a> ; <a href="https://dblp.uni-trier.de/pers/hd/j/Jones_0001:Timothy_M=">Timothy M. Jones</a></p>
+<p>【Abstract】:
+Microprocessor error detection is increasingly important, as the number of transistors in modern systems heightens their vulnerability. In addition, many modern workloads in domains such as the automotive and health industries are increasingly error intolerant, due to strict safety standards. However, current detection techniques require duplication of all hardware structures, causing a considerable increase in power consumption and chip area. Solutions in the literature involve running the code multiple times on the same hardware, which reduces performance significantly and cannot capture all errors. We have designed a novel hardware-only solution for error detection, that exploits parallelism in checking code which may not exist in the original execution. We pair a high-performance out-of-order core with a set of small low-power cores, each of which checks a portion of the out-of-order core's execution. Our system enables the detection of both hard and soft errors, with low area, power and performance overheads.</p>
+<p>【Keywords】:
+fault tolerance; microarchitecture; error detection</p>
+<h2 id="Session 8 : Networks Security    4">Session 8 : Networks Security    4</h2>
+<h3 id="32. Measuring IPv6 DNS Reconnaissance Attacks and Preventing Them Using DNS Guard.">32. Measuring IPv6 DNS Reconnaissance Attacks and Preventing Them Using DNS Guard.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00045">Paper Link</a>】    【Pages】:350-361</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/h/Hu:Qinwen">Qinwen Hu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Asghar:Muhammad_Rizwan">Muhammad Rizwan Asghar</a> ; <a href="https://dblp.uni-trier.de/pers/hd/b/Brownlee:Nevil">Nevil Brownlee</a></p>
+<p>【Abstract】:
+Traditional address scanning attacks mainly rely on the naive 'brute forcing' approach, where the entire IPv4 address space is exhaustively searched by enumerating different possibilities. However, such an approach is inefficient for IPv6 due to its vast subnet size (i.e., 2
+<sup xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">64</sup>
+). As a result, it is widely assumed that address scanning attacks are less feasible in IPv6 networks. In this paper, we evaluate new IPv6 reconnaissance techniques in real IPv6 networks and expose how to leverage the Domain Name System (DNS) for IPv6 network reconnaissance. We collected IPv6 addresses from 5 regions and 100,000 domains by exploiting DNS reverse zone and DNSSEC records. We propose a DNS Guard (DNSG) to efficiently detect DNS reconnaissance attacks in IPv6 networks. DNSG is a plug and play component that could be added to the existing infrastructure. We implement DNSG using Bro and Suricata. Our results demonstrate that DNSG could effectively block DNS reconnaissance attacks.</p>
+<p>【Keywords】:
+IPv6; DNS; IDS; Reconnaissance</p>
+<h3 id="33. Your Remnant Tells Secret: Residual Resolution in DDoS Protection Services.">33. Your Remnant Tells Secret: Residual Resolution in DDoS Protection Services.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00046">Paper Link</a>】    【Pages】:362-373</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/j/Jin:Lin">Lin Jin</a> ; <a href="https://dblp.uni-trier.de/pers/hd/h/Hao:Shuai">Shuai Hao</a> ; <a href="https://dblp.uni-trier.de/pers/hd/w/Wang:Haining">Haining Wang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/c/Cotton:Chase">Chase Cotton</a></p>
+<p>【Abstract】:
+The increasing prevalence of Distributed Denial of Service (DDoS) attacks on the Internet has led to the wide adoption of DDoS Protection Service (DPS), which is typically provided by Content Delivery Networks (CDNs) and is integrated with CDN's security extensions. The effectiveness of DPS mainly relies on hiding the IP address of an origin server and rerouting the traffic to the DPS provider's distributed infrastructure, where malicious traffic can be blocked. In this paper, we perform a measurement study on the usage dynamics of DPS customers and reveal a new vulnerability in DPS platforms, called residual resolution, by which a DPS provider may leak origin IP addresses when its customers terminate the service or switch to other platforms, resulting in the failure of protection from future DPS providers as adversaries are able to discover the origin IP addresses and launch the DDoS attack directly to the origin servers. We identify that two major DPS/CDN providers, Cloudflare and Incapsula, are vulnerable to such residual resolution exposure, and we then assess the magnitude of the problem in the wild. Finally, we discuss the root causes of residual resolution and the practical countermeasures to address this security vulnerability.</p>
+<p>【Keywords】:
+DDoS; DPS; Origin Exposure; Residual Resolution</p>
+<h3 id="34. Effective Topology Tampering Attacks and Defenses in Software-Defined Networks.">34. Effective Topology Tampering Attacks and Defenses in Software-Defined Networks.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00047">Paper Link</a>】    【Pages】:374-385</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/s/Skowyra:Richard">Richard Skowyra</a> ; <a href="https://dblp.uni-trier.de/pers/hd/x/Xu:Lei">Lei Xu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/g/Gu:Guofei">Guofei Gu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/d/Dedhia:Veer">Veer Dedhia</a> ; <a href="https://dblp.uni-trier.de/pers/hd/h/Hobson:Thomas">Thomas Hobson</a> ; <a href="https://dblp.uni-trier.de/pers/hd/o/Okhravi:Hamed">Hamed Okhravi</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Landry:James">James Landry</a></p>
+<p>【Abstract】:
+As Software-Defined Networking has gained increasing prominence, new attacks have been demonstrated which can corrupt the SDN controller's view of network topology. These topology poisoning attacks, most notably host-location hijacking and link fabrication attacks, enable adversaries to impersonate end-hosts or inter-switch links in order to monitor, corrupt, or drop network flows. In response, defenses have been developed to detect such attacks and raise an alert. In this paper, we analyze two such defenses, TopoGuard and Sphinx, and present two new attacks, Port Probing and Port Amnesia, that can successfully bypass them. We then develop and present extensions to TopoGuard to make it resilient to such attacks.</p>
+<p>【Keywords】:
+Software-Defined Networking; Network Security</p>
+<h3 id="35. EndBox: Scalable Middlebox Functions Using Client-Side Trusted Execution.">35. EndBox: Scalable Middlebox Functions Using Client-Side Trusted Execution.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00048">Paper Link</a>】    【Pages】:386-397</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/g/Goltzsche:David">David Goltzsche</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/R=uuml=sch:Signe">Signe Rüsch</a> ; <a href="https://dblp.uni-trier.de/pers/hd/n/Nieke:Manuel">Manuel Nieke</a> ; <a href="https://dblp.uni-trier.de/pers/hd/v/Vaucher:S=eacute=bastien">Sébastien Vaucher</a> ; <a href="https://dblp.uni-trier.de/pers/hd/w/Weichbrodt:Nico">Nico Weichbrodt</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Schiavoni:Valerio">Valerio Schiavoni</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Aublin:Pierre=Louis">Pierre-Louis Aublin</a> ; <a href="https://dblp.uni-trier.de/pers/hd/c/Costa:Paolo">Paolo Costa</a> ; <a href="https://dblp.uni-trier.de/pers/hd/f/Fetzer:Christof">Christof Fetzer</a> ; <a href="https://dblp.uni-trier.de/pers/hd/f/Felber:Pascal">Pascal Felber</a> ; <a href="https://dblp.uni-trier.de/pers/hd/p/Pietzuch:Peter_R=">Peter R. Pietzuch</a> ; <a href="https://dblp.uni-trier.de/pers/hd/k/Kapitza:R=uuml=diger">Rüdiger Kapitza</a></p>
+<p>【Abstract】:
+Many organisations enhance the performance, security, and functionality of their managed networks by deploying middleboxes centrally as part of their core network. While this simplifies maintenance, it also increases cost because middlebox hardware must scale with the number of clients. A promising alternative is to outsource middlebox functions to the clients themselves, thus leveraging their CPU resources. Such an approach, however, raises security challenges for critical middlebox functions such as firewalls and intrusion detection systems. We describe EndBox, a system that securely executes middlebox functions on client machines at the network edge. Its design combines a virtual private network (VPN) with middlebox functions that are hardware-protected by a trusted execution environment (TEE), as offered by Intel's Software Guard Extensions (SGX). By maintaining VPN connection endpoints inside SGX enclaves, EndBox ensures that all client traffic, including encrypted communication, is processed by the middlebox. Despite its decentralised model, EndBox's middlebox functions remain maintainable: they are centrally controlled and can be updated efficiently. We demonstrate EndBox with two scenarios involving (i) a large company; and (ii) an Internet service provider that both need to protect their network and connected clients. We evaluate EndBox by comparing it to centralised deployments of common middlebox functions, such as load balancing, intrusion detection, firewalling, and DDoS prevention. We show that EndBox achieves up to 3.8x higher throughput and scales linearly with the number of clients.</p>
+<p>【Keywords】:
+Middlebox; Trusted Execution; Offloading</p>
+<h2 id="Session 9 : Mobile Devices    4">Session 9 : Mobile Devices    4</h2>
+<h3 id="36. FragDroid: Automated User Interface Interaction with Activity and Fragment Analysis in Android Applications.">36. FragDroid: Automated User Interface Interaction with Activity and Fragment Analysis in Android Applications.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00049">Paper Link</a>】    【Pages】:398-409</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/c/Chen:Jia">Jia Chen</a> ; <a href="https://dblp.uni-trier.de/pers/hd/h/Han:Ge">Ge Han</a> ; <a href="https://dblp.uni-trier.de/pers/hd/g/Guo:Shanqing">Shanqing Guo</a> ; <a href="https://dblp.uni-trier.de/pers/hd/d/Diao:Wenrui">Wenrui Diao</a></p>
+<p>【Abstract】:
+Recent years have witnessed the enormous growth of Android phones in the consumer market. On the other hand, as the most popular mobile platform, Android also attracts lots of attackers' attention. As a result, more and more Android malicious apps appear in the wild, which poses a serious threat to user's security and privacy. To such massive volume of Android malware, automated UI testing techniques have become the mainstream solutions because of the detection efficiency and accuracy. However, all existing UI testing techniques treat the Activity as the basic unit of UI interactions and cannot carry out a fine-grained analysis for Fragments. Due to the lack of Fragment-level analysis, the path coverage is usually quite limited. To fill this gap, in this paper, we propose FragDroid, a novel automated UI testing framework supporting both Activity and Fragment analysis. To achieve the Fragment-level testing, we design the Activity &amp; Fragment Transition Model (AFTM) to simulate the internal interactions of an app, and ATFM could be utilized to generate test cases automatically through UI interactions. With the assist of AFTM, FragDroid achieves accessing most Activities and Fragments contained in the app along with the capability of detecting arbitrary API calls. We implemented a prototype of FragDroid and evaluated it on 15 popular apps. The results show FragDroid successfully covered 66% Fragments and the corresponding API calls of testing apps. Also, the traditional approaches have to miss at least 9.6% of API calls invoked in Fragments.</p>
+<p>【Keywords】:
+Android Test; Fragment; Activity; Automated Analysis</p>
+<h3 id="37. How Reliable is My Wearable: A Fuzz Testing-Based Study.">37. How Reliable is My Wearable: A Fuzz Testing-Based Study.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00050">Paper Link</a>】    【Pages】:410-417</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/y/Yi:Edgardo_Barsallo">Edgardo Barsallo Yi</a> ; <a href="https://dblp.uni-trier.de/pers/hd/m/Maji:Amiya">Amiya Maji</a> ; <a href="https://dblp.uni-trier.de/pers/hd/b/Bagchi:Saurabh">Saurabh Bagchi</a></p>
+<p>【Abstract】:
+As wearable devices like smartwatches and fitness monitors gain in popularity and are being touted for clinical purposes, it becomes important to evaluate the reliability of Android Wear OS and apps on such devices. To date there has been no study done by systematic error injection into the OS or the apps. We address this gap in this work. We develop and open source a fuzz testing tool for Android Wear apps and services, called Qui-Gon Jinn (QGJ). We perform an extensive fault injection study by mutating inter-process communication messages and UI events and direct about 1.5M such mutated events at 46 apps. These apps are divided into two categories: health/fitness and other. The results of our study show some patterns distinct from prior studies of Android. Over the years, input validation has improved and fewer NullPointerExceptions are seen, however, Android Wear apps crash from unhandled IllegalStateExceptions at a higher rate. There are occasional troubling cases of the entire device rebooting due to unprivileged mutated messages. Reassuringly the apps are quite robust to mutations of UI events with only 0.05% of them causing an app crash.</p>
+<p>【Keywords】:
+android; android wear; fuzz; robustness; wearable</p>
+<h3 id="38. Localizing Function Errors in Mobile Apps with User Reviews.">38. Localizing Function Errors in Mobile Apps with User Reviews.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00051">Paper Link</a>】    【Pages】:418-429</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/y/Yu:Le">Le Yu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/c/Chen:Jiachi">Jiachi Chen</a> ; <a href="https://dblp.uni-trier.de/pers/hd/z/Zhou:Hao">Hao Zhou</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Luo:Xiapu">Xiapu Luo</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Liu_0001:Kang">Kang Liu</a></p>
+<p>【Abstract】:
+Removing all function errors is critical for making successful mobile apps. Since app testing may miss some function errors given limited time and resource, the user reviews of mobile apps are very important to developers for learning the uncaught errors. Unfortunately, manually handling each review is time-consuming and even error-prone. Existing studies on mobile apps' reviews could not help developers effectively locate the problematic code according to the reviews, because the majority of such research does not take into account apps' code. Moreover, recent studies on mapping reviews to problematic source files just look for the matching between the words in reviews and that in source code, and thus result in many false positives and false negatives. In this paper, we propose a novel approach to localize function errors in mobile apps by exploiting the context information in user reviews and correlating the reviews and bytecode through their semantic meanings. We realize our new approach as a tool named ReviewSolver, and carefully evaluate it with reviews of real apps. The experimental result shows that ReviewSolver has much better performance than the state-of-the-art tool.</p>
+<p>【Keywords】:
+Review; bug; Android; Static Analysis; NLP</p>
+<h3 id="39. DTaint: Detecting the Taint-Style Vulnerability in Embedded Device Firmware.">39. DTaint: Detecting the Taint-Style Vulnerability in Embedded Device Firmware.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00052">Paper Link</a>】    【Pages】:430-441</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/c/Cheng:Kai">Kai Cheng</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Li:Qiang">Qiang Li</a> ; <a href="https://dblp.uni-trier.de/pers/hd/w/Wang:Lei">Lei Wang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/c/Chen:Qian">Qian Chen</a> ; <a href="https://dblp.uni-trier.de/pers/hd/z/Zheng:Yaowen">Yaowen Zheng</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Sun:Limin">Limin Sun</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Liang:Zhenkai">Zhenkai Liang</a></p>
+<p>【Abstract】:
+A rising number of embedded devices are reachable in the cyberspace, such as routers, cameras, printers, etc. Those devices usually run firmware whose code is proprietary with few public documents. Furthermore, most of the firmware images cannot be analyzed in dynamic analysis due to various hardware-specific peripherals. As a result, it hinders traditional static analysis and dynamic analysis techniques. In this paper, we propose a static binary analysis approach, DTaint, to detect taint-style vulnerabilities in the firmware. The taint-style vulnerability is a typical class of weakness, where the input data reaches a sensitive sink through an unsafe path. Specifically, we generate data dependency in a bottom-up manner through traversing callees before callers. To reduce the influence of the binary firmware, DTaint identifies pointer aliasing, interprocedural data flow, and similarity of the data structure layout. We have implemented a prototype of DTaint and conducted experiments to evaluate its performance. Our results show that DTaint discovers more vulnerabilities in less time, compared with the existing techniques. Furthermore, we illustrate the effectiveness of DTaint through applying it over six firmware images from four manufacturers. We have found 21 vulnerabilities, where 13 of them are previously-unknown and zero-day vulnerabilities.</p>
+<p>【Keywords】:
+Taint style Vulnerability; Firmware</p>
+<h2 id="Session 10 : Confidentiality and Privacy    4">Session 10 : Confidentiality and Privacy    4</h2>
+<h3 id="40. Deceptive Secret Sharing.">40. Deceptive Secret Sharing.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00053">Paper Link</a>】    【Pages】:442-453</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/z/Zhang:Lei">Lei Zhang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/b/Blough:Douglas">Douglas Blough</a></p>
+<p>【Abstract】:
+Confidentiality is a fundamental goal in many security contexts. Deception is another goal in which the intention is to mislead adversaries, for example by planting false information in a system. In this paper, we consider an approach that combines confidentiality and deception using secret sharing, which has traditionally been used strictly for confidentiality purposes. The motivation for this is to protect confidentiality as far as possible while acknowledging that no confidentiality scheme provides perfect protection. If confidentiality is breached and information is accessed by unauthorized individuals, our techniques will reveal, with high probability, only false information. This provides deception on top of the confidentiality provided by ordinary secret sharing. We refer to our approach as "deceptive secret sharing" and we present techniques that work with both XOR secret sharing and Shamir's polynomial-based threshold secret sharing. We provide extensive evaluations of both overhead and security of our techniques and we also show how they provide tunable security that can trade off security and overhead by varying a single parameter of the schemes.</p>
+<p>【Keywords】:
+secret sharing; deception; confidentiality; cloud storage security</p>
+<h3 id="41. MobiCeal: Towards Secure and Practical Plausibly Deniable Encryption on Mobile Devices.">41. MobiCeal: Towards Secure and Practical Plausibly Deniable Encryption on Mobile Devices.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00054">Paper Link</a>】    【Pages】:454-465</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/c/Chang:Bing">Bing Chang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/z/Zhang:Fengwei">Fengwei Zhang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/c/Chen:Bo">Bo Chen</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Li:Yingjiu">Yingjiu Li</a> ; <a href="https://dblp.uni-trier.de/pers/hd/z/Zhu:Wen_Tao">Wen Tao Zhu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/t/Tian:Yangguang">Yangguang Tian</a> ; <a href="https://dblp.uni-trier.de/pers/hd/w/Wang:Zhan">Zhan Wang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/c/Ching:Albert">Albert Ching</a></p>
+<p>【Abstract】:
+We introduce MobiCeal, the first practical Plausibly Deniable Encryption (PDE) system for mobile devices that can defend against strong coercive multi-snapshot adversaries, who may examine the storage medium of a user's mobile device at different points of time and force the user to decrypt data. MobiCeal relies on "dummy write" to obfuscate the differences between multiple snapshots of storage medium due to existence of hidden data. By incorporating PDE in block layer, MobiCeal supports a broad deployment of any block-based file systems on mobile devices. More importantly, MobiCeal is secure against side channel attacks which pose a serious threat to existing PDE schemes. A proof of concept implementation of MobiCeal is provided on an LG Nexus 4 Android phone using Android 4.2.2. It is shown that the performance of MobiCeal is significantly better than prior PDE systems against multi-snapshot adversaries.</p>
+<p>【Keywords】:
+Plausibly Deniable Encryption; Mobile Security; Multi snapshot Adversary; Side Channel Attack; Fast Switching</p>
+<h3 id="42. Collaborative Filtering Under a Sybil Attack: Similarity Metrics do Matter!">42. Collaborative Filtering Under a Sybil Attack: Similarity Metrics do Matter!</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00055">Paper Link</a>】    【Pages】:466-477</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/b/Boutet:Antoine">Antoine Boutet</a> ; <a href="https://dblp.uni-trier.de/pers/hd/m/Moor:Florestant_De">Florestant De Moor</a> ; <a href="https://dblp.uni-trier.de/pers/hd/f/Frey:Davide">Davide Frey</a> ; <a href="https://dblp.uni-trier.de/pers/hd/g/Guerraoui:Rachid">Rachid Guerraoui</a> ; <a href="https://dblp.uni-trier.de/pers/hd/k/Kermarrec:Anne=Marie">Anne-Marie Kermarrec</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/Rault:Antoine">Antoine Rault</a></p>
+<p>【Abstract】:
+Recommendation systems help users identify interesting content, but they also open new privacy threats. In this paper, we deeply analyze the effect of a Sybil attack that tries to infer information on users from a user-based collaborative-filtering recommendation systems. We discuss the impact of different similarity metrics used to identity users with similar tastes in the trade-off between recommendation quality and privacy. Finally, we propose and evaluate a novel similarity metric that combines the best of both worlds: a high recommendation quality with a low prediction accuracy for the attacker. Our results, on a state-of-the-art recommendation framework and on real datasets show that existing similarity metrics exhibit a wide range of behaviors in the presence of Sybil attacks, while our new similarity metric consistently achieves the best trade-off while outperforming state-of-the-art solutions.</p>
+<p>【Keywords】:
+Collaborative Filtering; Sybil Attack; privacy</p>
+<h3 id="43. Specification-Based Protocol Obfuscation.">43. Specification-Based Protocol Obfuscation.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00056">Paper Link</a>】    【Pages】:478-489</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/d/Duch=ecirc=ne:Julien">Julien Duchêne</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Alata:Eric">Eric Alata</a> ; <a href="https://dblp.uni-trier.de/pers/hd/n/Nicomette:Vincent">Vincent Nicomette</a> ; <a href="https://dblp.uni-trier.de/pers/hd/k/Ka=acirc=niche:Mohamed">Mohamed Kaâniche</a> ; <a href="https://dblp.uni-trier.de/pers/hd/g/Guernic:Colas_Le">Colas Le Guernic</a></p>
+<p>【Abstract】:
+This paper proposes a new obfuscation technique of a communication protocol that is aimed at making the reverse engineering of the protocol more complex. The obfuscation is based on the transformation of protocol message format specification. The obfuscating transformations are applied to the Abstract Syntax Tree (AST) representation of the messages and mainly concern the ordering or aggregation of the AST nodes. The paper also presents the design of a framework that implements the proposed obfuscation technique by automatically generating, from the specification of the message format, a library performing the corresponding transformations. Finally, our framework is applied to two real application protocols (Modbus and HTTP) to illustrate the relevance and efficiency of the proposed approach. Various metrics recorded from the experiments show the significant increase of the complexity of the obfuscated protocol binary compared to the non-obfuscated code. It is also shown that the execution time and memory overheads remain acceptable for a practical deployment of the approach in operation.</p>
+<p>【Keywords】:
+security; obfuscation; communication protocols</p>
+<h2 id="Session 11 : Security    4">Session 11 : Security    4</h2>
+<h3 id="44. Obfuscated VBA Macro Detection Using Machine Learning.">44. Obfuscated VBA Macro Detection Using Machine Learning.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00057">Paper Link</a>】    【Pages】:490-501</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/k/Kim:Sangwoo">Sangwoo Kim</a> ; <a href="https://dblp.uni-trier.de/pers/hd/h/Hong:Seokmyung">Seokmyung Hong</a> ; <a href="https://dblp.uni-trier.de/pers/hd/o/Oh:Jaesang">Jaesang Oh</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Lee:Heejo">Heejo Lee</a></p>
+<p>【Abstract】:
+Malware using document files as an attack vector has continued to increase and now constitutes a large portion of phishing attacks. To avoid anti-virus detection, malware writers usually implement obfuscation techniques in their source code. Although obfuscation is related to malicious code detection, little research has been conducted on obfuscation with regards to Visual Basic for Applications (VBA) macros. In this paper, we summarize the obfuscation techniques and propose an obfuscated macro code detection method using five machine learning classifiers. To train these classifiers, our proposed method uses 15 discriminant static features, taking into account the characteristics of the VBA macros. We evaluated our approach using a real-world dataset of obfuscated and non-obfuscated VBA macros extracted from Microsoft Office document files. The experimental results demonstrate that our detection approach achieved a F2 score improvement of greater than 23% compared to those of related studies.</p>
+<p>【Keywords】:
+Machine learning; VBA macro; Microsoft Office document; Macro malware; Obfuscation</p>
+<h3 id="45. Evaluating Self-Adaptive Authorisation Infrastructures Through Gamification.">45. Evaluating Self-Adaptive Authorisation Infrastructures Through Gamification.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00058">Paper Link</a>】    【Pages】:502-513</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/b/Bailey:Christopher_Michael">Christopher Michael Bailey</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Lemos:Rog=eacute=rio_de">Rogério de Lemos</a></p>
+<p>【Abstract】:
+Self-adaptive systems are able to modify their behaviour and/or structure in response to changes that occur to the system itself, its environment, or even its goals. In terms of authorisation infrastructures, self-adaptation has been shown to provide runtime capabilities for specifying and enforcing access control policies and subject access privileges, with a goal to mitigate insider threat. The evaluation of self-adaptive authorisation infrastructures, particularly, in the context of insider threats, is challenging because simulation of malicious behaviour can only demonstrate a fraction of the types of abuse that is representative of the real-world. In this paper, we present an innovative approach based on an ethical game of hacking, protected by an authorisation infrastructure. A key feature of the approach is the ability to observe user activity pre- and post-adaptation when evaluating runtime consequences of self-adaptation. Our live experiments captured a wide range of unpredictable changes, including malicious behaviour related to the exploitation of known vulnerabilities. As an outcome, we demonstrated the ability of our self-adaptive authorisation infrastructure to handle malicious behaviour given the existence of real and intelligent users, in addition to capturing how users responded to adaptation.</p>
+<p>【Keywords】:
+insider threats; authorisation infrastructures; self-adaptive systems; gamification</p>
+<h3 id="46. POWERALERT: Integrity Checking Using Power Measurement and a Game-Theoretic Strategy.">46. POWERALERT: Integrity Checking Using Power Measurement and a Game-Theoretic Strategy.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00059">Paper Link</a>】    【Pages】:514-525</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/f/Fawaz:Ahmed_M=">Ahmed M. Fawaz</a> ; <a href="https://dblp.uni-trier.de/pers/hd/n/Noureddine:Mohammad_A=">Mohammad A. Noureddine</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Sanders:William_H=">William H. Sanders</a></p>
+<p>【Abstract】:
+We propose POWERALERT, an efficient external integrity checker for untrusted hosts. Current attestation systems suffer from shortcomings, including requiring a complete checksum of the code segment, from being static, use of timing information sourced from the untrusted machine, or using imprecise timing information such as network round-trip time. We address those shortcomings by (1) using power measurements from the host to ensure that the checking code is executed and (2) checking a subset of the kernel space over an extended period. We compare the power measurement against a learned power model of the execution of the machine and validate that the execution was not tampered. Finally, POWERALERT randomizes the integrity checking program to prevent the attacker from adapting. We model the interaction between POWERALERT and an attacker as a time-continuous game. The Nash equilibrium strategy of the game shows that POWERALERT has two optimal strategy choices: (1) aggressive checking that forces the attacker into hiding, or (2) slow checking that minimizes cost. We implement a prototype of POWERALERT using Raspberry Pi and evaluate the performance of the integrity checking program generation.</p>
+<p>【Keywords】:
+integrity checking; game theory; attestation; power attestation</p>
+<h3 id="47. Generating Cloud Monitors from Models to Secure Clouds.">47. Generating Cloud Monitors from Models to Secure Clouds.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00060">Paper Link</a>】    【Pages】:526-533</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/t/Troubitsyna:Elena">Elena Troubitsyna</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/Rauf:Irum">Irum Rauf</a></p>
+<p>【Abstract】:
+Authorization is an important security concern in cloud computing environments. It aims at regulating an access of the users to system resources. A large number of resources associated with REST APIs typical in cloud makes an implementation of security requirements challenging and error-prone. To alleviate this problem, in this paper we propose an implementation of security cloud monitor. We rely on model-driven approach to represent the functional and security requirements. Models are then used to generate cloud monitors. The cloud monitors contain contracts used to automatically verify the implementation. We use Django web framework to implement cloud monitor and OpenStack to validate our implementation.</p>
+<p>【Keywords】:
+Cloud Monitors; Openstack; Models; UML; Security; MDSE; Private Clouds; Cinder</p>
+<h2 id="Session 12 : Distributed systems    4">Session 12 : Distributed systems    4</h2>
+<h3 id="48. Falcon: A Practical Log-Based Analysis Tool for Distributed Systems.">48. Falcon: A Practical Log-Based Analysis Tool for Distributed Systems.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00061">Paper Link</a>】    【Pages】:534-541</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/n/Neves:Francisco">Francisco Neves</a> ; <a href="https://dblp.uni-trier.de/pers/hd/m/Machado:Nuno">Nuno Machado</a> ; <a href="https://dblp.uni-trier.de/pers/hd/p/Pereira:JosA">JosA Pereira</a></p>
+<p>【Abstract】:
+Programmers and support engineers typically rely on log data to narrow down the root cause of unexpected behaviors in dependable distributed systems. Unfortunately, the inherently distributed nature and complexity of such distributed executions often leads to multiple independent logs, scattered across different physical machines, with thousands or millions entries poorly correlated in terms of event causality. This renders log-based debugging a tedious, time-consuming, and potentially inconclusive task. We present Falcon, a tool aimed at making log-based analysis of distributed systems practical and effective. Falcon's modular architecture, designed as an extensible pipeline, allows it to seamlessly combine several distinct logging sources and generate a coherent space-time diagram of distributed executions. To preserve event causality, even in the presence of logs collected from independent unsynchronized machines, Falcon introduces a novel happens-before symbolic formulation and relies on an off-the-shelf constraint solver to obtain a coherent event schedule. Our case study with the popular distributed coordination service Apache Zookeeper shows that Falcon eases the log-based analysis of complex distributed protocols and is helpful in bridging the gap between protocol design and implementation.</p>
+<p>【Keywords】:
+distributed systems; log-based analysis; execution flow</p>
+<h3 id="49. Pleiades: Distributed Structural Invariants at Scale.">49. Pleiades: Distributed Structural Invariants at Scale.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00062">Paper Link</a>】    【Pages】:542-553</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/b/Bouget:Simon">Simon Bouget</a> ; <a href="https://dblp.uni-trier.de/pers/hd/b/Bromberg:Y=eacute=rom=David">Yérom-David Bromberg</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Luxey:Adrien">Adrien Luxey</a> ; <a href="https://dblp.uni-trier.de/pers/hd/t/Ta=iuml=ani:Fran=ccedil=ois">François Taïani</a></p>
+<p>【Abstract】:
+Modern large scale distributed systems increasingly espouse sophisticated distributed architectures characterized by complex distributed structural invariants. Unfortunately, maintaining these structural invariants at scale is time consuming and error prone, as developers must take into account asynchronous failures, loosely coordinated sub-systems and network delays. To address this problem, we propose PLEIADES, a new framework to construct and enforce large-scale distributed structural invariants under aggressive conditions. PLEIADES combines the resilience of self-organizing overlays, with the expressiveness of an assembly-based design strategy. The result is a highly survivable framework that is able to dynamically maintain arbitrary complex distributed structures under aggressive crash failures. Our evaluation shows in particular that PLEIADES is able to restore the overall structure of a 25,600 node system in less than 11 asynchronous rounds after half of the nodes have crashed.</p>
+<p>【Keywords】:
+invariant; topology; large scale systems; distributed systems; gossip; epidemic protocols; maintenance; resilience</p>
+<h3 id="50. The Tortoise and the Hare: Characterizing Synchrony in Distributed Environments (Practical Experience Report).">50. The Tortoise and the Hare: Characterizing Synchrony in Distributed Environments (Practical Experience Report).</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00063">Paper Link</a>】    【Pages】:554-561</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/p/Porto:Daniel">Daniel Porto</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Leit=atilde=o_0001:Jo=atilde=o">João Leitão</a> ; <a href="https://dblp.uni-trier.de/pers/hd/j/Junqueira:Flavio">Flavio Junqueira</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/Rodrigues:Rodrigo">Rodrigo Rodrigues</a></p>
+<p>【Abstract】:
+The design of distributed protocols that run in data centers and enterprise clusters is heavily dependent on synchrony assumptions regarding the timing behavior of the participating nodes and the network. However, little is known about the actual synchrony of real distributed systems, and how it varies across deployments. To better understand this timing behavior and how it impacts the design and implementation of distributed protocols, we conduct an extensive measurement study of the latency for transmitting and processing messages between nodes in four different environments. Our study determines how protocol characteristics affect the latency behavior. We also determine how different environmental factors can affect the measured latency and whether high latency events manifest globally or locally. Our results suggest several directions for reducing latency, and for leveraging recent distributed computing models in a more judicious way.</p>
+<p>【Keywords】:
+Measurement study; Latency; Distributed systems; Synchrony</p>
+<h3 id="51. Inferring, Characterizing, and Investigating Internet-Scale Malicious IoT Device Activities: A Network Telescope Perspective.">51. Inferring, Characterizing, and Investigating Internet-Scale Malicious IoT Device Activities: A Network Telescope Perspective.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00064">Paper Link</a>】    【Pages】:562-573</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/t/Torabi:Sadegh">Sadegh Torabi</a> ; <a href="https://dblp.uni-trier.de/pers/hd/b/Bou=Harb:Elias">Elias Bou-Harb</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Assi:Chadi">Chadi Assi</a> ; <a href="https://dblp.uni-trier.de/pers/hd/g/Galluscio:Mario">Mario Galluscio</a> ; <a href="https://dblp.uni-trier.de/pers/hd/b/Boukhtouta:Amine">Amine Boukhtouta</a> ; <a href="https://dblp.uni-trier.de/pers/hd/d/Debbabi:Mourad">Mourad Debbabi</a></p>
+<p>【Abstract】:
+Recent attacks have highlighted the insecurity of the Internet of Things (IoT) paradigm by demonstrating the impacts of leveraging Internet-scale compromised IoT devices. In this paper, we address the lack of IoT-specific empirical data by drawing upon more than 5TB of passive measurements. We devise data-driven methodologies to infer compromised IoT devices and those targeted by denial of service attacks. We perform large-scale characterization analysis of their traffic, as well as explore a public threat repository and an in-house malware database, to underlie their malicious activities. The results expose a significant 26 thousand compromised IoT devices "in the wild," with 40% being active in critical infrastructure. More importantly, we uncover new, previously unreported malware variants that specifically target IoT devices. Our empirical results render a first attempt to highlight the large-scale insecurity of the IoT paradigm, while alarming about the rise of new generations of IoT-centric malware-orchestrated botnets.</p>
+<p>【Keywords】:
+compromised IoT; darknet; Internet scanning; backscatter; DDoS; cyber physical systems; consumer IoT</p>
+<h2 id="Session 13 : The Future of Things    4">Session 13 : The Future of Things    4</h2>
+<h3 id="52. RoboADS: Anomaly Detection Against Sensor and Actuator Misbehaviors in Mobile Robots.">52. RoboADS: Anomaly Detection Against Sensor and Actuator Misbehaviors in Mobile Robots.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00065">Paper Link</a>】    【Pages】:574-585</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/g/Guo:Pinyao">Pinyao Guo</a> ; <a href="https://dblp.uni-trier.de/pers/hd/k/Kim:Hunmin">Hunmin Kim</a> ; <a href="https://dblp.uni-trier.de/pers/hd/v/Virani:Nurali">Nurali Virani</a> ; <a href="https://dblp.uni-trier.de/pers/hd/x/Xu_0024:Jun">Jun Xu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/z/Zhu:Minghui">Minghui Zhu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Liu_0005:Peng">Peng Liu</a></p>
+<p>【Abstract】:
+Mobile robots such as unmanned vehicles integrate heterogeneous capabilities in sensing, computation, and control. They are representative cyber-physical systems where the cyberspace and the physical world are strongly coupled. However, the safety of mobile robots is significantly threatened by cyber/physical attacks and software/hardware failures. These threats can thwart normal robot operations and cause robot misbehaviors. In this paper, we propose a novel anomaly detection system, which leverages physical dynamics of mobile robots to detect misbehaviors in sensors and actuators. We explore issues raised in real-world implementations, e.g., distinctive robot dynamic models, sensor quantity and quality, decision parameters, etc., for practicality purposes. We implement the detection system on two types of mobile robots and evaluate the detection performance against various misbehavior scenarios, including signal interference, sensor spoofing, logic bomb and physical jamming. The experiments show detection effectiveness and small detection delays.</p>
+<p>【Keywords】:
+anomaly detection; mobile robot; cyber physical system; input and state estimation</p>
+<h3 id="53. Hands Off the Wheel in Autonomous Vehicles?: A Systems Perspective on over a Million Miles of Field Data.">53. Hands Off the Wheel in Autonomous Vehicles?: A Systems Perspective on over a Million Miles of Field Data.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00066">Paper Link</a>】    【Pages】:586-597</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/b/Banerjee:Subho_S=">Subho S. Banerjee</a> ; <a href="https://dblp.uni-trier.de/pers/hd/j/Jha:Saurabh">Saurabh Jha</a> ; <a href="https://dblp.uni-trier.de/pers/hd/c/Cyriac:James">James Cyriac</a> ; <a href="https://dblp.uni-trier.de/pers/hd/k/Kalbarczyk:Zbigniew_T=">Zbigniew T. Kalbarczyk</a> ; <a href="https://dblp.uni-trier.de/pers/hd/i/Iyer:Ravishankar_K=">Ravishankar K. Iyer</a></p>
+<p>【Abstract】:
+Autonomous vehicle (AV) technology is rapidly becoming a reality on U.S. roads, offering the promise of improvements in traffic management, safety, and the comfort and efficiency of vehicular travel. The California Department of Motor Vehicles (DMV) reports that between 2014 and 2017, manufacturers tested 144 AVs, driving a cumulative 1,116,605 autonomous miles, and reported 5,328 disengagements and 42 accidents involving AVs on public roads. This paper investigates the causes, dynamics, and impacts of such AV failures by analyzing disengagement and accident reports obtained from public DMV databases. We draw several conclusions. For example, we find that autonomous vehicles are 15 - 4000Ã- worse than human drivers for accidents per cumulative mile driven; that drivers of AVs need to be as alert as drivers of non-AVs; and that the AVs' machine-learning-based systems for perception and decision-and-control are the primary cause of 64% of all disengagements.</p>
+<p>【Keywords】:
+Autonomous Vehicles; Reliability; Fault Characterization; Disengagement; Accident</p>
+<h3 id="54. Impact of Software Approximations on the Resiliency of a Video Summarization System.">54. Impact of Software Approximations on the Resiliency of a Video Summarization System.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00067">Paper Link</a>】    【Pages】:598-609</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/v/Venkatagiri:Radha">Radha Venkatagiri</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Swaminathan:Karthik">Karthik Swaminathan</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Lin:Chung=Ching">Chung-Ching Lin</a> ; <a href="https://dblp.uni-trier.de/pers/hd/w/Wang:Liang">Liang Wang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/b/Buyuktosunoglu:Alper">Alper Buyuktosunoglu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/b/Bose:Pradip">Pradip Bose</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Adve:Sarita_V=">Sarita V. Adve</a></p>
+<p>【Abstract】:
+In this work, we examine the resiliency of a state-of-the-art end-to-end video summarization (VS) application that serves as a representative emerging workload in the domain of real time edge computing. The VS application constitutes key video and image analytic elements that are processed by embedded systems aboard unmanned aerial vehicles (UAVs). Real-time performance and energy constraints motivate the consideration of approximations to the VS algorithm. However, mission-critical UAV applications also demand stringent levels of resilience to soft errors that are exacerbated with higher altitude. In this work, we study the effects of three different types of software approximations on the application level resiliency (to soft errors) of the VS algorithm. We show that our approximations yield significant energy savings (up to 68%), with commensurate improvement in performance, without a degradation in the application resilience. Further, by proposing a novel quality metric (appropriate for the UAV vision analytics domain) for the summarized video output, we show that even though the rate of Silent Data Corruptions (SDCs) increases slightly (&lt;;2%), the impact of these SDCs on output quality is limited. Thus, we conclude that software approximation can be utilized to achieve significant gains in performance and energy without affecting application resiliency.</p>
+<p>【Keywords】:
+Hardware Resiliency; Approximate Computing; Soft errors; Real time vision analytics</p>
+<h3 id="55. Detecting and Identifying Faulty IoT Devices in Smart Home with Context Extraction.">55. Detecting and Identifying Faulty IoT Devices in Smart Home with Context Extraction.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00068">Paper Link</a>】    【Pages】:610-621</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/c/Choi:Jiwon">Jiwon Choi</a> ; <a href="https://dblp.uni-trier.de/pers/hd/j/Jeoung:Hayoung">Hayoung Jeoung</a> ; <a href="https://dblp.uni-trier.de/pers/hd/k/Kim:Jihun">Jihun Kim</a> ; <a href="https://dblp.uni-trier.de/pers/hd/k/Ko:Youngjoo">Youngjoo Ko</a> ; <a href="https://dblp.uni-trier.de/pers/hd/j/Jung:Wonup">Wonup Jung</a> ; <a href="https://dblp.uni-trier.de/pers/hd/k/Kim:Hanjun">Hanjun Kim</a> ; <a href="https://dblp.uni-trier.de/pers/hd/k/Kim_0001:Jong">Jong Kim</a></p>
+<p>【Abstract】:
+A fast and reliable method to detect faulty IoT devices is indispensable in IoT environments. In this paper, we present DICE, an automatic method to detect and identify faulty IoT devices with context extraction. Our system works in two phases. In a precomputation phase, the system precomputes sensor correlation and the transition probability between sensor states known as context. During a real-time phase, the system finds a violation of sensor correlation and transition to detect and identify the faults. In detection, we analyze the sensor data to find any missing or newly reacting IoT devices that are deviating from already grouped correlated sensors, and state transition to find the presence of an abnormal sequence. Then, the system identifies the faulty device by comparing the problematic context with the probable ones. We demonstrate that DICE identifies faulty devices accurately and promptly through the evaluation on various fault types and datasets.</p>
+<p>【Keywords】:
+Context Extraction; Fault Detection; Identification; Internet of Things; Smart Home</p>
+<h2 id="Session 14 : Routing in Networks    4">Session 14 : Routing in Networks    4</h2>
+<h3 id="56. Divide and Conquer for Fast SRLG Disjoint Routing.">56. Divide and Conquer for Fast SRLG Disjoint Routing.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00069">Paper Link</a>】    【Pages】:622-633</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/x/Xie:Kun">Kun Xie</a> ; <a href="https://dblp.uni-trier.de/pers/hd/t/Tao:Heng">Heng Tao</a> ; <a href="https://dblp.uni-trier.de/pers/hd/w/Wang_0001:Xin">Xin Wang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/x/Xie:Gaogang">Gaogang Xie</a> ; <a href="https://dblp.uni-trier.de/pers/hd/w/Wen:Jigang">Jigang Wen</a> ; <a href="https://dblp.uni-trier.de/pers/hd/c/Cao:Jiannong">Jiannong Cao</a> ; <a href="https://dblp.uni-trier.de/pers/hd/q/Qin:Zheng">Zheng Qin</a></p>
+<p>【Abstract】:
+Ensuring transmission survivability is a crucial problem for high-speed networks. Path protection is a fast and capacity-efficient approach for increasing the availability of end to end connections. The emerging SDN infrastructure makes it feasible to provide diversity routing in a practical network. For more robust path protection, it is desirable to provide an alternative path that does not share any risk resource with the active path. We consider finding the SRLG-Disjoint paths, where a Shared Risk Link Group (SRLG) is a group of network links that share a common physical resource whose failure will cause the failure of all links of the group. Since the traffic is carried on the active path most of time, it is useful that the weight of the shorter path of the disjoint path pair is minimized, and we call it Min-Min SRLG-Disjoint routing problem. The key issue faced by SRLG-Disjoint routing is the trap problem, where the SRLG-disjoint backup path (BP) can not be found after an active path (AP) is decided. Based on the min-cut of the graph, we design an efficient algorithm that can take advantage of existing search results to quickly look for the SRLG-Disjoint path pair. Our performance studies demonstrate that our algorithm can outperform other approaches with a higher routing performance while also at a much faster speed.</p>
+<p>【Keywords】:
+Shared Risk Link Groups (SRLG); SRLG Disjoint Routing; Max-Flow Min-Cut Theorem</p>
+<h3 id="57. Practical Experience: Methodologies for Measuring Route Origin Validation.">57. Practical Experience: Methodologies for Measuring Route Origin Validation.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00070">Paper Link</a>】    【Pages】:634-641</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/h/Hlavacek:Tomas">Tomas Hlavacek</a> ; <a href="https://dblp.uni-trier.de/pers/hd/h/Herzberg:Amir">Amir Herzberg</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Shulman:Haya">Haya Shulman</a> ; <a href="https://dblp.uni-trier.de/pers/hd/w/Waidner:Michael">Michael Waidner</a></p>
+<p>【Abstract】:
+Performing Route Origin Validation (ROV) to filter BGP announcements, which contradict Route Origin Authorizations (ROAs) is critical for protection against BGP prefix hijacks. Recent works quantified ROV enforcing Autonomous Systems (ASes) using control-plane experiments. In this work we show that control-plane experiments do not provide accurate information about ROV-enforcing ASes. We devise data-plane approaches for evaluating ROV in the Internet and perform both control and data-plane experiments using different data acquisition sources. We analyze and correlate the results of our study to identify the number of ASes enforcing ROV, and hence protected with RPKI. We perform simulations with the ROV-enforcing ASes that we identified, and find that their impact on the Internet security against prefix hijacks is negligible. As a countermeasure we provide recommendations how to cope with the main factor hindering wide adoption of ROV.</p>
+<p>【Keywords】:
+RPKI; Route Origin Validation; ROV; Controlled Experiments; BGP</p>
+<h3 id="58. In Production Performance Testing of SDN Control Plane for Telecom Operators.">58. In Production Performance Testing of SDN Control Plane for Telecom Operators.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00071">Paper Link</a>】    【Pages】:642-653</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/m/Martino:Catello_Di">Catello Di Martino</a> ; <a href="https://dblp.uni-trier.de/pers/hd/g/Giordano:Ugo">Ugo Giordano</a> ; <a href="https://dblp.uni-trier.de/pers/hd/m/Mohanasamy:Nishok">Nishok Mohanasamy</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/Russo:Stefano">Stefano Russo</a> ; <a href="https://dblp.uni-trier.de/pers/hd/t/Thottan:Marina">Marina Thottan</a></p>
+<p>【Abstract】:
+The following topics are dealt with: security of data; computer network security; program diagnostics; invasive software; Internet; fault tolerant computing; program debugging; public domain software; cloud computing; and embedded systems.</p>
+<p>【Keywords】:
+telecom operator; sdn; telco cloud; benchmarking; performance</p>
+<h3 id="59. A Reexamination of Internationalized Domain Names: The Good, the Bad and the Ugly.">59. A Reexamination of Internationalized Domain Names: The Good, the Bad and the Ugly.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00072">Paper Link</a>】    【Pages】:654-665</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/l/Liu:Baojun">Baojun Liu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Lu:Chaoyi">Chaoyi Lu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Li:Zhou">Zhou Li</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Liu:Ying">Ying Liu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/d/Duan:Hai=Xin">Hai-Xin Duan</a> ; <a href="https://dblp.uni-trier.de/pers/hd/h/Hao:Shuang">Shuang Hao</a> ; <a href="https://dblp.uni-trier.de/pers/hd/z/Zhang:Zaifeng">Zaifeng Zhang</a></p>
+<p>【Abstract】:
+Internationalized Domain Names (IDNs) are domain names containing non-ASCII characters. Despite its installation in DNS for more than 15 years, little has been done to understand how this initiative was developed and its security implications. In this work, we aim to fill this gap by studying the IDN ecosystem and cyber-attacks abusing IDN. In particular, we performed by far the most comprehensive measurement study using IDNs discovered from 56 TLD zone files. Through correlating data from auxiliary sources like WHOIS, passive DNS and URL blacklists, we gained many insights. Our discoveries are multi-faceted. On one hand, 1.4 million IDNs were actively registered under over 700 registrars, and regions within east Asia have seen prominent development in IDN registration. On the other hand, most of the registrations were opportunistic: they are currently not associated with meaningful websites and they have severe configuration issues (e.g., shared SSL certificates). What is more concerning is the rising trend of IDN abuse. So far, more than 6K IDNs were determined as malicious by URL blacklists and we also identified 1,516 and 1,497 IDNs showing high visual and semantic similarity to reputable brand domains (e.g., apple.com). Meanwhile, brand owners have only registered a few of these domains. Our study suggests the development of IDN needs to be re-examined. New solutions and proposals are needed to address issues like its inadequate usage and new attack surfaces.</p>
+<p>【Keywords】:
+Internationalized Domain Name; Domain abuse; Network measurement</p>
+<h2 id="Session 15 : Symbolic Execution & Static Analysis    3">Session 15 : Symbolic Execution &amp; Static Analysis    3</h2>
+<h3 id="60. Manufacturing Resilient Bi-Opaque Predicates Against Symbolic Execution.">60. Manufacturing Resilient Bi-Opaque Predicates Against Symbolic Execution.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00073">Paper Link</a>】    【Pages】:666-677</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/x/Xu:Hui">Hui Xu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/z/Zhou:Yangfan">Yangfan Zhou</a> ; <a href="https://dblp.uni-trier.de/pers/hd/k/Kang:Yu">Yu Kang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/t/Tu:Fengzhi">Fengzhi Tu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Lyu:Michael_R=">Michael R. Lyu</a></p>
+<p>【Abstract】:
+Control-flow obfuscation increases program complexity by semantic-preserving transformation. Opaque predicates are essential gadgets to achieve such transformation. However, we observe that real-world opaque predicates are generally very simple and engage little security consideration. Recently, such insecure opaque predicates have been severely attacked by symbolic execution-based adversaries and jeopardize the security of control-flow obfuscation. This paper, therefore, proposes symbolic opaque predicates which can be resilient to symbolic execution-based adversaries. We design a general framework to compose such opaque predicates, which requires introducing challenging symbolic analysis problems (e.g., symbolic memory) in each opaque predicate. In this way, we may mislead symbolic execution engines into reaching false conclusions. We observe a novel bi-opaque property about symbolic opaque predicates, which can incur not only false negative issues but also false positive issues to attackers. To evaluate the efficacy of our idea, we have implemented a prototype obfuscation tool based on Obfuscator-LLVM and conduct experiments with real-world programs. Our evaluation results show that symbolic opaque predicates demonstrate excellent resilience to prevalent symbolic execution engines, such as BAP, Triton, and Angr. Moreover, although the costs of symbolic opaque predicates may vary for different problem settings, some predicates can be very efficient. Therefore, our framework is both secure and usable. Users can follow the framework to introduce symbolic opaque predicates into their obfuscation tools and made them more powerful.</p>
+<p>【Keywords】:
+obfuscation; symbolic execution</p>
+<h3 id="61. PreInfer: Automatic Inference of Preconditions via Symbolic Analysis.">61. PreInfer: Automatic Inference of Preconditions via Symbolic Analysis.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00074">Paper Link</a>】    【Pages】:678-689</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/a/Astorga:Angello">Angello Astorga</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Srisakaokul:Siwakorn">Siwakorn Srisakaokul</a> ; <a href="https://dblp.uni-trier.de/pers/hd/x/Xiao:Xusheng">Xusheng Xiao</a> ; <a href="https://dblp.uni-trier.de/pers/hd/x/Xie:Tao">Tao Xie</a></p>
+<p>【Abstract】:
+When tests fail (e.g., throwing uncaught exceptions), automatically inferred preconditions can bring various debugging benefits to developers. If illegal inputs cause tests to fail, developers can directly insert the preconditions in the method under test to improve its robustness. If legal inputs cause tests to fail, developers can use the preconditions to infer failure-inducing conditions. To automatically infer preconditions for better support of debugging, in this paper, we propose PREINFER, a novel approach that aims to infer accurate and concise preconditions based on symbolic analysis. Specifically, PREINFER includes two novel techniques that prune irrelevant predicates in path conditions collected from failing tests, and that generalize predicates involving collection elements (i.e., array elements) to infer desirable quantified preconditions. Our evaluation on two benchmark suites and two real-world open-source projects shows PREINFER's high effectiveness on precondition inference and its superiority over related approaches.</p>
+<p>【Keywords】:
+precondition inference; dynamic symbolic execution; symbolic analysis; path conditions</p>
+<h3 id="62. DexLego: Reassembleable Bytecode Extraction for Aiding Static Analysis.">62. DexLego: Reassembleable Bytecode Extraction for Aiding Static Analysis.</h3>
+<p>【<a href="https://doi.org/10.1109/DSN.2018.00075">Paper Link</a>】    【Pages】:690-701</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/n/Ning:Zhenyu">Zhenyu Ning</a> ; <a href="https://dblp.uni-trier.de/pers/hd/z/Zhang:Fengwei">Fengwei Zhang</a></p>
+<p>【Abstract】:
+The scale of Android applications in the market is growing rapidly. To efficiently detect the malicious behavior in these applications, an array of static analysis tools are proposed. However, static analysis tools suffer from code hiding techniques like packing, dynamic loading, self modifying, and reflection. In this paper, we thus present DexLego, a novel system that performs a reassembleable bytecode extraction for aiding static analysis tools to reveal the malicious behavior of Android applications. DexLego leverages just-in-time collection to extract data and bytecode from an application at runtime, and reassembles them to a new Dalvik Executable (DEX) file offline. The experiments on DroidBench and real-world applications show that DexLego precisely reconstructs the behavior of an application in the reassembled DEX file, and significantly improves analysis result of the existing static analysis systems.</p>
+<p>【Keywords】:
+Android; application analysis; static analysis; dynamic analysis; unpacking; self modifying code</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="https://github.com/huntercmd/ccf"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>

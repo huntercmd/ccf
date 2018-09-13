@@ -1,0 +1,495 @@
+ 
+<head>
+<meta name="HunterCmd" charset="utf-8">
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link id="cssfile" rel="stylesheet" type="text/css" href="https://rawcdn.githack.com/huntercmd/blog/master/config/css/light.css">
+<script src="https://rawcdn.githack.com/huntercmd/blog/d9beff1/config/css/skin.js"></script>
+<script src="https://rawcdn.githack.com/huntercmd/blog/master/config/css/classie.js"></script>
+
+<title>HunterCmd</title>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="menu-s1" style="width: 320px;overflow: auto;
+">
+
+<h1>Table of contents</h1>
+<ul>
+<li><a href="#ACM SIGCOMM Conference 2018:Budapest, Hungary">ACM SIGCOMM Conference 2018:Budapest, Hungary</a><ul>
+<li><a href="#Paper Num: 40 || Session Num: 10">Paper Num: 40 || Session Num: 10</a></li>
+<li><a href="#Congestion monitoring and control    4">Congestion monitoring and control    4</a><ul>
+<li><a href="#1. Inferring persistent interdomain congestion.">1. Inferring persistent interdomain congestion.</a></li>
+<li><a href="#2. Sincronia: near-optimal network design for coflows.">2. Sincronia: near-optimal network design for coflows.</a></li>
+<li><a href="#3. Restructuring endpoint congestion control.">3. Restructuring endpoint congestion control.</a></li>
+<li><a href="#4. Oboe: auto-tuning video ABR algorithms to network conditions.">4. Oboe: auto-tuning video ABR algorithms to network conditions.</a></li>
+</ul>
+</li>
+<li><a href="#Routing    4">Routing    4</a><ul>
+<li><a href="#5. Internet anycast: performance, problems, & potential.">5. Internet anycast: performance, problems, &amp; potential.</a></li>
+<li><a href="#6. B4 and after: managing hierarchy, partitioning, and asymmetry for availability and scale in google's software-defined WAN.">6. B4 and after: managing hierarchy, partitioning, and asymmetry for availability and scale in google's software-defined WAN.</a></li>
+<li><a href="#7. On low-latency-capable topologies, and their impact on the design of intra-domain routing.">7. On low-latency-capable topologies, and their impact on the design of intra-domain routing.</a></li>
+<li><a href="#8. Asynchronous convergence of policy-rich distributed bellman-ford routing protocols.">8. Asynchronous convergence of policy-rich distributed bellman-ford routing protocols.</a></li>
+</ul>
+</li>
+<li><a href="#Wireless links    4">Wireless links    4</a><ul>
+<li><a href="#9. Networking across boundaries: enabling wireless communication through the water-air interface.">9. Networking across boundaries: enabling wireless communication through the water-air interface.</a></li>
+<li><a href="#10. In-body backscatter communication and localization.">10. In-body backscatter communication and localization.</a></li>
+<li><a href="#11. PLoRa: a passive long-range data network from ambient LoRa transmissions.">11. PLoRa: a passive long-range data network from ambient LoRa transmissions.</a></li>
+<li><a href="#12. A measurement study on multi-path TCP with multiple cellular carriers on high speed rails.">12. A measurement study on multi-path TCP with multiple cellular carriers on high speed rails.</a></li>
+</ul>
+</li>
+<li><a href="#Data center networking    4">Data center networking    4</a><ul>
+<li><a href="#13. Masking failures from application performance in data center networks with shareable backup.">13. Masking failures from application performance in data center networks with shareable backup.</a></li>
+<li><a href="#14. AuTO: scaling deep reinforcement learning for datacenter-scale automatic traffic optimization.">14. AuTO: scaling deep reinforcement learning for datacenter-scale automatic traffic optimization.</a></li>
+<li><a href="#15. Leveraging interconnections for performance: the serving infrastructure of a large CDN.">15. Leveraging interconnections for performance: the serving infrastructure of a large CDN.</a></li>
+<li><a href="#16. Homa: a receiver-driven low-latency transport protocol using network priorities.">16. Homa: a receiver-driven low-latency transport protocol using network priorities.</a></li>
+</ul>
+</li>
+<li><a href="#Applications and IoT    4">Applications and IoT    4</a><ul>
+<li><a href="#17. AWStream: adaptive wide-area streaming analytics.">17. AWStream: adaptive wide-area streaming analytics.</a></li>
+<li><a href="#18. Chameleon: scalable adaptation of video analytics.">18. Chameleon: scalable adaptation of video analytics.</a></li>
+<li><a href="#19. RF-based 3D skeletons.">19. RF-based 3D skeletons.</a></li>
+<li><a href="#20. MUTE: bringing IoT to noise cancellation.">20. MUTE: bringing IoT to noise cancellation.</a></li>
+</ul>
+</li>
+<li><a href="#RDMA and hardware support    4">RDMA and hardware support    4</a><ul>
+<li><a href="#21. Hyperloop: group-based NIC-offloading to accelerate replicated transactions in multi-tenant storage systems.">21. Hyperloop: group-based NIC-offloading to accelerate replicated transactions in multi-tenant storage systems.</a></li>
+<li><a href="#22. Revisiting network support for RDMA.">22. Revisiting network support for RDMA.</a></li>
+<li><a href="#23. Understanding PCIe performance for end host networking.">23. Understanding PCIe performance for end host networking.</a></li>
+<li><a href="#24. FBOSS: building switch software at scale.">24. FBOSS: building switch software at scale.</a></li>
+</ul>
+</li>
+<li><a href="#SDN and workloads    4">SDN and workloads    4</a><ul>
+<li><a href="#25. Sonata: query-driven streaming network telemetry.">25. Sonata: query-driven streaming network telemetry.</a></li>
+<li><a href="#26. Automated synthesis of adversarial workloads for network functions.">26. Automated synthesis of adversarial workloads for network functions.</a></li>
+<li><a href="#27. Trident: toward a unified SDN programming framework with automatic updates.">27. Trident: toward a unified SDN programming framework with automatic updates.</a></li>
+<li><a href="#28. Synchronized network snapshots.">28. Synchronized network snapshots.</a></li>
+</ul>
+</li>
+<li><a href="#Wireless low power and high data rates    4">Wireless low power and high data rates    4</a><ul>
+<li><a href="#29. Enabling deep-tissue networking for miniature medical devices.">29. Enabling deep-tissue networking for miniature medical devices.</a></li>
+<li><a href="#30. Fast millimeter wave beam alignment.">30. Fast millimeter wave beam alignment.</a></li>
+<li><a href="#31. Polymorphic radios: a new design paradigm for ultra-low power communication.">31. Polymorphic radios: a new design paradigm for ultra-low power communication.</a></li>
+<li><a href="#32. Chorus: truly distributed distributed-MIMO.">32. Chorus: truly distributed distributed-MIMO.</a></li>
+</ul>
+</li>
+<li><a href="#Network verification    4">Network verification    4</a><ul>
+<li><a href="#33. Control plane compression.">33. Control plane compression.</a></li>
+<li><a href="#34. p4v: practical verification for programmable data planes.">34. p4v: practical verification for programmable data planes.</a></li>
+<li><a href="#35. Microboxes: high performance NFV with customizable, asynchronous TCP stacks and dynamic subscriptions.">35. Microboxes: high performance NFV with customizable, asynchronous TCP stacks and dynamic subscriptions.</a></li>
+<li><a href="#36. Debugging P4 programs with vera.">36. Debugging P4 programs with vera.</a></li>
+</ul>
+</li>
+<li><a href="#Measurements    4">Measurements    4</a><ul>
+<li><a href="#37. Incentivizing censorship measurements via circumvention.">37. Incentivizing censorship measurements via circumvention.</a></li>
+<li><a href="#38. RADWAN: rate adaptive wide area network.">38. RADWAN: rate adaptive wide area network.</a></li>
+<li><a href="#39. Elastic sketch: adaptive and fast network-wide measurements.">39. Elastic sketch: adaptive and fast network-wide measurements.</a></li>
+<li><a href="#40. Sketchlearn: relieving user burdens in approximate measurement with automated statistical inference.">40. Sketchlearn: relieving user burdens in approximate measurement with automated statistical inference.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><h1 id="ACM SIGCOMM Conference 2018:Budapest, Hungary">ACM SIGCOMM Conference 2018:Budapest, Hungary</h1>
+<p><a href="http://dl.acm.org/citation.cfm?id=3230543">Proceedings of the 2018 Conference of the ACM Special Interest Group on Data Communication, SIGCOMM 2018, Budapest, Hungary, August 20-25, 2018.</a> ACM
+【<a href="https://dblp.uni-trier.de/db/conf/sigcomm/sigcomm2018.html">DBLP Link</a>】</p>
+<h2 id="Paper Num: 40 || Session Num: 10">Paper Num: 40 || Session Num: 10</h2>
+<ul>
+<li><a href="#Applications and IoT    4">Applications and IoT    4</a></li>
+<li><a href="#Congestion monitoring and control    4">Congestion monitoring and control    4</a></li>
+<li><a href="#Data center networking    4">Data center networking    4</a></li>
+<li><a href="#Measurements    4">Measurements    4</a></li>
+<li><a href="#Network verification    4">Network verification    4</a></li>
+<li><a href="#RDMA and hardware support    4">RDMA and hardware support    4</a></li>
+<li><a href="#Routing    4">Routing    4</a></li>
+<li><a href="#SDN and workloads    4">SDN and workloads    4</a></li>
+<li><a href="#Wireless links    4">Wireless links    4</a></li>
+<li><a href="#Wireless low power and high data rates    4">Wireless low power and high data rates    4</a></li>
+</ul>
+<h2 id="Congestion monitoring and control    4">Congestion monitoring and control    4</h2>
+<h3 id="1. Inferring persistent interdomain congestion.">1. Inferring persistent interdomain congestion.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230549">Paper Link</a>】    【Pages】:1-15</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/d/Dhamdhere:Amogh">Amogh Dhamdhere</a> ; <a href="https://dblp.uni-trier.de/pers/hd/c/Clark:David_D=">David D. Clark</a> ; <a href="https://dblp.uni-trier.de/pers/hd/g/Gamero=Garrido:Alexander">Alexander Gamero-Garrido</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Luckie:Matthew_J=">Matthew J. Luckie</a> ; <a href="https://dblp.uni-trier.de/pers/hd/m/Mok:Ricky_K=_P=">Ricky K. P. Mok</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Akiwate:Gautam">Gautam Akiwate</a> ; <a href="https://dblp.uni-trier.de/pers/hd/g/Gogia:Kabir">Kabir Gogia</a> ; <a href="https://dblp.uni-trier.de/pers/hd/b/Bajpai:Vaibhav">Vaibhav Bajpai</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Snoeren:Alex_C=">Alex C. Snoeren</a> ; <a href="https://dblp.uni-trier.de/pers/hd/c/claffy:kc">kc claffy</a></p>
+<p>【Abstract】:
+There is significant interest in the technical and policy communities regarding the extent, scope, and consumer harm of persistent interdomain congestion. We provide empirical grounding for discussions of interdomain congestion by developing a system and method to measure congestion on thousands of interdomain links without direct access to them. We implement a system based on the Time Series Latency Probes (TSLP) technique that identifies links with evidence of recurring congestion suggestive of an under-provisioned link. We deploy our system at 86 vantage points worldwide and show that congestion inferred using our lightweight TSLP method correlates with other metrics of interconnection performance impairment. We use our method to study interdomain links of eight large U.S. broadband access providers from March 2016 to December 2017, and validate our inferences against ground-truth traffic statistics from two of the providers. For the period of time over which we gathered measurements, we did not find evidence of widespread endemic congestion on interdomain links between access ISPs and directly connected transit and content providers, although some such links exhibited recurring congestion patterns. We describe limitations, open challenges, and a path toward the use of this method for large-scale third-party monitoring of the Internet interconnection ecosystem.</p>
+<p>【Keywords】:
+internet congestion; internet topology; performance</p>
+<h3 id="2. Sincronia: near-optimal network design for coflows.">2. Sincronia: near-optimal network design for coflows.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230569">Paper Link</a>】    【Pages】:16-29</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/a/Agarwal:Saksham">Saksham Agarwal</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/Rajakrishnan:Shijin">Shijin Rajakrishnan</a> ; <a href="https://dblp.uni-trier.de/pers/hd/n/Narayan:Akshay">Akshay Narayan</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Agarwal_0001:Rachit">Rachit Agarwal</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Shmoys:David">David Shmoys</a> ; <a href="https://dblp.uni-trier.de/pers/hd/v/Vahdat:Amin">Amin Vahdat</a></p>
+<p>【Abstract】:
+We present Sincronia, a near-optimal network design for coflows that can be implemented on top on any transport layer (for flows) that supports priority scheduling. Sincronia achieves this using a key technical result --- we show that given a "right" ordering of coflows, any per-flow rate allocation mechanism achieves average coflow completion time within 4X of the optimal as long as (co)flows are prioritized with respect to the ordering.
+Sincronia uses a simple greedy mechanism to periodically order all unfinished coflows; each host sets priorities for its flows using corresponding coflow order and offloads the flow scheduling and rate allocation to the underlying priority-enabled transport layer. We evaluate Sincronia over a real testbed comprising 16-servers and commodity switches, and using simulations across a variety of workloads. Evaluation results suggest that Sincronia not only admits a practical, near-optimal design but also improves upon state-of-the-art network designs for coflows (sometimes by as much as 8X).</p>
+<p>【Keywords】:
+approximation algorithms; coflow; datacenter networks</p>
+<h3 id="3. Restructuring endpoint congestion control.">3. Restructuring endpoint congestion control.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230553">Paper Link</a>】    【Pages】:30-43</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/n/Narayan:Akshay">Akshay Narayan</a> ; <a href="https://dblp.uni-trier.de/pers/hd/c/Cangialosi:Frank">Frank Cangialosi</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/Raghavan:Deepti">Deepti Raghavan</a> ; <a href="https://dblp.uni-trier.de/pers/hd/g/Goyal:Prateesh">Prateesh Goyal</a> ; <a href="https://dblp.uni-trier.de/pers/hd/n/Narayana:Srinivas">Srinivas Narayana</a> ; <a href="https://dblp.uni-trier.de/pers/hd/m/Mittal:Radhika">Radhika Mittal</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Alizadeh:Mohammad">Mohammad Alizadeh</a> ; <a href="https://dblp.uni-trier.de/pers/hd/b/Balakrishnan:Hari">Hari Balakrishnan</a></p>
+<p>【Abstract】:
+This paper describes the implementation and evaluation of a system to implement complex congestion control functions by placing them in a separate agent outside the datapath. Each datapath---such as the Linux kernel TCP, UDP-based QUIC, or kernel-bypass transports like mTCP-on-DPDK---summarizes information about packet round-trip times, receptions, losses, and ECN via a well-defined interface to algorithms running in the off-datapath Congestion Control Plane (CCP). The algorithms use this information to control the datapath's congestion window or pacing rate. Algorithms written in CCP can run on multiple datapaths. CCP improves both the pace of development and ease of maintenance of congestion control algorithms by providing better, modular abstractions, and supports aggregation capabilities of the Congestion Manager, all with one-time changes to datapaths. CCP also enables new capabilities, such as Copa in Linux TCP, several algorithms running on QUIC and mTCP/DPDK, and the use of signal processing algorithms to detect whether cross-traffic is ACK-clocked. Experiments with our user-level Linux CCP implementation show that CCP algorithms behave similarly to kernel algorithms, and incur modest CPU overhead of a few percent.</p>
+<p>【Keywords】:
+congestion control; operating systems</p>
+<h3 id="4. Oboe: auto-tuning video ABR algorithms to network conditions.">4. Oboe: auto-tuning video ABR algorithms to network conditions.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230558">Paper Link</a>】    【Pages】:44-58</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/a/Akhtar:Zahaib">Zahaib Akhtar</a> ; <a href="https://dblp.uni-trier.de/pers/hd/n/Nam:Yun_Seong">Yun Seong Nam</a> ; <a href="https://dblp.uni-trier.de/pers/hd/g/Govindan:Ramesh">Ramesh Govindan</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/Rao:Sanjay_G=">Sanjay G. Rao</a> ; <a href="https://dblp.uni-trier.de/pers/hd/c/Chen:Jessica">Jessica Chen</a> ; <a href="https://dblp.uni-trier.de/pers/hd/k/Katz=Bassett:Ethan">Ethan Katz-Bassett</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/Ribeiro:Bruno">Bruno Ribeiro</a> ; <a href="https://dblp.uni-trier.de/pers/hd/z/Zhan:Jibin">Jibin Zhan</a> ; <a href="https://dblp.uni-trier.de/pers/hd/z/Zhang:Hui">Hui Zhang</a></p>
+<p>【Abstract】:
+Most content providers are interested in providing good video delivery QoE for all users, not just on average. State-of-the-art ABR algorithms like BOLA and MPC rely on parameters that are sensitive to network conditions, so may perform poorly for some users and/or videos. In this paper, we propose a technique called Oboe to auto-tune these parameters to different network conditions. Oboe pre-computes, for a given ABR algorithm, the best possible parameters for different network conditions, then dynamically adapts the parameters at run-time for the current network conditions. Using testbed experiments, we show that Oboe significantly improves BOLA, MPC, and a commercially deployed ABR. Oboe also betters a recently proposed reinforcement learning based ABR, Pensieve, by 24% on average on a composite QoE metric, in part because it is able to better specialize ABR behavior across different network states.</p>
+<p>【Keywords】:
+adaptive bitrate algorithms; video delivery</p>
+<h2 id="Routing    4">Routing    4</h2>
+<h3 id="5. Internet anycast: performance, problems, & potential.">5. Internet anycast: performance, problems, &amp; potential.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230547">Paper Link</a>】    【Pages】:59-73</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/l/Li:Zhihao">Zhihao Li</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Levin:Dave">Dave Levin</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Spring:Neil">Neil Spring</a> ; <a href="https://dblp.uni-trier.de/pers/hd/b/Bhattacharjee:Bobby">Bobby Bhattacharjee</a></p>
+<p>【Abstract】:
+Internet anycast depends on inter-domain routing to direct clients to their "closest" sites. Using data collected from a root DNS server for over a year (400M+ queries/day from 100+ sites), we characterize the load balancing and latency performance of global anycast. Our analysis shows that site loads are often unbalanced, and that most queries travel longer than necessary, many by over 5000 km.
+Investigating the root causes of these inefficiencies, we can attribute path inflation to two causes. Like unicast, anycast routes are subject to inter-domain routing topology and policies that can increase path length compared to theoretical shortest (e.g., great-circle distance). Unlike unicast, anycast routes are also affected by poor route selection when paths to multiple sites are available, subjecting anycast routes to an additional, unnecessary, penalty.
+Unfortunately, BGP provides no information about the number or goodness of reachable anycast sites. We propose an additional hint in BGP advertisements for anycast routes that can enable ISPs to make better choices when multiple "equally good" routes are available. Our results show that use of such routing hints can eliminate much of the anycast path inflation, enabling anycast to approach the performance of unicast routing.</p>
+<p>【Keywords】:</p>
+<h3 id="6. B4 and after: managing hierarchy, partitioning, and asymmetry for availability and scale in google's software-defined WAN.">6. B4 and after: managing hierarchy, partitioning, and asymmetry for availability and scale in google's software-defined WAN.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230545">Paper Link</a>】    【Pages】:74-87</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/h/Hong:Chi=Yao">Chi-Yao Hong</a> ; <a href="https://dblp.uni-trier.de/pers/hd/m/Mandal:Subhasree">Subhasree Mandal</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Al=Fares:Mohammad">Mohammad Al-Fares</a> ; <a href="https://dblp.uni-trier.de/pers/hd/z/Zhu:Min">Min Zhu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Alimi:Richard">Richard Alimi</a> ; <a href="https://dblp.uni-trier.de/pers/hd/b/B=:Kondapa_Naidu">Kondapa Naidu B.</a> ; <a href="https://dblp.uni-trier.de/pers/hd/b/Bhagat:Chandan">Chandan Bhagat</a> ; <a href="https://dblp.uni-trier.de/pers/hd/j/Jain:Sourabh">Sourabh Jain</a> ; <a href="https://dblp.uni-trier.de/pers/hd/k/Kaimal:Jay">Jay Kaimal</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Liang:Shiyu">Shiyu Liang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/m/Mendelev:Kirill">Kirill Mendelev</a> ; <a href="https://dblp.uni-trier.de/pers/hd/p/Padgett:Steve">Steve Padgett</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/Rabe:Faro">Faro Rabe</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/Ray:Saikat">Saikat Ray</a> ; <a href="https://dblp.uni-trier.de/pers/hd/t/Tewari:Malveeka">Malveeka Tewari</a> ; <a href="https://dblp.uni-trier.de/pers/hd/t/Tierney:Matt">Matt Tierney</a> ; <a href="https://dblp.uni-trier.de/pers/hd/z/Zahn:Monika">Monika Zahn</a> ; <a href="https://dblp.uni-trier.de/pers/hd/z/Zolla:Jonathan">Jonathan Zolla</a> ; <a href="https://dblp.uni-trier.de/pers/hd/o/Ong:Joon">Joon Ong</a> ; <a href="https://dblp.uni-trier.de/pers/hd/v/Vahdat:Amin">Amin Vahdat</a></p>
+<p>【Abstract】:
+Private WANs are increasingly important to the operation of enterprises, telecoms, and cloud providers. For example, B4, Google's private software-defined WAN, is larger and growing faster than our connectivity to the public Internet. In this paper, we present the five-year evolution of B4. We describe the techniques we employed to incrementally move from offering best-effort content-copy services to carrier-grade availability, while concurrently scaling B4 to accommodate 100x more traffic. Our key challenge is balancing the tension introduced by hierarchy required for scalability, the partitioning required for availability, and the capacity asymmetry inherent to the construction and operation of any large-scale network. We discuss our approach to managing this tension: i) we design a custom hierarchical network topology for both horizontal and vertical software scaling, ii) we manage inherent capacity asymmetry in hierarchical topologies using a novel traffic engineering algorithm without packet encapsulation, and iii) we re-architect switch forwarding rules via two-stage matching/hashing to deal with asymmetric network failures at scale.</p>
+<p>【Keywords】:
+software-defined WAN; traffic engineering</p>
+<h3 id="7. On low-latency-capable topologies, and their impact on the design of intra-domain routing.">7. On low-latency-capable topologies, and their impact on the design of intra-domain routing.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230575">Paper Link</a>】    【Pages】:88-102</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/g/Gvozdiev:Nikola">Nikola Gvozdiev</a> ; <a href="https://dblp.uni-trier.de/pers/hd/v/Vissicchio:Stefano">Stefano Vissicchio</a> ; <a href="https://dblp.uni-trier.de/pers/hd/k/Karp:Brad">Brad Karp</a> ; <a href="https://dblp.uni-trier.de/pers/hd/h/Handley:Mark">Mark Handley</a></p>
+<p>【Abstract】:
+An ISP's customers increasingly demand delivery of their traffic without congestion and with low latency. The ISP's topology, routing, and traffic engineering, often over multiple paths, together determine congestion and latency within its backbone. We first consider how to measure a topology's capacity to route traffic without congestion and with low latency. We introduce low-latency path diversity (LLPD), a metric that captures a topology's flexibility to accommodate traffic on alternative low-latency paths. We explore to what extent 116 real backbone topologies can, regardless of routing system, keep latency low when demand exceeds the shortest path's capacity. We find, perhaps surprisingly, that topologies with good LLPD are precisely those where routing schemes struggle to achieve low latency without congestion. We examine why these schemes perform poorly, and offer an existence proof that a practical routing scheme can achieve a topology's potential for congestion-free, low-delay routing. Finally we examine implications for the design of backbone topologies amenable to achieving high capacity and low delay.</p>
+<p>【Keywords】:</p>
+<h3 id="8. Asynchronous convergence of policy-rich distributed bellman-ford routing protocols.">8. Asynchronous convergence of policy-rich distributed bellman-ford routing protocols.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230561">Paper Link</a>】    【Pages】:103-116</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/d/Daggitt:Matthew_L=">Matthew L. Daggitt</a> ; <a href="https://dblp.uni-trier.de/pers/hd/g/Gurney:Alexander_J=_T=">Alexander J. T. Gurney</a> ; <a href="https://dblp.uni-trier.de/pers/hd/g/Griffin:Timothy_G=">Timothy G. Griffin</a></p>
+<p>【Abstract】:
+We present new results in the theory of asynchronous convergence for the Distributed Bellman-Ford (DBF) family of routing protocols which includes distance-vector protocols (e.g. RIP) and path-vector protocols (e.g. BGP). We take the strictly increasing conditions of Sobrinho and make three main new contributions.
+First, we show that the conditions are sufficient to guarantee that the protocols will converge to a unique solution, preventing the possibility of BGP wedgies. Second, we decouple the computation from the asynchronous context in which it occurs, allowing us to reason about a more relaxed model of asynchronous computation in which routing messages can be lost, reordered, and duplicated. Third, our theory and results have been fully formalised in the Agda theorem prover and the resulting library is publicly available for others to use and extend. This is in line with the increasing emphasis on formal verification of software for critical infrastructure.</p>
+<p>【Keywords】:</p>
+<h2 id="Wireless links    4">Wireless links    4</h2>
+<h3 id="9. Networking across boundaries: enabling wireless communication through the water-air interface.">9. Networking across boundaries: enabling wireless communication through the water-air interface.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230580">Paper Link</a>】    【Pages】:117-131</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/t/Tonolini:Francesco">Francesco Tonolini</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Adib:Fadel">Fadel Adib</a></p>
+<p>【Abstract】:
+We consider the problem of wireless communication across medium boundaries, specifically across the water-air interface. In particular, we are interested in enabling a submerged underwater sensor to directly communicate with an airborne node. Today's communication technologies cannot enable such a communication link. This is because no single type of wireless signal can operate well across different media and most wireless signals reflect back at media boundaries.
+We present a new communication technology, translational acoustic-RF communication (TARF). TARF enables underwater nodes to directly communicate with airborne nodes by transmitting standard acoustic signals. TARF exploits the fact that underwater acoustic signals travel as pressure waves, and that these waves cause displacements of the water surface when they impinge on the water-air boundary. To decode the transmitted signals, TARF leverages an airborne radar which measures and decodes these surface displacements.
+We built a prototype of TARF that incorporates algorithms for dealing with the constraints of this new communication modality. We evaluated TARF in controlled and uncontrolled environments and demonstrated that it enables the first practical communication link across the water-air interface. Our results show that TARF can achieve standard underwater bitrates up to 400bps, and that it can operate correctly in the presence of surface waves with amplitudes up to 16 cm peak-to-peak, i.e., 100,000X larger than the surface perturbations caused by TARF's underwater acoustic transmitter.</p>
+<p>【Keywords】:
+cross-medium communications; subsea internet of things; wireless</p>
+<h3 id="10. In-body backscatter communication and localization.">10. In-body backscatter communication and localization.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230565">Paper Link</a>】    【Pages】:132-146</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/v/Vasisht:Deepak">Deepak Vasisht</a> ; <a href="https://dblp.uni-trier.de/pers/hd/z/Zhang:Guo">Guo Zhang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Abari:Omid">Omid Abari</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Lu:Hsiao=Ming">Hsiao-Ming Lu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/f/Flanz:Jacob">Jacob Flanz</a> ; <a href="https://dblp.uni-trier.de/pers/hd/k/Katabi:Dina">Dina Katabi</a></p>
+<p>【Abstract】:
+Backscatter requires zero transmission power, making it a compelling technology for in-body communication and localization. It can significantly reduce the battery requirements (and hence the size) of micro-implants and smart capsules, and enable them to be located on-the-move inside the body. The problem however is that the electrical properties of human tissues are very different from air and vacuum. This creates new challenges for both communication and localization. For example, signals no longer travel along straight lines, which destroys the geometric principles underlying many localization algorithms. Furthermore, the human skin backscatters the signal creating strong interference to the weak in-body backscatter transmission. These challenges make deep-tissue backscatter intrinsically different from backscatter in air or vacuum. This paper introduces ReMix, a new backscatter design that is particularly customized for deep tissue devices. It overcomes interference from the body surface, and localizes the in-body backscatter devices even though the signal travels along crooked paths. We have implemented our design and evaluated it in animal tissues and human phantoms. Our results demonstrate that ReMix delivers efficient communication at an average SNR of 15.2 dB at 1 MHz bandwidth, and has an average localization accuracy of 1.4cm in animal tissues.</p>
+<p>【Keywords】:</p>
+<h3 id="11. PLoRa: a passive long-range data network from ambient LoRa transmissions.">11. PLoRa: a passive long-range data network from ambient LoRa transmissions.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230567">Paper Link</a>】    【Pages】:147-160</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/p/Peng:Yao">Yao Peng</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Shangguan:Longfei">Longfei Shangguan</a> ; <a href="https://dblp.uni-trier.de/pers/hd/h/Hu:Yue">Yue Hu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/q/Qian:Yujie">Yujie Qian</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Lin:Xianshang">Xianshang Lin</a> ; <a href="https://dblp.uni-trier.de/pers/hd/c/Chen:Xiaojiang">Xiaojiang Chen</a> ; <a href="https://dblp.uni-trier.de/pers/hd/f/Fang:Dingyi">Dingyi Fang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/j/Jamieson:Kyle">Kyle Jamieson</a></p>
+<p>【Abstract】:
+This paper presents PLoRa, an ambient backscatter design that enables long-range wireless connectivity for batteryless IoT devices. PLoRa takes ambient LoRa transmissions as the excitation signals, conveys data by modulating an excitation signal into a new standard LoRa "chirp" signal, and shifts this new signal to a different LoRa channel to be received at a gateway faraway. PLoRa achieves this by a holistic RF front-end hardware and software design, including a low-power packet detection circuit, a blind chirp modulation algorithm and a low-power energy management circuit. To form a complete ambient LoRa backscatter network, we integrate a light-weight backscatter signal decoding algorithm with a MAC-layer protocol that work together to make coexistence of PLoRa tags and active LoRa nodes possible in the network. We prototype PLoRa on a four-layer printed circuit board, and test it in various outdoor and indoor environments. Our experimental results demonstrate that our prototype PCB PLoRa tag can backscatter an ambient LoRa transmission sent from a nearby LoRa node (20 cm away) to a gateway up to 1.1 km away, and deliver 284 bytes data every 24 minutes indoors, or every 17 minutes outdoors. We also simulate a 28-nm low-power FPGA based prototype whose digital baseband processor achieves 220 μW power consumption.</p>
+<p>【Keywords】:
+LoRa; backscatter; long-range; wireless networks</p>
+<h3 id="12. A measurement study on multi-path TCP with multiple cellular carriers on high speed rails.">12. A measurement study on multi-path TCP with multiple cellular carriers on high speed rails.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230556">Paper Link</a>】    【Pages】:161-175</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/l/Li_0034:Li">Li Li</a> ; <a href="https://dblp.uni-trier.de/pers/hd/x/Xu_0002:Ke">Ke Xu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Li_0014:Tong">Tong Li</a> ; <a href="https://dblp.uni-trier.de/pers/hd/z/Zheng_0003:Kai">Kai Zheng</a> ; <a href="https://dblp.uni-trier.de/pers/hd/p/Peng:Chunyi">Chunyi Peng</a> ; <a href="https://dblp.uni-trier.de/pers/hd/w/Wang_0002:Dan">Dan Wang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/w/Wang:Xiangxiang">Xiangxiang Wang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Shen:Meng">Meng Shen</a> ; <a href="https://dblp.uni-trier.de/pers/hd/m/Mijumbi:Rashid">Rashid Mijumbi</a></p>
+<p>【Abstract】:
+Recent advances in high speed rails (HSRs) are propelling the need for acceptable network service in high speed mobility environments. However, previous studies show that the performance of traditional single-path transmission degrades significantly during high speed mobility due to frequent handoff. Multi-path transmission with multiple carriers is a promising way to enhance the performance, because at any time, there is possibly at least one path not suffering a handoff. In this paper, for the first time, we measure multi-path TCP (MPTCP) with two cellular carriers on HSRs with a peak speed of 310km/h. We find a significant difference in handoff time between the two carriers. Moreover, we observe that MPTCP can provide much better performance than TCP in the poorer of the two paths. This indicates that MPTCP's robustness to handoff is much higher than TCP's. However, the efficiency of MPTCP is far from satisfactory. MPTCP performs worse than TCP in the better path most of the time. We find that the low efficiency can be attributed to poor adaptability to frequent handoff by MPTCP's key operations in sub-flow establishment, congestion control and scheduling. Finally, we discuss possible directions for improving MPTCP for such scenarios.</p>
+<p>【Keywords】:
+cellular networks; high speed rails; measurement; multi-path TCP</p>
+<h2 id="Data center networking    4">Data center networking    4</h2>
+<h3 id="13. Masking failures from application performance in data center networks with shareable backup.">13. Masking failures from application performance in data center networks with shareable backup.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230577">Paper Link</a>】    【Pages】:176-190</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/w/Wu_0002:Dingming">Dingming Wu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/x/Xia:Yiting">Yiting Xia</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Sun:Xiaoye_Steven">Xiaoye Steven Sun</a> ; <a href="https://dblp.uni-trier.de/pers/hd/h/Huang:Xin_Sunny">Xin Sunny Huang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/d/Dzinamarira:Simbarashe">Simbarashe Dzinamarira</a> ; <a href="https://dblp.uni-trier.de/pers/hd/n/Ng:T=_S=_Eugene">T. S. Eugene Ng</a></p>
+<p>【Abstract】:
+Shareable backup is an economical and effective way to mask failures from application performance. A small number of backup switches are shared network-wide for repairing failures on demand so that the network quickly recovers to its full capacity without applications noticing the failures. This approach avoids complications and ineffectiveness of rerouting. We propose ShareBackup as a prototype architecture to realize this concept and present the detailed design. We implement ShareBackup on a hardware testbed. Its failure recovery takes merely 0.73ms, causing no disruption to routing; and it accelerates Spark and Tez jobs by up to 4.1X under failures. Large-scale simulations with real data center traffic and failure model show that ShareBackup reduces the percentage of job flows prolonged by failures from 47.2% to as little as 0.78%. In all our experiments, the results for ShareBackup have little difference from the no-failure case.</p>
+<p>【Keywords】:
+circuit switching; data center network; failure recovery</p>
+<h3 id="14. AuTO: scaling deep reinforcement learning for datacenter-scale automatic traffic optimization.">14. AuTO: scaling deep reinforcement learning for datacenter-scale automatic traffic optimization.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230551">Paper Link</a>】    【Pages】:191-205</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/c/Chen:Li">Li Chen</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Lingys:Justinas">Justinas Lingys</a> ; <a href="https://dblp.uni-trier.de/pers/hd/c/Chen_0005:Kai">Kai Chen</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Liu:Feng">Feng Liu</a></p>
+<p>【Abstract】:
+Traffic optimizations (TO, e.g. flow scheduling, load balancing) in datacenters are difficult online decision-making problems. Previously, they are done with heuristics relying on operators' understanding of the workload and environment. Designing and implementing proper TO algorithms thus take at least weeks. Encouraged by recent successes in applying deep reinforcement learning (DRL) techniques to solve complex online control problems, we study if DRL can be used for automatic TO without human-intervention. However, our experiments show that the latency of current DRL systems cannot handle flow-level TO at the scale of current datacenters, because short flows (which constitute the majority of traffic) are usually gone before decisions can be made.
+Leveraging the long-tail distribution of datacenter traffic, we develop a two-level DRL system, AuTO, mimicking the Peripheral &amp; Central Nervous Systems in animals, to solve the scalability problem. Peripheral Systems (PS) reside on end-hosts, collect flow information, and make TO decisions locally with minimal delay for short flows. PS's decisions are informed by a Central System (CS), where global traffic information is aggregated and processed. CS further makes individual TO decisions for long flows. With CS&amp;PS, AuTO is an end-to-end automatic TO system that can collect network information, learn from past decisions, and perform actions to achieve operator-defined goals. We implement AuTO with popular machine learning frameworks and commodity servers, and deploy it on a 32-server testbed. Compared to existing approaches, AuTO reduces the TO turn-around time from weeks to ~100 milliseconds while achieving superior performance. For example, it demonstrates up to 48.14% reduction in average flow completion time (FCT) over existing solutions.</p>
+<p>【Keywords】:
+datacenter networks; reinforcement learning; traffic optimization</p>
+<h3 id="15. Leveraging interconnections for performance: the serving infrastructure of a large CDN.">15. Leveraging interconnections for performance: the serving infrastructure of a large CDN.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230576">Paper Link</a>】    【Pages】:206-220</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/w/Wohlfart:Florian">Florian Wohlfart</a> ; <a href="https://dblp.uni-trier.de/pers/hd/c/Chatzis:Nikolaos">Nikolaos Chatzis</a> ; <a href="https://dblp.uni-trier.de/pers/hd/d/Dabanoglu:Caglar">Caglar Dabanoglu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/c/Carle:Georg">Georg Carle</a> ; <a href="https://dblp.uni-trier.de/pers/hd/w/Willinger:Walter">Walter Willinger</a></p>
+<p>【Abstract】:
+Today's large content providers (CP) are busy building out their service infrastructures or "peering edges" to satisfy the insatiable demand for content created by an ever-expanding Internet edge. One component of these serving infrastructures that features prominently in this build-out is their connectivity fabric; i.e., the set of all Internet interconnections that content has to traverse en route from the CP's various "deployments" or "serving sites" to end users. However, these connectivity fabrics have received little attention in the past and remain largely ill-understood.
+In this paper, we describe the results of an in-depth study of the connectivity fabric of Akamai. Our study reveals that Akamai's connectivity fabric consists of some 6,100 different "explicit" peerings (i.e., Akamai is one of the two involved peers) and about 28,500 different "implicit" peerings (i.e., Akamai is neither of the two peers). Our work contributes to a better understanding of real-world serving infrastructures by providing an original account of implicit peerings and demonstrating the performance benefits that Akamai can reap from leveraging its rich connectivity fabric for serving its customers' content to end users.</p>
+<p>【Keywords】:
+content delivery networks; content providers; peering</p>
+<h3 id="16. Homa: a receiver-driven low-latency transport protocol using network priorities.">16. Homa: a receiver-driven low-latency transport protocol using network priorities.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230564">Paper Link</a>】    【Pages】:221-235</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/m/Montazeri:Behnam">Behnam Montazeri</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Li:Yilong">Yilong Li</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Alizadeh:Mohammad">Mohammad Alizadeh</a> ; <a href="https://dblp.uni-trier.de/pers/hd/o/Ousterhout:John_K=">John K. Ousterhout</a></p>
+<p>【Abstract】:
+Homa is a new transport protocol for datacenter networks. It provides exceptionally low latency, especially for workloads with a high volume of very short messages, and it also supports large messages and high network utilization. Homa uses in-network priority queues to ensure low latency for short messages; priority allocation is managed dynamically by each receiver and integrated with a receiver-driven flow control mechanism. Homa also uses controlled overcommitment of receiver downlinks to ensure efficient bandwidth utilization at high load. Our implementation of Homa delivers 99th percentile round-trip times less than 15 μs for short messages on a 10 Gbps network running at 80% load. These latencies are almost 100x lower than the best published measurements of an implementation. In simulations, Homa's latency is roughly equal to pFabric and significantly better than pHost, PIAS, and NDP for almost all message sizes and workloads. Homa can also sustain higher network loads than pFabric, pHost, or PIAS.</p>
+<p>【Keywords】:
+data centers; low latency; network stacks; transport protocols</p>
+<h2 id="Applications and IoT    4">Applications and IoT    4</h2>
+<h3 id="17. AWStream: adaptive wide-area streaming analytics.">17. AWStream: adaptive wide-area streaming analytics.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230554">Paper Link</a>】    【Pages】:236-252</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/z/Zhang:Ben">Ben Zhang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/j/Jin:Xin">Xin Jin</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/Ratnasamy:Sylvia">Sylvia Ratnasamy</a> ; <a href="https://dblp.uni-trier.de/pers/hd/w/Wawrzynek:John">John Wawrzynek</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Lee:Edward_A=">Edward A. Lee</a></p>
+<p>【Abstract】:
+The emerging class of wide-area streaming analytics faces the challenge of scarce and variable WAN bandwidth. Non-adaptive applications built with TCP or UDP suffer from increased latency or degraded accuracy. State-of-the-art approaches that adapt to network changes require developer writing sub-optimal manual policies or are limited to application-specific optimizations.
+We present AWStream, a stream processing system that simultaneously achieves low latency and high accuracy in the wide area, requiring minimal developer efforts. To realize this, AWStream uses three ideas: (i) it integrates application adaptation as a first-class programming abstraction in the stream processing model; (ii) with a combination of offline and online profiling, it automatically learns an accurate profile that models accuracy and bandwidth trade-off; and (iii) at runtime, it carefully adjusts the application data rate to match the available bandwidth while maximizing the achievable accuracy. We evaluate AWStream with three real-world applications: augmented reality, pedestrian detection, and monitoring log analysis. Our experiments show that AWStream achieves sub-second latency with only nominal accuracy drop (2-6%).</p>
+<p>【Keywords】:
+adaptation; learning; profiling; wide area network</p>
+<h3 id="18. Chameleon: scalable adaptation of video analytics.">18. Chameleon: scalable adaptation of video analytics.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230574">Paper Link</a>】    【Pages】:253-266</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/j/Jiang:Junchen">Junchen Jiang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Ananthanarayanan:Ganesh">Ganesh Ananthanarayanan</a> ; <a href="https://dblp.uni-trier.de/pers/hd/b/Bod=iacute=k:Peter">Peter Bodík</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Sen_0001:Siddhartha">Siddhartha Sen</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Stoica:Ion">Ion Stoica</a></p>
+<p>【Abstract】:
+Applying deep convolutional neural networks (NN) to video data at scale poses a substantial systems challenge, as improving inference accuracy often requires a prohibitive cost in computational resources. While it is promising to balance resource and accuracy by selecting a suitable NN configuration (e.g., the resolution and frame rate of the input video), one must also address the significant dynamics of the NN configuration's impact on video analytics accuracy. We present Chameleon, a controller that dynamically picks the best configurations for existing NN-based video analytics pipelines. The key challenge in Chameleon is that in theory, adapting configurations frequently can reduce resource consumption with little degradation in accuracy, but searching a large space of configurations periodically incurs an overwhelming resource overhead that negates the gains of adaptation. The insight behind Chameleon is that the underlying characteristics (e.g., the velocity and sizes of objects) that affect the best configuration have enough temporal and spatial correlation to allow the search cost to be amortized over time and across multiple video feeds. For example, using the video feeds of five traffic cameras, we demonstrate that compared to a baseline that picks a single optimal configuration offline, Chameleon can achieve 20-50% higher accuracy with the same amount of resources, or achieve the same accuracy with only 30--50% of the resources (a 2-3X speedup).</p>
+<p>【Keywords】:
+deep neural networks; object detection; video analytics</p>
+<h3 id="19. RF-based 3D skeletons.">19. RF-based 3D skeletons.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230579">Paper Link</a>】    【Pages】:267-281</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/z/Zhao:Mingmin">Mingmin Zhao</a> ; <a href="https://dblp.uni-trier.de/pers/hd/t/Tian:Yonglong">Yonglong Tian</a> ; <a href="https://dblp.uni-trier.de/pers/hd/z/Zhao:Hang">Hang Zhao</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Alsheikh:Mohammad_Abu">Mohammad Abu Alsheikh</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Li:Tianhong">Tianhong Li</a> ; <a href="https://dblp.uni-trier.de/pers/hd/h/Hristov:Rumen">Rumen Hristov</a> ; <a href="https://dblp.uni-trier.de/pers/hd/k/Kabelac:Zachary">Zachary Kabelac</a> ; <a href="https://dblp.uni-trier.de/pers/hd/k/Katabi:Dina">Dina Katabi</a> ; <a href="https://dblp.uni-trier.de/pers/hd/t/Torralba_0001:Antonio">Antonio Torralba</a></p>
+<p>【Abstract】:
+This paper introduces RF-Pose3D, the first system that infers 3D human skeletons from RF signals. It requires no sensors on the body, and works with multiple people and across walls and occlusions. Further, it generates dynamic skeletons that follow the people as they move, walk or sit. As such, RF-Pose3D provides a significant leap in RF-based sensing and enables new applications in gaming, healthcare, and smart homes.
+RF-Pose3D is based on a novel convolutional neural network (CNN) architecture that performs high-dimensional convolutions by decomposing them into low-dimensional operations. This property allows the network to efficiently condense the spatio-temporal information in RF signals. The network first zooms in on the individuals in the scene, and crops the RF signals reflected off each person. For each individual, it localizes and tracks their body parts - head, shoulders, arms, wrists, hip, knees, and feet. Our evaluation results show that RF-Pose3D tracks each keypoint on the human body with an average error of 4.2 cm, 4.0 cm, and 4.9 cm along the X, Y, and Z axes respectively. It maintains this accuracy even in the presence of multiple people, and in new environments that it has not seen in the training set. Demo videos are available at our website: <a href="http://rfpose3d.csail.mit.edu">http://rfpose3d.csail.mit.edu</a>.</p>
+<p>【Keywords】:
+3D human pose estimation; RF sensing; localization; machine learning; neural networks; smart homes</p>
+<h3 id="20. MUTE: bringing IoT to noise cancellation.">20. MUTE: bringing IoT to noise cancellation.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230550">Paper Link</a>】    【Pages】:282-296</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/s/Shen:Sheng">Sheng Shen</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/Roy:Nirupam">Nirupam Roy</a> ; <a href="https://dblp.uni-trier.de/pers/hd/g/Guan:Junfeng">Junfeng Guan</a> ; <a href="https://dblp.uni-trier.de/pers/hd/h/Hassanieh:Haitham">Haitham Hassanieh</a> ; <a href="https://dblp.uni-trier.de/pers/hd/c/Choudhury:Romit_Roy">Romit Roy Choudhury</a></p>
+<p>【Abstract】:
+Active Noise Cancellation (ANC) is a classical area where noise in the environment is canceled by producing anti-noise signals near the human ears (e.g., in Bose's noise cancellation headphones). This paper brings IoT to active noise cancellation by combining wireless communication with acoustics. The core idea is to place an IoT device in the environment that listens to ambient sounds and forwards the sound over its wireless radio. Since wireless signals travel much faster than sound, our ear-device receives the sound in advance of its actual arrival. This serves as a glimpse into the future, that we call lookahead, and proves crucial for real-time noise cancellation, especially for unpredictable, wide-band sounds like music and speech. Using custom IoT hardware, as well as lookahead-aware cancellation algorithms, we demonstrate MUTE, a fully functional noise cancellation prototype that outperforms Bose's latest ANC headphone. Importantly, our design does not need to block the ear - the ear canal remains open, making it comfortable (and healthier) for continuous use.</p>
+<p>【Keywords】:
+acoustics; adaptive filter; earphone; edge computing; internet of things; noise cancellation; smart home; wearables</p>
+<h2 id="RDMA and hardware support    4">RDMA and hardware support    4</h2>
+<h3 id="21. Hyperloop: group-based NIC-offloading to accelerate replicated transactions in multi-tenant storage systems.">21. Hyperloop: group-based NIC-offloading to accelerate replicated transactions in multi-tenant storage systems.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230572">Paper Link</a>】    【Pages】:297-312</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/k/Kim:Daehyeok">Daehyeok Kim</a> ; <a href="https://dblp.uni-trier.de/pers/hd/m/Memaripour:Amirsaman">Amirsaman Memaripour</a> ; <a href="https://dblp.uni-trier.de/pers/hd/b/Badam:Anirudh">Anirudh Badam</a> ; <a href="https://dblp.uni-trier.de/pers/hd/z/Zhu:Yibo">Yibo Zhu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Liu:Hongqiang_Harry">Hongqiang Harry Liu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/p/Padhye:Jitu">Jitu Padhye</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/Raindel:Shachar">Shachar Raindel</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Swanson:Steven">Steven Swanson</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Sekar:Vyas">Vyas Sekar</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Seshan:Srinivasan">Srinivasan Seshan</a></p>
+<p>【Abstract】:
+Storage systems in data centers are an important component of large-scale online services. They typically perform replicated transactional operations for high data availability and integrity. Today, however, such operations suffer from high tail latency even with recent kernel bypass and storage optimizations, and thus affect the predictability of end-to-end performance of these services. We observe that the root cause of the problem is the involvement of the CPU, a precious commodity in multi-tenant settings, in the critical path of replicated transactions. In this paper, we present HyperLoop, a new framework that removes CPU from the critical path of replicated transactions in storage systems by offloading them to commodity RDMA NICs, with non-volatile memory as the storage medium. To achieve this, we develop new and general NIC offloading primitives that can perform memory operations on all nodes in a replication group while guaranteeing ACID properties without CPU involvement. We demonstrate that popular storage applications can be easily optimized using our primitives. Our evaluation results with microbenchmarks and application benchmarks show that HyperLoop can reduce 99th percentile latency ≈ 800X with close to 0% CPU consumption on replicas.</p>
+<p>【Keywords】:
+NIC-offloading; RDMA; distributed storage systems; replicated transactions</p>
+<h3 id="22. Revisiting network support for RDMA.">22. Revisiting network support for RDMA.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230557">Paper Link</a>】    【Pages】:313-326</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/m/Mittal:Radhika">Radhika Mittal</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Shpiner:Alexander">Alexander Shpiner</a> ; <a href="https://dblp.uni-trier.de/pers/hd/p/Panda:Aurojit">Aurojit Panda</a> ; <a href="https://dblp.uni-trier.de/pers/hd/z/Zahavi:Eitan">Eitan Zahavi</a> ; <a href="https://dblp.uni-trier.de/pers/hd/k/Krishnamurthy:Arvind">Arvind Krishnamurthy</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/Ratnasamy:Sylvia">Sylvia Ratnasamy</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Shenker:Scott">Scott Shenker</a></p>
+<p>【Abstract】:
+The advent of RoCE (RDMA over Converged Ethernet) has led to a significant increase in the use of RDMA in datacenter networks. To achieve good performance, RoCE requires a lossless network which is in turn achieved by enabling Priority Flow Control (PFC) within the network. However, PFC brings with it a host of problems such as head-of-the-line blocking, congestion spreading, and occasional deadlocks. Rather than seek to fix these issues, we instead ask: is PFC fundamentally required to support RDMA over Ethernet?
+We show that the need for PFC is an artifact of current RoCE NIC designs rather than a fundamental requirement. We propose an improved RoCE NIC (IRN) design that makes a few simple changes to the RoCE NIC for better handling of packet losses. We show that IRN (without PFC) outperforms RoCE (with PFC) by 6-83% for typical network scenarios. Thus not only does IRN eliminate the need for PFC, it improves performance in the process! We further show that the changes that IRN introduces can be implemented with modest overheads of about 3-10% to NIC resources. Based on our results, we argue that research and industry should rethink the current trajectory of network support for RDMA.</p>
+<p>【Keywords】:
+PFC; RDMA; RoCE; datacenter transport; iWARP</p>
+<h3 id="23. Understanding PCIe performance for end host networking.">23. Understanding PCIe performance for end host networking.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230560">Paper Link</a>】    【Pages】:327-341</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/n/Neugebauer:Rolf">Rolf Neugebauer</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Antichi:Gianni">Gianni Antichi</a> ; <a href="https://dblp.uni-trier.de/pers/hd/z/Zazo:Jos=eacute=_Fernando">José Fernando Zazo</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Audzevich:Yury">Yury Audzevich</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/L=oacute=pez=Buedo:Sergio">Sergio López-Buedo</a> ; <a href="https://dblp.uni-trier.de/pers/hd/m/Moore_0002:Andrew_W=">Andrew W. Moore</a></p>
+<p>【Abstract】:
+In recent years, spurred on by the development and availability of programmable NICs, end hosts have increasingly become the enforcement point for core network functions such as load balancing, congestion control, and application specific network offloads. However, implementing custom designs on programmable NICs is not easy: many potential bottlenecks can impact performance.
+This paper focuses on the performance implication of PCIe, the de-facto I/O interconnect in contemporary servers, when interacting with the host architecture and device drivers. We present a theoretical model for PCIe and pcie-bench, an open-source suite, that allows developers to gain an accurate and deep understanding of the PCIe substrate. Using pcie-bench, we characterize the PCIe subsystem in modern servers. We highlight surprising differences in PCIe implementations, evaluate the undesirable impact of PCIe features such as IOMMUs, and show the practical limits for common network cards operating at 40Gb/s and beyond. Furthermore, through pcie-bench we gained insights which guided software and future hardware architectures for both commercial and research oriented network cards and DMA engines.</p>
+<p>【Keywords】:
+PCIe; operating system; reconfigurable hardware</p>
+<h3 id="24. FBOSS: building switch software at scale.">24. FBOSS: building switch software at scale.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230546">Paper Link</a>】    【Pages】:342-356</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/c/Choi:Sean">Sean Choi</a> ; <a href="https://dblp.uni-trier.de/pers/hd/b/Burkov:Boris">Boris Burkov</a> ; <a href="https://dblp.uni-trier.de/pers/hd/e/Eckert:Alex">Alex Eckert</a> ; <a href="https://dblp.uni-trier.de/pers/hd/f/Fang:Tian">Tian Fang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/k/Kazemkhani:Saman">Saman Kazemkhani</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Sherwood:Rob">Rob Sherwood</a> ; <a href="https://dblp.uni-trier.de/pers/hd/z/Zhang:Ying">Ying Zhang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/z/Zeng:Hongyi">Hongyi Zeng</a></p>
+<p>【Abstract】:
+The conventional software running on network devices, such as switches and routers, is typically vendor-supplied, proprietary and closed-source; as a result, it tends to contain extraneous features that a single operator will not most likely fully utilize. Furthermore, cloud-scale data center networks often times have software and operational requirements that may not be well addressed by the switch vendors.
+In this paper, we present our ongoing experiences on overcoming the complexity and scaling issues that we face when designing, developing, deploying and operating an in-house software built to manage and support a set of features required for data center switches of a large scale Internet content provider. We present FBOSS, our own data center switch software, that is designed with the basis on our switch-as-a-server and deploy-early-and-iterate principles. We treat software running on data center switches as any other software services that run on a commodity server. We also build and deploy only a minimal number of features and iterate on it. These principles allow us to rapidly iterate, test, deploy and manage FBOSS at scale. Over the last five years, our experiences show that FBOSS's design principles allow us to quickly build a stable and scalable network. As evidence, we have successfully grown the number of FBOSS instances running in our data center by over 30x over a two year period.</p>
+<p>【Keywords】:
+FBOSS; Facebook; data center networks; network management; network monitoring; switch software design</p>
+<h2 id="SDN and workloads    4">SDN and workloads    4</h2>
+<h3 id="25. Sonata: query-driven streaming network telemetry.">25. Sonata: query-driven streaming network telemetry.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230555">Paper Link</a>】    【Pages】:357-371</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/g/Gupta:Arpit">Arpit Gupta</a> ; <a href="https://dblp.uni-trier.de/pers/hd/h/Harrison:Rob">Rob Harrison</a> ; <a href="https://dblp.uni-trier.de/pers/hd/c/Canini:Marco">Marco Canini</a> ; <a href="https://dblp.uni-trier.de/pers/hd/f/Feamster:Nick">Nick Feamster</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/Rexford:Jennifer">Jennifer Rexford</a> ; <a href="https://dblp.uni-trier.de/pers/hd/w/Willinger:Walter">Walter Willinger</a></p>
+<p>【Abstract】:
+Managing and securing networks requires collecting and analyzing network traffic data in real time. Existing telemetry systems do not allow operators to express the range of queries needed to perform management or scale to large traffic volumes and rates. We present Sonata, an expressive and scalable telemetry system that coordinates joint collection and analysis of network traffic. Sonata provides a declarative interface to express queries for a wide range of common telemetry tasks; to enable real-time execution, Sonata partitions each query across the stream processor and the data plane, running as much of the query as it can on the network switch, at line rate. To optimize the use of limited switch memory, Sonata dynamically refines each query to ensure that available resources focus only on traffic that satisfies the query. Our evaluation shows that Sonata can support a wide range of telemetry tasks while reducing the workload for the stream processor by as much as seven orders of magnitude compared to existing telemetry systems.</p>
+<p>【Keywords】:
+analytics; programmable switches; stream processing</p>
+<h3 id="26. Automated synthesis of adversarial workloads for network functions.">26. Automated synthesis of adversarial workloads for network functions.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230573">Paper Link</a>】    【Pages】:372-385</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/p/Pedrosa:Luis">Luis Pedrosa</a> ; <a href="https://dblp.uni-trier.de/pers/hd/i/Iyer:Rishabh">Rishabh Iyer</a> ; <a href="https://dblp.uni-trier.de/pers/hd/z/Zaostrovnykh:Arseniy">Arseniy Zaostrovnykh</a> ; <a href="https://dblp.uni-trier.de/pers/hd/f/Fietz:Jonas">Jonas Fietz</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Argyraki:Katerina_J=">Katerina J. Argyraki</a></p>
+<p>【Abstract】:
+Software network functions promise to simplify the deployment of network services and reduce network operation cost. However, they face the challenge of unpredictable performance. Given this performance variability, it is imperative that during deployment, network operators consider the performance of the NF not only for typical but also adversarial workloads. We contribute a tool that helps solve this challenge: it takes as input the LLVM code of a network function and outputs packet sequences that trigger slow execution paths. Under the covers, it combines directed symbolic execution with a sophisticated cache model to look for execution paths that incur many CPU cycles and involve adversarial memory-access patterns. We used our tool on 11 network functions that implement a variety of data structures and discovered workloads that can in some cases triple latency and cut throughput by 19% relative to typical testing workloads.</p>
+<p>【Keywords】:
+adversarial inputs; network function performance</p>
+<h3 id="27. Trident: toward a unified SDN programming framework with automatic updates.">27. Trident: toward a unified SDN programming framework with automatic updates.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230562">Paper Link</a>】    【Pages】:386-401</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/g/Gao:Kai">Kai Gao</a> ; <a href="https://dblp.uni-trier.de/pers/hd/n/Nojima:Taishi">Taishi Nojima</a> ; <a href="https://dblp.uni-trier.de/pers/hd/y/Yang:Y=_Richard">Y. Richard Yang</a></p>
+<p>【Abstract】:
+Software-defined networking (SDN) and network functions (NF) are two essential technologies that need to work together to achieve the goal of highly programmable networking. Unified SDN programming, which integrates states of network functions into SDN control plane programming, brings these two technologies together. In this paper, we conduct the first systematic study of unified SDN programming. We first show that integrating asynchronous, continuously changing states of network functions into SDN can introduce basic complexities. We then present Trident, a novel, unified SDN programming framework that introduces programming primitives including stream attributes, route algebra and live variables to remove these complexities. We demonstrate the expressiveness of Trident using realistic use cases and conduct an extensive evaluation of its efficiency.</p>
+<p>【Keywords】:
+SDN; live variables; network functions; network programming; route algebra; stream attributes</p>
+<h3 id="28. Synchronized network snapshots.">28. Synchronized network snapshots.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230552">Paper Link</a>】    【Pages】:402-416</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/y/Yaseen:Nofel">Nofel Yaseen</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Sonchack:John">John Sonchack</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Liu:Vincent">Vincent Liu</a></p>
+<p>【Abstract】:
+When monitoring a network, operators rarely have a finegrained and complete view of the network's state. Instead, today's network monitoring tools generally only measure a single device or path at a time; whole-network metrics are a composition of these independent measurements, i.e., an afterthought. Such tools fail to fully answer a wide range of questions. Is my load balancing algorithm taking advantage of all available paths evenly? How much of my network is concurrently loaded? Is application traffic synchronized? These types of concurrent network behavior are challenging to capture at fine granularity as they involve coordination across the entire network. At the same time, understanding them is essential to the design of network switches, architectures, and protocols.
+This paper presents the design of a Synchronized Network Snapshot protocol. The goal of our primitive is the collection of a network-wide set of measurements. To ensure that the measurements are meaningful, our design guarantees they are both causally consistent and approximately synchronous. We demonstrate with a Wedge100BF implementation the feasibility of our approach as well as its many potential uses.</p>
+<p>【Keywords】:
+network snapshots; whole-network measurement</p>
+<h2 id="Wireless low power and high data rates    4">Wireless low power and high data rates    4</h2>
+<h3 id="29. Enabling deep-tissue networking for miniature medical devices.">29. Enabling deep-tissue networking for miniature medical devices.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230566">Paper Link</a>】    【Pages】:417-431</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/m/Ma:Yunfei">Yunfei Ma</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Luo:Zhihong">Zhihong Luo</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Steiger:Christoph">Christoph Steiger</a> ; <a href="https://dblp.uni-trier.de/pers/hd/t/Traverso:Giovanni">Giovanni Traverso</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Adib:Fadel">Fadel Adib</a></p>
+<p>【Abstract】:
+We present IVN (In-Vivo Networking), a system that enables powering up and communicating with miniature sensors implanted or injected in deep tissues. IVN overcomes fundamental challenges which have prevented past systems from powering up miniature sensors beyond superficial depths. These challenges include the significant signal attenuation caused by bodily tissues and the miniature antennas of the implantable sensors.
+IVN's key contribution is a novel beamforming algorithm that can focus its energy toward an implantable device, despite its inability to estimate its channel or its location. We implement a multi-antenna prototype of IVN, and perform extensive evaluations via in-vitro, ex-vivo, and in-vivo tests in a pig. Our results demonstrate that it can power up and communicate with millimeter-sized sensors at over 10 cm depths in fluids, as well as battery-free tags placed in a central organ of a swine.
+The implications of our new beamforming technology extend beyond miniature implantables. In particular, our results demonstrate that IVN can power up off-the-shelf passive RFIDs at distances of 38 m, i.e., 7.6X larger than the operation range of the same RFIDs.</p>
+<p>【Keywords】:
+RFID; battery-free; deep-tissues; medical implants; power delivery; wireless sensors</p>
+<h3 id="30. Fast millimeter wave beam alignment.">30. Fast millimeter wave beam alignment.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230581">Paper Link</a>】    【Pages】:432-445</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/h/Hassanieh:Haitham">Haitham Hassanieh</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Abari:Omid">Omid Abari</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/Rodriguez:Michael">Michael Rodriguez</a> ; <a href="https://dblp.uni-trier.de/pers/hd/a/Abdelghany:Mohammed_A=">Mohammed A. Abdelghany</a> ; <a href="https://dblp.uni-trier.de/pers/hd/k/Katabi:Dina">Dina Katabi</a> ; <a href="https://dblp.uni-trier.de/pers/hd/i/Indyk:Piotr">Piotr Indyk</a></p>
+<p>【Abstract】:
+There is much interest in integrating millimeter wave radios (mmWave) into wireless LANs and 5G cellular networks to benefit from their multi-GHz of available spectrum. Yet, unlike existing technologies, e.g., WiFi, mmWave radios require highly directional antennas. Since the antennas have pencil-beams, the transmitter and receiver need to align their beams before they can communicate. Existing systems scan the space to find the best alignment. Such a process has been shown to introduce up to seconds of delay, and is unsuitable for wireless networks where an access point has to quickly switch between users and accommodate mobile clients.
+This paper presents Agile-Link, a new protocol that can find the best mmWave beam alignment without scanning the space. Given all possible directions for setting the antenna beam, Agile-Link provably finds the optimal direction in logarithmic number of measurements. Further, Agile-Link works within the existing 802.11ad standard for mmWave LAN, and can support both clients and access points. We have implemented Agile-Link in a mmWave radio and evaluated it empirically. Our results show that it reduces beam alignment delay by orders of magnitude. In particular, for highly directional mmWave devices operating under 802.11ad, the delay drops from over a second to 2.5 ms.</p>
+<p>【Keywords】:
+5G; beam alignment; millimeter wave; sparse recovery</p>
+<h3 id="31. Polymorphic radios: a new design paradigm for ultra-low power communication.">31. Polymorphic radios: a new design paradigm for ultra-low power communication.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230571">Paper Link</a>】    【Pages】:446-460</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/r/Rostami:Mohammad">Mohammad Rostami</a> ; <a href="https://dblp.uni-trier.de/pers/hd/g/Gummeson:Jeremy">Jeremy Gummeson</a> ; <a href="https://dblp.uni-trier.de/pers/hd/k/Kiaghadi:Ali">Ali Kiaghadi</a> ; <a href="https://dblp.uni-trier.de/pers/hd/g/Ganesan:Deepak">Deepak Ganesan</a></p>
+<p>【Abstract】:
+Duty-cycling has emerged as the predominant method for optimizing power consumption of low-power radios, particularly for sensors that transmit sporadically in small bursts. But duty-cycling is a poor fit for applications involving high-rate sensor data from wearable sensors such as IMUs, microphones, and imagers that need to stream data to the cloud to execute sophisticated machine learning models.
+We argue that there is significant room to optimize low-power radios if we can take advantage of channel dynamics in short-range settings. However, we face challenges in designing radios that are efficient at power levels between μWs and mWs to take advantage of periods of good signal strength and nimble to deal with highly dynamic channels resulting from body movements. To achieve this, we propose radio polymorphism, a radio architecture with tightly integrated passive and active components that allows us to turn high channel dynamics to our advantage. We leverage passive modes in myriad ways within the network stack, from minimizing data transfer and control overheads to improving rate selection and enabling channel-aware opportunistic transmission. We instantiate our design in a full hardware-software prototype, Morpho, and demonstrate up to an order of improvement in efficiency across diverse scenarios and applications.</p>
+<p>【Keywords】:</p>
+<h3 id="32. Chorus: truly distributed distributed-MIMO.">32. Chorus: truly distributed distributed-MIMO.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230578">Paper Link</a>】    【Pages】:461-475</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/h/Hamed:Ezzeldin">Ezzeldin Hamed</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/Rahul:Hariharan">Hariharan Rahul</a> ; <a href="https://dblp.uni-trier.de/pers/hd/p/Partov:Bahar">Bahar Partov</a></p>
+<p>【Abstract】:
+Distributed MIMO has long been known theoretically to bring large throughput gains to wireless networks. Recent years have seen significant interest and progress in developing practical distributed MIMO systems. However, these systems only distribute the transmission function across the multiple nodes. The control fabric that synchronizes the nodes to a common reference phase still fundamentally requires a single leader that all nodes in the network are capable of hearing.
+This paper presents Chorus, a truly distributed distributed-MIMO system. Chorus is leaderless - all nodes are peers, and jointly transmit the synchronization signal used by other nodes to synchronize to a common reference phase. The participation of all nodes in the network in the synchronization signal enables Chorus to scale to large networks, while being resilient to node failures or changes in network connectivity, and without imposing onerous management burdens on network administrators. We implement and evaluate Chorus and demonstrate that it can synchronize effectively without the need for a single leader, scale to large networks where no leader node can be heard by all others, and provide 2.7X throughput improvement over traditional leader-based systems.</p>
+<p>【Keywords】:
+LTE; distributed MIMO; multi-user MIMO; synchronization; wireless networks</p>
+<h2 id="Network verification    4">Network verification    4</h2>
+<h3 id="33. Control plane compression.">33. Control plane compression.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230583">Paper Link</a>】    【Pages】:476-489</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/b/Beckett:Ryan">Ryan Beckett</a> ; <a href="https://dblp.uni-trier.de/pers/hd/g/Gupta:Aarti">Aarti Gupta</a> ; <a href="https://dblp.uni-trier.de/pers/hd/m/Mahajan:Ratul">Ratul Mahajan</a> ; <a href="https://dblp.uni-trier.de/pers/hd/w/Walker:David">David Walker</a></p>
+<p>【Abstract】:
+We develop an algorithm capable of compressing large networks into smaller ones with similar control plane behavior: For every stable routing solution in the large, original network, there exists a corresponding solution in the compressed network, and vice versa. Our compression algorithm preserves a wide variety of network properties including reachability, loop freedom, and path length. Consequently, operators may speed up network analysis, based on simulation, emulation, or verification, by analyzing only the compressed network. Our approach is based on a new theory of control plane equivalence. We implement these ideas in a tool called Bonsai and apply it to real and synthetic networks. Bonsai can shrink real networks by over a factor of 5 and speed up analysis by several orders of magnitude.</p>
+<p>【Keywords】:
+network verification; stable routing problem</p>
+<h3 id="34. p4v: practical verification for programmable data planes.">34. p4v: practical verification for programmable data planes.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230582">Paper Link</a>】    【Pages】:490-503</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/l/Liu:Jed">Jed Liu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/h/Hallahan:William">William Hallahan</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Schlesinger:Cole">Cole Schlesinger</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Sharif:Milad">Milad Sharif</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Lee:Jeongkeun">Jeongkeun Lee</a> ; <a href="https://dblp.uni-trier.de/pers/hd/s/Soul=eacute=:Robert">Robert Soulé</a> ; <a href="https://dblp.uni-trier.de/pers/hd/w/Wang:Han">Han Wang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/c/Cascaval:Calin">Calin Cascaval</a> ; <a href="https://dblp.uni-trier.de/pers/hd/m/McKeown:Nick">Nick McKeown</a> ; <a href="https://dblp.uni-trier.de/pers/hd/f/Foster:Nate">Nate Foster</a></p>
+<p>【Abstract】:
+We present the design and implementation of p4v, a practical tool for verifying data planes described using the P4 programming language. The design of p4v is based on classic verification techniques but adds several key innovations including a novel mechanism for incorporating assumptions about the control plane and domain-specific optimizations which are needed to scale to large programs. We present case studies showing that p4v verifies important properties and finds bugs in real-world programs. We conduct experiments to quantify the scalability of p4v on a wide range of additional examples. We show that with just a few hundred lines of control-plane annotations, p4v is able to verify critical safety properties for switch.p4, a program that implements the functionality of on a modern data center switch, in under three minutes.</p>
+<p>【Keywords】:
+P4; programmable data planes; verification</p>
+<h3 id="35. Microboxes: high performance NFV with customizable, asynchronous TCP stacks and dynamic subscriptions.">35. Microboxes: high performance NFV with customizable, asynchronous TCP stacks and dynamic subscriptions.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230563">Paper Link</a>】    【Pages】:504-517</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/l/Liu:Guyue">Guyue Liu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/Ren:Yuxin">Yuxin Ren</a> ; <a href="https://dblp.uni-trier.de/pers/hd/y/Yurchenko:Mykola">Mykola Yurchenko</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/Ramakrishnan:K=_K=">K. K. Ramakrishnan</a> ; <a href="https://dblp.uni-trier.de/pers/hd/w/Wood_0001:Timothy">Timothy Wood</a></p>
+<p>【Abstract】:
+Existing network service chaining frameworks are based on a "packet-centric" model where each NF in a chain is given every packet for processing. This approach becomes both inefficient and inconvenient for more complex network functions that operate at higher levels of the protocol stack. We propose Microboxes, a novel service chaining abstraction designed to support transport- and application-layer middle-boxes, or even end-system like services. Simply including a TCP stack in an NFV platform is insufficient because there is a wide spectrum of middlebox types-from NFs requiring only simple TCP bytestream reconstruction to full endpoint termination. By exposing a publish/subscribe-based API for NFs to access packets or protocol events as needed, Microboxes eliminates redundant processing across a chain and enables a modular design. Our implementation on a DPDK-based NFV framework can double throughput by consolidating stack operations and provide a 51% throughput gain by customizing TCP processing to the appropriate level.</p>
+<p>【Keywords】:
+NFV; middleboxes; networking stack; service chain</p>
+<h3 id="36. Debugging P4 programs with vera.">36. Debugging P4 programs with vera.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230548">Paper Link</a>】    【Pages】:518-532</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/s/Stoenescu:Radu">Radu Stoenescu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/d/Dumitrescu:Dragos">Dragos Dumitrescu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/p/Popovici:Matei">Matei Popovici</a> ; <a href="https://dblp.uni-trier.de/pers/hd/n/Negreanu:Lorina">Lorina Negreanu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/r/Raiciu:Costin">Costin Raiciu</a></p>
+<p>【Abstract】:
+We present Vera, a tool that verifies P4 programs using symbolic execution. Vera automatically uncovers a number of common bugs including parsing/deparsing errors, invalid memory accesses, loops and tunneling errors, among others. Vera can also be used to verify user-specified properties in a novel language we call NetCTL.
+To enable scalable, exhaustive verification of P4 program snapshots, Vera automatically generates all valid header layouts and uses a novel data-structure for match-action processing optimized for verification. These techniques allow Vera to scale very well: it only takes between 5s-15s to track the execution of a purely symbolic packet in the largest P4 program currently available (6KLOC) and can compute SEFL model updates in milliseconds. Vera can also explore multiple concrete dataplanes at once by allowing the programmer to insert symbolic table entries; the resulting verification highlights possible control plane errors.
+We have used Vera to analyze many P4 programs including the P4 tutorials, P4 programs in the research literature and the switch code from <a href="https://p4.org">https://p4.org</a>. Vera has found several bugs in each of them in seconds/minutes.</p>
+<p>【Keywords】:</p>
+<h2 id="Measurements    4">Measurements    4</h2>
+<h3 id="37. Incentivizing censorship measurements via circumvention.">37. Incentivizing censorship measurements via circumvention.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230568">Paper Link</a>】    【Pages】:533-546</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/n/Nisar:Aqib">Aqib Nisar</a> ; <a href="https://dblp.uni-trier.de/pers/hd/k/Kashaf:Aqsa">Aqsa Kashaf</a> ; <a href="https://dblp.uni-trier.de/pers/hd/q/Qazi:Ihsan_Ayyub">Ihsan Ayyub Qazi</a> ; <a href="https://dblp.uni-trier.de/pers/hd/u/Uzmi:Zartash_Afzal">Zartash Afzal Uzmi</a></p>
+<p>【Abstract】:
+We present C-Saw, a system that measures Internet censorship by offering data-driven censorship circumvention to users. The adaptive circumvention capability of C-Saw incentivizes users to opt-in by offering small page load times (PLTs). As users crowdsource, the measurement data gets richer, offering greater insights into censorship mechanisms over a wider region, and in turn leading to even better circumvention capabilities. C-Saw incorporates user consent in its design by measuring only those URLs that a user actually visits. Using a cross-platform implementation of C-Saw, we show that it is effective at collecting and disseminating censorship measurements, selecting circumvention approaches, and optimizing user experience. C-Saw improves the average PLT by up to 48% and 63% over Lantern and Tor, respectively. We demonstrate the feasibility of a large-scale deployment of C-Saw with a pilot study.</p>
+<p>【Keywords】:</p>
+<h3 id="38. RADWAN: rate adaptive wide area network.">38. RADWAN: rate adaptive wide area network.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230570">Paper Link</a>】    【Pages】:547-560</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/s/Singh:Rachee">Rachee Singh</a> ; <a href="https://dblp.uni-trier.de/pers/hd/g/Ghobadi:Manya">Manya Ghobadi</a> ; <a href="https://dblp.uni-trier.de/pers/hd/f/Foerster:Klaus=Tycho">Klaus-Tycho Foerster</a> ; <a href="https://dblp.uni-trier.de/pers/hd/f/Filer:Mark">Mark Filer</a> ; <a href="https://dblp.uni-trier.de/pers/hd/g/Gill:Phillipa">Phillipa Gill</a></p>
+<p>【Abstract】:
+Fiber optic cables connecting data centers are an expensive but important resource for large organizations. Their importance has driven a conservative deployment approach, with redundancy and reliability baked in at multiple layers. In this work, we take a more aggressive approach and argue for adapting the capacity of fiber optic links based on their signal-to-noise ratio (SNR). We investigate this idea by analyzing the SNR of over 8,000 links in an optical backbone for a period of three years. We show that the capacity of 64% of 100 Gbps IP links can be augmented by at least 75 Gbps, leading to an overall capacity gain of over 134 Tbps. Moreover, adapting link capacity to a lower rate can prevent up to 25% of link failures. Our analysis shows that using the same links, we get higher capacity, better availability, and 32% lower cost per gigabit per second. To accomplish this, we propose RADWAN, a traffic engineering system that allows optical links to adapt their rate based on the observed SNR to achieve higher throughput and availability while minimizing the churn during capacity reconfigurations. We evaluate RADWAN using a testbed consisting of 1,540 km fiber with 16 amplifiers and attenuators. We then simulate the throughput gains of RADWAN at scale and compare them to the gains of state-of-the-art traffic engineering systems. Our data-driven simulations show that RADWAN improves the overall network throughput by 40% while also improving the average link availability.</p>
+<p>【Keywords】:
+optical backbone; traffic engineering; wide area networks</p>
+<h3 id="39. Elastic sketch: adaptive and fast network-wide measurements.">39. Elastic sketch: adaptive and fast network-wide measurements.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230544">Paper Link</a>】    【Pages】:561-575</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/y/Yang_0003:Tong">Tong Yang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/j/Jiang:Jie">Jie Jiang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Liu:Peng">Peng Liu</a> ; <a href="https://dblp.uni-trier.de/pers/hd/h/Huang:Qun">Qun Huang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/g/Gong:Junzhi">Junzhi Gong</a> ; <a href="https://dblp.uni-trier.de/pers/hd/z/Zhou:Yang">Yang Zhou</a> ; <a href="https://dblp.uni-trier.de/pers/hd/m/Miao:Rui">Rui Miao</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Li:Xiaoming">Xiaoming Li</a> ; <a href="https://dblp.uni-trier.de/pers/hd/u/Uhlig:Steve">Steve Uhlig</a></p>
+<p>【Abstract】:
+When network is undergoing problems such as congestion, scan attack, DDoS attack, etc., measurements are much more important than usual. In this case, traffic characteristics including available bandwidth, packet rate, and flow size distribution vary drastically, significantly degrading the performance of measurements. To address this issue, we propose the Elastic sketch. It is adaptive to currently traffic characteristics. Besides, it is generic to measurement tasks and platforms. We implement the Elastic sketch on six platforms: P4, FPGA, GPU, CPU, multi-core CPU, and OVS, to process six typical measurement tasks. Experimental results and theoretical analysis show that the Elastic sketch can adapt well to traffic characteristics. Compared to the state-of-the-art, the Elastic sketch achieves 44.6 ∼ 45.2 times faster speed and 2.0 ∼ 273.7 smaller error rate.</p>
+<p>【Keywords】:
+compression; elastic; generic; network measurements; sketches</p>
+<h3 id="40. Sketchlearn: relieving user burdens in approximate measurement with automated statistical inference.">40. Sketchlearn: relieving user burdens in approximate measurement with automated statistical inference.</h3>
+<p>【<a href="http://doi.acm.org/10.1145/3230543.3230559">Paper Link</a>】    【Pages】:576-590</p>
+<p>【Authors】:
+<a href="https://dblp.uni-trier.de/pers/hd/h/Huang:Qun">Qun Huang</a> ; <a href="https://dblp.uni-trier.de/pers/hd/l/Lee:Patrick_P=_C=">Patrick P. C. Lee</a> ; <a href="https://dblp.uni-trier.de/pers/hd/b/Bao:Yungang">Yungang Bao</a></p>
+<p>【Abstract】:
+Network measurement is challenged to fulfill stringent resource requirements in the face of massive network traffic. While approximate measurement can trade accuracy for resource savings, it demands intensive manual efforts to configure the right resource-accuracy trade-offs in real deployment. Such user burdens are caused by how existing approximate measurement approaches inherently deal with resource conflicts when tracking massive network traffic with limited resources. In particular, they tightly couple resource configurations with accuracy parameters, so as to provision sufficient resources to bound the measurement errors. We design SketchLearn, a novel sketch-based measurement framework that resolves resource conflicts by learning their statistical properties to eliminate conflicting traffic components. We prototype SketchLearn on OpenVSwitch and P4, and our testbed experiments and stress-test simulation show that SketchLearn accurately and automatically monitors various traffic statistics and effectively supports network-wide measurement with limited resources.</p>
+<p>【Keywords】:
+network measurement; sketch</p>
+ 
+
+<div class="home">
+<i title='主页' onclick="location.href='../index.html'"><i class="fa fa-home fa-lg"></i></i>
+</div>
+
+<div class="toc">
+<i id="showLeftPush" title='目录'><i class="fa fa-list fa-lg"></i></i>
+</div>
+
+<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+<script>
+	var menuLeft = document.getElementById( 'menu-s1' ),
+		showLeftPush = document.getElementById( 'showLeftPush' ),
+		body = document.body;
+
+	showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+		classie.toggle( body, 'cbp-spmenu-push-toright' );
+		classie.toggle( menuLeft, 'cbp-spmenu-open' );
+		disableOther( 'showLeftPush' );
+	};
+</script>
+
+<div class="go-top" >
+<i title='顶部' onclick="window.scrollTo('0', '0')"><i class="fa fa-angle-double-up fa-2x"></i></i>
+</div>
+
+<div class="theme" >
+<i title='主题' onclick="change_css()"><i class="fa fa-adjust fa-lg"></i></i>
+</div>
+
+<div id="footer">
+
+  <p> <i class="fa fa-envelope-o fa-1x"></i>:&nbsp huntercmd@163.com &nbsp Published under<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh"> (CC) BY-NC-SA 3.0</a></p>
+
+  <p>&copy; 2013 HunterCmd &nbsp <a href="https://github.com/huntercmd/ccf"><i class="fa fa-github fa-1x"></i>
+  </p>
+</div>
+
+</body>
