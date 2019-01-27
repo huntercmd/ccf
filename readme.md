@@ -4,6 +4,7 @@
 
 ### Change Logs
 
+- 2019/1/27  添加 NIPS18, CCS18, COLING18 等 10 个会议列表
 - 2018/9/12  添加 AAAI18, ACL18, COLING18 等 15 个会议列表
 - 2018/9/11  添加 ICLR 2013~2018
 - 2018/9/9  CDN 由 rawgit.com 变更为 rawcdn.githack.com
